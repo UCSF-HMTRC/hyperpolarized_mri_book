@@ -5,3 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: preface
+- file: dDNP_physics/dDNP_physics
+- file: dDNP_hardware/dDNP_hardware
