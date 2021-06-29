@@ -46,7 +46,8 @@ hyperpolarized spin states, instrumentation, acquisition hardware and
 pulse sequences, and biomedical applications.
 
 ![polarization](polarizations.svg)
-Figure 1: The polarization of the electron and nuclear spins follow
+
+**Figure 1**: The polarization of the electron and nuclear spins follow
 Boltzmann statistics and is only a few parts per million (ppm) at room
 temperature (the graph is plotted for 3.4 T, a typical polarizer
 magnetic field strength, and close to a clinical MR scanner field
@@ -66,7 +67,7 @@ populations of the two energy eigenstates
 
 $P = \frac{N^{+} - N^{-}}{N^{+} + N^{-}}$ Eq. 1
 
-where ![](media/image1.wmf)and ![](media/image2.wmf) denote the number
+where $N^{+}$ and $N^{-}$ denote the number
 of spins parallel (spin up) and anti-parallel (spin down) to the
 external magnetic field, *B~0~*, respectively. As a point of caution, it
 is often stated that spins are either pointing up or down (i.e., they
@@ -111,7 +112,7 @@ lower, Table 1, Fig. 1. A theoretical enhancement of the nuclear spin
 polarization of 100,000 and 400,000 times, respectively, is therefore
 possible, if almost full polarization could be achieved.
 
-Table 1: Thermal polarization for ^13^C at selected magnetic field and
+**Table 1**: Thermal polarization for ^13^C at selected magnetic field and
 temperature conditions.
 
 +----------------+----------------+----------------+-----------------+
@@ -451,7 +452,7 @@ at a much faster rate, *T~1e~^-1^* (typically 1 s^-1^ to 10^3^ s^-1^).
 
 ![Solid Effect](solid_effect.png)
 
-Figure 2: The solid effect is a two-spin process involving the electron
+**Figure 2**: The solid effect is a two-spin process involving the electron
 spin and the nearby nuclear spins. The two spins are coupled by the
 dipolar interaction (kHz) and irradiating with microwaves at the sum or
 difference frequencies of the Larmor frequencies of the two spins,
@@ -669,7 +670,8 @@ transition. This will finally cool, i.e. increase the polarization of,
 the nuclear spins.
 
 ![Thermal mixing](thermal_mixing.svg)
-Figure 3: Thermal mixing is a three-spin process involving two electron
+
+**Figure 3**: Thermal mixing is a three-spin process involving two electron
 spins and a nuclear spin. The electron spin resonance is wider than the
 nuclear Larmor frequency by inhomogeneous broadening (e.g.
 g-anisotropy). The electron spins are coupled by strong dipolar
@@ -828,7 +830,8 @@ builds-up dynamically with a time constant of typically tens of minutes,
 Fig. 4.
 
 ![Trityl Radicals](trityl_radicals.svg)
-Figure 4: The chemical structure of the trityl radicals OX063 (MW=1427
+
+**Figure 4**: The chemical structure of the trityl radicals OX063 (MW=1427
 g/mol) and AH111501 (OX063Me) (MW= 1595 g/mol) is shown on the left. The
 optimal microwave frequency for DNP can be determined by stepping the
 microwave frequency through the electron spin resonance and measuring
@@ -1015,7 +1018,9 @@ scientists of all disciplines together.
 Hansson, M.H. Lerche, R. Servin, M. Thaning, K. Golman, Increase in
 signal-to-noise ratio of &gt; 10,000 times in liquid-state NMR., Proc.
 Natl. Acad. Sci. U. S. A. 100 (2003) 10158--63.
-https://doi.org/10.1073/pnas.1733835100.\[2\] S.J.S.J. Nelson, J.
+https://doi.org/10.1073/pnas.1733835100.
+
+\[2\] S.J.S.J. Nelson, J.
 Kurhanewicz, D.B.D.B. Vigneron, P.E.Z.P.E.Z. Larson, A.L.A.L. Harzstark,
 M. Ferrone, M. Van Criekinge, J.W.J.W. Chang, R. Bok, I. Park, G. Reed,
 L. Carvajal, E.J. Small, P. Munster, V.K. Weinberg, J.H.J.H.J.H.
@@ -1029,7 +1034,9 @@ Small, P. Munster, V.K. Weinberg, J.H.J.H.J.H. Ardenkjaer-Larsen, A.P.
 Chen, R.E. Hurd, L.-I.L.-I. Odegardstuen, F.J. Robb, J. Tropp, J.A.J.A.
 Murray, Metabolic imaging of patients with prostate cancer using
 hyperpolarized \[1-^13^C\]pyruvate., Sci. Transl. Med. 5 (2013)
-198ra108-198ra108. https://doi.org/10.1126/scitranslmed.3006070.\[3\]
+198ra108-198ra108. https://doi.org/10.1126/scitranslmed.3006070.
+
+\[3\]
 C.H. Cunningham, J.Y. Lau, A.P. Chen, B.J. Geraghty, W.J. Perks, I.
 Roifman, G.A. Wright, K.A. Connelly, Hyperpolarized 13C Metabolic MRI of
 the Human Heart: Initial Experience., Circ. Res. (2016)
