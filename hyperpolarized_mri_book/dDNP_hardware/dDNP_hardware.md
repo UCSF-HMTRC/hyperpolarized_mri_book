@@ -1,6 +1,4 @@
-**CHAPTER 2**
-
-**Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient**
+# Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
 
 Adam P. Gaunt^1^ and Arnaud Comment ^1,2^
 
@@ -35,9 +33,6 @@ with clinical experiments.
 **Key Words:** dynamic nuclear polarization, hyperpolarization,
 hyperpolarizer, cryostat, cryogen-free, dissolution.
 
-**\
-**
-
 **2.1 Requirements for DNP**
 
 The aim of dissolution DNP (dDNP) is to supply aqueous solutions
@@ -61,7 +56,7 @@ since increasing the magnetic field and reducing temperature increases
 spin polarization thanks to the Zeeman splitting and the Boltzmann
 distribution. For more information, see Chapter 1.
 
-\*\*\* Insert Figure 2.1 \*\*\*
+![Figure 1](preclinical_HP13C.png)
 
 **Figure 2.1**: Preclinical setup to perform HP ^13^C MR experiments.
 (A, top panel) Once the sample is prepared and inserted into the
@@ -321,7 +316,8 @@ through evaporation of liquid helium. The volume of liquid helium in the
 sample space must then be replenished, hence depleting the stock in the
 magnet helium vessel.
 
-\*\*\* Insert Figure 2.2 \*\*\*
+![Figure2](original_dDNP.png)
+
 
 **Figure 2.2**: Schematic diagram of the original dDNP polarizer showing
 the magnet \[1\], vacuum pump \[2\], variable temperature insert (VTI)
@@ -378,7 +374,7 @@ the fluid path to be raised and lowered inside the bore of the cryostat
 without breaking the vacuum and is actively pumped on to ensure it
 remains leak free.
 
-\*\*\* Insert Figure 2.3 \*\*\*
+![Figure 3](fluid_path.png)
 
 **Figure 2.3**: Commercial fluid path for preclinical and clinical
 applications. Part A: components required to insert the sample inside
@@ -429,7 +425,7 @@ samples, which can be simultaneously polarized, allowing consecutive
 dissolutions to be carried out with a delay of 10 min or less between
 them (see Figure 2.4).
 
-\*\*\* Insert Figure 2.4 \*\*\*
+![Figure 4](multisample_insert.png)
 
 **Figure 2.4**: DNP insert developed by Cheng *et al.* to allow
 multi-sample DNP in a cryogen-free polarizer. The insert, which fits
@@ -585,7 +581,8 @@ pharmacist or qualified person will reject or release the dose for
 injection into a subject. The complete workflow of a clinical HP ^13^C
 MR experiment is summarize in Figure 5.
 
-\*\*\* Insert Figure 2.5 \*\*\*
+![Figure 5](clinical_HP_workflow.png)
+
 
 **Figure 2.5**: Workflow of a clinical HP ^13^C MR experiment detailing
 the steps required to facilitate successful completion of each
