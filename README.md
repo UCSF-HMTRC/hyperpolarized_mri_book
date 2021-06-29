@@ -29,3 +29,14 @@ We welcome and recognize all contributions. You can see a list of current contri
 ## Credits
 
 This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+
+Originally inspired by https://github.com/qMRLab/t1_book
+
+Others
+https://github.com/brainhack101/introML-book
+
+
+
+## Tools
+
+pandoc for Word to Markdown conversion
