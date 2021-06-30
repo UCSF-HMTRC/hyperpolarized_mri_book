@@ -1,0 +1,1384 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{width=”6.5in” height=”4.10625in”} &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preface.html">
+   Preface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
+   The Physics of dissolution Dynamic Nuclear Polarization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
+   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/cancer/cancer.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/agentmess/Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/agentmess/Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy/issues/new?title=Issue%20on%20page%20%2Fcancer/cancer.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><strong>Chapter 8</strong></p>
+<p><strong>Integration into Cancer Studies</strong></p>
+<p>Pavithra Viswanath*</p>
+<p>Department of Radiology and Biomedical Imaging, University of California
+San Francisco, San Francisco, CA 94143</p>
+<p>*Corresponding author: <a class="reference external" href="mailto:Pavithra&#46;Viswanath&#37;&#52;&#48;ucsf&#46;edu">Pavithra<span>&#46;</span>Viswanath<span>&#64;</span>ucsf<span>&#46;</span>edu</a></p>
+<p>*<br />
+*<strong>Abstract</strong></p>
+<p>Metabolic reprogramming has emerged as a fundamental hallmark of cancer.
+Alterations in oncogenic signaling pathways that drive tumor initiation
+and maintenance also rewire tumor bioenergetics and redox. This
+relationship provides the unique opportunity to devise metabolic imaging
+strategies that can inform on tumor burden and response to therapy.
+Hyperpolarized ^13^C-magnetic resonance spectroscopy and imaging (HP
+^13^C MRS/I) is a non-invasive method of monitoring dynamic metabolic
+fluxes in real time <em>in vivo</em>. This chapter presents a detailed
+discussion of oncogenic metabolic reprogramming and the various HP ^13^C
+MRS/I agents that have used to interrogate this reprogramming in
+preclinical tumor models. Emerging human studies that point to the
+promise as well as challenges associated with translating HP ^13^C MRS/I
+to the clinic are also discussed.</p>
+<p><strong>Keywords</strong></p>
+<p>Cancer metabolism, metabolic reprogramming, precision imaging, magnetic
+resonance spectroscopy, hyperpolarized ^13^C imaging, oncogenic
+signaling pathways</p>
+<p><strong>8.1 Metabolic reprogramming is a central hallmark of cancer</strong></p>
+<p>Cancer is caused by genetic and epigenetic alterations in oncogenes and
+tumor suppressors that allow tumor cells to sustain uncontrolled
+proliferation, evade the immune system and invade surrounding tissue
+(1). Increasingly, across several tumor types, it has become clear that
+many of the oncogenes and tumor suppressors that drive and sustain
+tumorigenesis also alter metabolism in order to meet the biosynthetic,
+bioenergetic and redox needs of tumor cells (2-4). Specifically,
+oncogenic alterations allow cancer cells to access conventional and
+unconventional nutrient sources and alter the flux of these nutrient
+through metabolic pathways in order to generate biosynthetic and redox
+intermediates for biomass generation (2-4). Intriguingly, recent studies
+have begun to indicate that, beyond meeting bioenergetic needs,
+alterations in tumor metabolite levels can alter gene expression within
+the tumor as well as the surrounding tumor microenvironment (3).
+Collectively, these studies have established metabolic reprogramming as
+a fundamental cancer hallmark (1).</p>
+<p>An important feature of tumor metabolic reprogramming resides in the
+observation that multiple oncogenic pathways converge on common
+metabolic phenotypes (see Figure 8.1) (2-4). Glucose and glutamine are
+the principal nutrients for mammalian cells and several oncogenic
+pathways, including mutations in TP53, MYC, KRAS and the PI3K-Akt-mTOR
+pathway, consistently reprogram glucose and glutamine metabolism (5-7).
+Loss of the tumor suppressor TP53, a feature of nearly 50% of all human
+cancers, increases glycolytic flux, alters redox balance and modulates
+chromatin structure via alterations in glucose-derived α-ketoglutarate
+(α-KG) levels (2-6). Oncogenic KRAS increases expression of the glucose
+transporter GLUT1 and concomitant glucose uptake and metabolism. KRAS
+also increases anaplerotic utilization of glutamine for biosynthesis and
+redox homeostasis. MYC elicits multiple metabolic effects including
+enhanced glycolysis, glutaminolysis, nucleotide biosynthesis and
+mitochondrial biogenesis. The PI3K-Akt-mTOR pathway, which is also one
+of the most commonly mutated pathways in cancer, links growth factor
+signaling to nutrient availability and ribosome biogenesis, thereby
+modulating glucose and amino acid utilization as well as protein
+translation (2-7).</p>
+<hr class="docutils" />
+<div class="section" id="width-6-5in-height-4-10625in">
+<h1><img alt="" src="cancer/media/image1.emf" />{width=”6.5in” height=”4.10625in”}<a class="headerlink" href="#width-6-5in-height-4-10625in" title="Permalink to this headline">¶</a></h1>
+<p><strong>Figure 8.1.</strong> <strong>Oncogenic reprogramming of metabolism can be observed
+non-invasively with HP ^13^C MRS/I.</strong> Metabolism of glucose and
+glutamine, which are the principal cellular nutrients, can be regulated
+by many oncogenes and tumor suppressors including TP53, KRAS, MYC,
+receptor tyrosine kinases, the PI3K-Akt-mTOR pathway and the IDH1
+mutation. Key oncogenes and tumor suppressors are highlighted in blue
+boxes. Metabolic pathways are highlighted in red. Blue arrows indicate
+regulation of a metabolic pathway by an oncogenic factor. Metabolic
+enzymes catalyzing key reactions are highlighted in blue italics. The
+HP ^13^C MRS/I probes discussed in this chapter are enclosed in green
+boxes. Abbreviations: BCAT: branched chain amino acid transferase; GDH:
+glutamate dehydrogenase; GLS: glutaminase; GPT: alanine
+aminotransferase; PDH: pyruvate dehydrogenase; PDK: pyruvate
+dehydrogenase kinase; LDHA: lactate dehydrogenase A;</p>
+<hr class="docutils" />
+<p>The relatively recent discovery of mutations in metabolic enzymes that
+lead to the production of oncometabolites, i.e. metabolites that drive
+tumorigenesis, further highlights the central role of metabolism in
+cancer (6-11). The best example so far is the occurrence of mutations in
+isocitrate dehydrogenase (IDH) 1/2 that lead to the abnormal reduction
+of α-KG to 2-hydroxyglutarate (2-HG) (8-11). 2-HG inhibits the function
+of several α-KG-dependent dioxygenases within the cell including prolyl
+hydroxylases, DNA methylases, and histone demethylases, leading to an
+altered epigenetic state and, consequently, altered gene expression
+(9-11). Collectively, these alterations are now believed to kickstart
+tumorigenesis in 70-90% of low-grade gliomas and ~20% of acute myeloid
+leukemia. Other metabolic driver mutations that have been discovered in
+cancer are mutations in fumarate hydratase and succinate dehydrogenase,
+that lead to intracellular accumulation of fumarate or succinate,
+respectively (6).</p>
+<p><strong>8.2 Metabolic reprogramming can be monitored to provide precision
+imaging of cancer</strong></p>
+<p>Non-invasive magnetic resonance imaging (MRI) is an integral part of
+both preclinical cancer research and clinical cancer patient management
+(12,13). MRI methods such as T1-weighted MRI pre- and post-contrast
+imaging with gadolinium-based agents, T2-weighted MRI,
+diffusion-weighted MRI and dynamic contrast-enhanced MRI provide
+exquisite anatomical detail as well as physiological information on
+tissue microstructure. As such, these MRI methods are indispensable for
+diagnosis, staging and treatment response monitoring in cancer (12-14).
+However, structural and physiological changes do not provide a readout
+of molecular events controlling tumor proliferation. In this context,
+there could be a significant lapse in time, which is detrimental to
+patient outcome, before MRI methods provide a readout of response to
+therapy, especially with molecularly targeted cancer therapies (15,16).
+Furthermore, volumetric alterations are insufficient for treatment
+response monitoring in the case of cytostatic tumor therapeutics.
+Therefore, there is a need to identify non-invasive imaging modalities
+that provide a readout of molecular events linked to tumor growth and
+proliferation (12,14,16). As described in section 8.1, metabolic
+reprogramming is linked to tumor bioenergetics and proliferation (1,7).
+This relationship provides a unique opportunity to devise non-invasive
+metabolic imaging strategies that can inform on tumor burden and
+response to therapy.</p>
+<p>Metabolic imaging, including HP ^13^C MRS/I, holds great promise for
+precise, personalized imaging of cancer patients. In an era of precision
+medicine, tumor diagnosis and treatment are moving towards a paradigm
+characterized by analysis of individual patient genomes (pretreatment
+genomic analysis) such that individualized treatments tailored to the
+specific mutational pattern can be deployed (17,18). An important
+component of such precision medicine is the identification of companion
+diagnostics or biomarkers that will provide an early readout of
+treatment response (12,18,19). Since oncogenic events also drive tumor
+metabolic reprogramming, metabolic imaging has the potential to provide
+a non-invasive readout of underlying tumor genomics and aid in tumor
+diagnosis and/or prognosis. This is especially promising for tumors such
+as brain tumors, where detection of circulating tumor DNA or tumor cells
+does not inform on the presence of a tumor (19,20). In addition, once
+the patient is treated with a precision medicine method, HP ^13^C MRS/I
+has the ability to provide an early readout of response to therapy (see
+section 8.3.1.2), an approach which is important for longitudinal
+studies of response to therapy, especially for tumors that are
+anatomically inaccessible such as brain tumors.</p>
+<p><strong>8.3 Imaging oncogenic reprogramming of metabolism using HP ^13^C MRS/I
+in preclinical cancer models</strong></p>
+<p>The best example of the use of cancer metabolism for non-invasive
+imaging is PET (positron emission tomography) imaging using
+2-[^18^F]-fluoro-2-deoxy-D-glucose (FDG), which measures the increase
+in glucose uptake that is part of the Warburg effect and is observed
+near universally in cancer (21,22). FDG-PET imaging is used in the
+clinic for tumor staging and treatment response monitoring in nearly
+every type of cancer, with the exception of gliomas and prostate cancer
+(21,22). However, FDG-PET imaging as well as other PET tracers typically
+provide a readout of tracer uptake, but not of subsequent metabolism,
+thereby limiting information gain. FDG-PET can also fail to distinguish
+between tumor and non-cancerous processes where glucose uptake is
+enhanced including infection and inflammation (23). Another concern is
+that the radioactive nature of PET tracers prohibits repetitive
+longitudinal studies and limits application to children and women of
+reproductive age (22,23).</p>
+<p>MRS is a complementary method of non-invasively assessing metabolic
+alterations (24,25). ^1^H-MRS informs on steady-state metabolite levels
+and is in clinical use (24,25). ^13^C MRS following administration of
+^13^C-labeled isotopes can be performed without hyperpolarization and
+provides information on the dynamic flow of carbon through metabolic
+pathways. However, the low natural abundance of the ^13^C moiety (1.1%)
+combined with the low gyromagnetic ratio of ^13^C, limits the signal to
+noise ratio (SNR) of ^13^C MRS/I, leading to prohibitively long
+acquisition times and hampering its clinical utility (26,27). HP ^13^C
+MRS/I overcomes these issues and allows visualization of metabolic
+reactions in real time with high SNR (28,29). For details of DNP
+physics, hardware, acquisition schemes, experimental methods and data
+analysis, readers are encouraged to refer to chapters 1-7 in this book.
+The sections that follow will describe the ways in which HP ^13^C MRS/I
+agents have been used to interrogate oncogenic reprogramming of
+metabolism and, thereby, obtain a readout of tumor burden and treatment
+response in preclinical cancer models (please refer to summary in Table
+1).</p>
+<p><strong>8.3.1 Interrogating the Warburg effect using HP [1-^13^C]pyruvate</strong></p>
+<p>Aerobic glycolysis, also known as the Warburg effect, is a nearly
+universal metabolic hallmark of cancer (2,7,21). It describes the
+propensity of tumor cells to enhance glucose uptake and convert glucose
+almost exclusively to lactate, even under conditions of normal oxygen
+tension (21,30). Concomitantly, metabolism of glucose via the
+tricarboxylic acid (TCA) cycle is down-regulated. Relative to oxidative
+phosphorylation, glucose metabolism via the Warburg effect yields
+~18-fold lower adenosine triphosphate (ATP) per glucose molecule.
+Nevertheless, despite reduced ATP production, the prevailing hypothesis
+(21,30) suggests that the Warburg effect benefits tumor cells in several
+ways. First, enhanced glycolytic flux generates precursors for various
+biosynthetic pathways including ribonucleotide synthesis, hexosamine
+biosynthesis and folate metabolism. Pyruvate conversion to lactate via
+the Warburg effect also maintains redox balance by regenerating NAD^+^
+that serves as a coenzyme for redox reactions. In addition, emerging
+evidence indicates that the lactate secreted by tumor cells alters
+immune cell function in the tumor microenvironment to promote tumor
+invasion (31).</p>
+<p>Several oncogenes and tumor suppressors regulate the Warburg effect in
+cancer (7,21,30). The PI3K-Akt-mTOR pathway and HIF-1α are notable
+regulators of this metabolic phenotype. Via Akt, the PI3K-Akt-mTOR
+pathway increases expression of GLUT1 and enhances glucose uptake (2).
+Constitutive stabilization of HIF-1α in many tumor types also directs
+glucose metabolism via glycolysis vs. the TCA cycle (32). HIF-1α
+increases expression of GLUT1 and lactate dehydrogenase A (LDHA), the
+enzyme that converts pyruvate to lactate. Concomitantly, HIF-1α
+upregulates expression of pyruvate dehydrogenase kinase (PDK), which
+mediates inhibitory phosphorylation of pyruvate dehydrogenase (PDH), the
+enzyme that directs decarboxylation of pyruvate to acetyl CoA. The net
+effect is enhanced flux of glucose-derived pyruvate to lactate and
+reduced pyruvate flux via the TCA cycle (2,7,32).</p>
+<p>Given the widespread focus on the Warburg effect in cancer, it is not
+surprising that HP [1-^13^C]pyruvate has been the most widely used HP
+^13^C agent in cancer (33,34). HP [1-^13^C]-pyruvate fulfills all the
+requirements for a successful HP ^13^C imaging agent. Pyruvate has a
+long T1 (~60s at the clinically relevant field strength of 3T) and
+polarizes well (40-50%) (34). Pyruvate transport into the cell is
+mediated via the monocarboxylate transporters MCT1 and MCT4, which are
+abundantly expressed on cells and known to mediate fast intracellular
+transport (35). Importantly, [1-^13^C]pyruvate lies at the crossroads
+of glycolysis, transamination and the TCA cycle. HP [1-^13^C]pyruvate
+conversion to [1-^13^C]lactate is a measure of LDHA activity (see
+Figure 8.1). Alternatively, HP [1-^13^C]pyruvate can be metabolized
+via PDH to produce [1-^13^C]CO~2~, which is in equilibrium with
+[1-^13^C]bicarbonate. The relative proportions of [1-^13^C]lactate
+and [1-^13^C]bicarbonate provide a readout of the Warburg effect. In
+addition, HP [1-^13^C]pyruvate can be converted to [1-^13^C]alanine
+by alanine aminotransferase. Although less well-studied than pyruvate to
+lactate conversion, studies have begun to indicate that alanine
+aminotransferase couples alanine generation from pyruvate to α-KG
+production from glutamate, thereby facilitating the flow of
+glutamine-derived carbon into the TCA cycle (36).</p>
+<p>Multiple factors influence HP [1-^13^C]pyruvate metabolism. Expression
+levels of the pyruvate and lactate transporters MCT1 and MCT4 determine
+HP [1-^13^C]pyruvate delivery into the cell and, in the case of brain
+tumors, across the blood brain barrier (BBB) (29,37). Activity of LDH
+and alanine aminotransferase determine flux from HP [1-^13^C]pyruvate
+to lactate and alanine respectively (refer to Figure 8.1) (38,39). In
+addition, the steady-state pool sizes of lactate and alanine also play a
+role since the HP ^13^C pool is in equilibrium with the thermally
+polarized ^13^C pool (39). Another important consideration is the
+steady-state concentration of the co-factor for pyruvate to lactate
+conversion i.e. NADH and, therefore, the NAD^+^/NADH ratio (40).
+Mechanistic studies of HP [1-^13^C]pyruvate metabolism need to
+therefore account for all these factors. As new HP ^13^C agents are
+developed, similar aspects of transport, enzyme activity, co-factor
+dependence and steady-state metabolite concentrations need to be
+investigated. (See Chapter 6.4 for additional discussion of these
+various factors.)</p>
+<p><strong>[8.3.1.1. Monitoring tumor burden, aggressiveness and disease
+progression:]{.ul}</strong> Across tumor types, elevated [1-^13^C]pyruvate to
+lactate conversion has been shown to be capable of differentiating tumor
+from normal tissue and assessing tumor aggressiveness in preclinical
+cancer models (see summary in Table 1) (29,33).</p>
+<p>In prostate cancer, which is one of the major causes of death in men,
+patients who are identified as low-risk based on histopathological
+Gleason scoring often harbor high-grade tumors and, therefore, there is
+an urgent need to identify non-invasive methods that can provide a
+readout of tumor aggressiveness (41,42). In the transgenic
+adenocarcinoma of mouse (TRAMP) prostate cancer model, HP
+[1-^13^C]lactate production from pyruvate can differentiate between
+normal prostate and tumors graded as low- or high-grade based on
+histopathology (43). In a subsequent study with patient-derived prostate
+tissue slices assembled into perfused bioreactor systems (see Chapter 4
+for further details of perfused bioreactors), significantly higher
+conversion from HP [1-^13^C]pyruvate to lactate was observed in
+malignant tissue slices relative to benign prostate tissues (44).
+Mechanistically, higher pyruvate to lactate conversion was associated
+with enhanced expression of the transporters MCT1 and MCT4 as well as
+higher expression of LDHA.</p>
+<p>HP [1-^13^C]pyruvate is informative of aggressiveness in preclinical
+renal cell carcinoma (RCC) models (45-47). Due to increased availability
+and utilization of MRI, incidental detection of RCCs has increased (48).
+However, MRI is unable to differentiate between low grade, indolent
+RCCs, which can be managed with active surveillance, from high grade
+aggressive RCCs that require surgery (48). HP lactate production as well
+as lactate efflux discriminated between normal renal epithelial cells,
+localized RCC and metastatic RCC, thereby providing a readout of tumor
+aggressiveness (46). These results were correlated with expression
+levels of MCT4. In addition to HP pyruvate-to-lactate conversion,
+assessment of intracellular and extracellular ^13^C lactate pools via
+diffusion-weighted HP ^13^C MRS/I <em>in vivo</em> correlated with tumor LDHA
+and MCT4 expression and tumor aggressiveness (45).</p>
+<p>Pancreatic cancer is a devastating disease that is potentially curable
+by surgery if detected at an early stage (49,50). Therefore, new imaging
+biomarkers that facilitate early detection of pancreatic cancer are
+needed (50). Interestingly, analysis of HP [1-^13^C]pyruvate
+metabolism in genetically engineered mouse models of pancreatic ductal
+adenocarcinoma showed a decrease in
+[1-^13^C]alanine/[1-^13^C]lactate following progression from
+lower-grade lesions to high-grade pancreatic tumors (38). This effect
+was accompanied by an increase in steady-state lactate levels and LDH
+activity and a reduction in alanine aminotransferase activity during
+disease progression (38).</p>
+<p>Similar results were reported in a genetically engineered mouse model of
+MYC-driven hepatocellular carcinoma (51). Like pancreatic cancer,
+hepatocellular carcinoma is a leading cause of cancer-related mortality
+and differentiation of malignant tumors from benign tumors and
+non-cancerous liver cirrhosis is challenging (52). HP
+[1-^13^C]pyruvate conversion to alanine was higher in in pre-tumor
+tissues relative to normal liver and established tumors. In contrast, HP
+[1-^13^C]pyruvate conversion to lactate increased as tumors developed
+and was rapidly decreased during tumor regression (51).</p>
+<p>Breast cancer accounts for approximately a quarter of all cancer cases
+and is a leading cause of death among women. Like many other cancers,
+breast cancers reprogram their metabolism to enable tumor proliferation
+and display a pronounced Warburg effect. An early study of live breast
+cancer cells in a perfused bioreactor system showed HP
+[1-^13^C]pyruvate conversion to lactate that was mechanistically
+correlated with MCT1 expression (37). A subsequent study in a
+doxycycline-inducible MYC-driven murine breast cancer model showed
+lactate production from HP [1-^13^C]pyruvate that paralleled
+MYC-driven tumor induction or regression (53)`.</p>
+<p>HP [1-^13^C]pyruvate to lactate can monitor tumor burden in
+preclinical models of high-grade primary glioblastomas (54-56). One of
+the earliest studies of HP [1-^13^C]pyruvate was conducted in rats
+carrying orthotopic U87-MG and U251-MG tumor xenografts and showed that
+the HP lactate/pyruvate ratio could differentiate between tumor and
+normal brain (55). A subsequent study showed that tumor regions with
+necrosis or hypoxia demonstrated a smaller magnitude of increase in the
+HP lactate/pyruvate ratio relative to normal brain when compared to
+tumor regions that were not necrotic/hypoxic (54). These results suggest
+that HP [1-^13^C]pyruvate has the potential to assess intratumoral
+heterogeneity in cellularity or oxygenation. Interestingly, a recent
+study suggested that HP [1-^13^C]lactate production from pyruvate was
+not higher in tumor relative to normal brain in patient-derived
+glioblastoma models as opposed to established glioblastoma cell lines
+that have been in culture for a long time (i.e. the U87 or U251 models)
+(56). These results point to importance of patient-derived models in
+preclinical tumor imaging and have important implications for the
+application of HP [1-^13^C]pyruvate to glioblastoma patients as
+discussed in the section on clinical applications of HP ^13^C MRS/I (see
+section 8.4).</p>
+<p>Most studies of HP [1-^13^C]pyruvate have investigated conversion to
+lactate as a measure of the Warburg effect. However, as described above,
+the Warburg effect also involves concomitant down-regulation of pyruvate
+flux into the TCA cycle via PDH. Monitoring HP [1-^13^C]pyruvate
+conversion to HP [1-^13^C]bicarbonate, in addition to conversion to HP
+[1-^13^C]lactate, would enable assessment of this dual shift in
+metabolism towards glycolysis and away from the TCA cycle. In addition,
+measuring the ratio of two products i.e. the lactate/bicarbonate ratio
+provides a potentially more robust metric that is not dependent on
+substrate delivery as opposed to the ratio of product to substrate.
+However, the detection of HP [1-^13^C]bicarbonate can be challenging
+due to the low SNR of the signal. Assessment of HP [1-^13^C]pyruvate
+conversion to lactate and bicarbonate rats carrying orthotopic C6 glioma
+tumors showed that the HP lactate/bicarbonate ratio was higher in the
+tumor relative to normal contralateral brain. This study used a slightly
+higher concentration of pyruvate (125 mM as opposed to the normally used
+80 mM) to achieve sufficient SNR (57).</p>
+<p>In contrast to the high-grade primary glioblastomas and, indeed, most
+cancers, low-grade gliomas characterized by a mutation in isocitrate
+dehydrogenase 1 (IDHmut) do not display a Warburg effect (10). Glucose
+uptake and concomitant lactate production are reduced in IDHmut
+low-grade glioma cells, leading to a reduced intracellular pool of
+lactate (58). In addition, expression of MCT1, MCT4 and LDHA are reduced
+in IDHmut low-grade glioma cells, an effect linked to promoter
+hypermethylation-mediated silencing (58,59). Collectively, these effects
+lead to reduced production of HP [1-^13^C]lactate from HP
+[1-^13^C]pyruvate and, potentially, reduced ability to monitor tumor
+burden (58,60). Interestingly, a recent study suggested that lactate
+production from HP [1-^13^C]pyruvate varied among patient-derived
+IDHmut low-grade glioma models in a manner dependent on tumor
+aggressiveness (61).</p>
+<p><strong>[8.3.1.2 Monitoring tumor response to therapy and development of
+treatment resistance:]{.ul}</strong> HP [1-^13^C]pyruvate has been shown to
+provide a readout of response to therapy in several cancer types (Table</p>
+<ol class="simple">
+<li><p>(29,33,34). Treatment response is generally linked to reduced HP
+[1-^13^C]pyruvate to lactate conversion and mediated by molecular
+alterations in transporters, LDH activity or cofactor concentrations
+described earlier. In high-grade primary glioblastomas, HP
+[1-^13^C]pyruvate has been used to monitor response to standard of
+care therapy i.e. radiotherapy and chemotherapy with temozolomide
+(62,63). HP [1-^13^C]pyruvate to lactate conversion is reduced in rats
+bearing orthotopic U87 tumors treated with temozolomide (63).
+Importantly, this response is observed within 24 h of exposure to the
+chemotherapeutic agent temozolomide (TMZ), at a timepoint that precedes
+MRI-detectable reduction in tumor volume, indicating that reduced HP
+[1-^13^C]lactate production from HP [1-^13^C]pyruvate can serve as
+an early indicator of response to TMZ therapy (63). Furthermore, there
+was no alteration in HP [1-^13^C] pyruvate to lactate conversion in
+U87 tumors expressing O6-methylguanine DNA methyltransferase, an enzyme
+that confers resistance to TMZ, indicating that HP [1-^13^C]pyruvate
+can also inform on resistance to therapy (63). Mechanistically, reduced
+HP [1-^13^C]lactate production following TMZ treatment was not
+mediated by alterations in NADH concentration or LDH activity, but
+rather by reduced expression and activity of the pyruvate kinase isoform
+PKM2, a glycolytic enzyme that indirectly controls pyruvate metabolism.
+In another study, treatment of rats bearing orthotopic C6 glioma
+xenografts with radiotherapy led to a significant reduction in lactate
+production from HP [1-^13^C]pyruvate within 96 h, even as an increase
+in tumor volume was observed, indicating that HP [1-^13^C]pyruvate has
+the ability to inform on response to radiotherapy (62).</p></li>
+</ol>
+<p>HP [1-^13^C]pyruvate also provides a readout of response to molecular
+targeted therapies. As described earlier (see section 8.1), activating
+mutations in the PI3K-Akt-mTOR pathway are observed in most cancers,
+including high-grade primary glioblastomas, and often lead to activation
+of the Warburg effect and higher LDH activity (2,7,21,30). Multiple
+inhibitors of PI3K or mTOR have been identified and are in clinical
+trials against various tumor types (64). Treatment with these inhibitors
+often leads to tumor stasis rather than tumor shrinkage, thereby
+providing a rationale for the identification of non-invasive imaging
+biomarkers that can inform on tumor response to therapy (65).
+Examination of glioblastoma cells treated with the PI3K inhibitor
+LY294002 or the mTOR inhibitor everolimus pointed to a significant
+reduction in HP [1-^13^C]pyruvate conversion to lactate relative to
+untreated controls, an effect that was mechanistically linked to reduced
+LDH activity downstream of PI3K inhibition (66,67). Similar results were
+observed in orthotopic glioblastoma tumor xenografts treated with
+everolimus or the PI3K-mTOR inhibitor XL765 (68,69). Both agents induced
+a significant reduction in HP lactate production from pyruvate that
+preceded volumetric alterations.</p>
+<p>As described above (see section 8.3.1.1), most studies of HP
+[1-^13^C]pyruvate metabolism have focused on assessing pyruvate
+conversion to lactate, partly due to the relatively less SNR of HP
+[1-^13^C]bicarbonate. However, a few studies have used the HP
+lactate/bicarbonate ratio to detect tumor burden and response to therapy
+(57,70). Dichloroacetate (DCA) is a pyruvate analog which inhibits PDK,
+thereby relieving inhibitory phosphorylation of PDH and leading to
+increased PDH activity (71). DCA forces tumors to shunt pyruvate away
+from glycolysis and towards the TCA cycle. This metabolic rewiring has
+been shown to inhibit GBM growth (71). A study in rats carrying
+orthotopic C6 glioblastoma tumors showed that the HP lactate/bicarbonate
+ratio was higher in the tumor relative to normal contralateral brain
+(41,57). Treatment with DCA restored the lactate/bicarbonate ratio in
+the tumor to levels seen in normal brain, pointing to the utility of the
+HP lactate/bicarbonate ratio in assessing response to DCA in
+glioblastomas (57). Another study examined the response of C6
+glioblastomas to anti-angiogenic therapy targeting the vascular
+endothelial growth factor (VEGF) (70). In a manner similar to DCA, there
+was a rapid reduction in the tumor lactate/bicarbonate ratio to levels
+approaching normal contralateral brain following a single dose of
+anti-VEGF antibody, indicating that HP [1-^13^C]pyruvate conversion to
+lactate and bicarbonate can provide a readout of anti-angiogenic
+therapy.</p>
+<p>In the TRAMP model of prostate cancer, HP [1-^13^C]pyruvate was able
+to inform on tumor response to radiotherapy (72). Serial imaging showed
+significant reductions in HP pyruvate to lactate conversion in tumors
+responding to radiotherapy, with concomitant significant increases in HP
+pyruvate to alanine conversion. Furthermore, alterations in HP lactate
+production were dependent on radiation dose with higher radiation doses
+producing larger reductions in HP lactate production relative to lower
+radiation doses. These effects were associated with corresponding
+decreases in LDH activity (72). Similar results were observed in another
+study focused on squamous cell carcinoma and colon cancer tumors <em>in
+vivo</em>, wherein reduced HP [1-^13^C]pyruvate conversion to lactate was
+observed following radiotherapy, an effect also associated with reduced
+LDH activity (73). Interestingly, the lactate/pyruvate ratio was
+significantly lower following irradiation of colon tumor xenografts,
+which were relatively less hypoxic, while the reduction in the
+lactate/pyruvate ratio was relatively modest in the more hypoxic
+squamous cell carcinoma tumors (73). These results again serve to
+highlight the potential of HP ^13^C MRS/I in assessing tumor variability
+in hypoxia.</p>
+<p>As evidence accumulates for the utility of HP [1-^13^C]pyruvate in
+monitoring treatment response, it becomes important to define those
+applications where HP ^13^C MRS/I can yield information that cannot be
+obtained by other metabolic imaging modalities, particularly FDG PET
+imaging, which has been widely used in several tumor types to measure
+early response to therapy. In this context, a recent study compared the
+ability of FDG-PET and HP [1-^13^C]pyruvate to detect altered
+glycolytic metabolism accompanying cell death induced by a TRAIL agonist
+(MEDI3039) in colorectal (Colo205) and breast adenocarcinoma
+(MDA-MB-231) xenografts in mice (74). HP [1-^13^C]pyruvate conversion
+to lactate was reduced following treatment and preceded alterations in
+tumor volume. Mechanistically, this effect was associated with reduced
+glucose flux to lactate, presumably resulting in reduced steady-state
+lactate concentration. In contrast, FDG uptake and phosphorylation were
+not altered following treatment, suggesting that HP [1-^13^C]pyruvate
+metabolism is a more sensitive marker of early treatment-induced
+alterations in glycolytic flux than FDG PET imaging (74).</p>
+<p><strong>8.3.2 Interrogating glycolysis and the TCA cycle using HP
+[2-^13^C]pyruvate</strong></p>
+<p>HP [2-^13^C]pyruvate differs from [1-^13^C]pyruvate in the
+positional labeling of the carbon backbone of pyruvate. HP
+[2-^13^C]pyruvate has the advantage of simultaneously providing a
+measure of glycolytic and TCA cycle flux. Via glycolysis,
+[2-^13^C]pyruvate is converted to [2-^13^C]lactate. When
+[2-^13^C]pyruvate is shunted via the TCA cycle, the ^13^C label is
+observed in [5-^13^C]glutamate and, in some cases, [1‐^13^C]citrate
+and [5-^13^C]α‐KG (75-77). The rate-limiting enzyme in this pathway is
+PDH and, therefore, HP [2-^13^C]pyruvate provides a readout of PDH
+activity (77,78). In addition, conversion of pyruvate-derived acetyl CoA
+to [1‐^13^C]acetylcarnitine and [1‐^13^C]acetoacetate also provides
+a measure of the activity of enzymes involved in fatty acid and ketone
+body metabolism. HP [2-^13^C]-pyruvate, therefore, has the ability to
+non-invasively report on several metabolic reactions i.e. the Warburg
+effect, anaplerotic TCA cycle flux and fatty acid and ketone body
+metabolism. The labeling at the C2 position has slightly increased
+proton coupling so HP [2-^13^C]pyruvate has a shorter T1 (~40-50 s at
+3T) than [1-^13^C]pyruvate (34). Nevertheless, the T1 and percent
+polarization (~25%) are sufficient to enable clinical translation as
+detailed in section 8.4.</p>
+<p>HP [2-^13^C]pyruvate has been used to monitor the response of
+glioblastoma tumors <em>in vivo</em> to DCA (76). Following injection of HP
+[2-^13^C]pyruvate into vehicle-treated rats bearing orthotopic C6
+glioblastoma xenografts, the HP lactate/total carbon ratio was
+significantly higher in tumor relative to normal contralateral brain,
+the HP glutamate/total carbon was significantly lower in tumor versus
+normal brain and the HP lactate/glutamate ratio was higher in tumor
+relative to normal brain. These results are in line with the higher
+glycolysis and lower TCA cycle flux expected in tumors as compared to
+normal contralateral brain. Treatment with DCA induced a shift in this
+metabolic phenotype and resulted in a reduction in HP lactate/glutamate
+in tumor vs. normal contralateral brain. This reduction was comparable
+to the decrease in HP lactate/bicarbonate seen in studies with HP
+[1-^13^C]pyruvate (76).</p>
+<p>IDHmut low-grade glioma differ from high-grade glioblastomas in the lack
+of a pronounced Warburg effect (10,79). However, the reprogramming of
+oxidative glucose metabolism via the TCA cycle follows the same pattern
+observed in glioblastomas and, indeed, most cancers (77,79).
+^13^C-isotope labeling using [1-^13^C]glucose combined with thermally
+polarized ^13^C MRS showed reduced flux to glutamate in IDHmut cells
+relative to wild-type IDH cells, an effect associated with
+down-regulation of PDH activity. Importantly, HP [5-^13^C]glutamate
+production from HP [2-^13^C]pyruvate was reduced in IDHmut cells
+relative to wild-type IDH cells, providing a non-invasive method of
+monitoring IDHmut-induced reprogramming of PDH activity (77,79).
+Treatment with DCA upregulated PDH activity and inhibited tumorigenicity
+of IDHmut cells, identifying PDH as a therapeutic target for IDHmut
+gliomas. Concomitantly HP [5-^13^C]glutamate production from HP
+[2-^13^C]pyruvate was elevated, pointing to the use of HP
+[2-^13^C]pyruvate as a non-invasive imaging probe of response to DCA,
+and potentially emerging PDH-targeting therapeutics, in IDHmut low-grade
+gliomas (29,77,79).</p>
+<p><strong>8.3.3 Interrogating glutamine metabolism using HP [5-^13^C]glutamine
+or [1-^13^C]glutamate</strong></p>
+<p>Glutamine is the second principal nutrient for mammalian cells and is a
+carbon and nitrogen donor for <em>de novo</em> biosynthesis of critical
+nitrogen-containing compounds including nucleotides and amino acids
+(2,3,5,7). Many tumor types display heightened glutaminolysis i.e.
+increased cellular uptake of glutamine and subsequent conversion to
+glutamate (see Figure 8.1). Glutamate in turn is in equilibrium with
+α-KG, which functions as an anaplerotic substrate in the TCA cycle. α-KG
+also plays a key role in epigenetic modulation of gene expression via
+its role as a cofactor for various dioxygenases including the Jmjc
+domain histone demethylases and the TET family of 5-methylcytosine
+hydroxylases (3,9,11).</p>
+<p>It has long been recognized that tumors have a high demand for glutamine
+and several oncogenic signaling pathways including MYC, TP53 and the
+PI3K-Akt-mTOR pathway have been shown to modulate glutamine metabolism
+(Figure 8.1). Glutamine uptake and metabolism are generally elevated in
+tumors relative to corresponding normal tissue (2,3,5,7). ^18^F-labeled
+glutamine tracers that report on heightened tumor glutamine uptake have
+been developed and have shown promise in preclinical and early clinical
+studies, including in glioblastomas where the lack of
+background-to-tumor contrast limits the utility of FDG-PET imaging (80).
+HP ^13^C agents that track glutamine metabolism have the potential to
+provide complementary information on downstream glutamine metabolism.</p>
+<p>Studies have examined the use of HP [5-^13^C]glutamine for probing
+glutamine metabolism in cancer (81-83). The major limitation of HP
+[5-^13^C]glutamine is spontaneous degradation of the HP preparation to
+[5-^13^C]glutamate, the expected product. Nevertheless, metabolism of
+HP [5-^13^C]glutamine to [5-^13^C]glutamate was higher in hepatoma
+cells relative to normal liver and reduced by chemotherapy with
+gemcitabine and etoposide (83). Another study also reported
+[5-^13^C]glutamate production from HP [5-^13^C]glutamine in liver
+tumor-bearing animals <em>in vivo</em> (81). [1-^13^C]glutamate has also been
+polarized and provides a potential alternate approach to interrogating
+glutamate metabolism to α-KG, which is central to TCA cycle flux and
+anaplerosis. Metabolism of HP [1-^13^C]glutamate to α-KG was observed
+in hepatoma cells and <em>in vivo</em> in a murine lymphoma model (84).
+Coadministration of sodium pyruvate increased HP [1-^13^C]α-KG levels,
+suggesting that intracellular pyruvate concentration is a limiting
+factor for HP [1-^13^C]glutamate metabolism (84). Further studies with
+HP [5-^13^C]glutamine and HP [1-^13^C]glutamate are needed to fully
+assess their utility for tumor imaging.</p>
+<p><strong>8.3.4 Interrogating oncometabolism using HP [1-^13^C]α-KG or
+[1-^13^C]glutamine</strong></p>
+<p>The discovery of mutations in metabolic enzymes such as IDH underscored
+the critical role of metabolism in tumorigenesis and altered glioma
+classification. According to the latest WHO 2016 classification, tumors
+with IDHmut are now routinely classified as low-grade gliomas (85).
+IDHmut results in the production of a novel metabolite, 2-HG, which
+accumulates to concentrations of ~5-30 mM in low-grade gliomas (8).
+Several studies now indicate that 2-HG competitively inhibits the
+activity of a variety of α-KG-dependent dioxygenases, leading to
+epigenetic remodeling of the tumor genome (9-11,86). Due to its critical
+role, IDHmut is also a therapeutic target and IDHmut inhibitors are in
+clinical trials for gliomas (87-89). The ability to monitor α-KG
+metabolism to 2-HG via HP ^13^C metabolic imaging would, therefore,
+provide a non-invasive readout of tumor IDH status, thereby enabling
+tumor diagnosis and treatment response monitoring.</p>
+<p>HP [1-^13^C]α-KG metabolism to [1-^13^C]2-HG has been visualized in
+genetically-engineered IDHmut glioma models (90). HP [1-^13^C]-α-KG
+has a T1 of ~45 s at 3T with 16% polarization. Following injection into
+cell lysates, metabolism to 2-HG was observed in lysates from IDHmut
+cells, but not wild-type IDH cells. Examination of rats bearing
+orthotopic tumor xenografts indicated that HP [1-^13^C]α-KG was
+detected in the tumor and blood of both IDHmut and wild-type IDH tumors
+while HP [1-^13^C]2-HG was only detected in IDHmut tumors, pointing to
+the potential of HP [1-^13^C]α-KG for detection of IDHmut status (90).
+In a separate study, HP [1-^13^C]α-KG metabolism to
+[1-^13^C]glutamate was shown to be reduced in IDHmut tumor relative to
+wild-type IDH tumors, an effect that was associated with reduced
+expression and activity of BCAT1, GOT1 and GDH, which are key enzymes
+involved in the interconversion of α-KG to glutamate (refer to Figure
+8.1) (91).</p>
+<p>HP [1-^13^C]glutamine metabolism to 2-HG has been examined in
+chondrosarcoma cells as well as tumors that express IDHmut (92). HP
+[1-^13^C]glutamine has a T1 of ~30 s with minimal degradation to
+glutamate. The chemical shift separation between [1-^13^C]glutamine
+(174.8 pm) and [1-^13^C]glutamate (175.5 ppm) makes it difficult to
+resolve these two species <em>in vivo</em> and, therefore, conversion to HP
+glutamate cannot be measured. Further studies are needed to determine
+the ability of HP [1-^13^C]-glutamine to monitor 2-HG production in
+IDHmut low-grade glioma models.</p>
+<p><strong>8.4 Imaging oncogenic reprogramming of metabolism using HP ^13^C MRS/I
+in the</strong> <strong>clinic</strong></p>
+<p>In line with its widespread use in preclinical studies, HP
+[1-^13^C]pyruvate was the first HP ^13^C agent to transition to the
+clinic (33). Clinical trials with HP [1-^13^C]-pyruvate are currently
+underway in multiple tumor types in institutions across the globe (33).
+Given the poor utility of FDG-PET imaging for prostate and brain tumors,
+it is not surprising that the first clinical studies of HP
+[1-^13^C]pyruvate were conducted in these patient populations. The
+first-in-man study of HP [1-^13^C]pyruvate was carried out in prostate
+cancer patients at the University of California San Francisco (UCSF)
+(93). This landmark study established the safety and feasibility of
+using HP [1-^13^C]pyruvate for imaging tumor metabolism and thereby
+monitoring tumor burden. 31 patients with biopsy-proven prostate cancer
+were examined. Dose-limiting toxicities were absent at the maximum dose
+(~230 mM pyruvate) with the best SNR for HP [1-^13^C]pyruvate.
+Importantly, this study showed that the lactate to pyruvate ratio was
+elevated in biopsy-proven tumor regions relative to normal prostate and
+blood, thereby establishing the clinical utility of HP
+[1-^13^C]pyruvate in prostate cancer (93). A subsequent study examined
+the ability of HP [1-^13^C]pyruvate to monitor response to therapy in
+prostate cancer (94). HP [1-^13^C]pyruvate metabolism was examined in
+a patient with extensive high-grade prostate cancer before and 6 weeks
+after initiation of androgen ablation and chemotherapy. HP
+[1-^13^C]pyruvate to lactate conversion was elevated in tumor relative
+to adjacent normal prostate before treatment. Following 6 weeks of
+therapy, HP lactate production was almost completely abrogated while
+alterations in T2-weighted MRI were minimal. These results highlight the
+ability of HP [1-^13^C]pyruvate to provide an early readout of
+treatment response at a timepoint before changes can be detected using
+standard imaging criteria (94). Studies also suggest that HP lactate
+production from [1-^13^C]pyruvate in prostate cancer patients
+increases with Gleason grade in a manner that parallels increased MCT1
+expression (95). A pilot clinical study also examined the utility of HP
+[1-^13^C]pyruvate in assessing prostate cancer metastases (96).
+Elevated HP [1-^13^C]pyruvate conversion to lactate was observed in
+metastatic tumors in the bone and liver, an effect associated with
+elevated expression of <em>LDHA</em> and reduced expression of the PDH isoform
+<em>PDHA1</em>. Importantly, reduced pyruvate to lactate conversion was noted 2
+months after initiation of taxane plus platinum chemotherapy (96).</p>
+<p>The first study in brain tumors was carried out in 8 patients at UCSF
+with a confirmed diagnosis of glioma (4 high-grade primary glioblastoma,
+3 low-grade oligodendroglioma and 1 low-grade astrocytoma) (97). As with
+prostate cancer patients, dose-limiting toxicities were not observed in
+any of the patients. Tumor regions showed the presence of lactate while
+both lactate and bicarbonate were observed in normal contralateral
+brain, pointing to sufficient delivery of HP [1-^13^C]pyruvate across
+the BBB. However, unlike prostate cancer, the lactate/pyruvate ratio in
+tumor voxels were similar to, or in some cases lower than, surrounding
+normal contralateral brain. Nevertheless, the bicarbonate to lactate
+ratio was able to differentiate tumor from normal brain (97). These
+results were confirmed by another study that also included patients with
+metastatic brain tumors (98). Lactate production from HP
+[1-^13^C]pyruvate was similar between tumor and contralateral brain in
+primary brain tumor patients. The observation of high pyruvate to
+lactate conversion in normal human brain in these early clinical studies
+is in contrast to the body of data available from preclinical studies
+(refer to section 8.3.1) that showed very little lactate production in
+the normal rodent brain. High background lactate production in the
+normal human brain has also been confirmed in healthy human volunteers
+(99,100). These clinical results highlight the need to build a better
+understanding of glycolytic metabolism and its regulation in the human
+brain. In the context of brain tumors, it is important to note that a
+recent study showed that patient-derived glioblastoma tumors display
+pyruvate to lactate conversion that is comparable to normal brain (56).
+Further studies are needed to fully determine the utility of the HP
+bicarbonate/lactate ratio in monitoring tumor burden and response to
+therapy in glioma patients.</p>
+<p>A recent study assessed the potential utility of HP [1-^13^C]pyruvate
+in imaging metabolism in breast cancer patients (101). HP lactate
+production from pyruvate was observed in patients with triple negative
+breast cancer or higher-grade (grade 3) tumors. In contrast, there was
+no detectable pyruvate to lactate conversion in patients with
+lower-grade (grade 2) tumors. This study pointed to the presence of
+occurrence of considerable intertumoral and intratumoral heterogeneity
+in the observed HP [1-^13^C]pyruvate and [1-^13^C]lactate signals.
+Mechanistically, conversion to lactate was correlated with MCT1
+expression and hypoxia (101).</p>
+<p>A pilot clinical study in 2 patients recently tested the utility of HP
+[1-^13^C]pyruvate in pancreatic cancer. In both patients, production
+of HP [1-^13^C]alanine and HP [1-^13^C]lactate was observed in the
+tumor and served to differentiate tumor from surrounding normal tissues
+(102). Interestingly, unlike preclinical studies in
+genetically-engineered models of pancreatic ductal adenocarcinoma which
+indicated a decrease in the alanine/lactate signal ratio with disease
+progression (38), both alanine and lactate were higher in this clinical
+study relative to normal pancreas (102). While further studies are
+needed to fully determine the utility of HP pyruvate in imaging
+pancreatic cancer patients, these results point to the promising
+potential of HP [1-^13^C]pyruvate in discriminating pancreatic tumor
+from normal pancreas.</p>
+<p>Assessment of HP [1-^13^C]pyruvate metabolism in a pilot study in RCC
+patients showed heterogenous lactate production across the tumor region
+(103). Importantly, HP lactate production was correlated with <em>ex vivo</em>
+liquid chromatography-mass spectrometric analysis of lactate levels,
+which also showed heterogeneity across the tumor. Further studies are
+warranted to assess whether this metabolic heterogeneity reflects
+underlying genomic heterogeneity in RCC.</p>
+<p>Clinical translation of HP [2-^13^C]pyruvate is currently underway
+(104,105). A study in 4 healthy human volunteers showed dynamic
+production of [2-^13^C]lactate and [5-^13^C]glutamate from HP
+[2-^13^C]pyruvate (105). Based on the preclinical studies in IDHmut
+low-grade glioma models (see section 8.3.2) (77,79), clinical studies on
+IDHmut low-grade glioma patients have been initiated (104). Initial
+results in 2 patients indicate that tumor lesions display a reduced
+[5-^13^C] glutamate/[2-^13^C]pyruvate ratio and an elevated
+[5-^13^C]glutamate/[5-^13^C]glutamine ratio relative to normal
+brain, pointing to the promising potential of HP [2-^13^C]pyruvate in
+glioma patients (104).</p>
+<p><strong>8.5 Conclusions</strong></p>
+<p>Oncogenic signaling pathways lead to metabolic reprogramming, which is
+now recognized as a fundamental hallmark of cancer. Defining alterations
+in tumor metabolism provides a framework for the identification of
+non-invasive metabolic imaging biomarkers and therapeutic targets. HP
+^13^C MRS/I is a non-invasive metabolic imaging modality that offers the
+ability to visualize metabolic fluxes in real time. As summarized in
+Table 1, several HP ^13^C agents have been identified that allow
+interrogation of various aspects of oncogenic metabolic reprogramming in
+preclinical studies. Further studies are needed to integrate these HP
+^13^C agents into clinical practice and establish their utility for
+tumor diagnosis, prognosis, patient stratification and treatment
+response monitoring.</p>
+<p><strong>Acknowledgements</strong></p>
+<p>This work was supported by the following funding sources: NIH
+R01CA239288 and Department of Defense W81XWH201055315.</p>
+<p><strong>Table 1. Summary of key insights gained from preclinical and clinical
+studies with the various HP ^13^C MRS/I agents described in this
+chapter.</strong></p>
+<p><img alt="" src="cancer/media/image2.tiff" />{width=”5.781944444444444in” height=”9.0in”}
+<img alt="" src="cancer/media/image3.emf" />{width=”0.0in” height=”0.0in”}</p>
+<p><strong>References</strong></p>
+<p>1. Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation.
+Cell 2011;144(5):646-674.2. DeBerardinis RJ, Lum JJ, Hatzivassiliou G,
+Thompson CB. The biology of cancer: metabolic reprogramming fuels cell
+growth and proliferation. Cell metabolism 2008;7(1):11-20.3. Pavlova NN,
+Thompson CB. The Emerging Hallmarks of Cancer Metabolism. Cell
+metabolism 2016;23(1):27-47.4. Hirschey MD, DeBerardinis RJ, Diehl AM,
+Drew JE, Frezza C, Green MF, Jones LW, Ko YH, Le A, Lea MA, Locasale JW,
+Longo VD, Lyssiotis CA, McDonnell E, Mehrmohamadi M, Michelotti G,
+Muralidhar V, Murphy MP, Pedersen PL, Poore B, Raffaghello L, Rathmell
+JC, Sivanand S, Heiden MG, Wellen KE. Dysregulated metabolism
+contributes to oncogenesis. Seminars in cancer biology 2015.5. Hensley
+CT, Wasti AT, DeBerardinis RJ. Glutamine and cancer: cell biology,
+physiology, and clinical opportunities. The Journal of clinical
+investigation 2013;123(9):3678-3684.6. Mullen AR, DeBerardinis RJ.
+Genetically-defined metabolic reprogramming in cancer. Trends in
+endocrinology and metabolism: TEM 2012;23(11):552-559.7. DeBerardinis
+RJ, Chandel NS. Fundamentals of cancer metabolism. Sci Adv
+2016;2(5):e1600200.8. Dang L, White DW, Gross S, Bennett BD, Bittinger
+MA, Driggers EM, Fantin VR, Jang HG, Jin S, Keenan MC, Marks KM, Prins
+RM, Ward PS, Yen KE, Liau LM, Rabinowitz JD, Cantley LC, Thompson CB,
+Vander Heiden MG, Su SM. Cancer-associated IDH1 mutations produce
+2-hydroxyglutarate. Nature 2009;462(7274):739-744.9. Turcan S, Rohle D,
+Goenka A, Walsh LA, Fang F, Yilmaz E, Campos C, Fabius AW, Lu C, Ward
+PS, Thompson CB, Kaufman A, Guryanova O, Levine R, Heguy A, Viale A,
+Morris LG, Huse JT, Mellinghoff IK, Chan TA. IDH1 mutation is sufficient
+to establish the glioma hypermethylator phenotype. Nature
+2012;483(7390):479-483.10. Viswanath P, Chaumeil MM, Ronen SM. Molecular
+Imaging of Metabolic Reprograming in Mutant IDH Cells. Frontiers in
+oncology 2016;6:60.11. Lu C, Ward PS, Kapoor GS, Rohle D, Turcan S,
+Abdel-Wahab O, Edwards CR, Khanin R, Figueroa ME, Melnick A, Wellen KE,
+O’Rourke DM, Berger SL, Chan TA, Levine RL, Mellinghoff IK, Thompson
+CB. IDH mutation impairs histone demethylation and results in a block to
+cell differentiation. Nature 2012;483(7390):474-478.12. O’Connor JP,
+Aboagye EO, Adams JE, Aerts HJ, Barrington SF, Beer AJ, Boellaard R,
+Bohndiek SE, Brady M, Brown G, Buckley DL, Chenevert TL, Clarke LP,
+Collette S, Cook GJ, deSouza NM, Dickson JC, Dive C, Evelhoch JL,
+Faivre-Finn C, Gallagher FA, Gilbert FJ, Gillies RJ, Goh V, Griffiths
+JR, Groves AM, Halligan S, Harris AL, Hawkes DJ, Hoekstra OS, Huang EP,
+Hutton BF, Jackson EF, Jayson GC, Jones A, Koh DM, Lacombe D, Lambin P,
+Lassau N, Leach MO, Lee TY, Leen EL, Lewis JS, Liu Y, Lythgoe MF,
+Manoharan P, Maxwell RJ, Miles KA, Morgan B, Morris S, Ng T, Padhani AR,
+Parker GJ, Partridge M, Pathak AP, Peet AC, Punwani S, Reynolds AR,
+Robinson SP, Shankar LK, Sharma RA, Soloviev D, Stroobants S, Sullivan
+DC, Taylor SA, Tofts PS, Tozer GM, van Herk M, Walker-Samuel S, Wason J,
+Williams KJ, Workman P, Yankeelov TE, Brindle KM, McShane LM, Jackson A,
+Waterton JC. Imaging biomarker roadmap for cancer studies. Nat Rev Clin
+Oncol 2017;14(3):169-186.13. Ellingson BM, Bendszus M, Boxerman J,
+Barboriak D, Erickson BJ, Smits M, Nelson SJ, Gerstner E, Alexander B,
+Goldmacher G, Wick W, Vogelbaum M, Weller M, Galanis E, Kalpathy-Cramer
+J, Shankar L, Jacobs P, Pope WB, Yang D, Chung C, Knopp MV, Cha S, van
+den Bent MJ, Chang S, Yung WK, Cloughesy TF, Wen PY, Gilbert MR.
+Consensus recommendations for a standardized Brain Tumor Imaging
+Protocol in clinical trials. Neuro-oncology 2015;17(9):1188-1198.14.
+Weissleder R, Pittet MJ. Imaging in the era of molecular oncology.
+Nature 2008;452:580.15. Schwartz LH, Litière S, de Vries E, Ford R,
+Gwyther S, Mandrekar S, Shankar L, Bogaerts J, Chen A, Dancey J, Hayes
+W, Hodi FS, Hoekstra OS, Huang EP, Lin N, Liu Y, Therasse P, Wolchok JD,
+Seymour L. RECIST 1.1-Update and clarification: From the RECIST
+committee. European journal of cancer (Oxford, England : 1990)
+2016;62:132-137.16. Brindle K. New approaches for imaging tumour
+responses to treatment. Nature reviews Cancer 2008;8(2):94-107.17. Shin
+SH, Bode AM, Dong Z. Precision medicine: the foundation of future cancer
+therapeutics. npj Precision Oncology 2017;1(1):12.18. Deng X, Nakamura
+Y. Cancer Precision Medicine: From Cancer Screening to Drug Selection
+and Personalized Immunotherapy. Trends Pharmacol Sci
+2017;38(1):15-24.19. Oellerich M, Schütz E, Beck J, Walson PD.
+Circulating Cell-Free DNA-Diagnostic and Prognostic Applications in
+Personalized Cancer Therapy. Ther Drug Monit 2019;41(2):115-120.20.
+Miller AM, Shah RH, Pentsova EI, Pourmaleki M, Briggs S, Distefano N,
+Zheng Y, Skakodub A, Mehta SA, Campos C, Hsieh WY, Selcuklu SD, Ling L,
+Meng F, Jing X, Samoila A, Bale TA, Tsui DWY, Grommes C, Viale A,
+Souweidane MM, Tabar V, Brennan CW, Reiner AS, Rosenblum M, Panageas KS,
+DeAngelis LM, Young RJ, Berger MF, Mellinghoff IK. Tracking tumour
+evolution in glioma through liquid biopsies of cerebrospinal fluid.
+Nature 2019;565(7741):654-658.21. Vander Heiden MG, Cantley LC, Thompson
+CB. Understanding the Warburg effect: the metabolic requirements of cell
+proliferation. Science 2009;324(5930):1029-1033.22. Zhu A, Lee D, Shim
+H. Metabolic PET Imaging in Cancer Detection and Therapy Response. Semin
+Oncol 2011;38(1):55-69.23. Fletcher JW, Djulbegovic B, Soares HP, Siegel
+BA, Lowe VJ, Lyman GH, Coleman RE, Wahl R, Paschold JC, Avril N, Einhorn
+LH, Suh WW, Samson D, Delbeke D, Gorman M, Shields AF. Recommendations
+on the use of 18F-FDG PET in oncology. Journal of nuclear medicine :
+official publication, Society of Nuclear Medicine 2008;49(3):480-508.24.
+Gillies RJ, Morse DL. In vivo magnetic resonance spectroscopy in cancer.
+Annual review of biomedical engineering 2005;7:287-326.25. Glunde K,
+Bhujwalla ZM. Metabolic Tumor Imaging Using Magnetic Resonance
+Spectroscopy. Seminars in Oncology 2011;38(1):26-41.26. Rodrigues TB,
+Cerdán S. 13C MRS: An outstanding tool for metabolic studies. Concepts
+in Magnetic Resonance Part A 2005;27A(1):1-16.27. Rothman DL, De Feyter
+HM, de Graaf RA, Mason GF, Behar KL. (13)C MRS studies of
+neuroenergetics and neurotransmitter cycling in humans. NMR in
+biomedicine 2011;24(8):943-957.28. Lumata L, Yang C, Ragavan M,
+Carpenter N, DeBerardinis RJ, Merritt ME. Hyperpolarized (13)C Magnetic
+Resonance and Its Use in Metabolic Assessment of Cultured Cells and
+Perfused Organs. Methods Enzymol 2015;561:73-106.29. Viswanath P, Li Y,
+Ronen SM. C-13 Hyperpolarized MR Spectroscopy for Metabolic Imaging of
+Brain Tumors. In: Pope WB, editor. Glioma Imaging: Physiologic,
+Metabolic, and Molecular Approaches. Cham: Springer International
+Publishing; 2020. p 191-209.30. Lunt SY, Vander Heiden MG. Aerobic
+glycolysis: meeting the metabolic requirements of cell proliferation.
+Annual review of cell and developmental biology 2011;27:441-464.31. de
+la Cruz-López KG, Castro-Muñoz LJ, Reyes-Hernández DO, García-Carrancá
+A, Manzo-Merino J. Lactate in the Regulation of Tumor Microenvironment
+and Therapeutic Approaches. Frontiers in oncology 2019;9:1143.32.
+Semenza GL. HIF-1 mediates metabolic responses to intratumoral hypoxia
+and oncogenic mutations. The Journal of clinical investigation
+2013;123(9):3664-3671.33. Kurhanewicz J, Vigneron DB, Ardenkjaer-Larsen
+JH, Bankson JA, Brindle K, Cunningham CH, Gallagher FA, Keshari KR,
+Kjaer A, Laustsen C, Mankoff DA, Merritt ME, Nelson SJ, Pauly JM, Lee P,
+Ronen S, Tyler DJ, Rajan SS, Spielman DM, Wald L, Zhang X, Malloy CR,
+Rizi R. Hyperpolarized (13)C MRI: Path to Clinical Translation in
+Oncology. Neoplasia (New York, NY) 2019;21(1):1-16.34. Wang ZJ, Ohliger
+MA, Larson PEZ, Gordon JW, Bok RA, Slater J, Villanueva-Meyer JE, Hess
+CP, Kurhanewicz J, Vigneron DB. Hyperpolarized (13)C MRI: State of the
+Art and Future Directions. Radiology 2019;291(2):273-284.35. Halestrap
+AP. The monocarboxylate transporter family–Structure and functional
+characterization. IUBMB life 2012;64(1):1-9.36. Smith B, Schafer XL,
+Ambeskovic A, Spencer CM, Land H, Munger J. Addiction to Coupling of the
+Warburg Effect with Glutamine Catabolism in Cancer Cells. Cell reports
+2016;17(3):821-836.37. Harris T, Eliyahu G, Frydman L, Degani H.
+Kinetics of hyperpolarized 13C1-pyruvate transport and metabolism in
+living human breast cancer cells. Proceedings of the National Academy of
+Sciences of the United States of America 2009;106(43):18131-18136.38.
+Serrao EM, Kettunen MI, Rodrigues TB, Dzien P, Wright AJ, Gopinathan A,
+Gallagher FA, Lewis DY, Frese KK, Almeida J, Howat WJ, Tuveson DA,
+Brindle KM. MRI with hyperpolarised [1-13C]pyruvate detects advanced
+pancreatic preneoplasia prior to invasive disease in a mouse model. Gut
+2016;65(3):465-475.39. Witney TH, Kettunen MI, Brindle KM. Kinetic
+modeling of hyperpolarized 13C label exchange between pyruvate and
+lactate in tumor cells. The Journal of biological chemistry
+2011;286(28):24572-24580.40. Day SE, Kettunen MI, Gallagher FA, Hu DE,
+Lerche M, Wolber J, Golman K, Ardenkjaer-Larsen JH, Brindle KM.
+Detecting tumor response to treatment using hyperpolarized 13C magnetic
+resonance imaging and spectroscopy. Nat Med 2007;13(11):1382-1387.41.
+Welch HG, Black WC. Overdiagnosis in Cancer. JNCI: Journal of the
+National Cancer Institute 2010;102(9):605-613.42. Cooperberg MR.
+Long-term active surveillance for prostate cancer: answers and
+questions. J Clin Oncol 2015;33(3):238-240.43. Albers MJ, Bok R, Chen
+AP, Cunningham CH, Zierhut ML, Zhang VY, Kohler SJ, Tropp J, Hurd RE,
+Yen YF, Nelson SJ, Vigneron DB, Kurhanewicz J. Hyperpolarized 13C
+lactate, pyruvate, and alanine: noninvasive biomarkers for prostate
+cancer detection and grading. Cancer research 2008;68(20):8607-8615.44.
+Keshari KR, Sriram R, Van Criekinge M, Wilson DM, Wang ZJ, Vigneron DB,
+Peehl DM, Kurhanewicz J. Metabolic reprogramming and validation of
+hyperpolarized 13C lactate as a prostate cancer biomarker using a human
+prostate tissue slice culture bioreactor. The Prostate
+2013;73(11):1171-1181.45. Sriram R, Gordon J, Baligand C, Ahamed F,
+Delos Santos J, Qin H, Bok RA, Vigneron DB, Kurhanewicz J, Larson PEZ,
+Wang ZJ. Non-Invasive Assessment of Lactate Production and
+Compartmentalization in Renal Cell Carcinomas Using Hyperpolarized (13)C
+Pyruvate MRI. Cancers (Basel) 2018;10(9).46. Sriram R, Van Criekinge M,
+Hansen A, Wang ZJ, Vigneron DB, Wilson DM, Keshari KR, Kurhanewicz J.
+Real-time measurement of hyperpolarized lactate production and efflux as
+a biomarker of tumor aggressiveness in an MR compatible 3D cell culture
+bioreactor. NMR in biomedicine 2015;28(9):1141-1149.47. Sriram R, Van
+Criekinge M, DeLos Santos J, Keshari KR, Wilson DM, Peehl D, Kurhanewicz
+J, Wang ZJ. Non-invasive differentiation of benign renal tumors from
+clear cell renal cell carcinomas using clinically translatable
+hyperpolarized (13)C pyruvate magnetic resonance. Tomography
+2016;2(1):35-42.48. Hollingsworth JM, Miller DC, Daignault S, Hollenbeck
+BK. Rising incidence of small renal masses: a need to reassess treatment
+effect. Journal of the National Cancer Institute
+2006;98(18):1331-1334.49. Rawla P, Sunkara T, Gaduputi V. Epidemiology
+of Pancreatic Cancer: Global Trends, Etiology and Risk Factors. World J
+Oncol 2019;10(1):10-27.50. Canto MI, Harinck F, Hruban RH, Offerhaus GJ,
+Poley JW, Kamel I, Nio Y, Schulick RS, Bassi C, Kluijt I, Levy MJ, Chak
+A, Fockens P, Goggins M, Bruno M. International Cancer of the Pancreas
+Screening (CAPS) Consortium summit on the management of patients with
+increased risk for familial pancreatic cancer. Gut
+2013;62(3):339-347.51. Hu S, Balakrishnan A, Bok RA, Anderton B, Larson
+PE, Nelson SJ, Kurhanewicz J, Vigneron DB, Goga A. 13C-pyruvate imaging
+reveals alterations in glycolysis that precede c-Myc-induced tumor
+formation and regression. Cell metabolism 2011;14(1):131-142.52. Taouli
+B, Losada M, Holland A, Krinsky G. Magnetic resonance imaging of
+hepatocellular carcinoma. Gastroenterology 2004;127(5 Suppl
+1):S144-152.53. Shin PJ, Zhu Z, Camarda R, Bok RA, Zhou AY, Kurhanewicz
+J, Goga A, Vigneron DB. Cancer recurrence monitoring using
+hyperpolarized [1-(13)C]pyruvate metabolic imaging in murine breast
+cancer model. Magnetic resonance imaging 2017;43:105-109.54. Park I, Hu
+S, Bok R, Ozawa T, Ito M, Mukherjee J, Phillips JJ, James CD, Pieper RO,
+Ronen SM, Vigneron DB, Nelson SJ. Evaluation of heterogeneous metabolic
+profile in an orthotopic human glioblastoma xenograft model using
+compressed sensing hyperpolarized 3D 13C magnetic resonance
+spectroscopic imaging. Magn Reson Med 2013;70(1):33-39.55. Park I,
+Larson PE, Zierhut ML, Hu S, Bok R, Ozawa T, Kurhanewicz J, Vigneron DB,
+Vandenberg SR, James CD, Nelson SJ. Hyperpolarized 13C magnetic
+resonance metabolic imaging: application to brain tumors. Neuro-oncology
+2010;12(2):133-144.56. Mair R, Wright AJ, Ros S, Hu DE, Booth T, Kreis
+F, Rao J, Watts C, Brindle KM. Metabolic Imaging Detects Low Levels of
+Glycolytic Activity That Vary with Levels of c-Myc Expression in
+Patient-Derived Xenograft Models of Glioblastoma. Cancer research
+2018;78(18):5408-5418.57. Park JM, Recht LD, Josan S, Merchant M, Jang
+T, Yen YF, Hurd RE, Spielman DM, Mayer D. Metabolic response of glioma
+to dichloroacetate measured in vivo by hyperpolarized (13)C magnetic
+resonance spectroscopic imaging. Neuro-oncology 2013;15(4):433-441.58.
+Viswanath P, Najac C, Izquierdo-Garcia JL, Pankov A, Hong C, Eriksson P,
+Costello JF, Pieper RO, Ronen SM. Mutant IDH1 expression is associated
+with down-regulation of monocarboxylate transporters. Oncotarget
+2016;7(23):34942-34955.59. Chesnelong C, Chaumeil MM, Blough MD,
+Al-Najjar M, Stechishin OD, Chan JA, Pieper RO, Ronen SM, Weiss S,
+Luchman HA, Cairncross JG. Lactate dehydrogenase A silencing in IDH
+mutant gliomas. Neuro-oncology 2014;16(5):686-695.60. Chaumeil MM,
+Radoul M, Najac C, Eriksson P, Viswanath P, Blough MD, Chesnelong C,
+Luchman HA, Cairncross JG, Ronen SM. Hyperpolarized (13)C MR imaging
+detects no lactate production in mutant IDH1 gliomas: Implications for
+diagnosis and response monitoring. NeuroImage Clinical
+2016;12:180-189.61. Victor RR, Malta TM, Seki T, Lita A, Dowdy T, Celiku
+O, Cavazos-Saldana A, Li A, Liu Y, Han S, Zhang W, Song H, Davis D, Lee
+S, Trepel JB, Sabedot TS, Munasinghe J, Yang C, Herold-Mende C, Gilbert
+MR, Krishna Cherukuri M, Noushmehr H, Larion M. Metabolic Reprogramming
+Associated with Aggressiveness Occurs in the G-CIMP-High Molecular
+Subtypes of IDH1mut Lower Grade Gliomas. Neuro-oncology 2019.62. Day SE,
+Kettunen MI, Cherukuri MK, Mitchell JB, Lizak MJ, Morris HD, Matsumoto
+S, Koretsky AP, Brindle KM. Detecting response of rat C6 glioma tumors
+to radiotherapy using hyperpolarized [1- 13C]pyruvate and 13C magnetic
+resonance spectroscopic imaging. Magn Reson Med 2011;65(2):557-563.63.
+Park I, Mukherjee J, Ito M, Chaumeil MM, Jalbert LE, Gaensler K, Ronen
+SM, Nelson SJ, Pieper RO. Changes in pyruvate metabolism detected by
+magnetic resonance imaging are linked to DNA damage and serve as a
+sensor of temozolomide response in glioblastoma cells. Cancer research
+2014;74(23):7115-7124.64. Rodon J, Dienstmann R, Serra V, Tabernero J.
+Development of PI3K inhibitors: lessons learned from early clinical
+trials. Nat Rev Clin Oncol 2013;10(3):143-153.65. Courtney KD, Corcoran
+RB, Engelman JA. The PI3K pathway as drug target in human cancer. J Clin
+Oncol 2010;28(6):1075-1083.66. Venkatesh HS, Chaumeil MM, Ward CS,
+Haas-Kogan DA, James CD, Ronen SM. Reduced phosphocholine and
+hyperpolarized lactate provide magnetic resonance biomarkers of
+PI3K/Akt/mTOR inhibition in glioblastoma. Neuro-oncology
+2012;14(3):315-325.67. Ward CS, Venkatesh HS, Chaumeil MM, Brandes AH,
+Vancriekinge M, Dafni H, Sukumar S, Nelson SJ, Vigneron DB, Kurhanewicz
+J, James CD, Haas-Kogan DA, Ronen SM. Noninvasive detection of target
+modulation following phosphatidylinositol 3-kinase inhibition using
+hyperpolarized 13C magnetic resonance spectroscopy. Cancer research
+2010;70(4):1296-1305.68. Radoul M, Chaumeil MM, Eriksson P, Wang AS,
+Phillips JJ, Ronen SM. MR Studies of Glioblastoma Models Treated with
+Dual PI3K/mTOR Inhibitor and Temozolomide:Metabolic Changes Are
+Associated with Enhanced Survival. Molecular cancer therapeutics
+2016;15(5):1113-1122.69. Chaumeil MM, Ozawa T, Park I, Scott K, James
+CD, Nelson SJ, Ronen SM. Hyperpolarized 13C MR spectroscopic imaging can
+be used to monitor Everolimus treatment in vivo in an orthotopic rodent
+model of glioblastoma. Neuroimage 2012;59(1):193-201.70. Park JM,
+Spielman DM, Josan S, Jang T, Merchant M, Hurd RE, Mayer D, Recht LD.
+Hyperpolarized (13)C-lactate to (13)C-bicarbonate ratio as a biomarker
+for monitoring the acute response of anti-vascular endothelial growth
+factor (anti-VEGF) treatment. NMR in biomedicine 2016;29(5):650-659.71.
+Michelakis ED, Sutendra G, Dromparis P, Webster L, Haromy A, Niven E,
+Maguire C, Gammer T-L, Mackey JR, Fulton D, Abdulkarim B, McMurtry MS,
+Petruk KC. Metabolic Modulation of Glioblastoma with Dichloroacetate.
+Science translational medicine 2010;2(31):31ra34.72. Qin H, Zhang V, Bok
+RA, Santos RD, Cunha JA, Hsu IC, Santos Bs JD, Lee JE, Sukumar S, Larson
+PEZ, Vigneron DB, Wilson DM, Sriram R, Kurhanewicz J. Simultaneous
+Metabolic and Perfusion Imaging Using Hyperpolarized (13)C MRI Can
+Evaluate Early and Dose-Dependent Response to Radiation Therapy in a
+Prostate Cancer Mouse Model. Int J Radiat Oncol Biol Phys 2020.73. Saito
+K, Matsumoto S, Takakusagi Y, Matsuo M, Morris HD, Lizak MJ, Munasinghe
+JP, Devasahayam N, Subramanian S, Mitchell JB, Krishna MC. 13C-MR
+Spectroscopic Imaging with Hyperpolarized [1-13C]pyruvate Detects
+Early Response to Radiotherapy in SCC Tumors and HT-29 Tumors. Clinical
+cancer research : an official journal of the American Association for
+Cancer Research 2015;21(22):5073-5081.74. Hesketh RL, Wang J, Wright AJ,
+Lewis DY, Denton AE, Grenfell R, Miller JL, Bielik R, Gehrung M, Fala M,
+Ros S, Xie B, Hu DE, Brindle KM. Magnetic Resonance Imaging Is More
+Sensitive Than PET for Detecting Treatment-Induced Cell Death-Dependent
+Changes in Glycolysis. Cancer research 2019;79(14):3557-3569.75. Park
+JM, Josan S, Grafendorfer T, Yen Y-F, Hurd RE, Spielman DM, Mayer D.
+Measuring mitochondrial metabolism in rat brain in vivo using MR
+Spectroscopy of hyperpolarized [2-13C]pyruvate. NMR in biomedicine
+2013;26(10):1197-1203.76. Park JM, Josan S, Jang T, Merchant M, Watkins
+R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral chemical
+shift imaging of hyperpolarized [2-(13) c]pyruvate in a rat c6 glioma
+model. Magn Reson Med 2016;75(3):973-984.77. Izquierdo-Garcia JL,
+Viswanath P, Eriksson P, Cai L, Radoul M, Chaumeil MM, Blough M, Luchman
+HA, Weiss S, Cairncross JG, Philips JJ, Pieper RO, Ronen SM. IDH1
+mutation induces reprogramming of pyruvate metabolism. Cancer research
+2015.78. Roche TE, Hiromasa Y. Pyruvate dehydrogenase kinase regulatory
+mechanisms and inhibition in treating diabetes, heart ischemia, and
+cancer. Cellular and molecular life sciences : CMLS
+2007;64(7-8):830-849.79. Viswanath P, Ronen SM. Metabolic reprogramming
+of pyruvate dehydrogenase is essential for the proliferation of glioma
+cells expressing mutant IDH1. Molecular &amp; cellular oncology
+2016;3(2):e1077922.80. Venneti S, Dunphy MP, Zhang H, Pitter KL,
+Zanzonico P, Campos C, Carlin SD, La Rocca G, Lyashchenko S, Ploessl K,
+Rohle D, Omuro AM, Cross JR, Brennan CW, Weber WA, Holland EC,
+Mellinghoff IK, Kung HF, Lewis JS, Thompson CB. Glutamine-based PET
+imaging facilitates enhanced metabolic evaluation of gliomas in vivo.
+Science translational medicine 2015;7(274):274ra217.81. Cabella C,
+Karlsson M, Canape C, Catanzaro G, Colombo Serra S, Miragoli L, Poggi L,
+Uggeri F, Venturi L, Jensen PR, Lerche MH, Tedoldi F. In vivo and in
+vitro liver cancer metabolism observed with hyperpolarized
+[5-(13)C]glutamine. Journal of magnetic resonance (San Diego, Calif :
+1997) 2013;232:45-52.82. Canape C, Catanzaro G, Terreno E, Karlsson M,
+Lerche MH, Jensen PR. Probing treatment response of glutaminolytic
+prostate cancer cells to natural drugs with hyperpolarized [5-(13)
+C]glutamine. Magn Reson Med 2015;73(6):2296-2305.83. Gallagher FA,
+Kettunen MI, Day SE, Lerche M, Brindle KM. 13C MR spectroscopy
+measurements of glutaminase activity in human hepatocellular carcinoma
+cells using hyperpolarized 13C-labeled glutamine. Magn Reson Med
+2008;60(2):253-257.84. Gallagher FA, Kettunen MI, Day SE, Hu DE,
+Karlsson M, Gisselsson A, Lerche MH, Brindle KM. Detection of tumor
+glutamate metabolism in vivo using (13)C magnetic resonance spectroscopy
+and hyperpolarized [1-(13)C]glutamate. Magn Reson Med
+2011;66(1):18-23.85. Louis DN, Perry A, Reifenberger G, von Deimling A,
+Figarella-Branger D, Cavenee WK, Ohgaki H, Wiestler OD, Kleihues P,
+Ellison DW. The 2016 World Health Organization Classification of Tumors
+of the Central Nervous System: a summary. Acta Neuropathol
+2016;131(6):803-820.86. Flavahan WA, Drier Y, Liau BB, Gillespie SM,
+Venteicher AS, Stemmer-Rachamimov AO, Suva ML, Bernstein BE. Insulator
+dysfunction and oncogene activation in IDH mutant gliomas. Nature
+2016;529(7584):110-114.87. Dang L, Yen K, Attar EC. IDH mutations in
+cancer and progress toward development of targeted therapeutics. Annals
+of oncology : official journal of the European Society for Medical
+Oncology 2016;27(4):599-608.88. Pusch S, Krausert S, Fischer V, Balss J,
+Ott M, Schrimpf D, Capper D, Sahm F, Eisel J, Beck AC, Jugold M,
+Eichwald V, Kaulfuss S, Panknin O, Rehwinkel H, Zimmermann K, Hillig RC,
+Guenther J, Toschi L, Neuhaus R, Haegebart A, Hess-Stumpp H, Bauser M,
+Wick W, Unterberg A, Herold-Mende C, Platten M, von Deimling A.
+Pan-mutant IDH1 inhibitor BAY 1436032 for effective treatment of IDH1
+mutant astrocytoma in vivo. Acta Neuropathol 2017;133(4):629-644.89.
+Rohle D, Popovici-Muller J, Palaskas N, Turcan S, Grommes C, Campos C,
+Tsoi J, Clark O, Oldrini B, Komisopoulou E, Kunii K, Pedraza A, Schalm
+S, Silverman L, Miller A, Wang F, Yang H, Chen Y, Kernytsky A, Rosenblum
+MK, Liu W, Biller SA, Su SM, Brennan CW, Chan TA, Graeber TG, Yen KE,
+Mellinghoff IK. An inhibitor of mutant IDH1 delays growth and promotes
+differentiation of glioma cells. Science 2013;340(6132):626-630.90.
+Chaumeil MM, Larson PE, Yoshihara HA, Danforth OM, Vigneron DB, Nelson
+SJ, Pieper RO, Phillips JJ, Ronen SM. Non-invasive in vivo assessment of
+IDH1 mutational status in glioma. Nature communications 2013;4:2429.91.
+Chaumeil MM, Larson PE, Woods SM, Cai L, Eriksson P, Robinson AE, Lupo
+JM, Vigneron DB, Nelson SJ, Pieper RO, Phillips JJ, Ronen SM.
+Hyperpolarized [1-13C] glutamate: a metabolic imaging biomarker of
+IDH1 mutational status in glioma. Cancer research
+2014;74(16):4247-4257.92. Salamanca-Cardona L, Shah H, Poot AJ, Correa
+FM, Di Gialleonardo V, Lui H, Miloushev VZ, Granlund KL, Tee SS, Cross
+JR, Thompson CB, Keshari KR. In Vivo Imaging of Glutamine Metabolism to
+the Oncometabolite 2-Hydroxyglutarate in IDH1/2 Mutant Tumors. Cell
+metabolism 2017;26(6):830-841 e833.93. Nelson SJ, Kurhanewicz J,
+Vigneron DB, Larson PE, Harzstark AL, Ferrone M, van Criekinge M, Chang
+JW, Bok R, Park I, Reed G, Carvajal L, Small EJ, Munster P, Weinberg VK,
+Ardenkjaer-Larsen JH, Chen AP, Hurd RE, Odegardstuen LI, Robb FJ, Tropp
+J, Murray JA. Metabolic imaging of patients with prostate cancer using
+hyperpolarized [1-(1)(3)C]pyruvate. Science translational medicine
+2013;5(198):198ra108.94. Aggarwal R, Vigneron DB, Kurhanewicz J.
+Hyperpolarized 1-[(13)C]-Pyruvate Magnetic Resonance Imaging Detects
+an Early Metabolic Response to Androgen Ablation Therapy in Prostate
+Cancer. Eur Urol 2017;72(6):1028-1029.95. Granlund KL, Tee SS, Vargas
+HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA,
+Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb
+F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer
+Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate
+Transporter 1. Cell metabolism 2020;31(1):105-114.e103.96. Chen HY,
+Aggarwal R, Bok RA, Ohliger MA, Zhu Z, Lee P, Gordon JW, van Criekinge
+M, Carvajal L, Slater JB, Larson PEZ, Small EJ, Kurhanewicz J, Vigneron
+DB. Hyperpolarized (13)C-pyruvate MRI detects real-time metabolic flux
+in prostate cancer metastases to bone and liver: a clinical feasibility
+study. Prostate Cancer Prostatic Dis 2020;23(2):269-276.97. Park I,
+Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M,
+Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson
+SJ. Development of methods and feasibility of using hyperpolarized
+carbon-13 imaging data for evaluating brain metabolism in patient
+studies. Magn Reson Med 2018.98. Miloushev VZ, Granlund KL, Boltyanskiy
+R, Lyashchenko SK, DeAngelis LM, Mellinghoff IK, Brennan CW, Tabar V,
+Yang TJ, Holodny AI, Sosa RE, Guo YW, Chen AP, Tropp J, Robb F, Keshari
+KR. Metabolic Imaging of the Human Brain with Hyperpolarized 13C
+Pyruvate Demonstrates 13C Lactate Production in Brain Tumor Patients.
+Cancer research 2018.99. Grist JT, McLean MA, Riemer F, Schulte RF, Deen
+SS, Zaccagna F, Woitek R, Daniels CJ, Kaggie JD, Matys T, Patterson I,
+Slough R, Gill AB, Chhabra A, Eichenberger R, Laurent MC, Comment A,
+Gillard JH, Coles AJ, Tyler DJ, Wilkinson I, Basu B, Lomas DJ, Graves
+MJ, Brindle KM, Gallagher FA. Quantifying normal human brain metabolism
+using hyperpolarized [1-(13)C]pyruvate and magnetic resonance imaging.
+Neuroimage 2019;189:171-179.100. Lee CY, Soliman H, Geraghty BJ, Chen
+AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH.
+Lactate topography of the human brain using hyperpolarized (13)C-MRI.
+Neuroimage 2020;204:116202.101. Gallagher FA, Woitek R, McLean MA, Gill
+AB, Manzano Garcia R, Provenzano E, Riemer F, Kaggie J, Chhabra A,
+Ursprung S, Grist JT, Daniels CJ, Zaccagna F, Laurent MC, Locke M,
+Hilborne S, Frary A, Torheim T, Boursnell C, Schiller A, Patterson I,
+Slough R, Carmo B, Kane J, Biggs H, Harrison E, Deen SS, Patterson A,
+Lanz T, Kingsbury Z, Ross M, Basu B, Baird R, Lomas DJ, Sala E, Wason J,
+Rueda OM, Chin SF, Wilkinson IB, Graves MJ, Abraham JE, Gilbert FJ,
+Caldas C, Brindle KM. Imaging breast cancer using hyperpolarized
+carbon-13 MRI. Proceedings of the National Academy of Sciences of the
+United States of America 2020;117(4):2092-2098.102. Stødkilde-Jørgensen
+H, Laustsen C, Hansen ESS, Schulte R, Ardenkjaer-Larsen JH, Comment A,
+Frøkiaer J, Ringgaard S, Bertelsen LB, Ladekarl M, Weber B. Pilot Study
+Experiences With Hyperpolarized [1-(13) C]pyruvate MRI in Pancreatic
+Cancer Patients. Journal of magnetic resonance imaging : JMRI
+2020;51(3):961-963.103. Tran M, Latifoltojar A, Neves JB, Papoutsaki MV,
+Gong F, Comment A, Costa ASH, Glaser M, Tran-Dang MA, El Sheikh S, Piga
+W, Bainbridge A, Barnes A, Young T, Jeraj H, Awais R, Adeleke S, Holt C,
+O’Callaghan J, Twyman F, Atkinson D, Frezza C, Årstad E, Gadian D,
+Emberton M, Punwani S. First-in-human in vivo non-invasive assessment of
+intra-tumoral metabolic heterogeneity in renal cell carcinoma. BJR Case
+Rep 2019;5(3).104. Autry A, Chung B, Chen H-Y, Gordon J, Lafontaine M,
+Chang S, Villanueva-Meyer J, Larson P, Vigneron D, Li Y. CBMT-36.
+INITIAL EXPERIENCE WITH HYPERPOLARIZED [2-13C]PYRUVATE MR IMAGING IN
+PATIENTS WITH IDH-MUTANT GLIOMA. Neuro-oncology
+2019;21(Supplement_6):vi41-vi41.105. Chung BT, Chen HY, Gordon J,
+Mammoli D, Sriram R, Autry AW, Le Page LM, Chaumeil MM, Shin P, Slater
+J, Tan CT, Suszczynski C, Chang S, Li Y, Bok RA, Ronen SM, Larson PEZ,
+Kurhanewicz J, Vigneron DB. First hyperpolarized [2-(13)C]pyruvate MR
+studies of human brain metabolism. Journal of magnetic resonance (San
+Diego, Calif : 1997) 2019;309:106617.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./cancer"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Peder Larson<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
