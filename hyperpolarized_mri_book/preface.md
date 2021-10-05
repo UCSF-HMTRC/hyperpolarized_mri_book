@@ -1,21 +1,3 @@
-PREPRINT FOR EDUCATIONAL USE ONLY
- 
-# Goal
-
-Educational book on hyperpolarized metabolic 13C MRI  technology and biomedical applications
-
-Readers should be able to 
-●	Understand the concepts and techniques of dissolution dynamic nuclear polarization
-●	Understand the NMR and in vivo behavior of hyperpolarized carbon-13 agents
-●	Identify promising and potential applications of hyperpolarized carbon-13 MR
-●	Design a hyperpolarized carbon-13 MR experiment
-●	Perform a hyperpolarized carbon-13 MR experiment 
-●	Analyze and interpret hyperpolarized carbon-13 MR data 
-This is not intended to be a review of all the literature (methods/techniques/etc), but rather should be more educational in focus, supporting the scientist who is new to hyperpolarized metabolic MRI without overwhelming them.
-
-**Audience**: Scientists and Clinician-Scientists who want to work with hyperpolarized metabolic MRI methods.  Familiarity with introductory college-level physics, chemistry, and math.
-
-
 # Preface
 
 Are you ready to be hyperpolarized?  Do you have what it takes to measure rapid in vivo metabolic conversion?  In this book, you will be taken through a journey of samples being frozen at near absolute zero, irradiated with gigahertz frequency microwaves, dissolved by super-heated water, injected into a living organism, and illuminating in real-time metabolism and other biologically processes with 100,000+ times polarization enhancements in ways never possible before.
@@ -30,7 +12,7 @@ The first half of this book focuses on the more fundamental concepts required fo
 When starting out in this field, I recommend reading the first chapters in order – this provides logical transitions for the necessary physics and hardware to create HP agents, then how to acquire MR data and design experiments, and finally how to analyze data.  However, there is not too much interdependency in the chapters and so they can be read in any order. If you start with later chapters, you may need to refer to the early fundamental concept chapters, and we have tried to highlight specific sections in the text.
 
 ## Prerequisites
-This book is targeted at the level of a graduate student who has taken a course in principles of MRI and/or NMR, as this book does not cover the fundamentals of magnetic resonance which is crucial for these studies.  For MRI background, we recommend Nishimura Principles of MRI, MRI: The Basics, and MRIQUESTIONS.com.  For NMR, we recommend Bottomley and Griffiths Handbook of Magnetic Resonance Spectroscopy In Vivo: MRS Theory, Practice and Applications.
+This book is targeted at the level of a graduate student who has taken a course in principles of MRI and/or NMR, as this book does not cover the fundamentals of magnetic resonance which is crucial for these studies.  For MRI background, we recommend Nishimura Principles of MRI, MRI: The Basics, and [MRIQUESTIONS.com](https://mriquestions.com/).  For NMR, we recommend Bottomley and Griffiths Handbook of Magnetic Resonance Spectroscopy In Vivo: MRS Theory, Practice and Applications.
 
 Given the breath of topics in this field, we also expect a general background in undergraduate-level physics, math, biology, and chemistry.  This is both the challenge and opportunity of working in hyperpolarized carbon-13 magnetic resonance which is highly interdisciplinary.
 
