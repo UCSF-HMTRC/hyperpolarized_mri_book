@@ -2,6 +2,8 @@
 
 This book describes the principles and applications of hyperpolarized carbon-13 magnetic resonance imaging and spectroscopy. The first half of this book focuses on the more fundamental concepts required for a hyperpolarized carbon-13 magnetic resonance experiment, including the physics, hardware, acquisition methods, experimental methods, imaging agents, and analysis.  The final chapters describe how this technology is being used in the settings of cancer, neurology, the heart, and the liver to unveil new understandings and assessments of biology.
 
+**THIS IS A PREPRINT, PROVIDED FOR NON-COMMERCIAL USE ONLY**
+
 ## Usage
 
 ### Building the book
@@ -22,10 +24,13 @@ Please see the [Jupyter Book documentation](https://jupyterbook.org/publish/web.
 
 For GitHub and GitLab deployment specifically, the [cookiecutter-jupyter-book](https://github.com/executablebooks/cookiecutter-jupyter-book) includes templates for, and information about, optional continuous integration (CI) workflow files to help easily and automatically deploy books online with GitHub or GitLab. For example, if you chose `github` for the `include_ci` cookiecutter option, your book template was created with a GitHub actions workflow file that, once pushed to GitHub, automatically renders and pushes your book to the `gh-pages` branch of your repo and hosts it on GitHub Pages when a push or pull request is made to the main branch.
 
+
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/agentmess/hyperpolarized_mri_book/graphs/contributors).
+We welcome and recognize all contributions who contributed chapters to this book!
 
+<!--  You can see a list of current contributors in the [contributors tab](https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/graphs/contributors).
+ -->
 ## Credits
 
 This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).

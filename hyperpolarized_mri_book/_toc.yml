@@ -7,3 +7,11 @@ chapters:
 - file: preface
 - file: dDNP_physics/dDNP_physics
 - file: dDNP_hardware/dDNP_hardware
+- file: acquisition_methods/acquisition_methods
+- file: experiments_preclinical/experiments_preclinical
+- file: HP_agents/HP_agents
+- file: analysis_visualization/analysis_visualization
+- file: cancer/cancer
+- file: cardiac/cardiac
+- file: neurology/neurology
+- file: liver/liver
