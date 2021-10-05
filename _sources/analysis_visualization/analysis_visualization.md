@@ -1,14 +1,10 @@
-**7**
-
-Analysis and Visualization of Hyperpolarized ^13^C MR Data
+# Analysis and Visualization of Hyperpolarized ^13^C MR Data
 
 **James Bankson^1^, Peder Larson^2^**
 
 **^1^Department of Imaging Physics, The University of Texas MD Anderson
 Cancer Center; ^2^Department of Radiology and Biomedical Imaging,
 University of California, San Francisco**
-
-**\[NON PRINT ITEMS\]**
 
 **Abstract:** Hyperpolarized ^13^C MR studies can provide powerful
 insight into the biochemistry of metabolism *in vivo*. Unlike
