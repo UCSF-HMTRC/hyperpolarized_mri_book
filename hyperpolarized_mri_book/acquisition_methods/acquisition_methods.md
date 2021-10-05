@@ -1,7 +1,4 @@
-**Chapter 3**
-
-**HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF
-Coils**
+# HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
 
 Jeremy Gordon, PhD^1^ & Jack J. Miller, DPhil^2^
 

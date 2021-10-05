@@ -1,22 +1,5 @@
-sty/, img/,
-
-::: frontmatter
-# Contents {#contents .unnumbered}
-:::
-
-::: frontmatter
-# List of figures {#list-of-figures .unnumbered}
-:::
-
-::: frontmatter
 # Hyperpolarized MR in Cardiology {#chap:DJT}
 
-::: aug
-:::
-
-::: keywords
-:::
-:::
 
 ## Fuelling the pump: metabolism and the healthy heart
 

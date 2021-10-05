@@ -1,4 +1,4 @@
-**Neurological applications of hyperpolarized ^13^C MR**
+# Neurological applications of hyperpolarized ^13^C MR
 
 By Myriam M. Chaumeil, PhD ^1,2^
 

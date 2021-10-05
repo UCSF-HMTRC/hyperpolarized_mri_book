@@ -1,7 +1,4 @@
-**[Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy:
-From technology to biomedical applications]{.ul}**
-
-**[Chapter 11. Integration into Liver Studies]{.ul}**
+# Integration into Liver Studies
 
 Cornelius von Morze, PhD, Assistant Professor, Mallinckrodt Institute of
 Radiology, Washington University

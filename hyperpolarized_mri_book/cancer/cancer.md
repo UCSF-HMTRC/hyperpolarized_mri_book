@@ -1,6 +1,4 @@
-**Chapter 8**
-
-**Integration into Cancer Studies**
+# Integration into Cancer Studies
 
 Pavithra Viswanath\*
 

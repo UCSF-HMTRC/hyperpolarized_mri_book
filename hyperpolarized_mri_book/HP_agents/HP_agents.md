@@ -1,23 +1,11 @@
-**\[ChNum\]**
+# HP Agents and Biochemical Interactions
 
-**Chapter 6**
-
-**\[ChTitle\]**
-
-**HP Agents and Biochemical Interactions**
-
-**\[Author Name(s)\]**
-
-Hikari A. I. Yoshihara
-
-**\[Author Affiliaton(s)\]**
 
 Hikari A. I. Yoshihara, Ph.D.
 
 Laboratory for Functional and Metabolic Imaging, Institute of Physics,
 École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland
 
-**\[NON PRINT ITEMS\]**
 
 **Abstract:**
 
@@ -46,8 +34,6 @@ with illustrative examples.
 
 **Magnetic resonance**
 
-**\[Chapter Starts Here\]**\
-\[H1 Title\]
 
 6.1 Introduction
 

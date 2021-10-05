@@ -1,6 +1,4 @@
-**Chapter 4**
-
-**HP Experimental Methods: Cells and Animals**
+# HP Experimental Methods: Cells and Animals
 
 Renuka Sriram
 
