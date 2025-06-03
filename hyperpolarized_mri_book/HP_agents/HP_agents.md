@@ -23,19 +23,10 @@ interpretation of the apparent metabolism of the probes are introduced
 with illustrative examples.
 
 **Key Words:**
-
-**Dynamic nuclear polarization**
-
-**Carbon-13**
-
-**Metabolism**
-
-**Metabolic imaging**
-
-**Magnetic resonance**
+Dynamic nuclear polarization, Carbon-13, Metabolism, Metabolic imaging, Magnetic resonance
 
 
-6.1 Introduction
+# 6.1 Introduction
 
 The ability to directly and rapidly probe and image metabolism with high
 sensitivity is arguably the key feature that distinguishes
@@ -54,10 +45,7 @@ in several recent review articles (1-5). Readers seeking more detailed
 information are referred to them and the primary references cited
 therein.
 
-\[H2 Title\]
-
-6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and
-imaging
+## 6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and imaging
 
 ­Whereas conventional MRI generally detects the highly abundant water
 ^1^H signal, HP ^13^C detects only the infused agent with virtually no
@@ -75,9 +63,7 @@ the scan time to 1-2 minutes post-infusion, as polarization is lost due
 to *T*~1~ relaxation and RF excitation, while ^1^H MRI scan times often
 can be extended to increase sensitivity or resolution.
 
-\[H2 Title\]
-
-6.1.2 Ideal characteristics of an HP ^13^C agent
+## 6.1.2 Ideal characteristics of an HP ^13^C agent
 
 To provide the best sensitivity, the ideal HP ^13^C agent would have the
 highest possible polarization level and slow *T*~1~ and *T*~2~
@@ -92,9 +78,7 @@ duration and intensities of the available signals. For these reasons,
 some metabolic pathways -- and sites of labeling -- are more suitable
 than others for probing with HP ^1^^3^C agents.
 
-\[H2 Title\]
-
-6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates
+## 6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates
 
 Carbon-13 has a natural abundance of around 1.1% and a gyromagnetic
 ratio 0.2515 times ^1^H\'s, corresponding to a sensitivity 5800-fold
@@ -130,9 +114,7 @@ dispersion of ^13^C, in most cases the resonant frequency of the labeled
 site is sufficiently changed by metabolism and can be easily
 distinguished.
 
-\[H1 Title\]
-
-6.2 Overview of biological HP agents
+# 6.2 Overview of biological HP agents
 
 Because of the requirement for slowly-relaxing ^13^C spin labels,
 hyperpolarized methods are only applicable to a subset of the
@@ -147,9 +129,7 @@ sufficiently-high flux and appropriate substrates. This section
 summarizes the HP ^13^C agents used in pre-clinical applications,
 grouped according to the metabolic processes they probe.
 
-\[H2 Title\]
-
-6.2.1 \[1-^13^C\]pyruvate
+## 6.2.1 [1-^13^C]pyruvate
 
 \[1-^13^C\]pyruvate is the archetypal HP ^13^C agent. With a host of
 applications, it has excellent performance, thanks to its high
@@ -165,7 +145,15 @@ like the heart and brain. (Figure 6.1). As discussed in below in section
 6.2.4, \[2-^13^C\]pyruvate is also used to label metabolites downstream
 of PDH.
 
-\*\*\* Insert Figure 6.1 \*\*\*
+![Figure 6.1: Metabolism of HP 1-13C pyruvate, lactate and alanine.](Figure%206.1.png)
+
+Figure 6.1 Metabolism of HP 1-^13^C pyruvate, lactate and alanine.
+Pyruvate, lactate and alanine are reversibly interconverted in the cell
+by lactate dehydrogenase (LDH) and alanine transaminase (ALT). Oxidation
+of pyruvate by mitochondrial pyruvate dehydrogenase (PDH) yields labeled
+carbon dioxide, which carbonic anhydrase (CA) rapidly interconverts with
+bicarbonate. Open arrows denote infused HP substrates.
+
 
 Pyruvate carboxylation to oxaloacetate is an important anapleurotic
 pathway that supports the TCA cycle in oxidative energy metabolism. It
@@ -180,11 +168,21 @@ and entry into the gluconeogenesis pathway liberates ^13^CO~2~, detected
 as bicarbonate. Pyruvate-to-bicarbonate conversion in gluconeogenic
 tissues results from both pyruvate oxidation and PEP production (8).
 
-\*\*\* Insert Figure 6.2 \*\*\*
+![Figure 6.2: Anapleurotic metabolism of 1-13C pyruvate.](Figure%206.2.png)
 
-\[H2 Title\]
+Figure 6.2 Anapleurotic metabolism of 1-^13^C pyruvate. In the
+mitochondrion, pyruvate is converted to the tricarboxylic (TCA) cycle
+intermediate oxaloacetate by pyruvate carboxylase (PC). Labels at the 1-
+and 4-positions are interconverted via symmetric fumarate. Aspartate is
+the main metabolite observed downstream of PC and the label at the
+4-position is converted to bicarbonate by phospho*enol*pyruvate
+carboxykinase (PEPCK) in gluconeogenic organs such as the liver.
+Abbreviations: GOT -- glutamic oxaloacetic transaminase; MDH -- malate
+dehydrogenase; CA -- carbonic anhydrase.
 
-6.2.2 \[1,4-^13^C~2~\]Fumarate
+
+
+## 6.2.2 [1,4-^13^C~2~]Fumarate
 
 HP \[1,4-^13^C~2~\]fumarate is a probe of necrotic tissue. The hallmark
 increase in cell membrane permeability associated with necrosis results
@@ -194,11 +192,15 @@ resulting in a marked increase in its conversion to
 treated tumors (9-11) as well as in the injured kidney (12,13) and
 myocardium (14).
 
-\*\*\* Insert Figure 6.3 \*\*\*
+![Figure 6.3: Detection of necrosis with HP 13C fumarate.](Figure%206.3.png)
 
-\[H2 Title\]
+Figure 6.3 Detection of necrosis with HP ^13^C fumarate. Cell membrane
+disruption in necrotic tissue increases the accessibility of HP
+1,4-^13^C~2~ fumarate to fumarate hydratase (FH), which efficiently
+converts fumarate to 1,4-^13^C~2~ malate.
 
-6.2.3 Carbohydrates
+
+## 6.2.3 Carbohydrates
 
 The significant metabolic roles of carbohydrates in normal metabolism
 and tumors make them important targets for HP ^13^C agents. Despite
@@ -208,7 +210,6 @@ quaternary C2 in fructose, however, has a *T*~1~ as long as 16 s at 11.7
 T (15), and deuteration of the carbon-bonded hydrogens in ^13^C-labeled
 glucose slows their relaxation so that C2 -- C5 have *T*~1~s in the same
 range
-
 (16).
 
 The uptake and phosphorylation of HP \[2-^13^C\]fructose has been
@@ -231,7 +232,6 @@ Smaller carbohydrates are potentially better HP ^13^C agents.
 Dihydroxy\[2-^13^C\]acetone (DHAc) is a precursor to dihydroxyacetone
 phosphate (DHAP), an intermediate in the middle of both the glycolysis
 and gluconeogenesis pathways (Figure 6.4). In the kidney and liver
-
 (21,22) it labels both upstream and downstream metabolites, including
 phosphenolpyruvate, glyceraldehyde-3-phosphate and glucose, whose
 relative intensities vary with the nutritional state. In vivo
@@ -241,11 +241,21 @@ achieve the best sensitivity and resolution. \[1-^13^C\]Glycerate (25)
 may similarly probe these pathways, although the primary metabolites
 reported are lactate, pyruvate and bicarbonate.
 
-\*\*\* Insert Figure 6.4 \*\*\*
+![Figure 6.4: HP probes of glucose metabolism.](Figure%206.4.png)
 
-\[H2 Title\]
+Figure 6.4 HP probes of glucose metabolism. Composite of HP ^13^C agents
+engaging the glycolysis, gluconeogenesis and pentose phosphate pathways.
+Sites of ^13^C-labeling for the probes and detected metabolites are
+indicated with the following symbols (undetected labeled
+metabolites/sites have been omitted for clarity): small dots --
+U-^13^C~6~, ^2^H~7~ glucose; open diamonds --3,4-^13^C~2~,
+2,3,4,6,6-^2^H~5~ D-glucose; bold circle -- δ‐1‐^13^C gluconolactone;
+triangle -- 2-^13^C fructose; square -- 2-^13^C dihydroxyacetone; thin
+circle -- 1-^13^C glycerate. Open arrows denote infused HP substrates.
+Double arrows indicate transformation by different
+energetically-favorable reactions in the forward and reverse directions.
 
-6.2.4 Fatty acids and ketone bodies
+## 6.2.4 Fatty acids and ketone bodies
 
 Fatty acids are important energy substrates in several major organs and
 tissues, as are ketone bodies, particularly during starvation
@@ -272,7 +282,17 @@ The myocardial metabolism of the 4- and 8-carbon fatty acids
 resonate at a higher chemical shift than acetate, allowing the
 \[5-^13^C\]glutamate signal to be resolved.
 
-\*\*\* Insert Figure 6.5 \*\*\*
+![Figure 6.5: Mitochondrial HP probes of fatty-acid, ketone-body, and carbohydrate oxidation.](Figure%206.5.png)
+
+Figure 6.5 Mitochondrial HP probes of fatty-acid, ketone-body, and
+carbohydrate oxidation. They are metabolized by different routes to the
+common intermediate, \[1-^13^C\]acetyl-CoA, which exchanges with the
+acetylcarnitine pool and enters the tricarboxylic acid (TCA) cycle.
+Detected metabolites included \[5-^13^C\]citrate, \[5-^13^C\]glutamate
+and α-keto\[5-^13^C\]glutarate. Open arrows denote infused HP
+substrates. Abbreviations: PDH -- pyruvate dehydrogenase; BDH --
+3-hydroxybutyrate dehydrogenase.
+
 
 The ketone bodies acetoacetate and [d]{.smallcaps}-3-hydroxybutyrate are
 also amenable as HP ^13^C agents. The myocardial metabolism of
@@ -281,12 +301,9 @@ diet (34) and disease state (37), as well as treatment with an SGLT2
 inhibitor (38). The reduction of \[1,3-^13^C~2~\]acetoacetate to
 [d]{.smallcaps}-3-hydroxybutyrate has also been studied in U87 brain
 tumors (39) and rat kidney
-
 \(40\) and related to changes in the NAD^+^ / NADH redox state.
 
-\[H2 Title\]
-
-6.2.5 L-\[1-^13^C\]lactate and amino acids
+## 6.2.5 L-[1-^13^C]lactate and amino acids
 
 With their direct conversion to pyruvate,
 [l]{.smallcaps}-\[1-^13^C\]alanine and
@@ -326,7 +343,16 @@ dehydrogenase-1. 2-HG production has been measured in animal models with
 tumors bearing this mutation, using HP α-keto\[1-^13^C\]glutarate (54)
 or \[1-^13^C\]glutamine (55) as the precursor. (Figure 6.6)
 
-\*\*\* Insert Figure 6.6 \*\*\*
+![Figure 6.6: Metabolism of HP 13C glutamine and α-ketoglutarate.](Figure%206.6.png)
+
+Figure 6.6 Metabolism of HP ^13^C glutamine and α-ketoglutarate.
+Elevated glutaminase (GLS) activity in tumors is directly detected with
+HP 5-^13^C glutamine. HP 1-^13^C α-ketoglutarate is converted to
+glutamate and is also reduced to 2-hydroxyglutarate (2-HG) in tumor
+cells with gain-of-function mutations in isocitrate dehydrogenase-1
+(IDH1mut). HP 1-^13^C glutamine can also be converted to 2-HG. Open
+arrows denote infused HP substrates.
+
 
 Peptidase activity is also detectable in vivo with HP ^13^C probes. The
 cell-surface enzyme γ-glutamyltransferase (GGT) plays an important role
@@ -339,9 +365,7 @@ cells respond to oxidative stress. Recently, elevated GGT activity was
 imaged in U87 glioblastoma tumors with HP γ-glutamyl\[1-^13^C\]glycine
 (57).
 
-\[H2 Title\]
-
-6.2.6 Redox sensors
+## 6.2.6 Redox sensors
 
 The redox state, the balance between reducing and oxidizing species, is
 an important cellular parameter that influences numerous metabolic
@@ -359,7 +383,6 @@ dehydrogenase depends on the mitochondrial NAD^+^ / NADH ratio, and
 differences in the conversion of HP \[1,3-^13^C~2~\]acetoacetate has
 been related to changes in the redox state in brain tumors (39) and the
 kidney
-
 \(40\) .
 
 Another redox-dependent HP probe is \[1-^13^C\]dehydroascorbate (DHA),
@@ -369,9 +392,7 @@ glutathione or NADPH (59,60). Higher conversion of HP ^13^C DHA to
 vitamin C has been observed in tumors, and depletion of glutathione
 results in lower conversion (61,62).
 
-\[H2 Title\]
-
-6.2.7 Sensors of pH and other ions
+## 6.2.7 Sensors of pH and other ions
 
 While most HP ^13^C agents are isotopologues of endogenous metabolites
 and probe specific enzyme-catalyzed metabolic processes, a variety of
@@ -397,9 +418,7 @@ been described. They are variously based on amino-acid derivatives
 (66,75), buffers (76), malonate derivatives (77), and zymonic acid
 derived from pyruvate (78), which has also been used in vivo.
 
-\[H2 Title\]
-
-6.2.8 Urea and other perfusion tracers
+## 6.2.8 Urea and other perfusion tracers
 
 Some HP ^13^C agents are not appreciably metabolized, but this property
 is useful for perfusion markers. Foremost among these is urea, which is
@@ -423,13 +442,9 @@ Additionally, the much slower transverse relaxation of
 \[^13^C,^15^N~2~\]urea enables high-resolution *T*~2~-mapping, which
 distinguishes multiple different compartments in the kidney (89,90).
 
-\[H1 Title\]
+# 6.3 Formulation of HP ^13^C agents for dissolution DNP
 
-6.3 Formulation of HP ^13^C agents for dissolution DNP
-
-\[H2 Title\]
-
-6.3.1 The need for formulation
+## 6.3.1 The need for formulation
 
 Formulation plays a critical role in achieving the highest attainable
 level of DNP enhancement for ^13^C-labeled compounds and is therefore a
@@ -440,9 +455,7 @@ as well suited under other conditions. While a formulation is best
 optimized empirically, there are a number of general principles that can
 be used to guide its development.
 
-\[H2 Title\]
-
-6.3.2 Essential characteristics of a formulation
+## 6.3.2 Essential characteristics of a formulation
 
 The requirements for a well performing formulation are an appropriate
 radical, a high concentration of labeled compound and formation of an
@@ -453,9 +466,7 @@ between nuclei is promoted by their proximity, and higher concentrations
 of ^13^C nuclei facilitate higher rates of polarization. (See Chapter 1
 for additional information.)
 
-\[H2 Title\]
-
-6.3.3 Free radicals
+## 6.3.3 Free radicals
 
 A chemically-stable (\"persistent\") free radical usually provides the
 spin order for dissolution DNP; however, other paramagnetic species,
@@ -473,8 +484,7 @@ species, and as described in chapter 1 the mechanisms of DNP depend on
 the irradiation of this resonance with microwaves. Substituted
 triphenylmethyl (\"trityl\") radicals are most commonly used, but other
 persistent radicals, including nitroxyl radicals such as TEMPO and BDPA
-(1,3-bis(diphenylene)-2-phenylallyl) are also used in some cases. \*\*\*
-Insert Figure 6.7 \*\*\*
+(1,3-bis(diphenylene)-2-phenylallyl) are also used in some cases. 
 
 The main considerations in selecting one radical over another are: 1)
 its EPR line shape, 2) its solubility in aqueous or organic solution,
@@ -504,6 +514,21 @@ mesoporous hybrid silica (95). Quenching of nitroxyl radicals with
 sodium ascorbate has been achieved both during dissolution (96) and
 after transfer (97), resulting in slower relaxation rates.
 
+![Figure 6.7: Persistent radicals commonly used for hyperpolarization.](Figure%206.7.png)
+
+Figure 6.7 Persistent radicals commonly used for hyperpolarization. A:
+Chemical structures; dots denote the unpaired radical electrons. Trityls
+and BDPA are typical narrow-line radicals well suited for polarizing
+low-gamma nuclei such as ^13^C. Nitroxyls have a broader EPR resonance
+and can also polarize high-gamma nuclei like ^1^H and ^19^F. B: & C:
+Schematic plots of trityl and nitroxyl EPR spectra and solid-state DNP
+enhancement as a function of microwave frequency (197 GHz) at 7T and 1K.
+Solid trace shows absorption-mode EPR signal, with the full-width
+half-maximum indicated. Dotted line shows DNP enhancement by thermal
+mixing with positive enhancement at frequencies below the center of the
+electron resonance and negative enhancement at higher frequencies.
+
+
 The light sensitivity of pyruvic acid and other α-keto acids can be
 exploited to provide an alternative to persistent radicals. Irradiation
 of frozen pyruvic acid with medium- or long wave ultraviolet light
@@ -517,9 +542,7 @@ to sites without a polarizer. Transient radicals prepared by UV
 irradiation of α-keto acids have also been used to polarize other ^13^C
 agents (33,102,103).
 
-\[H2 Title\]
-
-6.3.4 Glassing
+## 6.3.4 Glassing
 
 For optimal polarization, the radical needs to be evenly distributed
 throughout the sample volume. This usually achieved by rapid cooling of
@@ -540,9 +563,7 @@ dissolution characteristics (105). However, depending on the
 application, the choline may need to be extracted from the solution, and
 the additional delay may obviate any gain in polarization.
 
-\[H2 Title\]
-
-6.3.5 Doping with additional paramagnetic species
+## 6.3.5 Doping with additional paramagnetic species
 
 In many cases, ionic paramagnetic dopants can facilitate additional
 gains in nuclear spin polarization. Small amounts (0.5 - 2 mM) of
@@ -561,9 +582,7 @@ line shape may be more important than the shortening of *T*~1e~ per se,
 and the optimal condition is met when the EPR line width matches the
 ^13^C nuclear Larmor frequency (109).
 
-\[H2 Title\]
-
-6.3.6 Chemical stability
+## 6.3.6 Chemical stability
 
 The highly concentrated solutions and acidic or basic conditions used
 for some HP agent formulations can affect their chemical stability, and
@@ -607,18 +626,14 @@ formulated solutions are best stored frozen at -80 ºC until use.
 Particularly delicate preparations can be divided up into aliquots for
 single use, avoiding multiple freeze-thaw cycles.
 
-\[H2 Title\]
-
-6.3.7 Formulation development and optimization
+## 6.3.7 Formulation development and optimization
 
 The rationale and general procedure to create an optimized formulation
 of a HP ^13^C agent have been well described by Karlsson et al. (114).
 Formulation development remains an empirical, experimental process, and
 the following are some general principles and practical suggestions.
 
-\[H3 Title\]
-
-6.3.7.1 Glassing
+### 6.3.7.1 Glassing
 
 When using soluble radicals, it is critical to form a good glass, and
 higher ^13^C concentrations facilitate efficient spin diffusion to
@@ -642,9 +657,7 @@ profile (115). Small changes in glassing solvent concentration (\~5--10%
 by volume) can often result in substantially improved polarization
 performance.
 
-\[H3 Title\]
-
-6.3.7.2 Radical concentration
+### 6.3.7.2 Radical concentration
 
 The optimal radical concentration will provide the highest polarization
 in the shortest period of time. Small changes in radical concentration
@@ -657,9 +670,7 @@ polarization as at lower field. If doping with other paramagnetic
 species, such as Gd^3+^ chelates, the optimal concentrations are
 likewise determined empirically.
 
-\[H3 Title\]
-
-6.3.7.3 Microwave frequency
+### 6.3.7.3 Microwave frequency
 
 The microwave frequency for maximum enhancement also needs to be
 determined for every formulation by performing a microwave sweep (see
@@ -667,13 +678,9 @@ Chapter 2), and it may vary between preparations, particularly if there
 is a difference in the radical concentration or other paramagnetic
 dopant.
 
-\[H1 Title\]
+# 6.4 Biochemical interactions of HP ^13^C agents
 
-6.4 Biochemical interactions of HP ^13^C agents
-
-\[H2 Title\]
-
-6.4.1 Biochemical environment and relaxation dynamics
+## 6.4.1 Biochemical environment and relaxation dynamics
 
 As with conventional ^1^H MRI, the nuclear relaxation rates of ^13^C are
 influenced by the environment and can be used to detect changes in
@@ -706,9 +713,7 @@ abundant protein in blood plasma, has also been shown to shorten the
 ^13^C *T*~1~ of small molecules, particularly those with hydrophobic
 character (35,118-120).
 
-\[H2 Title\]
-
-6.4.2 Transport to sites of metabolic action
+## 6.4.2 Transport to sites of metabolic action
 
 Infused hyperpolarized agents are transported through circulation to the
 organs and tissues of interest. From there they are taken up by the
@@ -718,9 +723,7 @@ critical and potentially limiting steps, with delivery in circulation
 determining the extent of the substrate signal in the tissue of
 interest, and cellular uptake the maximum possible metabolite signal.
 
-\[H2 Title\]
-
-6.4.3 Enzyme kinetics
+## 6.4.3 Enzyme kinetics
 
 By catalyzing specific chemical reactions, enzymes play an essential
 role in metabolism. The activities of different enzymes are regulated by
@@ -755,9 +758,7 @@ and flux through a transporter depends on the number of available
 transporters, their inherent maximum transport rate, and the solute
 concentration.
 
-\[H2 Title\]
-
-6.4.4 Chemical equilibrium
+## 6.4.4 Chemical equilibrium
 
 Many enzyme-catalyzed reactions are readily reversible, particularly
 when they involve only a small change in free energy, and when the
@@ -779,9 +780,7 @@ balanced. However, rapid reversible reactions in a pathway can be near
 equilibrium when the upstream and downstream reactions are comparatively
 slow.
 
-\[H2 Title\]
-
-6.4.5 Labeled substrates in metabolic pathways
+## 6.4.5 Labeled substrates in metabolic pathways
 
 The use of HP ^13^C magnetic resonance to probe metabolism is a
 specialized application of isotope labeling in metabolic research, and
@@ -830,9 +829,7 @@ step (124). The conversion of \[1-^13^C\]pyruvate to ^13^CO~2~ and
 bicarbonate by pyruvate dehydrogenase is effectively irreversible and
 the bicarbonate signal corresponds to the enzyme activity (125).
 
-\[H2 Title\]
-
-6.4.6 Fractional enrichment and apparent metabolic rate
+## 6.4.6 Fractional enrichment and apparent metabolic rate
 
 The degree to which a HP ^13^C agent and labeled metabolite(s) are
 incorporated in the endogenous metabolite pools also plays an important
@@ -853,9 +850,7 @@ its relative signal. The methods used to extract kinetic parameters from
 HP ^13^C data are described in Chapter 7, with the dynamics of the
 substrate and metabolite signals used to determine the apparent rates.
 
-\[H2 Title\]
-
-6.4.7 Metabolite identification and assignment
+## 6.4.7 Metabolite identification and assignment
 
 Assigning the spectral peaks produced from the metabolism of an HP ^13^C
 agent is an important task, particularly when studying a new agent or
@@ -867,9 +862,7 @@ signal is well assigned to a particular metabolite, in some cases it may
 not be clear which particular metabolic pathway or enzyme is responsible
 for its production.
 
-\[H3 Title\]
-
-6.4.7.1 Metabolite production in other compartments
+### 6.4.7.1 Metabolite production in other compartments
 
 One advantage of HP ^13^C metabolic methods is that the short timescale
 of the experiment minimizes the contribution of recirculating
@@ -883,9 +876,7 @@ Similarly, lactate produced from HP ^13^C [l]{.smallcaps}- and
 [d]{.smallcaps}-alanine in the blood are a small fraction of the lactate
 detected in the kidney (50).
 
-\[H3 Title\]
-
-6.4.7.2 Literature and spectral databases
+### 6.4.7.2 Literature and spectral databases
 
 Published studies have ^13^C chemical shift assignments for many
 metabolites; however, chemical shift values from different sources often
@@ -898,9 +889,7 @@ Magnetic Resonance Data Bank ([bmrb.wisc.edu](http://bmrb.wisc.edu)) are
 useful resources with extensive collections of metabolite spectra
 acquired under standardized conditions.
 
-\[H3 Title\]
-
-6.4.7.3 Practical metabolite-assignment experiments
+### 6.4.7.3 Practical metabolite-assignment experiments
 
 Several different strategies have been successfully used to assign
 metabolite signals from HP ^13^C experiments. In ex vivo experiments,
@@ -922,9 +911,7 @@ substrates can test whether they yield the same metabolite (35), and
 specific enzyme inhibitors can be used to test whether a metabolite is
 produced by a particular pathway (50,56).
 
-\[H3 Title\]
-
-6.4.7.4 Contaminants
+### 6.4.7.4 Contaminants
 
 Chemical contaminants from insufficiently-purified preparations or the
 degradation of sensitive agents are also a source of spurious signals
@@ -934,11 +921,7 @@ by their presence in control experiments scanning the HP preparation
 alone, but differences between in vivo and in vitro conditions such as
 pH can sometimes complicate their assignment.
 
-\*\*\* Insert Figure 6.8 \*\*\*
-
-\[H1 Title\]
-
-6.5 Summary and conclusion
+# 6.5 Summary and conclusion
 
 With the physical and metabolic constraints of a lasting HP signal and
 rapid conversion to detectable products, only a subset of metabolites
@@ -954,6 +937,18 @@ pathways, and probes sensitive to pH, tissue necrosis and redox may be
 particularly applicable for functional imaging of tumors. The ideal
 characteristics for HP ^13^C metabolic probes are summarized in Figure
 6.8.
+
+![Figure 6.8: Characteristics of good HP 13C agents.](Figure%206.8.png)
+
+
+Figure 6.8 Characteristics of good HP ^13^C agents. The ideal agent will
+polarize well and relax slowly in vivo. Uptake in the target compartment
+will be rapid and specific, with sufficient enrichment and metabolic
+conversion to detect product. A chemical shift change of \>2 ppm is
+usually required to reliably detect metabolites with the resolutions
+typically achieved in clinical and pre-clinical scanners. A larger
+endogenous product pool, such as lactate, dilutes the labeled product,
+slowing its turnover and prolonging its signal.
 
 With multiple clinical trials with HP ^13^C pyruvate underway, the
 method is maturing, and one hopes that they will clearly demonstrate its
@@ -1049,8 +1044,7 @@ Criekinge M, Macdonald JM, Vigneron DB, Kurhanewicz J. Hyperpolarized
 imaging. J Am Chem Soc 2009;131:17591--17596. doi: 10.1021/ja9049355.
 
 16\. Allouche-Arnon H, Wade T, Waldner LF, Miller VN, Gomori JM,
-Katz-Brull R, McKenzie CA. In vivo magnetic resonance imaging of glucose
-- initial experience. Contrast Media Mol Imaging 2013;8:72--82. doi:
+Katz-Brull R, McKenzie CA. In vivo magnetic resonance imaging of glucose- initial experience. Contrast Media Mol Imaging 2013;8:72--82. doi:
 10.1002/cmmi.1497.
 
 17\. Rodrigues TB, Serrao EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle
@@ -1594,76 +1588,3 @@ JL, Clarke K, Radda GK, Tyler DJ. Real-time assessment of Krebs cycle
 metabolism using hyperpolarized 13C magnetic resonance spectroscopy.
 FASEB J. 2009;23:2529--2538. doi: 10.1096/fj.09-129171.
 
-FIGURE LEGENDS
-
-Figure 6.1 Metabolism of HP 1-^13^C pyruvate, lactate and alanine.
-Pyruvate, lactate and alanine are reversibly interconverted in the cell
-by lactate dehydrogenase (LDH) and alanine transaminase (ALT). Oxidation
-of pyruvate by mitochondrial pyruvate dehydrogenase (PDH) yields labeled
-carbon dioxide, which carbonic anhydrase (CA) rapidly interconverts with
-bicarbonate. Open arrows denote infused HP substrates.
-
-Figure 6.2 Anapleurotic metabolism of 1-^13^C pyruvate. In the
-mitochondrion, pyruvate is converted to the tricarboxylic (TCA) cycle
-intermediate oxaloacetate by pyruvate carboxylase (PC). Labels at the 1-
-and 4-positions are interconverted via symmetric fumarate. Aspartate is
-the main metabolite observed downstream of PC and the label at the
-4-position is converted to bicarbonate by phospho*enol*pyruvate
-carboxykinase (PEPCK) in gluconeogenic organs such as the liver.
-Abbreviations: GOT -- glutamic oxaloacetic transaminase; MDH -- malate
-dehydrogenase; CA -- carbonic anhydrase.
-
-Figure 6.3 Detection of necrosis with HP ^13^C fumarate. Cell membrane
-disruption in necrotic tissue increases the accessibility of HP
-1,4-^13^C~2~ fumarate to fumarate hydratase (FH), which efficiently
-converts fumarate to 1,4-^13^C~2~ malate.
-
-Figure 6.4 HP probes of glucose metabolism. Composite of HP ^13^C agents
-engaging the glycolysis, gluconeogenesis and pentose phosphate pathways.
-Sites of ^13^C-labeling for the probes and detected metabolites are
-indicated with the following symbols (undetected labeled
-metabolites/sites have been omitted for clarity): small dots --
-U-^13^C~6~, ^2^H~7~ glucose; open diamonds --3,4-^13^C~2~,
-2,3,4,6,6-^2^H~5~ D-glucose; bold circle -- δ‐1‐^13^C gluconolactone;
-triangle -- 2-^13^C fructose; square -- 2-^13^C dihydroxyacetone; thin
-circle -- 1-^13^C glycerate. Open arrows denote infused HP substrates.
-Double arrows indicate transformation by different
-energetically-favorable reactions in the forward and reverse directions.
-
-Figure 6.5 Mitochondrial HP probes of fatty-acid, ketone-body, and
-carbohydrate oxidation. They are metabolized by different routes to the
-common intermediate, \[1-^13^C\]acetyl-CoA, which exchanges with the
-acetylcarnitine pool and enters the tricarboxylic acid (TCA) cycle.
-Detected metabolites included \[5-^13^C\]citrate, \[5-^13^C\]glutamate
-and α-keto\[5-^13^C\]glutarate. Open arrows denote infused HP
-substrates. Abbreviations: PDH -- pyruvate dehydrogenase; BDH --
-3-hydroxybutyrate dehydrogenase.
-
-Figure 6.6 Metabolism of HP ^13^C glutamine and α-ketoglutarate.
-Elevated glutaminase (GLS) activity in tumors is directly detected with
-HP 5-^13^C glutamine. HP 1-^13^C α-ketoglutarate is converted to
-glutamate and is also reduced to 2-hydroxyglutarate (2-HG) in tumor
-cells with gain-of-function mutations in isocitrate dehydrogenase-1
-(IDH1mut). HP 1-^13^C glutamine can also be converted to 2-HG. Open
-arrows denote infused HP substrates.
-
-Figure 6.7 Persistent radicals commonly used for hyperpolarization. A:
-Chemical structures; dots denote the unpaired radical electrons. Trityls
-and BDPA are typical narrow-line radicals well suited for polarizing
-low-gamma nuclei such as ^13^C. Nitroxyls have a broader EPR resonance
-and can also polarize high-gamma nuclei like ^1^H and ^19^F. B: & C:
-Schematic plots of trityl and nitroxyl EPR spectra and solid-state DNP
-enhancement as a function of microwave frequency (197 GHz) at 7T and 1K.
-Solid trace shows absorption-mode EPR signal, with the full-width
-half-maximum indicated. Dotted line shows DNP enhancement by thermal
-mixing with positive enhancement at frequencies below the center of the
-electron resonance and negative enhancement at higher frequencies.
-
-Figure 6.8 Characteristics of good HP ^13^C agents. The ideal agent will
-polarize well and relax slowly in vivo. Uptake in the target compartment
-will be rapid and specific, with sufficient enrichment and metabolic
-conversion to detect product. A chemical shift change of \>2 ppm is
-usually required to reliably detect metabolites with the resolutions
-typically achieved in clinical and pre-clinical scanners. A larger
-endogenous product pool, such as lactate, dilutes the labeled product,
-slowing its turnover and prolonging its signal.

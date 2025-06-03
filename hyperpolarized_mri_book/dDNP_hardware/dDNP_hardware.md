@@ -690,87 +690,126 @@ Consolidator Grant) under grant agreement No 682574 (ASSIMILES).
 
 **References**
 
-1\. Ardenkjaer-Larsen JH, Bowen S, Petersen JR, Rybalko O, Vinding MS,
+1. Ardenkjaer-Larsen JH, Bowen S, Petersen JR, Rybalko O, Vinding MS,
 Ullisch M, Nielsen NC. Cryogen-free dissolution dynamic nuclear
 polarization polarizer operating at 3.35 T, 6.70 T, and 10.1 T. Magn
-Reson Med 2019;81(3):2184-2194.2. Baudin M, Vuichoud B, Bornet A,
+Reson Med 2019;81(3):2184-2194.
+
+2. Baudin M, Vuichoud B, Bornet A,
 Bodenhausen G, Jannin S. A cryogen-consumption-free system for dynamic
 nuclear polarization at 9.4 T. Journal of Magnetic Resonance
-2018;294:115-121.3. Cheng T, Capozzi A, Takado Y, Balzan R, Comment A.
+2018;294:115-121.
+
+3. Cheng T, Capozzi A, Takado Y, Balzan R, Comment A.
 Over 35% liquid-state 13C polarization obtained via dissolution dynamic
 nuclear polarization at 7 T and 1 K using ubiquitous nitroxyl radicals.
-Physical Chemistry Chemical Physics 2013;15(48):20819-20822.4. Jannin S,
+Physical Chemistry Chemical Physics 2013;15(48):20819-20822.
+
+4. Jannin S,
 Comment A, Kurdzesau F, Konter JA, Hautle P, van den Brandt B, van der
 Klink JJ. A 140 GHz prepolarizer for dissolution dynamic nuclear
-polarization. J Chem Phys 2008;128(24):241102.5. Johanneson H, Macholl
+polarization. J Chem Phys 2008;128(24):241102.
+
+5. Johanneson H, Macholl
 S, Ardenkjaer-Larsen JH. Dynamic Nuclear Polarization of
 \[1-(13)C\]pyruvic acid at 4.6 tesla. Journal of Magnetic Resonance
-2009;197(2):167-175.6. Kiswandhi A, Niedbalski P, Parish C, Wang Q,
+2009;197(2):167-175.
+
+6. Kiswandhi A, Niedbalski P, Parish C, Wang Q,
 Lumata L. Assembly and performance of a 6.4T cryogen-free dynamic
 nuclear polarization system. Magnetic Resonance in Chemistry
-2017;55(9):846-852.7. Wolber J, Ellner F, Fridlund B, Gram A,
+2017;55(9):846-852.
+
+7. Wolber J, Ellner F, Fridlund B, Gram A,
 Jóhannesson H, Hansson G, Hansson LH, Lerche MH, Månsson S, Servin R,
 Thaning M, Golman K, Ardenkjær-Larsen JH. Generating highly polarized
 nuclear spins in solution using dynamic nuclear polarization. Nuclear
 Instruments and Methods in Physics Research Section A: Accelerators,
-Spectrometers, Detectors and Associated Equipment 2004;526(1):173-181.8.
-Yoshihara HAI, Can E, Karlsson M, Lerche MH, Schwitter J, Comment A.
+Spectrometers, Detectors and Associated Equipment 2004;526(1):173-181.
+
+8. Yoshihara HAI, Can E, Karlsson M, Lerche MH, Schwitter J, Comment A.
 High-field dissolution dynamic nuclear polarization of \[1-13C\]pyruvic
-acid. Physical Chemistry Chemical Physics 2016;18(18):12409-12413.9.
-Cheng T, Gaunt AP, Marco-Rius I, Gehrung M, Chen AP, van der Klink JJ,
+acid. Physical Chemistry Chemical Physics 2016;18(18):12409-12413.
+
+9. Cheng T, Gaunt AP, Marco-Rius I, Gehrung M, Chen AP, van der Klink JJ,
 Comment A. A multisample 7 T dynamic nuclear polarization polarizer for
-preclinical hyperpolarized MR. NMR in biomedicine 2020;33(5):e4264.10.
-Ardenkjaer-Larsen JH, Leach AM, Clarke N, Urbahn J, Anderson D, Skloss
+preclinical hyperpolarized MR. NMR in biomedicine 2020;33(5):e4264.
+
+10. Ardenkjaer-Larsen JH, Leach AM, Clarke N, Urbahn J, Anderson D, Skloss
 TW. Dynamic Nuclear Polarization Polarizer for Sterile Use Intent. NMR
-in biomedicine 2011;24(8):927-932.11. Comment A, van den Brandt B,
+in biomedicine 2011;24(8):927-932.
+
+11. Comment A, van den Brandt B,
 Uffmann K, Kurdzesau F, Jannin S, Konter JA, Hautle P, Wenckebach WT,
 Gruetter R, van der Klink JJ. Principles of operation of a DNP
 prepolarizer coupled to a rodent MRI scanner. Applied Magnetic Resonance
-2008;34(3-4):313-319.12. Ardenkjaer-Larsen JH, Fridlund B, Gram A,
+2008;34(3-4):313-319.
+
+12. Ardenkjaer-Larsen JH, Fridlund B, Gram A,
 Hansson G, Hansson L, Lerche MH, Servin R, Thaning M, Golman K. Increase
 in signal-to-noise ratio of \> 10,000 times in liquid-state NMR.
 Proceedings of the National Academy of Sciences of the United States of
-America 2003;100(18):10158-10163.13. Batel M, Krajewski M, Weiss K, With
+America 2003;100(18):10158-10163.
+
+13. Batel M, Krajewski M, Weiss K, With
 O, Dapp A, Hunkeler A, Gimersky M, Pruessmann KP, Boesiger P, Meier BH,
 Kozerke S, Ernst M. A multi-sample 94 GHz dissolution
 dynamic-nuclear-polarization system. Journal of Magnetic Resonance
-2012;214:166-174.14. Comment A, van den Brandt B, Uffmann K, Kurdzesau
+2012;214:166-174.
+
+14. Comment A, van den Brandt B, Uffmann K, Kurdzesau
 F, Jannin S, Konter JA, Hautle P, Wenckebach WT, Gruetter R, van der
 Klink JJ. Design and performance of a DNP prepolarizer coupled to a
 rodent MRI scanner. Concepts in Magnetic Resonance Part B: Magnetic
-Resonance Engineering 2007;31B(4):255-269.15. Shang H, Skloss T, von
+Resonance Engineering 2007;31B(4):255-269.
+
+15. Shang H, Skloss T, von
 Morze C, Carvajal L, Van Criekinge M, Milshteyn E, Larson PEZ, Hurd RE,
 Vigneron DB. Handheld Electromagnet Carrier for Transfer of
 Hyperpolarized Carbon-13 Samples. Magnetic Resonance in Medicine
-2016;75(2):917-922.16. Cheng T, Mishkovsky M, Bastiaansen JAM, Ouari O,
+2016;75(2):917-922.
+
+16. Cheng T, Mishkovsky M, Bastiaansen JAM, Ouari O,
 Hautle P, Tordo P, van den Brandt B, Comment A. Automated transfer and
 injection of hyperpolarized molecules with polarization measurement
-prior to in vivo NMR. NMR in biomedicine 2013;26(11):1582-1588.17.
-Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PE, Harzstark AL, Ferrone
+prior to in vivo NMR. NMR in biomedicine 2013;26(11):1582-1588.
+
+17. Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PE, Harzstark AL, Ferrone
 M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small
 EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE,
 Odegardstuen LI, Robb FJ, Tropp J, Murray JA. Metabolic Imaging of
 Patients with Prostate Cancer Using Hyperpolarized \[1-13C\]Pyruvate.
-Science translational medicine 2013;5(198):198ra108.18. Stautner W, Chen
+Science translational medicine 2013;5(198):198ra108.
+
+18. Stautner W, Chen
 R, Comment A, Budesheim E. An efficient liquid helium/gas-gap switch
 allowing rapidly servicing low-temperature dynamic nuclear polarization
-systems. Iop Conf Ser-Mat Sci 2019;502.19. Eichhorn TR, Takado Y,
+systems. Iop Conf Ser-Mat Sci 2019;502.
+
+19. Eichhorn TR, Takado Y,
 Salameh N, Capozzi A, Cheng T, Hyacinthe JN, Mishkovsky M, Roussel C,
 Comment A. Hyperpolarization without persistent radicals for in vivo
 real-time metabolic imaging. Proceedings of the National Academy of
-Sciences of the United States of America 2013;110(45):18064-18069.20.
-Marco-Rius I, Cheng T, Gaunt AP, Patel S, Kreis F, Capozzi A, Wright AJ,
+Sciences of the United States of America 2013;110(45):18064-18069.
+
+20. Marco-Rius I, Cheng T, Gaunt AP, Patel S, Kreis F, Capozzi A, Wright AJ,
 Brindle KM, Ouari O, Comment A. Photogenerated Radical in
 Phenylglyoxylic Acid for in Vivo Hyperpolarized (13)C MR with
 Photosensitive Metabolic Substrates. J Am Chem Soc
-2018;140(43):14455-14463.21. Capozzi A, Patel S, Gunnarsson CP,
+2018;140(43):14455-14463.
+
+21. Capozzi A, Patel S, Gunnarsson CP,
 Marco-Rius I, Comment A, Karlsson M, Lerche MH, Ouari O,
 Ardenkjaer-Larsen JH. Efficient Hyperpolarization of U-(13) C-Glucose
 Using Narrow-Line UV-Generated Labile Free Radicals. Angew Chem Int Ed
-Engl 2019;58(5):1334-1339.22. Capozzi A, Cheng T, Boero G, Roussel C,
+Engl 2019;58(5):1334-1339.
+
+22. Capozzi A, Cheng T, Boero G, Roussel C,
 Comment A. Thermal annihilation of photo-induced radicals following
 dynamic nuclear polarization to produce transportable frozen
-hyperpolarized 13C-substrates. Nat Commun 2017;8:15757.23. Hirsch ML,
+hyperpolarized 13C-substrates. Nat Commun 2017;8:15757.
+
+23. Hirsch ML,
 Smith BA, Mattingly M, Goloshevsky AG, Rosay M, Kempf JG. Transport and
 imaging of brute-force (13)C hyperpolarization. J Magn Reson
 2015;261:87-94.
