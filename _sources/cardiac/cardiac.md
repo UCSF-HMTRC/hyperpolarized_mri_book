@@ -1,5 +1,31 @@
-# Hyperpolarized MR in Cardiology {#chap:DJT}
+# Hyperpolarized MR in Cardiology
 
+Jack Miller, Justin Lau, Damian Tyler
+
+[1^]: Jack.Miller\@physics.org
+
+[^2]: drjustinlau\@gmail.com
+
+[^3]: Damian.Tyler\@dpag.ox.ac.uk
+
+## Abstract
+The heart is a truly remarkable organ. It begins beating from before we are born and
+continues to circulate blood around our bodies for our entire lives. Its demands for
+energy, therefore, are large and highly variable. To meet these variable demands, the
+mammalian heart has evolved considerable metabolic flexibility to best utilise the molecular fuel sources available to it. In many cardiac diseases, this metabolic flexibility is lost,
+and the energetic status of the heart becomes significantly impaired. A better understanding of this metabolic dysregulation can accelerate scientific development towards
+the prevention and treatment of heart disease. Hyperpolarized MR is uniquely poised to
+enable the study of a subset of the metabolic pathways in the heart, offering invaluable
+insight into its energetic status. This chapter reviews both the basic biology and biochemistry underpinning the heart as a contracting engine, and the technical challenges
+that it poses to the physicist trying to design hyperpolarized imaging experiments. This
+is then followed by a discussion of some of the more successful imaging techniques
+and the new-found insights into biochemical processes, in both health and disease, that
+they have provided. Finally, as a novel (and comparatively expensive) imaging technology, hyperpolarized MR has to fit into a framework of other techniques and the value it
+can bring to the clinical diagnosis and management of disease is discussed.
+
+**Keywords**:
+Metabolic imaging, Cardiac Imaging, Cardiac MRI, CMR, Myocardial Perfusion, Cardiac
+Energetics, Cardiac metabolism, Hyperpolarized C-13, Medical physics, Medical imaging
 
 ## Fuelling the pump: metabolism and the healthy heart
 
@@ -29,7 +55,13 @@ permits the direct real-time determination of several metabolic
 reactions that are of key importance in the heart, in both health and
 disease.
 
-![The basic anatomy of the heart (not shown are the pulmonary, aortic,
+![Heart Anatomy](Heart-Anatomy.jpg)
+
+```{figure} Heart-Anatomy.pdf
+---
+name: fig:cardiac-anatomy
+---
+The basic anatomy of the heart (not shown are the pulmonary, aortic,
 mitral and tricuspid valves). The dotted line indicates the standard
 short-axis view of the heart, with the other illustration roughly
 corresponding to the four-chamber or horizontal long-axis (HLA) view of
@@ -41,14 +73,13 @@ aortic, pulmonary and tricuspid respectively. Red and blue arrows denote
 the flow of oxygenated and deoxygenated blood. Note that the left
 ventricular myocardium -- the heart muscle -- is significantly thicker,
 but smaller, during end-systole as opposed to end-diastole. Figure
-CC-BY-SA J. Miller.](Heart-Anatomy.pdf){#fig:cardiac-anatomy
-width="\\linewidth"}
+CC-BY-SA J. Miller
+```
 
 Whilst a complete primer on cardiology is beyond the scope of this text,
 it is important to appreciate several salient points of cardiac function
 and gross anatomy (illustrated in
-[1.1](#fig:cardiac-anatomy){reference-type="ref"
-reference="fig:cardiac-anatomy"}): for the MR physicist, the heart is a
+{numref}`fig:cardiac-anatomy`): for the MR physicist, the heart is a
 challenging organ to study, as it contains both oxygenated and
 deoxygenated blood (each possessing a distinct magnetic susceptibility
 and relaxation properties) in close proximity to each other, and moves
@@ -107,6 +138,18 @@ complaints in cardiology essentially boil down to the insufficiency of
 the heart to sustain the cardiac output required to give the body the
 oxygenated blood that, at some given activity level, it demands.
 
+![pressure-volume loop](PV-Loop-Heart.jpg)
+
+**Figure:** The left ventricular pressure volume loop (left) and pressure, volume, and blood flow as a function of
+time (right). The cardiac cycle proceeds from end-diastole in the numerical order shown, and of particular note
+are the systolic and diastolic blood pressure, the left ventricular stroke volume, and the end-systolic pressuree
+volume relationship (ESPVR), which is an approximately linear part of the empirically determined graph that, all
+other things being equal, provides an effective index of myocardial contractility. The total hydraulic work per
+cycle is the integral of the curve. The interested physicist-cum-physiologist may like to know that empirical PV
+loops can be effectively modeled through the use of electrical circuit (i.e., LCR) analoguesdwhich is how this
+graph was generated, using parameters derived for a healthy adult male [@Bicker1992].
+
+
 The fundamental hypothesis behind the utility of hyperpolarized MR is
 thus that it is possible to either spectrally determine, or regionally
 image, metabolic alterations that have occurred in the heart, and hence
@@ -114,7 +157,7 @@ infer either altered physiology or disease.
 
 ### Fats burn in the fire of carbohydrates: $\beta$-oxidation and glycolysis
 
-The healthy heart generates $\sim$`<!-- -->`{=html}95% of its ATP via
+The healthy heart generates ~95% of its ATP via
 oxidative phosphorylation in the mitochondria via the tricarboxylic acid
 (TCA) cycle and oxidative phosphorylation in the electron transport
 chain. This ATP generation is predominately (70-90%) fuelled by the
@@ -169,10 +212,10 @@ further ATP generation -- see below) and 2 pyruvate molecules.
 The fate of the pyruvate and NADH generated in the glycolytic pathway
 depends on the prevailing metabolic conditions within the cell. In low
 oxygen conditions, the pyruvate is reduced into lactate by the enzyme
-lactate dehydrogenase, with the concomitant regeneration of NAD$^+$ from
+lactate dehydrogenase, with the concomitant regeneration of NAD<sup>+</sup> from
 the NADH. This allows the continuous production of limited amounts of
 ATP in anaerobic conditions (especially important during periods of
-ischaemia in the heart) as the regenerated NAD$^+$ allows for continued
+ischaemia in the heart) as the regenerated NAD<sup>+</sup> allows for continued
 flux through glycolysis. However, the lactate produced contributes to an
 acid load on the heart that will eventually limit contractile function
 if not removed. Conversely, under normal aerobic conditions, the
@@ -254,8 +297,8 @@ through the adenosine triphospate (ATP) synthase complex, simultaneously
 generating ATP from adenosine diphosphate (ADP) and inorganic phosphate
 (Pi). This process generates significantly more ATP than the 2 molecules
 that are provided anaerobically in glycolysis, with
-$\sim$`<!-- -->`{=html}31 ATP molecules being produced from the complete
-oxidation of glucose and $\sim$`<!-- -->`{=html}106 ATP molecules from
+~31 ATP molecules being produced from the complete
+oxidation of glucose and ~106 ATP molecules from
 the complete oxidation of the 16-carbon fatty acid, palmitate.
 
 Following synthesis, ATP is transported out of the mitochondria (in
@@ -280,10 +323,10 @@ fatty acid oxidation when glucose oxidation is high and inversely
 inhibit glucose oxidation when fatty acid oxidation is increased. At the
 level of the TCA cycle and oxidative phosphorylation, regulation is
 driven by ATP demand and oxygen availability. This is mediated by the
-limited availability of NAD$^+$ and FADH, such that when flux through
+limited availability of NAD<sup>+</sup> and FADH, such that when flux through
 the electron transport chain is reduced (either because of a lack of
 oxygen as the terminal electron acceptor or due to a lack of ADP for
-conversion to ATP), NADH and FADH$_2$ cannot be regenerated into NAD$^+$
+conversion to ATP), NADH and FADH$_2$ cannot be regenerated into NAD<sup>+</sup>
 and FADH, which prevents the key dehydrogenase reactions of the TCA
 cycle from proceeding. Alterations in this delicate balance of metabolic
 "supply and demand" are a key feature of many cardiovascular diseases
@@ -562,7 +605,7 @@ has been shown to decrease in numerous cardiac pathologies. Furthermore,
 the direct flux between these major species can also be quantified via
 saturation-transfer spectroscopy: because all three are in chemical
 exchange,
-(i.e. $\text{PCr}\leftrightharpoons ATP \leftrightharpoons \text{ADP} + \text{P\textsubscript{i}}$),
+(i.e. $\text{PCr}\leftrightharpoons ATP \leftrightharpoons \text{ADP} + \text{Pi}$ ),
 it is possible to selectively deplete magnetisation in one chemical
 species (e.g. $\gamma$-ATP) and observe the decrease in the exchanging
 partners (PCr and P~i~), yielding the relevant rate constant of chemical
@@ -610,7 +653,7 @@ active and can provide an indication of the effective rate of glycolysis
 oxidation of glucose, through CO~2~/bicarbonate production via the
 pyruvate dehydrogenase complex. Secondary to this, however, several
 molecules have been shown to be of utility in cardiac imaging, for
-example, \[2-\]pyruvate, fumarate, the ketone bodies acetoacetate and
+example, \[2-13C\]pyruvate, fumarate, the ketone bodies acetoacetate and
 beta-hydroxybutyrate; and additionally metabolically inert molecules --
 such as urea -- as probes of perfusion. See also Chapter 6 for more
 information on hyperpolarized agents.
@@ -635,7 +678,10 @@ literature obtained through traditional (i.e. invasive) biochemical
 means, and show that the technique could form a rapid, noninvasive probe
 of *in vivo* metabolic activity.
 
-![Chemical Shift Imaging (CSI) maps returned following intravenous
+![](Golman-Coronary.jpg){#fig:Golman-Coronary
+width="\\linewidth"}
+
+**Figure:** Chemical Shift Imaging (CSI) maps returned following intravenous
 injection of hyperpolarized \[1-^13^C\]pyruvate from a male Swedish
 domestic pig before and two hours after a 45 min period of coronary
 artery occlusion. Note that, common to the majority of hyperpolarized
@@ -651,8 +697,8 @@ instance, it is apparent that the inferior region of lactate and
 bicarbonate production is not visible post infarction, whilst alanine is
 severely attenuated. Figure John Wiley and Sons, adapted and reproduced
 with permission from
-[@Golman2008a].](Golman-Cornoary){#fig:Golman-Coronary
-width="\\linewidth"}
+[@Golman2008a].
+
 
 Concomitantly with this work, [@Golman2008a] demonstrated a striking
 reduction in the visible rate of PDH flux in the post ischæmic pig
@@ -673,13 +719,15 @@ proposed that hyperpolarized \[1-^13^C\]pyruvate imaging may form a more
 sensitive and quantitative method for detecting abnormal cardiac
 behaviour than standard wall motion techniques alone.
 
-![Hyperpolarized metabolic imaging of the healthy human heart following
+![](Chuck-UCSF-Book.jpg){#fig:Human-Heart-C13 width="\\textwidth"}
+
+**Figure** Hyperpolarized metabolic imaging of the healthy human heart following
 the injection of \[1-^13^C\]pyruvate, shown in two consecutive slices
-(with an $8.8\times8.8\times \SI{10}{mm^3}$ resolution) and three
+(with an $8.8\times8.8\times 10 \ \text{mm}^3$ resolution) and three
 different metabolites, with a sequence consisting of a breath-held
 spiral readout following spectral-spatial RF excitation. Figure The
 Authors, adapted and reproduced with permission from [@Cunningham2016b].
-](img/Chuck-UCSF-Book.pdf){#fig:Human-Heart-C13 width="\\textwidth"}
+
 
 After these initial developments, there has been a relative explosion in
 the number and type of metabolic probes that have been explored with
@@ -697,43 +745,56 @@ reference="fig:Human-Heart-C13"}), including in the human ischaemic
 myocardium [@Apps2021]. It is this development that we shall now
 subsequently examine in depth.
 
-#### Hyperpolarized \[2-\]pyruvate
+#### Hyperpolarized \[2-13C\]pyruvate
 
 Additional metabolic insights can be gained by isotopically labelling
 pyruvate at the carbonyl C~2~ position, which exhibits a relatively long
 $T_1$ of 47 s in solution at 3 T [@chung2019first]. Prior to entering
-the TCA cycle, \[2-\]pyruvate can be converted to \[1-\]acetylcarnitine
-and \[2-\]lactate. The label of \[2-\]pyruvate enters the TCA cycle as
-acetyl-CoA. First demonstrated in the perfused rat heart, \[2-\]pyruvate
-conversion to \[1-\]citrate and \[5-\]glutamate were decreased
+the TCA cycle, \[2-13C\]pyruvate can be converted to \[1-13C\]acetylcarnitine
+and \[2-13C\]lactate. The label of \[2-13C\]pyruvate enters the TCA cycle as
+acetyl-CoA. First demonstrated in the perfused rat heart, \[2-13C\]pyruvate
+conversion to \[1-13C\]citrate and \[5-13C\]glutamate were decreased
 post-ischæmia [@Schroeder2009b]
 (c.f. [\[fig:CTwoPyruvate\]](#fig:CTwoPyruvate){reference-type="ref"
 reference="fig:CTwoPyruvate"}). Glutamate is in rapid exchange with the
 TCA cycle intermediate $\alpha$-ketoglutarate, a key component of the
-malate-aspartate shuttle. Conversion of \[2-\]pyruvate to
-\[5-\]glutamate may be indicative of the cellular redox response to
+malate-aspartate shuttle. Conversion of \[2-13C\]pyruvate to
+\[5-13C\]glutamate may be indicative of the cellular redox response to
 disease or physiological demand, for example in a porcine model of
 dobutamine adrenergic activation [@chen2018probing]. Simultaneous
 investigations of PDH flux, TCA cycle activity, and pH can be realised
-with hyperpolarized \[2-\]pyruvate in tandem with \[1-\]pyruvate
-[@josan2013vivo] or as the dual-labelled \[1,2-~2~\]pyruvate form
-[@Chen2012b]. The safety profiles of \[2-\]pyruvate and
-\[1,2-~2~\]pyruvate are identical to that of \[1-\]pyruvate, which has
+with hyperpolarized \[2-13C\]pyruvate in tandem with \[1-13C\]pyruvate
+[@josan2013vivo] or as the dual-labelled \[1,2-13C\]pyruvate form
+[@Chen2012b]. The safety profiles of \[2-13C\]pyruvate and
+\[1,2-13C\]pyruvate are identical to that of \[1-13C\]pyruvate, which has
 already been used in human studies in numerous jurisdictions,
 facilitating rapid adoption toward clinical translation.
+
+![c2-pyruvate](C2Pyruvate-Figure-Overview.jpg)
+
+**Figure:** Time-resolved spectroscopy following the infusion of hyperpolarized [2-13C]pyruvate into the perfused
+heart reveals several downstream metabolic products (left) together with a graphic schematic of their ultimate
+metabolic fate (right). Briefly, these stacked spectra were acquired in the first 60 s following infusion into a
+perfused rat heart. [2-13C]pyruvate itself is observed at 207.8 ppm. Peaks 1, 2, and 3 represent the metabolic
+products [5-13C]glutamate (183.7 ppm), [1-13C]citrate (181.0 ppm), and [1-13C]acetylcarnitine (175.2 ppm), respectively.
+[1-13C]Pyruvate derived from natural abundance 13C can be seen as a quartet at 172.8 ppm (peak 4, left inset).
+[2-13C]Pyruvate hydrate, which is in chemical equilibrium with pyruvate, was detected at 96.5 ppm (peak 5, right
+inset). Impurities in the [2-13C]pyruvic acid preparation were observed at w49 and 89 ppm (peak 6, right inset).
+[2-13C]lactate and [2-13C]alanine were also observed (peaks 7 and 8, respectively). Figure reproduced
+(adapted) with permission from Schroeder et al http://www.fasebj.org/doi/10.1096/fj.09-129171.
 
 #### Hyperpolarized Fatty Acids and Ketone Bodies
 
 Fatty acid oxidation has likewise been directly investigated by
 hyperpolarized MR. [@Ball2014] report the production and use of
-hyperpolarized \[1-\]butyric acid with approximately 7 % polarisation
-and a $T_1$ of $\sim\SI{20}{\second}$. Following injection into both the
+hyperpolarized \[1-13C\]butyric acid with approximately 7 % polarisation
+and a $T_1$ of ~20 sec. Following injection into both the
 perfused and *in vivo* rat heart, a large number of TCA cycle
 intermediates (glutamate, citrate and acetylcarnitine) were observed
 along with the ketone bodies acetoacetate and $\beta$-hydroxybutyrate.
 As is often the case for probes hyperpolarized via d-DNP, it is
 additionally possible to hyperpolarize \[1-^13^C\]pyruvate and
-\[1-\]butyrate simultaneously and monitor myocardial substrate selection
+\[1-13C\]butyrate simultaneously and monitor myocardial substrate selection
 to a much higher degree of chemical selectivity *in vivo*. As noted by
 [@Bastiaansen2015], the co-infusion of hyperpolarized metabolic fuels is
 a one-of-a-kind method for assessing myocardial substrate preference *in
@@ -741,21 +802,21 @@ vivo*. Such metabolic versatility routinely found in the heart is
 consistent with the canonical description of the heart as a \"metabolic
 omnivore\", able to consume a large number of substrates in order to
 maintain its continuous contractual demand for energy.
-[@Bastiaansen2013] have also reported that \[1-\]acetate can also be
-hyperpolarized ($P\approx\SI{13}{\percent}$ and a $T_1$ of
-$\sim\SI{15}{\second}$ in blood at 9.4 T) and acts as an effective *in
+[@Bastiaansen2013] have also reported that \[1-13C\]acetate can also be
+hyperpolarized ($P\approx 13\%$ and a $T_1$ of
+~15 sec in blood at 9.4 T) and acts as an effective *in
 vivo* probe of acetyl-CoA synthetase activity as production of
-\[1-\]acetylcarnitine can be observed *in vivo* in the rat leg.
-Subsequently, the cardiac metabolism of \[1-\]acetate and quantification
+\[1-13C\]acetylcarnitine can be observed *in vivo* in the rat leg.
+Subsequently, the cardiac metabolism of \[1-13C\]acetate and quantification
 of acetyl-CoA synthetase activity *in vivo* has been demonstrated in the
 healthy pig myocardium [@Flori2015a].
 
 Extending the utility of d-DNP to longer chain fatty acids, preliminary
 work by [@Yoshihara2015] has revealed that -octanoate, a medium-chain
 fatty acid, can be hyperpolarized via d-DNP (to
-$P\approx\SI{11}{\percent}$ with a $T_1$ of $\sim$`<!-- -->`{=html}30 s)
+$P\approx 11 \%$ with a $T_1$ of ~30 s)
 and again could be observed undergoing $\beta$-oxidation through to
-\[1-\]acetylcarnitine. A related development is the detection of the
+\[1-13C\]acetylcarnitine. A related development is the detection of the
 ketone bodies acetoacetate and $\beta$--hydroxybutyrate directly in the
 perfused heart, revealing information both about the basic biochemistry
 of the probes in the fed and fasted states [@Miller2016], but has also
@@ -770,25 +831,25 @@ these fluxes is different between disease states, leading either to an
 improved mechanistic understanding of that disease, and/or its direct
 use as a diagnostic technique. One dramatic example of a large
 difference in apparent rate constants between pathology and physiology
-is the probe \[1,4-\]fumarate, which violates the conventional
+is the probe \[1,4-13C\]fumarate, which violates the conventional
 assumption that a probe's *in vivo* biochemistry must be sufficiently
 rapid compared to the $T_1$ of the probe. In physiology, the rate of
 uptake of fumarate is sufficiently slow that no -malate signal is
-observed following the injection of hyperpolarized \[1,4-\]fumarate.
+observed following the injection of hyperpolarized \[1,4-13C\]fumarate.
 Gallagher *et al.* have shown conclusively that the reason for this lack
 of signal is the slow transport across the plasma membrane of
-\[1,4-\]fumarate, and not the rate of the fumarase enzyme itself.
-Accordingly, \[1,4-\]fumarate forms a highly effective probe of cellular
+\[1,4-13C\]fumarate, and not the rate of the fumarase enzyme itself.
+Accordingly, \[1,4-13C\]fumarate forms a highly effective probe of cellular
 necrosis, in which the plasma membrane is disrupted and fumarase 'leaks
 out' to produce a detectable malate signal. Hyperpolarized
-\[1,4-\]fumarate therefore can act as an effective probe of necrosis in
+\[1,4-13C\]fumarate therefore can act as an effective probe of necrosis in
 many diseases, including myocardial infarction [@Miller2017b], cancer
 [@Gallagher2009a] and in acute kidney injury [@Clatworthy2012].
 
 In conclusion, a large number of molecular agents have been
 hyperpolarized and investigated to a greater or lesser degree in
-biological systems. Some of these, notably \[2-\]pyruvate,
-\[1-\]butyrate, and -acetate, have been shown to act as effective probes
+biological systems. Some of these, notably \[2-13C\]pyruvate,
+\[1-13C\]butyrate, and -acetate, have been shown to act as effective probes
 of central metabolism in the living heart. It is worth stressing that,
 in comparison to complementary metabolic imaging techniques such as PET,
 hyperpolarized MR provides chemically sensitive information rapidly,
@@ -807,7 +868,7 @@ annihilation. As a consequence, sub-millimetre voxel sizes are
 exceptionally difficult to obtain with the PET technique, with the
 theoretical limiting FWHM of approximately 0.5 mm, and that of
 approximately 6 mm, with clinically obtainable voxel sizes on the order
-of $2\times2\times2\si{\milli\meter^3}$ [@Moses2011]. Clearly,
+of $2\times2\times2 \ \text{mm}^3$ [@Moses2011]. Clearly,
 hyperpolarized MR is a powerful translational tool that has great
 potential in both diagnostic cardiac imaging and for quantifying the
 important, yet poorly understood, metabolic basis of many cardiac
@@ -833,7 +894,10 @@ background, generate an exceptionally high contrast-to-noise ratio (CNR)
 for hyperpolarized agents, which in bulk, permit vascular angiographic
 applications.
 
-![**A**: A series of hyperpolarized angiograms obtained following the
+![](Golman-Perfusion-Summary.jpg){#fig:Golman-Perfusion-Summary
+width="\\linewidth"}
+
+**Figure:** **A**: A series of hyperpolarized angiograms obtained following the
 direct injection of HP001 through a catheter placed in the left coronary
 descending artery and left circumflex artery of a pig. Time increases
 from a to f. Using the HP agent, it is possible to visualise the first
@@ -846,14 +910,12 @@ agent, myocardial perfusion can be observed and readily quantified with
 essentially no background, producing (via the Kety-Schmidt method) the
 perfusion map shown overlaid on an anatomical proton image in j. Figure
 Elsevier, reprinted (adapted) from [@Golman2006d].
-](Golman-Perfusion-Summary.pdf){#fig:Golman-Perfusion-Summary
-width="\\linewidth"}
 
 Initial proof-of-concept studies demonstrating perfusion imaging with
 hyperpolarized compounds were performed using "metabolically inert",
 non-toxic -labelled urea, and subsequently both ^13^C-urea and the
 non-endogenous extracellular agent known as either HMCP, HP001, or
-Bis-1,1-(hydroxymethyl)-\[1-\]cyclopropane-D~8~, have been used as
+Bis-1,1-(hydroxymethyl)-\[1-13C\]cyclopropane-D~8~, have been used as
 probes of perfusion within the kidneys, in models of cancer, and in the
 hearts of large animals
 [@Johansson2004; @Golman2006d; @VonMorze2011; @VonMorze2012]. As shown
@@ -873,8 +935,7 @@ several complementary molecules could conceivably be administered in a
 single bolus, further characterising the state of the working heart.
 
 Another inspired use of endogenous molecules with safety profiles well
-known *a priori* is the use of hyperpolarized water,
-$\nuclide[1]{H}_2\nuclide{O}$, as a perfusion probe
+known *a priori* is the use of hyperpolarized water, as a perfusion probe
 [@McCarney2007a; @Lingwood2012; @Lingwood2010]. Whilst potentially
 sacrificing the background-free acquisition might seem like a
 substantial penalty to pay, it should be noted that in *in vivo*
@@ -968,7 +1029,10 @@ approach, however, is susceptible to frequency errors, which would
 correspond to errors in the delivered flip angle, potentially
 'squashing' the magnetisation in the injected probe prematurely.
 
-![Multiband excitation is comparatively straightforward to implement,
+![](Multiband-Summary.jpg){#fig:Multiband-Results
+width="0.6\\linewidth"}
+
+**Figure:** Multiband excitation is comparatively straightforward to implement,
 with two RF pulses (**A**) producing a sinusoidal pattern of excitation
 as a function of frequency (**B**). As highlighted by red circles, this
 corresponds to an effective flip angle modulation over the
@@ -978,8 +1042,7 @@ CSI reconstruction correspondingly allows for the creation of images
 with approximately equivalent SNR in all three channels of interest for
 cardiac imaging (**C**). Figure John Wiley and Sons, reproduced
 (adapted) with permission from
-[@Sigfridsson2014].](Multiband-Summary){#fig:Multiband-Results
-width="0.6\\linewidth"}
+[@Sigfridsson2014]
 
 variable flip angle (VFA) schemes are a specialized approach that have
 the promise to be ultimately more SNR efficient than constant low-flip
@@ -1001,7 +1064,7 @@ Simple spectroscopic acquisitions arguably form the most straightforward
 approach to performing hyperpolarized experiments. "All" that is
 required for a successful acquisition is the preparation of the
 hyperpolarized probe of interest, and a low flip angle (typically
-$\theta=\SI{10}{\degree}$) long readout acquisition with a short, hard
+$\theta=10^\circ$) long readout acquisition with a short, hard
 excitation pulse of adequate spectral bandwidth. Typically spectra are
 acquired with a TR of approximately 1 s, for a duration that is at least
 $3\times T_1$. Following dissolution (if using d-DNP), the scan is
@@ -1029,10 +1092,10 @@ localise the received signal to the heart [@Schroeder2008].
 
 ### Alternative 'Rapid' Imaging Approaches
 
-![p](PyruvateSchemeInACell.pdf){#fig:PyruvateSchemeInACell
+![Pyruvate Metabolism](PyruvateSchemeInACell.jpg){#fig:PyruvateSchemeInACell
 width="\\linewidth"}
 
-yruvate metabolism\]A cartoon of the possible metabolic fates of
+**Figure: Pyruvate metabolism** A cartoon of the possible metabolic fates of
 hyperpolarized \[1-^13^C\]pyruvate in the cell. Pyruvate enters the cell
 through the monocarboxylate transporter MCT-1 and can then either be
 transaminated to form alanine by ALT; removed from the cytosol by
@@ -1049,8 +1112,7 @@ prior knowledge of this scheme greatly simplifies the design of
 hyperpolarized experiments, as the chemical shift of each species stated
 is known *a priori*. Figure CC-BY-SA, reprinted with
 permission.[@Miller-DPhil-Thesis]
-[\[fig:PyruvateSchemeInACell\]]{#fig:PyruvateSchemeInACell
-label="fig:PyruvateSchemeInACell"}
+
 
 In the context of an injected, labelled hyperpolarized probe, it is
 usually the case that its *in vivo* biochemistry is approximately known
@@ -1081,9 +1143,12 @@ dynamically resolve the metabolism of hyperpolarized
 illustrated in [1.7](#fig:Ideal-Spiral-Example){reference-type="ref"
 reference="fig:Ideal-Spiral-Example"}.
 
-![Spectrally and spatially resolved metabolic imaging of the rat heart
+![](IDEAl-Spiral-CSI-Example.jpg){#fig:Ideal-Spiral-Example
+width="0.75\\linewidth"}
+
+**Figure:** Spectrally and spatially resolved metabolic imaging of the rat heart
 following the injection of hyperpolarized \[1-^13^C\]pyruvate, acquired
-by a spiral IDEAL pulse sequence and $5\times5\times10\si{\milli\meter}$
+by a spiral IDEAL pulse sequence and $5\times5\times10 \text{mm}^3$
 / 4 s resolution. Individual metabolites are shown at three points in
 time, and also $1.5\times$ their mean signal intensity. Note how
 pyruvate can be observed perfusing the ventricles of the heart at early
@@ -1092,8 +1157,7 @@ at later times. Some degree of 'ringing' is present in the initial
 lactate, bicarbonate and alanine (Ala) images, reflecting the large
 magnitude of the hyperpolarized pyruvate signal compared to downstream
 metabolites. Figure John Wiley & Sons, reprinted (adapted) with
-permission.[@Wiesinger2012]](IDEAl-Spiral-CSI-Example){#fig:Ideal-Spiral-Example
-width="0.75\\linewidth"}
+permission.[@Wiesinger2012]
 
 An alternative approach to rapid metabolic imaging is the selective
 excitation of metabolites of interest, followed by the use of
@@ -1107,7 +1171,9 @@ metabolite image can be acquired in a single TR and thus within the
 cardiac cycle (c.f. [1.8](#fig:SpSp-Example-Lau){reference-type="ref"
 reference="fig:SpSp-Example-Lau"}).
 
-![Example $|M_{xy}|$ excitation pattern (**A**) and result (**B**) of a
+![](SpSp-Example.jpg){#fig:SpSp-Example-Lau width="\\linewidth"}
+
+**Figure:** Example $|M_{xy}|$ excitation pattern (**A**) and result (**B**) of a
 spectral-spatial pulse. **A**: The net effect of a spectral-spatial
 pulse is the excitation of magnetisation at a particular frequency
 ($x$-axis) *and* region of space ($y$-axis). A nodal pattern is produced
@@ -1121,11 +1187,11 @@ frequency of the spectrometer, different resonances can be excited by
 the pulse. **B**: Results obtained from the pig heart by a multi-slice
 spiral spectral-spatial experiment following the infusion of
 hyperpolarized \[1-^13^C\]pyruvate. Each image is cropped to a
-$12\times12\,\si{cm^2}$ field-of-view; in-plane resolution is
-$8.8\times8.8\times10\,\si{mm^3}$ with a 9 heart-beat (approximately
+$12\times12\ \text{cm}^2$ field-of-view; in-plane resolution is
+$8.8\times8.8\times10\ \text{mm}^3$ with a 9 heart-beat (approximately
 15 s) temporal resolution (TR=1 RR interval). Figure John Wiley and
 Sons, reprinted (adapted) with permission from
-[@Lau2011].](SpSp-Example){#fig:SpSp-Example-Lau width="\\linewidth"}
+[@Lau2011].
 
 ## Conclusion
 
@@ -1154,12 +1220,203 @@ promise for the future of cardiac metabolic imaging, both in clinical
 research and in clinical practice. Clearly, the future of hyperpolarized
 MR in cardiology is bright!
 
-::: frontmatter
+
 # References {#references .unnumbered}
-:::
 
-[^1]: Jack.Miller\@physics.org
+Desiree Abdurrachim, Chern Chiuh Woo, Xing Qi Teo, Wei Xin Chan, George K. Radda, and Philip Teck Hock Lee. A new hyperpolarized 13 C ketone body probe reveals an increase in acetoacetate utilization in the diabetic rat heart. Sci. Rep., 2019. ISSN 20452322. doi: 10.1038/s41598-019-39378-w.
 
-[^2]: drjustinlau\@gmail.com
+Andrew Apps, Justin Y C Lau, Jack J J J Miller, Andrew Tyler, Liam A J Young, Andrew J M Lewis, Gareth Barnes, Claire Trumper, Stefan Neubauer, Oliver J Rider, and Damian J Tyler. Proof-of-Principle Demonstration of Direct Metabolic Imaging Following Myocardial Infarction Using Hyperpolarized 13C CMR. JACC Cardiovasc. Imaging, 0(0), 2021. doi: 10.1016/j.jcmg.2020.12.023.
 
-[^3]: Damian.Tyler\@dpag.ox.ac.uk
+Jan H Ardenkjaer-Larsen, Andrew M Leach, Neil Clarke, John Urbahn, Denise Anderson, and Timothy W Skloss. Dynamic nuclear polarization polarizer for sterile use intent. NMR Biomed., 24(8):927–932, oct 2011. ISSN 09523480. doi: 10.1002/nbm.1682. URL http://www.ncbi.nlm.nih.gov/pubmed/21416540.
+
+Jan H. Ardenkjaer-Larsen, Christoffer Laustsen, Sean Bowen, and Rahim Rizi. Hyperpolarized H2O MR angiography. Magn. Reson. Med., 71(1):50–56, jan 2014. ISSN 07403194. doi: 10.1002/mrm.25033. URL http://doi.wiley.com/10.1002/mrm.25033.
+
+Paul W Armstrong, Christopher B Granger, Peter X Adams, Christian Hamm, David Holmes, William W O’Neill, Thomas G Todaro, Alec Vahanian, and Frans Van de Werf. Pexelizumab for Acute ST-Elevation Myocardial Infarction in Patients Undergoing Primary Percutaneous Coronary Intervention. JAMA, 297(1):43, jan 2007. ISSN 0098-7484. doi: 10.1001/jama.297.1.43. URL http://www.ncbi.nlm.nih.gov/pubmed/17200474.
+
+Houman Ashrafian, Michael P Frenneaux, and Lionel H Opie. Metabolic mechanisms in heart failure. Circulation, 116(4):434–48, jul 2007. ISSN 1524-4539. doi: 10.1161/CIRCULATIONAHA.107.702795. URL http://circ.ahajournals.org/content/116/4/434.
+
+Daniel R. Ball, Ben Rowlands, Michael S. Dodd, Lydia Le Page, Vicky Ball, Carolyn A. Carr, Kieran Clarke, and Damian J. Tyler. Hyperpolarized butyrate: A metabolic probe of short chain fatty acid metabolism in the heart. Magn. Reson. Med., 71(5):1663–1669, may 2014. ISSN 15222594. doi: 10.1002/mrm.24849. URL http://dx.doi.org/10.1002/mrm.24849.
+
+Jessica A.M. M Bastiaansen, Tian Cheng, Mor Mishkovsky, João M.N. Jo??o M N Duarte, Arnaud Comment, and Rolf Gruetter. In vivo enzymatic activity of acetylCoA synthetase in skeletal muscle revealed by 13C turnover from hyperpolarized [1-13C] acetate to [1-13C]acetylcarnitine. Biochim. Biophys. Acta - Gen. Subj., 1830(8):4171–4178, aug 2013. ISSN 03044165. doi: 10.1016/j.bbagen.2013.03.023. URL https://www.sciencedirect.com/science/article/pii/S0304416513001177.
+
+JessicaA Bastiaansen, MatthewE Merritt, and Arnaud Comment. Real time measurement of myocardial substrate selection in vivo using hyperpolarized 13C magnetic resonance. J. Cardiovasc. Magn. Reson., 17(1):1–3, 2015. ISSN 1532-429X. doi: 10.1186/1532-429x-17-s1-o15. URL http://dx.doi.org/10.1186/1532-429X-17-S1-O15.
+
+Pratip Bhattacharya, Eduard Y. Chekmenev, William H. Perman, Kent C. Harris, Alexander P. Lin, Valerie A. Norton, Chou T. Tan, Brian D. Ross, and Daniel P. Weitekamp. Towards hyperpolarized 13C-succinate imaging of brain cancer. J. Magn. Reson., 186(1):150–155, 2007. ISSN 10907807. doi: 10.1016/j.jmr.2007.01.017. URL http://www.sciencedirect.com/science/article/pii/S1090780707000304.
+
+Alvin A. Bicker. Mathematical and Computer Modeling of Physiological Systems. Vincent C. Rideout, volume 67 of Biophysics and bioengineering series. Prentice Hall, 1992. ISBN 9780135633540. doi: 10.1086/417897. URL https://books.google.md/books?id=5sEeAQAAIAAJ.
+
+University Hospital Birmingham. Myocardial Protection With Perhexiline in Left Ventricular Hypertrophy: The HYPER Trial. ClinicalTrials.gov, 2011. doi: NCT00989508. URL https://clinicaltrials.gov/ct2/show/NCT00989508.
+
+John C Chatham and Martin E Young. Metabolic remodeling in the hypertrophic heart: fuel for thought. Circ. Res., 111(6):666–668, aug 2012. ISSN 1524-4571. doi: 10.1161/CIRCRESAHA.112.277392. URL http://circres.ahajournals.org/content/111/6/666.full.
+
+Albert P. Chen, Kevin Leung, Wilfred Lam, Ralph E. Hurd, Daniel B. Vigneron, and Charles H. Cunningham. Design of spectral-spatial outer volume suppression RF pulses for tissue specific metabolic characterization with hyperpolarized 13C pyruvate. J. Magn. Reson., 200(2):344–348, oct 2009. ISSN 10907807. doi: 10.1016/j.jmr.2009.06.021. URL http://dx.doi.org/10.1016/j.jmr.2009.06.021.
+
+Albert P. Chen, Ralph E. Hurd, Marie A. Schroeder, Angus Z. Lau, Yi Ping Gu, Wilfred W. Lam, Jennifer Barry, James Tropp, and Charles H. Cunningham. Simultaneous investigation of cardiac pyruvate dehydrogenase flux, Krebs cycle metabolism and pH, using hyperpolarized [1,2- 13C 2]pyruvate in vivo. NMR Biomed., 25(2):305–311, feb 2012. ISSN 09523480. doi: 10.1002/nbm.1749. URL http://doi.wiley.com/10.1002/nbm.1749.
+
+Albert P Chen, Angus Z Lau, Yi-ping Gu, Marie A Schroeder, Jennifer Barry, and Charles H Cunningham. Probing the cardiac malate–aspartate shuttle non-invasively using hyperpolarized [1, 2-13c2] pyruvate. NMR in Biomedicine, 31(1):e3845, 2018.
+
+Brian T Chung, Hsin-Yu Chen, Jeremy Gordon, Daniele Mammoli, Renuka Sriram, Adam W Autry, Lydia M Le Page, Myriam M Chaumeil, Peter Shin, James Slater, et al. First hyperpolarized [2-13c] pyruvate mr studies of human brain metabolism. Journal of Magnetic Resonance, 309:106617, 2019.
+
+Menna R Clatworthy, Mikko I Kettunen, De-En Hu, Rebeccah J Mathews, Timothy H Witney, Brett W C Kennedy, Sarah E Bohndiek, Ferdia A Gallagher, Lorna B Jarvis, Kenneth G C Smith, and Kevin M Brindle. Magnetic resonance imaging with hyperpolarized [1,4-(13)C2]fumarate allows detection of early renal acute tubular necrosis. Proc. Natl. Acad. Sci. U. S. A., 109(33):13374–13379, aug 2012. ISSN 1091-6490. doi: 10.1073/pnas.1205539109. URL http://www.pnas.org/content/109/33/13374.full.
+
+Jay N Cohn and Gianni Tognoni. A Randomized Trial of the Angiotensin-Receptor Blocker Valsartan in Chronic Heart Failure. N. Engl. J. Med., 345(23):1667–1675, 2001. doi: 10.1056/NEJMoa010713. URL http://dx.doi.org/10.1056/NEJMoa010713.
+
+The Consensus Trial Study Group. Effects of enalapril on mortality in severe congestive heart failure. Results of the Cooperative North Scandinavian Enalapril Survival Study (CONSENSUS). The CONSENSUS Trial Study Group. N. Engl. J. Med., 316(23):1429–35, jun 1987. ISSN 0028-4793. doi: 10.1056/NEJM198706043162301. URL http://www.ncbi.nlm.nih.gov/pubmed/2883575.
+
+H R Cross, K Clarke, L H Opie, and G K Radda. Is lactate-induced myocardial ischaemic injury mediated by decreased pH or increased intracellular lactate? J. Mol. Cell. Cardiol., 27(7):1369–81, jul 1995. ISSN 0022-2828. doi: 10.1006/jmcc.1995.0130. URL http://www.ncbi.nlm.nih.gov/pubmed/7473783.
+
+H R Cross, L H Opie, G K Radda, and K Clarke. Is a high glycogen content beneficial or detrimental to the ischemic rat heart? A controversy resolved. Circ. Res., 78(3):482–91, mar 1996. ISSN 0009-7330. URL http://www.ncbi.nlm.nih.gov/pubmed/8593707.
+
+Charles H Cunningham, Albert P Chen, Michael Lustig, Brian A Hargreaves, Janine Lupo, Duan Xu, John Kurhanewicz, Ralph E Hurd, John M Pauly, Sarah J Nelson, and Daniel B Vigneron. Pulse sequence for dynamic volumetric imaging of hyperpolarized metabolic products. J. Magn. Reson., 193(1):139–146, jul 2008. ISSN 1090-7807. doi: 10.1016/j.jmr.2008.03.012. URL http://www.sciencedirect.com/science/article/pii/S1090780708000992.
+
+Charles H Cunningham, Justin Y C Lau, Albert P Chen, Benjamin J Geraghty, William J Perks, Idan Roifman, Graham A Wright, and Kim A Connelly. Hyperpolarized 13C Metabolic MRI of the Human Heart: Initial Experience. Circ. Res., 119(11):1177–1182, nov 2016. ISSN 1524-4571. doi: 10.1161/CIRCRESAHA.116.309769. URL http://www.ncbi.nlm.nih.gov/pubmed/27635086 http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=PMC5102279.
+
+H Dargie. Heart failure post-myocardial infarction: a review of the issues. Heart, 91(2):ii3—-48, may 2005. ISSN 1468-201X. doi: 10.1136/hrt.2005.062018.
+
+James A de Lemos, David A Morrow, Michael A Blazing, Petr Jarolim, Stephen D Wiviott, Marc S Sabatine, Robert M Califf, and Eugene Braunwald. Serial measurement of monocyte chemoattractant protein-1 after acute coronary syndromes: results from the A to Z trial. J. Am. Coll. Cardiol., 50(22):2117–24, nov 2007. ISSN 1558-3597. doi: 10.1016/j.jacc.2007.06.057. URL http://www.ncbi.nlm.nih.gov/pubmed/18036447.
+
+M F Di Carli, P Prcevski, T P Singh, J Janisse, J Ager, O Muzik, and R Vander Heide. Myocardial blood flow, function, and metabolism in repetitive stunning. J. Nucl. Med., 41(7):1227–34, jul 2000. ISSN 0161-5505. URL http://www.ncbi.nlm.nih.gov/pubmed/10914914.
+
+Marcin Dobaczewski, Ying Xia, Marcin Bujak, Carlos Gonzalez-Quesada, and Nikolaos G. Frangogiannis. CCR5 Signaling Suppresses Inflammation and Reduces Adverse Remodeling of the Infarcted Heart, Mediating Recruitment of Regulatory T Cells. Am. J. Pathol., 176(5):2177–2187, may 2010. ISSN 00029440. doi: 10.2353/ajpath.2010.090759.
+
+Torsten Doenst, Tien Dung Nguyen, and E Dale Abel. Cardiac metabolism in heart failure: implications beyond ATP production. Circ. Res., 113(6):709–724, aug 2013. ISSN 1524-4571. doi: 10.1161/CIRCRESAHA.113.300376. URL http://circres.ahajournals.org/content/113/6/709.abstract.
+
+Dorland. Dorland’s Illustrated Medical Dictionary. Elsevier Health Sciences, 2011. ISBN 1455709859.
+
+David P Faxon, Raymond J Gibbons, Nicolas A F Chronos, Paul A Gurbel, and Florence Sheehan. The effect of blockade of the CD11/CD18 integrin receptor on infarct size in patients with acute myocardial infarction treated with direct angioplasty: the results of the HALT-MI study. J. Am. Coll. Cardiol., 40(7):1199–204, oct 2002. ISSN 0735-1097. URL http://www.ncbi.nlm.nih.gov/pubmed/12383565.
+
+Geir Florholmen, Vigdis Aas, Arild Christian Rustan, Per Kristian Lunde, Nadine Straumann, Hilde Eid, Annlaug Odegaard, Hilde Dishington, Kristin Brevik Andersson, and Geir Christensen. Leukemia inhibitory factor reduces contractile function and induces alterations in energy metabolism in isolated cardiomyocytes. J. Mol. Cell. Cardiol., 37(6):1183–93, dec 2004. ISSN 0022-2828. doi: 10.1016/j.yjmcc.2004.09.008. URL http://www.ncbi.nlm.nih.gov/pubmed/15572048.
+
+Alessandra Flori, Matteo Liserani, Francesca Frijia, Giulio Giovannetti, Vincenzo Lionetti, Valentina Casieri, Vincenzo Positano, Giovanni Donato Aquaro, Fabio A. Recchia, Maria Filomena Santarelli, Luigi Landini, Jan Henrik Ardenkjaer-Larsen, and Luca Menichetti. Real-time cardiac metabolism assessed with hyperpolarized [1- 13 C]acetate in a large-animal model. Contrast Media Mol. Imaging, 10(3):194–202, may 2015. ISSN 15554309. doi: 10.1002/cmmi.1618. URL http://doi.wiley.com/10.1002/cmmi.1618.
+
+Casey J Fox, Peter S Hammerman, and Craig B Thompson. Fuel feeds function: energy metabolism and the T-cell response. Nat. Rev. Immunol., 5(11):844–52, nov 2005. ISSN 1474-1733. doi: 10.1038/nri1710. URL http://www.ncbi.nlm.nih.gov/pubmed/16239903.
+
+Nikolaos G Frangogiannis, C Wayne Smith, and Mark L Entman. The inflammatory response in myocardial infarction. Cardiovasc. Res., 53(1):31–47, jan 2002. ISSN 0008-6363. URL http://www.ncbi.nlm.nih.gov/pubmed/11744011.
+
+Ferdia A Gallagher, Mikko I Kettunen, De-En Hu, Pernille R Jensen, René In ’t Zandt, Magnus Karlsson, Anna Gisselsson, Sarah K Nelson, Timothy H Witney, Sarah E Bohndiek, Georg Hansson, Torben Peitersen, Mathilde H Lerche, and Kevin M Brindle. Production of hyperpolarized [1,4-13C2]malate from [1,4-13C2]fumarate is a marker of cell necrosis and treatment response in tumors. Proc. Natl. Acad. Sci. U. S. A., 106(47):19801–19806, 2009. ISSN 1091-6490. doi: 10.1073/pnas.0911447106. URL http://www.pnas.org/content/106/47/19801.short http://www.pnas.org/cgi/content/long/106/47/19801
+
+M Ghoerghiade and R Bonow. Chronic Heart Failure in the United States. A Manifestation of Coronary Artery Disease. Circulation, 97(3):282–289, 1998. ISSN 0009-7322. doi: 10.1161/01.CIR.97.3.282.
+
+C. L. Gibbs and D. S. Loiselle. Cardiac basal metabolism, 2001. ISSN 0021521X.
+
+Lisa Gillinder, Shi Yi Goo, Gary Cowin, Mark Strudwick, Rob J. van der Geest, William Y.S. Wang, and Arnold C.T. Ng. Quantification of Intramyocardial Metabolites by Proton Magnetic Resonance Spectroscopy. Front. Cardiovasc. Med., 2, may 2015. ISSN 2297055X. doi: 10.3389/fcvm.2015.00024. URL https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4671339/.
+
+Klaes Golman and J Stefan Petersson. Metabolic imaging and other applications of hyperpolarized 13C1. Acad. Radiol., 13(8):932–942, aug 2006. ISSN 1076-6332. doi: 10.1016/j.acra.2006.06.001. URL http://www.sciencedirect.com/science/article/pii/S107663320600314X.
+
+Klaes Golman, Jan H. Ardenkjaer-Larsen, J. Stefan Petersson, Sven Mansson, and Ib Leunbach. Molecular imaging with endogenous substances. Proc. Natl. Acad. Sci. U. S. A., 100(18):10435–10439, sep 2003. ISSN 0027-8424. doi: 10.1073/pnas.1733836100. URL http://www.pnas.org/cgi/doi/10.1073/pnas.1733836100.
+
+Klaes Golman, J. Stefan Petersson, Peter Magnusson, Edvin Johansson, Per Akeson, ChunMing Ming Chai, Georg Hansson, Sven Månsson, Per Åkeson, Chun-Ming Ming Chai, Georg Hansson, Sven Månsson, Per Akeson, Chun-Ming Ming Chai, Georg Hansson, and Sven Månsson. Cardiac metabolism measured noninvasively by hyperpolarized 13C MRI. Magn. Reson. Med., 59(5):1005–1013, may 2008. ISSN 0740-3194. doi: 10.1002/mrm.21460. URL http://doi.wiley.com/10.1002/mrm.21460 http://www.ncbi.nlm.nih.gov/pubmed/18429038.
+
+George Herrmann and George M. Decherd. The chemical nature of heart failure. Ann. Intern. Med., 12(8):1233, feb 1939. ISSN 0003-4819. doi: 10.7326/0003-4819-12-8-1233. URL http://annals.org/article.aspx?articleid=671709.
+
+Christian J F Holubarsch, Martin Rohrbach, Matthias Karrasch, Erich Boehm, Lech Polonski, Piotr Ponikowski, and Siegfried Rhein. A double-blind randomized multicentre clinical trial to evaluate the efficacy and safety of two doses of etomoxir in comparison with placebo in patients with moderate congestive heart failure: the ERGO (etomoxir for the recovery of glucose oxidation) stud. Clin. Sci. (Lond)., 113(4):205–12, aug 2007. ISSN 1470-8736. doi: 10.1042/CS20060307. URL http://www.ncbi.nlm.nih.gov/pubmed/17319797.
+
+Peter Huebener, Tareq Abou-Khamis, Pawel Zymek, Marcin Bujak, Xia Ying, Khaled Chatila, Sandra Haudek, Geeta Thakker, and Nikolaos G Frangogiannis. CD44 is critically involved in infarct healing by regulating the inflammatory and fibrotic response. J. Immunol., 180(4):2625–33, feb 2008. ISSN 0022-1767. URL http://www.ncbi.nlm.nih.gov/pubmed/18250474.
+
+Sahoko Ichihara, Takaaki Senbonmatsu, Edward Price, Toshihiro Ichiki, F. Andrew Gaffney, and Tadashi Inagami. Targeted deletion of angiotensin II type 2 receptor caused cardiac rupture after acute myocardial infarction. Circulation, 106(17):2244–2249, 2002. ISSN 00097322. doi: 10.1161/01.CIR.0000033826.52681.37.
+
+Jack J. Miller. Dynamic nuclear polarisation as a probe of metabolism in pathophysiology. Phd thesis, University of Oxford, 2015. URL https://ora.ox.ac.uk/objects/uuid:3d6721e0-e57c-42af-91a8-4d2f6d68da5b.
+
+E Johansson, S Månsson, R Wirestam, J Svensson, J S Petersson, K Golman, and F Ståhlberg. Cerebral perfusion assessment by bolus tracking using hyperpolarized 13C. Magn. Reson. Med., 51(3):464–72, mar 2004. ISSN 0740-3194. doi: 10.1002/mrm.20013. URL http://www.ncbi.nlm.nih.gov/pubmed/15004786 http://doi.wiley.com/10.1002/mrm.20013.
+
+Sonal Josan, Jae Mo Park, Ralph Hurd, Yi-Fen Yen, Adolf Pfefferbaum, Daniel Spielman, and Dirk Mayer. In vivo investigation of cardiac metabolism in the rat using mrs of hyperpolarized [1-13c] and [2-13c] pyruvate. NMR in biomedicine, 26(12):1680–1687, 2013.
+
+J A Kennedy, A J Kiosoglous, G A Murphy, M A Pelle, and J D Horowitz. Effect of perhexiline and oxfenicine on myocardial function and metabolism during low-flow ischemia/reperfusion in the isolated rat heart. J. Cardiovasc. Pharmacol., 36(6):794–801, dec 2000. ISSN 0160-2446. URL http://www.ncbi.nlm.nih.gov/pubmed/11117381.
+
+Christopher M Kramer, Jörg Barkhausen, Chiara Bucciarelli-Ducci, Scott D Flamm, Raymond J Kim, and Eike Nagel. Standardized cardiovascular magnetic resonance imaging (CMR) protocols: 2020 update. J. Cardiovasc. Magn. Reson., 22(1):17, 2020. ISSN 1532-429X. doi: 10.1186/s12968-020-00607-1. URL https://doi.org/10.1186/s12968-020-00607-1.
+
+Peder E.Z. Z Larson, Adam B. Kerr, Albert P. Chen, Michael S. Lustig, Matthew L. Zierhut, Simon Hu, Charles H. Cunningham, John M. Pauly, John Kurhanewicz, and Daniel B. Vigneron. Multiband excitation pulses for hyperpolarized 13C dynamic chemical-shift imaging. J. Magn. Reson., 194(1):121–127, sep 2008. ISSN 10907807. doi: 10.1016/j.jmr.2008.06.010. URL http://dx.doi.org/10.1016/j.jmr.2008.06.010.
+
+Angus Z Lau, Albert P Chen, Nilesh R Ghugre, Venkat Ramanan, Wilfred W Lam, Kim A Connelly, Graham A Wright, and Charles H Cunningham. Rapid multislice imaging of hyperpolarized 13C pyruvate and bicarbonate in the heart. Magn. Reson. Med., 64(5):1323–31, nov 2010. ISSN 1522-2594. doi: 10.1002/mrm.22525. URL http://www.ncbi.nlm.nih.gov/pubmed/20574989.
+
+Angus Z Lau, Albert P Chen, Ralph E Hurd, and Charles H Cunningham. Spectral-spatial excitation for rapid imaging of DNP compounds. NMR Biomed., 24(8):988–96, oct 2011. ISSN 1099-1492. doi: 10.1002/nbm.1743. URL http://www.ncbi.nlm.nih.gov/pubmed/21751271.
+
+Angus Z. Lau, Jack J. Miller, Matthew D. Robson, and Damian J. Tyler. Cardiac perfusion imaging using hyperpolarized 13C urea using flow sensitizing gradients. Magn. Reson. Med., 75(4):1474–1483, may 2016a. ISSN 15222594. doi: 10.1002/mrm.25713. URL http://doi.wiley.com/10.1002/mrm.25713.
+
+Angus Z Lau, Jack J Miller, Matthew D Robson, and Damian J Tyler. Simultaneous assessment of cardiac metabolism and perfusion using copolarized [1-(13) C]pyruvate and (13) C-urea. Magn. Reson. Med., jan 2016b. ISSN 1522-2594. doi: 10.1002/mrm.26106. URL http://www.ncbi.nlm.nih.gov/pubmed/26743440.
+
+Leong Lee, Ross Campbell, Michaela Scheuermann-Freestone, Rachel Taylor, Prasad Gunaruwan, Lynne Williams, Houman Ashrafian, John Horowitz, Alan G Fraser, Kieran Clarke, and Michael Frenneaux. Metabolic modulation with perhexiline in chronic heart failure: a randomized, controlled trial of short-term use of a novel treatment. Circulation, 112(21):3280–8, nov 2005. ISSN 1524-4539. doi: 10.1161/CIRCULATIONAHA.105.551457. URL http://circ.ahajournals.org/content/112/21/3280.full.
+
+Mark D. Lingwood, Ting Ann Siaw, Napapon Sailasuta, Brian D. Ross, Pratip Bhattacharya, and Songi Han. Continuous flow Overhauser dynamic nuclear polarization of water in the fringe field of a clinical magnetic resonance imaging system for authentic image contrast. J. Magn. Reson., 205(2):247–254, 2010. ISSN 10907807. doi: 10.1016/j.jmr.2010.05.008.
+
+Mark D. Lingwood, Ting Ann Siaw, Napapon Sailasuta, Osama A. Abulseoud, Henry R. Chan, Brian D. Ross, Pratip Bhattacharya, and Songi Han. Hyperpolarized Water as an MR Imaging Contrast Agent: Feasibility of in Vivo Imaging in a Rat Model. Radiology, 265(2):418–425, nov 2012. ISSN 0033-8419, 1527-1315. doi: 10.1148/radiol.12111804. URL http://radiology.rsna.org/content/265/2/418.
+
+Nancie J Maciver, Sarah R Jacobs, Heather L Wieman, Jessica A Wofford, Jonathan L Coloff, and Jeffrey C Rathmell. Glucose metabolism in lymphocytes is a regulated process with significant effects on immune cell function and survival. J. Leukoc. Biol., 84(4):949–57, oct 2008. ISSN 0741-5400. doi: 10.1189/jlb.0108024.
+
+Gordon Macpherson. Black’s Medical Dictionary. A&C Black, 2002. ISBN 0713654422. URL https://books.google.com/books?id=bUnCAwAAQBAJ{\&}pgis=1.
+
+John Maidens and Murat Arcak. Semidefinite relaxations in optimal experiment design with application to substrate injection for hyperpolarized MRI. Proc. Am. Control Conf., 2016-July:2023–2028, oct 2016. ISSN 07431619. doi: 10.1109/ACC.2016.7525216. URL http://arxiv.org/abs/1510.00455.
+
+Evan R. McCarney, Brandon D. Armstrong, Mark D. Lingwood, and Songi Han. Hyperpolarized water as an authentic magnetic resonance imaging contrast agent. Proc. Natl. Acad. Sci. U. S. A., 104(6):1754–1759, feb 2007. ISSN 0027-8424. doi: 10.1073/pnas.0610540104. URL http://www.pnas.org/cgi/doi/10.1073/pnas.0610540104 http://www.pnas.org/content/104/6/1754.short.
+
+John J V McMurray and Marc A Pfeffer. Heart failure. Lancet, 365(9474):1877–1889, jan 2005. ISSN 1474-547X. doi: 10.1016/S0140-6736(05)66621-4. URL http://www.sciencedirect.com/science/article/pii/S0140673605666214.
+
+Matthew E Merritt, Crystal Harrison, Charles Storey, F Mark Jeffrey, A Dean Sherry, and Craig R Malloy. Hyperpolarized 13C allows a direct measure of flux through a single enzyme-catalyzed step by NMR. Proc. Natl. Acad. Sci. U. S. A., 104(50):19773–19777, dec 2007. ISSN 1091-6490. doi: 10.1073/pnas.0706235104. URL http://www.pnas.org/content/104/50/19773.short.
+
+Jack J. Miller, Angus Z. Lau, Irvin Teh, Jürgen E. Schneider, Paul Kinchesh, Sean SmarT, Vicky Ball, Nicola R. Sibson, and Damian J. Tyler. Robust and high resolution hyperpolarized metabolic imaging of the rat heart at 7 T with 3D spectral-spatial EPI. Magn. Reson. Med., 75(4):1515–1524, may 2016. ISSN 15222594. doi: 10.1002/mrm.25730. URL http://doi.wiley.com/10.1002/mrm.25730.
+
+Jack J. Miller, Daniel R. Ball, Angus Z. Lau, and Damian J. Tyler. Hyperpolarized ketone body metabolism in the rat heart. NMR Biomed., 31(6), 2018a. ISSN 10991492. doi: 10.1002/nbm.3912.
+
+Jack J. Miller, Angus Z. Lau, Per Mose Nielsen, Giles McMullen-Klein, Andrew J. Lewis, Nichlas Riise Jespersen, Vicky Ball, Ferdia A. Gallagher, Carolyn A. Carr, Christoffer Laustsen, Hans Erik Bøtker, Damian J. Tyler, and Marie A. Schroeder. Hyperpolarized [1,4-13C2]Fumarate Enables Magnetic Resonance-Based Imaging of Myocardial Necrosis. JACC Cardiovasc. Imaging, 11(11):1594–1606, dec 2018b. ISSN 18767591. doi: 10.1016/j.jcmg.2017.09.020. URL http://linkinghub.elsevier.com/retrieve/pii/S1936878X17309889.
+
+Jack J. Miller, Ladislav Valkovič, Matthew Kerr, Kerstin N. Timm, William D. Watson, Justin Y.C. Lau, Andrew Tyler, Christopher Rodgers, Paul A. Bottomley, Lisa C. Heather, and Damian J. Tyler. Rapid, B1-insensitive, dual-band quasi-adiabatic saturation transfer with optimal control for complete quantification of myocardial ATP flux. Magn. Reson. Med., 2021. ISSN 15222594. doi: 10.1002/mrm.28647.
+
+G Montalescot, H R Andersen, D Antoniucci, A Betriu, M J de Boer, L Grip, F J Neumann, and M T Rothman. Recommendations on percutaneous coronary intervention for the reperfusion of acute ST elevation myocardial infarction. Heart, 90(6):e37, jun 2004. ISSN 1468-201X.
+
+William W. Moses. Fundamental Limits of Spatial Resolution in PET. Nucl. Instrum. Methods Phys. Res. A., 648(SUPPL. 1):S236–S240, aug 2011. ISSN 0168-9002. doi: 10.1016/j.nima.2010.11.092.
+
+Stefan Neubauer. The failing heart – an engine out of fuel. N. Engl. J. Med., 356:1140–1151, 2007. doi: 10.1056/nejmra063052. URL http://www.nejm.org/doi/full/10.1056/nejmra063052.
+
+C. M. O’Connor, W. A. Gattis, B. F. Uretsky, Jr Adams, S. E. McNulty, S. H. Grossman, W. J. McKenna, F. Zannad, K. Swedberg, M. Gheorghiade, and R. M. Califf. Continuous intravenous dobutamine is associated with an increased risk of death in patients with advanced heart failure: Insights from the Flolan International Randomized Survival Trial (FIRST). Am. Heart J., 138(1 I):78–86, 1999. ISSN 00028703. doi: 10.1016/S0002-8703(99)70250-4. URL https://www.sciencedirect.com/science/article/pii/S0002870399702504.
+
+Mark A. Peterzan, Andrew J.M. Lewis, Stefan Neubauer, and Oliver J. Rider. Non-invasive investigation of myocardial energetics in cardiac disease using 31P magnetic resonance spectroscopy. Cardiovasc. Diagn. Ther., 10(3):625–635, jun 2020. ISSN 22233660. doi: 10.21037/cdt-20-275. URL https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7369290/.
+
+M A Pfeffer, E Braunwald, L A Moyé, L Basta, E J Brown, T E Cuddy, B R Davis, E M Geltman, S Goldman, and G C Flaker. Effect of captopril on mortality and morbidity in patients with left ventricular dysfunction after myocardial infarction. Results of the survival and ventricular enlargement trial. The SAVE Investigators. N. Engl. J. Med., 327(10):669–77, sep 1992. ISSN 0028-4793. doi: 10.1056/NEJM199209033271001. URL http://www.ncbi.nlm.nih.gov/pubmed/1386652.
+
+Marc A Pfeffer, Karl Swedberg, Christopher B Granger, Peter Held, John J V McMurray, Eric L Michelson, Bertil Olofsson, Jan Ostergren, Salim Yusuf, and Stuart Pocock. Effects of candesartan on mortality and morbidity in patients with chronic heart failure: the CHARM-Overall programme. Lancet, 362(9386):759–66, sep 2003. ISSN 1474-547X. URL http://www.ncbi.nlm.nih.gov/pubmed/13678868.
+
+K A Reimer, J E Lowe, M M Rasmussen, and R B Jennings. The wavefront phenomenon of ischemic cell death: Myocardial infarct size vs duration of coronary occlusion in dogs. Circulation, 56(5):786–94, nov 1977. ISSN 0009-7322. URL http://www.ncbi.nlm.nih.gov/pubmed/912839.
+
+Oliver J. Rider, Andrew Apps, Jack J.J.J. Miller, Justin Y.C. Lau, Andrew J.M. Lewis, Mark A. Peterzan, Michael S. Dodd, Angus Z. Lau, Claire Trumper, Ferdia A. Gallagher, James T. Grist, Kevin M. Brindle, Stefan Neubauer, and Damian J. Tyler. Noninvasive in vivo assessment of cardiac metabolism in the healthy and diabetic human heart using hyperpolarized 13C MRI. Circ. Res., pages 725–736, 2020. ISSN 15244571. doi: 10.1161/CIRCRESAHA.119.316260.
+
+R Roberts, V DeMello, and B E Sobel. Deleterious effects of methylprednisolone in patients with myocardial infarction. Circulation, 53(3 Suppl):I204–6, mar 1976. ISSN 0009-7322. URL http://www.ncbi.nlm.nih.gov/pubmed/1253361.
+
+Michael Schär, Abdel Monem M. El-Sharkawy, Robert G. Weiss, and Paul A. Bottomley. Triple repetition time saturation transfer (TRiST) 31P spectroscopy for measuring human creatine kinase reaction kinetics. Magn. Reson. Med., 63(6):1493–1501, 2010. ISSN 15222594. doi: 10.1002/mrm.22347.
+
+Marie A. Schroeder, Lowri E. Cochlin, Lisa C. Heather, Kieran Clarke, George K. Radda, and Damian J. Tyler. In vivo assessment of pyruvate dehydrogenase flux in the heart using hyperpolarized carbon-13 magnetic resonance. Proc. Natl. Acad. Sci. U. S. A., 105(33):12051–12056, aug 2008. ISSN 1091-6490. doi: 10.1073/pnas.0805953105. URL http://dx.doi.org/10.1073/pnas.0805953105.
+
+Marie a Schroeder, Helen J Atherton, Daniel R Ball, Mark a Cole, Lisa C Heather, Julian L Griffin, Kieran Clarke, George K Radda, and Damian J Tyler. Real-time assessment of Krebs cycle metabolism using hyperpolarized 13 C magnetic resonance spectroscopy. FASEB J., 23(8):2529–2538, aug 2009. ISSN 0892-6638. doi: 10.1096/fj.09-129171. URL http://www.fasebj.org/doi/10.1096/fj.09-129171.
+
+Rolf F Schulte, Jonathan I Sperl, Eliane Weidl, Marion I Menzel, Martin A Janich, Oleksandr Khegai, Markus Durst, Jan Henrik Ardenkjaer-Larsen, Steffen J Glaser, Axel Haase, Markus Schwaiger, and Florian Wiesinger. Saturation-recovery metabolic-exchange rate imaging with hyperpolarized [1-(13) C] pyruvate using spectral-spatial excitation. Magn. Reson. Med., 69(5):1209–16, may 2012. ISSN 1522-2594. doi: 10.1002/mrm.24353. URL http://www.ncbi.nlm.nih.gov/pubmed/22648928.
+
+R Schulz and G Heusch. Hibernating myocardium. Heart, 84(6):587–94, oct 2000. ISSN 1468-201X. URL https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1729531/.
+
+Ignacio M. Seropian, Stefano Toldo, Benjamin W. Van Tassell, and Antonio Abbate. Antiinflammatory strategies for ventricular remodeling following St-segment elevation acute myocardial infarction. J. Am. Coll. Cardiol., 63(16):1593–1603, apr 2014. ISSN 15583597. doi: 10.1016/j.jacc.2014.01.014. URL http://linkinghub.elsevier.com/retrieve/pii/S0735109714003258.
+
+Andreas Sigfridsson, Kilian Weiss, Lukas Wissmann, Julia Busch, Marcin Krajewski, Michael Batel, Georgios Batsios, Matthias Ernst, and Sebastian Kozerke. Hybrid multiband excitation multiecho acquisition for hyperpolarized 13C spectroscopic imaging. Magn. Reson. Med., 73(5):1713–1717, may 2015. ISSN 15222594. doi: 10.1002/mrm.25294. URL http://www.ncbi.nlm.nih.gov/pubmed/24845417.
+
+HS Howard S. Silverman and Mark P. MP Pfeifer. Relation between use of antiinflammatory agents and left ventricular free wall rupture during acute myocardial infarction. Am. J. Cardiol., 59(4):363–364, 1987. ISSN 00029149. doi: 10.1016/0002-9149(87)90817-4. URL http://www.sciencedirect.com/science/article/pii/0002914987908174.
+
+Satnam Singh, Roger Beadle, Donnie Cameron, Amelia Rudd, Maggie Bruce, Baljit Jagpal, Konstantin Schwarz, Gemma Brindley, Fergus Mckiddie, Peter Nightingale, Chim Lang, Dana Dawson, and Michael Frenneaux. Randomized double-blind placebo-controlled trial of perhexiline in heart failure with preserved ejection fraction syndrome. Future Cardiol., 10(6):693–8, nov 2014. ISSN 1744-8298. doi: 10.2217/fca.14.62. URL http://www.futuremedicine.com/doi/abs/10.2217/fca.14.62.
+
+R. G. Spencer, J. A. Balschi, J. S. Leigh, and J. S. Ingwall. ATP synthesis and degradation rates in the perfused rat heart. 31P-nuclear magnetic resonance double saturation transfer measurements. Biophys. J., 54(5):921–929, 1988. ISSN 00063495. doi: 10.1016/S0006-3495(88)83028-5.
+
+William C Stanley. Myocardial energy metabolism during ischemia and the mechanisms of metabolic therapies. J. Cardiovasc. Pharmacol. Ther., 9 Suppl 1:S31–45, sep 2004. ISSN 1074-2484. URL http://www.ncbi.nlm.nih.gov/pubmed/15378130.
+
+Heinrich Taegtmeyer, Martin E. Young, Gary D. Lopaschuk, E. Dale Abel, Henri Brunengraber, Victor Darley-Usmar, Christine Des Rosiers, Robert Gerszten, Jan F. Glatz, Julian L. Griffin, Robert J. Gropler, Hermann-Georg Holzhuetter, Jorge R. Kizer, E. Douglas Lewandowski, Craig R. Malloy, Stefan Neubauer, Linda R. Peterson, Michael A. Portman, Fabio A. Recchia, Jennifer E. Van Eyk, Thomas J. Wang, and on behalf of the American Heart Association Council on Basic Cardiovascular Sciences. Assessing Cardiac Metabolism: A Scientific Statement From the American Heart Association. Circ. Res., 118(10):RES.0000000000000097–, 2016. ISSN 0009-7330. URL http://circres.ahajournals.org/cgi/content/long/RES.0000000000000097v1.
+
+Cornelius Von Morze, Peder E.Z. Z Larson, Simon Hu, Kayvan Keshari, David M. Wilson, Jan Henrik Ardenkjaer-Larsen, Andrei Goga, Robert Bok, John Kurhanewicz, and Daniel B. Vigneron. Imaging of blood flow using hyperpolarized [13C]Urea in preclinical cancer models. J. Magn. Reson. Imaging, 33(3):692–697, mar 2011a. ISSN 10531807. doi: 10.1002/jmri.22484. URL http://doi.wiley.com/10.1002/jmri.22484
+
+Cornelius Von Morze, Galen Reed, Peter Shin, Peder E Z Larson, Simon Hu, Robert Bok, and Daniel B. Vigneron. Multi-band frequency encoding method for metabolic imaging with hyperpolarized [1- 13C]pyruvate. J. Magn. Reson., 211(2):109–113, 2011b. ISSN 10907807. doi: 10.1016/j.jmr.2011.04.007.
+
+Cornelius von Morze, Peder E.Z. Z Larson, Simon Hu, Hikari A.I. I Yoshihara, Robert A. Bok, Andrei Goga, Jan Henrik Ardenkjaer-Larsen, and Daniel B. Vigneron. Investigating tumor perfusion and metabolism using multiple hyperpolarized 13C compounds: HP001, pyruvate and urea. Magn. Reson. Imaging, 30(3):305–311, apr 2012. ISSN 0730725X. doi: 10.1016/j.mri.2011.09.026. URL http://www.sciencedirect.com/science/article/pii/S0730725X11003584.
+
+WHO, World Health Organization, and WHO. Chagas disease (American trypanosomiasis). World Health Organization, 2014. URL http://www.who.int/mediacentre/factsheets/fs340/en/.
+
+Florian Wiesinger, Eliane Weidl, Marion I Menzel, Martin A Janich, Oleksandr Khegai, Steffen J Glaser, Axel Haase, Markus Schwaiger, and Rolf F Schulte. IDEAL spiral CSI for dynamic metabolic MR imaging of hyperpolarized [1-13C]pyruvate. Magn. Reson. Med., 68(1):8–16, jul 2012. ISSN 1522-2594. doi: 10.1002/mrm.23212. URL http://www.ncbi.nlm.nih.gov/pubmed/22127962.
+
+Andrew A Wolff, Heschi H Rotmensch, William C Stanley, and Roberto Ferrari. Metabolic approaches to the treatment of ischemic heart disease: the clinicians’ perspective. Heart Fail. Rev., 7(2):187–203, apr 2002. ISSN 1382-4147. URL http://www.ncbi.nlm.nih.gov/pubmed/11988642.
+
+Hikari Yoshihara, Jessica A Bastiaansen, Magnus Karlsson, Mathilde H Lerche, Arnaud Comment, and Juerg Schwitter. Myocardial fatty acid metabolism probed with hyperpolarized [1-13C]octanoate. J. Cardiovasc. Magn. Reson., 17(Suppl. 1):O101, 2015. ISSN 1532-429X. doi: 10.1186/1532-429X-17-S1-O101. URL http://jcmr-online.biomedcentral.com/articles/10.1186/1532-429X-17-S1-O101.
+
+F Zijlstra, J C Hoorntje, M J de Boer, S Reiffers, K Miedema, J P Ottervanger, A W van ’t Hof, and H Suryapranata. Long-term benefit of primary angioplasty as compared with thrombolytic therapy for acute myocardial infarction. N. Engl. J. Med., 341(19):1413–9, nov 1999. ISSN 0028-4793. doi: 10.1056/NEJM199911043411901. URL http://www.ncbi.nlm.nih.gov/pubmed/10547403.

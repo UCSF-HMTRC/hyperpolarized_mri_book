@@ -8,19 +8,6 @@ of California, San Francisco
 ^2^Department of Radiology and Biomedical Imaging, University of
 California, San Francisco
 
-[Corresponding author:]{.ul}
-
-Myriam M. Chaumeil, Ph.D.
-
-1700 4th Street, BH 204
-
-Mission Bay Campus Box 2530
-
-San Francisco, CA 94143
-
-Tel.: +415-216-5634
-
-E-mail: <myriam.chaumeil@ucsf.edu>
 
 **Abstract**
 
@@ -46,8 +33,6 @@ imaging approaches in preclinical models.
 Brain, metabolism, hyperpolarized 13C, metabolic imaging, neurological
 disorders.
 
-**\
-**
 
 **I. Introduction: an overview of the brain and its metabolism**
 
@@ -115,8 +100,6 @@ healthy brain. Finally, we will discuss which correlative studies can be
 performed in complement of HP ^13^C MRS/I, to validate MR results and
 improve our understanding of this metabolic imaging approach.
 
-**\
-**
 
 **II. Neurological applications of HP \[1-^13^C\]pyruvate**
 
@@ -128,9 +111,17 @@ neurological disorders. The majority of these studies used HP
 injection of HP \[1-^13^C\]pyruvate, and the associated molecular and
 histological correlative studies performed.
 
-> *II.1. Healthy brain*
->
-> II.1.1. Adult
+![Preclinical studies](brain_study_review.png)
+
+**Table 1**
+Preclinical studies of the brain, in health and disease, using HP
+\[1-^13^C\]pyruvate**. HP ^13^C parameters obtained following injection
+of HP \[1-^13^C\]pyruvate in preclinical studies with associated
+molecular and histological correlates. Adapted from reference \[10\].
+
+*II.1. Healthy brain*
+
+II.1.1. Adult
 
 Applications of HP \[1-^13^C\]pyruvate to the studies of the adult
 healthy brain are of fundamental importance, both in preclinical studies
@@ -182,7 +173,7 @@ a dedicated sequence \[17\]. This approach is highly promising, but the
 presence of multiple spectral resonances renders the sequence design
 challenging.
 
-> II.1.2. Effects of age and sex
+II.1.2. Effects of age and sex
 
 It is well-known that both early maturation and aging processes affect
 brain metabolism, and relative cell populations \[19, 20\]. However,
@@ -234,7 +225,7 @@ sex differences need to be considered when performing preclinical (and
 potentially clinical) HP metabolic imaging of the brain, as well as
 other organs.
 
-> II.1.3. Effects of anesthesia
+II.1.3. Effects of anesthesia
 
 Almost all preclinical studies using HP ^13^C MR imaging have been
 conducted on animals under anesthesia, which is known to alter
@@ -264,9 +255,9 @@ feasibility and increases relevance to human studies, imaging awake
 animals require extensive training, and stress might be a confounding
 factor modulating metabolism.
 
-> *II.2. Neurological disorders*
->
-> II.2.1. Cell studies of immunometabolism
+*II.2. Neurological disorders*
+
+II.2.1. Cell studies of immunometabolism
 
 Over the past decade, immunometabolism has become one of the most
 exciting areas of translational research \[32\]. By definition,
@@ -309,9 +300,9 @@ investigated by HP ^13^C MRS. In activated CD4+ T-cells derived from
 human donors, HP ^13^C lactate/pyruvate ratio were increased three-fold
 compared to non-activated lymphocytes \[37\].
 
-> II.2.2. Primary brain diseases
->
-> a\. Multiple sclerosis
+II.2.2. Primary brain diseases
+
+a\. Multiple sclerosis
 
 Multiple sclerosis (MS) is a multifaceted disease of the central nervous
 system and one of the most common causes of disability in young adults
@@ -353,7 +344,7 @@ visual pathway conduction using visual evoked potential (VEP), and
 immunofluorescence (IF) analyses, in order to further understand the
 value of the metabolic imaging data.
 
-> b\. Traumatic brain injury
+b\. Traumatic brain injury
 
 Complex alterations in brain structural integrity, perfusion and
 metabolism arise after traumatic brain injury (TBI) \[43\]. Imaging
@@ -379,7 +370,7 @@ very likely that other factors, including neuronal death and BBB
 disruption, contribute to changes in HP substrate delivery and HP
 metabolism.
 
-> c\. Stroke and ischemia
+c\. Stroke and ischemia
 
 Stroke is the third leading cause of death worldwide and the leading
 cause of disability among adults. In total, 80% of strokes are ischemic,
@@ -412,9 +403,9 @@ ipsilateral (HI) hemisphere at P10, and these differences decreased at
 P17 and disappeared at P31, suggesting a role for HP metabolic imaging
 for longitudinal monitoring of HI progression.
 
-> II\. 2.3. Peripheral insults affecting brain metabolism
->
-> a\. Acute liver failure
+II\. 2.3. Peripheral insults affecting brain metabolism
+
+a\. Acute liver failure
 
 Intracranial hypertension linked to cerebral edema is a severe
 complication of acute liver failure (ALF). The pathogenesis of cerebral
@@ -431,7 +422,7 @@ detection of the *de novo* synthesis of lactate using HP ^13^C MRSI
 suggests an important role for brain lactate in the physiopathology of
 ALF.
 
-> b\. Diet and diabetes
+b\. Diet and diabetes
 
 High intake of saturated fatty acids through diet has been linked to an
 increase risk of developing AD and dementia \[53\]. The mechanisms
@@ -470,8 +461,6 @@ oxaloacetate and acetyl CoA, was increased in both hippocampus and
 cortex samples of HFD diabetic mice, highlighting a further metabolic
 adaptation in this model.
 
-**\
-**
 
 **III. New HP probes for brain applications**
 
@@ -494,9 +483,22 @@ evaluated in healthy animal brains (**Figure 1**), except HP
 needed to establish their values for monitoring and assessing
 therapeutic response in brain diseases.
 
-> III.1. Energy metabolism
->
-> a- Glycolysis
+![Overview of cerebral metabolic reactions investigated using HP probes](brain_pathways.png)
+
+**Figure 1: Overview of cerebral metabolic reactions investigated using HP
+probes.** HP probes (bold) and corresponding HP downstream product(s)
+currently investigated in preclinical studies of the healthy brain and
+neurological disorders (red boxes). References to the corresponding
+study/studies are noted in square brackets above the reaction arrows
+\[29--32,35,36,40--47\]. The relaxation times (T1) of the HP probes are
+ranked as long (40--60 s, green), average (20--40 s, orange) and short
+(5--20 s, red), from data at the clinical magnetic field strength of 3
+Tesla (extrapolated rom data at other field strengths for glucose,
+glutamate, acetate and ketoisocaproate). Adapted from reference \[10\].
+
+III.1. Energy metabolism
+
+a- Glycolysis
 
 The ability to measure the *in vivo* metabolic flux from glucose all the
 way through glycolysis in a reasonable timeframe would be extremely
@@ -510,7 +512,7 @@ deuterated glucose remained short at this field strength (\~12s at 9.4
 Tesla), this approach could potentially complement FDG-PET, informing on
 glucose metabolism rather than uptake.
 
-> b- TCA cycle
+b- TCA cycle
 
 Unlike HP \[1-^13^C\]pyruvate, for which the ^13^C label gets into
 bicarbonate through decarboxylation by PDH and never enters the TCA
@@ -556,7 +558,7 @@ neurological disorders in which mitochondrial metabolism is affected,
 such as Parkinson's disease, Huntington's disease or Alzheimer's disease
 \[61\].
 
-> c- Glutamine/glutamate metabolism and nitrogen homeostasis
+c- Glutamine/glutamate metabolism and nitrogen homeostasis
 
 The branched chain amino acid transaminases (BCAT) play an important
 role in glutamate/glutamine metabolism and nitrogen homeostasis in the
@@ -593,7 +595,7 @@ brain. Despite its potential value in studying chronic excitotoxicity,
 such method might lead to unwanted adverse effects, and is thus limited
 for clinical translation.
 
-> III.2. Oxidative stress
+III.2. Oxidative stress
 
 Oxidative stress results from an imbalance between free radicals and
 antioxidants, which subsequently leads to cell and tissue damage.
@@ -628,8 +630,8 @@ detected in the mouse brain at 14.1Tesla, and was shown to be a marker
 for NAD^+^/NADH ratio. Such approach could thus potentially be used to
 non-invasively assess overall redox status in neurological diseases.
 
-> III\. 3. The case of HP \[1-^13^C\]lactate: theranostic and BBB
-> permeability agent
+III\. 3. The case of HP \[1-^13^C\]lactate: theranostic and BBB
+permeability agent
 
 To date, two preclinical studies have used HP \[1-^13^C\]lactate as HP
 substrate in the brain: one used this probe to evaluate BBB permeability
@@ -670,8 +672,6 @@ living neurons, perhaps enabling more lactate to be delivered to the
 tissue. HP \[1-^13^C\]lactate could thus be potentially used as a
 theragnostic agent, although its delivery may be BBB limited \[73\].
 
-**\
-**
 
 **IV. Correlation studies for HP ^13^C data**
 
@@ -693,7 +693,18 @@ the *ex vivo* brain tissue for further analysis. **Figure 2** present a
 summary of correlative and validation studies that can be performed in
 complement to HP ^13^C metabolic imaging of the brain.
 
-> IV.1. *In vivo* methods
+![Correlative studies](multimodal_brain_studies.png)
+
+**Figure 2: Correlative studies for HP ^13^C metabolic imaging of the brain.**
+Summary of the six main categories of complementary studies that can be
+performed in conjunction with HP 13C metabolic imaging of the brain. The
+three categories that can be conducted *in vivo* are: Imaging, Genetic
+Studies of animal models and Behavioral Studies of animal models. The
+three categories that are performed on *ex vivo* brain samples post
+euthanasia of the animals are: Microscopy, Metabolites analysis and
+Biochemical Studies.
+
+IV.1. *In vivo* methods
 
 a- Non-invasive imaging approaches
 
@@ -734,7 +745,7 @@ as a complement to ^13^C MRSI of HP pyruvate or HP glucose in
 Alzheimer's disease, where glucose uptake has been shown to decrease
 early \[77\].
 
-> b-Genetic studies of animal models
+b-Genetic studies of animal models
 
 Genetically engineered and transgenic animal models of disease are
 extremely useful and widely used in the context of neurological
@@ -770,7 +781,7 @@ signal. Further studies using such approaches are critically needed and
 would strengthen our understanding of the biological potential of HP
 ^13^C metabolic imaging.
 
-> c- Behavioral studies
+c- Behavioral studies
 
 Behavioral testing has been studied for a long time, as demonstrated for
 example by Ivan Pavlov's early work on conditional reflexes in dogs
@@ -784,22 +795,22 @@ depressive-like behavior, substance dependence and various forms of
 cognitive function \[82\]. A few major tests and their corresponding
 behavioral aspects are listed below:
 
--   [Open field test:]{.ul} Locomotor activity, anxiety and habituation
+-   Open field test: Locomotor activity, anxiety and habituation
 
--   [Rotarod:]{.ul} Motor coordination, balance, ataxia
+-   Rotarod: Motor coordination, balance, ataxia
 
--   [Hindpaw footprint:]{.ul} Motor coordination, balance, ataxia
+-   Hindpaw footprint: Motor coordination, balance, ataxia
 
--   [Morris water task:]{.ul} Spatial learning
+-   Morris water task: Spatial learning
 
--   [Hot plate test, foot shock test, tail flick test, tail pressure
-    test:]{.ul} Pain tolerance
+-   Hot plate test, foot shock test, tail flick test, tail pressure
+    test: Pain tolerance
 
--   [Contextual and cued fear conditioning:]{.ul} Memory skills, fear
+-   Contextual and cued fear conditioning: Memory skills, fear
     levels
 
--   [Dark/light avoidance; passive/active avoidance; elevated
-    maze:]{.ul} Anxiety.
+-   Dark/light avoidance; passive/active avoidance; elevated
+    maze: Anxiety.
 
 Importantly, the choice of behavioral testing should be done according
 to the disease or treatment studied, based on which brain regions are
@@ -821,13 +832,13 @@ be early predictor of cognitive or motor deficits? If the answer is yes,
 it would dramatically strengthen the added value of metabolic imaging
 for the study of neurological disorders.
 
-> IV.2. *Ex vivo* methods
+IV.2. *Ex vivo* methods
 
 After an *in vivo* metabolic imaging experiment end point, the brain
 tissue can be resected and studied using various approaches, described
 below, to investigate the mechanisms driving the HP data.
 
-> a- Biochemical assays
+a- Biochemical assays
 
 While many assays can be performed on brain tissue samples, the three
 most common types found in the HP ^13^C literature are
@@ -843,7 +854,7 @@ such correlative studies are highly valuable to decipher the underlying
 modulations in HP ^13^C data seen *in vivo*, and should be performed as
 systematically as possible in preclinical studies.
 
-> b- Metabolomics
+b- Metabolomics
 
 Quantitative methods allowing to assess the steady state levels of
 metabolites in brain tissue are crucial for validation and
@@ -893,7 +904,7 @@ enrichment of substrate and products in the tissue of interest \[88\],
 and could be of high interest for evaluating the potential of new HP
 probes for brain studies.
 
-> c- Immunohistochemistry/Immunofluorescence
+c- Immunohistochemistry/Immunofluorescence
 
 Immunohistochemistry (IHC) is a powerful tool that is widely used in
 neuroscience research, as it allows visualizing a target protein of
@@ -937,257 +948,95 @@ critically needed to help understanding the potential and meaning of HP
 translation of this methodology for patients with neurological
 disorders.
 
-**\
-**
-
-**Figures and Tables Legends**
-
-**Table 1**
-
-**Preclinical studies of the brain, in health and disease, using HP
-\[1-^13^C\]pyruvate**. HP ^13^C parameters obtained following injection
-of HP \[1-^13^C\]pyruvate in preclinical studies with associated
-molecular and histological correlates. Adapted from reference \[10\].
-
-**Figure 1**
-
-**Overview of cerebral metabolic reactions investigated using HP
-probes.** HP probes (bold) and corresponding HP downstream product(s)
-currently investigated in preclinical studies of the healthy brain and
-neurological disorders (red boxes). References to the corresponding
-study/studies are noted in square brackets above the reaction arrows
-\[29--32,35,36,40--47\]. The relaxation times (T1) of the HP probes are
-ranked as long (40--60 s, green), average (20--40 s, orange) and short
-(5--20 s, red), from data at the clinical magnetic field strength of 3
-Tesla (extrapolated rom data at other field strengths for glucose,
-glutamate, acetate and ketoisocaproate). Adapted from reference \[10\].
-
-**Figure 2**
-
-**Correlative studies for HP ^13^C metabolic imaging of the brain.**
-Summary of the six main categories of complementary studies that can be
-performed in conjunction with HP 13C metabolic imaging of the brain. The
-three categories that can be conducted *in vivo* are: Imaging, Genetic
-Studies of animal models and Behavioral Studies of animal models. The
-three categories that are performed on *ex vivo* brain samples post
-euthanasia of the animals are: Microscopy, Metabolites analysis and
-Biochemical Studies.
-
 **References**
 
-1\. von Bartheld, C.S., J. Bahney, and S. Herculano-Houzel, *The search
-for true numbers of neurons and glial cells in the human brain: A review
-of 150 years of cell counting.* J Comp Neurol, 2016. **524**(18): p.
-3865-3895.2. Herculano-Houzel, S. and R. Lent, *Isotropic fractionator:
-a simple, rapid method for the quantification of total cell and neuron
-numbers in the brain.* J Neurosci, 2005. **25**(10): p. 2518-21.3.
-Pellerin, L., *Food for thought: the importance of glucose and other
-energy substrates for sustaining brain function under varying levels of
-activity.* Diabetes Metab, 2010. **36 Suppl 3**: p. S59-63.4. Hyder, F.,
-D.L. Rothman, and M.R. Bennett, *Cortical energy demands of signaling
-and nonsignaling components in brain are conserved across mammalian
-species and activity levels.* Proc Natl Acad Sci U S A, 2013.
-**110**(9): p. 3549-54.5. Nehlig, A. and A. Pereira de Vasconcelos,
-*Glucose and ketone body utilization by the brain of neonatal rats.*
-Prog Neurobiol, 1993. **40**(2): p. 163-221.6. Owen, O.E., et al.,
-*Brain metabolism during fasting.* J Clin Invest, 1967. **46**(10): p.
-1589-95.7. van Hall, G., et al., *Blood lactate is an important energy
-source for the human brain.* J Cereb Blood Flow Metab, 2009. **29**(6):
-p. 1121-9.8. Belanger, M., I. Allaman, and P.J. Magistretti, *Brain
-energy metabolism: focus on astrocyte-neuron metabolic cooperation.*
-Cell Metab, 2011. **14**(6): p. 724-38.9. Watts, M.E., R. Pocock, and C.
-Claudianos, *Brain Energy and Oxygen Metabolism: Emerging Role in Normal
-Function and Disease.* Front Mol Neurosci, 2018. **11**: p. 216.10. Le
-Page, L.M., et al., *Imaging Brain Metabolism Using Hyperpolarized (13)C
-Magnetic Resonance Spectroscopy.* Trends Neurosci, 2020. **43**(5): p.
-343-354.11. Grist, J.T., et al., *Quantifying normal human brain
-metabolism using hyperpolarized \[1-(13)C\]pyruvate and magnetic
-resonance imaging.* Neuroimage, 2019. **189**: p. 171-179.12. Lee, C.Y.,
-et al., *Lactate topography of the human brain using hyperpolarized
-(13)C-MRI.* Neuroimage, 2019. **204**: p. 116202.13. Miloushev, V.Z., et
-al., *Hyperpolarized (13)C pyruvate mouse brain metabolism with
-absorptive-mode EPSI at 1T.* J Magn Reson, 2017. **275**: p. 120-126.14.
-Hurd, R.E., et al., *Cerebral dynamics and metabolism of hyperpolarized
-\[1-(13)C\]pyruvate using time-resolved MR spectroscopic imaging.* J
-Cereb Blood Flow Metab, 2010. **30**(10): p. 1734-41.15. Mayer, D., et
-al., *Dynamic and high-resolution metabolic imaging of hyperpolarized
-\[1-13C\]-pyruvate in the rat brain using a high-performance gradient
-insert.* Magn Reson Med, 2011. **65**(5): p. 1228-33.16. Park, I., et
-al., *Dynamic Hyperpolarized Carbon-13 MR Metabolic Imaging of Nonhuman
-Primate Brain.* Magn Reson Med, 2014. **71**(1): p. 19-25.17. Miller,
-J.J., et al., *(13)C Pyruvate Transport Across the Blood-Brain Barrier
-in Preclinical Hyperpolarised MRI.* Sci Rep, 2018. **8**(1): p.
-15082.18. Hurd, R.E., et al., *Metabolic imaging in the anesthetized rat
-brain using hyperpolarized \[1-13C\] pyruvate and \[1-13C\] ethyl
-pyruvate.* Magn Reson Med, 2010. **63**(5): p. 1137-43.19. Steiner, P.,
-*Brain Fuel Utilization in the Developing Brain.* Ann Nutr Metab, 2020.
-**75 Suppl 1**: p. 35-45.20. Goyal, M.S., et al., *Loss of Brain Aerobic
-Glycolysis in Normal Human Aging.* Cell Metab, 2017. **26**(2): p.
-353-360 e3.21. Chen, Y., et al., *Pyruvate to lactate metabolic changes
-during neurodevelopment measured dynamically using hyperpolarized 13C
-imaging in juvenile murine brain.* Dev Neurosci, 2016. **38**(1): p.
-34-40.22. Dutta, S. and P. Sengupta, *Men and mice: Relating their
-ages.* Life Sci, 2016. **152**: p. 244-8.23. Harris, R.A., et al.,
-*Aerobic Glycolysis Is Required for Spatial Memory Acquisition But Not
-Memory Retrieval in Mice.* eNeuro, 2019. **6**(1).24. Wen, Y., et al.,
-*Sex Differences in Kidney Function and Metabolism Assessed Using
-Hyperpolarized \[1-(13)C\]Pyruvate Interleaved Spectroscopy and
-Nonspecific Imaging.* Tomography, 2020. **6**(1): p. 5-13.25. Goyal,
-M.S., et al., *Persistent metabolic youth in the aging female brain.*
-Proc Natl Acad Sci U S A, 2019. **116**(8): p. 3251-3255.26. Beam, C.R.,
-et al., *Differences Between Women and Men in Incidence Rates of
-Dementia and Alzheimer\'s Disease.* J Alzheimers Dis, 2018. **64**(4):
-p. 1077-1083.27. Krukowski, K., et al., *Female mice are protected from
-space radiation-induced maladaptive responses.* Brain Behav Immun, 2018.
-**74**: p. 106-120.28. Slupe, A.M. and J.R. Kirsch, *Effects of
-anesthesia on cerebral blood flow, metabolism, and neuroprotection.* J
-Cereb Blood Flow Metab, 2018. **38**(12): p. 2192-2208.29. Marjanska,
-M., et al., *Brain metabolism under different anesthetic conditions
-using hyperpolarized \[1-(13) C\]pyruvate and \[2-(13) C\]pyruvate.* NMR
-Biomed, 2018. **31**(12): p. e4012.30. Josan, S., et al., *Effects of
-isoflurane anesthesia on hyperpolarized (13)C metabolic measurements in
-rat brain.* Magn Reson Med, 2013. **70**(4): p. 1117-24.31. Hyppönen,
-V., et al. *Metabolism of hyperpolarized \[1-13C\]pyruvate in awake,
-isoflurane and urethane anesthetized rat brain*. in *ISMRM*. 2019.
-Montreal, QC, Canada.32. Makowski, L., M. Chaib, and J.C. Rathmell,
-*Immunometabolism: From basic mechanisms to translation.* Immunol Rev,
-2020. **295**(1): p. 5-14.33. Galvan-Pena, S. and L.A. O\'Neill,
-*Metabolic reprograming in macrophage polarization.* Front Immunol,
-2014. **5**: p. 420.34. Sriram, R., et al., *Molecular detection of
-inflammation in cell models using hyperpolarized (13)C-pyruvate.*
-Theranostics, 2018. **8**(12): p. 3400-3407.35. Le Page, L.M., et al.,
-*Hyperpolarized (13) C magnetic resonance spectroscopy detects
-toxin-induced neuroinflammation in mice.* NMR Biomed, 2019. **32**(11):
-p. e4164.36. Qiao, K., et al. *Non-invasive Detection of M1 Activation
-in Macrophages using Hyperpolarized 13C MRS of Pyruvate and DHA at 1.47
-Tesla* in *ISMRM*. 2020. Virtual.37. Can, E., et al., *Noninvasive rapid
-detection of metabolic adaptation in activated human T lymphocytes by
-hyperpolarized (13)C magnetic resonance.* Sci Rep, 2020. **10**(1): p.
-200.38. Reich, D.S., C.F. Lucchinetti, and P.A. Calabresi, *Multiple
-Sclerosis.* N Engl J Med, 2018. **378**(2): p. 169-180.39. Wallin, M.T.,
-et al., *The prevalence of MS in the United States: A population-based
-estimate using health claims data.* Neurology, 2019. **92**(10): p.
-e1029-e1040.40. Bagnato, F., et al., *Imaging Mechanisms of Disease
-Progression in Multiple Sclerosis: Beyond Brain Atrophy.* J
-Neuroimaging, 2020. **30**(3): p. 251-266.41. Guglielmetti, C., et al.,
-*Hyperpolarized (13)C MR metabolic imaging can detect neuroinflammation
-in vivo in a multiple sclerosis murine model.* Proc Natl Acad Sci U S A,
-2017. **114**(33): p. E6982-E6991.42. Caroline Guglielmetti, C.C., Chloe
-Najac, Ari Green, Myriam Chaumeil, *Metabolic imaging of brain
-inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a
-mouse model of multiple sclerosis.* In: Proceedings of the 27th Annual
-Meeting of ISMRM; Montreal, QC, Canada:0723., 2019.43. Lizzo, J.M. and
-M. Waseem, *Brain Trauma*, in *StatPearls*. 2020: Treasure Island
-(FL).44. Lee, A.L., *Advanced Imaging of Traumatic Brain Injury.* Korean
-J Neurotrauma, 2020. **16**(1): p. 3-17.45. DeVience, S.J., et al.,
-*Metabolic imaging of energy metabolism in traumatic brain injury using
-hyperpolarized \[1-(13)C\]pyruvate.* Sci Rep, 2017. **7**(1): p.
-1907.46. Guglielmetti, C., et al., *In vivo metabolic imaging of
-Traumatic Brain Injury.* Sci Rep, 2017. **7**(1): p. 17525.47. Moseley,
-M.E., *Molecular imaging and stroke.* Stroke, 2009. **40**(3 Suppl): p.
-S30-3.48. Xu, Y., et al., *Hyperpolarized (13)C Magnetic Resonance
-Imaging Can Detect Metabolic Changes Characteristic of Penumbra in
-Ischemic Stroke.* Tomography, 2017. **3**(2): p. 67-73.49. Vannucci,
-S.J. and H. Hagberg, *Hypoxia-ischemia in the immature brain.* J Exp
-Biol, 2004. **207**(Pt 18): p. 3149-54.50. Mikrogeorgiou, A., et al., *A
-Metabolomics Study of Hypoxia Ischemia during Mouse Brain Development
-Using Hyperpolarized 13C.* Dev Neurosci, 2020: p. 1-10.51. Ott, P., O.
-Clemmesen, and F.S. Larsen, *Cerebral metabolic disturbances in the
-brain during acute liver failure: from hyperammonemia to energy failure
-and proteolysis.* Neurochem Int, 2005. **47**(1-2): p. 13-8.52.
-Chavarria, L., et al., *Real-time assessment of (1)(3)C metabolism
-reveals an early lactate increase in the brain of rats with acute liver
-failure.* NMR Biomed, 2015. **28**(1): p. 17-23.53. Morris, M.C. and
-C.C. Tangney, *Dietary fat composition and dementia risk.* Neurobiol
-Aging, 2014. **35 Suppl 2**: p. S59-64.54. Choi, Y.S., et al.,
-*Hyperpolarized \[1-13C\] pyruvate MR spectroscopy detect altered
-glycolysis in the brain of a cognitively impaired mouse model fed
-high-fat diet.* Mol Brain, 2018. **11**(1): p. 74.55. Choi, Y.S., et
-al., *Hyperpolarized \[1-13C\]lactate flux increased in the hippocampal
-region in diabetic mice.* Mol Brain, 2019. **12**(1): p. 88.56.
-Mishkovsky, M., et al., *Measuring glucose cerebral metabolism in the
-healthy mouse using hyperpolarized 13 C magnetic resonance.* Scientific
-Reports, 2017. **7**(1): p. 1-8.57. Park, J.M., et al., *Measuring
-Mitochondrial Metabolism in Rat Brain in vivo using MR Spectroscopy of
-Hyperpolarized \[2-13C\]Pyruvate.* NMR Biomed, 2013. **26**(10): p.
-1197-203.58. Marjańska, M., et al., *In vivo 13C spectroscopy in the rat
-brain using hyperpolarized \[1-13C\]pyruvate and \[2-13C\]pyruvate.*
-2010.59. Chung, B.T., et al., *First hyperpolarized \[2-(13)C\]pyruvate
-MR studies of human brain metabolism.* J Magn Reson, 2019. **309**: p.
-106617.60. Mishkovsky, M., A. Comment, and R. Gruetter, *In vivo
-detection of brain Krebs cycle intermediate by hyperpolarized magnetic
-resonance.* J Cereb Blood Flow Metab, 2012. **32**(12): p. 2108-13.61.
-Yan, X., et al., *Abnormal Mitochondrial Quality Control in
-Neurodegenerative Diseases.* Front Cell Neurosci, 2020. **14**: p.
-138.62. Hutson, S., *Structure and function of branched chain
-aminotransferases.* Prog Nucleic Acid Res Mol Biol, 2001. **70**: p.
-175-206.63. Sidoryk-Wegrzynowicz, M. and L. Struzynska, *Astroglial
-contribution to tau-dependent neurodegeneration.* Biochem J, 2019.
-**476**(22): p. 3493-3504.64. Butt, S.A., et al., *Imaging cerebral
-2-ketoisocaproate metabolism with hyperpolarized 13C Magnetic Resonance
-Spectroscopic Imaging.* J Cereb Blood Flow Metab, 2012. **32**(8): p.
-1508-14.65. Mazuel, L., et al., *Intracerebral synthesis of glutamine
-from hyperpolarized glutamate - Mazuel - 2017 - Magnetic Resonance in
-Medicine - Wiley Online Library.* Magnetic Resonance in Medicine,
-2016.66. Salim, S., *Oxidative Stress and the Central Nervous System.* J
-Pharmacol Exp Ther, 2017. **360**(1): p. 201-205.67. Keshari, K.R., et
-al., *Hyperpolarized 13C dehydroascorbate as an endogenous redox sensor
-for in vivo metabolic imaging.* Proc Natl Acad Sci U S A, 2011.
-**108**(46): p. 18606-11.68. Bohndiek, S.E., et al., *Hyperpolarized
-\[1-13C\]-ascorbic and dehydroascorbic acid: vitamin C as a probe for
-imaging redox status in vivo.* J Am Chem Soc, 2011. **133**(30): p.
-11795-801.69. Qin, H., et al., *Imaging glutathione depletion in the rat
-brain using ascorbate-derived hyperpolarized MR and PET probes.* Sci
-Rep, 2018. **8**(1): p. 7928.70. Timm, K.N., et al., *Assessing
-Oxidative Stress in Tumors by Measuring the Rate of Hyperpolarized
-\[1-13C\]Dehydroascorbic Acid Reduction Using 13C Magnetic Resonance
-Spectroscopy.* J Biol Chem, 2017. **292**(5): p. 1737-1748.71. Batsios,
-G., et al. *Detection of gamma-glutamyl-transferase activity
-up-regulation in orthotopic glioma using hyperpolarized
-gamma-glutamyl-\[1-13C\]glycine*. in *International Society of Magnetic
-Resonance in Medicine*. 2019. Montreal.72. Najac, C., et al., *In vivo
-investigation of hyperpolarized \[1,3-(13)C2\]acetoacetate as a
-metabolic probe in normal brain and in glioma.* Sci Rep, 2019. **9**(1):
-p. 3402.73. Takado, Y., et al., *Hyperpolarized (13)C Magnetic Resonance
-Spectroscopy Reveals the Rate-Limiting Role of the Blood-Brain Barrier
-in the Cerebral Uptake and Metabolism of l-Lactate in Vivo.* ACS Chem
-Neurosci, 2018. **9**(11): p. 2554-2562.74. Jean-Noël Hyacinthe, L.B.,
-Mario Lepore, Rolf Gruetter, Lorenz Hirt, and Mor Mishkovsky,
-*Evaluating hyperpolarized lactate as a theranostic agent for stroke.*
-In: Proceedings of the 26th Joint Annual Meeting of ISMRM-ESMRMB; Paris,
-France:3708., 2018.75. Guglielmetti, C., et al. *Metabolic imaging of
-brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in
-a mouse model of multiple sclerosis.* in *International Society for
-Magnetic Resonance in Medicine*. 2019. Montreal, Canada.76. Radoul, M.,
-et al., *MR Studies of Glioblastoma Models Treated with Dual PI3K/mTOR
-Inhibitor and Temozolomide:Metabolic Changes Are Associated with
-Enhanced Survival.* Mol Cancer Ther, 2016. **15**(5): p. 1113-22.77. An,
-Y., et al., *Evidence for brain glucose dysregulation in Alzheimer\'s
-disease.* Alzheimers Dement, 2018. **14**(3): p. 318-329.78.
-Hafezparast, M., et al., *Mouse models for neurological disease.* Lancet
-Neurol, 2002. **1**(4): p. 215-24.79. Jinek, M., et al., *A programmable
-dual-RNA-guided DNA endonuclease in adaptive bacterial immunity.*
-Science, 2012. **337**(6096): p. 816-21.80. Kim, H., et al., *Mouse
-Cre-LoxP system: general principles to determine tissue-specific roles
-of target genes.* Lab Anim Res, 2018. **34**(4): p. 147-159.81.
-Samoilov, V.O., *Ivan Petrovich Pavlov (1849-1936).* J Hist Neurosci,
-2007. **16**(1-2): p. 74-89.82. Sousa, N., O.F. Almeida, and C.T.
-Wotjak, *A hitchhiker\'s guide to behavioral analysis in laboratory
-rodents.* Genes Brain Behav, 2006. **5 Suppl 2**: p. 5-24.83. Kafkafi,
-N., et al., *Reproducibility and replicability of rodent phenotyping in
-preclinical studies.* Neurosci Biobehav Rev, 2018. **87**: p.
-218-232.84. Cheng, L.L., et al., *Quantitative neuropathology by high
-resolution magic angle spinning proton magnetic resonance spectroscopy.*
-Proc Natl Acad Sci U S A, 1997. **94**(12): p. 6408-13.85. Ser, Z., et
-al., *Extraction parameters for metabolomics from cultured cells.* Anal
-Biochem, 2015. **475**: p. 22-8.86. Sapcariu, S.C., et al.,
-*Simultaneous extraction of proteins and metabolites from cells in
-culture.* MethodsX, 2014. **1**: p. 74-80.87. Roessner, U. and J. Bowne,
-*What is metabolomics all about?* Biotechniques, 2009. **46**(5): p.
-363-5.88. Cho, A., et al., *Hyperpolarized \[6-(13)C,(15)N3\]-Arginine
-as a Probe for in Vivo Arginase Activity.* ACS Chem Biol, 2019.
-**14**(4): p. 665-673.89. Ward, J.M. and J.E. Rehg, *Rodent
-immunohistochemistry: pitfalls and troubleshooting.* Vet Pathol, 2014.
-**51**(1): p. 88-101.90. Evilsizor, M.N., et al., *Primer for
-immunohistochemistry on cryosectioned rat brain tissue: example staining
-for microglia and neurons.* J Vis Exp, 2015(99): p. e52293.
+1. von Bartheld, C.S., J. Bahney, and S. Herculano-Houzel, *The search for true numbers of neurons and glial cells in the human brain: A review of 150 years of cell counting.* J Comp Neurol, 2016. **524**(18): p. 3865-3895.
+2. Herculano-Houzel, S. and R. Lent, *Isotropic fractionator: a simple, rapid method for the quantification of total cell and neuron numbers in the brain.* J Neurosci, 2005. **25**(10): p. 2518-21.
+3. Pellerin, L., *Food for thought: the importance of glucose and other energy substrates for sustaining brain function under varying levels of activity.* Diabetes Metab, 2010. **36 Suppl 3**: p. S59-63.
+4. Hyder, F., D.L. Rothman, and M.R. Bennett, *Cortical energy demands of signaling and nonsignaling components in brain are conserved across mammalian species and activity levels.* Proc Natl Acad Sci U S A, 2013. **110**(9): p. 3549-54.
+5. Nehlig, A. and A. Pereira de Vasconcelos, *Glucose and ketone body utilization by the brain of neonatal rats.* Prog Neurobiol, 1993. **40**(2): p. 163-221.
+6. Owen, O.E., et al., *Brain metabolism during fasting.* J Clin Invest, 1967. **46**(10): p. 1589-95.
+7. van Hall, G., et al., *Blood lactate is an important energy source for the human brain.* J Cereb Blood Flow Metab, 2009. **29**(6): p. 1121-9.
+8. Belanger, M., I. Allaman, and P.J. Magistretti, *Brain energy metabolism: focus on astrocyte-neuron metabolic cooperation.* Cell Metab, 2011. **14**(6): p. 724-38.
+9. Watts, M.E., R. Pocock, and C. Claudianos, *Brain Energy and Oxygen Metabolism: Emerging Role in Normal Function and Disease.* Front Mol Neurosci, 2018. **11**: p. 216.
+10. Le Page, L.M., et al., *Imaging Brain Metabolism Using Hyperpolarized (13)C Magnetic Resonance Spectroscopy.* Trends Neurosci, 2020. **43**(5): p. 343-354.
+11. Grist, J.T., et al., *Quantifying normal human brain metabolism using hyperpolarized \[1-(13)C\]pyruvate and magnetic resonance imaging.* Neuroimage, 2019. **189**: p. 171-179.
+12. Lee, C.Y., et al., *Lactate topography of the human brain using hyperpolarized (13)C-MRI.* Neuroimage, 2019. **204**: p. 116202.
+13. Miloushev, V.Z., et al., *Hyperpolarized (13)C pyruvate mouse brain metabolism with absorptive-mode EPSI at 1T.* J Magn Reson, 2017. **275**: p. 120-126.
+14. Hurd, R.E., et al., *Cerebral dynamics and metabolism of hyperpolarized \[1-(13)C\]pyruvate using time-resolved MR spectroscopic imaging.* J Cereb Blood Flow Metab, 2010. **30**(10): p. 1734-41.
+15. Mayer, D., et al., *Dynamic and high-resolution metabolic imaging of hyperpolarized \[1-13C\]-pyruvate in the rat brain using a high-performance gradient insert.* Magn Reson Med, 2011. **65**(5): p. 1228-33.
+16. Park, I., et al., *Dynamic Hyperpolarized Carbon-13 MR Metabolic Imaging of Nonhuman Primate Brain.* Magn Reson Med, 2014. **71**(1): p. 19-25.
+17. Miller, J.J., et al., *(13)C Pyruvate Transport Across the Blood-Brain Barrier in Preclinical Hyperpolarised MRI.* Sci Rep, 2018. **8**(1): p. 15082.
+18. Hurd, R.E., et al., *Metabolic imaging in the anesthetized rat brain using hyperpolarized \[1-13C\] pyruvate and \[1-13C\] ethyl pyruvate.* Magn Reson Med, 2010. **63**(5): p. 1137-43.
+19. Steiner, P., *Brain Fuel Utilization in the Developing Brain.* Ann Nutr Metab, 2020. **75 Suppl 1**: p. 35-45.
+20. Goyal, M.S., et al., *Loss of Brain Aerobic Glycolysis in Normal Human Aging.* Cell Metab, 2017. **26**(2): p. 353-360 e3.
+21. Chen, Y., et al., *Pyruvate to lactate metabolic changes during neurodevelopment measured dynamically using hyperpolarized 13C imaging in juvenile murine brain.* Dev Neurosci, 2016. **38**(1): p. 34-40.
+22. Dutta, S. and P. Sengupta, *Men and mice: Relating their ages.* Life Sci, 2016. **152**: p. 244-8.
+23. Harris, R.A., et al., *Aerobic Glycolysis Is Required for Spatial Memory Acquisition But Not Memory Retrieval in Mice.* eNeuro, 2019. **6**(1).
+24. Wen, Y., et al., *Sex Differences in Kidney Function and Metabolism Assessed Using Hyperpolarized \[1-(13)C\]Pyruvate Interleaved Spectroscopy and Nonspecific Imaging.* Tomography, 2020. **6**(1): p. 5-13.
+25. Goyal, M.S., et al., *Persistent metabolic youth in the aging female brain.* Proc Natl Acad Sci U S A, 2019. **116**(8): p. 3251-3255.
+26. Beam, C.R., et al., *Differences Between Women and Men in Incidence Rates of Dementia and Alzheimer's Disease.* J Alzheimers Dis, 2018. **64**(4): p. 1077-1083.
+27. Krukowski, K., et al., *Female mice are protected from space radiation-induced maladaptive responses.* Brain Behav Immun, 2018. **74**: p. 106-120.
+28. Slupe, A.M. and J.R. Kirsch, *Effects of anesthesia on cerebral blood flow, metabolism, and neuroprotection.* J Cereb Blood Flow Metab, 2018. **38**(12): p. 2192-2208.
+29. Marjanska, M., et al., *Brain metabolism under different anesthetic conditions using hyperpolarized \[1-(13) C\]pyruvate and \[2-(13) C\]pyruvate.* NMR Biomed, 2018. **31**(12): p. e4012.
+30. Josan, S., et al., *Effects of isoflurane anesthesia on hyperpolarized (13)C metabolic measurements in rat brain.* Magn Reson Med, 2013. **70**(4): p. 1117-24.
+31. Hyppönen, V., et al. *Metabolism of hyperpolarized \[1-13C\]pyruvate in awake, isoflurane and urethane anesthetized rat brain*. in *ISMRM*. 2019. Montreal, QC, Canada.
+32. Makowski, L., M. Chaib, and J.C. Rathmell, *Immunometabolism: From basic mechanisms to translation.* Immunol Rev, 2020. **295**(1): p. 5-14.
+33. Galvan-Pena, S. and L.A. O'Neill, *Metabolic reprograming in macrophage polarization.* Front Immunol, 2014. **5**: p. 420.
+34. Sriram, R., et al., *Molecular detection of inflammation in cell models using hyperpolarized (13)C-pyruvate.* Theranostics, 2018. **8**(12): p. 3400-3407.
+35. Le Page, L.M., et al., *Hyperpolarized (13) C magnetic resonance spectroscopy detects toxin-induced neuroinflammation in mice.* NMR Biomed, 2019. **32**(11): p. e4164.
+36. Qiao, K., et al. *Non-invasive Detection of M1 Activation in Macrophages using Hyperpolarized 13C MRS of Pyruvate and DHA at 1.47 Tesla* in *ISMRM*. 2020. Virtual.
+37. Can, E., et al., *Noninvasive rapid detection of metabolic adaptation in activated human T lymphocytes by hyperpolarized (13)C magnetic resonance.* Sci Rep, 2020. **10**(1): p. 200.
+38. Reich, D.S., C.F. Lucchinetti, and P.A. Calabresi, *Multiple Sclerosis.* N Engl J Med, 2018. **378**(2): p. 169-180.
+39. Wallin, M.T., et al., *The prevalence of MS in the United States: A population-based estimate using health claims data.* Neurology, 2019. **92**(10): p. e1029-e1040.
+40. Bagnato, F., et al., *Imaging Mechanisms of Disease Progression in Multiple Sclerosis: Beyond Brain Atrophy.* J Neuroimaging, 2020. **30**(3): p. 251-266.
+41. Guglielmetti, C., et al., *Hyperpolarized (13)C MR metabolic imaging can detect neuroinflammation in vivo in a multiple sclerosis murine model.* Proc Natl Acad Sci U S A, 2017. **114**(33): p. E6982-E6991.
+42. Caroline Guglielmetti, C.C., Chloe Najac, Ari Green, Myriam Chaumeil, *Metabolic imaging of brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a mouse model of multiple sclerosis.* In: Proceedings of the 27th Annual Meeting of ISMRM; Montreal, QC, Canada:0723., 2019.
+43. Lizzo, J.M. and M. Waseem, *Brain Trauma*, in *StatPearls*. 2020: Treasure Island (FL).
+44. Lee, A.L., *Advanced Imaging of Traumatic Brain Injury.* Korean J Neurotrauma, 2020. **16**(1): p. 3-17.
+45. DeVience, S.J., et al., *Metabolic imaging of energy metabolism in traumatic brain injury using hyperpolarized \[1-(13)C\]pyruvate.* Sci Rep, 2017. **7**(1): p. 1907.
+46. Guglielmetti, C., et al., *In vivo metabolic imaging of Traumatic Brain Injury.* Sci Rep, 2017. **7**(1): p. 17525.
+47. Moseley, M.E., *Molecular imaging and stroke.* Stroke, 2009. **40**(3 Suppl): p. S30-3.
+48. Xu, Y., et al., *Hyperpolarized (13)C Magnetic Resonance Imaging Can Detect Metabolic Changes Characteristic of Penumbra in Ischemic Stroke.* Tomography, 2017. **3**(2): p. 67-73.
+49. Vannucci, S.J. and H. Hagberg, *Hypoxia-ischemia in the immature brain.* J Exp Biol, 2004. **207**(Pt 18): p. 3149-54.
+50. Mikrogeorgiou, A., et al., *A Metabolomics Study of Hypoxia Ischemia during Mouse Brain Development Using Hyperpolarized 13C.* Dev Neurosci, 2020: p. 1-10.
+51. Ott, P., O. Clemmesen, and F.S. Larsen, *Cerebral metabolic disturbances in the brain during acute liver failure: from hyperammonemia to energy failure and proteolysis.* Neurochem Int, 2005. **47**(1-2): p. 13-8.
+52. Chavarria, L., et al., *Real-time assessment of (1)(3)C metabolism reveals an early lactate increase in the brain of rats with acute liver failure.* NMR Biomed, 2015. **28**(1): p. 17-23.
+53. Morris, M.C. and C.C. Tangney, *Dietary fat composition and dementia risk.* Neurobiol Aging, 2014. **35 Suppl 2**: p. S59-64.
+54. Choi, Y.S., et al., *Hyperpolarized \[1-13C\] pyruvate MR spectroscopy detect altered glycolysis in the brain of a cognitively impaired mouse model fed high-fat diet.* Mol Brain, 2018. **11**(1): p. 74.
+55. Choi, Y.S., et al., *Hyperpolarized \[1-13C\]lactate flux increased in the hippocampal region in diabetic mice.* Mol Brain, 2019. **12**(1): p. 88.
+56. Mishkovsky, M., et al., *Measuring glucose cerebral metabolism in the healthy mouse using hyperpolarized 13 C magnetic resonance.* Scientific Reports, 2017. **7**(1): p. 1-8.
+57. Park, J.M., et al., *Measuring Mitochondrial Metabolism in Rat Brain in vivo using MR Spectroscopy of Hyperpolarized \[2-13C\]Pyruvate.* NMR Biomed, 2013. **26**(10): p. 1197-203.
+58. Marjańska, M., et al., *In vivo 13C spectroscopy in the rat brain using hyperpolarized \[1-13C\]pyruvate and \[2-13C\]pyruvate.* 2010.
+59. Chung, B.T., et al., *First hyperpolarized \[2-(13)C\]pyruvate MR studies of human brain metabolism.* J Magn Reson, 2019. **309**: p. 106617.
+60. Mishkovsky, M., A. Comment, and R. Gruetter, *In vivo detection of brain Krebs cycle intermediate by hyperpolarized magnetic resonance.* J Cereb Blood Flow Metab, 2012. **32**(12): p. 2108-13.
+61. Yan, X., et al., *Abnormal Mitochondrial Quality Control in Neurodegenerative Diseases.* Front Cell Neurosci, 2020. **14**: p. 138.
+62. Hutson, S., *Structure and function of branched chain aminotransferases.* Prog Nucleic Acid Res Mol Biol, 2001. **70**: p. 175-206.
+63. Sidoryk-Wegrzynowicz, M. and L. Struzynska, *Astroglial contribution to tau-dependent neurodegeneration.* Biochem J, 2019. **476**(22): p. 3493-3504.
+64. Butt, S.A., et al., *Imaging cerebral 2-ketoisocaproate metabolism with hyperpolarized 13C Magnetic Resonance Spectroscopic Imaging.* J Cereb Blood Flow Metab, 2012. **32**(8): p. 1508-14.
+65. Mazuel, L., et al., *Intracerebral synthesis of glutamine from hyperpolarized glutamate - Mazuel - 2017 - Magnetic Resonance in Medicine - Wiley Online Library.* Magnetic Resonance in Medicine, 2016.
+66. Salim, S., *Oxidative Stress and the Central Nervous System.* J Pharmacol Exp Ther, 2017. **360**(1): p. 201-205.
+67. Keshari, K.R., et al., *Hyperpolarized 13C dehydroascorbate as an endogenous redox sensor for in vivo metabolic imaging.* Proc Natl Acad Sci U S A, 2011. **108**(46): p. 18606-11.
+68. Bohndiek, S.E., et al., *Hyperpolarized \[1-13C\]-ascorbic and dehydroascorbic acid: vitamin C as a probe for imaging redox status in vivo.* J Am Chem Soc, 2011. **133**(30): p. 11795-801.
+69. Qin, H., et al., *Imaging glutathione depletion in the rat brain using ascorbate-derived hyperpolarized MR and PET probes.* Sci Rep, 2018. **8**(1): p. 7928.
+70. Timm, K.N., et al., *Assessing Oxidative Stress in Tumors by Measuring the Rate of Hyperpolarized \[1-13C\]Dehydroascorbic Acid Reduction Using 13C Magnetic Resonance Spectroscopy.* J Biol Chem, 2017. **292**(5): p. 1737-1748.
+71. Batsios, G., et al. *Detection of gamma-glutamyl-transferase activity up-regulation in orthotopic glioma using hyperpolarized gamma-glutamyl-\[1-13C\]glycine*. in *International Society of Magnetic Resonance in Medicine*. 2019. Montreal.
+72. Najac, C., et al., *In vivo investigation of hyperpolarized \[1,3-(13)C2\]acetoacetate as a metabolic probe in normal brain and in glioma.* Sci Rep, 2019. **9**(1): p. 3402.
+73. Takado, Y., et al., *Hyperpolarized (13)C Magnetic Resonance Spectroscopy Reveals the Rate-Limiting Role of the Blood-Brain Barrier in the Cerebral Uptake and Metabolism of l-Lactate in Vivo.* ACS Chem Neurosci, 2018. **9**(11): p. 2554-2562.
+74. Jean-Noël Hyacinthe, L.B., Mario Lepore, Rolf Gruetter, Lorenz Hirt, and Mor Mishkovsky, *Evaluating hyperpolarized lactate as a theranostic agent for stroke.* In: Proceedings of the 26th Joint Annual Meeting of ISMRM-ESMRMB; Paris, France:3708., 2018.
+75. Guglielmetti, C., et al. *Metabolic imaging of brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a mouse model of multiple sclerosis.* in *International Society for Magnetic Resonance in Medicine*. 2019. Montreal, Canada.
+76. Radoul, M., et al., *MR Studies of Glioblastoma Models Treated with Dual PI3K/mTOR Inhibitor and Temozolomide:Metabolic Changes Are Associated with Enhanced Survival.* Mol Cancer Ther, 2016. **15**(5): p. 1113-22.
+77. An, Y., et al., *Evidence for brain glucose dysregulation in Alzheimer's disease.* Alzheimers Dement, 2018. **14**(3): p. 318-329.
+78. Hafezparast, M., et al., *Mouse models for neurological disease.* Lancet Neurol, 2002. **1**(4): p. 215-24.
+79. Jinek, M., et al., *A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity.* Science, 2012. **337**(6096): p. 816-21.
+80. Kim, H., et al., *Mouse Cre-LoxP system: general principles to determine tissue-specific roles of target genes.* Lab Anim Res, 2018. **34**(4): p. 147-159.
+81. Samoilov, V.O., *Ivan Petrovich Pavlov (1849-1936).* J Hist Neurosci, 2007. **16**(1-2): p. 74-89.
+82. Sousa, N., O.F. Almeida, and C.T. Wotjak, *A hitchhiker's guide to behavioral analysis in laboratory rodents.* Genes Brain Behav, 2006. **5 Suppl 2**: p. 5-24.
+83. Kafkafi, N., et al., *Reproducibility and replicability of rodent phenotyping in preclinical studies.* Neurosci Biobehav Rev, 2018. **87**: p. 218-232.
+84. Cheng, L.L., et al., *Quantitative neuropathology by high resolution magic angle spinning proton magnetic resonance spectroscopy.* Proc Natl Acad Sci U S A, 1997. **94**(12): p. 6408-13.
+85. Ser, Z., et al., *Extraction parameters for metabolomics from cultured cells.* Anal Biochem, 2015. **475**: p. 22-8.
+86. Sapcariu, S.C., et al., *Simultaneous extraction of proteins and metabolites from cells in culture.* MethodsX, 2014. **1**: p. 74-80.
+87. Roessner, U. and J. Bowne, *What is metabolomics all about?* Biotechniques, 2009. **46**(5): p. 363-5.
+88. Cho, A., et al., *Hyperpolarized \[6-(13)C,(15)N3\]-Arginine as a Probe for in Vivo Arginase Activity.* ACS Chem Biol, 2019. **14**(4): p. 665-673.
+89. Ward, J.M. and J.E. Rehg, *Rodent immunohistochemistry: pitfalls and troubleshooting.* Vet Pathol, 2014. **51**(1): p. 88-101.
+90. Evilsizor, M.N., et al., *Primer for immunohistochemistry on cryosectioned rat brain tissue: example staining for microglia and neurons.* J Vis Exp, 2015(99): p. e52293.

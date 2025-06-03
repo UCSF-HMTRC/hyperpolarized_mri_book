@@ -1,258 +1,433 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Neurological applications of hyperpolarized ^13^C MR &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'neurology/neurology';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Integration into Liver Studies" href="../liver/liver.html" />
-    <link rel="prev" title="Hyperpolarized MR in Cardiology {#chap:DJT}" href="../cardiac/cardiac.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+    <link rel="prev" title="Hyperpolarized MR in Cardiology" href="../cardiac/cardiac.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_physics/dDNP_physics.html">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acquisition_methods/acquisition_methods.html">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HP_agents/HP_agents.html">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../analysis_visualization/analysis_visualization.html">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../cancer/cancer.html">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../acquisition_methods/acquisition_methods.html">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../HP_agents/HP_agents.html">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../analysis_visualization/analysis_visualization.html">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cancer/cancer.html">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/neurology/neurology.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fneurology/neurology.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
     </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fneurology/neurology.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
 
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/neurology/neurology.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Neurological applications of hyperpolarized ^13^C MR</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
         </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="neurological-applications-of-hyperpolarized-13-c-mr">
-<h1>Neurological applications of hyperpolarized ^13^C MR<a class="headerlink" href="#neurological-applications-of-hyperpolarized-13-c-mr" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="neurological-applications-of-hyperpolarized-13-c-mr">
+<h1>Neurological applications of hyperpolarized ^13^C MR<a class="headerlink" href="#neurological-applications-of-hyperpolarized-13-c-mr" title="Link to this heading">#</a></h1>
 <p>By Myriam M. Chaumeil, PhD ^1,2^</p>
 <p>^1^Department of Physical Therapy and Rehabilitation Science, University
 of California, San Francisco</p>
 <p>^2^Department of Radiology and Biomedical Imaging, University of
 California, San Francisco</p>
-<p>[Corresponding author:]{.ul}</p>
-<p>Myriam M. Chaumeil, Ph.D.</p>
-<p>1700 4th Street, BH 204</p>
-<p>Mission Bay Campus Box 2530</p>
-<p>San Francisco, CA 94143</p>
-<p>Tel.: +415-216-5634</p>
-<p>E-mail: <a class="reference external" href="mailto:myriam&#46;chaumeil&#37;&#52;&#48;ucsf&#46;edu">mailto:myriam<span>&#46;</span>chaumeil<span>&#64;</span>ucsf<span>&#46;</span>edu</a></p>
 <p><strong>Abstract</strong></p>
 <p>Metabolic imaging based on hyperpolarized ^13^C technology gives
 unprecedented information of previously inaccessible metabolic pathways
@@ -273,8 +448,6 @@ imaging approaches in preclinical models.</p>
 <p><strong>Keywords</strong></p>
 <p>Brain, metabolism, hyperpolarized 13C, metabolic imaging, neurological
 disorders.</p>
-<p>**<br />
-**</p>
 <p><strong>I. Introduction: an overview of the brain and its metabolism</strong></p>
 <p>The brain is a complex and fascinating structure, made of two main types
 of cells: neurons and glia. Glia are themselves divided in three
@@ -335,8 +508,6 @@ review which additional HP probes have been applied to the study of the
 healthy brain. Finally, we will discuss which correlative studies can be
 performed in complement of HP ^13^C MRS/I, to validate MR results and
 improve our understanding of this metabolic imaging approach.</p>
-<p>**<br />
-**</p>
 <p><strong>II. Neurological applications of HP [1-^13^C]pyruvate</strong></p>
 <p>To date, few studies have used HP ^13^C MRS/I to assess metabolism <em>in
 vivo</em> in preclinical healthy brains and preclinical models of non-cancer
@@ -345,10 +516,14 @@ neurological disorders. The majority of these studies used HP
 [10]), which describes the HP ^13^C parameters obtained following
 injection of HP [1-^13^C]pyruvate, and the associated molecular and
 histological correlative studies performed.</p>
-<blockquote>
-<div><p><em>II.1. Healthy brain</em></p>
+<p><img alt="Preclinical studies" src="../_images/brain_study_review.png" /></p>
+<p><strong>Table 1</strong>
+Preclinical studies of the brain, in health and disease, using HP
+[1-^13^C]pyruvate**. HP ^13^C parameters obtained following injection
+of HP [1-^13^C]pyruvate in preclinical studies with associated
+molecular and histological correlates. Adapted from reference [10].</p>
+<p><em>II.1. Healthy brain</em></p>
 <p>II.1.1. Adult</p>
-</div></blockquote>
 <p>Applications of HP [1-^13^C]pyruvate to the studies of the adult
 healthy brain are of fundamental importance, both in preclinical studies
 and when thinking of clinical translation. Human imaging studies are
@@ -398,9 +573,7 @@ lactate level to that observed following [1-^13^C]pyruvate injection
 a dedicated sequence [17]. This approach is highly promising, but the
 presence of multiple spectral resonances renders the sequence design
 challenging.</p>
-<blockquote>
-<div><p>II.1.2. Effects of age and sex</p>
-</div></blockquote>
+<p>II.1.2. Effects of age and sex</p>
 <p>It is well-known that both early maturation and aging processes affect
 brain metabolism, and relative cell populations [19, 20]. However,
 very few studies to date have addressed the influence of these
@@ -449,9 +622,7 @@ mechanism to radiation [27]. Altogether, these results indicate that
 sex differences need to be considered when performing preclinical (and
 potentially clinical) HP metabolic imaging of the brain, as well as
 other organs.</p>
-<blockquote>
-<div><p>II.1.3. Effects of anesthesia</p>
-</div></blockquote>
+<p>II.1.3. Effects of anesthesia</p>
 <p>Almost all preclinical studies using HP ^13^C MR imaging have been
 conducted on animals under anesthesia, which is known to alter
 hemodynamics, metabolism and neuroprotection [28]. One study
@@ -478,10 +649,8 @@ isoflurane anesthetized animals. Although this study demonstrates
 feasibility and increases relevance to human studies, imaging awake
 animals require extensive training, and stress might be a confounding
 factor modulating metabolism.</p>
-<blockquote>
-<div><p><em>II.2. Neurological disorders</em></p>
+<p><em>II.2. Neurological disorders</em></p>
 <p>II.2.1. Cell studies of immunometabolism</p>
-</div></blockquote>
 <p>Over the past decade, immunometabolism has become one of the most
 exciting areas of translational research [32]. By definition,
 immunometabolism refers to the metabolic processes regulating immune
@@ -521,10 +690,8 @@ activation, likely reflecting modulations in reactive oxygen species
 investigated by HP ^13^C MRS. In activated CD4+ T-cells derived from
 human donors, HP ^13^C lactate/pyruvate ratio were increased three-fold
 compared to non-activated lymphocytes [37].</p>
-<blockquote>
-<div><p>II.2.2. Primary brain diseases</p>
+<p>II.2.2. Primary brain diseases</p>
 <p>a. Multiple sclerosis</p>
-</div></blockquote>
 <p>Multiple sclerosis (MS) is a multifaceted disease of the central nervous
 system and one of the most common causes of disability in young adults
 [38]. The major hallmark of MS is an uncontrolled immune response that
@@ -564,9 +731,7 @@ Gadolinium), clinical evaluation of disease severity, evaluation of
 visual pathway conduction using visual evoked potential (VEP), and
 immunofluorescence (IF) analyses, in order to further understand the
 value of the metabolic imaging data.</p>
-<blockquote>
-<div><p>b. Traumatic brain injury</p>
-</div></blockquote>
+<p>b. Traumatic brain injury</p>
 <p>Complex alterations in brain structural integrity, perfusion and
 metabolism arise after traumatic brain injury (TBI) [43]. Imaging
 methods allowing for metabolic evaluation of TBI status and progression
@@ -590,9 +755,7 @@ the increased ^13^C lactate-to-pyruvate was microglia. It is of course
 very likely that other factors, including neuronal death and BBB
 disruption, contribute to changes in HP substrate delivery and HP
 metabolism.</p>
-<blockquote>
-<div><p>c. Stroke and ischemia</p>
-</div></blockquote>
+<p>c. Stroke and ischemia</p>
 <p>Stroke is the third leading cause of death worldwide and the leading
 cause of disability among adults. In total, 80% of strokes are ischemic,
 when occlusion of a cerebral artery deprives the tissue of metabolic
@@ -622,10 +785,8 @@ pyruvate curve) and a higher HP ^13^C lactate-to-pyruvate ratio in the
 ipsilateral (HI) hemisphere at P10, and these differences decreased at
 P17 and disappeared at P31, suggesting a role for HP metabolic imaging
 for longitudinal monitoring of HI progression.</p>
-<blockquote>
-<div><p>II. 2.3. Peripheral insults affecting brain metabolism</p>
+<p>II. 2.3. Peripheral insults affecting brain metabolism</p>
 <p>a. Acute liver failure</p>
-</div></blockquote>
 <p>Intracranial hypertension linked to cerebral edema is a severe
 complication of acute liver failure (ALF). The pathogenesis of cerebral
 edema in ALF is unclear but thought to be related to brain metabolic
@@ -640,9 +801,7 @@ correlative studies were conducted, the authors concluded that the early
 detection of the <em>de novo</em> synthesis of lactate using HP ^13^C MRSI
 suggests an important role for brain lactate in the physiopathology of
 ALF.</p>
-<blockquote>
-<div><p>b. Diet and diabetes</p>
-</div></blockquote>
+<p>b. Diet and diabetes</p>
 <p>High intake of saturated fatty acids through diet has been linked to an
 increase risk of developing AD and dementia [53]. The mechanisms
 behind such increased risk are not fully understood, but several studies
@@ -678,8 +837,6 @@ ATP citrate lyase (ACLY), the enzyme that cleaves citrate into
 oxaloacetate and acetyl CoA, was increased in both hippocampus and
 cortex samples of HFD diabetic mice, highlighting a further metabolic
 adaptation in this model.</p>
-<p>**<br />
-**</p>
 <p><strong>III. New HP probes for brain applications</strong></p>
 <p>HP [1-^13^C]pyruvate is by far the most commonly used probe, as
 described in Section I above and in other chapters, mostly due to the
@@ -699,10 +856,19 @@ evaluated in healthy animal brains (<strong>Figure 1</strong>), except HP
 [1-^13^C]lactate (cf. paragraph III.3). Future studies are critically
 needed to establish their values for monitoring and assessing
 therapeutic response in brain diseases.</p>
-<blockquote>
-<div><p>III.1. Energy metabolism</p>
+<p><img alt="Overview of cerebral metabolic reactions investigated using HP probes" src="../_images/brain_pathways.png" /></p>
+<p><strong>Figure 1: Overview of cerebral metabolic reactions investigated using HP
+probes.</strong> HP probes (bold) and corresponding HP downstream product(s)
+currently investigated in preclinical studies of the healthy brain and
+neurological disorders (red boxes). References to the corresponding
+study/studies are noted in square brackets above the reaction arrows
+[29–32,35,36,40–47]. The relaxation times (T1) of the HP probes are
+ranked as long (40–60 s, green), average (20–40 s, orange) and short
+(5–20 s, red), from data at the clinical magnetic field strength of 3
+Tesla (extrapolated rom data at other field strengths for glucose,
+glutamate, acetate and ketoisocaproate). Adapted from reference [10].</p>
+<p>III.1. Energy metabolism</p>
 <p>a- Glycolysis</p>
-</div></blockquote>
 <p>The ability to measure the <em>in vivo</em> metabolic flux from glucose all the
 way through glycolysis in a reasonable timeframe would be extremely
 valuable in the evaluation and monitoring of many diseases, including
@@ -714,9 +880,7 @@ the healthy mouse brain at 9.4 Tesla [56]<em>.</em> Although the T1 of
 deuterated glucose remained short at this field strength (~12s at 9.4
 Tesla), this approach could potentially complement FDG-PET, informing on
 glucose metabolism rather than uptake.</p>
-<blockquote>
-<div><p>b- TCA cycle</p>
-</div></blockquote>
+<p>b- TCA cycle</p>
 <p>Unlike HP [1-^13^C]pyruvate, for which the ^13^C label gets into
 bicarbonate through decarboxylation by PDH and never enters the TCA
 cycle, HP [2-^13^C]pyruvate is an interesting probe that allows
@@ -758,9 +922,7 @@ high importance for monitoring the progression of the large number of
 neurological disorders in which mitochondrial metabolism is affected,
 such as Parkinson’s disease, Huntington’s disease or Alzheimer’s disease
 [61].</p>
-<blockquote>
-<div><p>c- Glutamine/glutamate metabolism and nitrogen homeostasis</p>
-</div></blockquote>
+<p>c- Glutamine/glutamate metabolism and nitrogen homeostasis</p>
 <p>The branched chain amino acid transaminases (BCAT) play an important
 role in glutamate/glutamine metabolism and nitrogen homeostasis in the
 brain [62]. BCAT catalyzes the transfer of an α-amino group from a
@@ -794,9 +956,7 @@ mannitol was performed to allow for HP [1-^13^C]glutamate to reach the
 brain. Despite its potential value in studying chronic excitotoxicity,
 such method might lead to unwanted adverse effects, and is thus limited
 for clinical translation.</p>
-<blockquote>
-<div><p>III.2. Oxidative stress</p>
-</div></blockquote>
+<p>III.2. Oxidative stress</p>
 <p>Oxidative stress results from an imbalance between free radicals and
 antioxidants, which subsequently leads to cell and tissue damage.
 Because of its high oxygen consumption and lipid-rich content, the brain
@@ -828,10 +988,8 @@ showed promise in a recent study [72]. Conversion of HP
 detected in the mouse brain at 14.1Tesla, and was shown to be a marker
 for NAD^+^/NADH ratio. Such approach could thus potentially be used to
 non-invasively assess overall redox status in neurological diseases.</p>
-<blockquote>
-<div><p>III. 3. The case of HP [1-^13^C]lactate: theranostic and BBB
+<p>III. 3. The case of HP [1-^13^C]lactate: theranostic and BBB
 permeability agent</p>
-</div></blockquote>
 <p>To date, two preclinical studies have used HP [1-^13^C]lactate as HP
 substrate in the brain: one used this probe to evaluate BBB permeability
 in the healthy mouse brain, and the other used it as a theranostic agent
@@ -868,8 +1026,6 @@ increased in blood vessels and MCT1 and MCT4 expression was increased in
 living neurons, perhaps enabling more lactate to be delivered to the
 tissue. HP [1-^13^C]lactate could thus be potentially used as a
 theragnostic agent, although its delivery may be BBB limited [73].</p>
-<p>**<br />
-**</p>
 <p><strong>IV. Correlation studies for HP ^13^C data</strong></p>
 <p>Understanding HP ^13^C metabolic imaging data is challenging, as many
 factors jointly influence the HP readouts that are detected, both in
@@ -888,9 +1044,16 @@ metabolic imaging, using complementary <em>in vivo</em> methods and/or using
 the <em>ex vivo</em> brain tissue for further analysis. <strong>Figure 2</strong> present a
 summary of correlative and validation studies that can be performed in
 complement to HP ^13^C metabolic imaging of the brain.</p>
-<blockquote>
-<div><p>IV.1. <em>In vivo</em> methods</p>
-</div></blockquote>
+<p><img alt="Correlative studies" src="../_images/multimodal_brain_studies.png" /></p>
+<p><strong>Figure 2: Correlative studies for HP ^13^C metabolic imaging of the brain.</strong>
+Summary of the six main categories of complementary studies that can be
+performed in conjunction with HP 13C metabolic imaging of the brain. The
+three categories that can be conducted <em>in vivo</em> are: Imaging, Genetic
+Studies of animal models and Behavioral Studies of animal models. The
+three categories that are performed on <em>ex vivo</em> brain samples post
+euthanasia of the animals are: Microscopy, Metabolites analysis and
+Biochemical Studies.</p>
+<p>IV.1. <em>In vivo</em> methods</p>
 <p>a- Non-invasive imaging approaches</p>
 <p>Conventional imaging methods that are already used in the clinic can be
 performed not only to localize HP ^13^C MRSI data, but also to provide
@@ -927,9 +1090,7 @@ changes linked to pathogenesis. For example, ^18^F-FDG-PET could be used
 as a complement to ^13^C MRSI of HP pyruvate or HP glucose in
 Alzheimer’s disease, where glucose uptake has been shown to decrease
 early [77].</p>
-<blockquote>
-<div><p>b-Genetic studies of animal models</p>
-</div></blockquote>
+<p>b-Genetic studies of animal models</p>
 <p>Genetically engineered and transgenic animal models of disease are
 extremely useful and widely used in the context of neurological
 disorders [78]. Conventional or conditional knockin (KI) or knockout
@@ -963,9 +1124,7 @@ neurons or astrocytes and assessing the effect on the detected HP
 signal. Further studies using such approaches are critically needed and
 would strengthen our understanding of the biological potential of HP
 ^13^C metabolic imaging.</p>
-<blockquote>
-<div><p>c- Behavioral studies</p>
-</div></blockquote>
+<p>c- Behavioral studies</p>
 <p>Behavioral testing has been studied for a long time, as demonstrated for
 example by Ivan Pavlov’s early work on conditional reflexes in dogs
 which began at the end of the 19^th^ century [81]. Since then,
@@ -978,16 +1137,16 @@ depressive-like behavior, substance dependence and various forms of
 cognitive function [82]. A few major tests and their corresponding
 behavioral aspects are listed below:</p>
 <ul class="simple">
-<li><p>[Open field test:]{.ul} Locomotor activity, anxiety and habituation</p></li>
-<li><p>[Rotarod:]{.ul} Motor coordination, balance, ataxia</p></li>
-<li><p>[Hindpaw footprint:]{.ul} Motor coordination, balance, ataxia</p></li>
-<li><p>[Morris water task:]{.ul} Spatial learning</p></li>
-<li><p>[Hot plate test, foot shock test, tail flick test, tail pressure
-test:]{.ul} Pain tolerance</p></li>
-<li><p>[Contextual and cued fear conditioning:]{.ul} Memory skills, fear
+<li><p>Open field test: Locomotor activity, anxiety and habituation</p></li>
+<li><p>Rotarod: Motor coordination, balance, ataxia</p></li>
+<li><p>Hindpaw footprint: Motor coordination, balance, ataxia</p></li>
+<li><p>Morris water task: Spatial learning</p></li>
+<li><p>Hot plate test, foot shock test, tail flick test, tail pressure
+test: Pain tolerance</p></li>
+<li><p>Contextual and cued fear conditioning: Memory skills, fear
 levels</p></li>
-<li><p>[Dark/light avoidance; passive/active avoidance; elevated
-maze:]{.ul} Anxiety.</p></li>
+<li><p>Dark/light avoidance; passive/active avoidance; elevated
+maze: Anxiety.</p></li>
 </ul>
 <p>Importantly, the choice of behavioral testing should be done according
 to the disease or treatment studied, based on which brain regions are
@@ -1008,15 +1167,11 @@ parameters would be of high interest. Could HP ^13^C imaging parameters
 be early predictor of cognitive or motor deficits? If the answer is yes,
 it would dramatically strengthen the added value of metabolic imaging
 for the study of neurological disorders.</p>
-<blockquote>
-<div><p>IV.2. <em>Ex vivo</em> methods</p>
-</div></blockquote>
+<p>IV.2. <em>Ex vivo</em> methods</p>
 <p>After an <em>in vivo</em> metabolic imaging experiment end point, the brain
 tissue can be resected and studied using various approaches, described
 below, to investigate the mechanisms driving the HP data.</p>
-<blockquote>
-<div><p>a- Biochemical assays</p>
-</div></blockquote>
+<p>a- Biochemical assays</p>
 <p>While many assays can be performed on brain tissue samples, the three
 most common types found in the HP ^13^C literature are
 spectrophotometric assays, western blots and polymerase chain reaction
@@ -1030,9 +1185,7 @@ expression levels of any molecule of interest. As shown in <strong>Table 1</stro
 such correlative studies are highly valuable to decipher the underlying
 modulations in HP ^13^C data seen <em>in vivo</em>, and should be performed as
 systematically as possible in preclinical studies.</p>
-<blockquote>
-<div><p>b- Metabolomics</p>
-</div></blockquote>
+<p>b- Metabolomics</p>
 <p>Quantitative methods allowing to assess the steady state levels of
 metabolites in brain tissue are crucial for validation and
 interpretation of <em>in vivo</em> HP metabolic imaging results. For example,
@@ -1077,9 +1230,7 @@ experiment, such tracing experiment can evaluate the expected fractional
 enrichment of substrate and products in the tissue of interest [88],
 and could be of high interest for evaluating the potential of new HP
 probes for brain studies.</p>
-<blockquote>
-<div><p>c- Immunohistochemistry/Immunofluorescence</p>
-</div></blockquote>
+<p>c- Immunohistochemistry/Immunofluorescence</p>
 <p>Immunohistochemistry (IHC) is a powerful tool that is widely used in
 neuroscience research, as it allows visualizing a target protein of
 interest in brain slices/sections while maintaining cellular structure
@@ -1118,252 +1269,100 @@ critically needed to help understanding the potential and meaning of HP
 ^13^C data in brain diseases, in order to facilitate clinical
 translation of this methodology for patients with neurological
 disorders.</p>
-<p>**<br />
-**</p>
-<p><strong>Figures and Tables Legends</strong></p>
-<p><strong>Table 1</strong></p>
-<p><strong>Preclinical studies of the brain, in health and disease, using HP
-[1-^13^C]pyruvate</strong>. HP ^13^C parameters obtained following injection
-of HP [1-^13^C]pyruvate in preclinical studies with associated
-molecular and histological correlates. Adapted from reference [10].</p>
-<p><strong>Figure 1</strong></p>
-<p><strong>Overview of cerebral metabolic reactions investigated using HP
-probes.</strong> HP probes (bold) and corresponding HP downstream product(s)
-currently investigated in preclinical studies of the healthy brain and
-neurological disorders (red boxes). References to the corresponding
-study/studies are noted in square brackets above the reaction arrows
-[29–32,35,36,40–47]. The relaxation times (T1) of the HP probes are
-ranked as long (40–60 s, green), average (20–40 s, orange) and short
-(5–20 s, red), from data at the clinical magnetic field strength of 3
-Tesla (extrapolated rom data at other field strengths for glucose,
-glutamate, acetate and ketoisocaproate). Adapted from reference [10].</p>
-<p><strong>Figure 2</strong></p>
-<p><strong>Correlative studies for HP ^13^C metabolic imaging of the brain.</strong>
-Summary of the six main categories of complementary studies that can be
-performed in conjunction with HP 13C metabolic imaging of the brain. The
-three categories that can be conducted <em>in vivo</em> are: Imaging, Genetic
-Studies of animal models and Behavioral Studies of animal models. The
-three categories that are performed on <em>ex vivo</em> brain samples post
-euthanasia of the animals are: Microscopy, Metabolites analysis and
-Biochemical Studies.</p>
 <p><strong>References</strong></p>
-<p>1. von Bartheld, C.S., J. Bahney, and S. Herculano-Houzel, <em>The search
-for true numbers of neurons and glial cells in the human brain: A review
-of 150 years of cell counting.</em> J Comp Neurol, 2016. <strong>524</strong>(18): p.
-3865-3895.2. Herculano-Houzel, S. and R. Lent, <em>Isotropic fractionator:
-a simple, rapid method for the quantification of total cell and neuron
-numbers in the brain.</em> J Neurosci, 2005. <strong>25</strong>(10): p. 2518-21.3.
-Pellerin, L., <em>Food for thought: the importance of glucose and other
-energy substrates for sustaining brain function under varying levels of
-activity.</em> Diabetes Metab, 2010. <strong>36 Suppl 3</strong>: p. S59-63.4. Hyder, F.,
-D.L. Rothman, and M.R. Bennett, <em>Cortical energy demands of signaling
-and nonsignaling components in brain are conserved across mammalian
-species and activity levels.</em> Proc Natl Acad Sci U S A, 2013.
-<strong>110</strong>(9): p. 3549-54.5. Nehlig, A. and A. Pereira de Vasconcelos,
-<em>Glucose and ketone body utilization by the brain of neonatal rats.</em>
-Prog Neurobiol, 1993. <strong>40</strong>(2): p. 163-221.6. Owen, O.E., et al.,
-<em>Brain metabolism during fasting.</em> J Clin Invest, 1967. <strong>46</strong>(10): p.
-1589-95.7. van Hall, G., et al., <em>Blood lactate is an important energy
-source for the human brain.</em> J Cereb Blood Flow Metab, 2009. <strong>29</strong>(6):
-p. 1121-9.8. Belanger, M., I. Allaman, and P.J. Magistretti, <em>Brain
-energy metabolism: focus on astrocyte-neuron metabolic cooperation.</em>
-Cell Metab, 2011. <strong>14</strong>(6): p. 724-38.9. Watts, M.E., R. Pocock, and C.
-Claudianos, <em>Brain Energy and Oxygen Metabolism: Emerging Role in Normal
-Function and Disease.</em> Front Mol Neurosci, 2018. <strong>11</strong>: p. 216.10. Le
-Page, L.M., et al., <em>Imaging Brain Metabolism Using Hyperpolarized (13)C
-Magnetic Resonance Spectroscopy.</em> Trends Neurosci, 2020. <strong>43</strong>(5): p.
-343-354.11. Grist, J.T., et al., <em>Quantifying normal human brain
-metabolism using hyperpolarized [1-(13)C]pyruvate and magnetic
-resonance imaging.</em> Neuroimage, 2019. <strong>189</strong>: p. 171-179.12. Lee, C.Y.,
-et al., <em>Lactate topography of the human brain using hyperpolarized
-(13)C-MRI.</em> Neuroimage, 2019. <strong>204</strong>: p. 116202.13. Miloushev, V.Z., et
-al., <em>Hyperpolarized (13)C pyruvate mouse brain metabolism with
-absorptive-mode EPSI at 1T.</em> J Magn Reson, 2017. <strong>275</strong>: p. 120-126.14.
-Hurd, R.E., et al., <em>Cerebral dynamics and metabolism of hyperpolarized
-[1-(13)C]pyruvate using time-resolved MR spectroscopic imaging.</em> J
-Cereb Blood Flow Metab, 2010. <strong>30</strong>(10): p. 1734-41.15. Mayer, D., et
-al., <em>Dynamic and high-resolution metabolic imaging of hyperpolarized
-[1-13C]-pyruvate in the rat brain using a high-performance gradient
-insert.</em> Magn Reson Med, 2011. <strong>65</strong>(5): p. 1228-33.16. Park, I., et
-al., <em>Dynamic Hyperpolarized Carbon-13 MR Metabolic Imaging of Nonhuman
-Primate Brain.</em> Magn Reson Med, 2014. <strong>71</strong>(1): p. 19-25.17. Miller,
-J.J., et al., <em>(13)C Pyruvate Transport Across the Blood-Brain Barrier
-in Preclinical Hyperpolarised MRI.</em> Sci Rep, 2018. <strong>8</strong>(1): p.
-15082.18. Hurd, R.E., et al., <em>Metabolic imaging in the anesthetized rat
-brain using hyperpolarized [1-13C] pyruvate and [1-13C] ethyl
-pyruvate.</em> Magn Reson Med, 2010. <strong>63</strong>(5): p. 1137-43.19. Steiner, P.,
-<em>Brain Fuel Utilization in the Developing Brain.</em> Ann Nutr Metab, 2020.
-<strong>75 Suppl 1</strong>: p. 35-45.20. Goyal, M.S., et al., <em>Loss of Brain Aerobic
-Glycolysis in Normal Human Aging.</em> Cell Metab, 2017. <strong>26</strong>(2): p.
-353-360 e3.21. Chen, Y., et al., <em>Pyruvate to lactate metabolic changes
-during neurodevelopment measured dynamically using hyperpolarized 13C
-imaging in juvenile murine brain.</em> Dev Neurosci, 2016. <strong>38</strong>(1): p.
-34-40.22. Dutta, S. and P. Sengupta, <em>Men and mice: Relating their
-ages.</em> Life Sci, 2016. <strong>152</strong>: p. 244-8.23. Harris, R.A., et al.,
-<em>Aerobic Glycolysis Is Required for Spatial Memory Acquisition But Not
-Memory Retrieval in Mice.</em> eNeuro, 2019. <strong>6</strong>(1).24. Wen, Y., et al.,
-<em>Sex Differences in Kidney Function and Metabolism Assessed Using
-Hyperpolarized [1-(13)C]Pyruvate Interleaved Spectroscopy and
-Nonspecific Imaging.</em> Tomography, 2020. <strong>6</strong>(1): p. 5-13.25. Goyal,
-M.S., et al., <em>Persistent metabolic youth in the aging female brain.</em>
-Proc Natl Acad Sci U S A, 2019. <strong>116</strong>(8): p. 3251-3255.26. Beam, C.R.,
-et al., <em>Differences Between Women and Men in Incidence Rates of
-Dementia and Alzheimer’s Disease.</em> J Alzheimers Dis, 2018. <strong>64</strong>(4):
-p. 1077-1083.27. Krukowski, K., et al., <em>Female mice are protected from
-space radiation-induced maladaptive responses.</em> Brain Behav Immun, 2018.
-<strong>74</strong>: p. 106-120.28. Slupe, A.M. and J.R. Kirsch, <em>Effects of
-anesthesia on cerebral blood flow, metabolism, and neuroprotection.</em> J
-Cereb Blood Flow Metab, 2018. <strong>38</strong>(12): p. 2192-2208.29. Marjanska,
-M., et al., <em>Brain metabolism under different anesthetic conditions
-using hyperpolarized [1-(13) C]pyruvate and [2-(13) C]pyruvate.</em> NMR
-Biomed, 2018. <strong>31</strong>(12): p. e4012.30. Josan, S., et al., <em>Effects of
-isoflurane anesthesia on hyperpolarized (13)C metabolic measurements in
-rat brain.</em> Magn Reson Med, 2013. <strong>70</strong>(4): p. 1117-24.31. Hyppönen,
-V., et al. <em>Metabolism of hyperpolarized [1-13C]pyruvate in awake,
-isoflurane and urethane anesthetized rat brain</em>. in <em>ISMRM</em>. 2019.
-Montreal, QC, Canada.32. Makowski, L., M. Chaib, and J.C. Rathmell,
-<em>Immunometabolism: From basic mechanisms to translation.</em> Immunol Rev,
-2020. <strong>295</strong>(1): p. 5-14.33. Galvan-Pena, S. and L.A. O’Neill,
-<em>Metabolic reprograming in macrophage polarization.</em> Front Immunol,
-2014. <strong>5</strong>: p. 420.34. Sriram, R., et al., <em>Molecular detection of
-inflammation in cell models using hyperpolarized (13)C-pyruvate.</em>
-Theranostics, 2018. <strong>8</strong>(12): p. 3400-3407.35. Le Page, L.M., et al.,
-<em>Hyperpolarized (13) C magnetic resonance spectroscopy detects
-toxin-induced neuroinflammation in mice.</em> NMR Biomed, 2019. <strong>32</strong>(11):
-p. e4164.36. Qiao, K., et al. <em>Non-invasive Detection of M1 Activation
-in Macrophages using Hyperpolarized 13C MRS of Pyruvate and DHA at 1.47
-Tesla</em> in <em>ISMRM</em>. 2020. Virtual.37. Can, E., et al., <em>Noninvasive rapid
-detection of metabolic adaptation in activated human T lymphocytes by
-hyperpolarized (13)C magnetic resonance.</em> Sci Rep, 2020. <strong>10</strong>(1): p.
-200.38. Reich, D.S., C.F. Lucchinetti, and P.A. Calabresi, <em>Multiple
-Sclerosis.</em> N Engl J Med, 2018. <strong>378</strong>(2): p. 169-180.39. Wallin, M.T.,
-et al., <em>The prevalence of MS in the United States: A population-based
-estimate using health claims data.</em> Neurology, 2019. <strong>92</strong>(10): p.
-e1029-e1040.40. Bagnato, F., et al., <em>Imaging Mechanisms of Disease
-Progression in Multiple Sclerosis: Beyond Brain Atrophy.</em> J
-Neuroimaging, 2020. <strong>30</strong>(3): p. 251-266.41. Guglielmetti, C., et al.,
-<em>Hyperpolarized (13)C MR metabolic imaging can detect neuroinflammation
-in vivo in a multiple sclerosis murine model.</em> Proc Natl Acad Sci U S A,
-2017. <strong>114</strong>(33): p. E6982-E6991.42. Caroline Guglielmetti, C.C., Chloe
-Najac, Ari Green, Myriam Chaumeil, <em>Metabolic imaging of brain
-inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a
-mouse model of multiple sclerosis.</em> In: Proceedings of the 27th Annual
-Meeting of ISMRM; Montreal, QC, Canada:0723., 2019.43. Lizzo, J.M. and
-M. Waseem, <em>Brain Trauma</em>, in <em>StatPearls</em>. 2020: Treasure Island
-(FL).44. Lee, A.L., <em>Advanced Imaging of Traumatic Brain Injury.</em> Korean
-J Neurotrauma, 2020. <strong>16</strong>(1): p. 3-17.45. DeVience, S.J., et al.,
-<em>Metabolic imaging of energy metabolism in traumatic brain injury using
-hyperpolarized [1-(13)C]pyruvate.</em> Sci Rep, 2017. <strong>7</strong>(1): p.
-1907.46. Guglielmetti, C., et al., <em>In vivo metabolic imaging of
-Traumatic Brain Injury.</em> Sci Rep, 2017. <strong>7</strong>(1): p. 17525.47. Moseley,
-M.E., <em>Molecular imaging and stroke.</em> Stroke, 2009. <strong>40</strong>(3 Suppl): p.
-S30-3.48. Xu, Y., et al., <em>Hyperpolarized (13)C Magnetic Resonance
-Imaging Can Detect Metabolic Changes Characteristic of Penumbra in
-Ischemic Stroke.</em> Tomography, 2017. <strong>3</strong>(2): p. 67-73.49. Vannucci,
-S.J. and H. Hagberg, <em>Hypoxia-ischemia in the immature brain.</em> J Exp
-Biol, 2004. <strong>207</strong>(Pt 18): p. 3149-54.50. Mikrogeorgiou, A., et al., <em>A
-Metabolomics Study of Hypoxia Ischemia during Mouse Brain Development
-Using Hyperpolarized 13C.</em> Dev Neurosci, 2020: p. 1-10.51. Ott, P., O.
-Clemmesen, and F.S. Larsen, <em>Cerebral metabolic disturbances in the
-brain during acute liver failure: from hyperammonemia to energy failure
-and proteolysis.</em> Neurochem Int, 2005. <strong>47</strong>(1-2): p. 13-8.52.
-Chavarria, L., et al., <em>Real-time assessment of (1)(3)C metabolism
-reveals an early lactate increase in the brain of rats with acute liver
-failure.</em> NMR Biomed, 2015. <strong>28</strong>(1): p. 17-23.53. Morris, M.C. and
-C.C. Tangney, <em>Dietary fat composition and dementia risk.</em> Neurobiol
-Aging, 2014. <strong>35 Suppl 2</strong>: p. S59-64.54. Choi, Y.S., et al.,
-<em>Hyperpolarized [1-13C] pyruvate MR spectroscopy detect altered
-glycolysis in the brain of a cognitively impaired mouse model fed
-high-fat diet.</em> Mol Brain, 2018. <strong>11</strong>(1): p. 74.55. Choi, Y.S., et
-al., <em>Hyperpolarized [1-13C]lactate flux increased in the hippocampal
-region in diabetic mice.</em> Mol Brain, 2019. <strong>12</strong>(1): p. 88.56.
-Mishkovsky, M., et al., <em>Measuring glucose cerebral metabolism in the
-healthy mouse using hyperpolarized 13 C magnetic resonance.</em> Scientific
-Reports, 2017. <strong>7</strong>(1): p. 1-8.57. Park, J.M., et al., <em>Measuring
-Mitochondrial Metabolism in Rat Brain in vivo using MR Spectroscopy of
-Hyperpolarized [2-13C]Pyruvate.</em> NMR Biomed, 2013. <strong>26</strong>(10): p.
-1197-203.58. Marjańska, M., et al., <em>In vivo 13C spectroscopy in the rat
-brain using hyperpolarized [1-13C]pyruvate and [2-13C]pyruvate.</em>
-2010.59. Chung, B.T., et al., <em>First hyperpolarized [2-(13)C]pyruvate
-MR studies of human brain metabolism.</em> J Magn Reson, 2019. <strong>309</strong>: p.
-106617.60. Mishkovsky, M., A. Comment, and R. Gruetter, <em>In vivo
-detection of brain Krebs cycle intermediate by hyperpolarized magnetic
-resonance.</em> J Cereb Blood Flow Metab, 2012. <strong>32</strong>(12): p. 2108-13.61.
-Yan, X., et al., <em>Abnormal Mitochondrial Quality Control in
-Neurodegenerative Diseases.</em> Front Cell Neurosci, 2020. <strong>14</strong>: p.
-138.62. Hutson, S., <em>Structure and function of branched chain
-aminotransferases.</em> Prog Nucleic Acid Res Mol Biol, 2001. <strong>70</strong>: p.
-175-206.63. Sidoryk-Wegrzynowicz, M. and L. Struzynska, <em>Astroglial
-contribution to tau-dependent neurodegeneration.</em> Biochem J, 2019.
-<strong>476</strong>(22): p. 3493-3504.64. Butt, S.A., et al., <em>Imaging cerebral
-2-ketoisocaproate metabolism with hyperpolarized 13C Magnetic Resonance
-Spectroscopic Imaging.</em> J Cereb Blood Flow Metab, 2012. <strong>32</strong>(8): p.
-1508-14.65. Mazuel, L., et al., <em>Intracerebral synthesis of glutamine
-from hyperpolarized glutamate - Mazuel - 2017 - Magnetic Resonance in
-Medicine - Wiley Online Library.</em> Magnetic Resonance in Medicine,
-2016.66. Salim, S., <em>Oxidative Stress and the Central Nervous System.</em> J
-Pharmacol Exp Ther, 2017. <strong>360</strong>(1): p. 201-205.67. Keshari, K.R., et
-al., <em>Hyperpolarized 13C dehydroascorbate as an endogenous redox sensor
-for in vivo metabolic imaging.</em> Proc Natl Acad Sci U S A, 2011.
-<strong>108</strong>(46): p. 18606-11.68. Bohndiek, S.E., et al., <em>Hyperpolarized
-[1-13C]-ascorbic and dehydroascorbic acid: vitamin C as a probe for
-imaging redox status in vivo.</em> J Am Chem Soc, 2011. <strong>133</strong>(30): p.
-11795-801.69. Qin, H., et al., <em>Imaging glutathione depletion in the rat
-brain using ascorbate-derived hyperpolarized MR and PET probes.</em> Sci
-Rep, 2018. <strong>8</strong>(1): p. 7928.70. Timm, K.N., et al., <em>Assessing
-Oxidative Stress in Tumors by Measuring the Rate of Hyperpolarized
-[1-13C]Dehydroascorbic Acid Reduction Using 13C Magnetic Resonance
-Spectroscopy.</em> J Biol Chem, 2017. <strong>292</strong>(5): p. 1737-1748.71. Batsios,
-G., et al. <em>Detection of gamma-glutamyl-transferase activity
-up-regulation in orthotopic glioma using hyperpolarized
-gamma-glutamyl-[1-13C]glycine</em>. in <em>International Society of Magnetic
-Resonance in Medicine</em>. 2019. Montreal.72. Najac, C., et al., <em>In vivo
-investigation of hyperpolarized [1,3-(13)C2]acetoacetate as a
-metabolic probe in normal brain and in glioma.</em> Sci Rep, 2019. <strong>9</strong>(1):
-p. 3402.73. Takado, Y., et al., <em>Hyperpolarized (13)C Magnetic Resonance
-Spectroscopy Reveals the Rate-Limiting Role of the Blood-Brain Barrier
-in the Cerebral Uptake and Metabolism of l-Lactate in Vivo.</em> ACS Chem
-Neurosci, 2018. <strong>9</strong>(11): p. 2554-2562.74. Jean-Noël Hyacinthe, L.B.,
-Mario Lepore, Rolf Gruetter, Lorenz Hirt, and Mor Mishkovsky,
-<em>Evaluating hyperpolarized lactate as a theranostic agent for stroke.</em>
-In: Proceedings of the 26th Joint Annual Meeting of ISMRM-ESMRMB; Paris,
-France:3708., 2018.75. Guglielmetti, C., et al. <em>Metabolic imaging of
-brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in
-a mouse model of multiple sclerosis.</em> in <em>International Society for
-Magnetic Resonance in Medicine</em>. 2019. Montreal, Canada.76. Radoul, M.,
-et al., <em>MR Studies of Glioblastoma Models Treated with Dual PI3K/mTOR
-Inhibitor and Temozolomide:Metabolic Changes Are Associated with
-Enhanced Survival.</em> Mol Cancer Ther, 2016. <strong>15</strong>(5): p. 1113-22.77. An,
-Y., et al., <em>Evidence for brain glucose dysregulation in Alzheimer’s
-disease.</em> Alzheimers Dement, 2018. <strong>14</strong>(3): p. 318-329.78.
-Hafezparast, M., et al., <em>Mouse models for neurological disease.</em> Lancet
-Neurol, 2002. <strong>1</strong>(4): p. 215-24.79. Jinek, M., et al., <em>A programmable
-dual-RNA-guided DNA endonuclease in adaptive bacterial immunity.</em>
-Science, 2012. <strong>337</strong>(6096): p. 816-21.80. Kim, H., et al., <em>Mouse
-Cre-LoxP system: general principles to determine tissue-specific roles
-of target genes.</em> Lab Anim Res, 2018. <strong>34</strong>(4): p. 147-159.81.
-Samoilov, V.O., <em>Ivan Petrovich Pavlov (1849-1936).</em> J Hist Neurosci,
-2007. <strong>16</strong>(1-2): p. 74-89.82. Sousa, N., O.F. Almeida, and C.T.
-Wotjak, <em>A hitchhiker’s guide to behavioral analysis in laboratory
-rodents.</em> Genes Brain Behav, 2006. <strong>5 Suppl 2</strong>: p. 5-24.83. Kafkafi,
-N., et al., <em>Reproducibility and replicability of rodent phenotyping in
-preclinical studies.</em> Neurosci Biobehav Rev, 2018. <strong>87</strong>: p.
-218-232.84. Cheng, L.L., et al., <em>Quantitative neuropathology by high
-resolution magic angle spinning proton magnetic resonance spectroscopy.</em>
-Proc Natl Acad Sci U S A, 1997. <strong>94</strong>(12): p. 6408-13.85. Ser, Z., et
-al., <em>Extraction parameters for metabolomics from cultured cells.</em> Anal
-Biochem, 2015. <strong>475</strong>: p. 22-8.86. Sapcariu, S.C., et al.,
-<em>Simultaneous extraction of proteins and metabolites from cells in
-culture.</em> MethodsX, 2014. <strong>1</strong>: p. 74-80.87. Roessner, U. and J. Bowne,
-<em>What is metabolomics all about?</em> Biotechniques, 2009. <strong>46</strong>(5): p.
-363-5.88. Cho, A., et al., <em>Hyperpolarized [6-(13)C,(15)N3]-Arginine
-as a Probe for in Vivo Arginase Activity.</em> ACS Chem Biol, 2019.
-<strong>14</strong>(4): p. 665-673.89. Ward, J.M. and J.E. Rehg, <em>Rodent
-immunohistochemistry: pitfalls and troubleshooting.</em> Vet Pathol, 2014.
-<strong>51</strong>(1): p. 88-101.90. Evilsizor, M.N., et al., <em>Primer for
-immunohistochemistry on cryosectioned rat brain tissue: example staining
-for microglia and neurons.</em> J Vis Exp, 2015(99): p. e52293.</p>
-</div>
+<ol class="arabic simple">
+<li><p>von Bartheld, C.S., J. Bahney, and S. Herculano-Houzel, <em>The search for true numbers of neurons and glial cells in the human brain: A review of 150 years of cell counting.</em> J Comp Neurol, 2016. <strong>524</strong>(18): p. 3865-3895.</p></li>
+<li><p>Herculano-Houzel, S. and R. Lent, <em>Isotropic fractionator: a simple, rapid method for the quantification of total cell and neuron numbers in the brain.</em> J Neurosci, 2005. <strong>25</strong>(10): p. 2518-21.</p></li>
+<li><p>Pellerin, L., <em>Food for thought: the importance of glucose and other energy substrates for sustaining brain function under varying levels of activity.</em> Diabetes Metab, 2010. <strong>36 Suppl 3</strong>: p. S59-63.</p></li>
+<li><p>Hyder, F., D.L. Rothman, and M.R. Bennett, <em>Cortical energy demands of signaling and nonsignaling components in brain are conserved across mammalian species and activity levels.</em> Proc Natl Acad Sci U S A, 2013. <strong>110</strong>(9): p. 3549-54.</p></li>
+<li><p>Nehlig, A. and A. Pereira de Vasconcelos, <em>Glucose and ketone body utilization by the brain of neonatal rats.</em> Prog Neurobiol, 1993. <strong>40</strong>(2): p. 163-221.</p></li>
+<li><p>Owen, O.E., et al., <em>Brain metabolism during fasting.</em> J Clin Invest, 1967. <strong>46</strong>(10): p. 1589-95.</p></li>
+<li><p>van Hall, G., et al., <em>Blood lactate is an important energy source for the human brain.</em> J Cereb Blood Flow Metab, 2009. <strong>29</strong>(6): p. 1121-9.</p></li>
+<li><p>Belanger, M., I. Allaman, and P.J. Magistretti, <em>Brain energy metabolism: focus on astrocyte-neuron metabolic cooperation.</em> Cell Metab, 2011. <strong>14</strong>(6): p. 724-38.</p></li>
+<li><p>Watts, M.E., R. Pocock, and C. Claudianos, <em>Brain Energy and Oxygen Metabolism: Emerging Role in Normal Function and Disease.</em> Front Mol Neurosci, 2018. <strong>11</strong>: p. 216.</p></li>
+<li><p>Le Page, L.M., et al., <em>Imaging Brain Metabolism Using Hyperpolarized (13)C Magnetic Resonance Spectroscopy.</em> Trends Neurosci, 2020. <strong>43</strong>(5): p. 343-354.</p></li>
+<li><p>Grist, J.T., et al., <em>Quantifying normal human brain metabolism using hyperpolarized [1-(13)C]pyruvate and magnetic resonance imaging.</em> Neuroimage, 2019. <strong>189</strong>: p. 171-179.</p></li>
+<li><p>Lee, C.Y., et al., <em>Lactate topography of the human brain using hyperpolarized (13)C-MRI.</em> Neuroimage, 2019. <strong>204</strong>: p. 116202.</p></li>
+<li><p>Miloushev, V.Z., et al., <em>Hyperpolarized (13)C pyruvate mouse brain metabolism with absorptive-mode EPSI at 1T.</em> J Magn Reson, 2017. <strong>275</strong>: p. 120-126.</p></li>
+<li><p>Hurd, R.E., et al., <em>Cerebral dynamics and metabolism of hyperpolarized [1-(13)C]pyruvate using time-resolved MR spectroscopic imaging.</em> J Cereb Blood Flow Metab, 2010. <strong>30</strong>(10): p. 1734-41.</p></li>
+<li><p>Mayer, D., et al., <em>Dynamic and high-resolution metabolic imaging of hyperpolarized [1-13C]-pyruvate in the rat brain using a high-performance gradient insert.</em> Magn Reson Med, 2011. <strong>65</strong>(5): p. 1228-33.</p></li>
+<li><p>Park, I., et al., <em>Dynamic Hyperpolarized Carbon-13 MR Metabolic Imaging of Nonhuman Primate Brain.</em> Magn Reson Med, 2014. <strong>71</strong>(1): p. 19-25.</p></li>
+<li><p>Miller, J.J., et al., <em>(13)C Pyruvate Transport Across the Blood-Brain Barrier in Preclinical Hyperpolarised MRI.</em> Sci Rep, 2018. <strong>8</strong>(1): p. 15082.</p></li>
+<li><p>Hurd, R.E., et al., <em>Metabolic imaging in the anesthetized rat brain using hyperpolarized [1-13C] pyruvate and [1-13C] ethyl pyruvate.</em> Magn Reson Med, 2010. <strong>63</strong>(5): p. 1137-43.</p></li>
+<li><p>Steiner, P., <em>Brain Fuel Utilization in the Developing Brain.</em> Ann Nutr Metab, 2020. <strong>75 Suppl 1</strong>: p. 35-45.</p></li>
+<li><p>Goyal, M.S., et al., <em>Loss of Brain Aerobic Glycolysis in Normal Human Aging.</em> Cell Metab, 2017. <strong>26</strong>(2): p. 353-360 e3.</p></li>
+<li><p>Chen, Y., et al., <em>Pyruvate to lactate metabolic changes during neurodevelopment measured dynamically using hyperpolarized 13C imaging in juvenile murine brain.</em> Dev Neurosci, 2016. <strong>38</strong>(1): p. 34-40.</p></li>
+<li><p>Dutta, S. and P. Sengupta, <em>Men and mice: Relating their ages.</em> Life Sci, 2016. <strong>152</strong>: p. 244-8.</p></li>
+<li><p>Harris, R.A., et al., <em>Aerobic Glycolysis Is Required for Spatial Memory Acquisition But Not Memory Retrieval in Mice.</em> eNeuro, 2019. <strong>6</strong>(1).</p></li>
+<li><p>Wen, Y., et al., <em>Sex Differences in Kidney Function and Metabolism Assessed Using Hyperpolarized [1-(13)C]Pyruvate Interleaved Spectroscopy and Nonspecific Imaging.</em> Tomography, 2020. <strong>6</strong>(1): p. 5-13.</p></li>
+<li><p>Goyal, M.S., et al., <em>Persistent metabolic youth in the aging female brain.</em> Proc Natl Acad Sci U S A, 2019. <strong>116</strong>(8): p. 3251-3255.</p></li>
+<li><p>Beam, C.R., et al., <em>Differences Between Women and Men in Incidence Rates of Dementia and Alzheimer’s Disease.</em> J Alzheimers Dis, 2018. <strong>64</strong>(4): p. 1077-1083.</p></li>
+<li><p>Krukowski, K., et al., <em>Female mice are protected from space radiation-induced maladaptive responses.</em> Brain Behav Immun, 2018. <strong>74</strong>: p. 106-120.</p></li>
+<li><p>Slupe, A.M. and J.R. Kirsch, <em>Effects of anesthesia on cerebral blood flow, metabolism, and neuroprotection.</em> J Cereb Blood Flow Metab, 2018. <strong>38</strong>(12): p. 2192-2208.</p></li>
+<li><p>Marjanska, M., et al., <em>Brain metabolism under different anesthetic conditions using hyperpolarized [1-(13) C]pyruvate and [2-(13) C]pyruvate.</em> NMR Biomed, 2018. <strong>31</strong>(12): p. e4012.</p></li>
+<li><p>Josan, S., et al., <em>Effects of isoflurane anesthesia on hyperpolarized (13)C metabolic measurements in rat brain.</em> Magn Reson Med, 2013. <strong>70</strong>(4): p. 1117-24.</p></li>
+<li><p>Hyppönen, V., et al. <em>Metabolism of hyperpolarized [1-13C]pyruvate in awake, isoflurane and urethane anesthetized rat brain</em>. in <em>ISMRM</em>. 2019. Montreal, QC, Canada.</p></li>
+<li><p>Makowski, L., M. Chaib, and J.C. Rathmell, <em>Immunometabolism: From basic mechanisms to translation.</em> Immunol Rev, 2020. <strong>295</strong>(1): p. 5-14.</p></li>
+<li><p>Galvan-Pena, S. and L.A. O’Neill, <em>Metabolic reprograming in macrophage polarization.</em> Front Immunol, 2014. <strong>5</strong>: p. 420.</p></li>
+<li><p>Sriram, R., et al., <em>Molecular detection of inflammation in cell models using hyperpolarized (13)C-pyruvate.</em> Theranostics, 2018. <strong>8</strong>(12): p. 3400-3407.</p></li>
+<li><p>Le Page, L.M., et al., <em>Hyperpolarized (13) C magnetic resonance spectroscopy detects toxin-induced neuroinflammation in mice.</em> NMR Biomed, 2019. <strong>32</strong>(11): p. e4164.</p></li>
+<li><p>Qiao, K., et al. <em>Non-invasive Detection of M1 Activation in Macrophages using Hyperpolarized 13C MRS of Pyruvate and DHA at 1.47 Tesla</em> in <em>ISMRM</em>. 2020. Virtual.</p></li>
+<li><p>Can, E., et al., <em>Noninvasive rapid detection of metabolic adaptation in activated human T lymphocytes by hyperpolarized (13)C magnetic resonance.</em> Sci Rep, 2020. <strong>10</strong>(1): p. 200.</p></li>
+<li><p>Reich, D.S., C.F. Lucchinetti, and P.A. Calabresi, <em>Multiple Sclerosis.</em> N Engl J Med, 2018. <strong>378</strong>(2): p. 169-180.</p></li>
+<li><p>Wallin, M.T., et al., <em>The prevalence of MS in the United States: A population-based estimate using health claims data.</em> Neurology, 2019. <strong>92</strong>(10): p. e1029-e1040.</p></li>
+<li><p>Bagnato, F., et al., <em>Imaging Mechanisms of Disease Progression in Multiple Sclerosis: Beyond Brain Atrophy.</em> J Neuroimaging, 2020. <strong>30</strong>(3): p. 251-266.</p></li>
+<li><p>Guglielmetti, C., et al., <em>Hyperpolarized (13)C MR metabolic imaging can detect neuroinflammation in vivo in a multiple sclerosis murine model.</em> Proc Natl Acad Sci U S A, 2017. <strong>114</strong>(33): p. E6982-E6991.</p></li>
+<li><p>Caroline Guglielmetti, C.C., Chloe Najac, Ari Green, Myriam Chaumeil, <em>Metabolic imaging of brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a mouse model of multiple sclerosis.</em> In: Proceedings of the 27th Annual Meeting of ISMRM; Montreal, QC, Canada:0723., 2019.</p></li>
+<li><p>Lizzo, J.M. and M. Waseem, <em>Brain Trauma</em>, in <em>StatPearls</em>. 2020: Treasure Island (FL).</p></li>
+<li><p>Lee, A.L., <em>Advanced Imaging of Traumatic Brain Injury.</em> Korean J Neurotrauma, 2020. <strong>16</strong>(1): p. 3-17.</p></li>
+<li><p>DeVience, S.J., et al., <em>Metabolic imaging of energy metabolism in traumatic brain injury using hyperpolarized [1-(13)C]pyruvate.</em> Sci Rep, 2017. <strong>7</strong>(1): p. 1907.</p></li>
+<li><p>Guglielmetti, C., et al., <em>In vivo metabolic imaging of Traumatic Brain Injury.</em> Sci Rep, 2017. <strong>7</strong>(1): p. 17525.</p></li>
+<li><p>Moseley, M.E., <em>Molecular imaging and stroke.</em> Stroke, 2009. <strong>40</strong>(3 Suppl): p. S30-3.</p></li>
+<li><p>Xu, Y., et al., <em>Hyperpolarized (13)C Magnetic Resonance Imaging Can Detect Metabolic Changes Characteristic of Penumbra in Ischemic Stroke.</em> Tomography, 2017. <strong>3</strong>(2): p. 67-73.</p></li>
+<li><p>Vannucci, S.J. and H. Hagberg, <em>Hypoxia-ischemia in the immature brain.</em> J Exp Biol, 2004. <strong>207</strong>(Pt 18): p. 3149-54.</p></li>
+<li><p>Mikrogeorgiou, A., et al., <em>A Metabolomics Study of Hypoxia Ischemia during Mouse Brain Development Using Hyperpolarized 13C.</em> Dev Neurosci, 2020: p. 1-10.</p></li>
+<li><p>Ott, P., O. Clemmesen, and F.S. Larsen, <em>Cerebral metabolic disturbances in the brain during acute liver failure: from hyperammonemia to energy failure and proteolysis.</em> Neurochem Int, 2005. <strong>47</strong>(1-2): p. 13-8.</p></li>
+<li><p>Chavarria, L., et al., <em>Real-time assessment of (1)(3)C metabolism reveals an early lactate increase in the brain of rats with acute liver failure.</em> NMR Biomed, 2015. <strong>28</strong>(1): p. 17-23.</p></li>
+<li><p>Morris, M.C. and C.C. Tangney, <em>Dietary fat composition and dementia risk.</em> Neurobiol Aging, 2014. <strong>35 Suppl 2</strong>: p. S59-64.</p></li>
+<li><p>Choi, Y.S., et al., <em>Hyperpolarized [1-13C] pyruvate MR spectroscopy detect altered glycolysis in the brain of a cognitively impaired mouse model fed high-fat diet.</em> Mol Brain, 2018. <strong>11</strong>(1): p. 74.</p></li>
+<li><p>Choi, Y.S., et al., <em>Hyperpolarized [1-13C]lactate flux increased in the hippocampal region in diabetic mice.</em> Mol Brain, 2019. <strong>12</strong>(1): p. 88.</p></li>
+<li><p>Mishkovsky, M., et al., <em>Measuring glucose cerebral metabolism in the healthy mouse using hyperpolarized 13 C magnetic resonance.</em> Scientific Reports, 2017. <strong>7</strong>(1): p. 1-8.</p></li>
+<li><p>Park, J.M., et al., <em>Measuring Mitochondrial Metabolism in Rat Brain in vivo using MR Spectroscopy of Hyperpolarized [2-13C]Pyruvate.</em> NMR Biomed, 2013. <strong>26</strong>(10): p. 1197-203.</p></li>
+<li><p>Marjańska, M., et al., <em>In vivo 13C spectroscopy in the rat brain using hyperpolarized [1-13C]pyruvate and [2-13C]pyruvate.</em> 2010.</p></li>
+<li><p>Chung, B.T., et al., <em>First hyperpolarized [2-(13)C]pyruvate MR studies of human brain metabolism.</em> J Magn Reson, 2019. <strong>309</strong>: p. 106617.</p></li>
+<li><p>Mishkovsky, M., A. Comment, and R. Gruetter, <em>In vivo detection of brain Krebs cycle intermediate by hyperpolarized magnetic resonance.</em> J Cereb Blood Flow Metab, 2012. <strong>32</strong>(12): p. 2108-13.</p></li>
+<li><p>Yan, X., et al., <em>Abnormal Mitochondrial Quality Control in Neurodegenerative Diseases.</em> Front Cell Neurosci, 2020. <strong>14</strong>: p. 138.</p></li>
+<li><p>Hutson, S., <em>Structure and function of branched chain aminotransferases.</em> Prog Nucleic Acid Res Mol Biol, 2001. <strong>70</strong>: p. 175-206.</p></li>
+<li><p>Sidoryk-Wegrzynowicz, M. and L. Struzynska, <em>Astroglial contribution to tau-dependent neurodegeneration.</em> Biochem J, 2019. <strong>476</strong>(22): p. 3493-3504.</p></li>
+<li><p>Butt, S.A., et al., <em>Imaging cerebral 2-ketoisocaproate metabolism with hyperpolarized 13C Magnetic Resonance Spectroscopic Imaging.</em> J Cereb Blood Flow Metab, 2012. <strong>32</strong>(8): p. 1508-14.</p></li>
+<li><p>Mazuel, L., et al., <em>Intracerebral synthesis of glutamine from hyperpolarized glutamate - Mazuel - 2017 - Magnetic Resonance in Medicine - Wiley Online Library.</em> Magnetic Resonance in Medicine, 2016.</p></li>
+<li><p>Salim, S., <em>Oxidative Stress and the Central Nervous System.</em> J Pharmacol Exp Ther, 2017. <strong>360</strong>(1): p. 201-205.</p></li>
+<li><p>Keshari, K.R., et al., <em>Hyperpolarized 13C dehydroascorbate as an endogenous redox sensor for in vivo metabolic imaging.</em> Proc Natl Acad Sci U S A, 2011. <strong>108</strong>(46): p. 18606-11.</p></li>
+<li><p>Bohndiek, S.E., et al., <em>Hyperpolarized [1-13C]-ascorbic and dehydroascorbic acid: vitamin C as a probe for imaging redox status in vivo.</em> J Am Chem Soc, 2011. <strong>133</strong>(30): p. 11795-801.</p></li>
+<li><p>Qin, H., et al., <em>Imaging glutathione depletion in the rat brain using ascorbate-derived hyperpolarized MR and PET probes.</em> Sci Rep, 2018. <strong>8</strong>(1): p. 7928.</p></li>
+<li><p>Timm, K.N., et al., <em>Assessing Oxidative Stress in Tumors by Measuring the Rate of Hyperpolarized [1-13C]Dehydroascorbic Acid Reduction Using 13C Magnetic Resonance Spectroscopy.</em> J Biol Chem, 2017. <strong>292</strong>(5): p. 1737-1748.</p></li>
+<li><p>Batsios, G., et al. <em>Detection of gamma-glutamyl-transferase activity up-regulation in orthotopic glioma using hyperpolarized gamma-glutamyl-[1-13C]glycine</em>. in <em>International Society of Magnetic Resonance in Medicine</em>. 2019. Montreal.</p></li>
+<li><p>Najac, C., et al., <em>In vivo investigation of hyperpolarized [1,3-(13)C2]acetoacetate as a metabolic probe in normal brain and in glioma.</em> Sci Rep, 2019. <strong>9</strong>(1): p. 3402.</p></li>
+<li><p>Takado, Y., et al., <em>Hyperpolarized (13)C Magnetic Resonance Spectroscopy Reveals the Rate-Limiting Role of the Blood-Brain Barrier in the Cerebral Uptake and Metabolism of l-Lactate in Vivo.</em> ACS Chem Neurosci, 2018. <strong>9</strong>(11): p. 2554-2562.</p></li>
+<li><p>Jean-Noël Hyacinthe, L.B., Mario Lepore, Rolf Gruetter, Lorenz Hirt, and Mor Mishkovsky, <em>Evaluating hyperpolarized lactate as a theranostic agent for stroke.</em> In: Proceedings of the 26th Joint Annual Meeting of ISMRM-ESMRMB; Paris, France:3708., 2018.</p></li>
+<li><p>Guglielmetti, C., et al. <em>Metabolic imaging of brain inflammation using hyperpolarized 13C MRSI of pyruvate and urea in a mouse model of multiple sclerosis.</em> in <em>International Society for Magnetic Resonance in Medicine</em>. 2019. Montreal, Canada.</p></li>
+<li><p>Radoul, M., et al., <em>MR Studies of Glioblastoma Models Treated with Dual PI3K/mTOR Inhibitor and Temozolomide:Metabolic Changes Are Associated with Enhanced Survival.</em> Mol Cancer Ther, 2016. <strong>15</strong>(5): p. 1113-22.</p></li>
+<li><p>An, Y., et al., <em>Evidence for brain glucose dysregulation in Alzheimer’s disease.</em> Alzheimers Dement, 2018. <strong>14</strong>(3): p. 318-329.</p></li>
+<li><p>Hafezparast, M., et al., <em>Mouse models for neurological disease.</em> Lancet Neurol, 2002. <strong>1</strong>(4): p. 215-24.</p></li>
+<li><p>Jinek, M., et al., <em>A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity.</em> Science, 2012. <strong>337</strong>(6096): p. 816-21.</p></li>
+<li><p>Kim, H., et al., <em>Mouse Cre-LoxP system: general principles to determine tissue-specific roles of target genes.</em> Lab Anim Res, 2018. <strong>34</strong>(4): p. 147-159.</p></li>
+<li><p>Samoilov, V.O., <em>Ivan Petrovich Pavlov (1849-1936).</em> J Hist Neurosci, 2007. <strong>16</strong>(1-2): p. 74-89.</p></li>
+<li><p>Sousa, N., O.F. Almeida, and C.T. Wotjak, <em>A hitchhiker’s guide to behavioral analysis in laboratory rodents.</em> Genes Brain Behav, 2006. <strong>5 Suppl 2</strong>: p. 5-24.</p></li>
+<li><p>Kafkafi, N., et al., <em>Reproducibility and replicability of rodent phenotyping in preclinical studies.</em> Neurosci Biobehav Rev, 2018. <strong>87</strong>: p. 218-232.</p></li>
+<li><p>Cheng, L.L., et al., <em>Quantitative neuropathology by high resolution magic angle spinning proton magnetic resonance spectroscopy.</em> Proc Natl Acad Sci U S A, 1997. <strong>94</strong>(12): p. 6408-13.</p></li>
+<li><p>Ser, Z., et al., <em>Extraction parameters for metabolomics from cultured cells.</em> Anal Biochem, 2015. <strong>475</strong>: p. 22-8.</p></li>
+<li><p>Sapcariu, S.C., et al., <em>Simultaneous extraction of proteins and metabolites from cells in culture.</em> MethodsX, 2014. <strong>1</strong>: p. 74-80.</p></li>
+<li><p>Roessner, U. and J. Bowne, <em>What is metabolomics all about?</em> Biotechniques, 2009. <strong>46</strong>(5): p. 363-5.</p></li>
+<li><p>Cho, A., et al., <em>Hyperpolarized [6-(13)C,(15)N3]-Arginine as a Probe for in Vivo Arginase Activity.</em> ACS Chem Biol, 2019. <strong>14</strong>(4): p. 665-673.</p></li>
+<li><p>Ward, J.M. and J.E. Rehg, <em>Rodent immunohistochemistry: pitfalls and troubleshooting.</em> Vet Pathol, 2014. <strong>51</strong>(1): p. 88-101.</p></li>
+<li><p>Evilsizor, M.N., et al., <em>Primer for immunohistochemistry on cryosectioned rat brain tissue: example staining for microglia and neurons.</em> J Vis Exp, 2015(99): p. e52293.</p></li>
+</ol>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1377,7 +1376,7 @@ for microglia and neurons.</em> J Vis Exp, 2015(99): p. e52293.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./neurology"
         },
         predefinedOutput: true
@@ -1385,56 +1384,88 @@ for microglia and neurons.</em> J Vis Exp, 2015(99): p. e52293.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../cardiac/cardiac.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Hyperpolarized MR in Cardiology {#chap:DJT}</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../liver/liver.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Integration into Liver Studies</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../cardiac/cardiac.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Hyperpolarized MR in Cardiology</p>
       </div>
-    </div>
+    </a>
+    <a class="right-next"
+       href="../liver/liver.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Integration into Liver Studies</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
 
+  </div>
   
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

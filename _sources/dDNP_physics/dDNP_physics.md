@@ -115,29 +115,17 @@ possible, if almost full polarization could be achieved.
 **Table 1**: Thermal polarization for ^13^C at selected magnetic field and
 temperature conditions.
 
-+----------------+----------------+----------------+-----------------+
-| Magnetic field | Frequency      | Temperature    | Thermal         |
-|                |                |                | polarization    |
-| *B~0~* \[T\]   | *f~0~* \[Hz\]  | *T* \[K\]      |                 |
-|                |                |                | *P~0~* \[ppm\]  |
-+================+================+================+=================+
-| 1.0            | 11.0·10^6^     | 301 (28 °C)    | 0.878           |
-+----------------+----------------+----------------+-----------------+
-| 3.0            | 32·10^6^       | 293 (20 °C)    | 2.62            |
-+----------------+----------------+----------------+-----------------+
-| 9.4            | 100·10^6^      | 298 (25 °C)    | 8.05            |
-+----------------+----------------+----------------+-----------------+
-| 6.7            | 71.8·10^6^     | 1.4            | 1,230           |
-+----------------+----------------+----------------+-----------------+
-| *k~B~*         |                |                |                 |
-| =1.381⋅10^-23^ |                |                |                 |
-| J/K,           |                |                |                 |
-| *h=            |                |                |                 |
-| *$2\pi\hslash$ |                |                |                 |
-| =6.626⋅10^-34^ |                |                |                 |
-| Js, γ~13C~=2π  |                |                |                 |
-| 10.7084 MHz/T  |                |                |                 |
-+----------------+----------------+----------------+-----------------+
+| Magnetic field (*B~0~* [T]) | Frequency (*f~0~* [Hz]) | Temperature (*T* [K]) | Thermal polarization (*P~0~* [ppm]) |
+|-----------------------------|-------------------------|----------------------|-------------------------------------|
+| 1.0                         | 11.0·10^6^              | 301 (28 °C)          | 0.878                               |
+| 3.0                         | 32·10^6^                | 293 (20 °C)          | 2.62                                |
+| 9.4                         | 100·10^6^               | 298 (25 °C)          | 8.05                                |
+| 6.7                         | 71.8·10^6^              | 1.4                  | 1,230                               |
+
+*Constants:*
+- *k~B~* = 1.381⋅10^-23^ J/K
+- *h* = $2\pi\hslash$ = 6.626⋅10^-34^ Js
+- γ~13C~ = 2π·10.7084 MHz/T
 
 The sensitivity of the NMR experiment is determined by several factors.
 D. Hoult (1) gives an excellent treatment of the problem, based on the
@@ -1041,23 +1029,31 @@ C.H. Cunningham, J.Y. Lau, A.P. Chen, B.J. Geraghty, W.J. Perks, I.
 Roifman, G.A. Wright, K.A. Connelly, Hyperpolarized 13C Metabolic MRI of
 the Human Heart: Initial Experience., Circ. Res. (2016)
 CIRCRESAHA.116.309769-.
-https://doi.org/10.1161/CIRCRESAHA.116.309769.\[4\] V.Z. Miloushev, K.L.
+https://doi.org/10.1161/CIRCRESAHA.116.309769.
+
+\[4\] V.Z. Miloushev, K.L.
 Granlund, R. Boltyanskiy, S.K. Lyashchenko, L.M. DeAngelis, I.K.
 Mellinghoff, C.W. Brennan, V. Tabar, T.J. Yang, A.I. Holodny, R.E. Sosa,
 Y.W. Guo, A.P. Chen, J. Tropp, F. Robb, K.R. Keshari, Metabolic Imaging
 of the Human Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C
 Lactate Production in Brain Tumor Patients., Cancer Res. (2018)
-canres.0221.2018. https://doi.org/10.1158/0008-5472.CAN-18-0221.\[5\] R.
+canres.0221.2018. https://doi.org/10.1158/0008-5472.CAN-18-0221.
+
+\[5\] R.
 Aggarwal, D.B. Vigneron, J. Kurhanewicz, Hyperpolarized
 1-\[13C\]-Pyruvate Magnetic Resonance Imaging Detects an Early Metabolic
 Response to Androgen Ablation Therapy in Prostate Cancer, Eur. Urol. 72
-(2017) 1028--1029. https://doi.org/10.1016/J.EURURO.2017.07.022.\[6\] I.
+(2017) 1028--1029. https://doi.org/10.1016/J.EURURO.2017.07.022.
+
+\[6\] I.
 Park, P.E.Z. Larson, J.W. Gordon, L. Carvajal, H.-Y. Chen, R. Bok, M.
 Van Criekinge, M. Ferrone, J.B. Slater, D. Xu, J. Kurhanewicz, D.B.
 Vigneron, S. Chang, S.J. Nelson, Development of methods and feasibility
 of using hyperpolarized carbon-13 imaging data for evaluating brain
 metabolism in patient studies, Magn. Reson. Med. 80 (2018) 864--873.
-https://doi.org/10.1002/mrm.27077.\[7\] J.T. Grist, M.A. McLean, F.
+https://doi.org/10.1002/mrm.27077.
+
+\[7\] J.T. Grist, M.A. McLean, F.
 Riemer, R.F. Schulte, S.S. Deen, F. Zaccagna, R. Woitek, C.J. Daniels,
 J.D. Kaggie, T. Matyz, I. Patterson, R. Slough, A.B. Gill, A. Chhabra,
 R. Eichenberger, M.-C. Laurent, A. Comment, J.H. Gillard, A.J. Coles,
@@ -1065,124 +1061,194 @@ D.J. Tyler, I. Wilkinson, B. Basu, D.J. Lomas, M.J. Graves, K.M.
 Brindle, F.A. Gallagher, Quantifying normal human brain metabolism using
 hyperpolarized \[1--13C\]pyruvate and magnetic resonance imaging,
 Neuroimage. (2019).
-https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027.\[8\] D. Mammoli, J.
+https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027.
+
+\[8\] D. Mammoli, J.
 Gordon, A. Autry, P.E.Z. Larson, Y. Li, H.-Y. Chen, B. Chung, P. Shin,
 M. Van Criekinge, L. Carvajal, J.B. Slater, R. Bok, J. Crane, D. Xu, S.
 Chang, D.B. Vigneron, Kinetic Modeling of Hyperpolarized Carbon-13
 Pyruvate Metabolism in the Human Brain, IEEE Trans. Med. Imaging. (2019)
-1--1. https://doi.org/10.1109/TMI.2019.2926437.\[9\] C.Y. Lee, H.
+1--1. https://doi.org/10.1109/TMI.2019.2926437.
+
+\[9\] C.Y. Lee, H.
 Soliman, B.J. Geraghty, A.P. Chen, K.A. Connelly, R. Endre, W.J. Perks,
 C. Heyn, S.E. Black, C.H. Cunningham, Lactate topography of the human
 brain using hyperpolarized 13C-MRI, Neuroimage. (2019) 116202.
-https://doi.org/10.1016/J.NEUROIMAGE.2019.116202.\[10\] B.T. Chung,
+https://doi.org/10.1016/J.NEUROIMAGE.2019.116202.
+
+\[10\] B.T. Chung,
 H.-Y. Chen, J. Gordon, D. Mammoli, R. Sriram, A.W. Autry, L.M. Le Page,
 M. Chaumeil, P. Shin, J. Slater, C.T. Tan, C. Suszczynski, S. Chang, Y.
 Li, R.A. Bok, S.M. Ronen, P. EZ Larson, J. Kurhanewicz, D.B. Vigneron,
 First Hyperpolarized \[2-13C\]Pyruvate MR Studies of Human Brain
 Metabolism, J. Magn. Reson. (2019) 106617.
-https://doi.org/10.1016/J.JMR.2019.106617.\[11\] H. Stødkilde‐Jørgensen,
+https://doi.org/10.1016/J.JMR.2019.106617
+
+.\[11\] H. Stødkilde‐Jørgensen,
 C. Laustsen, E.S.S. Hansen, R. Schulte, J.H. Ardenkjaer‐Larsen, A.
 Comment, J. Frøkiær, S. Ringgaard, L.B. Bertelsen, M. Ladekarl, B.
 Weber, Pilot Study Experiences With Hyperpolarized \[1‐ 13 C\]pyruvate
 MRI in Pancreatic Cancer Patients, J. Magn. Reson. Imaging. (2019)
-jmri.26888. https://doi.org/10.1002/jmri.26888.\[12\] C.P. Slichter,
+jmri.26888. https://doi.org/10.1002/jmri.26888.
+
+\[12\] C.P. Slichter,
 Principles of Magnetic Resonance, Springer Berlin Heidelberg, Berlin,
-Heidelberg, 1990. https://doi.org/10.1007/978-3-662-09441-9.\[13\] T.G.
+Heidelberg, 1990. https://doi.org/10.1007/978-3-662-09441-9.
+
+\[13\] T.G.
 Walker, W. Happer, Spin-exchange optical pumping of noble-gas nuclei,
 Rev. Mod. Phys. 69 (1997) 629--642.
-https://doi.org/10.1103/revmodphys.69.629.\[14\] M.S. Albert, G.D.
+https://doi.org/10.1103/revmodphys.69.629.
+
+\[14\] M.S. Albert, G.D.
 Cates, B. Driehuys, W. Happer, B. Saam, C.S. Springer, A. Wishnia,
 Biological magnetic resonance imaging using laser-polarized 129Xe,
-Nature. 370 (1994) 199--201. https://doi.org/10.1038/370199a0.\[15\] K.
+Nature. 370 (1994) 199--201. https://doi.org/10.1038/370199a0.
+
+\[15\] K.
 Qing, J.P. Mugler, T.A. Altes, Y. Jiang, J.F. Mata, G.W. Miller, I.C.
 Ruset, F.W. Hersman, K. Ruppert, Assessment of lung function in asthma
 and COPD using hyperpolarized 129Xe chemical shift saturation recovery
 spectroscopy and dissolved-phase MRI, NMR Biomed. 27 (2014) 1490--1501.
-https://doi.org/10.1002/nbm.3179.\[16\] R. Seydoux, A. Pines, M. Haake,
+https://doi.org/10.1002/nbm.3179.
+
+\[16\] R. Seydoux, A. Pines, M. Haake,
 J.A. Reimer, NMR with a continuously circulating flow of laser-polarized
 129Xe, J. Phys. Chem. B. 103 (1999) 4629--4637.
-https://doi.org/10.1021/jp9821984.\[17\] C.R. Bowers, D.P. Weitekamp,
+https://doi.org/10.1021/jp9821984.
+
+\[17\] C.R. Bowers, D.P. Weitekamp,
 Transformation of symmetrization order to nuclear-spin magnetization by
 chemical reaction and nuclear magnetic resonance, Phys. Rev. Lett. 57
-(1986) 2645--2648. https://doi.org/10.1103/PhysRevLett.57.2645.\[18\]
+(1986) 2645--2648. https://doi.org/10.1103/PhysRevLett.57.2645.
+
+\[18\]
 C.R. Bowers, D.P. Weitekamp, Parahydrogen and Synthesis Allow
 Dramatically Enhanced Nuclear Alignment, J. Am. Chem. Soc. 109 (1987)
-5541--5542. https://doi.org/10.1021/ja00252a049.\[19\] J.B. Hövener,
+5541--5542. https://doi.org/10.1021/ja00252a049.
+
+\[19\] J.B. Hövener,
 A.N. Pravdivtsev, B. Kidd, C.R. Bowers, S. Glöggler, K. V. Kovtunov, M.
 Plaumann, R. Katz-Brull, K. Buckenmaier, A. Jerschow, F. Reineri, T.
 Theis, R. V. Shchepin, S. Wagner, P. Bhattacharya, N.M. Zacharias, E.Y.
 Chekmenev, Parahydrogen-Based Hyperpolarization for Biomedicine, Angew.
 Chemie - Int. Ed. 57 (2018) 11140--11162.
-https://doi.org/10.1002/anie.201711842.\[20\] R.W. Adams, J.A. Aguilar,
+https://doi.org/10.1002/anie.201711842.
+
+\[20\] R.W. Adams, J.A. Aguilar,
 K.D. Atkinson, M.J. Cowley, P.I.P.P. Elliott, S.B. Duckett, G.G.R.R.
 Green, I.G. Khazal, J. López-Serrano, D.C. Williamson, J. Lopez-Serrano,
 D.C. Williamson, Reversible interactions with para-hydrogen enhance NMR
 sensitivity by polarization transfer, Science. 323 (2009) 1708--1711.
-https://doi.org/10.1126/science.1168877.\[21\] E. Cavallari, C. Carrera,
+https://doi.org/10.1126/science.1168877.
+
+\[21\] E. Cavallari, C. Carrera,
 S. Aime, F. Reineri, Studies to enhance the hyperpolarization level in
 PHIP-SAH-produced C13-pyruvate, J. Magn. Reson. 289 (2018) 12--17.
-https://doi.org/10.1016/j.jmr.2018.01.019.\[22\] D.T. Peat, Achievement
+https://doi.org/10.1016/j.jmr.2018.01.019.
+
+\[22\] D.T. Peat, Achievement
 of high nuclear spin polarization using lanthanides as low-temperature
 NMR relaxation agents, Phys. Chem. Chem. Phys. 15 (2013) 7586--7591.
-https://doi.org/10.1039/c3cp00103b.\[23\] M.L. Hirsch, B.A. Smith, M.
+https://doi.org/10.1039/c3cp00103b.
+
+\[23\] M.L. Hirsch, B.A. Smith, M.
 Mattingly, A.G. Goloshevsky, M. Rosay, J.G. Kempf, Transport and imaging
 of brute-force 13 C hyperpolarization, J. Magn. Reson. 261 (2015)
-87--94. https://doi.org/10.1016/j.jmr.2015.09.017.\[24\] M.L. Hirsch, N.
+87--94. https://doi.org/10.1016/j.jmr.2015.09.017.
+
+\[24\] M.L. Hirsch, N.
 Kalechofsky, A. Belzer, M. Rosay, J.G. Kempf, Brute-Force
 Hyperpolarization for NMR and MRI, J. Am. Chem. Soc. 137 (2015)
-8428--34. https://doi.org/10.1021/jacs.5b01252.\[25\] D.T. Peat, M.L.
+8428--34. https://doi.org/10.1021/jacs.5b01252.
+
+\[25\] D.T. Peat, M.L.
 Hirsch, D.G. Gadian, A.J. Horsewill, J.R. Owers-Bradley, J.G. Kempf,
 Low-field thermal mixing in \[1- 13 C\] pyruvic acid for brute-force
 hyperpolarization, Phys. Chem. Chem. Phys. 18 (2016) 19173--19182.
-https://doi.org/10.1039/C6CP02853E.\[26\] A.W. Overhauser, Polarization
+https://doi.org/10.1039/C6CP02853E.
+
+\[26\] A.W. Overhauser, Polarization
 of nuclei in metals, Phys. Rev. 92 (1953) 411.
-https://doi.org/10.1103/PhysRev.92.411.\[27\] T.R.R. Carver, C.P.P.
+https://doi.org/10.1103/PhysRev.92.411.
+
+\[27\] T.R.R. Carver, C.P.P.
 Slichter, Polarization of nuclear spins in metals, Phys. Rev. 92 (1953)
-212. https://doi.org/10.1103/PhysRev.92.212.2.\[28\] A. Abragam, W.G.
+212. https://doi.org/10.1103/PhysRev.92.212.2.
+
+\[28\] A. Abragam, W.G.
 Proctor, Experiments on Spin Temperature, Phys. Rev. 106 (1957)
-160--161. https://doi.org/10.1103/PhysRev.106.160.\[29\] T. V. Can, M.A.
+160--161. https://doi.org/10.1103/PhysRev.106.160.
+
+\[29\] T. V. Can, M.A.
 Caporini, F. Mentink-Vigier, B. Corzilius, J.J. Walish, M. Rosay, W.E.
 Maas, M. Baldus, S. Vega, T.M. Swager, R.G. Griffin, Overhauser effects
 in insulating solids, J. Chem. Phys. 141 (2014).
-https://doi.org/10.1063/1.4891866.\[30\] X. Ji, T. V. Can, F.
+https://doi.org/10.1063/1.4891866.
+
+\[30\] X. Ji, T. V. Can, F.
 Mentink-Vigier, A. Bornet, J. Milani, B. Vuichoud, M.A. Caporini, R.G.
 Griffin, S. Jannin, M. Goldman, G. Bodenhausen, Overhauser effects in
 non-conducting solids at 1.2 K, J. Magn. Reson. 286 (2018) 138--142.
-https://doi.org/10.1016/j.jmr.2017.11.017.\[31\] T. Orlando, R.
+https://doi.org/10.1016/j.jmr.2017.11.017.
+
+\[31\] T. Orlando, R.
 Dervişoğlu, M. Levien, I. Tkach, T.F. Prisner, L.B. Andreas, V.P.
 Denysenkov, M. Bennati, Dynamic Nuclear Polarization of 13 C Nuclei in
 the Liquid State over a 10 Tesla Field Range, Angew. Chemie - Int. Ed.
-58 (2019) 1402--1406. https://doi.org/10.1002/anie.201811892.\[32\] C.D.
+58 (2019) 1402--1406. https://doi.org/10.1002/anie.201811892.
+
+\[32\] C.D.
 Jeffries, Polarization of Nuclei by Resonance Saturation in Paramagnetic
 Crystals, Phys. Rev. 106 (1957) 164--165.
-https://doi.org/10.1103/PhysRev.106.164.\[33\] A. Abragam, M. (Maurice)
+https://doi.org/10.1103/PhysRev.106.164.
+
+\[33\] A. Abragam, M. (Maurice)
 Goldman, Nuclear magnetism : order and disorder, Clarendon Press, 1982.
 http://findit.dtu.dk/en/catalog/2300286932 (accessed January 16,
-2018).\[34\] Y. Hovav, A. Feintuch, S. Vega, Theoretical aspects of
+2018).
+
+\[34\] Y. Hovav, A. Feintuch, S. Vega, Theoretical aspects of
 dynamic nuclear polarization in the solid state -- The solid effect, J.
 Magn. Reson. 207 (2010) 176--189.
-https://doi.org/10.1016/j.jmr.2010.10.016.\[35\] Y. Hovav, A. Feintuch,
+https://doi.org/10.1016/j.jmr.2010.10.016.
+
+\[35\] Y. Hovav, A. Feintuch,
 S. Vega, Theoretical aspects of dynamic nuclear polarization in the
 solid state -- The cross effect, J. Magn. Reson. 214 (2012) 29--41.
-https://doi.org/10.1016/j.jmr.2011.09.047.\[36\] Y. Hovav, A. Feintuch,
+https://doi.org/10.1016/j.jmr.2011.09.047.
+
+\[36\] Y. Hovav, A. Feintuch,
 S. Vega, Theoretical aspects of dynamic nuclear polarization in the
 solid state -- spin temperature and thermal mixing, Phys. Chem. Chem.
-Phys. 15 (2012) 188--203. https://doi.org/10.1039/C2CP42897K.\[37\] A.
+Phys. 15 (2012) 188--203. https://doi.org/10.1039/C2CP42897K.
+
+\[37\] A.
 Karabanov, D. Wiśniewski, F. Raimondi, I. Lesanovsky, W. Köckenberger,
 Many-body kinetics of dynamic nuclear polarization by the cross effect,
 Phys. Rev. A. 97 (2018) 031404.
-https://doi.org/10.1103/PhysRevA.97.031404.\[38\] D. Wiśniewski, A.
+https://doi.org/10.1103/PhysRevA.97.031404.
+
+\[38\] D. Wiśniewski, A.
 Karabanov, I. Lesanovsky, W. Köckenberger, Solid effect DNP polarization
 dynamics in a system of many spins., J. Magn. Reson. 264 (2016) 30--8.
-https://doi.org/10.1016/j.jmr.2016.01.016.\[39\] W.T. Wenckebach,
+https://doi.org/10.1016/j.jmr.2016.01.016.
+
+\[39\] W.T. Wenckebach,
 Essentials of dynamic nuclear polarization, n.d.
 http://www.wenckebach.net/html/dnp-book.html (accessed February 5,
-2018).\[40\] W.T. Wenckebach, Spectral diffusion and dynamic nuclear
+2018).
+
+\[40\] W.T. Wenckebach, Spectral diffusion and dynamic nuclear
 polarization: Beyond the high temperature approximation, J. Magn. Reson.
-284 (2017) 104--114. https://doi.org/10.1016/J.JMR.2017.10.001.\[41\]
+284 (2017) 104--114. https://doi.org/10.1016/J.JMR.2017.10.001.
+
+\[41\]
 W.T. Wenckebach, Dynamic nuclear polarization via thermal mixing: Beyond
 the high temperature approximation, J. Magn. Reson. 277 (2017) 68--78.
-https://doi.org/10.1016/J.JMR.2017.01.020.\[42\] B. Adeva, E. Arik, S.
+https://doi.org/10.1016/J.JMR.2017.01.020.
+
+\[42\] B. Adeva, E. Arik, S.
 Ahmad, A. Arvidson, B. Badelek, M.K. Ballintijn, G. Bardin, G. Baum, P.
 Berglund, L. Betev, I.G. Bird, R. Birsa, P. Björkholm, B.E. Bonner, N.
 de Botton, M. Boutemeur, F. Bradamante, A. Bressan, A. Brüll, J.
@@ -1217,21 +1283,31 @@ Witzmann, A. Yañez, N.I. Zamiatin, A.M. Zanetti, J. Zhao, Large
 enhancement of deuteron polarization with frequency modulated
 microwaves, Nucl. Instruments Methods Phys. Res. Sect. A Accel.
 Spectrometers, Detect. Assoc. Equip. 372 (1996) 339--343.
-https://doi.org/10.1016/0168-9002(95)01376-8.\[43\] K.R. Thurber, W.-M.
+https://doi.org/10.1016/0168-9002(95)01376-8.
+
+\[43\] K.R. Thurber, W.-M.
 Yau, R. Tycko, Low-temperature dynamic nuclear polarization at 9.4 T
 with a 30 mW microwave source., J. Magn. Reson. 204 (2010) 303--13.
-https://doi.org/10.1016/j.jmr.2010.03.016.\[44\] H. Jóhannesson, S.
+https://doi.org/10.1016/j.jmr.2010.03.016.
+
+\[44\] H. Jóhannesson, S.
 Macholl, J.H. Ardenkjaer-Larsen, Dynamic Nuclear Polarization of
 \[1-13C\]pyruvic acid at 4.6 tesla., J. Magn. Reson. 197 (2009)
-167--175. https://doi.org/10.1016/j.jmr.2008.12.016.\[45\] T. Cheng, A.
+167--175. https://doi.org/10.1016/j.jmr.2008.12.016.
+
+\[45\] T. Cheng, A.
 Capozzi, Y. Takado, R. Balzan, A. Comment, Over 35% liquid-state 13C
 polarization obtained via dissolution dynamic nuclear polarization at 7
 T and 1 K using ubiquitous nitroxyl radicals, Phys. Chem. Chem. Phys. 15
-(2013) 20819--20822. https://doi.org/10.1039/C3CP53022A.\[46\] H.A.I.
+(2013) 20819--20822. https://doi.org/10.1039/C3CP53022A.
+
+\[46\] H.A.I.
 Yoshihara, E. Can, M. Karlsson, M.H. Lerche, J. Schwitter, A. Comment,
 High-field dissolution dynamic nuclear polarization of \[1- 13
 C\]pyruvic acid, Phys. Chem. Chem. Phys. 18 (2016) 12409--12413.
-https://doi.org/10.1039/C6CP00589F.\[47\] J.H. Ardenkjaer-Larsen, S.
+https://doi.org/10.1039/C6CP00589F.
+
+\[47\] J.H. Ardenkjaer-Larsen, S.
 Bowen, J.R.J.R.J.R. Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch,
 N.C.N.C. Nielsen, J.H. Ardenkjær-Larsen, S. Bowen, J.R.J.R.J.R.
 Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen,
@@ -1239,43 +1315,65 @@ J.H. Ardenkjaer-Larsen, S. Bowen, J.R.J.R.J.R. Petersen, O. Rybalko,
 M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen, Cryogen-free dissolution
 dynamic nuclear polarization polarizer operating at 3.35 T, 6.70 T, and
 10.1 T, Magn. Reson. Med. 81 (2019) 2184--2194.
-https://doi.org/10.1002/mrm.27537.\[48\] J.H. Ardenkjaer-Larsen, A.M.
+https://doi.org/10.1002/mrm.27537.
+
+\[48\] J.H. Ardenkjaer-Larsen, A.M.
 Leach, N. Clarke, J. Urbahn, D. Anderson, T.W. Skloss, Dynamic nuclear
 polarization polarizer for sterile use intent., NMR Biomed. 24 (2011)
-927--32. https://doi.org/10.1002/nbm.1682.\[49\] K.-N. Hu, Polarizing
+927--32. https://doi.org/10.1002/nbm.1682.
+
+\[49\] K.-N. Hu, Polarizing
 agents and mechanisms for high-field dynamic nuclear polarization of
 frozen dielectric solids, Solid State Nucl. Magn. Reson. 40 (2011)
-31--41. https://doi.org/10.1016/j.ssnmr.2011.08.001.\[50\] A.S. Lilly
+31--41. https://doi.org/10.1016/j.ssnmr.2011.08.001.
+
+\[50\] A.S. Lilly
 Thankamony, J.J. Wittmann, M. Kaushik, B. Corzilius, Dynamic nuclear
 polarization for sensitivity enhancement in modern solid-state NMR,
 Prog. Nucl. Magn. Reson. Spectrosc. 102--103 (2017) 120--195.
-https://doi.org/10.1016/j.pnmrs.2017.06.002.\[51\] J.H.
+https://doi.org/10.1016/j.pnmrs.2017.06.002.
+
+\[51\] J.H.
 Ardenkjaer-Larsen, S. MacHoll, H. Jóhannesson, Dynamic Nuclear
 Polarization with Trityls at 1.2 K, Appl. Magn. Reson. 34 (2008)
-509--522. https://doi.org/10.1007/s00723-008-0134-4.\[52\] B. Corzilius,
+509--522. https://doi.org/10.1007/s00723-008-0134-4.
+
+\[52\] B. Corzilius,
 A.A. Smith, A.B. Barnes, C. Luchinat, I. Bertini, R.G. Griffin,
 High-Field Dynamic Nuclear Polarization with High-Spin Transition Metal
 Ions, J. Am. Chem. Soc. 133 (2011) 5648--5651.
-https://doi.org/10.1021/ja1109002.\[53\] A. Capozzi, M. Karlsson, J.R.
+https://doi.org/10.1021/ja1109002.
+
+\[53\] A. Capozzi, M. Karlsson, J.R.
 Petersen, M.H. Lerche, J.H. Ardenkjaer-Larsen, Liquid-State 13C
 Polarization of 30% through Photo-Induced Non-Persistent Radicals, J.
 Phys. Chem. C. (2018) acs.jpcc.8b01482.
-https://doi.org/10.1021/acs.jpcc.8b01482.\[54\] A. Capozzi, S. Patel,
+https://doi.org/10.1021/acs.jpcc.8b01482.
+
+\[54\] A. Capozzi, S. Patel,
 C.P. Gunnarsson, I. Marco-Rius, A. Comment, M. Karlsson, M.H. Lerche, O.
 Ouari, J.H. Ardenkjær-Larsen, Efficient Hyperpolarization of
 U-13C-Glucose Using Narrow-Line UV-Generated Labile Free Radicals,
 Angew. Chemie - Int. Ed. (2018).
-https://doi.org/10.1002/anie.201810522.\[55\] X. Ji, A. Bornet, B.
+https://doi.org/10.1002/anie.201810522.
+
+\[55\] X. Ji, A. Bornet, B.
 Vuichoud, J. Milani, D. Gajan, A.J. Rossini, L. Emsley, G. Bodenhausen,
 S. Jannin, Transportable hyperpolarized metabolites, Nat. Commun. 8
-(2017) 13975. https://doi.org/10.1038/ncomms13975.\[56\] A. Capozzi, T.
+(2017) 13975. https://doi.org/10.1038/ncomms13975.
+
+\[56\] A. Capozzi, T.
 Cheng, G. Boero, C. Roussel, A. Comment, Thermal annihilation of
 photo-induced radicals following dynamic nuclear polarization to produce
 transportable frozen hyperpolarized 13C-substrates, Nat. Commun. 8
-(2017) 15757. https://doi.org/10.1038/ncomms15757.\[57\] S. Bowen,
+(2017) 15757. https://doi.org/10.1038/ncomms15757.
+
+\[57\] S. Bowen,
 J.H.J.H. Ardenkjaer-Larsen, Formulation and utilization of choline based
 samples for dissolution dynamic nuclear polarization., J. Magn. Reson.
-236 (2013) 26--30. https://doi.org/10.1016/j.jmr.2013.08.007.\[58\] E.
+236 (2013) 26--30. https://doi.org/10.1016/j.jmr.2013.08.007.
+
+\[58\] E.
 Chiavazza, E. Kubala, C. V Gringeri, S. Düwel, M. Durst, R.F. Schulte,
 M.I. Menzel, Earth's magnetic field enabled scalar coupling relaxation
 of 13C nuclei bound to fast-relaxing quadrupolar 14N in amide groups.,

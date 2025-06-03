@@ -1,313 +1,453 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>The Physics of dissolution Dynamic Nuclear Polarization &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'dDNP_physics/dDNP_physics';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient" href="../dDNP_hardware/dDNP_hardware.html" />
     <link rel="prev" title="Preface" href="../preface.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acquisition_methods/acquisition_methods.html">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HP_agents/HP_agents.html">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../analysis_visualization/analysis_visualization.html">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../cancer/cancer.html">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../neurology/neurology.html">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../acquisition_methods/acquisition_methods.html">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../HP_agents/HP_agents.html">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../analysis_visualization/analysis_visualization.html">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cancer/cancer.html">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../neurology/neurology.html">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/dDNP_physics/dDNP_physics.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2FdDNP_physics/dDNP_physics.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
     </div>
-</div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
+<div class="article-header-buttons">
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#polarization-magnetization-sensitivity-and-hyperpolarization">
-   Polarization, magnetization, sensitivity, and hyperpolarization
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#methods-of-hyperpolarization">
-   Methods of hyperpolarization
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dynamic-nuclear-polarization">
-   Dynamic Nuclear Polarization
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solid-effect">
-     Solid Effect
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cross-effect-and-thermal-mixing">
-     Cross Effect and Thermal Mixing
-    </a>
-   </li>
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2FdDNP_physics/dDNP_physics.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent">
-   The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dissolution-and-relaxation">
-   Dissolution and relaxation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conclusion">
-   Conclusion
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/dDNP_physics/dDNP_physics.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Physics of dissolution Dynamic Nuclear Polarization</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polarization-magnetization-sensitivity-and-hyperpolarization">Polarization, magnetization, sensitivity, and hyperpolarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-hyperpolarization">Methods of hyperpolarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-nuclear-polarization">Dynamic Nuclear Polarization</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solid-effect">Solid Effect</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-effect-and-thermal-mixing">Cross Effect and Thermal Mixing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent">The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolution-and-relaxation">Dissolution and relaxation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="the-physics-of-dissolution-dynamic-nuclear-polarization">
-<h1>The Physics of dissolution Dynamic Nuclear Polarization<a class="headerlink" href="#the-physics-of-dissolution-dynamic-nuclear-polarization" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-physics-of-dissolution-dynamic-nuclear-polarization">
+<h1>The Physics of dissolution Dynamic Nuclear Polarization<a class="headerlink" href="#the-physics-of-dissolution-dynamic-nuclear-polarization" title="Link to this heading">#</a></h1>
 <p>Jan Ardenkjaer-Larsen, PhD</p>
 <p>Department of Health Technology, Technical University of Denmark,
 Denmark</p>
@@ -328,9 +468,9 @@ solutions of hyperpolarized metabolic contrast agents.</p>
 <p><strong>Key Words</strong>: Hyperpolarization, magnetization, sensitivity, dynamic
 nuclear polarization, electron paramagnetic agents, electron spin
 resonance, nuclear magnetic resonance.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p>Hyperpolarization can be based on several principles, of which, three
 have successfully been applied to molecules in solution: ParaHydrogen
 Induced Polarization (PHIP), brute force polarization, and dissolution
@@ -362,9 +502,9 @@ liquid solution of hyperpolarized nuclear spins. A strongly enhanced
 nuclear signal can be acquired. The shown ^13^C spectrum [1] is from
 hyperpolarized urea with a polarization of 20%, 24,000 times stronger
 than the thermal polarization at 9.4 T and room temperature.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="polarization-magnetization-sensitivity-and-hyperpolarization">
-<h1>Polarization, magnetization, sensitivity, and hyperpolarization<a class="headerlink" href="#polarization-magnetization-sensitivity-and-hyperpolarization" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="polarization-magnetization-sensitivity-and-hyperpolarization">
+<h1>Polarization, magnetization, sensitivity, and hyperpolarization<a class="headerlink" href="#polarization-magnetization-sensitivity-and-hyperpolarization" title="Link to this heading">#</a></h1>
 <p>The polarization, for a spin <em>I</em>=½, is given by the difference in
 populations of the two energy eigenstates</p>
 <p><span class="math notranslate nohighlight">\(P = \frac{N^{+} - N^{-}}{N^{+} + N^{-}}\)</span> Eq. 1</p>
@@ -410,29 +550,44 @@ polarization of 100,000 and 400,000 times, respectively, is therefore
 possible, if almost full polarization could be achieved.</p>
 <p><strong>Table 1</strong>: Thermal polarization for ^13^C at selected magnetic field and
 temperature conditions.</p>
-<p>+—————-+—————-+—————-+—————–+
-| Magnetic field | Frequency      | Temperature    | Thermal         |
-|                |                |                | polarization    |
-| <em>B~0~</em> [T]   | <em>f~0~</em> [Hz]  | <em>T</em> [K]      |                 |
-|                |                |                | <em>P~0~</em> [ppm]  |
-+================+================+================+=================+
-| 1.0            | 11.0·10^6^     | 301 (28 °C)    | 0.878           |
-+—————-+—————-+—————-+—————–+
-| 3.0            | 32·10^6^       | 293 (20 °C)    | 2.62            |
-+—————-+—————-+—————-+—————–+
-| 9.4            | 100·10^6^      | 298 (25 °C)    | 8.05            |
-+—————-+—————-+—————-+—————–+
-| 6.7            | 71.8·10^6^     | 1.4            | 1,230           |
-+—————-+—————-+—————-+—————–+
-| <em>k~B~</em>         |                |                |                 |
-| =1.381⋅10^-23^ |                |                |                 |
-| J/K,           |                |                |                 |
-| *h=            |                |                |                 |
-| *<span class="math notranslate nohighlight">\(2\pi\hslash\)</span> |                |                |                 |
-| =6.626⋅10^-34^ |                |                |                 |
-| Js, γ~13C~=2π  |                |                |                 |
-| 10.7084 MHz/T  |                |                |                 |
-+—————-+—————-+—————-+—————–+</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Magnetic field (<em>B~0~</em> [T])</p></th>
+<th class="head"><p>Frequency (<em>f~0~</em> [Hz])</p></th>
+<th class="head"><p>Temperature (<em>T</em> [K])</p></th>
+<th class="head"><p>Thermal polarization (<em>P~0~</em> [ppm])</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.0</p></td>
+<td><p>11.0·10^6^</p></td>
+<td><p>301 (28 °C)</p></td>
+<td><p>0.878</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.0</p></td>
+<td><p>32·10^6^</p></td>
+<td><p>293 (20 °C)</p></td>
+<td><p>2.62</p></td>
+</tr>
+<tr class="row-even"><td><p>9.4</p></td>
+<td><p>100·10^6^</p></td>
+<td><p>298 (25 °C)</p></td>
+<td><p>8.05</p></td>
+</tr>
+<tr class="row-odd"><td><p>6.7</p></td>
+<td><p>71.8·10^6^</p></td>
+<td><p>1.4</p></td>
+<td><p>1,230</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Constants:</em></p>
+<ul class="simple">
+<li><p><em>k~B~</em> = 1.381⋅10^-23^ J/K</p></li>
+<li><p><em>h</em> = <span class="math notranslate nohighlight">\(2\pi\hslash\)</span> = 6.626⋅10^-34^ Js</p></li>
+<li><p>γ~13C~ = 2π·10.7084 MHz/T</p></li>
+</ul>
 <p>The sensitivity of the NMR experiment is determined by several factors.
 D. Hoult (1) gives an excellent treatment of the problem, based on the
 principle of reciprocity. The signal-to-noise ratio (SNR) ‘master
@@ -530,9 +685,9 @@ later in the chapter.</p></li>
 <li><p>Spectral dispersion is a further argument for higher magnetic fields
 strength.</p></li>
 </ul>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="methods-of-hyperpolarization">
-<h1>Methods of hyperpolarization<a class="headerlink" href="#methods-of-hyperpolarization" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="methods-of-hyperpolarization">
+<h1>Methods of hyperpolarization<a class="headerlink" href="#methods-of-hyperpolarization" title="Link to this heading">#</a></h1>
 <p>Optical pumping of the noble gases ^3^He and ^129^Xe is a technique that
 was originally developed in atomic physics laboratories [13]. Noble
 gases are polarized by the method that won Alfred Kastler the Nobel
@@ -627,9 +782,9 @@ temperature and microwave frequency and power. The DNP theory will only
 be described at a high level to allow the reader to understand the
 significance of the properties of the electron paramagnetic agent (EPA)
 and sample formulation for the efficiency of DNP.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="dynamic-nuclear-polarization">
-<h1>Dynamic Nuclear Polarization<a class="headerlink" href="#dynamic-nuclear-polarization" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="dynamic-nuclear-polarization">
+<h1>Dynamic Nuclear Polarization<a class="headerlink" href="#dynamic-nuclear-polarization" title="Link to this heading">#</a></h1>
 <p>DNP was first described theoretically by Overhauser in 1953 [26] and a
 few months later was demonstrated by Carver and Slichter [27] in
 metallic lithium. Overhauser predicted that saturating the conduction
@@ -707,8 +862,8 @@ models must be solved numerically, and it is questionable if the models
 provide further physical insight into DNP than full quantum mechanical
 treatments. For a recent comprehensive description of DNP based on spin
 temperature concepts see [39–41].</p>
-<div class="section" id="solid-effect">
-<h2>Solid Effect<a class="headerlink" href="#solid-effect" title="Permalink to this headline">¶</a></h2>
+<section id="solid-effect">
+<h2>Solid Effect<a class="headerlink" href="#solid-effect" title="Link to this heading">#</a></h2>
 <p>The solid effect is most easily understood of the three mechanisms
 [33,39]. A dilute EPA with spin <em>S=1/2</em> and Larmor frequency <em>ω~e~</em> in
 a diamagnetic material with nuclear spins <em>I=1/2</em> with Larmor frequency
@@ -840,9 +995,9 @@ bottleneck. The nuclear spins in the immediate proximity of the
 paramagnetic centers experience a strong dipolar field, causing their
 Larmor frequencies to be shifted far off-resonance to become
 non-observable. However, this is a small fraction of the nuclear spins.</p>
-</div>
-<div class="section" id="cross-effect-and-thermal-mixing">
-<h2>Cross Effect and Thermal Mixing<a class="headerlink" href="#cross-effect-and-thermal-mixing" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="cross-effect-and-thermal-mixing">
+<h2>Cross Effect and Thermal Mixing<a class="headerlink" href="#cross-effect-and-thermal-mixing" title="Link to this heading">#</a></h2>
 <p>The cross-effect or thermal mixing arises in the situation that the
 electron line width <em>∆ω~s~</em> is larger than the nuclear frequency,
 <em>ω~I~</em>, and involves two interacting electron spins and a nucleus. This
@@ -1019,10 +1174,10 @@ and make <span class="math notranslate nohighlight">\(\left( 1 - P_{0e}^{2} \rig
 increases at higher magnetic field and <em>T~1e~</em> typically gets shorter.
 For [1-^13^C]pyruvic acid, the ^13^C polarization improved from 27% at
 3.35 T to 60% at 4.64 T and 70% at 6.7 T, all at 1-1.2 K.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent">
-<h1>The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent<a class="headerlink" href="#the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent">
+<h1>The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent<a class="headerlink" href="#the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent" title="Link to this heading">#</a></h1>
 <p>DNP requires the presence of unpaired electrons, typically in the form
 of an organic radical, e.g. a nitroxide or trityl, Fig. 4, but a few
 metal ions have high efficiency for DNP at low temperature, Cr(V) in
@@ -1148,9 +1303,9 @@ three molecules are liquids at room temperature. For other compounds, it
 is necessary to prevent crystallization by mixing or dissolving the
 compound with a suitable solvent such as glycerol or dimethylsulfoxide
 (DMSO).</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="dissolution-and-relaxation">
-<h1>Dissolution and relaxation<a class="headerlink" href="#dissolution-and-relaxation" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="dissolution-and-relaxation">
+<h1>Dissolution and relaxation<a class="headerlink" href="#dissolution-and-relaxation" title="Link to this heading">#</a></h1>
 <p>For <em>in vivo</em> imaging, the sample must be dissolved in a suitable
 buffer. Depending on the properties of the DNP sample, the dissolution
 may involve neutralization of the agent with acid or base, e.g. as in
@@ -1234,9 +1389,9 @@ the time from dissolution to measurement is known. The assumption is
 that T~1~ is constant and equal to the value measured at the
 spectrometer field throughout the transfer (the relaxation time constant
 may depend on the magnetic field).</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="conclusion">
-<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h1>
 <p>The DNP theory has received much attention in recent years with the
 renaissance of the method within NMR and MRI. High field static and
 MAS-DNP-NMR for sensitivity enhancement of solid-state NMR along with
@@ -1244,9 +1399,9 @@ dDNP for <em>in vivo</em> biological and medical imaging has spawned renewed
 interest in revisiting the theory and develop new methods.
 Hyperpolarization is a great example of experiment and theory bringing
 scientists of all disciplines together.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h1>
 <p>[1] J.H. Ardenkjær-Larsen, B. Fridlund, A. Gram, G. Hansson, L.
 Hansson, M.H. Lerche, R. Servin, M. Thaning, K. Golman, Increase in
 signal-to-noise ratio of &gt; 10,000 times in liquid-state NMR., Proc.
@@ -1272,23 +1427,27 @@ C.H. Cunningham, J.Y. Lau, A.P. Chen, B.J. Geraghty, W.J. Perks, I.
 Roifman, G.A. Wright, K.A. Connelly, Hyperpolarized 13C Metabolic MRI of
 the Human Heart: Initial Experience., Circ. Res. (2016)
 CIRCRESAHA.116.309769-.
-<a class="reference external" href="https://doi.org/10.1161/CIRCRESAHA.116.309769.%5B4">https://doi.org/10.1161/CIRCRESAHA.116.309769.[4</a>] V.Z. Miloushev, K.L.
+<a class="reference external" href="https://doi.org/10.1161/CIRCRESAHA.116.309769">https://doi.org/10.1161/CIRCRESAHA.116.309769</a>.</p>
+<p>[4] V.Z. Miloushev, K.L.
 Granlund, R. Boltyanskiy, S.K. Lyashchenko, L.M. DeAngelis, I.K.
 Mellinghoff, C.W. Brennan, V. Tabar, T.J. Yang, A.I. Holodny, R.E. Sosa,
 Y.W. Guo, A.P. Chen, J. Tropp, F. Robb, K.R. Keshari, Metabolic Imaging
 of the Human Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C
 Lactate Production in Brain Tumor Patients., Cancer Res. (2018)
-canres.0221.2018. <a class="reference external" href="https://doi.org/10.1158/0008-5472.CAN-18-0221.%5B5">https://doi.org/10.1158/0008-5472.CAN-18-0221.[5</a>] R.
+canres.0221.2018. <a class="reference external" href="https://doi.org/10.1158/0008-5472.CAN-18-0221">https://doi.org/10.1158/0008-5472.CAN-18-0221</a>.</p>
+<p>[5] R.
 Aggarwal, D.B. Vigneron, J. Kurhanewicz, Hyperpolarized
 1-[13C]-Pyruvate Magnetic Resonance Imaging Detects an Early Metabolic
 Response to Androgen Ablation Therapy in Prostate Cancer, Eur. Urol. 72
-(2017) 1028–1029. <a class="reference external" href="https://doi.org/10.1016/J.EURURO.2017.07.022.%5B6">https://doi.org/10.1016/J.EURURO.2017.07.022.[6</a>] I.
+(2017) 1028–1029. <a class="reference external" href="https://doi.org/10.1016/J.EURURO.2017.07.022">https://doi.org/10.1016/J.EURURO.2017.07.022</a>.</p>
+<p>[6] I.
 Park, P.E.Z. Larson, J.W. Gordon, L. Carvajal, H.-Y. Chen, R. Bok, M.
 Van Criekinge, M. Ferrone, J.B. Slater, D. Xu, J. Kurhanewicz, D.B.
 Vigneron, S. Chang, S.J. Nelson, Development of methods and feasibility
 of using hyperpolarized carbon-13 imaging data for evaluating brain
 metabolism in patient studies, Magn. Reson. Med. 80 (2018) 864–873.
-<a class="reference external" href="https://doi.org/10.1002/mrm.27077.%5B7">https://doi.org/10.1002/mrm.27077.[7</a>] J.T. Grist, M.A. McLean, F.
+<a class="reference external" href="https://doi.org/10.1002/mrm.27077">https://doi.org/10.1002/mrm.27077</a>.</p>
+<p>[7] J.T. Grist, M.A. McLean, F.
 Riemer, R.F. Schulte, S.S. Deen, F. Zaccagna, R. Woitek, C.J. Daniels,
 J.D. Kaggie, T. Matyz, I. Patterson, R. Slough, A.B. Gill, A. Chhabra,
 R. Eichenberger, M.-C. Laurent, A. Comment, J.H. Gillard, A.J. Coles,
@@ -1296,124 +1455,159 @@ D.J. Tyler, I. Wilkinson, B. Basu, D.J. Lomas, M.J. Graves, K.M.
 Brindle, F.A. Gallagher, Quantifying normal human brain metabolism using
 hyperpolarized [1–13C]pyruvate and magnetic resonance imaging,
 Neuroimage. (2019).
-<a class="reference external" href="https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027.%5B8">https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027.[8</a>] D. Mammoli, J.
+<a class="reference external" href="https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027">https://doi.org/10.1016/J.NEUROIMAGE.2019.01.027</a>.</p>
+<p>[8] D. Mammoli, J.
 Gordon, A. Autry, P.E.Z. Larson, Y. Li, H.-Y. Chen, B. Chung, P. Shin,
 M. Van Criekinge, L. Carvajal, J.B. Slater, R. Bok, J. Crane, D. Xu, S.
 Chang, D.B. Vigneron, Kinetic Modeling of Hyperpolarized Carbon-13
 Pyruvate Metabolism in the Human Brain, IEEE Trans. Med. Imaging. (2019)
-1–1. <a class="reference external" href="https://doi.org/10.1109/TMI.2019.2926437.%5B9">https://doi.org/10.1109/TMI.2019.2926437.[9</a>] C.Y. Lee, H.
+1–1. <a class="reference external" href="https://doi.org/10.1109/TMI.2019.2926437">https://doi.org/10.1109/TMI.2019.2926437</a>.</p>
+<p>[9] C.Y. Lee, H.
 Soliman, B.J. Geraghty, A.P. Chen, K.A. Connelly, R. Endre, W.J. Perks,
 C. Heyn, S.E. Black, C.H. Cunningham, Lactate topography of the human
 brain using hyperpolarized 13C-MRI, Neuroimage. (2019) 116202.
-<a class="reference external" href="https://doi.org/10.1016/J.NEUROIMAGE.2019.116202.%5B10">https://doi.org/10.1016/J.NEUROIMAGE.2019.116202.[10</a>] B.T. Chung,
+<a class="reference external" href="https://doi.org/10.1016/J.NEUROIMAGE.2019.116202">https://doi.org/10.1016/J.NEUROIMAGE.2019.116202</a>.</p>
+<p>[10] B.T. Chung,
 H.-Y. Chen, J. Gordon, D. Mammoli, R. Sriram, A.W. Autry, L.M. Le Page,
 M. Chaumeil, P. Shin, J. Slater, C.T. Tan, C. Suszczynski, S. Chang, Y.
 Li, R.A. Bok, S.M. Ronen, P. EZ Larson, J. Kurhanewicz, D.B. Vigneron,
 First Hyperpolarized [2-13C]Pyruvate MR Studies of Human Brain
 Metabolism, J. Magn. Reson. (2019) 106617.
-<a class="reference external" href="https://doi.org/10.1016/J.JMR.2019.106617.%5B11">https://doi.org/10.1016/J.JMR.2019.106617.[11</a>] H. Stødkilde‐Jørgensen,
+<a class="reference external" href="https://doi.org/10.1016/J.JMR.2019.106617">https://doi.org/10.1016/J.JMR.2019.106617</a></p>
+<p>.[11] H. Stødkilde‐Jørgensen,
 C. Laustsen, E.S.S. Hansen, R. Schulte, J.H. Ardenkjaer‐Larsen, A.
 Comment, J. Frøkiær, S. Ringgaard, L.B. Bertelsen, M. Ladekarl, B.
 Weber, Pilot Study Experiences With Hyperpolarized [1‐ 13 C]pyruvate
 MRI in Pancreatic Cancer Patients, J. Magn. Reson. Imaging. (2019)
-jmri.26888. <a class="reference external" href="https://doi.org/10.1002/jmri.26888.%5B12">https://doi.org/10.1002/jmri.26888.[12</a>] C.P. Slichter,
+jmri.26888. <a class="reference external" href="https://doi.org/10.1002/jmri.26888">https://doi.org/10.1002/jmri.26888</a>.</p>
+<p>[12] C.P. Slichter,
 Principles of Magnetic Resonance, Springer Berlin Heidelberg, Berlin,
-Heidelberg, 1990. <a class="reference external" href="https://doi.org/10.1007/978-3-662-09441-9.%5B13">https://doi.org/10.1007/978-3-662-09441-9.[13</a>] T.G.
+Heidelberg, 1990. <a class="reference external" href="https://doi.org/10.1007/978-3-662-09441-9">https://doi.org/10.1007/978-3-662-09441-9</a>.</p>
+<p>[13] T.G.
 Walker, W. Happer, Spin-exchange optical pumping of noble-gas nuclei,
 Rev. Mod. Phys. 69 (1997) 629–642.
-<a class="reference external" href="https://doi.org/10.1103/revmodphys.69.629.%5B14">https://doi.org/10.1103/revmodphys.69.629.[14</a>] M.S. Albert, G.D.
+<a class="reference external" href="https://doi.org/10.1103/revmodphys.69.629">https://doi.org/10.1103/revmodphys.69.629</a>.</p>
+<p>[14] M.S. Albert, G.D.
 Cates, B. Driehuys, W. Happer, B. Saam, C.S. Springer, A. Wishnia,
 Biological magnetic resonance imaging using laser-polarized 129Xe,
-Nature. 370 (1994) 199–201. <a class="reference external" href="https://doi.org/10.1038/370199a0.%5B15">https://doi.org/10.1038/370199a0.[15</a>] K.
+Nature. 370 (1994) 199–201. <a class="reference external" href="https://doi.org/10.1038/370199a0">https://doi.org/10.1038/370199a0</a>.</p>
+<p>[15] K.
 Qing, J.P. Mugler, T.A. Altes, Y. Jiang, J.F. Mata, G.W. Miller, I.C.
 Ruset, F.W. Hersman, K. Ruppert, Assessment of lung function in asthma
 and COPD using hyperpolarized 129Xe chemical shift saturation recovery
 spectroscopy and dissolved-phase MRI, NMR Biomed. 27 (2014) 1490–1501.
-<a class="reference external" href="https://doi.org/10.1002/nbm.3179.%5B16">https://doi.org/10.1002/nbm.3179.[16</a>] R. Seydoux, A. Pines, M. Haake,
+<a class="reference external" href="https://doi.org/10.1002/nbm.3179">https://doi.org/10.1002/nbm.3179</a>.</p>
+<p>[16] R. Seydoux, A. Pines, M. Haake,
 J.A. Reimer, NMR with a continuously circulating flow of laser-polarized
 129Xe, J. Phys. Chem. B. 103 (1999) 4629–4637.
-<a class="reference external" href="https://doi.org/10.1021/jp9821984.%5B17">https://doi.org/10.1021/jp9821984.[17</a>] C.R. Bowers, D.P. Weitekamp,
+<a class="reference external" href="https://doi.org/10.1021/jp9821984">https://doi.org/10.1021/jp9821984</a>.</p>
+<p>[17] C.R. Bowers, D.P. Weitekamp,
 Transformation of symmetrization order to nuclear-spin magnetization by
 chemical reaction and nuclear magnetic resonance, Phys. Rev. Lett. 57
-(1986) 2645–2648. <a class="reference external" href="https://doi.org/10.1103/PhysRevLett.57.2645.%5B18">https://doi.org/10.1103/PhysRevLett.57.2645.[18</a>]
+(1986) 2645–2648. <a class="reference external" href="https://doi.org/10.1103/PhysRevLett.57.2645">https://doi.org/10.1103/PhysRevLett.57.2645</a>.</p>
+<p>[18]
 C.R. Bowers, D.P. Weitekamp, Parahydrogen and Synthesis Allow
 Dramatically Enhanced Nuclear Alignment, J. Am. Chem. Soc. 109 (1987)
-5541–5542. <a class="reference external" href="https://doi.org/10.1021/ja00252a049.%5B19">https://doi.org/10.1021/ja00252a049.[19</a>] J.B. Hövener,
+5541–5542. <a class="reference external" href="https://doi.org/10.1021/ja00252a049">https://doi.org/10.1021/ja00252a049</a>.</p>
+<p>[19] J.B. Hövener,
 A.N. Pravdivtsev, B. Kidd, C.R. Bowers, S. Glöggler, K. V. Kovtunov, M.
 Plaumann, R. Katz-Brull, K. Buckenmaier, A. Jerschow, F. Reineri, T.
 Theis, R. V. Shchepin, S. Wagner, P. Bhattacharya, N.M. Zacharias, E.Y.
 Chekmenev, Parahydrogen-Based Hyperpolarization for Biomedicine, Angew.
 Chemie - Int. Ed. 57 (2018) 11140–11162.
-<a class="reference external" href="https://doi.org/10.1002/anie.201711842.%5B20">https://doi.org/10.1002/anie.201711842.[20</a>] R.W. Adams, J.A. Aguilar,
+<a class="reference external" href="https://doi.org/10.1002/anie.201711842">https://doi.org/10.1002/anie.201711842</a>.</p>
+<p>[20] R.W. Adams, J.A. Aguilar,
 K.D. Atkinson, M.J. Cowley, P.I.P.P. Elliott, S.B. Duckett, G.G.R.R.
 Green, I.G. Khazal, J. López-Serrano, D.C. Williamson, J. Lopez-Serrano,
 D.C. Williamson, Reversible interactions with para-hydrogen enhance NMR
 sensitivity by polarization transfer, Science. 323 (2009) 1708–1711.
-<a class="reference external" href="https://doi.org/10.1126/science.1168877.%5B21">https://doi.org/10.1126/science.1168877.[21</a>] E. Cavallari, C. Carrera,
+<a class="reference external" href="https://doi.org/10.1126/science.1168877">https://doi.org/10.1126/science.1168877</a>.</p>
+<p>[21] E. Cavallari, C. Carrera,
 S. Aime, F. Reineri, Studies to enhance the hyperpolarization level in
 PHIP-SAH-produced C13-pyruvate, J. Magn. Reson. 289 (2018) 12–17.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2018.01.019.%5B22">https://doi.org/10.1016/j.jmr.2018.01.019.[22</a>] D.T. Peat, Achievement
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2018.01.019">https://doi.org/10.1016/j.jmr.2018.01.019</a>.</p>
+<p>[22] D.T. Peat, Achievement
 of high nuclear spin polarization using lanthanides as low-temperature
 NMR relaxation agents, Phys. Chem. Chem. Phys. 15 (2013) 7586–7591.
-<a class="reference external" href="https://doi.org/10.1039/c3cp00103b.%5B23">https://doi.org/10.1039/c3cp00103b.[23</a>] M.L. Hirsch, B.A. Smith, M.
+<a class="reference external" href="https://doi.org/10.1039/c3cp00103b">https://doi.org/10.1039/c3cp00103b</a>.</p>
+<p>[23] M.L. Hirsch, B.A. Smith, M.
 Mattingly, A.G. Goloshevsky, M. Rosay, J.G. Kempf, Transport and imaging
 of brute-force 13 C hyperpolarization, J. Magn. Reson. 261 (2015)
-87–94. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2015.09.017.%5B24">https://doi.org/10.1016/j.jmr.2015.09.017.[24</a>] M.L. Hirsch, N.
+87–94. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2015.09.017">https://doi.org/10.1016/j.jmr.2015.09.017</a>.</p>
+<p>[24] M.L. Hirsch, N.
 Kalechofsky, A. Belzer, M. Rosay, J.G. Kempf, Brute-Force
 Hyperpolarization for NMR and MRI, J. Am. Chem. Soc. 137 (2015)
-8428–34. <a class="reference external" href="https://doi.org/10.1021/jacs.5b01252.%5B25">https://doi.org/10.1021/jacs.5b01252.[25</a>] D.T. Peat, M.L.
+8428–34. <a class="reference external" href="https://doi.org/10.1021/jacs.5b01252">https://doi.org/10.1021/jacs.5b01252</a>.</p>
+<p>[25] D.T. Peat, M.L.
 Hirsch, D.G. Gadian, A.J. Horsewill, J.R. Owers-Bradley, J.G. Kempf,
 Low-field thermal mixing in [1- 13 C] pyruvic acid for brute-force
 hyperpolarization, Phys. Chem. Chem. Phys. 18 (2016) 19173–19182.
-<a class="reference external" href="https://doi.org/10.1039/C6CP02853E.%5B26">https://doi.org/10.1039/C6CP02853E.[26</a>] A.W. Overhauser, Polarization
+<a class="reference external" href="https://doi.org/10.1039/C6CP02853E">https://doi.org/10.1039/C6CP02853E</a>.</p>
+<p>[26] A.W. Overhauser, Polarization
 of nuclei in metals, Phys. Rev. 92 (1953) 411.
-<a class="reference external" href="https://doi.org/10.1103/PhysRev.92.411.%5B27">https://doi.org/10.1103/PhysRev.92.411.[27</a>] T.R.R. Carver, C.P.P.
+<a class="reference external" href="https://doi.org/10.1103/PhysRev.92.411">https://doi.org/10.1103/PhysRev.92.411</a>.</p>
+<p>[27] T.R.R. Carver, C.P.P.
 Slichter, Polarization of nuclear spins in metals, Phys. Rev. 92 (1953)
-212. <a class="reference external" href="https://doi.org/10.1103/PhysRev.92.212.2.%5B28">https://doi.org/10.1103/PhysRev.92.212.2.[28</a>] A. Abragam, W.G.
+212. <a class="reference external" href="https://doi.org/10.1103/PhysRev.92.212.2">https://doi.org/10.1103/PhysRev.92.212.2</a>.</p>
+<p>[28] A. Abragam, W.G.
 Proctor, Experiments on Spin Temperature, Phys. Rev. 106 (1957)
-160–161. <a class="reference external" href="https://doi.org/10.1103/PhysRev.106.160.%5B29">https://doi.org/10.1103/PhysRev.106.160.[29</a>] T. V. Can, M.A.
+160–161. <a class="reference external" href="https://doi.org/10.1103/PhysRev.106.160">https://doi.org/10.1103/PhysRev.106.160</a>.</p>
+<p>[29] T. V. Can, M.A.
 Caporini, F. Mentink-Vigier, B. Corzilius, J.J. Walish, M. Rosay, W.E.
 Maas, M. Baldus, S. Vega, T.M. Swager, R.G. Griffin, Overhauser effects
 in insulating solids, J. Chem. Phys. 141 (2014).
-<a class="reference external" href="https://doi.org/10.1063/1.4891866.%5B30">https://doi.org/10.1063/1.4891866.[30</a>] X. Ji, T. V. Can, F.
+<a class="reference external" href="https://doi.org/10.1063/1.4891866">https://doi.org/10.1063/1.4891866</a>.</p>
+<p>[30] X. Ji, T. V. Can, F.
 Mentink-Vigier, A. Bornet, J. Milani, B. Vuichoud, M.A. Caporini, R.G.
 Griffin, S. Jannin, M. Goldman, G. Bodenhausen, Overhauser effects in
 non-conducting solids at 1.2 K, J. Magn. Reson. 286 (2018) 138–142.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2017.11.017.%5B31">https://doi.org/10.1016/j.jmr.2017.11.017.[31</a>] T. Orlando, R.
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2017.11.017">https://doi.org/10.1016/j.jmr.2017.11.017</a>.</p>
+<p>[31] T. Orlando, R.
 Dervişoğlu, M. Levien, I. Tkach, T.F. Prisner, L.B. Andreas, V.P.
 Denysenkov, M. Bennati, Dynamic Nuclear Polarization of 13 C Nuclei in
 the Liquid State over a 10 Tesla Field Range, Angew. Chemie - Int. Ed.
-58 (2019) 1402–1406. <a class="reference external" href="https://doi.org/10.1002/anie.201811892.%5B32">https://doi.org/10.1002/anie.201811892.[32</a>] C.D.
+58 (2019) 1402–1406. <a class="reference external" href="https://doi.org/10.1002/anie.201811892">https://doi.org/10.1002/anie.201811892</a>.</p>
+<p>[32] C.D.
 Jeffries, Polarization of Nuclei by Resonance Saturation in Paramagnetic
 Crystals, Phys. Rev. 106 (1957) 164–165.
-<a class="reference external" href="https://doi.org/10.1103/PhysRev.106.164.%5B33">https://doi.org/10.1103/PhysRev.106.164.[33</a>] A. Abragam, M. (Maurice)
+<a class="reference external" href="https://doi.org/10.1103/PhysRev.106.164">https://doi.org/10.1103/PhysRev.106.164</a>.</p>
+<p>[33] A. Abragam, M. (Maurice)
 Goldman, Nuclear magnetism : order and disorder, Clarendon Press, 1982.
 <a class="reference external" href="http://findit.dtu.dk/en/catalog/2300286932">http://findit.dtu.dk/en/catalog/2300286932</a> (accessed January 16,
-2018).[34] Y. Hovav, A. Feintuch, S. Vega, Theoretical aspects of
+2018).</p>
+<p>[34] Y. Hovav, A. Feintuch, S. Vega, Theoretical aspects of
 dynamic nuclear polarization in the solid state – The solid effect, J.
 Magn. Reson. 207 (2010) 176–189.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2010.10.016.%5B35">https://doi.org/10.1016/j.jmr.2010.10.016.[35</a>] Y. Hovav, A. Feintuch,
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2010.10.016">https://doi.org/10.1016/j.jmr.2010.10.016</a>.</p>
+<p>[35] Y. Hovav, A. Feintuch,
 S. Vega, Theoretical aspects of dynamic nuclear polarization in the
 solid state – The cross effect, J. Magn. Reson. 214 (2012) 29–41.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2011.09.047.%5B36">https://doi.org/10.1016/j.jmr.2011.09.047.[36</a>] Y. Hovav, A. Feintuch,
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2011.09.047">https://doi.org/10.1016/j.jmr.2011.09.047</a>.</p>
+<p>[36] Y. Hovav, A. Feintuch,
 S. Vega, Theoretical aspects of dynamic nuclear polarization in the
 solid state – spin temperature and thermal mixing, Phys. Chem. Chem.
-Phys. 15 (2012) 188–203. <a class="reference external" href="https://doi.org/10.1039/C2CP42897K.%5B37">https://doi.org/10.1039/C2CP42897K.[37</a>] A.
+Phys. 15 (2012) 188–203. <a class="reference external" href="https://doi.org/10.1039/C2CP42897K">https://doi.org/10.1039/C2CP42897K</a>.</p>
+<p>[37] A.
 Karabanov, D. Wiśniewski, F. Raimondi, I. Lesanovsky, W. Köckenberger,
 Many-body kinetics of dynamic nuclear polarization by the cross effect,
 Phys. Rev. A. 97 (2018) 031404.
-<a class="reference external" href="https://doi.org/10.1103/PhysRevA.97.031404.%5B38">https://doi.org/10.1103/PhysRevA.97.031404.[38</a>] D. Wiśniewski, A.
+<a class="reference external" href="https://doi.org/10.1103/PhysRevA.97.031404">https://doi.org/10.1103/PhysRevA.97.031404</a>.</p>
+<p>[38] D. Wiśniewski, A.
 Karabanov, I. Lesanovsky, W. Köckenberger, Solid effect DNP polarization
 dynamics in a system of many spins., J. Magn. Reson. 264 (2016) 30–8.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2016.01.016.%5B39">https://doi.org/10.1016/j.jmr.2016.01.016.[39</a>] W.T. Wenckebach,
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2016.01.016">https://doi.org/10.1016/j.jmr.2016.01.016</a>.</p>
+<p>[39] W.T. Wenckebach,
 Essentials of dynamic nuclear polarization, n.d.
 <a class="reference external" href="http://www.wenckebach.net/html/dnp-book.html">http://www.wenckebach.net/html/dnp-book.html</a> (accessed February 5,
-2018).[40] W.T. Wenckebach, Spectral diffusion and dynamic nuclear
+2018).</p>
+<p>[40] W.T. Wenckebach, Spectral diffusion and dynamic nuclear
 polarization: Beyond the high temperature approximation, J. Magn. Reson.
-284 (2017) 104–114. <a class="reference external" href="https://doi.org/10.1016/J.JMR.2017.10.001.%5B41">https://doi.org/10.1016/J.JMR.2017.10.001.[41</a>]
+284 (2017) 104–114. <a class="reference external" href="https://doi.org/10.1016/J.JMR.2017.10.001">https://doi.org/10.1016/J.JMR.2017.10.001</a>.</p>
+<p>[41]
 W.T. Wenckebach, Dynamic nuclear polarization via thermal mixing: Beyond
 the high temperature approximation, J. Magn. Reson. 277 (2017) 68–78.
-<a class="reference external" href="https://doi.org/10.1016/J.JMR.2017.01.020.%5B42">https://doi.org/10.1016/J.JMR.2017.01.020.[42</a>] B. Adeva, E. Arik, S.
+<a class="reference external" href="https://doi.org/10.1016/J.JMR.2017.01.020">https://doi.org/10.1016/J.JMR.2017.01.020</a>.</p>
+<p>[42] B. Adeva, E. Arik, S.
 Ahmad, A. Arvidson, B. Badelek, M.K. Ballintijn, G. Bardin, G. Baum, P.
 Berglund, L. Betev, I.G. Bird, R. Birsa, P. Björkholm, B.E. Bonner, N.
 de Botton, M. Boutemeur, F. Bradamante, A. Bressan, A. Brüll, J.
@@ -1448,21 +1642,26 @@ Witzmann, A. Yañez, N.I. Zamiatin, A.M. Zanetti, J. Zhao, Large
 enhancement of deuteron polarization with frequency modulated
 microwaves, Nucl. Instruments Methods Phys. Res. Sect. A Accel.
 Spectrometers, Detect. Assoc. Equip. 372 (1996) 339–343.
-<a class="reference external" href="https://doi.org/10.1016/0168-9002(95)01376-8.%5B43">https://doi.org/10.1016/0168-9002(95)01376-8.[43</a>] K.R. Thurber, W.-M.
+<a class="reference external" href="https://doi.org/10.1016/0168-9002(95)01376-8">https://doi.org/10.1016/0168-9002(95)01376-8</a>.</p>
+<p>[43] K.R. Thurber, W.-M.
 Yau, R. Tycko, Low-temperature dynamic nuclear polarization at 9.4 T
 with a 30 mW microwave source., J. Magn. Reson. 204 (2010) 303–13.
-<a class="reference external" href="https://doi.org/10.1016/j.jmr.2010.03.016.%5B44">https://doi.org/10.1016/j.jmr.2010.03.016.[44</a>] H. Jóhannesson, S.
+<a class="reference external" href="https://doi.org/10.1016/j.jmr.2010.03.016">https://doi.org/10.1016/j.jmr.2010.03.016</a>.</p>
+<p>[44] H. Jóhannesson, S.
 Macholl, J.H. Ardenkjaer-Larsen, Dynamic Nuclear Polarization of
 [1-13C]pyruvic acid at 4.6 tesla., J. Magn. Reson. 197 (2009)
-167–175. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2008.12.016.%5B45">https://doi.org/10.1016/j.jmr.2008.12.016.[45</a>] T. Cheng, A.
+167–175. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2008.12.016">https://doi.org/10.1016/j.jmr.2008.12.016</a>.</p>
+<p>[45] T. Cheng, A.
 Capozzi, Y. Takado, R. Balzan, A. Comment, Over 35% liquid-state 13C
 polarization obtained via dissolution dynamic nuclear polarization at 7
 T and 1 K using ubiquitous nitroxyl radicals, Phys. Chem. Chem. Phys. 15
-(2013) 20819–20822. <a class="reference external" href="https://doi.org/10.1039/C3CP53022A.%5B46">https://doi.org/10.1039/C3CP53022A.[46</a>] H.A.I.
+(2013) 20819–20822. <a class="reference external" href="https://doi.org/10.1039/C3CP53022A">https://doi.org/10.1039/C3CP53022A</a>.</p>
+<p>[46] H.A.I.
 Yoshihara, E. Can, M. Karlsson, M.H. Lerche, J. Schwitter, A. Comment,
 High-field dissolution dynamic nuclear polarization of [1- 13
 C]pyruvic acid, Phys. Chem. Chem. Phys. 18 (2016) 12409–12413.
-<a class="reference external" href="https://doi.org/10.1039/C6CP00589F.%5B47">https://doi.org/10.1039/C6CP00589F.[47</a>] J.H. Ardenkjaer-Larsen, S.
+<a class="reference external" href="https://doi.org/10.1039/C6CP00589F">https://doi.org/10.1039/C6CP00589F</a>.</p>
+<p>[47] J.H. Ardenkjaer-Larsen, S.
 Bowen, J.R.J.R.J.R. Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch,
 N.C.N.C. Nielsen, J.H. Ardenkjær-Larsen, S. Bowen, J.R.J.R.J.R.
 Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen,
@@ -1470,49 +1669,60 @@ J.H. Ardenkjaer-Larsen, S. Bowen, J.R.J.R.J.R. Petersen, O. Rybalko,
 M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen, Cryogen-free dissolution
 dynamic nuclear polarization polarizer operating at 3.35 T, 6.70 T, and
 10.1 T, Magn. Reson. Med. 81 (2019) 2184–2194.
-<a class="reference external" href="https://doi.org/10.1002/mrm.27537.%5B48">https://doi.org/10.1002/mrm.27537.[48</a>] J.H. Ardenkjaer-Larsen, A.M.
+<a class="reference external" href="https://doi.org/10.1002/mrm.27537">https://doi.org/10.1002/mrm.27537</a>.</p>
+<p>[48] J.H. Ardenkjaer-Larsen, A.M.
 Leach, N. Clarke, J. Urbahn, D. Anderson, T.W. Skloss, Dynamic nuclear
 polarization polarizer for sterile use intent., NMR Biomed. 24 (2011)
-927–32. <a class="reference external" href="https://doi.org/10.1002/nbm.1682.%5B49">https://doi.org/10.1002/nbm.1682.[49</a>] K.-N. Hu, Polarizing
+927–32. <a class="reference external" href="https://doi.org/10.1002/nbm.1682">https://doi.org/10.1002/nbm.1682</a>.</p>
+<p>[49] K.-N. Hu, Polarizing
 agents and mechanisms for high-field dynamic nuclear polarization of
 frozen dielectric solids, Solid State Nucl. Magn. Reson. 40 (2011)
-31–41. <a class="reference external" href="https://doi.org/10.1016/j.ssnmr.2011.08.001.%5B50">https://doi.org/10.1016/j.ssnmr.2011.08.001.[50</a>] A.S. Lilly
+31–41. <a class="reference external" href="https://doi.org/10.1016/j.ssnmr.2011.08.001">https://doi.org/10.1016/j.ssnmr.2011.08.001</a>.</p>
+<p>[50] A.S. Lilly
 Thankamony, J.J. Wittmann, M. Kaushik, B. Corzilius, Dynamic nuclear
 polarization for sensitivity enhancement in modern solid-state NMR,
 Prog. Nucl. Magn. Reson. Spectrosc. 102–103 (2017) 120–195.
-<a class="reference external" href="https://doi.org/10.1016/j.pnmrs.2017.06.002.%5B51">https://doi.org/10.1016/j.pnmrs.2017.06.002.[51</a>] J.H.
+<a class="reference external" href="https://doi.org/10.1016/j.pnmrs.2017.06.002">https://doi.org/10.1016/j.pnmrs.2017.06.002</a>.</p>
+<p>[51] J.H.
 Ardenkjaer-Larsen, S. MacHoll, H. Jóhannesson, Dynamic Nuclear
 Polarization with Trityls at 1.2 K, Appl. Magn. Reson. 34 (2008)
-509–522. <a class="reference external" href="https://doi.org/10.1007/s00723-008-0134-4.%5B52">https://doi.org/10.1007/s00723-008-0134-4.[52</a>] B. Corzilius,
+509–522. <a class="reference external" href="https://doi.org/10.1007/s00723-008-0134-4">https://doi.org/10.1007/s00723-008-0134-4</a>.</p>
+<p>[52] B. Corzilius,
 A.A. Smith, A.B. Barnes, C. Luchinat, I. Bertini, R.G. Griffin,
 High-Field Dynamic Nuclear Polarization with High-Spin Transition Metal
 Ions, J. Am. Chem. Soc. 133 (2011) 5648–5651.
-<a class="reference external" href="https://doi.org/10.1021/ja1109002.%5B53">https://doi.org/10.1021/ja1109002.[53</a>] A. Capozzi, M. Karlsson, J.R.
+<a class="reference external" href="https://doi.org/10.1021/ja1109002">https://doi.org/10.1021/ja1109002</a>.</p>
+<p>[53] A. Capozzi, M. Karlsson, J.R.
 Petersen, M.H. Lerche, J.H. Ardenkjaer-Larsen, Liquid-State 13C
 Polarization of 30% through Photo-Induced Non-Persistent Radicals, J.
 Phys. Chem. C. (2018) acs.jpcc.8b01482.
-<a class="reference external" href="https://doi.org/10.1021/acs.jpcc.8b01482.%5B54">https://doi.org/10.1021/acs.jpcc.8b01482.[54</a>] A. Capozzi, S. Patel,
+<a class="reference external" href="https://doi.org/10.1021/acs.jpcc.8b01482">https://doi.org/10.1021/acs.jpcc.8b01482</a>.</p>
+<p>[54] A. Capozzi, S. Patel,
 C.P. Gunnarsson, I. Marco-Rius, A. Comment, M. Karlsson, M.H. Lerche, O.
 Ouari, J.H. Ardenkjær-Larsen, Efficient Hyperpolarization of
 U-13C-Glucose Using Narrow-Line UV-Generated Labile Free Radicals,
 Angew. Chemie - Int. Ed. (2018).
-<a class="reference external" href="https://doi.org/10.1002/anie.201810522.%5B55">https://doi.org/10.1002/anie.201810522.[55</a>] X. Ji, A. Bornet, B.
+<a class="reference external" href="https://doi.org/10.1002/anie.201810522">https://doi.org/10.1002/anie.201810522</a>.</p>
+<p>[55] X. Ji, A. Bornet, B.
 Vuichoud, J. Milani, D. Gajan, A.J. Rossini, L. Emsley, G. Bodenhausen,
 S. Jannin, Transportable hyperpolarized metabolites, Nat. Commun. 8
-(2017) 13975. <a class="reference external" href="https://doi.org/10.1038/ncomms13975.%5B56">https://doi.org/10.1038/ncomms13975.[56</a>] A. Capozzi, T.
+(2017) 13975. <a class="reference external" href="https://doi.org/10.1038/ncomms13975">https://doi.org/10.1038/ncomms13975</a>.</p>
+<p>[56] A. Capozzi, T.
 Cheng, G. Boero, C. Roussel, A. Comment, Thermal annihilation of
 photo-induced radicals following dynamic nuclear polarization to produce
 transportable frozen hyperpolarized 13C-substrates, Nat. Commun. 8
-(2017) 15757. <a class="reference external" href="https://doi.org/10.1038/ncomms15757.%5B57">https://doi.org/10.1038/ncomms15757.[57</a>] S. Bowen,
+(2017) 15757. <a class="reference external" href="https://doi.org/10.1038/ncomms15757">https://doi.org/10.1038/ncomms15757</a>.</p>
+<p>[57] S. Bowen,
 J.H.J.H. Ardenkjaer-Larsen, Formulation and utilization of choline based
 samples for dissolution dynamic nuclear polarization., J. Magn. Reson.
-236 (2013) 26–30. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2013.08.007.%5B58">https://doi.org/10.1016/j.jmr.2013.08.007.[58</a>] E.
+236 (2013) 26–30. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2013.08.007">https://doi.org/10.1016/j.jmr.2013.08.007</a>.</p>
+<p>[58] E.
 Chiavazza, E. Kubala, C. V Gringeri, S. Düwel, M. Durst, R.F. Schulte,
 M.I. Menzel, Earth’s magnetic field enabled scalar coupling relaxation
 of 13C nuclei bound to fast-relaxing quadrupolar 14N in amide groups.,
 J. Magn. Reson. 227 (2013) 35–8.
 <a class="reference external" href="https://doi.org/10.1016/j.jmr.2012.11.016">https://doi.org/10.1016/j.jmr.2012.11.016</a>.</p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1526,7 +1736,7 @@ J. Magn. Reson. 227 (2013) 35–8.
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./dDNP_physics"
         },
         predefinedOutput: true
@@ -1534,56 +1744,116 @@ J. Magn. Reson. 227 (2013) 35–8.
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../preface.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Preface</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../dDNP_hardware/dDNP_hardware.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../preface.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Preface</p>
       </div>
-    </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+    </a>
+    <a class="right-next"
+       href="../dDNP_hardware/dDNP_hardware.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polarization-magnetization-sensitivity-and-hyperpolarization">Polarization, magnetization, sensitivity, and hyperpolarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-of-hyperpolarization">Methods of hyperpolarization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-nuclear-polarization">Dynamic Nuclear Polarization</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solid-effect">Solid Effect</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-effect-and-thermal-mixing">Cross Effect and Thermal Mixing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dnp-sample-formulation-of-the-imaging-agent-and-the-electron-paramagnetic-agent">The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolution-and-relaxation">Dissolution and relaxation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

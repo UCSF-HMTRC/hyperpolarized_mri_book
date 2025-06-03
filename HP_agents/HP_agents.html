@@ -1,248 +1,490 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>HP Agents and Biochemical Interactions &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'HP_agents/HP_agents';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Analysis and Visualization of Hyperpolarized ^13^C MR Data" href="../analysis_visualization/analysis_visualization.html" />
     <link rel="prev" title="HP Experimental Methods: Cells and Animals" href="../experiments_preclinical/experiments_preclinical.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_physics/dDNP_physics.html">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acquisition_methods/acquisition_methods.html">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../analysis_visualization/analysis_visualization.html">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../cancer/cancer.html">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../neurology/neurology.html">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../acquisition_methods/acquisition_methods.html">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../analysis_visualization/analysis_visualization.html">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cancer/cancer.html">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../neurology/neurology.html">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2FHP_agents/HP_agents.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/HP_agents/HP_agents.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>HP Agents and Biochemical Interactions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HP Agents and Biochemical Interactions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1 Introduction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-differences-between-1-h-mri-and-hp-13-c-spectroscopy-and-imaging">6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-characteristics-of-an-hp-13-c-agent">6.1.2 Ideal characteristics of an HP ^13^C agent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-13-magnetic-resonance-and-labeled-metabolic-substrates">6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-biological-hp-agents">6.2 Overview of biological HP agents</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-pyruvate">6.2.1 [1-^13^C]pyruvate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-2-fumarate">6.2.2 [1,4-^13^C~2~]Fumarate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbohydrates">6.2.3 Carbohydrates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fatty-acids-and-ketone-bodies">6.2.4 Fatty acids and ketone bodies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-1-13-c-lactate-and-amino-acids">6.2.5 L-[1-^13^C]lactate and amino acids</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redox-sensors">6.2.6 Redox sensors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensors-of-ph-and-other-ions">6.2.7 Sensors of pH and other ions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urea-and-other-perfusion-tracers">6.2.8 Urea and other perfusion tracers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-of-hp-13-c-agents-for-dissolution-dnp">6.3 Formulation of HP ^13^C agents for dissolution DNP</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-formulation">6.3.1 The need for formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-characteristics-of-a-formulation">6.3.2 Essential characteristics of a formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#free-radicals">6.3.3 Free radicals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glassing">6.3.4 Glassing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doping-with-additional-paramagnetic-species">6.3.5 Doping with additional paramagnetic species</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-stability">6.3.6 Chemical stability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-development-and-optimization">6.3.7 Formulation development and optimization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.3.7.1 Glassing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radical-concentration">6.3.7.2 Radical concentration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microwave-frequency">6.3.7.3 Microwave frequency</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#biochemical-interactions-of-hp-13-c-agents">6.4 Biochemical interactions of HP ^13^C agents</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biochemical-environment-and-relaxation-dynamics">6.4.1 Biochemical environment and relaxation dynamics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-to-sites-of-metabolic-action">6.4.2 Transport to sites of metabolic action</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enzyme-kinetics">6.4.3 Enzyme kinetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-equilibrium">6.4.4 Chemical equilibrium</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labeled-substrates-in-metabolic-pathways">6.4.5 Labeled substrates in metabolic pathways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractional-enrichment-and-apparent-metabolic-rate">6.4.6 Fractional enrichment and apparent metabolic rate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-identification-and-assignment">6.4.7 Metabolite identification and assignment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-production-in-other-compartments">6.4.7.1 Metabolite production in other compartments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#literature-and-spectral-databases">6.4.7.2 Literature and spectral databases</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-metabolite-assignment-experiments">6.4.7.3 Practical metabolite-assignment experiments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contaminants">6.4.7.4 Contaminants</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-and-conclusion">6.5 Summary and conclusion</a></li>
 </ul>
 
-    </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/HP_agents/HP_agents.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2FHP_agents/HP_agents.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
+            </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="hp-agents-and-biochemical-interactions">
-<h1>HP Agents and Biochemical Interactions<a class="headerlink" href="#hp-agents-and-biochemical-interactions" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="hp-agents-and-biochemical-interactions">
+<h1>HP Agents and Biochemical Interactions<a class="headerlink" href="#hp-agents-and-biochemical-interactions" title="Link to this heading">#</a></h1>
 <p>Hikari A. I. Yoshihara, Ph.D.</p>
 <p>Laboratory for Functional and Metabolic Imaging, Institute of Physics,
 École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland</p>
@@ -259,13 +501,11 @@ considerations for formulation development and metabolite
 identification. Relevant biochemical principles to aid in the
 interpretation of the apparent metabolism of the probes are introduced
 with illustrative examples.</p>
-<p><strong>Key Words:</strong></p>
-<p><strong>Dynamic nuclear polarization</strong></p>
-<p><strong>Carbon-13</strong></p>
-<p><strong>Metabolism</strong></p>
-<p><strong>Metabolic imaging</strong></p>
-<p><strong>Magnetic resonance</strong></p>
-<p>6.1 Introduction</p>
+<p><strong>Key Words:</strong>
+Dynamic nuclear polarization, Carbon-13, Metabolism, Metabolic imaging, Magnetic resonance</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>6.1 Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p>The ability to directly and rapidly probe and image metabolism with high
 sensitivity is arguably the key feature that distinguishes
 hyperpolarized (HP) methods, and HP ^13^C-labeled agents play a critical
@@ -281,9 +521,8 @@ practical methods for their development are also presented.</p>
 in several recent review articles (1-5). Readers seeking more detailed
 information are referred to them and the primary references cited
 therein.</p>
-<p>[H2 Title]</p>
-<p>6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and
-imaging</p>
+<section id="main-differences-between-1-h-mri-and-hp-13-c-spectroscopy-and-imaging">
+<h2>6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and imaging<a class="headerlink" href="#main-differences-between-1-h-mri-and-hp-13-c-spectroscopy-and-imaging" title="Link to this heading">#</a></h2>
 <p>­Whereas conventional MRI generally detects the highly abundant water
 ^1^H signal, HP ^13^C detects only the infused agent with virtually no
 background signal. Water provides little chemical shift dispersion. and
@@ -299,8 +538,9 @@ properties. The non-renewable nature of the enhanced ^13^C signal limits
 the scan time to 1-2 minutes post-infusion, as polarization is lost due
 to <em>T</em>~1~ relaxation and RF excitation, while ^1^H MRI scan times often
 can be extended to increase sensitivity or resolution.</p>
-<p>[H2 Title]</p>
-<p>6.1.2 Ideal characteristics of an HP ^13^C agent</p>
+</section>
+<section id="ideal-characteristics-of-an-hp-13-c-agent">
+<h2>6.1.2 Ideal characteristics of an HP ^13^C agent<a class="headerlink" href="#ideal-characteristics-of-an-hp-13-c-agent" title="Link to this heading">#</a></h2>
 <p>To provide the best sensitivity, the ideal HP ^13^C agent would have the
 highest possible polarization level and slow <em>T</em>~1~ and <em>T</em>~2~
 relaxation . It would be completely biocompatible, and rapidly and
@@ -313,8 +553,9 @@ of the metabolites along with their biochemical interactions limit the
 duration and intensities of the available signals. For these reasons,
 some metabolic pathways – and sites of labeling – are more suitable
 than others for probing with HP ^1^^3^C agents.</p>
-<p>[H2 Title]</p>
-<p>6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates</p>
+</section>
+<section id="carbon-13-magnetic-resonance-and-labeled-metabolic-substrates">
+<h2>6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates<a class="headerlink" href="#carbon-13-magnetic-resonance-and-labeled-metabolic-substrates" title="Link to this heading">#</a></h2>
 <p>Carbon-13 has a natural abundance of around 1.1% and a gyromagnetic
 ratio 0.2515 times ^1^H’s, corresponding to a sensitivity 5800-fold
 lower than ^1^H. Even when hyperpolarized, enrichment of the ^13^C
@@ -346,8 +587,10 @@ detect the metabolite. Fortunately, due to the large chemical shift
 dispersion of ^13^C, in most cases the resonant frequency of the labeled
 site is sufficiently changed by metabolism and can be easily
 distinguished.</p>
-<p>[H1 Title]</p>
-<p>6.2 Overview of biological HP agents</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="overview-of-biological-hp-agents">
+<h1>6.2 Overview of biological HP agents<a class="headerlink" href="#overview-of-biological-hp-agents" title="Link to this heading">#</a></h1>
 <p>Because of the requirement for slowly-relaxing ^13^C spin labels,
 hyperpolarized methods are only applicable to a subset of the
 metabolome. In practice, its uses are limited to small-molecule
@@ -360,8 +603,8 @@ involving aspects of energy metabolism, but some other pathways have
 sufficiently-high flux and appropriate substrates. This section
 summarizes the HP ^13^C agents used in pre-clinical applications,
 grouped according to the metabolic processes they probe.</p>
-<p>[H2 Title]</p>
-<p>6.2.1 [1-^13^C]pyruvate</p>
+<section id="c-pyruvate">
+<h2>6.2.1 [1-^13^C]pyruvate<a class="headerlink" href="#c-pyruvate" title="Link to this heading">#</a></h2>
 <p>[1-^13^C]pyruvate is the archetypal HP ^13^C agent. With a host of
 applications, it has excellent performance, thanks to its high
 polarization, rapid metabolism, and low endogenous levels. While the
@@ -375,7 +618,13 @@ H^13^CO~3~^-^, particularly in organs with intense oxidative metabolism,
 like the heart and brain. (Figure 6.1). As discussed in below in section
 6.2.4, [2-^13^C]pyruvate is also used to label metabolites downstream
 of PDH.</p>
-<p>*** Insert Figure 6.1 ***</p>
+<p><img alt="Figure 6.1: Metabolism of HP 1-13C pyruvate, lactate and alanine." src="HP_agents/Figure%206.1.png" /></p>
+<p>Figure 6.1 Metabolism of HP 1-^13^C pyruvate, lactate and alanine.
+Pyruvate, lactate and alanine are reversibly interconverted in the cell
+by lactate dehydrogenase (LDH) and alanine transaminase (ALT). Oxidation
+of pyruvate by mitochondrial pyruvate dehydrogenase (PDH) yields labeled
+carbon dioxide, which carbonic anhydrase (CA) rapidly interconverts with
+bicarbonate. Open arrows denote infused HP substrates.</p>
 <p>Pyruvate carboxylation to oxaloacetate is an important anapleurotic
 pathway that supports the TCA cycle in oxidative energy metabolism. It
 is a first step for glucose synthesis in the liver and kidney, where
@@ -388,9 +637,19 @@ modulated by the nutritional state (6,7). By label scrambling (Figure
 and entry into the gluconeogenesis pathway liberates ^13^CO~2~, detected
 as bicarbonate. Pyruvate-to-bicarbonate conversion in gluconeogenic
 tissues results from both pyruvate oxidation and PEP production (8).</p>
-<p>*** Insert Figure 6.2 ***</p>
-<p>[H2 Title]</p>
-<p>6.2.2 [1,4-^13^C~2~]Fumarate</p>
+<p><img alt="Figure 6.2: Anapleurotic metabolism of 1-13C pyruvate." src="HP_agents/Figure%206.2.png" /></p>
+<p>Figure 6.2 Anapleurotic metabolism of 1-^13^C pyruvate. In the
+mitochondrion, pyruvate is converted to the tricarboxylic (TCA) cycle
+intermediate oxaloacetate by pyruvate carboxylase (PC). Labels at the 1-
+and 4-positions are interconverted via symmetric fumarate. Aspartate is
+the main metabolite observed downstream of PC and the label at the
+4-position is converted to bicarbonate by phospho<em>enol</em>pyruvate
+carboxykinase (PEPCK) in gluconeogenic organs such as the liver.
+Abbreviations: GOT – glutamic oxaloacetic transaminase; MDH – malate
+dehydrogenase; CA – carbonic anhydrase.</p>
+</section>
+<section id="c-2-fumarate">
+<h2>6.2.2 [1,4-^13^C~2~]Fumarate<a class="headerlink" href="#c-2-fumarate" title="Link to this heading">#</a></h2>
 <p>HP [1,4-^13^C~2~]fumarate is a probe of necrotic tissue. The hallmark
 increase in cell membrane permeability associated with necrosis results
 in the increased accessibility of HP fumarate to fumarate hydratase,
@@ -398,9 +657,14 @@ resulting in a marked increase in its conversion to
 [1,4-^13^C~2~]malate (Figure 6.3). This effect has been noted in
 treated tumors (9-11) as well as in the injured kidney (12,13) and
 myocardium (14).</p>
-<p>*** Insert Figure 6.3 ***</p>
-<p>[H2 Title]</p>
-<p>6.2.3 Carbohydrates</p>
+<p><img alt="Figure 6.3: Detection of necrosis with HP 13C fumarate." src="HP_agents/Figure%206.3.png" /></p>
+<p>Figure 6.3 Detection of necrosis with HP ^13^C fumarate. Cell membrane
+disruption in necrotic tissue increases the accessibility of HP
+1,4-^13^C~2~ fumarate to fumarate hydratase (FH), which efficiently
+converts fumarate to 1,4-^13^C~2~ malate.</p>
+</section>
+<section id="carbohydrates">
+<h2>6.2.3 Carbohydrates<a class="headerlink" href="#carbohydrates" title="Link to this heading">#</a></h2>
 <p>The significant metabolic roles of carbohydrates in normal metabolism
 and tumors make them important targets for HP ^13^C agents. Despite
 their metabolic importance, sugars are generally not ideal substrates,
@@ -408,8 +672,8 @@ mainly due to the relatively short <em>T</em>~1~s of their carbon atoms. The
 quaternary C2 in fructose, however, has a <em>T</em>~1~ as long as 16 s at 11.7
 T (15), and deuteration of the carbon-bonded hydrogens in ^13^C-labeled
 glucose slows their relaxation so that C2 – C5 have <em>T</em>~1~s in the same
-range</p>
-<p>(16).</p>
+range
+(16).</p>
 <p>The uptake and phosphorylation of HP [2-^13^C]fructose has been
 detected in mouse prostate tumors (15), as has the conversion of HP
 [U-^13^C~6~, ^2^H~7~]glucose to lactate, dihydroxyacetone phosphate,
@@ -428,8 +692,8 @@ PPP can be more specifically probed with HP δ‐[1‐^13^C]gluconolactone
 <p>Smaller carbohydrates are potentially better HP ^13^C agents.
 Dihydroxy[2-^13^C]acetone (DHAc) is a precursor to dihydroxyacetone
 phosphate (DHAP), an intermediate in the middle of both the glycolysis
-and gluconeogenesis pathways (Figure 6.4). In the kidney and liver</p>
-<p>(21,22) it labels both upstream and downstream metabolites, including
+and gluconeogenesis pathways (Figure 6.4). In the kidney and liver
+(21,22) it labels both upstream and downstream metabolites, including
 phosphenolpyruvate, glyceraldehyde-3-phosphate and glucose, whose
 relative intensities vary with the nutritional state. In vivo
 applications for DHAc are somewhat challenging, with the requirement of
@@ -437,9 +701,21 @@ high-bandwidth acquisition methods (23) and ^1^H decoupling (24) to
 achieve the best sensitivity and resolution. [1-^13^C]Glycerate (25)
 may similarly probe these pathways, although the primary metabolites
 reported are lactate, pyruvate and bicarbonate.</p>
-<p>*** Insert Figure 6.4 ***</p>
-<p>[H2 Title]</p>
-<p>6.2.4 Fatty acids and ketone bodies</p>
+<p><img alt="Figure 6.4: HP probes of glucose metabolism." src="HP_agents/Figure%206.4.png" /></p>
+<p>Figure 6.4 HP probes of glucose metabolism. Composite of HP ^13^C agents
+engaging the glycolysis, gluconeogenesis and pentose phosphate pathways.
+Sites of ^13^C-labeling for the probes and detected metabolites are
+indicated with the following symbols (undetected labeled
+metabolites/sites have been omitted for clarity): small dots –
+U-^13^C~6~, ^2^H~7~ glucose; open diamonds –3,4-^13^C~2~,
+2,3,4,6,6-^2^H~5~ D-glucose; bold circle – δ‐1‐^13^C gluconolactone;
+triangle – 2-^13^C fructose; square – 2-^13^C dihydroxyacetone; thin
+circle – 1-^13^C glycerate. Open arrows denote infused HP substrates.
+Double arrows indicate transformation by different
+energetically-favorable reactions in the forward and reverse directions.</p>
+</section>
+<section id="fatty-acids-and-ketone-bodies">
+<h2>6.2.4 Fatty acids and ketone bodies<a class="headerlink" href="#fatty-acids-and-ketone-bodies" title="Link to this heading">#</a></h2>
 <p>Fatty acids are important energy substrates in several major organs and
 tissues, as are ketone bodies, particularly during starvation
 conditions. They are converted into acetyl-CoA units and oxidized
@@ -461,17 +737,26 @@ the primary metabolite detected is α-keto[5-^13^C]glutarate (30).</p>
 β-oxidation to generate the [1-^13^C]acetyl-CoA intermediate, and they
 resonate at a higher chemical shift than acetate, allowing the
 [5-^13^C]glutamate signal to be resolved.</p>
-<p>*** Insert Figure 6.5 ***</p>
+<p><img alt="Figure 6.5: Mitochondrial HP probes of fatty-acid, ketone-body, and carbohydrate oxidation." src="HP_agents/Figure%206.5.png" /></p>
+<p>Figure 6.5 Mitochondrial HP probes of fatty-acid, ketone-body, and
+carbohydrate oxidation. They are metabolized by different routes to the
+common intermediate, [1-^13^C]acetyl-CoA, which exchanges with the
+acetylcarnitine pool and enters the tricarboxylic acid (TCA) cycle.
+Detected metabolites included [5-^13^C]citrate, [5-^13^C]glutamate
+and α-keto[5-^13^C]glutarate. Open arrows denote infused HP
+substrates. Abbreviations: PDH – pyruvate dehydrogenase; BDH –
+3-hydroxybutyrate dehydrogenase.</p>
 <p>The ketone bodies acetoacetate and [d]{.smallcaps}-3-hydroxybutyrate are
 also amenable as HP ^13^C agents. The myocardial metabolism of
 [1-^13^C]-, or [3-^13^C]acetoacetate is changed by nutritional (36),
 diet (34) and disease state (37), as well as treatment with an SGLT2
 inhibitor (38). The reduction of [1,3-^13^C~2~]acetoacetate to
 [d]{.smallcaps}-3-hydroxybutyrate has also been studied in U87 brain
-tumors (39) and rat kidney</p>
-<p>(40) and related to changes in the NAD^+^ / NADH redox state.</p>
-<p>[H2 Title]</p>
-<p>6.2.5 L-[1-^13^C]lactate and amino acids</p>
+tumors (39) and rat kidney
+(40) and related to changes in the NAD^+^ / NADH redox state.</p>
+</section>
+<section id="l-1-13-c-lactate-and-amino-acids">
+<h2>6.2.5 L-[1-^13^C]lactate and amino acids<a class="headerlink" href="#l-1-13-c-lactate-and-amino-acids" title="Link to this heading">#</a></h2>
 <p>With their direct conversion to pyruvate,
 [l]{.smallcaps}-[1-^13^C]alanine and
 [l]{.smallcaps}-[1-^13^C]lactate probe the same pathways (Figure 6.1);
@@ -506,7 +791,14 @@ by tumor cells that express gain-of-function mutations in isocitrate
 dehydrogenase-1. 2-HG production has been measured in animal models with
 tumors bearing this mutation, using HP α-keto[1-^13^C]glutarate (54)
 or [1-^13^C]glutamine (55) as the precursor. (Figure 6.6)</p>
-<p>*** Insert Figure 6.6 ***</p>
+<p><img alt="Figure 6.6: Metabolism of HP 13C glutamine and α-ketoglutarate." src="HP_agents/Figure%206.6.png" /></p>
+<p>Figure 6.6 Metabolism of HP ^13^C glutamine and α-ketoglutarate.
+Elevated glutaminase (GLS) activity in tumors is directly detected with
+HP 5-^13^C glutamine. HP 1-^13^C α-ketoglutarate is converted to
+glutamate and is also reduced to 2-hydroxyglutarate (2-HG) in tumor
+cells with gain-of-function mutations in isocitrate dehydrogenase-1
+(IDH1mut). HP 1-^13^C glutamine can also be converted to 2-HG. Open
+arrows denote infused HP substrates.</p>
 <p>Peptidase activity is also detectable in vivo with HP ^13^C probes. The
 cell-surface enzyme γ-glutamyltransferase (GGT) plays an important role
 in glutathione metabolism. GGT is most abundantly expressed in the renal
@@ -517,8 +809,9 @@ a biomarker of some tumors, and it is implicated in helping malignant
 cells respond to oxidative stress. Recently, elevated GGT activity was
 imaged in U87 glioblastoma tumors with HP γ-glutamyl[1-^13^C]glycine
 (57).</p>
-<p>[H2 Title]</p>
-<p>6.2.6 Redox sensors</p>
+</section>
+<section id="redox-sensors">
+<h2>6.2.6 Redox sensors<a class="headerlink" href="#redox-sensors" title="Link to this heading">#</a></h2>
 <p>The redox state, the balance between reducing and oxidizing species, is
 an important cellular parameter that influences numerous metabolic
 processes and is of particular interest in metabolic imaging of cancer.
@@ -533,16 +826,17 @@ acetoacetate to [d]{.smallcaps}-3-hydroxybutyrate by 3-hydroxybutyrate
 dehydrogenase depends on the mitochondrial NAD^+^ / NADH ratio, and
 differences in the conversion of HP [1,3-^13^C~2~]acetoacetate has
 been related to changes in the redox state in brain tumors (39) and the
-kidney</p>
-<p>(40) .</p>
+kidney
+(40) .</p>
 <p>Another redox-dependent HP probe is [1-^13^C]dehydroascorbate (DHA),
 the oxidized form of vitamin C. DHA is readily taken up into cells via
 glucose transporters and its reduction to vitamin C depends on
 glutathione or NADPH (59,60). Higher conversion of HP ^13^C DHA to
 vitamin C has been observed in tumors, and depletion of glutathione
 results in lower conversion (61,62).</p>
-<p>[H2 Title]</p>
-<p>6.2.7 Sensors of pH and other ions</p>
+</section>
+<section id="sensors-of-ph-and-other-ions">
+<h2>6.2.7 Sensors of pH and other ions<a class="headerlink" href="#sensors-of-ph-and-other-ions" title="Link to this heading">#</a></h2>
 <p>While most HP ^13^C agents are isotopologues of endogenous metabolites
 and probe specific enzyme-catalyzed metabolic processes, a variety of
 probes responsive to reactive metabolites or ions have been proposed.
@@ -564,8 +858,9 @@ prior to infusion.</p>
 been described. They are variously based on amino-acid derivatives
 (66,75), buffers (76), malonate derivatives (77), and zymonic acid
 derived from pyruvate (78), which has also been used in vivo.</p>
-<p>[H2 Title]</p>
-<p>6.2.8 Urea and other perfusion tracers</p>
+</section>
+<section id="urea-and-other-perfusion-tracers">
+<h2>6.2.8 Urea and other perfusion tracers<a class="headerlink" href="#urea-and-other-perfusion-tracers" title="Link to this heading">#</a></h2>
 <p>Some HP ^13^C agents are not appreciably metabolized, but this property
 is useful for perfusion markers. Foremost among these is urea, which is
 produced in the liver, eliminated by the kidneys, and otherwise remains
@@ -586,10 +881,12 @@ apparent with diuresis / antiduresis (87) and diabetes (88).
 Additionally, the much slower transverse relaxation of
 [^13^C,^15^N~2~]urea enables high-resolution <em>T</em>~2~-mapping, which
 distinguishes multiple different compartments in the kidney (89,90).</p>
-<p>[H1 Title]</p>
-<p>6.3 Formulation of HP ^13^C agents for dissolution DNP</p>
-<p>[H2 Title]</p>
-<p>6.3.1 The need for formulation</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="formulation-of-hp-13-c-agents-for-dissolution-dnp">
+<h1>6.3 Formulation of HP ^13^C agents for dissolution DNP<a class="headerlink" href="#formulation-of-hp-13-c-agents-for-dissolution-dnp" title="Link to this heading">#</a></h1>
+<section id="the-need-for-formulation">
+<h2>6.3.1 The need for formulation<a class="headerlink" href="#the-need-for-formulation" title="Link to this heading">#</a></h2>
 <p>Formulation plays a critical role in achieving the highest attainable
 level of DNP enhancement for ^13^C-labeled compounds and is therefore a
 key factor in the method. There is unfortunately no single ‘magic
@@ -598,8 +895,9 @@ polarization at one magnetic field strength and temperature may not be
 as well suited under other conditions. While a formulation is best
 optimized empirically, there are a number of general principles that can
 be used to guide its development.</p>
-<p>[H2 Title]</p>
-<p>6.3.2 Essential characteristics of a formulation</p>
+</section>
+<section id="essential-characteristics-of-a-formulation">
+<h2>6.3.2 Essential characteristics of a formulation<a class="headerlink" href="#essential-characteristics-of-a-formulation" title="Link to this heading">#</a></h2>
 <p>The requirements for a well performing formulation are an appropriate
 radical, a high concentration of labeled compound and formation of an
 amorphous glass upon rapid cooling. DNP requires a paramagnetic species
@@ -608,8 +906,9 @@ present at concentrations of 10 – 60 mM. Diffusion of spin polarization
 between nuclei is promoted by their proximity, and higher concentrations
 of ^13^C nuclei facilitate higher rates of polarization. (See Chapter 1
 for additional information.)</p>
-<p>[H2 Title]</p>
-<p>6.3.3 Free radicals</p>
+</section>
+<section id="free-radicals">
+<h2>6.3.3 Free radicals<a class="headerlink" href="#free-radicals" title="Link to this heading">#</a></h2>
 <p>A chemically-stable (“persistent”) free radical usually provides the
 spin order for dissolution DNP; however, other paramagnetic species,
 such as free radicals generated by irradiation can also be used. Free
@@ -626,8 +925,7 @@ species, and as described in chapter 1 the mechanisms of DNP depend on
 the irradiation of this resonance with microwaves. Substituted
 triphenylmethyl (“trityl”) radicals are most commonly used, but other
 persistent radicals, including nitroxyl radicals such as TEMPO and BDPA
-(1,3-bis(diphenylene)-2-phenylallyl) are also used in some cases. ***
-Insert Figure 6.7 ***</p>
+(1,3-bis(diphenylene)-2-phenylallyl) are also used in some cases.</p>
 <p>The main considerations in selecting one radical over another are: 1)
 its EPR line shape, 2) its solubility in aqueous or organic solution,
 and 3) its chemical stability As the DNP process is most efficient when
@@ -654,6 +952,18 @@ for both flow (93,94) and dissolution DNP (83) as have conjugates to
 mesoporous hybrid silica (95). Quenching of nitroxyl radicals with
 sodium ascorbate has been achieved both during dissolution (96) and
 after transfer (97), resulting in slower relaxation rates.</p>
+<p><img alt="Figure 6.7: Persistent radicals commonly used for hyperpolarization." src="HP_agents/Figure%206.7.png" /></p>
+<p>Figure 6.7 Persistent radicals commonly used for hyperpolarization. A:
+Chemical structures; dots denote the unpaired radical electrons. Trityls
+and BDPA are typical narrow-line radicals well suited for polarizing
+low-gamma nuclei such as ^13^C. Nitroxyls have a broader EPR resonance
+and can also polarize high-gamma nuclei like ^1^H and ^19^F. B: &amp; C:
+Schematic plots of trityl and nitroxyl EPR spectra and solid-state DNP
+enhancement as a function of microwave frequency (197 GHz) at 7T and 1K.
+Solid trace shows absorption-mode EPR signal, with the full-width
+half-maximum indicated. Dotted line shows DNP enhancement by thermal
+mixing with positive enhancement at frequencies below the center of the
+electron resonance and negative enhancement at higher frequencies.</p>
 <p>The light sensitivity of pyruvic acid and other α-keto acids can be
 exploited to provide an alternative to persistent radicals. Irradiation
 of frozen pyruvic acid with medium- or long wave ultraviolet light
@@ -666,8 +976,9 @@ enables the appealing possibility of storing or transporting HP agents
 to sites without a polarizer. Transient radicals prepared by UV
 irradiation of α-keto acids have also been used to polarize other ^13^C
 agents (33,102,103).</p>
-<p>[H2 Title]</p>
-<p>6.3.4 Glassing</p>
+</section>
+<section id="glassing">
+<h2>6.3.4 Glassing<a class="headerlink" href="#glassing" title="Link to this heading">#</a></h2>
 <p>For optimal polarization, the radical needs to be evenly distributed
 throughout the sample volume. This usually achieved by rapid cooling of
 the sample solution in liquid nitrogen or liquid helium such that it
@@ -686,8 +997,9 @@ deep eutectic mixtures can have very good glassing, polarization and
 dissolution characteristics (105). However, depending on the
 application, the choline may need to be extracted from the solution, and
 the additional delay may obviate any gain in polarization.</p>
-<p>[H2 Title]</p>
-<p>6.3.5 Doping with additional paramagnetic species</p>
+</section>
+<section id="doping-with-additional-paramagnetic-species">
+<h2>6.3.5 Doping with additional paramagnetic species<a class="headerlink" href="#doping-with-additional-paramagnetic-species" title="Link to this heading">#</a></h2>
 <p>In many cases, ionic paramagnetic dopants can facilitate additional
 gains in nuclear spin polarization. Small amounts (0.5 - 2 mM) of
 chelated gadolinium (Gd^3+^) contrast agents such as gadoteridol
@@ -704,8 +1016,9 @@ investigation, but recent work with suggests that its effect on the EPR
 line shape may be more important than the shortening of <em>T</em>~1e~ per se,
 and the optimal condition is met when the EPR line width matches the
 ^13^C nuclear Larmor frequency (109).</p>
-<p>[H2 Title]</p>
-<p>6.3.6 Chemical stability</p>
+</section>
+<section id="chemical-stability">
+<h2>6.3.6 Chemical stability<a class="headerlink" href="#chemical-stability" title="Link to this heading">#</a></h2>
 <p>The highly concentrated solutions and acidic or basic conditions used
 for some HP agent formulations can affect their chemical stability, and
 care is required to minimize their degradation. One should consider
@@ -742,14 +1055,15 @@ of conditions. To minimize their degradation over extended periods,
 formulated solutions are best stored frozen at -80 ºC until use.
 Particularly delicate preparations can be divided up into aliquots for
 single use, avoiding multiple freeze-thaw cycles.</p>
-<p>[H2 Title]</p>
-<p>6.3.7 Formulation development and optimization</p>
+</section>
+<section id="formulation-development-and-optimization">
+<h2>6.3.7 Formulation development and optimization<a class="headerlink" href="#formulation-development-and-optimization" title="Link to this heading">#</a></h2>
 <p>The rationale and general procedure to create an optimized formulation
 of a HP ^13^C agent have been well described by Karlsson et al. (114).
 Formulation development remains an empirical, experimental process, and
 the following are some general principles and practical suggestions.</p>
-<p>[H3 Title]</p>
-<p>6.3.7.1 Glassing</p>
+<section id="id1">
+<h3>6.3.7.1 Glassing<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>When using soluble radicals, it is critical to form a good glass, and
 higher ^13^C concentrations facilitate efficient spin diffusion to
 achieve higher polarization levels faster. The first step then is to
@@ -770,8 +1084,9 @@ rapid, low solid-state polarization buildup with a non-monoexponential
 profile (115). Small changes in glassing solvent concentration (~5–10%
 by volume) can often result in substantially improved polarization
 performance.</p>
-<p>[H3 Title]</p>
-<p>6.3.7.2 Radical concentration</p>
+</section>
+<section id="radical-concentration">
+<h3>6.3.7.2 Radical concentration<a class="headerlink" href="#radical-concentration" title="Link to this heading">#</a></h3>
 <p>The optimal radical concentration will provide the highest polarization
 in the shortest period of time. Small changes in radical concentration
 can substantially affect the buildup rate. The buildup dynamics depend
@@ -782,17 +1097,21 @@ not appear to have as great an adverse effect on the maximum
 polarization as at lower field. If doping with other paramagnetic
 species, such as Gd^3+^ chelates, the optimal concentrations are
 likewise determined empirically.</p>
-<p>[H3 Title]</p>
-<p>6.3.7.3 Microwave frequency</p>
+</section>
+<section id="microwave-frequency">
+<h3>6.3.7.3 Microwave frequency<a class="headerlink" href="#microwave-frequency" title="Link to this heading">#</a></h3>
 <p>The microwave frequency for maximum enhancement also needs to be
 determined for every formulation by performing a microwave sweep (see
 Chapter 2), and it may vary between preparations, particularly if there
 is a difference in the radical concentration or other paramagnetic
 dopant.</p>
-<p>[H1 Title]</p>
-<p>6.4 Biochemical interactions of HP ^13^C agents</p>
-<p>[H2 Title]</p>
-<p>6.4.1 Biochemical environment and relaxation dynamics</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="biochemical-interactions-of-hp-13-c-agents">
+<h1>6.4 Biochemical interactions of HP ^13^C agents<a class="headerlink" href="#biochemical-interactions-of-hp-13-c-agents" title="Link to this heading">#</a></h1>
+<section id="biochemical-environment-and-relaxation-dynamics">
+<h2>6.4.1 Biochemical environment and relaxation dynamics<a class="headerlink" href="#biochemical-environment-and-relaxation-dynamics" title="Link to this heading">#</a></h2>
 <p>As with conventional ^1^H MRI, the nuclear relaxation rates of ^13^C are
 influenced by the environment and can be used to detect changes in
 oxygenation and distinguish between label resident in different
@@ -821,8 +1140,9 @@ that mimic the intracellular environment. Serum albumin, the most
 abundant protein in blood plasma, has also been shown to shorten the
 ^13^C <em>T</em>~1~ of small molecules, particularly those with hydrophobic
 character (35,118-120).</p>
-<p>[H2 Title]</p>
-<p>6.4.2 Transport to sites of metabolic action</p>
+</section>
+<section id="transport-to-sites-of-metabolic-action">
+<h2>6.4.2 Transport to sites of metabolic action<a class="headerlink" href="#transport-to-sites-of-metabolic-action" title="Link to this heading">#</a></h2>
 <p>Infused hyperpolarized agents are transported through circulation to the
 organs and tissues of interest. From there they are taken up by the
 tissue and in most cases need to cross the cell membrane in order to be
@@ -830,8 +1150,9 @@ metabolized. Delivery and uptake of a hyperpolarized metabolic probe are
 critical and potentially limiting steps, with delivery in circulation
 determining the extent of the substrate signal in the tissue of
 interest, and cellular uptake the maximum possible metabolite signal.</p>
-<p>[H2 Title]</p>
-<p>6.4.3 Enzyme kinetics</p>
+</section>
+<section id="enzyme-kinetics">
+<h2>6.4.3 Enzyme kinetics<a class="headerlink" href="#enzyme-kinetics" title="Link to this heading">#</a></h2>
 <p>By catalyzing specific chemical reactions, enzymes play an essential
 role in metabolism. The activities of different enzymes are regulated by
 a variety of mechanisms, but the most basic parameters that determine
@@ -860,8 +1181,9 @@ that catalyze solute movement across barriers with limited permeability,
 and flux through a transporter depends on the number of available
 transporters, their inherent maximum transport rate, and the solute
 concentration.</p>
-<p>[H2 Title]</p>
-<p>6.4.4 Chemical equilibrium</p>
+</section>
+<section id="chemical-equilibrium">
+<h2>6.4.4 Chemical equilibrium<a class="headerlink" href="#chemical-equilibrium" title="Link to this heading">#</a></h2>
 <p>Many enzyme-catalyzed reactions are readily reversible, particularly
 when they involve only a small change in free energy, and when the
 forward and reverse reactions are rapid, a state of equilibrium is
@@ -879,8 +1201,9 @@ condition instead, where the rates of production and consumption are
 balanced. However, rapid reversible reactions in a pathway can be near
 equilibrium when the upstream and downstream reactions are comparatively
 slow.</p>
-<p>[H2 Title]</p>
-<p>6.4.5 Labeled substrates in metabolic pathways</p>
+</section>
+<section id="labeled-substrates-in-metabolic-pathways">
+<h2>6.4.5 Labeled substrates in metabolic pathways<a class="headerlink" href="#labeled-substrates-in-metabolic-pathways" title="Link to this heading">#</a></h2>
 <p>The use of HP ^13^C magnetic resonance to probe metabolism is a
 specialized application of isotope labeling in metabolic research, and
 it follows the same principles. Despite the tremendous gain in
@@ -925,8 +1248,9 @@ can determine whether the transporter or enzyme is the rate-limiting
 step (124). The conversion of [1-^13^C]pyruvate to ^13^CO~2~ and
 bicarbonate by pyruvate dehydrogenase is effectively irreversible and
 the bicarbonate signal corresponds to the enzyme activity (125).</p>
-<p>[H2 Title]</p>
-<p>6.4.6 Fractional enrichment and apparent metabolic rate</p>
+</section>
+<section id="fractional-enrichment-and-apparent-metabolic-rate">
+<h2>6.4.6 Fractional enrichment and apparent metabolic rate<a class="headerlink" href="#fractional-enrichment-and-apparent-metabolic-rate" title="Link to this heading">#</a></h2>
 <p>The degree to which a HP ^13^C agent and labeled metabolite(s) are
 incorporated in the endogenous metabolite pools also plays an important
 role in determining the apparent metabolic rates. The fractional
@@ -945,8 +1269,9 @@ as a sink to slow the consumption of the labeled metabolite and increase
 its relative signal. The methods used to extract kinetic parameters from
 HP ^13^C data are described in Chapter 7, with the dynamics of the
 substrate and metabolite signals used to determine the apparent rates.</p>
-<p>[H2 Title]</p>
-<p>6.4.7 Metabolite identification and assignment</p>
+</section>
+<section id="metabolite-identification-and-assignment">
+<h2>6.4.7 Metabolite identification and assignment<a class="headerlink" href="#metabolite-identification-and-assignment" title="Link to this heading">#</a></h2>
 <p>Assigning the spectral peaks produced from the metabolism of an HP ^13^C
 agent is an important task, particularly when studying a new agent or
 target tissue for the first time, and in some cases an unambiguous
@@ -956,8 +1281,8 @@ prior knowledge are needed for confident assignments. Even if a spectral
 signal is well assigned to a particular metabolite, in some cases it may
 not be clear which particular metabolic pathway or enzyme is responsible
 for its production.</p>
-<p>[H3 Title]</p>
-<p>6.4.7.1 Metabolite production in other compartments</p>
+<section id="metabolite-production-in-other-compartments">
+<h3>6.4.7.1 Metabolite production in other compartments<a class="headerlink" href="#metabolite-production-in-other-compartments" title="Link to this heading">#</a></h3>
 <p>One advantage of HP ^13^C metabolic methods is that the short timescale
 of the experiment minimizes the contribution of recirculating
 metabolites to the signals in the organ or tissue of interest.
@@ -969,8 +1294,9 @@ contributor to the lactate signal in the heart ventricles (128).
 Similarly, lactate produced from HP ^13^C [l]{.smallcaps}- and
 [d]{.smallcaps}-alanine in the blood are a small fraction of the lactate
 detected in the kidney (50).</p>
-<p>[H3 Title]</p>
-<p>6.4.7.2 Literature and spectral databases</p>
+</section>
+<section id="literature-and-spectral-databases">
+<h3>6.4.7.2 Literature and spectral databases<a class="headerlink" href="#literature-and-spectral-databases" title="Link to this heading">#</a></h3>
 <p>Published studies have ^13^C chemical shift assignments for many
 metabolites; however, chemical shift values from different sources often
 do not agree as there are several different referencing conventions in
@@ -981,8 +1307,9 @@ Metabolome Database (<a class="reference external" href="http://hmdb.ca">hmdb.ca
 Magnetic Resonance Data Bank (<a class="reference external" href="http://bmrb.wisc.edu">bmrb.wisc.edu</a>) are
 useful resources with extensive collections of metabolite spectra
 acquired under standardized conditions.</p>
-<p>[H3 Title]</p>
-<p>6.4.7.3 Practical metabolite-assignment experiments</p>
+</section>
+<section id="practical-metabolite-assignment-experiments">
+<h3>6.4.7.3 Practical metabolite-assignment experiments<a class="headerlink" href="#practical-metabolite-assignment-experiments" title="Link to this heading">#</a></h3>
 <p>Several different strategies have been successfully used to assign
 metabolite signals from HP ^13^C experiments. In ex vivo experiments,
 extracts have been prepared from the tissue or cells perfused with
@@ -1001,8 +1328,9 @@ information (30). Co-polarization and infusion of two different
 substrates can test whether they yield the same metabolite (35), and
 specific enzyme inhibitors can be used to test whether a metabolite is
 produced by a particular pathway (50,56).</p>
-<p>[H3 Title]</p>
-<p>6.4.7.4 Contaminants</p>
+</section>
+<section id="contaminants">
+<h3>6.4.7.4 Contaminants<a class="headerlink" href="#contaminants" title="Link to this heading">#</a></h3>
 <p>Chemical contaminants from insufficiently-purified preparations or the
 degradation of sensitive agents are also a source of spurious signals
 that may be mistaken for metabolites or interfere with the detection and
@@ -1010,9 +1338,11 @@ quantitation of real metabolite signals. They are generally identified
 by their presence in control experiments scanning the HP preparation
 alone, but differences between in vivo and in vitro conditions such as
 pH can sometimes complicate their assignment.</p>
-<p>*** Insert Figure 6.8 ***</p>
-<p>[H1 Title]</p>
-<p>6.5 Summary and conclusion</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="summary-and-conclusion">
+<h1>6.5 Summary and conclusion<a class="headerlink" href="#summary-and-conclusion" title="Link to this heading">#</a></h1>
 <p>With the physical and metabolic constraints of a lasting HP signal and
 rapid conversion to detectable products, only a subset of metabolites
 and metabolic processes are suitable targets for HP ^13^C agents.
@@ -1027,6 +1357,15 @@ pathways, and probes sensitive to pH, tissue necrosis and redox may be
 particularly applicable for functional imaging of tumors. The ideal
 characteristics for HP ^13^C metabolic probes are summarized in Figure
 6.8.</p>
+<p><img alt="Figure 6.8: Characteristics of good HP 13C agents." src="HP_agents/Figure%206.8.png" /></p>
+<p>Figure 6.8 Characteristics of good HP ^13^C agents. The ideal agent will
+polarize well and relax slowly in vivo. Uptake in the target compartment
+will be rapid and specific, with sufficient enrichment and metabolic
+conversion to detect product. A chemical shift change of &gt;2 ppm is
+usually required to reliably detect metabolites with the resolutions
+typically achieved in clinical and pre-clinical scanners. A larger
+endogenous product pool, such as lactate, dilutes the labeled product,
+slowing its turnover and prolonging its signal.</p>
 <p>With multiple clinical trials with HP ^13^C pyruvate underway, the
 method is maturing, and one hopes that they will clearly demonstrate its
 advantages. In other respects, it remains an emerging technology whose
@@ -1104,11 +1443,8 @@ Criekinge M, Macdonald JM, Vigneron DB, Kurhanewicz J. Hyperpolarized
 [2-13C]-fructose: a hemiketal DNP substrate for in vivo metabolic
 imaging. J Am Chem Soc 2009;131:17591–17596. doi: 10.1021/ja9049355.</p>
 <p>16. Allouche-Arnon H, Wade T, Waldner LF, Miller VN, Gomori JM,
-Katz-Brull R, McKenzie CA. In vivo magnetic resonance imaging of glucose</p>
-<ul class="simple">
-<li><p>initial experience. Contrast Media Mol Imaging 2013;8:72–82. doi:
-10.1002/cmmi.1497.</p></li>
-</ul>
+Katz-Brull R, McKenzie CA. In vivo magnetic resonance imaging of glucose- initial experience. Contrast Media Mol Imaging 2013;8:72–82. doi:
+10.1002/cmmi.1497.</p>
 <p>17. Rodrigues TB, Serrao EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle
 KM. Magnetic resonance imaging of tumor glycolysis using hyperpolarized
 (13)C-labeled glucose. Nat Med 2013;20:93–97. doi: 10.1038/nm.3416.</p>
@@ -1537,72 +1873,7 @@ hyperpolarized [1-13 C]pyruvate. Magn Reson Med 2018;100:10158. doi:
 JL, Clarke K, Radda GK, Tyler DJ. Real-time assessment of Krebs cycle
 metabolism using hyperpolarized 13C magnetic resonance spectroscopy.
 FASEB J. 2009;23:2529–2538. doi: 10.1096/fj.09-129171.</p>
-<p>FIGURE LEGENDS</p>
-<p>Figure 6.1 Metabolism of HP 1-^13^C pyruvate, lactate and alanine.
-Pyruvate, lactate and alanine are reversibly interconverted in the cell
-by lactate dehydrogenase (LDH) and alanine transaminase (ALT). Oxidation
-of pyruvate by mitochondrial pyruvate dehydrogenase (PDH) yields labeled
-carbon dioxide, which carbonic anhydrase (CA) rapidly interconverts with
-bicarbonate. Open arrows denote infused HP substrates.</p>
-<p>Figure 6.2 Anapleurotic metabolism of 1-^13^C pyruvate. In the
-mitochondrion, pyruvate is converted to the tricarboxylic (TCA) cycle
-intermediate oxaloacetate by pyruvate carboxylase (PC). Labels at the 1-
-and 4-positions are interconverted via symmetric fumarate. Aspartate is
-the main metabolite observed downstream of PC and the label at the
-4-position is converted to bicarbonate by phospho<em>enol</em>pyruvate
-carboxykinase (PEPCK) in gluconeogenic organs such as the liver.
-Abbreviations: GOT – glutamic oxaloacetic transaminase; MDH – malate
-dehydrogenase; CA – carbonic anhydrase.</p>
-<p>Figure 6.3 Detection of necrosis with HP ^13^C fumarate. Cell membrane
-disruption in necrotic tissue increases the accessibility of HP
-1,4-^13^C~2~ fumarate to fumarate hydratase (FH), which efficiently
-converts fumarate to 1,4-^13^C~2~ malate.</p>
-<p>Figure 6.4 HP probes of glucose metabolism. Composite of HP ^13^C agents
-engaging the glycolysis, gluconeogenesis and pentose phosphate pathways.
-Sites of ^13^C-labeling for the probes and detected metabolites are
-indicated with the following symbols (undetected labeled
-metabolites/sites have been omitted for clarity): small dots –
-U-^13^C~6~, ^2^H~7~ glucose; open diamonds –3,4-^13^C~2~,
-2,3,4,6,6-^2^H~5~ D-glucose; bold circle – δ‐1‐^13^C gluconolactone;
-triangle – 2-^13^C fructose; square – 2-^13^C dihydroxyacetone; thin
-circle – 1-^13^C glycerate. Open arrows denote infused HP substrates.
-Double arrows indicate transformation by different
-energetically-favorable reactions in the forward and reverse directions.</p>
-<p>Figure 6.5 Mitochondrial HP probes of fatty-acid, ketone-body, and
-carbohydrate oxidation. They are metabolized by different routes to the
-common intermediate, [1-^13^C]acetyl-CoA, which exchanges with the
-acetylcarnitine pool and enters the tricarboxylic acid (TCA) cycle.
-Detected metabolites included [5-^13^C]citrate, [5-^13^C]glutamate
-and α-keto[5-^13^C]glutarate. Open arrows denote infused HP
-substrates. Abbreviations: PDH – pyruvate dehydrogenase; BDH –
-3-hydroxybutyrate dehydrogenase.</p>
-<p>Figure 6.6 Metabolism of HP ^13^C glutamine and α-ketoglutarate.
-Elevated glutaminase (GLS) activity in tumors is directly detected with
-HP 5-^13^C glutamine. HP 1-^13^C α-ketoglutarate is converted to
-glutamate and is also reduced to 2-hydroxyglutarate (2-HG) in tumor
-cells with gain-of-function mutations in isocitrate dehydrogenase-1
-(IDH1mut). HP 1-^13^C glutamine can also be converted to 2-HG. Open
-arrows denote infused HP substrates.</p>
-<p>Figure 6.7 Persistent radicals commonly used for hyperpolarization. A:
-Chemical structures; dots denote the unpaired radical electrons. Trityls
-and BDPA are typical narrow-line radicals well suited for polarizing
-low-gamma nuclei such as ^13^C. Nitroxyls have a broader EPR resonance
-and can also polarize high-gamma nuclei like ^1^H and ^19^F. B: &amp; C:
-Schematic plots of trityl and nitroxyl EPR spectra and solid-state DNP
-enhancement as a function of microwave frequency (197 GHz) at 7T and 1K.
-Solid trace shows absorption-mode EPR signal, with the full-width
-half-maximum indicated. Dotted line shows DNP enhancement by thermal
-mixing with positive enhancement at frequencies below the center of the
-electron resonance and negative enhancement at higher frequencies.</p>
-<p>Figure 6.8 Characteristics of good HP ^13^C agents. The ideal agent will
-polarize well and relax slowly in vivo. Uptake in the target compartment
-will be rapid and specific, with sufficient enrichment and metabolic
-conversion to detect product. A chemical shift change of &gt;2 ppm is
-usually required to reliably detect metabolites with the resolutions
-typically achieved in clinical and pre-clinical scanners. A larger
-endogenous product pool, such as lactate, dilutes the labeled product,
-slowing its turnover and prolonging its signal.</p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1616,7 +1887,7 @@ slowing its turnover and prolonging its signal.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./HP_agents"
         },
         predefinedOutput: true
@@ -1624,56 +1895,153 @@ slowing its turnover and prolonging its signal.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../experiments_preclinical/experiments_preclinical.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">HP Experimental Methods: Cells and Animals</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../analysis_visualization/analysis_visualization.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Analysis and Visualization of Hyperpolarized ^13^C MR Data</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../experiments_preclinical/experiments_preclinical.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">HP Experimental Methods: Cells and Animals</p>
       </div>
-    </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+    </a>
+    <a class="right-next"
+       href="../analysis_visualization/analysis_visualization.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Analysis and Visualization of Hyperpolarized ^13^C MR Data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HP Agents and Biochemical Interactions</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">6.1 Introduction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-differences-between-1-h-mri-and-hp-13-c-spectroscopy-and-imaging">6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-characteristics-of-an-hp-13-c-agent">6.1.2 Ideal characteristics of an HP ^13^C agent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-13-magnetic-resonance-and-labeled-metabolic-substrates">6.1.3 Carbon-13 magnetic resonance and labeled metabolic substrates</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-biological-hp-agents">6.2 Overview of biological HP agents</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-pyruvate">6.2.1 [1-^13^C]pyruvate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-2-fumarate">6.2.2 [1,4-^13^C~2~]Fumarate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbohydrates">6.2.3 Carbohydrates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fatty-acids-and-ketone-bodies">6.2.4 Fatty acids and ketone bodies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l-1-13-c-lactate-and-amino-acids">6.2.5 L-[1-^13^C]lactate and amino acids</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#redox-sensors">6.2.6 Redox sensors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensors-of-ph-and-other-ions">6.2.7 Sensors of pH and other ions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urea-and-other-perfusion-tracers">6.2.8 Urea and other perfusion tracers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-of-hp-13-c-agents-for-dissolution-dnp">6.3 Formulation of HP ^13^C agents for dissolution DNP</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-need-for-formulation">6.3.1 The need for formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#essential-characteristics-of-a-formulation">6.3.2 Essential characteristics of a formulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#free-radicals">6.3.3 Free radicals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glassing">6.3.4 Glassing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#doping-with-additional-paramagnetic-species">6.3.5 Doping with additional paramagnetic species</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-stability">6.3.6 Chemical stability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formulation-development-and-optimization">6.3.7 Formulation development and optimization</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.3.7.1 Glassing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#radical-concentration">6.3.7.2 Radical concentration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#microwave-frequency">6.3.7.3 Microwave frequency</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#biochemical-interactions-of-hp-13-c-agents">6.4 Biochemical interactions of HP ^13^C agents</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biochemical-environment-and-relaxation-dynamics">6.4.1 Biochemical environment and relaxation dynamics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-to-sites-of-metabolic-action">6.4.2 Transport to sites of metabolic action</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enzyme-kinetics">6.4.3 Enzyme kinetics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-equilibrium">6.4.4 Chemical equilibrium</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#labeled-substrates-in-metabolic-pathways">6.4.5 Labeled substrates in metabolic pathways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractional-enrichment-and-apparent-metabolic-rate">6.4.6 Fractional enrichment and apparent metabolic rate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-identification-and-assignment">6.4.7 Metabolite identification and assignment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-production-in-other-compartments">6.4.7.1 Metabolite production in other compartments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#literature-and-spectral-databases">6.4.7.2 Literature and spectral databases</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practical-metabolite-assignment-experiments">6.4.7.3 Practical metabolite-assignment experiments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contaminants">6.4.7.4 Contaminants</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-and-conclusion">6.5 Summary and conclusion</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

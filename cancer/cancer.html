@@ -1,265 +1,443 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Integration into Cancer Studies &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cancer/cancer';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hyperpolarized MR in Cardiology {#chap:DJT}" href="../cardiac/cardiac.html" />
+    <link rel="next" title="Hyperpolarized MR in Cardiology" href="../cardiac/cardiac.html" />
     <link rel="prev" title="Analysis and Visualization of Hyperpolarized ^13^C MR Data" href="../analysis_visualization/analysis_visualization.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_physics/dDNP_physics.html">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acquisition_methods/acquisition_methods.html">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HP_agents/HP_agents.html">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../analysis_visualization/analysis_visualization.html">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../neurology/neurology.html">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../acquisition_methods/acquisition_methods.html">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../HP_agents/HP_agents.html">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../analysis_visualization/analysis_visualization.html">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../neurology/neurology.html">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/cancer/cancer.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fcancer/cancer.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
     </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fcancer/cancer.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/cancer/cancer.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Integration into Cancer Studies</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div>
+                <h2> Contents </h2>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#width-6-5in-height-4-10625in">
-   {width=”6.5in” height=”4.10625in”}
-  </a>
- </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 </ul>
-
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="integration-into-cancer-studies">
-<h1>Integration into Cancer Studies<a class="headerlink" href="#integration-into-cancer-studies" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="integration-into-cancer-studies">
+<h1>Integration into Cancer Studies<a class="headerlink" href="#integration-into-cancer-studies" title="Link to this heading">#</a></h1>
 <p>Pavithra Viswanath*</p>
 <p>Department of Radiology and Biomedical Imaging, University of California
 San Francisco, San Francisco, CA 94143</p>
-<p>*Corresponding author: <a class="reference external" href="mailto:Pavithra&#46;Viswanath&#37;&#52;&#48;ucsf&#46;edu">Pavithra<span>&#46;</span>Viswanath<span>&#64;</span>ucsf<span>&#46;</span>edu</a></p>
-<p>*<br />
-*<strong>Abstract</strong></p>
+<p>*Corresponding author: Pavithra.Viswanath&#64;ucsf.edu</p>
+<p><strong>Abstract</strong></p>
 <p>Metabolic reprogramming has emerged as a fundamental hallmark of cancer.
 Alterations in oncogenic signaling pathways that drive tumor initiation
 and maintenance also rewire tumor bioenergetics and redox. This
@@ -277,6 +455,10 @@ to the clinic are also discussed.</p>
 <p>Cancer metabolism, metabolic reprogramming, precision imaging, magnetic
 resonance spectroscopy, hyperpolarized ^13^C imaging, oncogenic
 signaling pathways</p>
+<p><strong>Table 1. Summary of key insights gained from preclinical and clinical
+studies with the various HP ^13^C MRS/I agents described in this
+chapter.</strong></p>
+<p><img alt="Summary Table" src="../_images/Table1.png" /></p>
 <p><strong>8.1 Metabolic reprogramming is a central hallmark of cancer</strong></p>
 <p>Cancer is caused by genetic and epigenetic alterations in oncogenes and
 tumor suppressors that allow tumor cells to sustain uncontrolled
@@ -314,8 +496,8 @@ signaling to nutrient availability and ribosome biogenesis, thereby
 modulating glucose and amino acid utilization as well as protein
 translation (2-7).</p>
 <hr class="docutils" />
-<div class="section" id="width-6-5in-height-4-10625in">
-<h2><img alt="" src="cancer/media/image1.emf" />{width=”6.5in” height=”4.10625in”}<a class="headerlink" href="#width-6-5in-height-4-10625in" title="Permalink to this headline">¶</a></h2>
+<section id="id1">
+<h2><img alt="Oncogenic Reprogramming" src="../_images/Figure1.png" /><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p><strong>Figure 8.1.</strong> <strong>Oncogenic reprogramming of metabolism can be observed
 non-invasively with HP ^13^C MRS/I.</strong> Metabolism of glucose and
 glutamine, which are the principal cellular nutrients, can be regulated
@@ -494,8 +676,8 @@ developed, similar aspects of transport, enzyme activity, co-factor
 dependence and steady-state metabolite concentrations need to be
 investigated. (See Chapter 6.4 for additional discussion of these
 various factors.)</p>
-<p><strong>[8.3.1.1. Monitoring tumor burden, aggressiveness and disease
-progression:]{.ul}</strong> Across tumor types, elevated [1-^13^C]pyruvate to
+<p><strong>8.3.1.1. Monitoring tumor burden, aggressiveness and disease
+progression:</strong> Across tumor types, elevated [1-^13^C]pyruvate to
 lactate conversion has been shown to be capable of differentiating tumor
 from normal tissue and assessing tumor aggressiveness in preclinical
 cancer models (see summary in Table 1) (29,33).</p>
@@ -609,11 +791,9 @@ burden (58,60). Interestingly, a recent study suggested that lactate
 production from HP [1-^13^C]pyruvate varied among patient-derived
 IDHmut low-grade glioma models in a manner dependent on tumor
 aggressiveness (61).</p>
-<p><strong>[8.3.1.2 Monitoring tumor response to therapy and development of
-treatment resistance:]{.ul}</strong> HP [1-^13^C]pyruvate has been shown to
-provide a readout of response to therapy in several cancer types (Table</p>
-<ol class="simple">
-<li><p>(29,33,34). Treatment response is generally linked to reduced HP
+<p><strong>8.3.1.2 Monitoring tumor response to therapy and development of
+treatment resistance:</strong> HP [1-^13^C]pyruvate has been shown to
+provide a readout of response to therapy in several cancer types (Table 1) (29,33,34). Treatment response is generally linked to reduced HP
 [1-^13^C]pyruvate to lactate conversion and mediated by molecular
 alterations in transporters, LDH activity or cofactor concentrations
 described earlier. In high-grade primary glioblastomas, HP
@@ -638,8 +818,7 @@ In another study, treatment of rats bearing orthotopic C6 glioma
 xenografts with radiotherapy led to a significant reduction in lactate
 production from HP [1-^13^C]pyruvate within 96 h, even as an increase
 in tumor volume was observed, indicating that HP [1-^13^C]pyruvate has
-the ability to inform on response to radiotherapy (62).</p></li>
-</ol>
+the ability to inform on response to radiotherapy (62).</p>
 <p>HP [1-^13^C]pyruvate also provides a readout of response to molecular
 targeted therapies. As described earlier (see section 8.1), activating
 mutations in the PI3K-Akt-mTOR pathway are observed in most cancers,
@@ -979,417 +1158,116 @@ response monitoring.</p>
 <p><strong>Acknowledgements</strong></p>
 <p>This work was supported by the following funding sources: NIH
 R01CA239288 and Department of Defense W81XWH201055315.</p>
-<p><strong>Table 1. Summary of key insights gained from preclinical and clinical
-studies with the various HP ^13^C MRS/I agents described in this
-chapter.</strong></p>
-<p><img alt="" src="cancer/media/image2.tiff" />{width=”5.781944444444444in” height=”9.0in”}
-<img alt="" src="cancer/media/image3.emf" />{width=”0.0in” height=”0.0in”}</p>
 <p><strong>References</strong></p>
-<p>1. Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation.
-Cell 2011;144(5):646-674.2. DeBerardinis RJ, Lum JJ, Hatzivassiliou G,
-Thompson CB. The biology of cancer: metabolic reprogramming fuels cell
-growth and proliferation. Cell metabolism 2008;7(1):11-20.3. Pavlova NN,
-Thompson CB. The Emerging Hallmarks of Cancer Metabolism. Cell
-metabolism 2016;23(1):27-47.4. Hirschey MD, DeBerardinis RJ, Diehl AM,
-Drew JE, Frezza C, Green MF, Jones LW, Ko YH, Le A, Lea MA, Locasale JW,
-Longo VD, Lyssiotis CA, McDonnell E, Mehrmohamadi M, Michelotti G,
-Muralidhar V, Murphy MP, Pedersen PL, Poore B, Raffaghello L, Rathmell
-JC, Sivanand S, Heiden MG, Wellen KE. Dysregulated metabolism
-contributes to oncogenesis. Seminars in cancer biology 2015.5. Hensley
-CT, Wasti AT, DeBerardinis RJ. Glutamine and cancer: cell biology,
-physiology, and clinical opportunities. The Journal of clinical
-investigation 2013;123(9):3678-3684.6. Mullen AR, DeBerardinis RJ.
-Genetically-defined metabolic reprogramming in cancer. Trends in
-endocrinology and metabolism: TEM 2012;23(11):552-559.7. DeBerardinis
-RJ, Chandel NS. Fundamentals of cancer metabolism. Sci Adv
-2016;2(5):e1600200.8. Dang L, White DW, Gross S, Bennett BD, Bittinger
-MA, Driggers EM, Fantin VR, Jang HG, Jin S, Keenan MC, Marks KM, Prins
-RM, Ward PS, Yen KE, Liau LM, Rabinowitz JD, Cantley LC, Thompson CB,
-Vander Heiden MG, Su SM. Cancer-associated IDH1 mutations produce
-2-hydroxyglutarate. Nature 2009;462(7274):739-744.9. Turcan S, Rohle D,
-Goenka A, Walsh LA, Fang F, Yilmaz E, Campos C, Fabius AW, Lu C, Ward
-PS, Thompson CB, Kaufman A, Guryanova O, Levine R, Heguy A, Viale A,
-Morris LG, Huse JT, Mellinghoff IK, Chan TA. IDH1 mutation is sufficient
-to establish the glioma hypermethylator phenotype. Nature
-2012;483(7390):479-483.10. Viswanath P, Chaumeil MM, Ronen SM. Molecular
-Imaging of Metabolic Reprograming in Mutant IDH Cells. Frontiers in
-oncology 2016;6:60.11. Lu C, Ward PS, Kapoor GS, Rohle D, Turcan S,
-Abdel-Wahab O, Edwards CR, Khanin R, Figueroa ME, Melnick A, Wellen KE,
-O’Rourke DM, Berger SL, Chan TA, Levine RL, Mellinghoff IK, Thompson
-CB. IDH mutation impairs histone demethylation and results in a block to
-cell differentiation. Nature 2012;483(7390):474-478.12. O’Connor JP,
-Aboagye EO, Adams JE, Aerts HJ, Barrington SF, Beer AJ, Boellaard R,
-Bohndiek SE, Brady M, Brown G, Buckley DL, Chenevert TL, Clarke LP,
-Collette S, Cook GJ, deSouza NM, Dickson JC, Dive C, Evelhoch JL,
-Faivre-Finn C, Gallagher FA, Gilbert FJ, Gillies RJ, Goh V, Griffiths
-JR, Groves AM, Halligan S, Harris AL, Hawkes DJ, Hoekstra OS, Huang EP,
-Hutton BF, Jackson EF, Jayson GC, Jones A, Koh DM, Lacombe D, Lambin P,
-Lassau N, Leach MO, Lee TY, Leen EL, Lewis JS, Liu Y, Lythgoe MF,
-Manoharan P, Maxwell RJ, Miles KA, Morgan B, Morris S, Ng T, Padhani AR,
-Parker GJ, Partridge M, Pathak AP, Peet AC, Punwani S, Reynolds AR,
-Robinson SP, Shankar LK, Sharma RA, Soloviev D, Stroobants S, Sullivan
-DC, Taylor SA, Tofts PS, Tozer GM, van Herk M, Walker-Samuel S, Wason J,
-Williams KJ, Workman P, Yankeelov TE, Brindle KM, McShane LM, Jackson A,
-Waterton JC. Imaging biomarker roadmap for cancer studies. Nat Rev Clin
-Oncol 2017;14(3):169-186.13. Ellingson BM, Bendszus M, Boxerman J,
-Barboriak D, Erickson BJ, Smits M, Nelson SJ, Gerstner E, Alexander B,
-Goldmacher G, Wick W, Vogelbaum M, Weller M, Galanis E, Kalpathy-Cramer
-J, Shankar L, Jacobs P, Pope WB, Yang D, Chung C, Knopp MV, Cha S, van
-den Bent MJ, Chang S, Yung WK, Cloughesy TF, Wen PY, Gilbert MR.
-Consensus recommendations for a standardized Brain Tumor Imaging
-Protocol in clinical trials. Neuro-oncology 2015;17(9):1188-1198.14.
-Weissleder R, Pittet MJ. Imaging in the era of molecular oncology.
-Nature 2008;452:580.15. Schwartz LH, Litière S, de Vries E, Ford R,
-Gwyther S, Mandrekar S, Shankar L, Bogaerts J, Chen A, Dancey J, Hayes
-W, Hodi FS, Hoekstra OS, Huang EP, Lin N, Liu Y, Therasse P, Wolchok JD,
-Seymour L. RECIST 1.1-Update and clarification: From the RECIST
-committee. European journal of cancer (Oxford, England : 1990)
-2016;62:132-137.16. Brindle K. New approaches for imaging tumour
-responses to treatment. Nature reviews Cancer 2008;8(2):94-107.17. Shin
-SH, Bode AM, Dong Z. Precision medicine: the foundation of future cancer
-therapeutics. npj Precision Oncology 2017;1(1):12.18. Deng X, Nakamura
-Y. Cancer Precision Medicine: From Cancer Screening to Drug Selection
-and Personalized Immunotherapy. Trends Pharmacol Sci
-2017;38(1):15-24.19. Oellerich M, Schütz E, Beck J, Walson PD.
-Circulating Cell-Free DNA-Diagnostic and Prognostic Applications in
-Personalized Cancer Therapy. Ther Drug Monit 2019;41(2):115-120.20.
-Miller AM, Shah RH, Pentsova EI, Pourmaleki M, Briggs S, Distefano N,
-Zheng Y, Skakodub A, Mehta SA, Campos C, Hsieh WY, Selcuklu SD, Ling L,
-Meng F, Jing X, Samoila A, Bale TA, Tsui DWY, Grommes C, Viale A,
-Souweidane MM, Tabar V, Brennan CW, Reiner AS, Rosenblum M, Panageas KS,
-DeAngelis LM, Young RJ, Berger MF, Mellinghoff IK. Tracking tumour
-evolution in glioma through liquid biopsies of cerebrospinal fluid.
-Nature 2019;565(7741):654-658.21. Vander Heiden MG, Cantley LC, Thompson
-CB. Understanding the Warburg effect: the metabolic requirements of cell
-proliferation. Science 2009;324(5930):1029-1033.22. Zhu A, Lee D, Shim
-H. Metabolic PET Imaging in Cancer Detection and Therapy Response. Semin
-Oncol 2011;38(1):55-69.23. Fletcher JW, Djulbegovic B, Soares HP, Siegel
-BA, Lowe VJ, Lyman GH, Coleman RE, Wahl R, Paschold JC, Avril N, Einhorn
-LH, Suh WW, Samson D, Delbeke D, Gorman M, Shields AF. Recommendations
-on the use of 18F-FDG PET in oncology. Journal of nuclear medicine :
-official publication, Society of Nuclear Medicine 2008;49(3):480-508.24.
-Gillies RJ, Morse DL. In vivo magnetic resonance spectroscopy in cancer.
-Annual review of biomedical engineering 2005;7:287-326.25. Glunde K,
-Bhujwalla ZM. Metabolic Tumor Imaging Using Magnetic Resonance
-Spectroscopy. Seminars in Oncology 2011;38(1):26-41.26. Rodrigues TB,
-Cerdán S. 13C MRS: An outstanding tool for metabolic studies. Concepts
-in Magnetic Resonance Part A 2005;27A(1):1-16.27. Rothman DL, De Feyter
-HM, de Graaf RA, Mason GF, Behar KL. (13)C MRS studies of
-neuroenergetics and neurotransmitter cycling in humans. NMR in
-biomedicine 2011;24(8):943-957.28. Lumata L, Yang C, Ragavan M,
-Carpenter N, DeBerardinis RJ, Merritt ME. Hyperpolarized (13)C Magnetic
-Resonance and Its Use in Metabolic Assessment of Cultured Cells and
-Perfused Organs. Methods Enzymol 2015;561:73-106.29. Viswanath P, Li Y,
-Ronen SM. C-13 Hyperpolarized MR Spectroscopy for Metabolic Imaging of
-Brain Tumors. In: Pope WB, editor. Glioma Imaging: Physiologic,
-Metabolic, and Molecular Approaches. Cham: Springer International
-Publishing; 2020. p 191-209.30. Lunt SY, Vander Heiden MG. Aerobic
-glycolysis: meeting the metabolic requirements of cell proliferation.
-Annual review of cell and developmental biology 2011;27:441-464.31. de
-la Cruz-López KG, Castro-Muñoz LJ, Reyes-Hernández DO, García-Carrancá
-A, Manzo-Merino J. Lactate in the Regulation of Tumor Microenvironment
-and Therapeutic Approaches. Frontiers in oncology 2019;9:1143.32.
-Semenza GL. HIF-1 mediates metabolic responses to intratumoral hypoxia
-and oncogenic mutations. The Journal of clinical investigation
-2013;123(9):3664-3671.33. Kurhanewicz J, Vigneron DB, Ardenkjaer-Larsen
-JH, Bankson JA, Brindle K, Cunningham CH, Gallagher FA, Keshari KR,
-Kjaer A, Laustsen C, Mankoff DA, Merritt ME, Nelson SJ, Pauly JM, Lee P,
-Ronen S, Tyler DJ, Rajan SS, Spielman DM, Wald L, Zhang X, Malloy CR,
-Rizi R. Hyperpolarized (13)C MRI: Path to Clinical Translation in
-Oncology. Neoplasia (New York, NY) 2019;21(1):1-16.34. Wang ZJ, Ohliger
-MA, Larson PEZ, Gordon JW, Bok RA, Slater J, Villanueva-Meyer JE, Hess
-CP, Kurhanewicz J, Vigneron DB. Hyperpolarized (13)C MRI: State of the
-Art and Future Directions. Radiology 2019;291(2):273-284.35. Halestrap
-AP. The monocarboxylate transporter family–Structure and functional
-characterization. IUBMB life 2012;64(1):1-9.36. Smith B, Schafer XL,
-Ambeskovic A, Spencer CM, Land H, Munger J. Addiction to Coupling of the
-Warburg Effect with Glutamine Catabolism in Cancer Cells. Cell reports
-2016;17(3):821-836.37. Harris T, Eliyahu G, Frydman L, Degani H.
-Kinetics of hyperpolarized 13C1-pyruvate transport and metabolism in
-living human breast cancer cells. Proceedings of the National Academy of
-Sciences of the United States of America 2009;106(43):18131-18136.38.
-Serrao EM, Kettunen MI, Rodrigues TB, Dzien P, Wright AJ, Gopinathan A,
-Gallagher FA, Lewis DY, Frese KK, Almeida J, Howat WJ, Tuveson DA,
-Brindle KM. MRI with hyperpolarised [1-13C]pyruvate detects advanced
-pancreatic preneoplasia prior to invasive disease in a mouse model. Gut
-2016;65(3):465-475.39. Witney TH, Kettunen MI, Brindle KM. Kinetic
-modeling of hyperpolarized 13C label exchange between pyruvate and
-lactate in tumor cells. The Journal of biological chemistry
-2011;286(28):24572-24580.40. Day SE, Kettunen MI, Gallagher FA, Hu DE,
-Lerche M, Wolber J, Golman K, Ardenkjaer-Larsen JH, Brindle KM.
-Detecting tumor response to treatment using hyperpolarized 13C magnetic
-resonance imaging and spectroscopy. Nat Med 2007;13(11):1382-1387.41.
-Welch HG, Black WC. Overdiagnosis in Cancer. JNCI: Journal of the
-National Cancer Institute 2010;102(9):605-613.42. Cooperberg MR.
-Long-term active surveillance for prostate cancer: answers and
-questions. J Clin Oncol 2015;33(3):238-240.43. Albers MJ, Bok R, Chen
-AP, Cunningham CH, Zierhut ML, Zhang VY, Kohler SJ, Tropp J, Hurd RE,
-Yen YF, Nelson SJ, Vigneron DB, Kurhanewicz J. Hyperpolarized 13C
-lactate, pyruvate, and alanine: noninvasive biomarkers for prostate
-cancer detection and grading. Cancer research 2008;68(20):8607-8615.44.
-Keshari KR, Sriram R, Van Criekinge M, Wilson DM, Wang ZJ, Vigneron DB,
-Peehl DM, Kurhanewicz J. Metabolic reprogramming and validation of
-hyperpolarized 13C lactate as a prostate cancer biomarker using a human
-prostate tissue slice culture bioreactor. The Prostate
-2013;73(11):1171-1181.45. Sriram R, Gordon J, Baligand C, Ahamed F,
-Delos Santos J, Qin H, Bok RA, Vigneron DB, Kurhanewicz J, Larson PEZ,
-Wang ZJ. Non-Invasive Assessment of Lactate Production and
-Compartmentalization in Renal Cell Carcinomas Using Hyperpolarized (13)C
-Pyruvate MRI. Cancers (Basel) 2018;10(9).46. Sriram R, Van Criekinge M,
-Hansen A, Wang ZJ, Vigneron DB, Wilson DM, Keshari KR, Kurhanewicz J.
-Real-time measurement of hyperpolarized lactate production and efflux as
-a biomarker of tumor aggressiveness in an MR compatible 3D cell culture
-bioreactor. NMR in biomedicine 2015;28(9):1141-1149.47. Sriram R, Van
-Criekinge M, DeLos Santos J, Keshari KR, Wilson DM, Peehl D, Kurhanewicz
-J, Wang ZJ. Non-invasive differentiation of benign renal tumors from
-clear cell renal cell carcinomas using clinically translatable
-hyperpolarized (13)C pyruvate magnetic resonance. Tomography
-2016;2(1):35-42.48. Hollingsworth JM, Miller DC, Daignault S, Hollenbeck
-BK. Rising incidence of small renal masses: a need to reassess treatment
-effect. Journal of the National Cancer Institute
-2006;98(18):1331-1334.49. Rawla P, Sunkara T, Gaduputi V. Epidemiology
-of Pancreatic Cancer: Global Trends, Etiology and Risk Factors. World J
-Oncol 2019;10(1):10-27.50. Canto MI, Harinck F, Hruban RH, Offerhaus GJ,
-Poley JW, Kamel I, Nio Y, Schulick RS, Bassi C, Kluijt I, Levy MJ, Chak
-A, Fockens P, Goggins M, Bruno M. International Cancer of the Pancreas
-Screening (CAPS) Consortium summit on the management of patients with
-increased risk for familial pancreatic cancer. Gut
-2013;62(3):339-347.51. Hu S, Balakrishnan A, Bok RA, Anderton B, Larson
-PE, Nelson SJ, Kurhanewicz J, Vigneron DB, Goga A. 13C-pyruvate imaging
-reveals alterations in glycolysis that precede c-Myc-induced tumor
-formation and regression. Cell metabolism 2011;14(1):131-142.52. Taouli
-B, Losada M, Holland A, Krinsky G. Magnetic resonance imaging of
-hepatocellular carcinoma. Gastroenterology 2004;127(5 Suppl
-1):S144-152.53. Shin PJ, Zhu Z, Camarda R, Bok RA, Zhou AY, Kurhanewicz
-J, Goga A, Vigneron DB. Cancer recurrence monitoring using
-hyperpolarized [1-(13)C]pyruvate metabolic imaging in murine breast
-cancer model. Magnetic resonance imaging 2017;43:105-109.54. Park I, Hu
-S, Bok R, Ozawa T, Ito M, Mukherjee J, Phillips JJ, James CD, Pieper RO,
-Ronen SM, Vigneron DB, Nelson SJ. Evaluation of heterogeneous metabolic
-profile in an orthotopic human glioblastoma xenograft model using
-compressed sensing hyperpolarized 3D 13C magnetic resonance
-spectroscopic imaging. Magn Reson Med 2013;70(1):33-39.55. Park I,
-Larson PE, Zierhut ML, Hu S, Bok R, Ozawa T, Kurhanewicz J, Vigneron DB,
-Vandenberg SR, James CD, Nelson SJ. Hyperpolarized 13C magnetic
-resonance metabolic imaging: application to brain tumors. Neuro-oncology
-2010;12(2):133-144.56. Mair R, Wright AJ, Ros S, Hu DE, Booth T, Kreis
-F, Rao J, Watts C, Brindle KM. Metabolic Imaging Detects Low Levels of
-Glycolytic Activity That Vary with Levels of c-Myc Expression in
-Patient-Derived Xenograft Models of Glioblastoma. Cancer research
-2018;78(18):5408-5418.57. Park JM, Recht LD, Josan S, Merchant M, Jang
-T, Yen YF, Hurd RE, Spielman DM, Mayer D. Metabolic response of glioma
-to dichloroacetate measured in vivo by hyperpolarized (13)C magnetic
-resonance spectroscopic imaging. Neuro-oncology 2013;15(4):433-441.58.
-Viswanath P, Najac C, Izquierdo-Garcia JL, Pankov A, Hong C, Eriksson P,
-Costello JF, Pieper RO, Ronen SM. Mutant IDH1 expression is associated
-with down-regulation of monocarboxylate transporters. Oncotarget
-2016;7(23):34942-34955.59. Chesnelong C, Chaumeil MM, Blough MD,
-Al-Najjar M, Stechishin OD, Chan JA, Pieper RO, Ronen SM, Weiss S,
-Luchman HA, Cairncross JG. Lactate dehydrogenase A silencing in IDH
-mutant gliomas. Neuro-oncology 2014;16(5):686-695.60. Chaumeil MM,
-Radoul M, Najac C, Eriksson P, Viswanath P, Blough MD, Chesnelong C,
-Luchman HA, Cairncross JG, Ronen SM. Hyperpolarized (13)C MR imaging
-detects no lactate production in mutant IDH1 gliomas: Implications for
-diagnosis and response monitoring. NeuroImage Clinical
-2016;12:180-189.61. Victor RR, Malta TM, Seki T, Lita A, Dowdy T, Celiku
-O, Cavazos-Saldana A, Li A, Liu Y, Han S, Zhang W, Song H, Davis D, Lee
-S, Trepel JB, Sabedot TS, Munasinghe J, Yang C, Herold-Mende C, Gilbert
-MR, Krishna Cherukuri M, Noushmehr H, Larion M. Metabolic Reprogramming
-Associated with Aggressiveness Occurs in the G-CIMP-High Molecular
-Subtypes of IDH1mut Lower Grade Gliomas. Neuro-oncology 2019.62. Day SE,
-Kettunen MI, Cherukuri MK, Mitchell JB, Lizak MJ, Morris HD, Matsumoto
-S, Koretsky AP, Brindle KM. Detecting response of rat C6 glioma tumors
-to radiotherapy using hyperpolarized [1- 13C]pyruvate and 13C magnetic
-resonance spectroscopic imaging. Magn Reson Med 2011;65(2):557-563.63.
-Park I, Mukherjee J, Ito M, Chaumeil MM, Jalbert LE, Gaensler K, Ronen
-SM, Nelson SJ, Pieper RO. Changes in pyruvate metabolism detected by
-magnetic resonance imaging are linked to DNA damage and serve as a
-sensor of temozolomide response in glioblastoma cells. Cancer research
-2014;74(23):7115-7124.64. Rodon J, Dienstmann R, Serra V, Tabernero J.
-Development of PI3K inhibitors: lessons learned from early clinical
-trials. Nat Rev Clin Oncol 2013;10(3):143-153.65. Courtney KD, Corcoran
-RB, Engelman JA. The PI3K pathway as drug target in human cancer. J Clin
-Oncol 2010;28(6):1075-1083.66. Venkatesh HS, Chaumeil MM, Ward CS,
-Haas-Kogan DA, James CD, Ronen SM. Reduced phosphocholine and
-hyperpolarized lactate provide magnetic resonance biomarkers of
-PI3K/Akt/mTOR inhibition in glioblastoma. Neuro-oncology
-2012;14(3):315-325.67. Ward CS, Venkatesh HS, Chaumeil MM, Brandes AH,
-Vancriekinge M, Dafni H, Sukumar S, Nelson SJ, Vigneron DB, Kurhanewicz
-J, James CD, Haas-Kogan DA, Ronen SM. Noninvasive detection of target
-modulation following phosphatidylinositol 3-kinase inhibition using
-hyperpolarized 13C magnetic resonance spectroscopy. Cancer research
-2010;70(4):1296-1305.68. Radoul M, Chaumeil MM, Eriksson P, Wang AS,
-Phillips JJ, Ronen SM. MR Studies of Glioblastoma Models Treated with
-Dual PI3K/mTOR Inhibitor and Temozolomide:Metabolic Changes Are
-Associated with Enhanced Survival. Molecular cancer therapeutics
-2016;15(5):1113-1122.69. Chaumeil MM, Ozawa T, Park I, Scott K, James
-CD, Nelson SJ, Ronen SM. Hyperpolarized 13C MR spectroscopic imaging can
-be used to monitor Everolimus treatment in vivo in an orthotopic rodent
-model of glioblastoma. Neuroimage 2012;59(1):193-201.70. Park JM,
-Spielman DM, Josan S, Jang T, Merchant M, Hurd RE, Mayer D, Recht LD.
-Hyperpolarized (13)C-lactate to (13)C-bicarbonate ratio as a biomarker
-for monitoring the acute response of anti-vascular endothelial growth
-factor (anti-VEGF) treatment. NMR in biomedicine 2016;29(5):650-659.71.
-Michelakis ED, Sutendra G, Dromparis P, Webster L, Haromy A, Niven E,
-Maguire C, Gammer T-L, Mackey JR, Fulton D, Abdulkarim B, McMurtry MS,
-Petruk KC. Metabolic Modulation of Glioblastoma with Dichloroacetate.
-Science translational medicine 2010;2(31):31ra34.72. Qin H, Zhang V, Bok
-RA, Santos RD, Cunha JA, Hsu IC, Santos Bs JD, Lee JE, Sukumar S, Larson
-PEZ, Vigneron DB, Wilson DM, Sriram R, Kurhanewicz J. Simultaneous
-Metabolic and Perfusion Imaging Using Hyperpolarized (13)C MRI Can
-Evaluate Early and Dose-Dependent Response to Radiation Therapy in a
-Prostate Cancer Mouse Model. Int J Radiat Oncol Biol Phys 2020.73. Saito
-K, Matsumoto S, Takakusagi Y, Matsuo M, Morris HD, Lizak MJ, Munasinghe
-JP, Devasahayam N, Subramanian S, Mitchell JB, Krishna MC. 13C-MR
-Spectroscopic Imaging with Hyperpolarized [1-13C]pyruvate Detects
-Early Response to Radiotherapy in SCC Tumors and HT-29 Tumors. Clinical
-cancer research : an official journal of the American Association for
-Cancer Research 2015;21(22):5073-5081.74. Hesketh RL, Wang J, Wright AJ,
-Lewis DY, Denton AE, Grenfell R, Miller JL, Bielik R, Gehrung M, Fala M,
-Ros S, Xie B, Hu DE, Brindle KM. Magnetic Resonance Imaging Is More
-Sensitive Than PET for Detecting Treatment-Induced Cell Death-Dependent
-Changes in Glycolysis. Cancer research 2019;79(14):3557-3569.75. Park
-JM, Josan S, Grafendorfer T, Yen Y-F, Hurd RE, Spielman DM, Mayer D.
-Measuring mitochondrial metabolism in rat brain in vivo using MR
-Spectroscopy of hyperpolarized [2-13C]pyruvate. NMR in biomedicine
-2013;26(10):1197-1203.76. Park JM, Josan S, Jang T, Merchant M, Watkins
-R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral chemical
-shift imaging of hyperpolarized [2-(13) c]pyruvate in a rat c6 glioma
-model. Magn Reson Med 2016;75(3):973-984.77. Izquierdo-Garcia JL,
-Viswanath P, Eriksson P, Cai L, Radoul M, Chaumeil MM, Blough M, Luchman
-HA, Weiss S, Cairncross JG, Philips JJ, Pieper RO, Ronen SM. IDH1
-mutation induces reprogramming of pyruvate metabolism. Cancer research
-2015.78. Roche TE, Hiromasa Y. Pyruvate dehydrogenase kinase regulatory
-mechanisms and inhibition in treating diabetes, heart ischemia, and
-cancer. Cellular and molecular life sciences : CMLS
-2007;64(7-8):830-849.79. Viswanath P, Ronen SM. Metabolic reprogramming
-of pyruvate dehydrogenase is essential for the proliferation of glioma
-cells expressing mutant IDH1. Molecular &amp; cellular oncology
-2016;3(2):e1077922.80. Venneti S, Dunphy MP, Zhang H, Pitter KL,
-Zanzonico P, Campos C, Carlin SD, La Rocca G, Lyashchenko S, Ploessl K,
-Rohle D, Omuro AM, Cross JR, Brennan CW, Weber WA, Holland EC,
-Mellinghoff IK, Kung HF, Lewis JS, Thompson CB. Glutamine-based PET
-imaging facilitates enhanced metabolic evaluation of gliomas in vivo.
-Science translational medicine 2015;7(274):274ra217.81. Cabella C,
-Karlsson M, Canape C, Catanzaro G, Colombo Serra S, Miragoli L, Poggi L,
-Uggeri F, Venturi L, Jensen PR, Lerche MH, Tedoldi F. In vivo and in
-vitro liver cancer metabolism observed with hyperpolarized
-[5-(13)C]glutamine. Journal of magnetic resonance (San Diego, Calif :
-1997) 2013;232:45-52.82. Canape C, Catanzaro G, Terreno E, Karlsson M,
-Lerche MH, Jensen PR. Probing treatment response of glutaminolytic
-prostate cancer cells to natural drugs with hyperpolarized [5-(13)
-C]glutamine. Magn Reson Med 2015;73(6):2296-2305.83. Gallagher FA,
-Kettunen MI, Day SE, Lerche M, Brindle KM. 13C MR spectroscopy
-measurements of glutaminase activity in human hepatocellular carcinoma
-cells using hyperpolarized 13C-labeled glutamine. Magn Reson Med
-2008;60(2):253-257.84. Gallagher FA, Kettunen MI, Day SE, Hu DE,
-Karlsson M, Gisselsson A, Lerche MH, Brindle KM. Detection of tumor
-glutamate metabolism in vivo using (13)C magnetic resonance spectroscopy
-and hyperpolarized [1-(13)C]glutamate. Magn Reson Med
-2011;66(1):18-23.85. Louis DN, Perry A, Reifenberger G, von Deimling A,
-Figarella-Branger D, Cavenee WK, Ohgaki H, Wiestler OD, Kleihues P,
-Ellison DW. The 2016 World Health Organization Classification of Tumors
-of the Central Nervous System: a summary. Acta Neuropathol
-2016;131(6):803-820.86. Flavahan WA, Drier Y, Liau BB, Gillespie SM,
-Venteicher AS, Stemmer-Rachamimov AO, Suva ML, Bernstein BE. Insulator
-dysfunction and oncogene activation in IDH mutant gliomas. Nature
-2016;529(7584):110-114.87. Dang L, Yen K, Attar EC. IDH mutations in
-cancer and progress toward development of targeted therapeutics. Annals
-of oncology : official journal of the European Society for Medical
-Oncology 2016;27(4):599-608.88. Pusch S, Krausert S, Fischer V, Balss J,
-Ott M, Schrimpf D, Capper D, Sahm F, Eisel J, Beck AC, Jugold M,
-Eichwald V, Kaulfuss S, Panknin O, Rehwinkel H, Zimmermann K, Hillig RC,
-Guenther J, Toschi L, Neuhaus R, Haegebart A, Hess-Stumpp H, Bauser M,
-Wick W, Unterberg A, Herold-Mende C, Platten M, von Deimling A.
-Pan-mutant IDH1 inhibitor BAY 1436032 for effective treatment of IDH1
-mutant astrocytoma in vivo. Acta Neuropathol 2017;133(4):629-644.89.
-Rohle D, Popovici-Muller J, Palaskas N, Turcan S, Grommes C, Campos C,
-Tsoi J, Clark O, Oldrini B, Komisopoulou E, Kunii K, Pedraza A, Schalm
-S, Silverman L, Miller A, Wang F, Yang H, Chen Y, Kernytsky A, Rosenblum
-MK, Liu W, Biller SA, Su SM, Brennan CW, Chan TA, Graeber TG, Yen KE,
-Mellinghoff IK. An inhibitor of mutant IDH1 delays growth and promotes
-differentiation of glioma cells. Science 2013;340(6132):626-630.90.
-Chaumeil MM, Larson PE, Yoshihara HA, Danforth OM, Vigneron DB, Nelson
-SJ, Pieper RO, Phillips JJ, Ronen SM. Non-invasive in vivo assessment of
-IDH1 mutational status in glioma. Nature communications 2013;4:2429.91.
-Chaumeil MM, Larson PE, Woods SM, Cai L, Eriksson P, Robinson AE, Lupo
-JM, Vigneron DB, Nelson SJ, Pieper RO, Phillips JJ, Ronen SM.
-Hyperpolarized [1-13C] glutamate: a metabolic imaging biomarker of
-IDH1 mutational status in glioma. Cancer research
-2014;74(16):4247-4257.92. Salamanca-Cardona L, Shah H, Poot AJ, Correa
-FM, Di Gialleonardo V, Lui H, Miloushev VZ, Granlund KL, Tee SS, Cross
-JR, Thompson CB, Keshari KR. In Vivo Imaging of Glutamine Metabolism to
-the Oncometabolite 2-Hydroxyglutarate in IDH1/2 Mutant Tumors. Cell
-metabolism 2017;26(6):830-841 e833.93. Nelson SJ, Kurhanewicz J,
-Vigneron DB, Larson PE, Harzstark AL, Ferrone M, van Criekinge M, Chang
-JW, Bok R, Park I, Reed G, Carvajal L, Small EJ, Munster P, Weinberg VK,
-Ardenkjaer-Larsen JH, Chen AP, Hurd RE, Odegardstuen LI, Robb FJ, Tropp
-J, Murray JA. Metabolic imaging of patients with prostate cancer using
-hyperpolarized [1-(1)(3)C]pyruvate. Science translational medicine
-2013;5(198):198ra108.94. Aggarwal R, Vigneron DB, Kurhanewicz J.
-Hyperpolarized 1-[(13)C]-Pyruvate Magnetic Resonance Imaging Detects
-an Early Metabolic Response to Androgen Ablation Therapy in Prostate
-Cancer. Eur Urol 2017;72(6):1028-1029.95. Granlund KL, Tee SS, Vargas
-HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA,
-Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb
-F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer
-Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate
-Transporter 1. Cell metabolism 2020;31(1):105-114.e103.96. Chen HY,
-Aggarwal R, Bok RA, Ohliger MA, Zhu Z, Lee P, Gordon JW, van Criekinge
-M, Carvajal L, Slater JB, Larson PEZ, Small EJ, Kurhanewicz J, Vigneron
-DB. Hyperpolarized (13)C-pyruvate MRI detects real-time metabolic flux
-in prostate cancer metastases to bone and liver: a clinical feasibility
-study. Prostate Cancer Prostatic Dis 2020;23(2):269-276.97. Park I,
-Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M,
-Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson
-SJ. Development of methods and feasibility of using hyperpolarized
-carbon-13 imaging data for evaluating brain metabolism in patient
-studies. Magn Reson Med 2018.98. Miloushev VZ, Granlund KL, Boltyanskiy
-R, Lyashchenko SK, DeAngelis LM, Mellinghoff IK, Brennan CW, Tabar V,
-Yang TJ, Holodny AI, Sosa RE, Guo YW, Chen AP, Tropp J, Robb F, Keshari
-KR. Metabolic Imaging of the Human Brain with Hyperpolarized 13C
-Pyruvate Demonstrates 13C Lactate Production in Brain Tumor Patients.
-Cancer research 2018.99. Grist JT, McLean MA, Riemer F, Schulte RF, Deen
-SS, Zaccagna F, Woitek R, Daniels CJ, Kaggie JD, Matys T, Patterson I,
-Slough R, Gill AB, Chhabra A, Eichenberger R, Laurent MC, Comment A,
-Gillard JH, Coles AJ, Tyler DJ, Wilkinson I, Basu B, Lomas DJ, Graves
-MJ, Brindle KM, Gallagher FA. Quantifying normal human brain metabolism
-using hyperpolarized [1-(13)C]pyruvate and magnetic resonance imaging.
-Neuroimage 2019;189:171-179.100. Lee CY, Soliman H, Geraghty BJ, Chen
-AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH.
-Lactate topography of the human brain using hyperpolarized (13)C-MRI.
-Neuroimage 2020;204:116202.101. Gallagher FA, Woitek R, McLean MA, Gill
-AB, Manzano Garcia R, Provenzano E, Riemer F, Kaggie J, Chhabra A,
-Ursprung S, Grist JT, Daniels CJ, Zaccagna F, Laurent MC, Locke M,
-Hilborne S, Frary A, Torheim T, Boursnell C, Schiller A, Patterson I,
-Slough R, Carmo B, Kane J, Biggs H, Harrison E, Deen SS, Patterson A,
-Lanz T, Kingsbury Z, Ross M, Basu B, Baird R, Lomas DJ, Sala E, Wason J,
-Rueda OM, Chin SF, Wilkinson IB, Graves MJ, Abraham JE, Gilbert FJ,
-Caldas C, Brindle KM. Imaging breast cancer using hyperpolarized
-carbon-13 MRI. Proceedings of the National Academy of Sciences of the
-United States of America 2020;117(4):2092-2098.102. Stødkilde-Jørgensen
-H, Laustsen C, Hansen ESS, Schulte R, Ardenkjaer-Larsen JH, Comment A,
-Frøkiaer J, Ringgaard S, Bertelsen LB, Ladekarl M, Weber B. Pilot Study
-Experiences With Hyperpolarized [1-(13) C]pyruvate MRI in Pancreatic
-Cancer Patients. Journal of magnetic resonance imaging : JMRI
-2020;51(3):961-963.103. Tran M, Latifoltojar A, Neves JB, Papoutsaki MV,
-Gong F, Comment A, Costa ASH, Glaser M, Tran-Dang MA, El Sheikh S, Piga
-W, Bainbridge A, Barnes A, Young T, Jeraj H, Awais R, Adeleke S, Holt C,
-O’Callaghan J, Twyman F, Atkinson D, Frezza C, Årstad E, Gadian D,
-Emberton M, Punwani S. First-in-human in vivo non-invasive assessment of
-intra-tumoral metabolic heterogeneity in renal cell carcinoma. BJR Case
-Rep 2019;5(3).104. Autry A, Chung B, Chen H-Y, Gordon J, Lafontaine M,
-Chang S, Villanueva-Meyer J, Larson P, Vigneron D, Li Y. CBMT-36.
-INITIAL EXPERIENCE WITH HYPERPOLARIZED [2-13C]PYRUVATE MR IMAGING IN
-PATIENTS WITH IDH-MUTANT GLIOMA. Neuro-oncology
-2019;21(Supplement_6):vi41-vi41.105. Chung BT, Chen HY, Gordon J,
-Mammoli D, Sriram R, Autry AW, Le Page LM, Chaumeil MM, Shin P, Slater
-J, Tan CT, Suszczynski C, Chang S, Li Y, Bok RA, Ronen SM, Larson PEZ,
-Kurhanewicz J, Vigneron DB. First hyperpolarized [2-(13)C]pyruvate MR
-studies of human brain metabolism. Journal of magnetic resonance (San
-Diego, Calif : 1997) 2019;309:106617.</p>
-</div>
-</div>
+<ol class="arabic simple">
+<li><p>Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell 2011;144(5):646-674.</p></li>
+<li><p>DeBerardinis RJ, Lum JJ, Hatzivassiliou G, Thompson CB. The biology of cancer: metabolic reprogramming fuels cell growth and proliferation. Cell metabolism 2008;7(1):11-20.</p></li>
+<li><p>Pavlova NN, Thompson CB. The Emerging Hallmarks of Cancer Metabolism. Cell metabolism 2016;23(1):27-47.</p></li>
+<li><p>Hirschey MD, DeBerardinis RJ, Diehl AM, Drew JE, Frezza C, Green MF, Jones LW, Ko YH, Le A, Lea MA, Locasale JW, Longo VD, Lyssiotis CA, McDonnell E, Mehrmohamadi M, Michelotti G, Muralidhar V, Murphy MP, Pedersen PL, Poore B, Raffaghello L, Rathmell JC, Sivanand S, Heiden MG, Wellen KE. Dysregulated metabolism contributes to oncogenesis. Seminars in cancer biology 2015.</p></li>
+<li><p>Hensley CT, Wasti AT, DeBerardinis RJ. Glutamine and cancer: cell biology, physiology, and clinical opportunities. The Journal of clinical investigation 2013;123(9):3678-3684.</p></li>
+<li><p>Mullen AR, DeBerardinis RJ. Genetically-defined metabolic reprogramming in cancer. Trends in endocrinology and metabolism: TEM 2012;23(11):552-559.</p></li>
+<li><p>DeBerardinis RJ, Chandel NS. Fundamentals of cancer metabolism. Sci Adv 2016;2(5):e1600200.</p></li>
+<li><p>Dang L, White DW, Gross S, Bennett BD, Bittinger MA, Driggers EM, Fantin VR, Jang HG, Jin S, Keenan MC, Marks KM, Prins RM, Ward PS, Yen KE, Liau LM, Rabinowitz JD, Cantley LC, Thompson CB, Vander Heiden MG, Su SM. Cancer-associated IDH1 mutations produce 2-hydroxyglutarate. Nature 2009;462(7274):739-744.</p></li>
+<li><p>Turcan S, Rohle D, Goenka A, Walsh LA, Fang F, Yilmaz E, Campos C, Fabius AW, Lu C, Ward PS, Thompson CB, Kaufman A, Guryanova O, Levine R, Heguy A, Viale A, Morris LG, Huse JT, Mellinghoff IK, Chan TA. IDH1 mutation is sufficient to establish the glioma hypermethylator phenotype. Nature 2012;483(7390):479-483.</p></li>
+<li><p>Viswanath P, Chaumeil MM, Ronen SM. Molecular Imaging of Metabolic Reprograming in Mutant IDH Cells. Frontiers in oncology 2016;6:60.</p></li>
+<li><p>Lu C, Ward PS, Kapoor GS, Rohle D, Turcan S, Abdel-Wahab O, Edwards CR, Khanin R, Figueroa ME, Melnick A, Wellen KE, O’Rourke DM, Berger SL, Chan TA, Levine RL, Mellinghoff IK, Thompson CB. IDH mutation impairs histone demethylation and results in a block to cell differentiation. Nature 2012;483(7390):474-478.</p></li>
+<li><p>O’Connor JP, Aboagye EO, Adams JE, Aerts HJ, Barrington SF, Beer AJ, Boellaard R, Bohndiek SE, Brady M, Brown G, Buckley DL, Chenevert TL, Clarke LP, Collette S, Cook GJ, deSouza NM, Dickson JC, Dive C, Evelhoch JL, Faivre-Finn C, Gallagher FA, Gilbert FJ, Gillies RJ, Goh V, Griffiths JR, Groves AM, Halligan S, Harris AL, Hawkes DJ, Hoekstra OS, Huang EP, Hutton BF, Jackson EF, Jayson GC, Jones A, Koh DM, Lacombe D, Lambin P, Lassau N, Leach MO, Lee TY, Leen EL, Lewis JS, Liu Y, Lythgoe MF, Manoharan P, Maxwell RJ, Miles KA, Morgan B, Morris S, Ng T, Padhani AR, Parker GJ, Partridge M, Pathak AP, Peet AC, Punwani S, Reynolds AR, Robinson SP, Shankar LK, Sharma RA, Soloviev D, Stroobants S, Sullivan DC, Taylor SA, Tofts PS, Tozer GM, van Herk M, Walker-Samuel S, Wason J, Williams KJ, Workman P, Yankeelov TE, Brindle KM, McShane LM, Jackson A, Waterton JC. Imaging biomarker roadmap for cancer studies. Nat Rev Clin Oncol 2017;14(3):169-186.</p></li>
+<li><p>Ellingson BM, Bendszus M, Boxerman J, Barboriak D, Erickson BJ, Smits M, Nelson SJ, Gerstner E, Alexander B, Goldmacher G, Wick W, Vogelbaum M, Weller M, Galanis E, Kalpathy-Cramer J, Shankar L, Jacobs P, Pope WB, Yang D, Chung C, Knopp MV, Cha S, van den Bent MJ, Chang S, Yung WK, Cloughesy TF, Wen PY, Gilbert MR. Consensus recommendations for a standardized Brain Tumor Imaging Protocol in clinical trials. Neuro-oncology 2015;17(9):1188-1198.</p></li>
+<li><p>Weissleder R, Pittet MJ. Imaging in the era of molecular oncology. Nature 2008;452:580.</p></li>
+<li><p>Schwartz LH, Litière S, de Vries E, Ford R, Gwyther S, Mandrekar S, Shankar L, Bogaerts J, Chen A, Dancey J, Hayes W, Hodi FS, Hoekstra OS, Huang EP, Lin N, Liu Y, Therasse P, Wolchok JD, Seymour L. RECIST 1.1-Update and clarification: From the RECIST committee. European journal of cancer (Oxford, England : 1990) 2016;62:132-137.</p></li>
+<li><p>Brindle K. New approaches for imaging tumour responses to treatment. Nature reviews Cancer 2008;8(2):94-107.</p></li>
+<li><p>Shin SH, Bode AM, Dong Z. Precision medicine: the foundation of future cancer therapeutics. npj Precision Oncology 2017;1(1):12.</p></li>
+<li><p>Deng X, Nakamura Y. Cancer Precision Medicine: From Cancer Screening to Drug Selection and Personalized Immunotherapy. Trends Pharmacol Sci 2017;38(1):15-24.</p></li>
+<li><p>Oellerich M, Schütz E, Beck J, Walson PD. Circulating Cell-Free DNA-Diagnostic and Prognostic Applications in Personalized Cancer Therapy. Ther Drug Monit 2019;41(2):115-120.</p></li>
+<li><p>Miller AM, Shah RH, Pentsova EI, Pourmaleki M, Briggs S, Distefano N, Zheng Y, Skakodub A, Mehta SA, Campos C, Hsieh WY, Selcuklu SD, Ling L, Meng F, Jing X, Samoila A, Bale TA, Tsui DWY, Grommes C, Viale A, Souweidane MM, Tabar V, Brennan CW, Reiner AS, Rosenblum M, Panageas KS, DeAngelis LM, Young RJ, Berger MF, Mellinghoff IK. Tracking tumour evolution in glioma through liquid biopsies of cerebrospinal fluid. Nature 2019;565(7741):654-658.</p></li>
+<li><p>Vander Heiden MG, Cantley LC, Thompson CB. Understanding the Warburg effect: the metabolic requirements of cell proliferation. Science 2009;324(5930):1029-1033.</p></li>
+<li><p>Zhu A, Lee D, Shim H. Metabolic PET Imaging in Cancer Detection and Therapy Response. Semin Oncol 2011;38(1):55-69.</p></li>
+<li><p>Fletcher JW, Djulbegovic B, Soares HP, Siegel BA, Lowe VJ, Lyman GH, Coleman RE, Wahl R, Paschold JC, Avril N, Einhorn LH, Suh WW, Samson D, Delbeke D, Gorman M, Shields AF. Recommendations on the use of 18F-FDG PET in oncology. Journal of nuclear medicine : official publication, Society of Nuclear Medicine 2008;49(3):480-508.</p></li>
+<li><p>Gillies RJ, Morse DL. In vivo magnetic resonance spectroscopy in cancer. Annual review of biomedical engineering 2005;7:287-326.</p></li>
+<li><p>Glunde K, Bhujwalla ZM. Metabolic Tumor Imaging Using Magnetic Resonance Spectroscopy. Seminars in Oncology 2011;38(1):26-41.</p></li>
+<li><p>Rodrigues TB, Cerdán S. 13C MRS: An outstanding tool for metabolic studies. Concepts in Magnetic Resonance Part A 2005;27A(1):1-16.</p></li>
+<li><p>Rothman DL, De Feyter HM, de Graaf RA, Mason GF, Behar KL. (13)C MRS studies of neuroenergetics and neurotransmitter cycling in humans. NMR in biomedicine 2011;24(8):943-957.</p></li>
+<li><p>Lumata L, Yang C, Ragavan M, Carpenter N, DeBerardinis RJ, Merritt ME. Hyperpolarized (13)C Magnetic Resonance and Its Use in Metabolic Assessment of Cultured Cells and Perfused Organs. Methods Enzymol 2015;561:73-106.</p></li>
+<li><p>Viswanath P, Li Y, Ronen SM. C-13 Hyperpolarized MR Spectroscopy for Metabolic Imaging of Brain Tumors. In: Pope WB, editor. Glioma Imaging: Physiologic, Metabolic, and Molecular Approaches. Cham: Springer International Publishing; 2020. p 191-209.</p></li>
+<li><p>Lunt SY, Vander Heiden MG. Aerobic glycolysis: meeting the metabolic requirements of cell proliferation. Annual review of cell and developmental biology 2011;27:441-464.</p></li>
+<li><p>de la Cruz-López KG, Castro-Muñoz LJ, Reyes-Hernández DO, García-Carrancá A, Manzo-Merino J. Lactate in the Regulation of Tumor Microenvironment and Therapeutic Approaches. Frontiers in oncology 2019;9:1143.</p></li>
+<li><p>Semenza GL. HIF-1 mediates metabolic responses to intratumoral hypoxia and oncogenic mutations. The Journal of clinical investigation 2013;123(9):3664-3671.</p></li>
+<li><p>Kurhanewicz J, Vigneron DB, Ardenkjaer-Larsen JH, Bankson JA, Brindle K, Cunningham CH, Gallagher FA, Keshari KR, Kjaer A, Laustsen C, Mankoff DA, Merritt ME, Nelson SJ, Pauly JM, Lee P, Ronen S, Tyler DJ, Rajan SS, Spielman DM, Wald L, Zhang X, Malloy CR, Rizi R. Hyperpolarized (13)C MRI: Path to Clinical Translation in Oncology. Neoplasia (New York, NY) 2019;21(1):1-16.</p></li>
+<li><p>Wang ZJ, Ohliger MA, Larson PEZ, Gordon JW, Bok RA, Slater J, Villanueva-Meyer JE, Hess CP, Kurhanewicz J, Vigneron DB. Hyperpolarized (13)C MRI: State of the Art and Future Directions. Radiology 2019;291(2):273-284.</p></li>
+<li><p>Halestrap AP. The monocarboxylate transporter family–Structure and functional characterization. IUBMB life 2012;64(1):1-9.</p></li>
+<li><p>Smith B, Schafer XL, Ambeskovic A, Spencer CM, Land H, Munger J. Addiction to Coupling of the Warburg Effect with Glutamine Catabolism in Cancer Cells. Cell reports 2016;17(3):821-836.</p></li>
+<li><p>Harris T, Eliyahu G, Frydman L, Degani H. Kinetics of hyperpolarized 13C1-pyruvate transport and metabolism in living human breast cancer cells. Proceedings of the National Academy of Sciences of the United States of America 2009;106(43):18131-18136.</p></li>
+<li><p>Serrao EM, Kettunen MI, Rodrigues TB, Dzien P, Wright AJ, Gopinathan A, Gallagher FA, Lewis DY, Frese KK, Almeida J, Howat WJ, Tuveson DA, Brindle KM. MRI with hyperpolarised [1-13C]pyruvate detects advanced pancreatic preneoplasia prior to invasive disease in a mouse model. Gut 2016;65(3):465-475.</p></li>
+<li><p>Witney TH, Kettunen MI, Brindle KM. Kinetic modeling of hyperpolarized 13C label exchange between pyruvate and lactate in tumor cells. The Journal of biological chemistry 2011;286(28):24572-24580.</p></li>
+<li><p>Day SE, Kettunen MI, Gallagher FA, Hu DE, Lerche M, Wolber J, Golman K, Ardenkjaer-Larsen JH, Brindle KM. Detecting tumor response to treatment using hyperpolarized 13C magnetic resonance imaging and spectroscopy. Nat Med 2007;13(11):1382-1387.</p></li>
+<li><p>Welch HG, Black WC. Overdiagnosis in Cancer. JNCI: Journal of the National Cancer Institute 2010;102(9):605-613.</p></li>
+<li><p>Cooperberg MR. Long-term active surveillance for prostate cancer: answers and questions. J Clin Oncol 2015;33(3):238-240.</p></li>
+<li><p>Albers MJ, Bok R, Chen AP, Cunningham CH, Zierhut ML, Zhang VY, Kohler SJ, Tropp J, Hurd RE, Yen YF, Nelson SJ, Vigneron DB, Kurhanewicz J. Hyperpolarized 13C lactate, pyruvate, and alanine: noninvasive biomarkers for prostate cancer detection and grading. Cancer research 2008;68(20):8607-8615.</p></li>
+<li><p>Keshari KR, Sriram R, Van Criekinge M, Wilson DM, Wang ZJ, Vigneron DB, Peehl DM, Kurhanewicz J. Metabolic reprogramming and validation of hyperpolarized 13C lactate as a prostate cancer biomarker using a human prostate tissue slice culture bioreactor. The Prostate 2013;73(11):1171-1181.</p></li>
+<li><p>Sriram R, Gordon J, Baligand C, Ahamed F, Delos Santos J, Qin H, Bok RA, Vigneron DB, Kurhanewicz J, Larson PEZ, Wang ZJ. Non-Invasive Assessment of Lactate Production and Compartmentalization in Renal Cell Carcinomas Using Hyperpolarized (13)C Pyruvate MRI. Cancers (Basel) 2018;10(9).</p></li>
+<li><p>Sriram R, Van Criekinge M, Hansen A, Wang ZJ, Vigneron DB, Wilson DM, Keshari KR, Kurhanewicz J. Real-time measurement of hyperpolarized lactate production and efflux as a biomarker of tumor aggressiveness in an MR compatible 3D cell culture bioreactor. NMR in biomedicine 2015;28(9):1141-1149.</p></li>
+<li><p>Sriram R, Van Criekinge M, DeLos Santos J, Keshari KR, Wilson DM, Peehl D, Kurhanewicz J, Wang ZJ. Non-invasive differentiation of benign renal tumors from clear cell renal cell carcinomas using clinically translatable hyperpolarized (13)C pyruvate magnetic resonance. Tomography 2016;2(1):35-42.</p></li>
+<li><p>Hollingsworth JM, Miller DC, Daignault S, Hollenbeck BK. Rising incidence of small renal masses: a need to reassess treatment effect. Journal of the National Cancer Institute 2006;98(18):1331-1334.</p></li>
+<li><p>Rawla P, Sunkara T, Gaduputi V. Epidemiology of Pancreatic Cancer: Global Trends, Etiology and Risk Factors. World J Oncol 2019;10(1):10-27.</p></li>
+<li><p>Canto MI, Harinck F, Hruban RH, Offerhaus GJ, Poley JW, Kamel I, Nio Y, Schulick RS, Bassi C, Kluijt I, Levy MJ, Chak A, Fockens P, Goggins M, Bruno M. International Cancer of the Pancreas Screening (CAPS) Consortium summit on the management of patients with increased risk for familial pancreatic cancer. Gut 2013;62(3):339-347.</p></li>
+<li><p>Hu S, Balakrishnan A, Bok RA, Anderton B, Larson PE, Nelson SJ, Kurhanewicz J, Vigneron DB, Goga A. 13C-pyruvate imaging reveals alterations in glycolysis that precede c-Myc-induced tumor formation and regression. Cell metabolism 2011;14(1):131-142.</p></li>
+<li><p>Taouli B, Losada M, Holland A, Krinsky G. Magnetic resonance imaging of hepatocellular carcinoma. Gastroenterology 2004;127(5 Suppl 1):S144-152.</p></li>
+<li><p>Shin PJ, Zhu Z, Camarda R, Bok RA, Zhou AY, Kurhanewicz J, Goga A, Vigneron DB. Cancer recurrence monitoring using hyperpolarized [1-(13)C]pyruvate metabolic imaging in murine breast cancer model. Magnetic resonance imaging 2017;43:105-109.</p></li>
+<li><p>Park I, Hu S, Bok R, Ozawa T, Ito M, Mukherjee J, Phillips JJ, James CD, Pieper RO, Ronen SM, Vigneron DB, Nelson SJ. Evaluation of heterogeneous metabolic profile in an orthotopic human glioblastoma xenograft model using compressed sensing hyperpolarized 3D 13C magnetic resonance spectroscopic imaging. Magn Reson Med 2013;70(1):33-39.</p></li>
+<li><p>Park I, Larson PE, Zierhut ML, Hu S, Bok R, Ozawa T, Kurhanewicz J, Vigneron DB, Vandenberg SR, James CD, Nelson SJ. Hyperpolarized 13C magnetic resonance metabolic imaging: application to brain tumors. Neuro-oncology 2010;12(2):133-144.</p></li>
+<li><p>Mair R, Wright AJ, Ros S, Hu DE, Booth T, Kreis F, Rao J, Watts C, Brindle KM. Metabolic Imaging Detects Low Levels of Glycolytic Activity That Vary with Levels of c-Myc Expression in Patient-Derived Xenograft Models of Glioblastoma. Cancer research 2018;78(18):5408-5418.</p></li>
+<li><p>Park JM, Recht LD, Josan S, Merchant M, Jang T, Yen YF, Hurd RE, Spielman DM, Mayer D. Metabolic response of glioma to dichloroacetate measured in vivo by hyperpolarized (13)C magnetic resonance spectroscopic imaging. Neuro-oncology 2013;15(4):433-441.</p></li>
+<li><p>Viswanath P, Najac C, Izquierdo-Garcia JL, Pankov A, Hong C, Eriksson P, Costello JF, Pieper RO, Ronen SM. Mutant IDH1 expression is associated with down-regulation of monocarboxylate transporters. Oncotarget 2016;7(23):34942-34955.</p></li>
+<li><p>Chesnelong C, Chaumeil MM, Blough MD, Al-Najjar M, Stechishin OD, Chan JA, Pieper RO, Ronen SM, Weiss S, Luchman HA, Cairncross JG. Lactate dehydrogenase A silencing in IDH mutant gliomas. Neuro-oncology 2014;16(5):686-695.</p></li>
+<li><p>Chaumeil MM, Radoul M, Najac C, Eriksson P, Viswanath P, Blough MD, Chesnelong C, Luchman HA, Cairncross JG, Ronen SM. Hyperpolarized (13)C MR imaging detects no lactate production in mutant IDH1 gliomas: Implications for diagnosis and response monitoring. NeuroImage Clinical 2016;12:180-189.</p></li>
+<li><p>Victor RR, Malta TM, Seki T, Lita A, Dowdy T, Celiku O, Cavazos-Saldana A, Li A, Liu Y, Han S, Zhang W, Song H, Davis D, Lee S, Trepel JB, Sabedot TS, Munasinghe J, Yang C, Herold-Mende C, Gilbert MR, Krishna Cherukuri M, Noushmehr H, Larion M. Metabolic Reprogramming Associated with Aggressiveness Occurs in the G-CIMP-High Molecular Subtypes of IDH1mut Lower Grade Gliomas. Neuro-oncology 2019.</p></li>
+<li><p>Day SE, Kettunen MI, Cherukuri MK, Mitchell JB, Lizak MJ, Morris HD, Matsumoto S, Koretsky AP, Brindle KM. Detecting response of rat C6 glioma tumors to radiotherapy using hyperpolarized [1- 13C]pyruvate and 13C magnetic resonance spectroscopic imaging. Magn Reson Med 2011;65(2):557-563.</p></li>
+<li><p>Park I, Mukherjee J, Ito M, Chaumeil MM, Jalbert LE, Gaensler K, Ronen SM, Nelson SJ, Pieper RO. Changes in pyruvate metabolism detected by magnetic resonance imaging are linked to DNA damage and serve as a sensor of temozolomide response in glioblastoma cells. Cancer research 2014;74(23):7115-7124.</p></li>
+<li><p>Rodon J, Dienstmann R, Serra V, Tabernero J. Development of PI3K inhibitors: lessons learned from early clinical trials. Nat Rev Clin Oncol 2013;10(3):143-153.</p></li>
+<li><p>Courtney KD, Corcoran RB, Engelman JA. The PI3K pathway as drug target in human cancer. J Clin Oncol 2010;28(6):1075-1083.</p></li>
+<li><p>Venkatesh HS, Chaumeil MM, Ward CS, Haas-Kogan DA, James CD, Ronen SM. Reduced phosphocholine and hyperpolarized lactate provide magnetic resonance biomarkers of PI3K/Akt/mTOR inhibition in glioblastoma. Neuro-oncology 2012;14(3):315-325.</p></li>
+<li><p>Ward CS, Venkatesh HS, Chaumeil MM, Brandes AH, Vancriekinge M, Dafni H, Sukumar S, Nelson SJ, Vigneron DB, Kurhanewicz J, James CD, Haas-Kogan DA, Ronen SM. Noninvasive detection of target modulation following phosphatidylinositol 3-kinase inhibition using hyperpolarized 13C magnetic resonance spectroscopy. Cancer research 2010;70(4):1296-1305.</p></li>
+<li><p>Radoul M, Chaumeil MM, Eriksson P, Wang AS, Phillips JJ, Ronen SM. MR Studies of Glioblastoma Models Treated with Dual PI3K/mTOR Inhibitor and Temozolomide:Metabolic Changes Are Associated with Enhanced Survival. Molecular cancer therapeutics 2016;15(5):1113-1122.</p></li>
+<li><p>Chaumeil MM, Ozawa T, Park I, Scott K, James CD, Nelson SJ, Ronen SM. Hyperpolarized 13C MR spectroscopic imaging can be used to monitor Everolimus treatment in vivo in an orthotopic rodent model of glioblastoma. Neuroimage 2012;59(1):193-201.</p></li>
+<li><p>Park JM, Spielman DM, Josan S, Jang T, Merchant M, Hurd RE, Mayer D, Recht LD. Hyperpolarized (13)C-lactate to (13)C-bicarbonate ratio as a biomarker for monitoring the acute response of anti-vascular endothelial growth factor (anti-VEGF) treatment. NMR in biomedicine 2016;29(5):650-659.</p></li>
+<li><p>Michelakis ED, Sutendra G, Dromparis P, Webster L, Haromy A, Niven E, Maguire C, Gammer T-L, Mackey JR, Fulton D, Abdulkarim B, McMurtry MS, Petruk KC. Metabolic Modulation of Glioblastoma with Dichloroacetate. Science translational medicine 2010;2(31):31ra34.</p></li>
+<li><p>Qin H, Zhang V, Bok RA, Santos RD, Cunha JA, Hsu IC, Santos Bs JD, Lee JE, Sukumar S, Larson PEZ, Vigneron DB, Wilson DM, Sriram R, Kurhanewicz J. Simultaneous Metabolic and Perfusion Imaging Using Hyperpolarized (13)C MRI Can Evaluate Early and Dose-Dependent Response to Radiation Therapy in a Prostate Cancer Mouse Model. Int J Radiat Oncol Biol Phys 2020.</p></li>
+<li><p>Saito K, Matsumoto S, Takakusagi Y, Matsuo M, Morris HD, Lizak MJ, Munasinghe JP, Devasahayam N, Subramanian S, Mitchell JB, Krishna MC. 13C-MR Spectroscopic Imaging with Hyperpolarized [1-13C]pyruvate Detects Early Response to Radiotherapy in SCC Tumors and HT-29 Tumors. Clinical cancer research : an official journal of the American Association for Cancer Research 2015;21(22):5073-5081.</p></li>
+<li><p>Hesketh RL, Wang J, Wright AJ, Lewis DY, Denton AE, Grenfell R, Miller JL, Bielik R, Gehrung M, Fala M, Ros S, Xie B, Hu DE, Brindle KM. Magnetic Resonance Imaging Is More Sensitive Than PET for Detecting Treatment-Induced Cell Death-Dependent Changes in Glycolysis. Cancer research 2019;79(14):3557-3569.</p></li>
+<li><p>Park JM, Josan S, Grafendorfer T, Yen Y-F, Hurd RE, Spielman DM, Mayer D. Measuring mitochondrial metabolism in rat brain in vivo using MR Spectroscopy of hyperpolarized [2-13C]pyruvate. NMR in biomedicine 2013;26(10):1197-1203.</p></li>
+<li><p>Park JM, Josan S, Jang T, Merchant M, Watkins R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral chemical shift imaging of hyperpolarized [2-(13) c]pyruvate in a rat c6 glioma model. Magn Reson Med 2016;75(3):973-984.</p></li>
+<li><p>Izquierdo-Garcia JL, Viswanath P, Eriksson P, Cai L, Radoul M, Chaumeil MM, Blough M, Luchman HA, Weiss S, Cairncross JG, Philips JJ, Pieper RO, Ronen SM. IDH1 mutation induces reprogramming of pyruvate metabolism. Cancer research 2015.</p></li>
+<li><p>Roche TE, Hiromasa Y. Pyruvate dehydrogenase kinase regulatory mechanisms and inhibition in treating diabetes, heart ischemia, and cancer. Cellular and molecular life sciences : CMLS 2007;64(7-8):830-849.</p></li>
+<li><p>Viswanath P, Ronen SM. Metabolic reprogramming of pyruvate dehydrogenase is essential for the proliferation of glioma cells expressing mutant IDH1. Molecular &amp; cellular oncology 2016;3(2):e1077922.</p></li>
+<li><p>Venneti S, Dunphy MP, Zhang H, Pitter KL, Zanzonico P, Campos C, Carlin SD, La Rocca G, Lyashchenko S, Ploessl K, Rohle D, Omuro AM, Cross JR, Brennan CW, Weber WA, Holland EC, Mellinghoff IK, Kung HF, Lewis JS, Thompson CB. Glutamine-based PET imaging facilitates enhanced metabolic evaluation of gliomas in vivo. Science translational medicine 2015;7(274):274ra217.</p></li>
+<li><p>Cabella C, Karlsson M, Canape C, Catanzaro G, Colombo Serra S, Miragoli L, Poggi L, Uggeri F, Venturi L, Jensen PR, Lerche MH, Tedoldi F. In vivo and in vitro liver cancer metabolism observed with hyperpolarized [5-(13)C]glutamine. Journal of magnetic resonance (San Diego, Calif : 1997) 2013;232:45-52.</p></li>
+<li><p>Canape C, Catanzaro G, Terreno E, Karlsson M, Lerche MH, Jensen PR. Probing treatment response of glutaminolytic prostate cancer cells to natural drugs with hyperpolarized [5-(13) C]glutamine. Magn Reson Med 2015;73(6):2296-2305.</p></li>
+<li><p>Gallagher FA, Kettunen MI, Day SE, Lerche M, Brindle KM. 13C MR spectroscopy measurements of glutaminase activity in human hepatocellular carcinoma cells using hyperpolarized 13C-labeled glutamine. Magn Reson Med 2008;60(2):253-257.</p></li>
+<li><p>Gallagher FA, Kettunen MI, Day SE, Hu DE, Karlsson M, Gisselsson A, Lerche MH, Brindle KM. Detection of tumor glutamate metabolism in vivo using (13)C magnetic resonance spectroscopy and hyperpolarized [1-(13)C]glutamate. Magn Reson Med 2011;66(1):18-23.</p></li>
+<li><p>Louis DN, Perry A, Reifenberger G, von Deimling A, Figarella-Branger D, Cavenee WK, Ohgaki H, Wiestler OD, Kleihues P, Ellison DW. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary. Acta Neuropathol 2016;131(6):803-820.</p></li>
+<li><p>Flavahan WA, Drier Y, Liau BB, Gillespie SM, Venteicher AS, Stemmer-Rachamimov AO, Suva ML, Bernstein BE. Insulator dysfunction and oncogene activation in IDH mutant gliomas. Nature 2016;529(7584):110-114.</p></li>
+<li><p>Dang L, Yen K, Attar EC. IDH mutations in cancer and progress toward development of targeted therapeutics. Annals of oncology : official journal of the European Society for Medical Oncology 2016;27(4):599-608.</p></li>
+<li><p>Pusch S, Krausert S, Fischer V, Balss J, Ott M, Schrimpf D, Capper D, Sahm F, Eisel J, Beck AC, Jugold M, Eichwald V, Kaulfuss S, Panknin O, Rehwinkel H, Zimmermann K, Hillig RC, Guenther J, Toschi L, Neuhaus R, Haegebart A, Hess-Stumpp H, Bauser M, Wick W, Unterberg A, Herold-Mende C, Platten M, von Deimling A. Pan-mutant IDH1 inhibitor BAY 1436032 for effective treatment of IDH1 mutant astrocytoma in vivo. Acta Neuropathol 2017;133(4):629-644.</p></li>
+<li><p>Rohle D, Popovici-Muller J, Palaskas N, Turcan S, Grommes C, Campos C, Tsoi J, Clark O, Oldrini B, Komisopoulou E, Kunii K, Pedraza A, Schalm S, Silverman L, Miller A, Wang F, Yang H, Chen Y, Kernytsky A, Rosenblum MK, Liu W, Biller SA, Su SM, Brennan CW, Chan TA, Graeber TG, Yen KE, Mellinghoff IK. An inhibitor of mutant IDH1 delays growth and promotes differentiation of glioma cells. Science 2013;340(6132):626-630.</p></li>
+<li><p>Chaumeil MM, Larson PE, Yoshihara HA, Danforth OM, Vigneron DB, Nelson SJ, Pieper RO, Phillips JJ, Ronen SM. Non-invasive in vivo assessment of IDH1 mutational status in glioma. Nature communications 2013;4:2429.</p></li>
+<li><p>Chaumeil MM, Larson PE, Woods SM, Cai L, Eriksson P, Robinson AE, Lupo JM, Vigneron DB, Nelson SJ, Pieper RO, Phillips JJ, Ronen SM. Hyperpolarized [1-13C] glutamate: a metabolic imaging biomarker of IDH1 mutational status in glioma. Cancer research 2014;74(16):4247-4257.</p></li>
+<li><p>Salamanca-Cardona L, Shah H, Poot AJ, Correa FM, Di Gialleonardo V, Lui H, Miloushev VZ, Granlund KL, Tee SS, Cross JR, Thompson CB, Keshari KR. In Vivo Imaging of Glutamine Metabolism to the Oncometabolite 2-Hydroxyglutarate in IDH1/2 Mutant Tumors. Cell metabolism 2017;26(6):830-841 e833.</p></li>
+<li><p>Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PE, Harzstark AL, Ferrone M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE, Odegardstuen LI, Robb FJ, Tropp J, Murray JA. Metabolic imaging of patients with prostate cancer using hyperpolarized [1-(1)(3)C]pyruvate. Science translational medicine 2013;5(198):198ra108.</p></li>
+<li><p>Aggarwal R, Vigneron DB, Kurhanewicz J. Hyperpolarized 1-[(13)C]-Pyruvate Magnetic Resonance Imaging Detects an Early Metabolic Response to Androgen Ablation Therapy in Prostate Cancer. Eur Urol 2017;72(6):1028-1029.</p></li>
+<li><p>Granlund KL, Tee SS, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate Transporter 1. Cell metabolism 2020;31(1):105-114.e103.</p></li>
+<li><p>Chen HY, Aggarwal R, Bok RA, Ohliger MA, Zhu Z, Lee P, Gordon JW, van Criekinge M, Carvajal L, Slater JB, Larson PEZ, Small EJ, Kurhanewicz J, Vigneron DB. Hyperpolarized (13)C-pyruvate MRI detects real-time metabolic flux in prostate cancer metastases to bone and liver: a clinical feasibility study. Prostate Cancer Prostatic Dis 2020;23(2):269-276.</p></li>
+<li><p>Park I, Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M, Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson SJ. Development of methods and feasibility of using hyperpolarized carbon-13 imaging data for evaluating brain metabolism in patient studies. Magn Reson Med 2018.</p></li>
+<li><p>Miloushev VZ, Granlund KL, Boltyanskiy R, Lyashchenko SK, DeAngelis LM, Mellinghoff IK, Brennan CW, Tabar V, Yang TJ, Holodny AI, Sosa RE, Guo YW, Chen AP, Tropp J, Robb F, Keshari KR. Metabolic Imaging of the Human Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C Lactate Production in Brain Tumor Patients. Cancer research 2018.</p></li>
+<li><p>Grist JT, McLean MA, Riemer F, Schulte RF, Deen SS, Zaccagna F, Woitek R, Daniels CJ, Kaggie JD, Matys T, Patterson I, Slough R, Gill AB, Chhabra A, Eichenberger R, Laurent MC, Comment A, Gillard JH, Coles AJ, Tyler DJ, Wilkinson I, Basu B, Lomas DJ, Graves MJ, Brindle KM, Gallagher FA. Quantifying normal human brain metabolism using hyperpolarized [1-(13)C]pyruvate and magnetic resonance imaging. Neuroimage 2019;189:171-179.</p></li>
+<li><p>Lee CY, Soliman H, Geraghty BJ, Chen AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH. Lactate topography of the human brain using hyperpolarized (13)C-MRI. Neuroimage 2020;204:116202.</p></li>
+<li><p>Gallagher FA, Woitek R, McLean MA, Gill AB, Manzano Garcia R, Provenzano E, Riemer F, Kaggie J, Chhabra A, Ursprung S, Grist JT, Daniels CJ, Zaccagna F, Laurent MC, Locke M, Hilborne S, Frary A, Torheim T, Boursnell C, Schiller A, Patterson I, Slough R, Carmo B, Kane J, Biggs H, Harrison E, Deen SS, Patterson A, Lanz T, Kingsbury Z, Ross M, Basu B, Baird R, Lomas DJ, Sala E, Wason J, Rueda OM, Chin SF, Wilkinson IB, Graves MJ, Abraham JE, Gilbert FJ, Caldas C, Brindle KM. Imaging breast cancer using hyperpolarized carbon-13 MRI. Proceedings of the National Academy of Sciences of the United States of America 2020;117(4):2092-2098.</p></li>
+<li><p>Stødkilde-Jørgensen H, Laustsen C, Hansen ESS, Schulte R, Ardenkjaer-Larsen JH, Comment A, Frøkiaer J, Ringgaard S, Bertelsen LB, Ladekarl M, Weber B. Pilot Study Experiences With Hyperpolarized [1-(13) C]pyruvate MRI in Pancreatic Cancer Patients. Journal of magnetic resonance imaging : JMRI 2020;51(3):961-963.</p></li>
+<li><p>Tran M, Latifoltojar A, Neves JB, Papoutsaki MV, Gong F, Comment A, Costa ASH, Glaser M, Tran-Dang MA, El Sheikh S, Piga W, Bainbridge A, Barnes A, Young T, Jeraj H, Awais R, Adeleke S, Holt C, O’Callaghan J, Twyman F, Atkinson D, Frezza C, Årstad E, Gadian D, Emberton M, Punwani S. First-in-human in vivo non-invasive assessment of intra-tumoral metabolic heterogeneity in renal cell carcinoma. BJR Case Rep 2019;5(3).</p></li>
+<li><p>Autry A, Chung B, Chen H-Y, Gordon J, Lafontaine M, Chang S, Villanueva-Meyer J, Larson P, Vigneron D, Li Y. CBMT-36. INITIAL EXPERIENCE WITH HYPERPOLARIZED [2-13C]PYRUVATE MR IMAGING IN PATIENTS WITH IDH-MUTANT GLIOMA. Neuro-oncology 2019;21(Supplement_6):vi41-vi41.</p></li>
+<li><p>Chung BT, Chen HY, Gordon J, Mammoli D, Sriram R, Autry AW, Le Page LM, Chaumeil MM, Shin P, Slater J, Tan CT, Suszczynski C, Chang S, Li Y, Bok RA, Ronen SM, Larson PEZ, Kurhanewicz J, Vigneron DB. First hyperpolarized [2-(13)C]pyruvate MR studies of human brain metabolism. Journal of magnetic resonance (San Diego, Calif : 1997) 2019;309:106617.</p></li>
+</ol>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1403,7 +1281,7 @@ Diego, Calif : 1997) 2019;309:106617.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./cancer"
         },
         predefinedOutput: true
@@ -1411,56 +1289,103 @@ Diego, Calif : 1997) 2019;309:106617.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../analysis_visualization/analysis_visualization.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Analysis and Visualization of Hyperpolarized ^13^C MR Data</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../cardiac/cardiac.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Hyperpolarized MR in Cardiology {#chap:DJT}</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../analysis_visualization/analysis_visualization.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Analysis and Visualization of Hyperpolarized ^13^C MR Data</p>
       </div>
-    </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+    </a>
+    <a class="right-next"
+       href="../cardiac/cardiac.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hyperpolarized MR in Cardiology</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

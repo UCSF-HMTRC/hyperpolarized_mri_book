@@ -7,8 +7,6 @@ Francisco, San Francisco, CA 94158-2330
 
 Corresponding author: Renuka.Sriram\@ucsf.edu
 
-*\
-*
 
 **Abstract**
 
@@ -38,8 +36,7 @@ Metabolism, Bioreactor, Enzyme, model systems
 
 5.  Preclinical model systems for testing of hyperpolarized ^13^C probes
 
-6.  Understanding and interpreting the hyperpolarized signals to shed
-    > light on the underlying biochemistry of the pathology.
+6.  Understanding and interpreting the hyperpolarized signals to shed light on the underlying biochemistry of the pathology.
 
 7.  Further Study
 
@@ -47,8 +44,8 @@ Metabolism, Bioreactor, Enzyme, model systems
 
 9.  Figure Captions
 
-***\
-*4.1 Introduction**
+
+**4.1 Introduction**
 
 The development of dissolution dynamic nuclear polarization (DNP) using
 ^13^C labeled organic substrates provides significant new insights into
@@ -74,7 +71,7 @@ with a keen focus on preserving the polarization. The second part of the
 chapter gives detailed descriptions of the variety of preclinical model
 systems used in the testing of HP agents.
 
-\*\*\* figure 4.1 here \*\*\*
+![Preserving polarization from dissolution to delivery into biological system](CH0004_OCFigure+4.1_Sriram_v1_Orig.jpg)
 
 **FIGURE 4.1 Key elements for preserving polarization from dissolution
 to delivery into biological system.** This illustration shows the three
@@ -184,7 +181,7 @@ b)  *Consider loss of signal from HP agent due to nonspecific binding to
     signal loss of \~10% of the HP agent. Thus, serum free media is
     usually used for testing HP agents in intact cells.
 
-> ***4.4.ii How to deliver the hyperpolarized agent?***
+ ***4.4.ii How to deliver the hyperpolarized agent?***
 
 Upon thorough mixing of the dissolution care must be taken to not have
 any air bubbles while drawing up the solution into a syringe. The
@@ -252,69 +249,15 @@ agents such as urea.
 
 **Table 4.1** Preclinical model systems for testing HP agents
 
-+----------+--------+------+------------------------------------------+
-| Stages   | Model  |      | Salient features                         |
-| of       | s      |      |                                          |
-| testing  | ystems |      |                                          |
-+==========+========+======+==========================================+
-| Fea      | Naïve  |      | -   Simplest system                      |
-| sibility | e      |      |                                          |
-|          | nzymes |      | -   Cannot perceive membrane transport   |
-|          |        |      |     kinetics                             |
-+----------+--------+------+------------------------------------------+
-|          | Cell   |      | -   multicomponent system                |
-|          | l      |      |                                          |
-|          | ysates |      | -   Cannot perceive membrane transport   |
-|          |        |      |     kinetics                             |
-+----------+--------+------+------------------------------------------+
-| Dev      | Intact |      | -   Complete *in vitro* model            |
-| elopment | Cells  |      |                                          |
-|          | in     |      | -   Lacks robust physiological control   |
-|          | so     |      |                                          |
-|          | lution |      |                                          |
-+----------+--------+------+------------------------------------------+
-|          | Bior   | C    | -   Robust, physiologically relevant     |
-|          | eactor | ells |     conditions,                          |
-|          | (Per   |      |                                          |
-|          | fusion |      | -   Repeated, longitudinal measurements  |
-|          | s      |      |     is feasible on same cells            |
-|          | ystem) |      |                                          |
-+----------+--------+------+------------------------------------------+
-|          |        | Ti   | -   Unique model system with limited     |
-|          |        | ssue |     intact microenvironment              |
-|          |        |      |                                          |
-|          |        |      | -   Correlative assays can be performed  |
-|          |        |      |     on the same tissue after HP          |
-|          |        |      |     measurements                         |
-|          |        |      |                                          |
-|          |        |      | -   Very tedious to execute and          |
-|          |        |      |     establish long term viability of     |
-|          |        |      |     tissues.                             |
-+----------+--------+------+------------------------------------------+
-|          |        | O    | -   Comprehensive analysis of single     |
-|          |        | rgan |     organ metabolism without confounding |
-|          |        |      |     recirculation issues                 |
-|          |        |      |                                          |
-|          |        |      | -   Metabolic state of the organ could   |
-|          |        |      |     be influenced by choice of perfusate |
-|          |        |      |     composition.                         |
-|          |        |      |                                          |
-|          |        |      | -   Highly specialized skill set         |
-|          |        |      |     required for cannulation of organs.  |
-+----------+--------+------+------------------------------------------+
-| Va       | *In    |      | -   Necessary step for clinical          |
-| lidation | vivo*  |      |     translation                          |
-|          | animal |      |                                          |
-|          | models |      | -   Provides whole organism impact of    |
-|          |        |      |     circulation, delivery and            |
-|          |        |      |     biodistribution.                     |
-|          |        |      |                                          |
-|          |        |      | -   Requires specialized imaging         |
-|          |        |      |     sequences with spatial localization  |
-|          |        |      |                                          |
-|          |        |      | -   Modeling HP signals from i*n vivo*   |
-|          |        |      |     models are complicated               |
-+----------+--------+------+------------------------------------------+
+| Stage      | Model/System                | Salient Features                                                                                  |
+|------------|----------------------------|---------------------------------------------------------------------------------------------------|
+| Feasibility| Naïve enzymes              | - Simplest system<br>- Cannot perceive membrane transport kinetics                                |
+|            | Cell lysates               | - Multicomponent system<br>- Cannot perceive membrane transport kinetics                          |
+| Development| Intact cells in solution   | - Complete *in vitro* model<br>- Lacks robust physiological control                               |
+|            | Bioreactor (Perfusion system)<br>Cells | - Robust, physiologically relevant conditions<br>- Repeated, longitudinal measurements feasible on same cells |
+|            | Bioreactor<br>Tissue       | - Unique model system with limited intact microenvironment<br>- Correlative assays can be performed on the same tissue after HP measurements<br>- Very tedious to execute and establish long term viability of tissues |
+|            | Bioreactor<br>Organ        | - Comprehensive analysis of single organ metabolism without confounding recirculation issues<br>- Metabolic state of the organ could be influenced by choice of perfusate composition<br>- Highly specialized skill set required for cannulation of organs |
+| Validation | *In vivo* animal models    | - Necessary step for clinical translation<br>- Provides whole organism impact of circulation, delivery and biodistribution<br>- Requires specialized imaging sequences with spatial localization<br>- Modeling HP signals from *in vivo* models is complicated |
 
 ***4.5.i Models used for feasibility testing***
 
@@ -334,7 +277,6 @@ a powerful methodology that can help enumerate reaction kinetics (13),
 detect otherwise invisible low-population intermediate species (14). In
 addition to enzymology, this technique has unequivocal ability to shed
 insights into molecular
-
 (15), protein-ligand interactions and protein folding (13).
 
 *b) Cell lysates -* In case of enzymes that are cost prohibitive or
@@ -377,7 +319,6 @@ viability of the cells is greatly reduced over time from warm ischemia,
 excessive concentration of HP agent and its additives. This modest
 system has been successfully used for extensive kinetic models (12,16)
 (see chapter 7), to assess the rate of transport
-
 (17), as well as to interrogate simultaneous, alternate pathways of
 metabolism (18).
 
@@ -411,7 +352,7 @@ requirements; 5) adaptable for concurrent PET applications (19). This
 has been successfully used to study cell, tissue and organ metabolism
 *in situ*.
 
-**[Cells]{.ul}**: The cells are restricted within the MR sensitive
+**Cells**: The cells are restricted within the MR sensitive
 region of the reservoir by numerous methods(20), each having distinct
 advantages. However, the cells under study heavily influences the choice
 of immobilization in the bioreactor tube. For instance, strongly
@@ -419,7 +360,7 @@ adherent cells are studied on polystyrene beads, such as macrophages
 (21) or primary cells (22), while most immortalized cells do well in
 alginate encapsulation or hollow fibers.
 
-**[Intact tissue:]{.ul}** The use of a bioreactor to study intact
+**Intact tissue:** The use of a bioreactor to study intact
 tissues provides an exclusive method to study certain diseases where
 appropriate model systems are sorely lacking such as benign renal tumors
 (23). This is a nondestructive method which can preserve the precious
@@ -435,7 +376,7 @@ to maintain the metabolism over time and finally 3) careful loading of
 the tissues into specifically designed cartridge-tissue holders for
 bioreactor chambers to preserve a homogenous magnetic field.
 
-**[Perfused Organs:]{.ul}** While perfused organs have been used for a
+**Perfused Organs:** While perfused organs have been used for a
 long time to study intermediate metabolism in intact organs, only the
 perfused heart and liver has been employed for hyperpolarized NMR. This
 requires a very specialized skill set and is an order of magnitude more
@@ -450,7 +391,8 @@ high filling factor enabling the study of metabolic intermediates
 otherwise inaccessible for a better understanding of the biochemical
 pathways.
 
-\*\*\* figure 4.2 here \*\*\*
+![Components of bioreactor system to study metabolism of cells, tissues and organs](CH0004_OCFigure+4.2_Sriram_v1_Orig.jpg)
+
 
 **FIGURE 4.2: Components of bioreactor system to study metabolism of
 cells, tissues and organs.** A)Adapted from Harris et al (25), this
@@ -483,7 +425,7 @@ studies to study biochemical processes.
 experiments on animals require some specific physiological and technical
 considerations.
 
-**[Vascular access]{.ul}** - Tail vein is by far the most often used
+**Vascular access** - Tail vein is by far the most often used
 route as it provides for easy repetitive cannulation in mice and rats,
 which in itself is a skill indispensable for longitudinal studies. A key
 requirement for successful HP study is the maintenance of patent
@@ -498,7 +440,7 @@ probe injection) results in a second peak of the HP signal, which often
 complicates the kinetic modeling. Hence, the saline flush is usually
 performed only after the HP experiment is completed.
 
-**[Physiological status]{.ul}** - Similar to most other imaging studies,
+**Physiological status** - Similar to most other imaging studies,
 rigorous control of functional parameters such as heart and respiration
 rate, body temperature is required. Additional factors that have a
 direct impact on the measure HP signal are:
@@ -533,7 +475,8 @@ II. Nutritional state -- Hyperpolarized signals are acutely sensitive to
     the fed/fasted state of the animal and the time of day the
     experiments are conducted.
 
-\*\*\* figure 4.3 here \*\*\*
+
+![Effects of Anesthetic agents on rodent brain metabolism of HP [1-13C]pyruvate](CH0004_OCFigure+4.3_Sriram_v1_Orig.jpg)
 
 **FIGURE 4.3: Effect of different anesthetic agents on rodent brain
 metabolism of HP \[1-^13^C\]pyruvate.** Reproduced with permission from
@@ -589,58 +532,14 @@ We would like to acknowledge the funding sources P41 EB013598 (NIH) and
 PC160630 (DoD) and the members of the Hyperpolarized MRI Technology
 Resource Center and the Pre-Clinical MR Imaging and Spectroscopy Core.
 
-**FIGURES**
 
-**FIGURE 4.1 Key elements for preserving polarization from dissolution
-to delivery into biological system.** This illustration shows the three
-major steps and the factors that determine the robustness of the HP
-signal. At the first stage of dissolution, its composition such as
-chelating agent, radical scavenger, solvent used and neutralization need
-to be optimized. At the subsequent step of physically transporting the
-polarized agent to the "measurement" magnet, a handheld electromagnet
-(2) or magnetic tunnel (3) to maintain low field vastly improves the HP
-signal lifetime. And finally, the manner of delivery and choice of model
-systems is crucial for successful measurement of HP agent metabolism.
-
-![](media/image1.jpeg){width="6.34375in" height="3.5854166666666667in"}
-
-**FIGURE 4.2: Components of bioreactor system to study metabolism of
-cells, tissues and organs.** A)Adapted from Harris et al (25), this
-figure shows the schematic of the bioreactor. It comprises of a fluid
-path containing the circulating media (via a peristaltic pump). The
-media also has a separate gas port for oxygen dissolution into the
-media. The injection port is provided to infuse hyperpolarized substrate
-from the polarizer (Hypersense). The inset shows the cells grown on
-polystyrene beads. This same schema can be used for tissue and organ
-studies by replacing the cell/bead by tissue slices or perfused organs.
-B) This subfigure, shows the components required to achieve thin tissue
-sections for use with bioreactor. This involves, procuring a 8 mm core
-from surgical resection, followed by slicing into 300-350 micron thick
-slices using a Krumdieck slicer. C)This image shows the components of a
-Langendorff perfused heart (adapted from (26))
-
-![](media/image14.jpeg){width="6.1819444444444445in"
-height="4.037179571303587in"}
-
-**FIGURE 4.3: Effect of different anesthetic agents on rodent brain
-metabolism of HP \[1-^13^C\]pyruvate.** Adapted from Marjańska et al
-(28), this figure shows the A) ^13^C spectra acquired 15 s after
-injection of HP \[1-^13^C\]pyruvate solution in two representative rats
-under isoflurane and morphine. B) Representative *in vivo* time courses
-of HP bicarbonate signal as a function of the anesthetic agent is shown.
-Maximal bicarbonate signal is observed under morphine and pentobarbitol
-resulted in diminished bicarbonate signal from HP \[1-^13^C\] pyruvate.
-
-![A close up of a map Description automatically
-generated](media/image21.jpeg){width="3.902050524934383in"
-height="6.221153762029746in"}
 
 **FURTHER STUDY**
 
 Bottomley, P. A., & Griffiths, J. R. (2016). Handbook of magnetic
 resonance spectroscopy in vivo: MRS theory, practice and applications.
 
-**Reference:**
+*References:*
 
 1\. Nelson SJ, Kurhanewicz J, Vigneron DB, et al. Metabolic Imaging of
 Patients with Prostate Cancer Using Hyperpolarized \[1-13C\]Pyruvate.

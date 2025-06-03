@@ -66,11 +66,8 @@ hyperpolarized experiment is non-recoverable and inexorably decays back
 to thermal (Boltzmann) equilibrium once the sample is removed from the
 polarizer. The longitudinal magnetization *M~z~(t)* can be written as:
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  $$M_{Z}(t) = M_{0} + \left( M_{Z,HP} - M_{0} \right)\text{exp}\left( - \frac{t}{T_{1}} \right) \cong \ M_{Z,HP}\text{exp}\left( - \frac{t}{T_{1}} \right)$$   \(1\)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+$ M_{Z}(t) = M_{0} + \left( M_{Z,HP} - M_{0} \right)\exp \left( - \frac{t}{T_{1}} \right) \cong \ M_{Z,HP} \exp\left( - \frac{t}{T_{1}} \right) $   \(1\)
 
 Here *M~Z,HP~* is the initial hyperpolarized magnetization, M~0~ is the
 thermal equilibrium magnetization, and T~1~ is the longitudinal
@@ -109,8 +106,6 @@ obtains at least 98.7% of the global optimum. It is therefore the case
 that the majority of reported studies do not use an injection scheme
 other than that of the boxcar.
 
-## 
-
 ## RF Decay & Metabolism
 
 In ^1^H MRI, the flip angle is chosen to provide a desired contrast or
@@ -125,12 +120,17 @@ magnetization. In the absence of metabolism, the expression for the
 longitudinal (*M~z~*) and transverse (*M~xy~*) magnetization after *n*
 RF excitations of a constant flip-angle θ is given by (6):
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   $M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta$                                                                                     \(2\)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ----------
   $M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta$ . \(3\)
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Effect of flip angle](fig-0.png)
+
+**Figure 1.** The effect of flip-angle (θ) on the longitudinal (M~z~)
+and transverse (M~xy~) magnetization. A large flip-angle rapidly
+consumes the polarization but provides the highest initial signal. A low
+flip-angle preserves the polarization and provides a smaller (but more
+consistent) signal throughout the acquisition. Data were simulated with
+a 3 s TR and a T~1~ of 30 s.
 
 A simple example showing the combined effects of T~1~ and repeated RF
 excitation on M~z~ and M~xy~ is illustrated in **Fig.** **1**. In this
@@ -179,6 +179,20 @@ spectral-spatial RF pulse (14) in metabolite-selective imaging
 sequences. These will be discussed in further detail in the next
 section.
 
+![Constant vs multiband flip angle strategies](fig-1.png)
+
+**Figure 2.** Constant vs multiband metabolite-specific flip angle
+strategies with a metabolically active substrate**.** Utilizing the same
+flip angle for both substrate and product results in excess substrate
+SNR and an overall reduction in product SNR because of the rapid drop in
+substrate M~z~. Using a multiband flip angle scheme -- lower excitation
+for substrate and higher for the metabolic product -- results in reduced
+usage of the substrate hyperpolarization, providing 1.8-fold more
+magnetization for the product in this example while still providing
+sufficient substrate SNR throughout the acquisition. Data were simulated
+with a 3 s TR, a T~1~ of 30 s for both substrate and product, and a
+metabolic conversion rate constant of 0.02 s^-1^.
+
 The key takeaway here is that RF pulses and metabolism will further
 utilize the non-recoverable magnetization, and the tradeoffs between SNR
 for a single timepoint and total SNR throughout the entire acquisition
@@ -212,11 +226,18 @@ the spectral separation between compounds, *δf*, along with either the
 slice selection gradient strength, G~z~, or the RF pulse bandwidth,
 BW~RF~, and slice thickness, *Δz*:
 
-  --------------------------------------------------------------------------------------------------------------------------------
-  $$\delta z = \frac{\text{δf}}{\frac{\gamma}{2\pi} \times G_{z}} = \frac{\text{δf}}{\text{BW}_{\text{RF}}}\Delta z$$   \(4\)
-  --------------------------------------------------------------------------------------------------------------------- ----------
+  $\delta z = \frac{\text{δf}}{\frac{\gamma}{2\pi} \times G_{z}} = \frac{\text{δf}}{\text{BW}_{\text{RF}}}\Delta z$   \(4\)
 
-  --------------------------------------------------------------------------------------------------------------------------------
+
+![Chemical shift slice displacement](fig-2.png)
+
+**Figure 3**. Example of chemical shift slice displacement. The large
+frequency difference between \[2-^13^C\]pyruvate and \[2-^13^C\]lactate
+(\~4500 Hz at 3 T) results in substantial slice displacement in this
+study of the rat brain using a conventional 2.3kHz slice-selective
+excitation, leading to errors in quantification. Figure adapted from
+Ref. (19).
+
 
 This is illustrated in **Fig. 3**, showing the slice displacement of
 \[2-^13^C\]pyruvate and metabolites in a rat brain study at 3 T (19).
@@ -341,6 +362,24 @@ on pre-clinical systems with high-performance gradients, as they can
 overcome the reduced gyromagnetic ratio to provide larger spectral
 bandwidths without the need for interleaved acquisitions.
 
+![Rapid MRSI methods employing multi-echo readout gradients](rapidMRSI.png)
+
+**Figure 4.** Illustration and comparison of several rapid MRSI methods
+employing multi-echo readout gradients. Left two columns: image k-space
+trajectories for EPSI (symmetric and flyback), spiral and concentric
+rings spectroscopic imaging. Right two columns: Design tradeoffs between
+spatial resolution, spectral bandwidth, acquisition time, and SNR
+efficiency, assuming typical clinical MRI system gradients with a
+maximum amplitude of 40 mT/m and maximum slew rate of 150 mT/m/ms. EPSI
+is the slowest but most robust. The concentric rings method requires
+half of the total acquisition time compared with the EPSI trajectories,
+offers about 87% SNR efficiency, and provides much wider spectral BW
+than flyback EPSI and symmetric EPSI. Although spirals are nominally the
+most efficient trajectories (offering the best acquisition time and
+spectral BW benefit while sacrificing the least SNR), they are limited
+by their susceptibility to gradient errors. Figure adapted from Ref.
+(29).
+
 A potential limitation of fast spectroscopic imaging is they still
 require relatively long scan times owing to the need to explicitly
 encode the spectral dimension. This limitation can be partially offset
@@ -354,7 +393,6 @@ priority over spatial coverage, for probe development when the
 metabolites aren't yet known, or for when spatial localization is
 limited by the receive profile of the surface coil.
 
-## 
 
 ## IDEAL CSI
 
@@ -406,6 +444,16 @@ narrow frequency response while retaining spatial selectivity. This is
 accomplished by playing a train of subpulses under a broad B1 envelope,
 in conjunction with an oscillating slice-select gradient (**Fig. 5**).
 
+![Spectral-spatial pulse example](fig-3.png)
+
+**Figure 5.** Example of a spectral-spatial RF pulse designed for
+studies of HP \[1-^13^C\]pyruvate and \[1-^13^C\]lactate. The RF
+envelope and oscillating gradient provide the spectral and spatial
+selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
+at isocenter (C) and across the entire slice (D) shows the narrow
+passband frequency response needed for metabolite-selective imaging.
+
+
 Because the spectral encoding is performed with the excitation,
 single-shot imaging readouts such as spiral or echoplanar trajectories
 can be employed to rapidly and efficiently encode the magnetization.
@@ -448,18 +496,28 @@ separately, multiband flip angle strategies that provide
 metabolite-specific flip angles can be easily integrated, which have
 been shown to increase SNR over a constant flip angle scheme (13,52).
 
+![Metabolite-selective imaging sequence overview](fig-4.png)
+
+**Figure 6**. Overview of a metabolite-selective imaging sequence. The
+singleband spectral-spatial RF pulse performs the spectral encoding,
+exciting a single metabolite within a slice (or slab). A rapid imaging
+readout trajectory is then used to spatially encode the magnetization as
+a 2D multi-slice or 3D slab encoded dataset. The acquisition then shifts
+the center frequency and cycles through the resonances of interest
+(pyruvate, lactate, and bicarbonate in this example) over time to
+acquire a volumetric dynamic dataset for each metabolite. Figure adapted
+from Ref. (48).
+
+
+
 It is elucidating to compare the scan time for fast spectroscopic
 imaging (i.e. EPSI) and metabolite-selective imaging (i.e. EPI)
 sequences. The scan time for a single timeframe is determined by the TR,
 number of slices (*nSlices*), and either number of phase-encodes (*nPE*)
 or number of metabolites encoded (*nMets*):
 
-  -------------------------------------------------------------------------------------------------------------------------
-  $$\text{Scan\ Time}\left( \text{EPSI} \right)\text{\ =\ TR} \times \text{nPE} \times \text{n}\text{Slices}$$   \(5\)
-  -------------------------------------------------------------------------------------------------------------- ----------
-  $$\text{Scan\ Time}\left( \text{EPI} \right)\text{\ =\ TR} \times \text{nMets} \times \text{nSlices}$$         \(6\)
-
-  -------------------------------------------------------------------------------------------------------------------------
+  $\text{Scan\ Time}\left( \text{EPSI} \right)\text{\ =\ TR} \times \text{nPE} \times \text{n}\text{Slices}$   \(5\)
+  $\text{Scan\ Time}\left( \text{EPI} \right)\text{\ =\ TR} \times \text{nMets} \times \text{nSlices}$         \(6\)
 
 Given that the number of hyperpolarized metabolites is less than the
 number of phase-encodes, and that the TR for metabolite-selective
@@ -508,6 +566,7 @@ due to inconsistencies between the phase encodings, which can be
 corrected for by estimating the phase coefficients from a ^1^H reference
 scan using the ^13^C waveform (50) or via an exhaustive search (59).
 
+
 Finally, because the RF pulse performs the spectral encoding, proper
 frequency calibration is crucial. B~0~ field inhomogeneity and
 miscalibration of the center frequency can reduce the applied flip angle
@@ -518,9 +577,17 @@ to a failure to excite the metabolites of interests. With smaller
 frequency shifts, the lower flip angle will lead to overall reduced SNR
 and can potentially bias quantification if left unaccounted.
 
-## 
-
 ## Pulse Sequence Summary
+
+| Acquisition Strategy      | Pros                                                    | Cons                                                                 | Ideal Application                                                                                 |
+|--------------------------|---------------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Phase-encoded CSI        | Provides a full spectrum; large spectral BW; high spectral resolution; robust to ΔB~0~ | Slow; k-space filtering from long acquisition times; limited volumetric coverage; sensitive to motion | Compounds with complicated spectra and/or large chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
+| Fast spectroscopic imaging | Faster than phase-encoded CSI; provides a full spectrum; robust to ΔB~0~ | Limited spectral BW; tradeoff with spectral BW, spatial resolution, and SNR efficiency; sensitive to motion | Compounds with limited chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
+| Metabolite-selective imaging | Fastest strategy for imaging a single metabolite; robust to motion | Sensitive to ΔB~0~; requires spectral separation of metabolites | Compounds with a sparse spectrum and isolated resonances; clinical studies that need volumetric coverage and high temporal resolution |
+
+**Table 1**. Comparison and summary of hyperpolarized pulse sequences
+discussed in this chapter.
+
 
 In summary, the choice of acquisition strategy depends highly on the
 application, as prior work has shown them to have similar SNR
@@ -536,6 +603,8 @@ pulse sequence strategies for HP MRI that are outside the scope of this
 chapter. For an in-depth review of other imaging sequences and
 acceleration strategies for hyperpolarized studies, please see the
 recent review article by Gordon et al (61).
+
+
 
 # RF Coils
 
@@ -605,6 +674,19 @@ resulting in significantly degraded performance. This combination
 requires additional circuitry and logic to turn on and off, or detune,
 the coils when not in use.
 
+![Phantom SNR images and line profiles](fig-5.png)
+
+**Figure 7**. SNR images and line profiles obtained from a phantom
+containing natural abundance ^13^C ethylene glycol using a birdcage
+(volume) transceiver, 8-channel paddle array, and 32-channel array at 3
+T. Data from the 8-channel paddle array were acquired at two distances
+to either match the 32-channel housing (19 cm separation) or to conform
+to the phantom and maximize SNR (16.3 cm separation). Note the \>2-fold
+improvement at the periphery with similar SNR performance (0.91 -- 0.97)
+at the head center. Figure adapted from Ref. (45).
+
+
+
 Key to this sensitivity improvement is how the multichannel data are
 combined. Optimally combining the multichannel data is crucial to
 maximizing SNR but most coil combination methods cannot be directly
@@ -639,6 +721,18 @@ bicarbonate and late-phase pyruvate dynamics, significantly improving
 image quality and contrast compared to a sum of squares approach and
 will enable robust quantification of HP ^13^C metabolism.
 
+![Coil combination methods for hyperpolarized data](fig-6.png) 
+
+**Figure 8**. Images of hyperpolarized \[1-^13^C\]pyruvate,
+\[1-^13^C\]lactate, and ^13^C-bicarboate human brain data acquired with
+a 32-channel coil and reconstructed with a sum-of-squares or data-driven
+(Refpeak) approach. While image quality is sufficient for the high-SNR
+pyruvate images using a simple sum-of-squares coil combination, image
+quality and SNR is degraded for lactate and especially bicarbonate when
+the coil weights are not known, limiting the achievable spatial
+resolution.
+
+
 Finally, multichannel data are 'pre-whitened' before coil combination,
 removing the noise correlations between channels and scaling the noise
 to identical amplitudes. A noise-only dataset is needed to pre-whiten
@@ -670,371 +764,76 @@ basis for subsequent chapters that discuss experimental methods and the
 integration of HP imaging into cancer, cardiac, liver, and neurological
 studies.
 
-# Tables
-
-  ----------------------------------------------------------------------------
-  Acquisition Strategy   Pros            Cons              Ideal Application
-  ---------------------- --------------- ----------------- -------------------
-  Phase-encoded CSI      Provides a full Slow; k-space     Compounds with
-                         spectrum; large filtering from    complicated spectra
-                         spectral BW;    long acquisition  and/or large
-                         high spectral   times; limited    chemical shift
-                         resolution;     volumetric        dispersion; studies
-                         robust to ΔB~0~ coverage;         with small FOVs or
-                                         sensitive to      coarse spatial
-                                         motion            resolution
-
-  Fast spectroscopic     Faster than     Limited spectral  Compounds with
-  imaging                phase-encoded   BW; tradeoff with limited chemical
-                         CSI; provides a spectral BW,      shift dispersion;
-                         full spectrum;  spatial           studies with small
-                         robust to ΔB~0~ resolution, and   FOVs or coarse
-                                         SNR efficiency;   spatial resolution
-                                         sensitive to      
-                                         motion            
-
-  Metabolite-selective   Fastest         Sensitive to      Compounds with a
-  imaging                strategy for    ΔB~0~; requires   sparse spectrum and
-                         imaging a       spectral          isolated
-                         single          separation of     resonances;
-                         metabolite;     metabolites       clinical studies
-                         robust to                         that need
-                         motion                            volumetric coverage
-                                                           and high temporal
-                                                           resolution
-  ----------------------------------------------------------------------------
-
-**Table 1**. Comparison and summary of hyperpolarized pulse sequences
-discussed in this chapter.
-
-# Figure Captions
-
-**Figure 1.** The effect of flip-angle (θ) on the longitudinal (M~z~)
-and transverse (M~xy~) magnetization. A large flip-angle rapidly
-consumes the polarization but provides the highest initial signal. A low
-flip-angle preserves the polarization and provides a smaller (but more
-consistent) signal throughout the acquisition. Data were simulated with
-a 3 s TR and a T~1~ of 30 s.
-
-**Figure 2.** Constant vs multiband metabolite-specific flip angle
-strategies with a metabolically active substrate**.** Utilizing the same
-flip angle for both substrate and product results in excess substrate
-SNR and an overall reduction in product SNR because of the rapid drop in
-substrate M~z~. Using a multiband flip angle scheme -- lower excitation
-for substrate and higher for the metabolic product -- results in reduced
-usage of the substrate hyperpolarization, providing 1.8-fold more
-magnetization for the product in this example while still providing
-sufficient substrate SNR throughout the acquisition. Data were simulated
-with a 3 s TR, a T~1~ of 30 s for both substrate and product, and a
-metabolic conversion rate constant of 0.02 s^-1^.
-
-**Figure 3**. Example of chemical shift slice displacement. The large
-frequency difference between \[2-^13^C\]pyruvate and \[2-^13^C\]lactate
-(\~4500 Hz at 3 T) results in substantial slice displacement in this
-study of the rat brain using a conventional 2.3kHz slice-selective
-excitation, leading to errors in quantification. Figure adapted from
-Ref. (19).
-
-**Figure 4.** Illustration and comparison of several rapid MRSI methods
-employing multi-echo readout gradients. Left two columns: image k-space
-trajectories for EPSI (symmetric and flyback), spiral and concentric
-rings spectroscopic imaging. Right two columns: Design tradeoffs between
-spatial resolution, spectral bandwidth, acquisition time, and SNR
-efficiency, assuming typical clinical MRI system gradients with a
-maximum amplitude of 40 mT/m and maximum slew rate of 150 mT/m/ms. EPSI
-is the slowest but most robust. The concentric rings method requires
-half of the total acquisition time compared with the EPSI trajectories,
-offers about 87% SNR efficiency, and provides much wider spectral BW
-than flyback EPSI and symmetric EPSI. Although spirals are nominally the
-most efficient trajectories (offering the best acquisition time and
-spectral BW benefit while sacrificing the least SNR), they are limited
-by their susceptibility to gradient errors. Figure adapted from Ref.
-(29).
-
-**Figure 5.** Example of a spectral-spatial RF pulse designed for
-studies of HP \[1-^13^C\]pyruvate and \[1-^13^C\]lactate. The RF
-envelope and oscillating gradient provide the spectral and spatial
-selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
-at isocenter (C) and across the entire slice (D) shows the narrow
-passband frequency response needed for metabolite-selective imaging.
-
-**Figure 6**. Overview of a metabolite-selective imaging sequence. The
-singleband spectral-spatial RF pulse performs the spectral encoding,
-exciting a single metabolite within a slice (or slab). A rapid imaging
-readout trajectory is then used to spatially encode the magnetization as
-a 2D multi-slice or 3D slab encoded dataset. The acquisition then shifts
-the center frequency and cycles through the resonances of interest
-(pyruvate, lactate, and bicarbonate in this example) over time to
-acquire a volumetric dynamic dataset for each metabolite. Figure adapted
-from Ref. (48).
-
-**Figure 7**. SNR images and line profiles obtained from a phantom
-containing natural abundance ^13^C ethylene glycol using a birdcage
-(volume) transceiver, 8-channel paddle array, and 32-channel array at 3
-T. Data from the 8-channel paddle array were acquired at two distances
-to either match the 32-channel housing (19 cm separation) or to conform
-to the phantom and maximize SNR (16.3 cm separation). Note the \>2-fold
-improvement at the periphery with similar SNR performance (0.91 -- 0.97)
-at the head center. Figure adapted from Ref. (45).
-
-**Figure 8**. Images of hyperpolarized \[1-^13^C\]pyruvate,
-\[1-^13^C\]lactate, and ^13^C-bicarboate human brain data acquired with
-a 32-channel coil and reconstructed with a sum-of-squares or data-driven
-(Refpeak) approach. While image quality is sufficient for the high-SNR
-pyruvate images using a simple sum-of-squares coil combination, image
-quality and SNR is degraded for lactate and especially bicarbonate when
-the coil weights are not known, limiting the achievable spatial
-resolution.
-
 # References
-
-<https://doi.org/10.1038/s41391-019-0180-z>
-
-1\. Ardenkjær-Larsen JH, Fridlund B, Gram A, Hansson G, Hansson L,
-Lerche MH, Servin R, Thaning M, Golman K. Increase in signal-to-noise
-ratio of \> 10,000 times in liquid-state NMR. Proc Natl Acad Sci USA
-2003;100(18):10158-10163.2. Golman K, in 't Zandt R, Thaning M.
-Real-time metabolic imaging. Proceedings of the National Academy of
-Sciences 2006;103(30):11270.3. Kovtunov KV, Pokochueva EV, Salnikov OG,
-Cousin SF, Kurzbach D, Vuichoud B, Jannin S, Chekmenev EY, Goodson BM,
-Barskiy DA, Koptyug IV. Hyperpolarized NMR Spectroscopy: d-DNP, PHIP,
-and SABRE Techniques. Chemistry -- An Asian Journal
-2018;13(15):1857-1871.4. Adams RW, Aguilar JA, Atkinson KD, Cowley MJ,
-Elliott PIP, Duckett SB, Green GGR, Khazal IG, López-Serrano J,
-Williamson DC. Reversible Interactions with para-Hydrogen Enhance NMR
-Sensitivity by Polarization Transfer. Science 2009;323(5922):1708.5.
-Maidens J, Arcak M. Semidefinite relaxations in optimal experiment
-design with application to substrate injection for hyperpolarized MRI.
-2016 American Control Conference (ACC). p 2023-2028.6. Zhao L, Mulkern
-R, Tseng C-H, Williamson D, Patz S, Kraft R, Walsworth RL, Jolesz FA,
-Albert MS. Gradient-Echo Imaging Considerations for Hyperpolarized129Xe
-MR. Journal of Magnetic Resonance, Series B 1996;113(2):179-183.7.
-Maidens J, Gordon JW, Arcak M, Larson PEZ. Optimizing flip angles for
-metabolic rate estimation in hyperpolarized carbon-13 MRI. IEEE
-Transactions on Medical Imaging 2016;PP(99):1-1.8. Nagashima K. Optimum
-pulse flip angles for multi-scan acquisition of hyperpolarized NMR and
-MRI. Journal of Magnetic Resonance 2008;190(2):183-188.9. Deng H, Zhong
-J, Ruan W, Chen X, Sun X, Ye C, Liu M, Zhou X. Constant-variable flip
-angles for hyperpolarized media MRI. Journal of Magnetic Resonance
-2016;263:92-100.10. Xing Y, Reed GD, Pauly JM, Kerr AB, Larson PEZ.
-Optimal variable flip angle schemes for dynamic acquisition of
-exchanging hyperpolarized substrates. Journal of Magnetic Resonance
-2013;234(0):75-81.11. Walker CM, Fuentes D, Larson PEZ, Kundra V,
-Vigneron DB, Bankson JA. Effects of excitation angle strategy on
-quantitative analysis of hyperpolarized pyruvate. Magnetic Resonance in
-Medicine 2019;81(6):3754-3762.12. Larson PEZ, Chen H-Y, Gordon JW, Korn
-N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok
-R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron
-DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate
-metabolic MRI in prostate cancer patients. NMR in Biomedicine
-2018;0(0):e3997.13. Larson PEZ, Kerr AB, Chen AP, Lustig MS, Zierhut ML,
-Hu S, Cunningham CH, Pauly JM, Kurhanewicz J, Vigneron DB. Multiband
-excitation pulses for hyperpolarized 13C dynamic chemical-shift imaging.
-Journal of Magnetic Resonance 2008;194(1):121-127.14. Cunningham CH,
-Chen AP, Lustig M, Hargreaves BA, Lupo J, Xu D, Kurhanewicz J, Hurd RE,
-Pauly JM, Nelson SJ, Vigneron DB. Pulse sequence for dynamic volumetric
-imaging of hyperpolarized metabolic products. Journal of Magnetic
-Resonance 2008;193(1):139-146.15. Le Roux P. Simplified model and
-stabilization of SSFP sequences. Journal of Magnetic Resonance
-2003;163(1):23-37.16. Shang H, Sukumar S, Morze C, Bok RA, Marco-Rius I,
-Kerr A, Reed GD, Milshteyn E, Ohliger MA, Kurhanewicz J, Larson PEZ,
-Pauly JM, Vigneron DB. Spectrally selective three-dimensional dynamic
-balanced steady-state free precession for hyperpolarized C-13 metabolic
-imaging with spectrally selective radiofrequency pulses. Magnetic
-Resonance in Medicine 2016;78(3):963-975.17. Svensson J, Månsson S,
-Johansson E, Petersson JS, Olsson LE. Hyperpolarized 13C MR angiography
-using trueFISP. Magnetic Resonance in Medicine 2003;50(2):256-262.18.
-Cunningham CH, Chen AP, Albers MJ, Kurhanewicz J, Hurd RE, Yen Y-F,
-Pauly JM, Nelson SJ, Vigneron DB. Double spin-echo sequence for rapid
-spectroscopic imaging of hyperpolarized 13C. Journal of Magnetic
-Resonance 2007;187(2):357-362.19. Park JM, Josan S, Jang T, Merchant M,
-Watkins R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral
-chemical shift imaging of hyperpolarized \[2-13c\]pyruvate in a rat c6
-glioma model. Magnetic Resonance in Medicine 2015;75(3):973-984.20. von
-Morze C, Larson PEZ, Hu S, Keshari K, Wilson DM, Ardenkjaer-Larsen JH,
-Goga A, Bok R, Kurhanewicz J, Vigneron DB. Imaging of blood flow using
-hyperpolarized \[13C\]Urea in preclinical cancer models. Journal of
-Magnetic Resonance Imaging 2011;33(3):692-697.21. von Morze C, Bok RA,
-Reed GD, Ardenkjaer-Larsen JH, Kurhanewicz J, Vigneron DB. Simultaneous
-multiagent hyperpolarized 13C perfusion imaging. Magnetic Resonance in
-Medicine 2014;72(6):1599-1609.22. Schroeder MA, Lau AZ, Chen AP, Gu Y,
-Nagendran J, Barry J, Hu X, Dyck JRB, Tyler DJ, Clarke K, Connelly KA,
-Wright GA, Cunningham CH. Hyperpolarized 13C magnetic resonance reveals
-early- and late-onset changes to in vivo pyruvate metabolism in the
-failing heart. European Journal of Heart Failure 2013;15(2):130-140.23.
-Chung BT, Chen H-Y, Gordon J, Mammoli D, Sriram R, Autry AW, Le Page LM,
-Chaumeil M, Shin P, Slater J, Tan CT, Suszczynski C, Chang S, Li Y, Bok
-RA, Ronen SM, Larson PEZ, Kurhanewicz J, Vigneron DB. First
-hyperpolarized \[2-13C\]pyruvate MR studies of human brain metabolism.
-Journal of Magnetic Resonance 2019;309:106617.24. Rodrigues TB, Serrao
-EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle KM. Magnetic resonance
-imaging of tumor glycolysis using hyperpolarized 13C-labeled glucose.
-Nature Medicine 2014;20(1):93-97.25. Kohler SJ, Yen Y, Wolber J, Chen
-AP, Albers MJ, Bok R, Zhang V, Tropp J, Nelson S, Vigneron DB,
-Kurhanewicz J, Hurd RE. In vivo 13carbon metabolic imaging at 3T with
-hyperpolarized 13C-1-pyruvate. Magnetic Resonance in Medicine
-2007;58(1):65-69.26. Yen Y-F, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber
-J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ,
-Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations
-for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate.
-Magn Reson Med 2009;62(1):1-10.27. Mayer D, Levin YS, Hurd RE, Glover
-GH, Spielman DM. Fast metabolic imaging of systems with sparse spectra:
-application for hyperpolarized 13C imaging. Magn Reson Med
-2006;56(4):932\--937.28. Ramirez MS, Lee J, Walker CM, Sandulache VC,
-Hennel F, Lai SY, Bankson JA. Radial spectroscopic MRI of hyperpolarized
-\[1-(13) C\] pyruvate at 7 tesla. Magn Reson Med 2013.29. Jiang W,
-Lustig M, Larson PEZ. Concentric rings K-space trajectory for
-hyperpolarized 13C MR spectroscopic imaging. Magnetic Resonance in
-Medicine 2016;75(1):19-31.30. Jackson JI, Meyer CH, Nishimura DG,
-Macovski A. Selection of a Convolution Function for Fourier Inversion
-Using Gridding. IEEE Trans Med Imaging 1991;10(3):473\--478.31. Fessler
-JA, Sutton BP. Nonuniform fast Fourier transforms using min-max
-interpolation. IEEE Trans Signal Proc 2003;51(2):560-574.32. Park I,
-Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M,
-Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson
-SJ. Development of methods and feasibility of using hyperpolarized
-carbon‐13 imaging data for evaluating brain metabolism in patient
-studies. Magnetic Resonance in Medicine 2018;80(3):864-873.33. Miloushev
-VZ, Granlund KL, Boltyanskiy R, Lyashchenko SK, DeAngelis LM,
-Mellinghoff IK, Brennan CW, Tabar V, Yang TJ, Holodny AI, Sosa RE, Guo
-YW, Chen AP, Tropp J, Robb F, Keshari KR. Metabolic Imaging of the Human
-Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C Lactate
-Production in Brain Tumor Patients. Cancer Research 2018;78(14):3755.34.
-Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PEZ, Harzstark AL, Ferrone
-M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small
-EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE,
-Odegardstuen L-I, Robb FJ, Tropp J, Murray JA. Metabolic Imaging of
-Patients with Prostate Cancer Using Hyperpolarized \[1-13C\]Pyruvate.
-Science Translational Medicine 2013;5(198):198ra108.35. Granlund KL, Tee
-S-S, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA,
-Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP,
-Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human
-Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by
-Monocarboxylate Transporter 1. Cell Metabolism
-2019;31(1):105-114.e103.36. Chen H-Y, Larson PEZ, Gordon JW, Bok RA,
-Ferrone M, Criekinge M, Carvajal L, Cao P, Pauly JM, Kerr AB, Park I,
-Slater JB, Nelson SJ, Munster PN, Aggarwal R, Kurhanewicz J, Vigneron
-DB. Technique development of 3D dynamic CS-EPSI for hyperpolarized 13C
-pyruvate MR molecular imaging of human prostate cancer. Magnetic
-Resonance in Medicine 2018;80(5):2062-2072.37. Chen H, Aggarwal R, Bok
-R, Ohliger M, Zhu Z, Lee P, Gordon Jeremy W, Criekinge MV, Carvajal L,
-Slater James B, Larson Peder EZ, Small EJ, Kurhanewicz J, Vignaud A.
-Hyperpolarized 13C-Pyruvate MRI Detects Real-Time Metabolic Flux in
-Prostate Cancer Metastases to Bone and Liver: A Clinical Feasibility
-Study. Prostate Cancer and Prostatic Diseases 2019 (In Press). .38. Tran
-M, Latifoltojar A, Neves JB, Papoutsaki M-V, Gong F, Comment A, Costa
-ASH, Glaser M, Tran-Dang M-A, El Sheikh S, Piga W, Bainbridge A, Barnes
-A, Young T, Jeraj H, Awais R, Adeleke S, Holt C, O'Callaghan J, Twyman
-F, Atkinson D, Frezza C, Årstad E, Gadian D, Emberton M, Punwani S.
-First-in-human in vivo non-invasive assessment of intra-tumoral
-metabolic heterogeneity in renal cell carcinoma. BJR\|case reports
-2019;5(3):20190003.39. Stødkilde-Jørgensen H, Laustsen C, Hansen ESS,
-Schulte R, Ardenkjaer-Larsen JH, Comment A, Frøkiær J, Ringgaard S,
-Bertelsen LB, Ladekarl M, Weber B. Pilot Study Experiences With
-Hyperpolarized \[1-13C\]pyruvate MRI in Pancreatic Cancer Patients.
-Journal of Magnetic Resonance Imaging 2019;0(0).40. Yen YF, Kohler SJ,
-Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park
-I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM,
-Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using
-hyperpolarized 13C-pyruvate. Magnetic Resonance in Medicine
-2009;62(1):1-10.41. Reeder SB, Brittain JH, Grist TM, Yen Y-F.
-Least-squares chemical shift separation for 13C metabolic imaging.
-Journal of Magnetic Resonance Imaging 2007;26(4):1145-1152.42. Wiesinger
-F, Weidl E, Menzel MI, Janich MA, Khegai O, Glaser SJ, Haase A,
-Schwaiger M, Schulte RF. IDEAL spiral CSI for dynamic metabolic MR
-imaging of hyperpolarized \[1-13C\]pyruvate. Magnetic Resonance in
-Medicine 2012;68(1):8-16.43. Gordon JW, Niles DJ, Fain SB, Johnson KM.
-Joint spatial-spectral reconstruction and k-t spirals for accelerated 2D
-spatial/1D spectral imaging of 13C dynamics. Magnetic Resonance in
-Medicine 2014;71(4):1435-1445.44. Khegai O, Schulte RF, Janich MA,
-Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A,
-Schwaiger M, Wiesinger F. Apparent rate constant mapping using
-hyperpolarized \[1--13C\]pyruvate. NMR in Biomedicine
-2014;27(10):1256-1265.45. Macdonald EB, Barton GP, Cox BL, Johnson KM,
-Strigel RM, Fain SB. Improved reconstruction stability for chemical
-shift encoded hyperpolarized 13C magnetic resonance spectroscopic
-imaging using k-t spiral acquisitions. Magnetic Resonance in Medicine
-2020;84(1):25-38.46. Meyer CH, Pauly JM, Macovskiand A, Nishimura DG.
-Simultaneous spatial and spectral selective excitation. Magnetic
-Resonance in Medicine 1990;15(2):287-304.47. Schulte RF, Wiesinger F.
-Direct design of 2D RF pulses using matrix inversion. Journal of
-Magnetic Resonance 2013;235(0):115-120.48. Lau AZ, Chen AP, Hurd RE,
-Cunningham CH. Spectral--spatial excitation for rapid imaging of DNP
-compounds. NMR in Biomedicine 2011;24(8):988-996.49. Miller JJ. Dynamic
-nuclear polarisation as a probe of metabolism in pathophysiology.
-2015.50. Gordon JW, Vigneron DB, Larson PEZ. Development of a symmetric
-echo planar imaging framework for clinical translation of rapid dynamic
-hyperpolarized 13C imaging. Magnetic Resonance in Medicine
-2017;77(2):826-832.51. Cunningham CH, Lau JY, Chen AP, Geraghty BJ,
-Perks WJ, Roifman I, Wright GA, Connelly KA. Hyperpolarized 13C
-Metabolic MRI of the Human Heart: Initial Experience. Circulation
-Research 2016;119:1177--1182.52. Sigfridsson A, Weiss K, Wissmann L,
-Busch J, Krajewski M, Batel M, Batsios G, Ernst M, Kozerke S. Hybrid
-multiband excitation multiecho acquisition for hyperpolarized 13C
-spectroscopic imaging. Magnetic Resonance in Medicine
-2015;73(5):1713-1717.53. Gordon JW, Chen H-Y, Autry A, Park I, Van
-Criekinge M, Mammoli D, Milshteyn E, Bok R, Xu D, Li Y, Aggarwal R,
-Chang S, Slater JB, Ferrone M, Nelson S, Kurhanewicz J, Larson PEZ,
-Vigneron DB. Translation of Carbon-13 EPI for hyperpolarized MR
-molecular imaging of prostate and brain cancer patients. Magnetic
-Resonance in Medicine 2019;81:2702-- 2709.54. Gallagher FA, Kettunen MI,
-Day SE, Hu DE, Ardenkjaer-Larsen JH, Zandt R, Jensen PR, Karlsson M,
-Golman K, Lerche MH, Brindle KM. Magnetic resonance imaging of pH in
-vivo using hyperpolarized 13C-labelled bicarbonate. Nature
-2008;453(7197):940-943.55. Gallagher FA, Kettunen MI, Hu D-E, Jensen PR,
-Zandt Rit, Karlsson M, Gisselsson A, Nelson SK, Witney TH, Bohndiek SE,
-Hansson G, Peitersen T, Lerche MH, Brindle KM. Production of
-hyperpolarized \[1,4-13C2\]malate from \[1,4-13C2\]fumarate is a marker
-of cell necrosis and treatment response in tumors. Proceedings of the
-National Academy of Sciences 2009;106(47):19801-19806.56. Lau AZ, Chen
-AP, Ghugre NR, Ramanan V, Lam WW, Connelly KA, Wright GA, Cunningham CH.
-Rapid multislice imaging of hyperpolarized 13C pyruvate and bicarbonate
-in the heart. Magnetic Resonance in Medicine 2010;64(5):1323-1331.57.
-Miller JJ, Lau AZ, Tyler DJ. Susceptibility-induced distortion
-correction in hyperpolarized echo planar imaging. Magnetic Resonance in
-Medicine 2018;79(4):2135-2141.58. Geraghty BJ, Lau JYC, Chen AP,
-Cunningham CH. Dual-Echo EPI sequence for integrated distortion
-correction in 3D time-resolved hyperpolarized 13C MRI. Magnetic
-Resonance in Medicine 2018;79(2):643-653.59. Wang J, Wright AJ, Hesketh
-RL, Hu D-e, Brindle KM. A referenceless Nyquist ghost correction
-workflow for echo planar imaging of hyperpolarized \[1-13C\]pyruvate and
-\[1-13C\]lactate. NMR in Biomedicine 2018;31(2):e3866.60. Durst M,
-Koellisch U, Frank A, Rancan G, Gringeri CV, Karas V, Wiesinger F,
-Menzel MI, Schwaiger M, Haase A, Schulte RF. Comparison of acquisition
-schemes for hyperpolarised 13C imaging. NMR in Biomedicine 2015;28:715--
-725.61. Gordon JW, Chen H-Y, Dwork N, Tang S, Larson PEZ. Fast Imaging
-for Hyperpolarized MR Metabolic Imaging. Journal of Magnetic Resonance
-Imaging 2020;DOI: 10.1002/jmri.27070.62. Gruber B, Froeling M, Leiner T,
-Klomp Dennis WJ. RF coils: A practical guide for nonphysicists. Journal
-of Magnetic Resonance Imaging 2018;0(0).63. Doty FD, Entzminger G,
-Kulkarni J, Pamarthy K, Staab JP. Radio frequency coil technology for
-small-animal MRI. NMR in Biomedicine 2007;20(3):304-325.64. Sun C-y,
-Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of
-parameter accuracy on pharmacokinetic analysis of hyperpolarized
-pyruvate. Magnetic Resonance in Medicine 2018;79:3239-3248.65. Haase A,
-Odoj F, Von Kienlin M, Warnking J, Fidler F, Weisser A, Nittka M, Rommel
-E, Lanz T, Kalusche B, Griswold M. NMR probeheads for in vivo
-applications. Concepts in Magnetic Resonance 2000;12(6):361-388.66.
-Gordon JW, Hansen RB, Shin PJ, Feng Y, Vigneron DB, Larson PEZ. 3D
-hyperpolarized C-13 EPI with calibrationless parallel imaging. Journal
-of Magnetic Resonance 2018;289:92-99.67. Hansen RB, Sánchez-Heredia JD,
-Bøgh N, Hansen ESS, Laustsen C, Hanson LG, Ardenkjær-Larsen JH. Coil
-profile estimation strategies for parallel imaging with hyperpolarized
-13C MRI. Magnetic Resonance in Medicine 2019;82(6):2104-2117.68. Autry
-AW, Gordon JW, Carvajal L, Mareyam A, Chen H-Y, Park I, Mammoli D,
-Vareth M, Chang SM, Wald LL, Xu D, Vigneron DB, Nelson SJ, Li Y.
-Comparison between 8- and 32-channel phased-array receive coils for in
-vivo hyperpolarized 13C imaging of the human brain. Magnetic Resonance
-in Medicine 2019;82:833-- 841.69. Dominguez-Viqueira W, Geraghty BJ, Lau
-JYC, Robb FJ, Chen AP, Cunningham CH. Intensity correction for
-multichannel hyperpolarized 13C imaging of the heart. Magnetic Resonance
-in Medicine 2016;75(2):859-865.70. Zhu Z, Zhu X, Ohliger MA, Tang S, Cao
-P, Carvajal L, Autry AW, Li Y, Kurhanewicz J, Chang S, Aggarwal R,
-Munster P, Xu D, Larson PEZ, Vigneron DB, Gordon JW. Coil combination
-methods for multi-channel hyperpolarized 13C imaging data from human
-studies. Journal of Magnetic Resonance 2019;301:73-79.71. Roemer PB,
-Edelstein WA, Hayes CE, Souza SP, Mueller OM. The NMR phased array.
-Magnetic Resonance in Medicine 1990;16(2):192-225.72. Rodgers CT, Robson
-MD. Receive array magnetic resonance spectroscopy: Whitened singular
-value decomposition (WSVD) gives optimal Bayesian solution. Magnetic
-Resonance in Medicine 2010;63(4):881-891.
+1. Ardenkjær-Larsen JH, Fridlund B, Gram A, Hansson G, Hansson L, Lerche MH, Servin R, Thaning M, Golman K. Increase in signal-to-noise ratio of > 10,000 times in liquid-state NMR. Proc Natl Acad Sci USA 2003;100(18):10158-10163.
+2. Golman K, in 't Zandt R, Thaning M. Real-time metabolic imaging. Proceedings of the National Academy of Sciences 2006;103(30):11270.
+3. Kovtunov KV, Pokochueva EV, Salnikov OG, Cousin SF, Kurzbach D, Vuichoud B, Jannin S, Chekmenev EY, Goodson BM, Barskiy DA, Koptyug IV. Hyperpolarized NMR Spectroscopy: d-DNP, PHIP, and SABRE Techniques. Chemistry -- An Asian Journal 2018;13(15):1857-1871.
+4. Adams RW, Aguilar JA, Atkinson KD, Cowley MJ, Elliott PIP, Duckett SB, Green GGR, Khazal IG, López-Serrano J, Williamson DC. Reversible Interactions with para-Hydrogen Enhance NMR Sensitivity by Polarization Transfer. Science 2009; 323(5922):1708.
+5. Maidens J, Arcak M. Semidefinite relaxations in optimal experiment design with application to substrate injection for hyperpolarized MRI. 2016 American Control Conference (ACC). p 2023-2028.
+6. Zhao L, Mulkern R, Tseng C-H, Williamson D, Patz S, Kraft R, Walsworth RL, Jolesz FA, Albert MS. Gradient-Echo Imaging Considerations for Hyperpolarized129Xe MR. Journal of Magnetic Resonance, Series B 1996;113(2):179-183.
+7. Maidens J, Gordon JW, Arcak M, Larson PEZ. Optimizing flip angles for metabolic rate estimation in hyperpolarized carbon-13 MRI. IEEE Transactions on Medical Imaging 2016;PP(99):1-1.
+8. Nagashima K. Optimum pulse flip angles for multi-scan acquisition of hyperpolarized NMR and MRI. Journal of Magnetic Resonance 2008;190(2):183-188.
+9. Deng H, Zhong J, Ruan W, Chen X, Sun X, Ye C, Liu M, Zhou X. Constant-variable flip angles for hyperpolarized media MRI. Journal of Magnetic Resonance 2016;263:92-100.
+10. Xing Y, Reed GD, Pauly JM, Kerr AB, Larson PEZ. Optimal variable flip angle schemes for dynamic acquisition of exchanging hyperpolarized substrates. Journal of Magnetic Resonance 2013;234(0):75-81.
+11. Walker CM, Fuentes D, Larson PEZ, Kundra V, Vigneron DB, Bankson JA. Effects of excitation angle strategy on quantitative analysis of hyperpolarized pyruvate. Magnetic Resonance in Medicine 2019;81(6):3754-3762.
+12. Larson PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate metabolic MRI in prostate cancer patients. NMR in Biomedicine 2018;0(0):e3997.
+13. Larson PEZ, Kerr AB, Chen AP, Lustig MS, Zierhut ML, Hu S, Cunningham CH, Pauly JM, Kurhanewicz J, Vigneron DB. Multiband excitation pulses for hyperpolarized 13C dynamic chemical-shift imaging. Journal of Magnetic Resonance 2008;194(1):121-127.
+14. Cunningham CH, Chen AP, Lustig M, Hargreaves BA, Lupo J, Xu D, Kurhanewicz J, Hurd RE, Pauly JM, Nelson SJ, Vigneron DB. Pulse sequence for dynamic volumetric imaging of hyperpolarized metabolic products. Journal of Magnetic Resonance 2008;193(1):139-146.
+15. Le Roux P. Simplified model and stabilization of SSFP sequences. Journal of Magnetic Resonance 2003;163(1):23-37.
+16. Shang H, Sukumar S, Morze C, Bok RA, Marco-Rius I, Kerr A, Reed GD, Milshteyn E, Ohliger MA, Kurhanewicz J, Larson PEZ, Pauly JM, Vigneron DB. Spectrally selective three-dimensional dynamic balanced steady-state free precession for hyperpolarized C-13 metabolic imaging with spectrally selective radiofrequency pulses. Magnetic Resonance in Medicine 2016;78(3):963-975.
+17. Svensson J, Månsson S, Johansson E, Petersson JS, Olsson LE. Hyperpolarized 13C MR angiography using trueFISP. Magnetic Resonance in Medicine 2003;50(2):256-262.
+18. Cunningham CH, Chen AP, Albers MJ, Kurhanewicz J, Hurd RE, Yen Y-F, Pauly JM, Nelson SJ, Vigneron DB. Double spin-echo sequence for rapid spectroscopic imaging of hyperpolarized 13C. Journal of Magnetic Resonance 2007;187(2):357-362.
+19. Park JM, Josan S, Jang T, Merchant M, Watkins R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral chemical shift imaging of hyperpolarized [2-13c]pyruvate in a rat c6 glioma model. Magnetic Resonance in Medicine 2015;75(3):973-984.
+20. von Morze C, Larson PEZ, Hu S, Keshari K, Wilson DM, Ardenkjaer-Larsen JH, Goga A, Bok R, Kurhanewicz J, Vigneron DB. Imaging of blood flow using hyperpolarized [13C]Urea in preclinical cancer models. Journal of Magnetic Resonance Imaging 2011;33(3):692-697.
+21. von Morze C, Bok RA, Reed GD, Ardenkjaer-Larsen JH, Kurhanewicz J, Vigneron DB. Simultaneous multiagent hyperpolarized 13C perfusion imaging. Magnetic Resonance in Medicine 2014;72(6):1599-1609.
+22. Schroeder MA, Lau AZ, Chen AP, Gu Y, Nagendran J, Barry J, Hu X, Dyck JRB, Tyler DJ, Clarke K, Connelly KA, Wright GA, Cunningham CH. Hyperpolarized 13C magnetic resonance reveals early- and late-onset changes to in vivo pyruvate metabolism in the failing heart. European Journal of Heart Failure 2013;15(2):130-140.
+23. Chung BT, Chen H-Y, Gordon J, Mammoli D, Sriram R, Autry AW, Le Page LM, Chaumeil M, Shin P, Slater J, Tan CT, Suszczynski C, Chang S, Li Y, Bok RA, Ronen SM, Larson PEZ, Kurhanewicz J, Vigneron DB. First hyperpolarized [2-13C]pyruvate MR studies of human brain metabolism. Journal of Magnetic Resonance 2019;309:106617.
+24. Rodrigues TB, Serrao EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle KM. Magnetic resonance imaging of tumor glycolysis using hyperpolarized 13C-labeled glucose. Nature Medicine 2014;20(1):93-97.
+25. Kohler SJ, Yen Y, Wolber J, Chen AP, Albers MJ, Bok R, Zhang V, Tropp J, Nelson S, Vigneron DB, Kurhanewicz J, Hurd RE. In vivo 13carbon metabolic imaging at 3T with hyperpolarized 13C-1-pyruvate. Magnetic Resonance in Medicine 2007;58(1):65-69.
+26. Yen Y-F, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate. Magn Reson Med 2009;62(1):1-10.
+27. Mayer D, Levin YS, Hurd RE, Glover GH, Spielman DM. Fast metabolic imaging of systems with sparse spectra: application for hyperpolarized 13C imaging. Magn Reson Med 2006;56(4):932--937.
+28. Ramirez MS, Lee J, Walker CM, Sandulache VC, Hennel F, Lai SY, Bankson JA. Radial spectroscopic MRI of hyperpolarized [1-(13) C] pyruvate at 7 tesla. Magn Reson Med 2013.
+29. Jiang W, Lustig M, Larson PEZ. Concentric rings K-space trajectory for hyperpolarized 13C MR spectroscopic imaging. Magnetic Resonance in Medicine 2016;75(1):19-31.
+30. Jackson JI, Meyer CH, Nishimura DG, Macovski A. Selection of a Convolution Function for Fourier Inversion Using Gridding. IEEE Trans Med Imaging 1991;10(3):473--478.
+31. Fessler JA, Sutton BP. Nonuniform fast Fourier transforms using min-max interpolation. IEEE Trans Signal Proc 2003;51(2):560-574.
+32. Park I, Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M, Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson SJ. Development of methods and feasibility of using hyperpolarized carbon‐13 imaging data for evaluating brain metabolism in patient studies. Magnetic Resonance in Medicine 2018;80(3):864-873.
+33. Miloushev VZ, Granlund KL, Boltyanskiy R, Lyashchenko SK, DeAngelis LM, Mellinghoff IK, Brennan CW, Tabar V, Yang TJ, Holodny AI, Sosa RE, Guo YW, Chen AP, Tropp J, Robb F, Keshari KR. Metabolic Imaging of the Human Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C Lactate Production in Brain Tumor Patients. Cancer Research 2018;78(14):3755.
+34. Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PEZ, Harzstark AL, Ferrone M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE, Odegardstuen L-I, Robb FJ, Tropp J, Murray JA. Metabolic Imaging of Patients with Prostate Cancer Using Hyperpolarized [1-13C]Pyruvate. Science Translational Medicine 2013;5(198):198ra108.
+35. Granlund KL, Tee S-S, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate Transporter 1. Cell Metabolism 2019;31(1):105-114.e103.
+36. Chen H-Y, Larson PEZ, Gordon JW, Bok RA, Ferrone M, Criekinge M, Carvajal L, Cao P, Pauly JM, Kerr AB, Park I, Slater JB, Nelson SJ, Munster PN, Aggarwal R, Kurhanewicz J, Vigneron DB. Technique development of 3D dynamic CS-EPSI for hyperpolarized 13C pyruvate MR molecular imaging of human prostate cancer. Magnetic Resonance in Medicine 2018;80(5):2062-2072.
+37. Chen H, Aggarwal R, Bok R, Ohliger M, Zhu Z, Lee P, Gordon Jeremy W, Criekinge MV, Carvajal L, Slater James B, Larson Peder EZ, Small EJ, Kurhanewicz J, Vignaud A. Hyperpolarized 13C-Pyruvate MRI Detects Real-Time Metabolic Flux in Prostate Cancer Metastases to Bone and Liver: A Clinical Feasibility Study. Prostate Cancer and Prostatic Diseases 2019 (In Press).  <https://doi.org/10.1038/s41391-019-0180-z>.
+38. Tran M, Latifoltojar A, Neves JB, Papoutsaki M-V, Gong F, Comment A, Costa ASH, Glaser M, Tran-Dang M-A, El Sheikh S, Piga W, Bainbridge A, Barnes A, Young T, Jeraj H, Awais R, Adeleke S, Holt C, O'Callaghan J, Twyman F, Atkinson D, Frezza C, Årstad E, Gadian D, Emberton M, Punwani S. First-in-human in vivo non-invasive assessment of intra-tumoral metabolic heterogeneity in renal cell carcinoma. BJR|case reports 2019;5(3):20190003.
+39. Stødkilde-Jørgensen H, Laustsen C, Hansen ESS, Schulte R, Ardenkjaer-Larsen JH, Comment A, Frøkiær J, Ringgaard S, Bertelsen LB, Ladekarl M, Weber B. Pilot Study Experiences With Hyperpolarized [1-13C]pyruvate MRI in Pancreatic Cancer Patients. Journal of Magnetic Resonance Imaging 2019;0(0).
+40. Yen YF, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate. Magnetic Resonance in Medicine 2009;62(1):1-10.
+41. Reeder SB, Brittain JH, Grist TM, Yen Y-F. Least-squares chemical shift separation for 13C metabolic imaging. Journal of Magnetic Resonance Imaging 2007;26(4):1145-1152.
+42. Wiesinger F, Weidl E, Menzel MI, Janich MA, Khegai O, Glaser SJ, Haase A, Schwaiger M, Schulte RF. IDEAL spiral CSI for dynamic metabolic MR imaging of hyperpolarized [1-13C]pyruvate. Magnetic Resonance in Medicine 2012;68(1):8-16.
+43. Gordon JW, Niles DJ, Fain SB, Johnson KM. Joint spatial-spectral reconstruction and k-t spirals for accelerated 2D spatial/1D spectral imaging of 13C dynamics. Magnetic Resonance in Medicine 2014;71(4):1435-1445.
+44. Khegai O, Schulte RF, Janich MA, Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A, Schwaiger M, Wiesinger F. Apparent rate constant mapping using hyperpolarized [1--13C]pyruvate. NMR in Biomedicine 2014;27(10):1256-1265.
+45. Macdonald EB, Barton GP, Cox BL, Johnson KM, Strigel RM, Fain SB. Improved reconstruction stability for chemical shift encoded hyperpolarized 13C magnetic resonance spectroscopic imaging using k-t spiral acquisitions. Magnetic Resonance in Medicine 2020;84(1):25-38.
+46. Meyer CH, Pauly JM, Macovskiand A, Nishimura DG. Simultaneous spatial and spectral selective excitation. Magnetic Resonance in Medicine 1990;15(2):287-304.
+47. Schulte RF, Wiesinger F. Direct design of 2D RF pulses using matrix inversion. Journal of Magnetic Resonance 2013;235(0):115-120.
+48. Lau AZ, Chen AP, Hurd RE, Cunningham CH. Spectral--spatial excitation for rapid imaging of DNP compounds. NMR in Biomedicine 2011;24(8):988-996.
+49. Miller JJ. Dynamic nuclear polarisation as a probe of metabolism in pathophysiology. 2015.
+50. Gordon JW, Vigneron DB, Larson PEZ. Development of a symmetric echo planar imaging framework for clinical translation of rapid dynamic hyperpolarized 13C imaging. Magnetic Resonance in Medicine 2017;77(2):826-832.
+51. Cunningham CH, Lau JY, Chen AP, Geraghty BJ, Perks WJ, Roifman I, Wright GA, Connelly KA. Hyperpolarized 13C Metabolic MRI of the Human Heart: Initial Experience. Circulation Research 2016;119:1177--1182.
+52. Sigfridsson A, Weiss K, Wissmann L, Busch J, Krajewski M, Batel M, Batsios G, Ernst M, Kozerke S. Hybrid multiband excitation multiecho acquisition for hyperpolarized 13C spectroscopic imaging. Magnetic Resonance in Medicine 2015;73(5):1713-1717.
+53. Gordon JW, Chen H-Y, Autry A, Park I, Van Criekinge M, Mammoli D, Milshteyn E, Bok R, Xu D, Li Y, Aggarwal R, Chang S, Slater JB, Ferrone M, Nelson S, Kurhanewicz J, Larson PEZ, Vigneron DB. Translation of Carbon-13 EPI for hyperpolarized MR molecular imaging of prostate and brain cancer patients. Magnetic Resonance in Medicine 2019;81:2702-- 2709.
+54. Gallagher FA, Kettunen MI, Day SE, Hu DE, Ardenkjaer-Larsen JH, Zandt R, Jensen PR, Karlsson M, Golman K, Lerche MH, Brindle KM. Magnetic resonance imaging of pH in vivo using hyperpolarized 13C-labelled bicarbonate. Nature 2008;453(7197):940-943.
+55. Gallagher FA, Kettunen MI, Hu D-E, Jensen PR, Zandt Rit, Karlsson M, Gisselsson A, Nelson SK, Witney TH, Bohndiek SE, Hansson G, Peitersen T, Lerche MH, Brindle KM. Production of hyperpolarized [1,4-13C2]malate from [1,4-13C2]fumarate is a marker of cell necrosis and treatment response in tumors. Proceedings of the National Academy of Sciences 2009;106(47):19801-19806.
+56. Lau AZ, Chen AP, Ghugre NR, Ramanan V, Lam WW, Connelly KA, Wright GA, Cunningham CH. Rapid multislice imaging of hyperpolarized 13C pyruvate and bicarbonate in the heart. Magnetic Resonance in Medicine 2010;64(5):1323-1331.
+57. Miller JJ, Lau AZ, Tyler DJ. Susceptibility-induced distortion correction in hyperpolarized echo planar imaging. Magnetic Resonance in Medicine 2018;79(4):2135-2141.
+58. Geraghty BJ, Lau JYC, Chen AP, Cunningham CH. Dual-Echo EPI sequence for integrated distortion correction in 3D time-resolved hyperpolarized 13C MRI. Magnetic Resonance in Medicine 2018;79(2):643-653.
+59. Wang J, Wright AJ, Hesketh RL, Hu D-e, Brindle KM. A referenceless Nyquist ghost correction workflow for echo planar imaging of hyperpolarized [1-13C]pyruvate and [1-13C]lactate. NMR in Biomedicine 2018;31(2):e3866.
+60. Durst M, Koellisch U, Frank A, Rancan G, Gringeri CV, Karas V, Wiesinger F, Menzel MI, Schwaiger M, Haase A, Schulte RF. Comparison of acquisition schemes for hyperpolarised 13C imaging. NMR in Biomedicine 2015;28:715-- 725.
+61. Gordon JW, Chen H-Y, Dwork N, Tang S, Larson PEZ. Fast Imaging for Hyperpolarized MR Metabolic Imaging. Journal of Magnetic Resonance Imaging 2020;DOI: 10.1002/jmri.27070.
+62. Gruber B, Froeling M, Leiner T, Klomp Dennis WJ. RF coils: A practical guide for nonphysicists. Journal of Magnetic Resonance Imaging 2018;0(0).
+63. Doty FD, Entzminger G, Kulkarni J, Pamarthy K, Staab JP. Radio frequency coil technology for small-animal MRI. NMR in Biomedicine 2007;20(3):304-325.
+64. Sun C-y, Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of parameter accuracy on pharmacokinetic analysis of hyperpolarized pyruvate. Magnetic Resonance in Medicine 2018;79:3239-3248.
+65. Haase A, Odoj F, Von Kienlin M, Warnking J, Fidler F, Weisser A, Nittka M, Rommel E, Lanz T, Kalusche B, Griswold M. NMR probeheads for in vivo applications. Concepts in Magnetic Resonance 2000;12(6):361-388.
+66. Gordon JW, Hansen RB, Shin PJ, Feng Y, Vigneron DB, Larson PEZ. 3D hyperpolarized C-13 EPI with calibrationless parallel imaging. Journal of Magnetic Resonance 2018;289:92-99.
+67. Hansen RB, Sánchez-Heredia JD, Bøgh N, Hansen ESS, Laustsen C, Hanson LG, Ardenkjær-Larsen JH. Coil profile estimation strategies for parallel imaging with hyperpolarized 13C MRI. Magnetic Resonance in Medicine 2019;82(6):2104-2117.
+68. Autry AW, Gordon JW, Carvajal L, Mareyam A, Chen H-Y, Park I, Mammoli D, Vareth M, Chang SM, Wald LL, Xu D, Vigneron DB, Nelson SJ, Li Y. Comparison between 8- and 32-channel phased-array receive coils for in vivo hyperpolarized 13C imaging of the human brain. Magnetic Resonance in Medicine 2019;82:833-- 841.
+69. Dominguez-Viqueira W, Geraghty BJ, Lau JYC, Robb FJ, Chen AP, Cunningham CH. Intensity correction for multichannel hyperpolarized 13C imaging of the heart. Magnetic Resonance in Medicine 2016;75(2):859-865.
+70. Zhu Z, Zhu X, Ohliger MA, Tang S, Cao P, Carvajal L, Autry AW, Li Y, Kurhanewicz J, Chang S, Aggarwal R, Munster P, Xu D, Larson PEZ, Vigneron DB, Gordon JW. Coil combination methods for multi-channel hyperpolarized 13C imaging data from human studies. Journal of Magnetic Resonance 2019;301:73-79.
+71. Roemer PB, Edelstein WA, Hayes CE, Souza SP, Mueller OM. The NMR phased array. Magnetic Resonance in Medicine 1990;16(2):192-225.
+72. Rodgers CT, Robson MD. Receive array magnetic resonance spectroscopy: Whitened singular value decomposition (WSVD) gives optimal Bayesian solution. Magnetic Resonance in Medicine 2010;63(4):881-891.

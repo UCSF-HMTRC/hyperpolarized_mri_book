@@ -1,330 +1,461 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Analysis and Visualization of Hyperpolarized ^13^C MR Data &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analysis_visualization/analysis_visualization';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Integration into Cancer Studies" href="../cancer/cancer.html" />
     <link rel="prev" title="HP Agents and Biochemical Interactions" href="../HP_agents/HP_agents.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_physics/dDNP_physics.html">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../acquisition_methods/acquisition_methods.html">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HP_agents/HP_agents.html">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../cancer/cancer.html">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../neurology/neurology.html">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../acquisition_methods/acquisition_methods.html">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../HP_agents/HP_agents.html">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cancer/cancer.html">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../neurology/neurology.html">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/analysis_visualization/analysis_visualization.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fanalysis_visualization/analysis_visualization.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
     </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Fanalysis_visualization/analysis_visualization.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/analysis_visualization/analysis_visualization.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Analysis and Visualization of Hyperpolarized ^13^C MR Data</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div>
+                <h2> Contents </h2>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-extraction">
-   7.1 Data Extraction
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-visualization">
-   7.2 Data Visualization
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#kinetic-modeling">
-   7.3 Kinetic Modeling
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#modeling-the-chemical-reaction">
-     7.3.1 Modeling the chemical reaction
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#modeling-the-biophysical-system">
-     7.3.2 Modeling the biophysical system
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#choosing-a-model">
-     7.3.3 Choosing a Model
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fitting-algorithms">
-     7.4.4 Fitting Algorithms
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#model-free-metrics">
-   7.4 Model-free Metrics
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#metabolite-ratios">
-     7.4.1 Metabolite Ratios
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#normalized-metabolic-product-amplitudes">
-     7.4.2 Normalized metabolic product amplitudes
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dynamic-metrics">
-     7.4.3 Dynamic metrics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#evaluation-of-metabolism-metrics">
-   7.5 Evaluation of Metabolism Metrics
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary">
-   7.6 Summary
-  </a>
- </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-extraction">7.1 Data Extraction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">7.2 Data Visualization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-modeling">7.3 Kinetic Modeling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-the-chemical-reaction">7.3.1 Modeling the chemical reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-the-biophysical-system">7.3.2 Modeling the biophysical system</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-model">7.3.3 Choosing a Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-algorithms">7.4.4 Fitting Algorithms</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-free-metrics">7.4 Model-free Metrics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-ratios">7.4.1 Metabolite Ratios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalized-metabolic-product-amplitudes">7.4.2 Normalized metabolic product amplitudes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-metrics">7.4.3 Dynamic metrics</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-of-metabolism-metrics">7.5 Evaluation of Metabolism Metrics</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">7.6 Summary</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="analysis-and-visualization-of-hyperpolarized-13-c-mr-data">
-<h1>Analysis and Visualization of Hyperpolarized ^13^C MR Data<a class="headerlink" href="#analysis-and-visualization-of-hyperpolarized-13-c-mr-data" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="analysis-and-visualization-of-hyperpolarized-13-c-mr-data">
+<h1>Analysis and Visualization of Hyperpolarized ^13^C MR Data<a class="headerlink" href="#analysis-and-visualization-of-hyperpolarized-13-c-mr-data" title="Link to this heading">#</a></h1>
 <p><strong>James Bankson^1^, Peder Larson^2^</strong></p>
 <p><strong>^1^Department of Imaging Physics, The University of Texas MD Anderson
 Cancer Center; ^2^Department of Radiology and Biomedical Imaging,
@@ -348,17 +479,15 @@ for the resulting metabolic imaging biomarkers. This chapter covers
 common approaches for HP data analysis, including common metrics and
 kinetic models, and guidance on how to visualize and navigate through HP
 data.</p>
-<p><strong>Key Words:</strong></p>
-<p>Quantification</p>
-<p>Pharmacokinetic Modeling</p>
-<p>Kinetic Modeling</p>
-<p>Ratiometric analysis</p>
-<p>High-dimensional visualization</p>
-<p>**<br />
-**</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="data-extraction">
-<h1>7.1 Data Extraction<a class="headerlink" href="#data-extraction" title="Permalink to this headline">¶</a></h1>
+<p><strong>Key Words:</strong>
+Quantification,
+Pharmacokinetic Modeling,
+Kinetic Modeling,
+Ratiometric analysis,
+High-dimensional visualization</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-extraction">
+<h1>7.1 Data Extraction<a class="headerlink" href="#data-extraction" title="Link to this heading">#</a></h1>
 <p>The key, and somewhat obvious, first step is to extract relevant data
 for analysis. In the case of HP ^13^C, we want to start our analysis
 based on metabolite signal amplitudes, which are often dynamic as well
@@ -390,9 +519,9 @@ RF coils, and with undersampled or non-linear image reconstructions such
 as parallel imaging or compressed sensing. However, it is typically
 sufficient to assuming a Gaussian or Rician distribution, as these
 distributions become quite difficult to characterize.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="data-visualization">
-<h1>7.2 Data Visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-visualization">
+<h1>7.2 Data Visualization<a class="headerlink" href="#data-visualization" title="Link to this heading">#</a></h1>
 <p>Typically the next step following data extraction is data visualization
 for the purposes of anatomical localization, quality control, and/or
 qualitative evaluation. Good visualization requires co-registration with
@@ -421,8 +550,8 @@ Bruker, Agilent), and also can be used as a plug-in with OsiriX (9) and
 Horos (10). There are also several other popular packages for ^1^H MRSI
 that can be applied to HP ^13^C and includes jMRUI (11) and TARQUIN (12,
 13).</p>
-<p><img alt="" src="analysis_visualization/media/image1.png" />{width=”6.613888888888889in”
-height=”4.413888888888889in”}<strong>Figure 1: HP ^13^C</strong> <strong>Visualization
+<p><img alt="HP 13C Visualization modes" src="analysis_visualization/data%20visualization%20example.png" /></p>
+<p><strong>Figure 1: HP ^13^C</strong> <strong>Visualization
 modes</strong>. In this example, dynamic HP ^13^C MRSI data acquired covering
 mouse kidneys following HP [1-^13^C]pyruvate injection is displayed in
 three different modes, all of which are useful for visualization. These
@@ -437,9 +566,9 @@ can support overlaying different images as this is a common task for
 PET/CT or multi-parametric MRI data. Some good tools include OsiriX and
 its free, open-source cousin, Horos, and ImageJ originally developed at
 the NIH, just to name a few.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="kinetic-modeling">
-<h1>7.3 Kinetic Modeling<a class="headerlink" href="#kinetic-modeling" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="kinetic-modeling">
+<h1>7.3 Kinetic Modeling<a class="headerlink" href="#kinetic-modeling" title="Link to this heading">#</a></h1>
 <p>Signal from HP imaging agents behaves quite differently compared to
 traditional MRI. Magnetization is established in the polarizer at a
 level that can be four or five orders of magnitude greater than expected
@@ -467,8 +596,8 @@ and as of the writing of this chapter, the only HP agent that has been
 administered to human subjects. The process that we outline for
 establishing these PK models can easily be adapted for other HP imaging
 agents and metabolic pathways.</p>
-<div class="section" id="modeling-the-chemical-reaction">
-<h2>7.3.1 Modeling the chemical reaction<a class="headerlink" href="#modeling-the-chemical-reaction" title="Permalink to this headline">¶</a></h2>
+<section id="modeling-the-chemical-reaction">
+<h2>7.3.1 Modeling the chemical reaction<a class="headerlink" href="#modeling-the-chemical-reaction" title="Link to this heading">#</a></h2>
 <p>Hyperpolarized [1-13C]-pyruvate is the most widely used HP imaging
 agent because it has good polarization characteristics (25-50% using
 current dDNP technology), a relatively long spin-lattice relaxation time
@@ -528,9 +657,9 @@ two-site exchange.</p>
 (5)</p>
 <p><span class="math notranslate nohighlight">\(\frac{\partial\text{Lac}_{\text{ic}}^{*}(t)}{\partial t} = k_{\text{PL}}\text{Pyr}_{\text{ic}}^{*}(t) - k_{\text{LP}}\text{Lac}_{\text{ic}}^{*}(t)\)</span>
 (6)</p>
-</div>
-<div class="section" id="modeling-the-biophysical-system">
-<h2>7.3.2 Modeling the biophysical system<a class="headerlink" href="#modeling-the-biophysical-system" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="modeling-the-biophysical-system">
+<h2>7.3.2 Modeling the biophysical system<a class="headerlink" href="#modeling-the-biophysical-system" title="Link to this heading">#</a></h2>
 <p>HP imaging agents such as pyruvate are administered into biological
 systems via intravenous injection, and must overcome multiple barriers
 before they arrive and interact with biological targets that we seek to
@@ -575,7 +704,7 @@ pyruvate in both compartments, as illustrated in Figure 2.</p>
 (9)</p>
 <p><span class="math notranslate nohighlight">\(\frac{\partial\text{Pyr}_{\text{ee}}(t)}{\partial t} = \frac{k_{\text{ecp}}}{v_{\text{ee}}}\left( \text{Pyr}_{\text{ic}}(t) - \text{Pyr}_{\text{ee}}(t) \right)\)</span>
 (10)</p>
-<p><img alt="" src="analysis_visualization/media/image2.png" />{width=”2.33in” height=”2.35in”}</p>
+<p><img alt="PK model" src="../_images/Fig2-FicksLaw-ec.png" /></p>
 <p><strong>Figure 2:</strong> Transfer between physical compartments in a
 pharmacokinetic model. The rate of change in the concentration of
 pyruvate in intracellular space and extravascular/extracellular space is
@@ -614,7 +743,7 @@ spin-lattice (T~1~) relaxation, but can also include losses due to
 chemical conversion to endpoints outside of this system, and losses due
 to signal excitation (though a more accurate way to model these losses
 will be introduced in the following text).</p>
-<p><img alt="" src="analysis_visualization/media/image3.emf" /></p>
+<p><img alt="3 compartment PK model" src="../_images/Fig3-HP-PK-3PC.png" /></p>
 <p><strong>Figure 3:</strong> A pharmacokinetic model for HP pyruvate signal evolution
 comprised of three physical compartments (vascular,
 extravascular/extracellular, and intracellular) and two chemical pools.
@@ -644,30 +773,32 @@ constants are most often used.</p>
 <p>Assuming that model parameters can reasonably be assumed to remain
 constant over an interval of time, we can rewrite this system of
 equations in matrix notation in the form of
-<span class="math notranslate nohighlight">\(\dot{\mathbf{x}}(t) = \mathbf{\text{Ax}}(t) + \mathbf{b}(t)\)</span>:</p>
-<p>$\frac{\partial}{\partial t}\begin{bmatrix}
-\text{Pyr}<em>{\text{ee}}(t) \
-\text{Lac}</em>{\text{ee}}(t) \
-\text{Pyr}<em>{\text{ic}}(t) \
-\text{Lac}</em>{\text{ic}}(t) \
-\end{bmatrix} = \begin{bmatrix}</p>
-<ul class="simple">
-<li><p>\alpha_{P,ee} &amp; 0 &amp; \frac{k_{\text{ecp}}}{v_{\text{ee}}} &amp; 0 \
-0 &amp; {- \alpha}<em>{L,ee} &amp; 0 &amp; \frac{k</em>{\text{ecl}}}{v_{\text{ee}}} \
-\frac{k_{\text{ecp}}}{v_{c}} &amp; 0 &amp; - \alpha_{P,ic} &amp; k_{\text{LP}} \
-0 &amp; \frac{k_{\text{ecl}}}{v_{c}} &amp; k_{\text{PL}} &amp; - \alpha_{L,ic} \
+<span class="math notranslate nohighlight">\(\dot{\mathbf{x}}(t) = \mathbf{\text{Ax}}(t) + \mathbf{b}(t)\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{\partial}{\partial t}\begin{bmatrix}
+\text{Pyr}_{\text{ee}}(t) \\
+\text{Lac}_{\text{ee}}(t) \\
+\text{Pyr}_{\text{ic}}(t) \\
+\text{Lac}_{\text{ic}}(t) \\
+\end{bmatrix} = \begin{bmatrix}
+ - \alpha_{P,ee} &amp; 0 &amp; \frac{k_{\text{ecp}}}{v_{\text{ee}}} &amp; 0 \\
+0 &amp; {- \alpha}_{L,ee} &amp; 0 &amp; \frac{k_{\text{ecl}}}{v_{\text{ee}}} \\
+\frac{k_{\text{ecp}}}{v_{c}} &amp; 0 &amp; - \alpha_{P,ic} &amp; k_{\text{LP}} \\
+0 &amp; \frac{k_{\text{ecl}}}{v_{c}} &amp; k_{\text{PL}} &amp; - \alpha_{L,ic} \\
 \end{bmatrix}\begin{bmatrix}
-\text{Pyr}<em>{\text{ee}}(t) \
-\text{Lac}</em>{\text{ee}}(t) \
-\text{Pyr}<em>{\text{ic}}(t) \
-\text{Lac}</em>{\text{ic}}(t) \
+\text{Pyr}_{\text{ee}}(t) \\
+\text{Lac}_{\text{ee}}(t) \\
+\text{Pyr}_{\text{ic}}(t) \\
+\text{Lac}_{\text{ic}}(t) \\
 \end{bmatrix} + \frac{k_{\text{ve}}}{v_{\text{ee}}}\begin{bmatrix}
-\text{Pyr}<em>{\text{iv}}(t) \
-\text{Lac}</em>{\text{iv}}(t) \
-0 \
-0 \
-\end{bmatrix}$ (15)</p></li>
-</ul>
+\text{Pyr}_{\text{iv}}(t) \\
+\text{Lac}_{\text{iv}}(t) \\
+0 \\
+0 \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>(15)</p>
 <p>The diagonal terms (<span class="math notranslate nohighlight">\(\mathbf{\alpha}\)</span>) in <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> reflect
 attenuation of signal from each volume compartment and chemical pool,
 and denote the combined parenthesized terms on the right hand sides of
@@ -702,10 +833,10 @@ of <span class="math notranslate nohighlight">\(\theta_{i}\)</span> for the i^th
 \text{Pyr}_{ic,xy}(t = t_{\text{obs}}) \\
 \text{Lac}_{ic,xy}(t = t_{\text{obs}}) \\
 \end{bmatrix} = \begin{bmatrix}
-\text{Pyr}_{\text{ee}}(t_{\text{obs}}) \bullet \sin\theta_{p,i} \\
-\text{Lac}_{\text{ee}}(t_{\text{obs}}) \bullet \sin\theta_{l,i} \\
-\text{Pyr}_{\text{ic}}(t_{\text{obs}}) \bullet \sin\theta_{p,i} \\
-\text{Lac}_{\text{ic}}(t_{\text{obs}}) \bullet \sin\theta_{l,i} \\
+\text{Pyr}_{\text{ee}}(t_{\text{obs}}) \cdot \sin\theta_{p,i} \\
+\text{Lac}_{\text{ee}}(t_{\text{obs}}) \cdot \sin\theta_{l,i} \\
+\text{Pyr}_{\text{ic}}(t_{\text{obs}}) \cdot \sin\theta_{p,i} \\
+\text{Lac}_{\text{ic}}(t_{\text{obs}}) \cdot \sin\theta_{l,i} \\
 \end{bmatrix}\)</span> (17)</p>
 <p>The remaining fraction of magnetization in each compartment then becomes
 the initial value for the next interval (the first term on the right
@@ -717,11 +848,11 @@ last term on the right hand side of the equation.</p>
 \text{Lac}_{\text{ee}}(t = t_{\text{obs}} + TR) \\
 \text{Pyr}_{\text{ic}}(t = t_{\text{obs}} + TR) \\
 \text{Lac}_{\text{ic}}(t = t_{\text{obs}} + TR) \\
-\end{bmatrix} = e^{\mathbf{A \bullet}\text{TR}}\begin{bmatrix}
-\text{Pyr}_{\text{ee}}(t_{\text{obs}}) \bullet \cos\theta_{p,i} \\
-\text{Lac}_{\text{ee}}(t_{\text{obs}}) \bullet \cos\theta_{l,i} \\
-\text{Pyr}_{\text{ic}}(t_{\text{obs}}) \bullet \cos\theta_{p,i} \\
-\text{Lac}_{\text{ic}}(t_{\text{obs}}) \bullet \cos\theta_{l,i} \\
+\end{bmatrix} = e^{\mathbf{A \cdot}\text{TR}}\begin{bmatrix}
+\text{Pyr}_{\text{ee}}(t_{\text{obs}}) \cdot \cos\theta_{p,i} \\
+\text{Lac}_{\text{ee}}(t_{\text{obs}}) \cdot \cos\theta_{l,i} \\
+\text{Pyr}_{\text{ic}}(t_{\text{obs}}) \cdot \cos\theta_{p,i} \\
+\text{Lac}_{\text{ic}}(t_{\text{obs}}) \cdot \cos\theta_{l,i} \\
 \end{bmatrix} + \frac{k_{\text{ve}}}{v_{\text{ee}}}\int_{t_{\text{obs}}}^{t_{\text{obs}} + TR}{e^{\mathbf{A}\left( t_{\text{obs}} + TR - \tau \right)}\begin{bmatrix}
 \text{Pyr}_{\text{iv}}(\tau) \\
 \text{Lac}_{\text{iv}}(\tau) \\
@@ -766,22 +897,22 @@ so that the EES exists in rapid equilibrium with intracellular space via
 fast diffusion and transport across the cell membrane, then the model
 needs only account for exchange between two physical pools, as
 illustrated in Figure 4:</p>
-<p>$\frac{\partial}{\partial t}\begin{bmatrix}
-\text{Pyr}<em>{\text{ev}}(t) \
-\text{Lac}</em>{\text{ev}}(t) \
-\end{bmatrix} = \begin{bmatrix}</p>
-<ul class="simple">
-<li><p>\left( k_{\text{PL}}^{‘} + \frac{k_{\text{ve}}}{v_{e}} - R_{\text{Pyr}} \right) &amp; k_{\text{LP}}^{‘} \
-k_{\text{PL}}^{‘} &amp; - \left( k_{\text{LP}}^{‘} + \frac{k_{\text{ve}}}{v_{e}} - R_{\text{Lac}} \right) \
+<div class="math notranslate nohighlight">
+\[\begin{split}\frac{\partial}{\partial t}\begin{bmatrix}
+\text{Pyr}_{\text{ev}}(t) \\
+\text{Lac}_{\text{ev}}(t) \\
+\end{bmatrix} = \begin{bmatrix}
+ - \left( k_{\text{PL}}^{'} + \frac{k_{\text{ve}}}{v_{e}} - R_{\text{Pyr}} \right) &amp; k_{\text{LP}}^{'} \\
+k_{\text{PL}}^{'} &amp; - \left( k_{\text{LP}}^{'} + \frac{k_{\text{ve}}}{v_{e}} - R_{\text{Lac}} \right) \\
 \end{bmatrix}\begin{bmatrix}
-\text{Pyr}<em>{\text{ev}}(t) \
-\text{Lac}</em>{\text{ev}}(t) \
+\text{Pyr}_{\text{ev}}(t) \\
+\text{Lac}_{\text{ev}}(t) \\
 \end{bmatrix} + \frac{k_{\text{ve}}}{v_{e}}\begin{bmatrix}
-\text{Pyr}<em>{\text{iv}}(t) \
-\text{Lac}</em>{\text{iv}}(t) \
-\end{bmatrix}$ (20)</p></li>
-</ul>
-<p><img alt="" src="analysis_visualization/media/image4.emf" /></p>
+\text{Pyr}_{\text{iv}}(t) \\
+\text{Lac}_{\text{iv}}(t) \\
+\end{bmatrix}\end{split}\]</div>
+<p>(20)</p>
+<p><img alt="2 compartment PK model" src="../_images/Fig4-HP-PK-2PC.png" /></p>
 <p><strong>Figure 4:</strong> A pharmacokinetic model for HP pyruvate with two physical
 compartments (vascular, extravascular) and two chemical pools. Here,
 extravascular space represents a homogeneous mixture of
@@ -898,13 +1029,13 @@ observed in <span class="math notranslate nohighlight">\(k_{\text{PL}}^{''}\ \)<
 attributable to changes in metabolic activity rather than reflective of
 confounding changes in vascular factors that impact HP MRI signal
 evolution.</p>
-<p><img alt="" src="analysis_visualization/media/image5.emf" /></p>
+<p><img alt="1 compartment PK model" src="../_images/Fig5-HP-PK-1PC.png" /></p>
 <p><strong>Figure 5:</strong> Precursor-product model for HP pyruvate in a single
 physical compartment. All observed signal is assumed to be in contact
 with enzymes that mediate exchange. The blue cube represents an imaging
 voxel. This model is described in Eq. 23.</p>
-<p><img alt="" src="analysis_visualization/media/image6.png" />{width=”6.0in” height=”7.654861111111111in”}</p>
-<p>Figure 6: Fitting data from a three physical compartment (3PC)
+<p><img alt="PK model comparison" src="../_images/Fig6-ModelComparisonV2.png" /></p>
+<p><strong>Figure 6</strong>: Fitting data from a three physical compartment (3PC)
 simulation to PK models with one, two, and three physical compartments.
 Top: Simulation of HP pyruvate and lactate with physiologically
 reasonable (but not definitive) model parameters (3PC model from Fig.
@@ -920,9 +1051,9 @@ temporal shift in the lactate curve is due to simplifying assumptions
 that eliminate biological hurdles that act to delay chemical conversion.
 Note that the apparent reaction rate is progressively lower as the model
 simplified: <span class="math notranslate nohighlight">\(k_{\text{PL}} &gt; k_{\text{PL}}^{'} &gt; k_{\text{PL}}^{''}\)</span> .</p>
-</div>
-<div class="section" id="choosing-a-model">
-<h2>7.3.3 Choosing a Model<a class="headerlink" href="#choosing-a-model" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="choosing-a-model">
+<h2>7.3.3 Choosing a Model<a class="headerlink" href="#choosing-a-model" title="Link to this heading">#</a></h2>
 <p>Selection of the most appropriate pharmacokinetic model for analysis of
 HP MRI data requires careful consideration of study goals and the
 quality and characteristics of the underlying data. Higher order models
@@ -953,9 +1084,9 @@ murine models of cancer (18). However, more (or less) complex models may
 be more appropriate when working with data that has higher (or lower)
 SNR, better (or worse) spatiotemporal resolution, or acquired from human
 subjects or other disease sites.</p>
-</div>
-<div class="section" id="fitting-algorithms">
-<h2>7.4.4 Fitting Algorithms<a class="headerlink" href="#fitting-algorithms" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="fitting-algorithms">
+<h2>7.4.4 Fitting Algorithms<a class="headerlink" href="#fitting-algorithms" title="Link to this heading">#</a></h2>
 <p>The final step in implementing a PK model for HP data analysis is to
 choose an appropriate algorithm for data fitting. This is commonly
 achieved by solving a non-linear least-squares curve fitting problem,
@@ -981,10 +1112,10 @@ multiple rate constants (26).</p>
 model while the substrate data is taken as ground truth and not fit to
 any curve (25, 30). This approach requires no estimate of the vascular
 input function and is thus relatively robust due to its simplicity.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="model-free-metrics">
-<h1>7.4 Model-free Metrics<a class="headerlink" href="#model-free-metrics" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="model-free-metrics">
+<h1>7.4 Model-free Metrics<a class="headerlink" href="#model-free-metrics" title="Link to this heading">#</a></h1>
 <p>Kinetic models are conceptually appealing in that they attempt to
 characterize relationships between biological compartments and
 biochemical processes and improve the specificity to which potential
@@ -1003,16 +1134,15 @@ implementations than many of the model-free alternatives described next.
 For these reasons, model-free metrics of metabolic conversion, several
 of which are illustrated in Fig. 7, have been developed and are a
 popular alternative to kinetic models.</p>
-<p><img alt="" src="analysis_visualization/media/image7.png" />{width=”5.988194444444445in”
-height=”2.904861111111111in”}</p>
+<p><img alt="Model-free metrics" src="analysis_visualization/modelfree%20metric%20illustration.png" /></p>
 <p><strong>Figure 7:</strong> Illustration of several model-free metrics that can be
 used for HP data. These include the lactate-to-pyruvate ratio at a
 single time-point ( <em>Lac</em>(<em>t~meas~</em>)/<em>Pyr</em>(<em>t~meas~</em>) ), the AUC ratio
 (<em>AUC~ratio~</em>), lactate time-to-peak (<em>TTP~Lac~</em>), and the mean time
 (<em>µT</em>) for a metabolite. Inspired by Daniels CJ, et al. <em>NMR Biomed</em>
 2016 (27) .</p>
-<div class="section" id="metabolite-ratios">
-<h2>7.4.1 Metabolite Ratios<a class="headerlink" href="#metabolite-ratios" title="Permalink to this headline">¶</a></h2>
+<section id="metabolite-ratios">
+<h2>7.4.1 Metabolite Ratios<a class="headerlink" href="#metabolite-ratios" title="Link to this heading">#</a></h2>
 <p>The most common model-free metrics used in quantification of HP data are
 metabolite ratios in which the denominator is the substrate or total
 ^13^C signal. These “Ratiometric” approaches have several advantages:
@@ -1065,9 +1195,9 @@ injection) will reflect differences in metabolic preference. Because
 both products depend on substrate delivery in the same way, differential
 conversion may be relatively insensitive to vascular or bolus
 characteristics.</p>
-</div>
-<div class="section" id="normalized-metabolic-product-amplitudes">
-<h2>7.4.2 Normalized metabolic product amplitudes<a class="headerlink" href="#normalized-metabolic-product-amplitudes" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="normalized-metabolic-product-amplitudes">
+<h2>7.4.2 Normalized metabolic product amplitudes<a class="headerlink" href="#normalized-metabolic-product-amplitudes" title="Link to this heading">#</a></h2>
 <p>Normalized metabolic product signal amplitudes, e.g. <em>Lac</em>(<em>t~meas~)</em> or
 <em>AUC~Lac~</em>, have also been successfully used as a measure of metabolic
 conversion. Most notably, in the human brain, lactate signal amplitudes
@@ -1087,9 +1217,9 @@ these potential benefits are speculative, and normalizing to substrate
 amplitudes has many benefits as well. Furthermore, normalizing product
 signal amplitudes must account for non-trivial variations in
 polarization and RF coil sensitivities.</p>
-</div>
-<div class="section" id="dynamic-metrics">
-<h2>7.4.3 Dynamic metrics<a class="headerlink" href="#dynamic-metrics" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="dynamic-metrics">
+<h2>7.4.3 Dynamic metrics<a class="headerlink" href="#dynamic-metrics" title="Link to this heading">#</a></h2>
 <p>Since the metabolic conversion is a dynamic process, metrics based on
 the temporal characteristics of the data can also be used. One proposed
 is the lactate time-to-peak (<em>TTP~Lac~</em>), which has been shown to be
@@ -1103,10 +1233,10 @@ of the arrival time. For metabolic products this metric is similar to
 the TTP but slightly more robust to SNR (REF). The metric also reflects
 additional effects such as variations in T~1~ relaxation rates, and flow
 in and out of the tissue.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="evaluation-of-metabolism-metrics">
-<h1>7.5 Evaluation of Metabolism Metrics<a class="headerlink" href="#evaluation-of-metabolism-metrics" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="evaluation-of-metabolism-metrics">
+<h1>7.5 Evaluation of Metabolism Metrics<a class="headerlink" href="#evaluation-of-metabolism-metrics" title="Link to this heading">#</a></h1>
 <p>It is very challenging to evaluate the accuracy of HP metabolism metrics
 <em>in vivo</em> because it is nearly impossible to have a ground truth values
 and the apparent rate constants can be influenced by a combination of
@@ -1138,8 +1268,7 @@ that using metabolite-specific flip angles leads to expected
 improvements in precision over the constant uniform flip angles as well
 as the variable flip angle scheme chosen. Finally, they also show that
 the AUC ratio varies depending on the flip angle strategy.</p>
-<p><img alt="" src="analysis_visualization/media/image8.png" />{width=”5.991666666666666in”
-height=”5.691666666666666in”}</p>
+<p><img alt="Simulation comparison of HP metabolism metrics" src="../_images/simulated_metric-ALL.png" /></p>
 <p><strong>Figure 8</strong>: Simulation comparison of HP metabolism metrics as function
 of k~PL~ for different flip angle strategies. A Monte Carlo simulation
 of a precursor-product model (Fig. 5) was used to show their response to
@@ -1170,8 +1299,7 @@ methods suffer from bias if T~1,Lac~ is not known or in the presence of
 unknown B~1~ errors. Fitting for T~1,Lac~ leads to worse precision, but
 more accurate response in the presence of unknown T~1,Lac~ and B~1~
 errors.</p>
-<p><img alt="" src="analysis_visualization/media/image9.png" />{width=”3.4369860017497813in”
-height=”5.533333333333333in”}</p>
+<p><img alt="Simulations of metrics response to experimental variability" src="../_images/simulated_fitting-accuracy-precision.svg" /></p>
 <p><strong>Figure 9</strong>: Simulation comparison of HP metabolism relative metric
 accuracy and precision in response to variations in experimental
 parameters of k~PL~, noise level (σ), bolus arrival time (Tarrival),
@@ -1190,9 +1318,9 @@ T~arrival~ = 4 s, and T~bolus~ = 8 s, with experimental parameters of TR
 (pyruvate) and 30-degrees (lactate). This type of simulation allows for
 comparisons of robustness between different HP metrics. (Adapted from
 Larson PEZ, et al. NMR in Biomedicine 2018, (30))</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="summary">
-<h1>7.6 Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>7.6 Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h1>
 <p>Specialized data extraction, visualization, and analysis methods are
 required due to the unique characteristics of HP signals, including high
 dimensionality, unrecoverable signal decay, metabolic conversion, and
@@ -1214,131 +1342,65 @@ vitro</em> or <em>in vivo</em>.</p>
 <p>Many of the kinetic models and metrics described, as well as code to
 generate the simulation results, are available as part of the
 <em>hyperpolarized-mri-toolbox</em>
-(<a class="reference external" href="https://github.com/LarsonLab/hyperpolarized-mri-toolbox">https://github.com/LarsonLab/hyperpolarized-mri-toolbox</a> ) (38).</p>
-<p><strong>[Chapter References]</strong></p>
-<p><a class="reference external" href="https://sourceforge.net/projects/sivic">https://sourceforge.net/projects/sivic</a></p>
-<p><a class="reference external" href="https://www.osirix-viewer.com">https://www.osirix-viewer.com</a></p>
-<p><a class="reference external" href="https://horosproject.org">https://horosproject.org</a></p>
-<p><a class="reference external" href="http://www.jmrui.eu/welcome-to-the-new-mrui-website">http://www.jmrui.eu/welcome-to-the-new-mrui-website</a></p>
-<p><a class="reference external" href="http://tarquin.sourceforge.net">http://tarquin.sourceforge.net</a></p>
-<p>1. Provencher SW. Estimation of metabolite concentrations from
-localized in vivo proton NMR spectra. Magn Reson Med 30(6):672-9,
-1993.2. Gudbjartsson H, Patz S. The Rician distribution of noisy MRI
-data. Magn Reson Med 34(6):910-4, 1995. PMCID: PMC2254141.3. Henkelman
-RM. Measurement of signal intensities in the presence of noise in MR
-images. Med Phys 12(2):232-3, 1985.4. Bernstein MA, Thomasson DM, Perman
-WH. Improved detectability in low signal-to-noise ratio magnetic
-resonance images by means of a phase-corrected real reconstruction. Med
-Phys 16(5):813-7, 1989.5. Maidens J, Gordon JW, Arcak M, Larson PEZ.
-Optimizing Flip Angles for Metabolic Rate Estimation in Hyperpolarized
-Carbon-13 MRI. IEEE Transactions on Medical Imaging 35(11):2403-12,
-2016. PMCID: PMC5134417.6. Miller AJ, Joseph PM. The use of power images
-to perform quantitative analysis on low SNR MR images. Magn Reson
-Imaging 11(7):1051-6, 1993.7. Crane JC, Olson MP, Nelson SJ. SIVIC:
-Open-Source, Standards-Based Software for DICOM MR Spectroscopy
-Workflows. Int J Biomed Imaging 2013:169526, 2013. PMCID: PMC3732592.8.
-SIVIC. [cited 2018 August 29].9. OsiriX. [cited 2018 August 29].10.
-HOROS. [cited 2018 August 29].11. JMRUI. [cited 2018 Aug 29].12.
-TARQUIN. [cited 2018 Aug 29].13. Wilson M, Reynolds G, Kauppinen RA,
-Arvanitis TN, Peet AC. A constrained least-squares approach to the
-automated quantitation of in vivo (1)H magnetic resonance spectroscopy
-data. Magn Reson Med 65(1):1-12, 2011.14. Crane JC, Gordon JW, Chen H-Y,
-Autry AW, Li Y, Olson MP, Kurhanewicz J, Vigneron DB, Larson PEZ, Xu D.
-Hyperpolarized 13C MRI data acquisition and analysis in prostate and
-brain at University of California, San Francisco. NMR in Biomedicine
-n/a(n/a):e4280, 2020. PMCID: PMC7501204.15. Witney TH, Kettunen MI,
-Brindle KM. Kinetic modeling of hyperpolarized 13C label exchange
-between pyruvate and lactate in tumor cells. J Biol Chem
-286(28):24572-80, 2011. PMCID: PMC3137032.16. Walker CM, Lee J, Ramirez
-MS, Schellingerhout D, Millward S, Bankson JA. A catalyzing phantom for
-reproducible dynamic conversion of hyperpolarized [1-¹³C]-pyruvate.
-PLoS One 8(8):e71274, 2013. PMCID: PMC3744565.17. Ahamed F, Van
-Criekinge M, Wang ZJ, Kurhanewicz J, Larson P, Sriram R. Modeling
-hyperpolarized lactate signal dynamics in cells, patient-derived tissue
-slice cultures and murine models. NMR in Biomedicine 34(3):e4467,
-2021.18. Bankson JA, Walker CM, Ramirez MS, Stefan W, Fuentes D, Merritt
-ME, Lee J, Sandulache VC, Chen Y, Phan L, Chou PC, Rao A, Yeung SC, Lee
-MH, Schellingerhout D, Conrad CA, Malloy C, Sherry AD, Lai SY, Hazle JD.
-Kinetic modeling and constrained reconstruction of hyperpolarized
-[1-13C]-pyruvate offers improved metabolic imaging of tumors. Cancer
-Res 75(22):4708-17, 2015. PMCID: PMC4651725.19. Fala M, Somai V,
-Dannhorn A, Hamm G, Gibson K, Couturier DL, Hesketh R, Wright AJ, Takats
-Z, Bunch J, Barry ST, Goodwin RJA, Brindle KM. Comparison of (13) C MRI
-of hyperpolarized [1-(13) C]pyruvate and lactate with the
-corresponding mass spectrometry images in a murine lymphoma model. Magn
-Reson Med 85(6):3027-35, 2021.20. Tofts PS. Modeling tracer kinetics in
-dynamic Gd-DTPA MR imaging. J Magn Reson Imaging 7(1):91-101, 1997.21.
-Keshari KR, Sriram R, Koelsch BL, Van Criekinge M, Wilson DM,
-Kurhanewicz J, Wang ZJ. Hyperpolarized 13C-pyruvate magnetic resonance
-reveals rapid lactate export in metastatic renal cell carcinomas. Cancer
-Res 73(2):529-38, 2013. PMCID: PMC3548990.22. Harrison C, Yang C, Jindal
-A, DeBerardinis RJ, Hooshyar MA, Merritt M, Dean Sherry A, Malloy CR.
-Comparison of kinetic models for analysis of pyruvate-to-lactate
-exchange by hyperpolarized 13 C NMR. NMR Biomed 25(11):1286-94, 2012.
-PMCID: PMC3469722.23. Sun CY, Walker CM, Michel KA, Venkatesan AM, Lai
-SY, Bankson JA. Influence of parameter accuracy on pharmacokinetic
-analysis of hyperpolarized pyruvate. Magn Reson Med 79(6):3239-48, 2018.
-PMCID: PMC5843516.24. Burnham KP, Anderson DR. Model selection and
-multimodel inference: a practical information-theoretic approach. 2nd
-ed. New York, NY: Springer-Verlag New York Inc; 2002.25. Khegai O,
-Schulte RF, Janich MA, Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen
-JH, Glaser SJ, Haase A, Schwaiger M, Wiesinger F. Apparent rate constant
-mapping using hyperpolarized [1-(13)C]pyruvate. NMR Biomed
-27(10):1256-65, 2014.26. Mariotti E, Veronese M, Dunn JT, Southworth R,
-Eykyn TR. Kinetic analysis of hyperpolarized data with minimum a priori
-knowledge: Hybrid maximum entropy and nonlinear least squares method
-(MEM/NLS). Magn Reson Med 73(6):2332-42, 2015.27. Daniels CJ, McLean MA,
-Schulte RF, Robb FJ, Gill AB, McGlashan N, Graves MJ, Schwaiger M, Lomas
-DJ, Brindle KM, Gallagher FA. A comparison of quantitative methods for
-clinical imaging with hyperpolarized 13C-pyruvate. NMR in Biomedicine
-29(4):387-99, 2016. PMCID: PMC4833181.28. Granlund KL, Tee SS, Vargas
-HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA,
-Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb
-F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer
-Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate
-Transporter 1. Cell Metab 31(1):105-14 e3, 2020. PMCID: PMC6949382.29.
-Lee CY, Soliman H, Geraghty BJ, Chen AP, Connelly KA, Endre R, Perks WJ,
-Heyn C, Black SE, Cunningham CH. Lactate topography of the human brain
-using hyperpolarized 13C-MRI. NeuroImage 204:116202, 2019.30. Larson
-PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge
-M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB,
-Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods
-for hyperpolarized 13C-pyruvate metabolic MRI in prostate cancer
-patients. NMR in Biomedicine 31(11):e3997, 2018. PMCID: PMC6392436.31.
-Larson PEZ, Bok R, Kerr AB, Lustig M, Hu S, Chen AP, Nelson SJ, Pauly
-JM, Kurhanewicz J, Vigneron DB. Investigation of Tumor Hyperpolarized
-[1-13C]-Pyruvate Dynamics using Time-Resolved Multiband RF Excitation
-Echo-planar MRSI. Magn Reson Med 63(3):582–91, 2010. PMCID:
-PMC2844437.32. Karlsson M, Jensen PR, Ardenkjær-Larsen JH, Lerche MH.
-Difference between Extra- and Intracellular T1 Values of Carboxylic
-Acids Affects the Quantitative Analysis of Cellular Kinetics by
-Hyperpolarized NMR. Angewandte Chemie International Edition
-55(43):13567-70, 2016.33. Walker CM, Gordon JW, Xu Z, Michel KA, Li L,
-Larson PEZ, Vigneron DB, Bankson JA. Slice profile effects on
-quantitative analysis of hyperpolarized pyruvate. NMR Biomed
-33(10):e4373, 2020. PMCID: PMC7484340.34. Harris, T.; Eliyahu, G.;
-Frydman, L.; Degani, H. Kinetics of Hyperpolarized 13C1-Pyruvate
-Transport and Metabolism in Living Human Breast Cancer Cells. <em>Proc Natl
-Acad Sci U S A</em> <strong>2009</strong>, <em>106</em> (43), 18131–18136.</p>
-<p>35. Day, S. E.; Kettunen, M. I.; Gallagher, F. A.; Hu, D.-E.; Lerche,
+(<a class="github reference external" href="https://github.com/LarsonLab/hyperpolarized-mri-toolbox">LarsonLab/hyperpolarized-mri-toolbox</a> ) (38).</p>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Provencher SW. Estimation of metabolite concentrations from localized in vivo proton NMR spectra. Magn Reson Med 30(6):672-9, 1993.</p></li>
+<li><p>Gudbjartsson H, Patz S. The Rician distribution of noisy MRI data. Magn Reson Med 34(6):910-4, 1995. PMCID: PMC2254141.</p></li>
+<li><p>Henkelman RM. Measurement of signal intensities in the presence of noise in MR images. Med Phys 12(2):232-3, 1985.</p></li>
+<li><p>Bernstein MA, Thomasson DM, Perman WH. Improved detectability in low signal-to-noise ratio magnetic resonance images by means of a phase-corrected real reconstruction. Med Phys 16(5):813-7, 1989.</p></li>
+<li><p>Maidens J, Gordon JW, Arcak M, Larson PEZ. Optimizing Flip Angles for Metabolic Rate Estimation in Hyperpolarized Carbon-13 MRI. IEEE Transactions on Medical Imaging 35(11):2403-12, 2016. PMCID: PMC5134417.</p></li>
+<li><p>Miller AJ, Joseph PM. The use of power images to perform quantitative analysis on low SNR MR images. Magn Reson Imaging 11(7):1051-6, 1993.</p></li>
+<li><p>Crane JC, Olson MP, Nelson SJ. SIVIC: Open-Source, Standards-Based Software for DICOM MR Spectroscopy Workflows. Int J Biomed Imaging 2013:169526, 2013. PMCID: PMC3732592.</p></li>
+<li><p>SIVIC. [cited 2018 August 29].  <a class="reference external" href="https://sourceforge.net/projects/sivic">https://sourceforge.net/projects/sivic</a></p></li>
+<li><p>OsiriX. [cited 2018 August 29].  <a class="reference external" href="https://www.osirix-viewer.com">https://www.osirix-viewer.com</a></p></li>
+<li><p>HOROS. [cited 2018 August 29].  <a class="reference external" href="https://horosproject.org">https://horosproject.org</a></p></li>
+<li><p>JMRUI. [cited 2018 Aug 29].  <a class="reference external" href="http://www.jmrui.eu/welcome-to-the-new-mrui-website">http://www.jmrui.eu/welcome-to-the-new-mrui-website</a></p></li>
+<li><p>TARQUIN. [cited 2018 Aug 29]. <a class="reference external" href="http://tarquin.sourceforge.net">http://tarquin.sourceforge.net</a></p></li>
+<li><p>Wilson M, Reynolds G, Kauppinen RA, Arvanitis TN, Peet AC. A constrained least-squares approach to the automated quantitation of in vivo (1)H magnetic resonance spectroscopy data. Magn Reson Med 65(1):1-12, 2011.</p></li>
+<li><p>Crane JC, Gordon JW, Chen H-Y, Autry AW, Li Y, Olson MP, Kurhanewicz J, Vigneron DB, Larson PEZ, Xu D. Hyperpolarized 13C MRI data acquisition and analysis in prostate and brain at University of California, San Francisco. NMR in Biomedicine n/a(n/a):e4280, 2020. PMCID: PMC7501204.</p></li>
+<li><p>Witney TH, Kettunen MI, Brindle KM. Kinetic modeling of hyperpolarized 13C label exchange between pyruvate and lactate in tumor cells. J Biol Chem 286(28):24572-80, 2011. PMCID: PMC3137032.</p></li>
+<li><p>Walker CM, Lee J, Ramirez MS, Schellingerhout D, Millward S, Bankson JA. A catalyzing phantom for reproducible dynamic conversion of hyperpolarized [1-¹³C]-pyruvate. PLoS One 8(8):e71274, 2013. PMCID: PMC3744565.</p></li>
+<li><p>Ahamed F, Van Criekinge M, Wang ZJ, Kurhanewicz J, Larson P, Sriram R. Modeling hyperpolarized lactate signal dynamics in cells, patient-derived tissue slice cultures and murine models. NMR in Biomedicine 34(3):e4467, 2021.</p></li>
+<li><p>Bankson JA, Walker CM, Ramirez MS, Stefan W, Fuentes D, Merritt ME, Lee J, Sandulache VC, Chen Y, Phan L, Chou PC, Rao A, Yeung SC, Lee MH, Schellingerhout D, Conrad CA, Malloy C, Sherry AD, Lai SY, Hazle JD. Kinetic modeling and constrained reconstruction of hyperpolarized [1-13C]-pyruvate offers improved metabolic imaging of tumors. Cancer Res 75(22):4708-17, 2015. PMCID: PMC4651725.</p></li>
+<li><p>Fala M, Somai V, Dannhorn A, Hamm G, Gibson K, Couturier DL, Hesketh R, Wright AJ, Takats Z, Bunch J, Barry ST, Goodwin RJA, Brindle KM. Comparison of (13) C MRI of hyperpolarized [1-(13) C]pyruvate and lactate with the corresponding mass spectrometry images in a murine lymphoma model. Magn Reson Med 85(6):3027-35, 2021.</p></li>
+<li><p>Tofts PS. Modeling tracer kinetics in dynamic Gd-DTPA MR imaging. J Magn Reson Imaging 7(1):91-101, 1997.</p></li>
+<li><p>Keshari KR, Sriram R, Koelsch BL, Van Criekinge M, Wilson DM, Kurhanewicz J, Wang ZJ. Hyperpolarized 13C-pyruvate magnetic resonance reveals rapid lactate export in metastatic renal cell carcinomas. Cancer Res 73(2):529-38, 2013. PMCID: PMC3548990.</p></li>
+<li><p>Harrison C, Yang C, Jindal A, DeBerardinis RJ, Hooshyar MA, Merritt M, Dean Sherry A, Malloy CR. Comparison of kinetic models for analysis of pyruvate-to-lactate exchange by hyperpolarized 13 C NMR. NMR Biomed 25(11):1286-94, 2012. PMCID: PMC3469722.</p></li>
+<li><p>Sun CY, Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of parameter accuracy on pharmacokinetic analysis of hyperpolarized pyruvate. Magn Reson Med 79(6):3239-48, 2018. PMCID: PMC5843516.</p></li>
+<li><p>Burnham KP, Anderson DR. Model selection and multimodel inference: a practical information-theoretic approach. 2nd ed. New York, NY: Springer-Verlag New York Inc; 2002.</p></li>
+<li><p>Khegai O, Schulte RF, Janich MA, Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A, Schwaiger M, Wiesinger F. Apparent rate constant mapping using hyperpolarized [1-(13)C]pyruvate. NMR Biomed 27(10):1256-65, 2014.</p></li>
+<li><p>Mariotti E, Veronese M, Dunn JT, Southworth R, Eykyn TR. Kinetic analysis of hyperpolarized data with minimum a priori knowledge: Hybrid maximum entropy and nonlinear least squares method (MEM/NLS). Magn Reson Med 73(6):2332-42, 2015.</p></li>
+<li><p>Daniels CJ, McLean MA, Schulte RF, Robb FJ, Gill AB, McGlashan N, Graves MJ, Schwaiger M, Lomas DJ, Brindle KM, Gallagher FA. A comparison of quantitative methods for clinical imaging with hyperpolarized 13C-pyruvate. NMR in Biomedicine 29(4):387-99, 2016. PMCID: PMC4833181.</p></li>
+<li><p>Granlund KL, Tee SS, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate Transporter 1. Cell Metab 31(1):105-14 e3, 2020. PMCID: PMC6949382.</p></li>
+<li><p>Lee CY, Soliman H, Geraghty BJ, Chen AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH. Lactate topography of the human brain using hyperpolarized 13C-MRI. NeuroImage 204:116202, 2019.</p></li>
+<li><p>Larson PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate metabolic MRI in prostate cancer patients. NMR in Biomedicine 31(11):e3997, 2018. PMCID: PMC6392436.</p></li>
+<li><p>Larson PEZ, Bok R, Kerr AB, Lustig M, Hu S, Chen AP, Nelson SJ, Pauly JM, Kurhanewicz J, Vigneron DB. Investigation of Tumor Hyperpolarized [1-13C]-Pyruvate Dynamics using Time-Resolved Multiband RF Excitation Echo-planar MRSI. Magn Reson Med 63(3):582–91, 2010. PMCID: PMC2844437.</p></li>
+<li><p>Karlsson M, Jensen PR, Ardenkjær-Larsen JH, Lerche MH. Difference between Extra- and Intracellular T1 Values of Carboxylic Acids Affects the Quantitative Analysis of Cellular Kinetics by Hyperpolarized NMR. Angewandte Chemie International Edition 55(43):13567-70, 2016.</p></li>
+<li><p>Walker CM, Gordon JW, Xu Z, Michel KA, Li L, Larson PEZ, Vigneron DB, Bankson JA. Slice profile effects on quantitative analysis of hyperpolarized pyruvate. NMR Biomed 33(10):e4373, 2020. PMCID: PMC7484340.</p></li>
+<li><p>Harris, T.; Eliyahu, G.; Frydman, L.; Degani, H. Kinetics of Hyperpolarized 13C1-Pyruvate Transport and Metabolism in Living Human Breast Cancer Cells. Proc Natl Acad Sci U S A 106(43):18131–18136, 2009.</p></li>
+<li><p>Day, S. E.; Kettunen, M. I.; Gallagher, F. A.; Hu, D.-E.; Lerche,
 M.; Wolber, J.; Golman, K.; Ardenkjaer-Larsen, J. H.; Brindle, K. M.
 Detecting Tumor Response to Treatment Using Hyperpolarized 13C Magnetic
 Resonance Imaging and Spectroscopy. <em>Nat Med</em> <strong>2007</strong>, <em>13</em> (11),
-1382–1387. <a class="reference external" href="https://doi.org/10.1038/nm1650">https://doi.org/10.1038/nm1650</a>.</p>
-<p>36. Zierhut, M. L.; Yen, Y.-F.; Chen, A. P.; Bok, R.; Albers, M. J.;
+1382–1387. <a class="reference external" href="https://doi.org/10.1038/nm1650">https://doi.org/10.1038/nm1650</a>.</p></li>
+<li><p>Zierhut, M. L.; Yen, Y.-F.; Chen, A. P.; Bok, R.; Albers, M. J.;
 Zhang, V.; Tropp, J.; Park, I.; Vigneron, D. B.; Kurhanewicz, J.; Hurd,
 R. E.; Nelson, S. J. Kinetic Modeling of Hyperpolarized 13C1-Pyruvate
 Metabolism in Normal Rats and TRAMP Mice. <em>J Magn Reson</em> <strong>2010</strong>, <em>202</em>
-(1), 85–92. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2009.10.003">https://doi.org/10.1016/j.jmr.2009.10.003</a>.</p>
-<p>37. Hill, D. K.; Orton, M. R.; Mariotti, E.; Boult, J. K. R.; Panek,
+(1), 85–92. <a class="reference external" href="https://doi.org/10.1016/j.jmr.2009.10.003">https://doi.org/10.1016/j.jmr.2009.10.003</a>.</p></li>
+<li><p>Hill, D. K.; Orton, M. R.; Mariotti, E.; Boult, J. K. R.; Panek,
 R.; Jafar, M.; Parkes, H. G.; Jamin, Y.; Miniotis, M. F.; Al-Saffar, N.
 M. S.; Beloueche-Babari, M.; Robinson, S. P.; Leach, M. O.; Chung,
 Y.-L.; Eykyn, T. R. Model Free Approach to Kinetic Analysis of Real-Time
 Hyperpolarized 13C Magnetic Resonance Spectroscopy Data. <em>PLoS One</em>
-<strong>2013</strong>, <em>8</em> (9), e71996. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0071996">https://doi.org/10.1371/journal.pone.0071996</a>.</p>
-<p>38. <em>Hyperpolarized-MRI-Toolbox</em>.
-<a class="reference external" href="https://doi.org/10.5281/zenodo.1198915">https://doi.org/10.5281/zenodo.1198915</a>.</p>
-</div>
+<strong>2013</strong>, <em>8</em> (9), e71996. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0071996">https://doi.org/10.1371/journal.pone.0071996</a>.</p></li>
+<li><p><em>Hyperpolarized-MRI-Toolbox</em>.
+<a class="reference external" href="https://doi.org/10.5281/zenodo.1198915">https://doi.org/10.5281/zenodo.1198915</a>.</p></li>
+</ol>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1352,7 +1414,7 @@ Hyperpolarized 13C Magnetic Resonance Spectroscopy Data. <em>PLoS One</em>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./analysis_visualization"
         },
         predefinedOutput: true
@@ -1360,56 +1422,124 @@ Hyperpolarized 13C Magnetic Resonance Spectroscopy Data. <em>PLoS One</em>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../HP_agents/HP_agents.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">HP Agents and Biochemical Interactions</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../cancer/cancer.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Integration into Cancer Studies</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../HP_agents/HP_agents.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">HP Agents and Biochemical Interactions</p>
       </div>
-    </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+    </a>
+    <a class="right-next"
+       href="../cancer/cancer.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Integration into Cancer Studies</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-extraction">7.1 Data Extraction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization">7.2 Data Visualization</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kinetic-modeling">7.3 Kinetic Modeling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-the-chemical-reaction">7.3.1 Modeling the chemical reaction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-the-biophysical-system">7.3.2 Modeling the biophysical system</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-a-model">7.3.3 Choosing a Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-algorithms">7.4.4 Fitting Algorithms</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#model-free-metrics">7.4 Model-free Metrics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-ratios">7.4.1 Metabolite Ratios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalized-metabolic-product-amplitudes">7.4.2 Normalized metabolic product amplitudes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-metrics">7.4.3 Dynamic metrics</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-of-metabolism-metrics">7.5 Evaluation of Metabolism Metrics</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">7.6 Summary</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

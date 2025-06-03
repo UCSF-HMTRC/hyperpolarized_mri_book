@@ -1,384 +1,463 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils &#8212; Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    
-      
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'acquisition_methods/acquisition_methods';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="HP Experimental Methods: Cells and Animals" href="../experiments_preclinical/experiments_preclinical.html" />
     <link rel="prev" title="Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient" href="../dDNP_hardware/dDNP_hardware.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/HP_MRI_Book_graphic.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Hyperpolarized Carbon-13 MRI
-  </a>
- </li>
+    
+    
+    <img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-light" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>
+    <script>document.write(`<img src="../_static/HP_MRI_Book_graphic.png" class="logo__image only-dark" alt="Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Hyperpolarized Carbon-13 MRI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_physics/dDNP_physics.html">The Physics of dissolution Dynamic Nuclear Polarization</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">HP Experimental Methods: Cells and Animals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HP_agents/HP_agents.html">HP Agents and Biochemical Interactions</a></li>
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../analysis_visualization/analysis_visualization.html">Analysis and Visualization of Hyperpolarized ^13^C MR Data</a></li>
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../cancer/cancer.html">Integration into Cancer Studies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cardiac/cardiac.html">Hyperpolarized MR in Cardiology</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../neurology/neurology.html">Neurological applications of hyperpolarized ^13^C MR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../liver/liver.html">Integration into Liver Studies</a></li>
+
+
+
+
+
+
+
 </ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../preface.html">
-   Preface
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_physics/dDNP_physics.html">
-   The Physics of dissolution Dynamic Nuclear Polarization
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../dDNP_hardware/dDNP_hardware.html">
-   Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../experiments_preclinical/experiments_preclinical.html">
-   HP Experimental Methods: Cells and Animals
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../HP_agents/HP_agents.html">
-   HP Agents and Biochemical Interactions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../analysis_visualization/analysis_visualization.html">
-   Analysis and Visualization of Hyperpolarized ^13^C MR Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cancer/cancer.html">
-   Integration into Cancer Studies
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cardiac/cardiac.html">
-   Hyperpolarized MR in Cardiology {#chap:DJT}
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../neurology/neurology.html">
-   Neurological applications of hyperpolarized ^13^C MR
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../liver/liver.html">
-   Integration into Liver Studies
-  </a>
- </li>
-</ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <b>PREPRINT FOR EDUCATIONAL USE ONLY</b>
-</div>
-
-</div>
-
-
-          
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/acquisition_methods/acquisition_methods.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Facquisition_methods/acquisition_methods.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
     </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/issues/new?title=Issue%20on%20page%20%2Facquisition_methods/acquisition_methods.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
 
-        </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/acquisition_methods/acquisition_methods.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div>
+                <h2> Contents </h2>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hyperpolarized-imaging-considerations">
-   Hyperpolarized Imaging Considerations
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#t-1-decay-non-recoverable-magnetization">
-     T~1~ Decay &amp; Non-Recoverable Magnetization
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#rf-decay-metabolism">
-     RF Decay &amp; Metabolism
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#chemical-shift-displacement">
-     Chemical Shift Displacement
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pulse-sequences-reconstruction">
-   Pulse Sequences &amp; Reconstruction
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#non-selective-spectroscopy-csi">
-     Non-Selective Spectroscopy &amp; CSI
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fast-spectroscopic-imaging">
-     Fast Spectroscopic Imaging
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ideal-csi">
-     IDEAL CSI
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#metabolite-selective-imaging">
-     Metabolite-Selective Imaging
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pulse-sequence-summary">
-     Pulse Sequence Summary
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rf-coils">
-   RF Coils
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#surface-volume-coils">
-     Surface &amp; Volume Coils
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#multichannel-arrays-coil-combination">
-     Multichannel Arrays &amp; Coil Combination
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary">
-   Summary
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tables">
-   Tables
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#metabolite-selective-fastest-sensitive-to-compounds-with-a-imaging-strategy-for-b-0-requires-sparse-spectrum-and-imaging-a-spectral-isolated-single-separation-of-resonances-metabolite-metabolites-clinical-studies-robust-to-that-need-motion-volumetric-coverage-and-high-temporal-resolution">
-     Metabolite-selective   Fastest         Sensitive to      Compounds with a
-imaging                strategy for    ΔB~0~; requires   sparse spectrum and
-imaging a       spectral          isolated
-single          separation of     resonances;
-metabolite;     metabolites       clinical studies
-robust to                         that need
-motion                            volumetric coverage
-and high temporal
-resolution
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#figure-captions">
-   Figure Captions
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#references">
-   References
-  </a>
- </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperpolarized-imaging-considerations">Hyperpolarized Imaging Considerations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-1-decay-non-recoverable-magnetization">T~1~ Decay &amp; Non-Recoverable Magnetization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-decay-metabolism">RF Decay &amp; Metabolism</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-shift-displacement">Chemical Shift Displacement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-sequences-reconstruction">Pulse Sequences &amp; Reconstruction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-selective-spectroscopy-csi">Non-Selective Spectroscopy &amp; CSI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-spectroscopic-imaging">Fast Spectroscopic Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-csi">IDEAL CSI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-selective-imaging">Metabolite-Selective Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-sequence-summary">Pulse Sequence Summary</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-coils">RF Coils</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-volume-coils">Surface &amp; Volume Coils</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multichannel-arrays-coil-combination">Multichannel Arrays &amp; Coil Combination</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
+
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="hp-acquisition-methods-pulse-sequences-reconstruction-and-rf-coils">
-<h1>HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils<a class="headerlink" href="#hp-acquisition-methods-pulse-sequences-reconstruction-and-rf-coils" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="hp-acquisition-methods-pulse-sequences-reconstruction-and-rf-coils">
+<h1>HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils<a class="headerlink" href="#hp-acquisition-methods-pulse-sequences-reconstruction-and-rf-coils" title="Link to this heading">#</a></h1>
 <p>Jeremy Gordon, PhD^1^ &amp; Jack J. Miller, DPhil^2^</p>
 <p>^1^Department of Radiology &amp; Biomedical Imaging, University of
 California – San Francisco, San Francisco, CA, USA</p>
@@ -398,9 +477,9 @@ the main classes of pulse sequences for HP imaging, and review the
 general tradeoffs between RF coils.</p>
 <p>Key Words: Hyperpolarization, DNP, CSI, EPSI, spectroscopic imaging,
 metabolite-selective imaging, RF coils.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
 <p>In the seventeen years since the introduction of dissolution dynamic
 nuclear polarization (DNP) (1), significant advancements have been made
 in the development and acquisition of hyperpolarized ^13^C data. The use
@@ -419,9 +498,9 @@ tradeoffs between RF coils. Although dissolution DNP has been the
 primary polarization mechanism for human applications, this chapter is
 equally applicable to substrates polarized via PHIP, SABRE, or other
 processes (3,4).</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="hyperpolarized-imaging-considerations">
-<h1>Hyperpolarized Imaging Considerations<a class="headerlink" href="#hyperpolarized-imaging-considerations" title="Permalink to this headline">¶</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hyperpolarized-imaging-considerations">
+<h1>Hyperpolarized Imaging Considerations<a class="headerlink" href="#hyperpolarized-imaging-considerations" title="Link to this heading">#</a></h1>
 <p>The dissolution DNP process, discussed in more detail in Chapters 1 and
 2, provides more than four orders of magnitude increase to nuclear
 polarization. This transient increase overcomes the small thermal
@@ -433,16 +512,13 @@ dimensions). However, this has significant consequences for the design
 of hyperpolarized studies, particularly in regard to the total imaging
 time and choice of flip angles. These details and tradeoffs will be
 discussed in the next few sections.</p>
-<div class="section" id="t-1-decay-non-recoverable-magnetization">
-<h2>T~1~ Decay &amp; Non-Recoverable Magnetization<a class="headerlink" href="#t-1-decay-non-recoverable-magnetization" title="Permalink to this headline">¶</a></h2>
+<section id="t-1-decay-non-recoverable-magnetization">
+<h2>T~1~ Decay &amp; Non-Recoverable Magnetization<a class="headerlink" href="#t-1-decay-non-recoverable-magnetization" title="Link to this heading">#</a></h2>
 <p>Unlike conventional MRI, the longitudinal magnetization in a
 hyperpolarized experiment is non-recoverable and inexorably decays back
 to thermal (Boltzmann) equilibrium once the sample is removed from the
 polarizer. The longitudinal magnetization <em>M~z~(t)</em> can be written as:</p>
-<hr class="docutils" />
-<p>$<span class="math notranslate nohighlight">\(M_{Z}(t) = M_{0} + \left( M_{Z,HP} - M_{0} \right)\text{exp}\left( - \frac{t}{T_{1}} \right) \cong \ M_{Z,HP}\text{exp}\left( - \frac{t}{T_{1}} \right)\)</span>$   (1)</p>
-<hr class="docutils" />
-<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\( M_{Z}(t) = M_{0} + \left( M_{Z,HP} - M_{0} \right)\exp \left( - \frac{t}{T_{1}} \right) \cong \ M_{Z,HP} \exp\left( - \frac{t}{T_{1}} \right) \)</span>   (1)</p>
 <p>Here <em>M~Z,HP~</em> is the initial hyperpolarized magnetization, M~0~ is the
 thermal equilibrium magnetization, and T~1~ is the longitudinal
 relaxation time. M~0~ is on the order of parts-per-million at clinical
@@ -478,12 +554,9 @@ done so at a constant rate over 15 s, which starts and stops abruptly)
 obtains at least 98.7% of the global optimum. It is therefore the case
 that the majority of reported studies do not use an injection scheme
 other than that of the boxcar.</p>
-</div>
-<div class="section" id="id1">
-<h2><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="rf-decay-metabolism">
-<h2>RF Decay &amp; Metabolism<a class="headerlink" href="#rf-decay-metabolism" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="rf-decay-metabolism">
+<h2>RF Decay &amp; Metabolism<a class="headerlink" href="#rf-decay-metabolism" title="Link to this heading">#</a></h2>
 <p>In ^1^H MRI, the flip angle is chosen to provide a desired contrast or
 to maximize signal (i.e. Ernst angle for a spoiled gradient echo). In
 hyperpolarized MRI the choice of flip angle has a much greater impact,
@@ -495,11 +568,15 @@ consumes some of the finite, non-recoverable hyperpolarized
 magnetization. In the absence of metabolism, the expression for the
 longitudinal (<em>M~z~</em>) and transverse (<em>M~xy~</em>) magnetization after <em>n</em>
 RF excitations of a constant flip-angle θ is given by (6):</p>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta\)</span>                                                                                     (2)</p>
-<hr class="docutils" />
-<p><span class="math notranslate nohighlight">\(M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta\)</span> . (3)</p>
-<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta\)</span>                                                                                     (2)
+<span class="math notranslate nohighlight">\(M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta\)</span> . (3)</p>
+<p><img alt="Effect of flip angle" src="../_images/fig-0.png" /></p>
+<p><strong>Figure 1.</strong> The effect of flip-angle (θ) on the longitudinal (M~z~)
+and transverse (M~xy~) magnetization. A large flip-angle rapidly
+consumes the polarization but provides the highest initial signal. A low
+flip-angle preserves the polarization and provides a smaller (but more
+consistent) signal throughout the acquisition. Data were simulated with
+a 3 s TR and a T~1~ of 30 s.</p>
 <p>A simple example showing the combined effects of T~1~ and repeated RF
 excitation on M~z~ and M~xy~ is illustrated in <strong>Fig.</strong> <strong>1</strong>. In this
 pedagogical example, a single RF excitation occurs every 3 s on a
@@ -545,6 +622,18 @@ for spectroscopic imaging sequences or through a singleband
 spectral-spatial RF pulse (14) in metabolite-selective imaging
 sequences. These will be discussed in further detail in the next
 section.</p>
+<p><img alt="Constant vs multiband flip angle strategies" src="../_images/fig-1.png" /></p>
+<p><strong>Figure 2.</strong> Constant vs multiband metabolite-specific flip angle
+strategies with a metabolically active substrate**.** Utilizing the same
+flip angle for both substrate and product results in excess substrate
+SNR and an overall reduction in product SNR because of the rapid drop in
+substrate M~z~. Using a multiband flip angle scheme – lower excitation
+for substrate and higher for the metabolic product – results in reduced
+usage of the substrate hyperpolarization, providing 1.8-fold more
+magnetization for the product in this example while still providing
+sufficient substrate SNR throughout the acquisition. Data were simulated
+with a 3 s TR, a T~1~ of 30 s for both substrate and product, and a
+metabolic conversion rate constant of 0.02 s^-1^.</p>
 <p>The key takeaway here is that RF pulses and metabolism will further
 utilize the non-recoverable magnetization, and the tradeoffs between SNR
 for a single timepoint and total SNR throughout the entire acquisition
@@ -558,9 +647,9 @@ refocusing trains that have the potential to deliver a large flip angle
 to hyperpolarized metabolites represent a challenge in the context of
 experiments where an injection necessarily comes from outside the
 sensitive region of the transmit coil used.</p>
-</div>
-<div class="section" id="chemical-shift-displacement">
-<h2>Chemical Shift Displacement<a class="headerlink" href="#chemical-shift-displacement" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="chemical-shift-displacement">
+<h2>Chemical Shift Displacement<a class="headerlink" href="#chemical-shift-displacement" title="Link to this heading">#</a></h2>
 <p>Hyperpolarized metabolic imaging provides valuable and unique functional
 information because of the distinct resonance frequencies of the
 injected substrate and metabolic products. However, this frequency
@@ -576,10 +665,14 @@ The magnitude of the spatial slice displacement, <em>δz</em>, is determined by
 the spectral separation between compounds, <em>δf</em>, along with either the
 slice selection gradient strength, G~z~, or the RF pulse bandwidth,
 BW~RF~, and slice thickness, <em>Δz</em>:</p>
-<hr class="docutils" />
-<p>$<span class="math notranslate nohighlight">\(\delta z = \frac{\text{δf}}{\frac{\gamma}{2\pi} \times G_{z}} = \frac{\text{δf}}{\text{BW}_{\text{RF}}}\Delta z\)</span>$   (4)</p>
-<hr class="docutils" />
-<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(\delta z = \frac{\text{δf}}{\frac{\gamma}{2\pi} \times G_{z}} = \frac{\text{δf}}{\text{BW}_{\text{RF}}}\Delta z\)</span>   (4)</p>
+<p><img alt="Chemical shift slice displacement" src="../_images/fig-2.png" /></p>
+<p><strong>Figure 3</strong>. Example of chemical shift slice displacement. The large
+frequency difference between [2-^13^C]pyruvate and [2-^13^C]lactate
+(~4500 Hz at 3 T) results in substantial slice displacement in this
+study of the rat brain using a conventional 2.3kHz slice-selective
+excitation, leading to errors in quantification. Figure adapted from
+Ref. (19).</p>
 <p>This is illustrated in <strong>Fig. 3</strong>, showing the slice displacement of
 [2-^13^C]pyruvate and metabolites in a rat brain study at 3 T (19).
 Due to the ~4500 Hz frequency difference between [2-^13^C]pyruvate
@@ -591,10 +684,10 @@ pulse for slice-selection or completely obviated through the design of
 multiband RF pulses (13) or by selectively exciting each metabolite with
 a singleband spectral-spatial RF pulse, as will be further discussed in
 the metabolite-selective imaging section.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="pulse-sequences-reconstruction">
-<h1>Pulse Sequences &amp; Reconstruction<a class="headerlink" href="#pulse-sequences-reconstruction" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pulse-sequences-reconstruction">
+<h1>Pulse Sequences &amp; Reconstruction<a class="headerlink" href="#pulse-sequences-reconstruction" title="Link to this heading">#</a></h1>
 <p>Data acquisition strategies in HP MRI experiments must account for
 multiple chemical shifts, efficiently utilize the non-renewable HP
 magnetization, and acquire data quickly relative to metabolism and
@@ -608,8 +701,8 @@ spectral + 1 temporal dimension). This section will describe the major
 varieties of spectroscopic imaging and metabolite-selective imaging
 sequences that have been used for hyperpolarized ^13^C MRI and will
 discuss their relative tradeoffs and benefits.</p>
-<div class="section" id="non-selective-spectroscopy-csi">
-<h2>Non-Selective Spectroscopy &amp; CSI<a class="headerlink" href="#non-selective-spectroscopy-csi" title="Permalink to this headline">¶</a></h2>
+<section id="non-selective-spectroscopy-csi">
+<h2>Non-Selective Spectroscopy &amp; CSI<a class="headerlink" href="#non-selective-spectroscopy-csi" title="Link to this heading">#</a></h2>
 <p>Magnetic resonance spectroscopic imaging (MRSI) provides spatial and
 spectral encoding to localize and resolve HP ^13^C-labeled metabolites.
 MRSI techniques have the advantage that they provide a continuous
@@ -643,9 +736,9 @@ small FOVs (2,25) or for substrates with complicated spectra or large
 chemical shift dispersion where high spectral resolution and a large
 spectral bandwidth are needed, as its poor temporal resolution precludes
 volumetric coverage and can hamper measurements of metabolic conversion.</p>
-</div>
-<div class="section" id="fast-spectroscopic-imaging">
-<h2>Fast Spectroscopic Imaging<a class="headerlink" href="#fast-spectroscopic-imaging" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="fast-spectroscopic-imaging">
+<h2>Fast Spectroscopic Imaging<a class="headerlink" href="#fast-spectroscopic-imaging" title="Link to this heading">#</a></h2>
 <p>Fast spectroscopic imaging techniques employing multi-echo readouts
 during acquisition can greatly reduce the scan time for HP experiments
 compared to phase-encoded CSI. Joint spatial and spectral encoding is
@@ -698,6 +791,22 @@ the reduced ^13^C gyromagnetic ratio. However, this is less of a concern
 on pre-clinical systems with high-performance gradients, as they can
 overcome the reduced gyromagnetic ratio to provide larger spectral
 bandwidths without the need for interleaved acquisitions.</p>
+<p><img alt="Rapid MRSI methods employing multi-echo readout gradients" src="../_images/rapidMRSI.png" /></p>
+<p><strong>Figure 4.</strong> Illustration and comparison of several rapid MRSI methods
+employing multi-echo readout gradients. Left two columns: image k-space
+trajectories for EPSI (symmetric and flyback), spiral and concentric
+rings spectroscopic imaging. Right two columns: Design tradeoffs between
+spatial resolution, spectral bandwidth, acquisition time, and SNR
+efficiency, assuming typical clinical MRI system gradients with a
+maximum amplitude of 40 mT/m and maximum slew rate of 150 mT/m/ms. EPSI
+is the slowest but most robust. The concentric rings method requires
+half of the total acquisition time compared with the EPSI trajectories,
+offers about 87% SNR efficiency, and provides much wider spectral BW
+than flyback EPSI and symmetric EPSI. Although spirals are nominally the
+most efficient trajectories (offering the best acquisition time and
+spectral BW benefit while sacrificing the least SNR), they are limited
+by their susceptibility to gradient errors. Figure adapted from Ref.
+(29).</p>
 <p>A potential limitation of fast spectroscopic imaging is they still
 require relatively long scan times owing to the need to explicitly
 encode the spectral dimension. This limitation can be partially offset
@@ -710,12 +819,9 @@ quantitative accuracy and microenvironment characterization have
 priority over spatial coverage, for probe development when the
 metabolites aren’t yet known, or for when spatial localization is
 limited by the receive profile of the surface coil.</p>
-</div>
-<div class="section" id="id2">
-<h2><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="ideal-csi">
-<h2>IDEAL CSI<a class="headerlink" href="#ideal-csi" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="ideal-csi">
+<h2>IDEAL CSI<a class="headerlink" href="#ideal-csi" title="Link to this heading">#</a></h2>
 <p>IDEAL CSI is a specialized fast spectroscopic imaging method that uses a
 model-based reconstruction and takes advantage of prior spectral
 knowledge (number of ^13^C resonances and their relative chemical shift)
@@ -748,9 +854,9 @@ between echoes can make the reconstruction numerically ill-conditioned.
 Nevertheless, particularly for novel probes with a characterized
 spectrum, they are comparatively easy methods to implement and have
 found widespread application.</p>
-</div>
-<div class="section" id="metabolite-selective-imaging">
-<h2>Metabolite-Selective Imaging<a class="headerlink" href="#metabolite-selective-imaging" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="metabolite-selective-imaging">
+<h2>Metabolite-Selective Imaging<a class="headerlink" href="#metabolite-selective-imaging" title="Link to this heading">#</a></h2>
 <p>Fast spectroscopic imaging approaches acquire spectral and spatial
 information simultaneously, decoupling multiple metabolite signals with
 multi-echo readouts to generate a spectrum for each voxel.
@@ -763,6 +869,13 @@ typical (i.e. sinc) slice-selective excitation, SPSP RF pulses have a
 narrow frequency response while retaining spatial selectivity. This is
 accomplished by playing a train of subpulses under a broad B1 envelope,
 in conjunction with an oscillating slice-select gradient (<strong>Fig. 5</strong>).</p>
+<p><img alt="Spectral-spatial pulse example" src="../_images/fig-3.png" /></p>
+<p><strong>Figure 5.</strong> Example of a spectral-spatial RF pulse designed for
+studies of HP [1-^13^C]pyruvate and [1-^13^C]lactate. The RF
+envelope and oscillating gradient provide the spectral and spatial
+selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
+at isocenter (C) and across the entire slice (D) shows the narrow
+passband frequency response needed for metabolite-selective imaging.</p>
 <p>Because the spectral encoding is performed with the excitation,
 single-shot imaging readouts such as spiral or echoplanar trajectories
 can be employed to rapidly and efficiently encode the magnetization.
@@ -802,16 +915,23 @@ for each metabolite. Because each metabolite is excited and encoded
 separately, multiband flip angle strategies that provide
 metabolite-specific flip angles can be easily integrated, which have
 been shown to increase SNR over a constant flip angle scheme (13,52).</p>
+<p><img alt="Metabolite-selective imaging sequence overview" src="../_images/fig-4.png" /></p>
+<p><strong>Figure 6</strong>. Overview of a metabolite-selective imaging sequence. The
+singleband spectral-spatial RF pulse performs the spectral encoding,
+exciting a single metabolite within a slice (or slab). A rapid imaging
+readout trajectory is then used to spatially encode the magnetization as
+a 2D multi-slice or 3D slab encoded dataset. The acquisition then shifts
+the center frequency and cycles through the resonances of interest
+(pyruvate, lactate, and bicarbonate in this example) over time to
+acquire a volumetric dynamic dataset for each metabolite. Figure adapted
+from Ref. (48).</p>
 <p>It is elucidating to compare the scan time for fast spectroscopic
 imaging (i.e. EPSI) and metabolite-selective imaging (i.e. EPI)
 sequences. The scan time for a single timeframe is determined by the TR,
 number of slices (<em>nSlices</em>), and either number of phase-encodes (<em>nPE</em>)
 or number of metabolites encoded (<em>nMets</em>):</p>
-<hr class="docutils" />
-<p>$<span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPSI} \right)\text{\ =\ TR} \times \text{nPE} \times \text{n}\text{Slices}\)</span>$   (5)</p>
-<hr class="docutils" />
-<p>$<span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPI} \right)\text{\ =\ TR} \times \text{nMets} \times \text{nSlices}\)</span>$         (6)</p>
-<hr class="docutils" />
+<p><span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPSI} \right)\text{\ =\ TR} \times \text{nPE} \times \text{n}\text{Slices}\)</span>   (5)
+<span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPI} \right)\text{\ =\ TR} \times \text{nMets} \times \text{nSlices}\)</span>         (6)</p>
 <p>Given that the number of hyperpolarized metabolites is less than the
 number of phase-encodes, and that the TR for metabolite-selective
 imaging is less than the TR for EPSI, metabolite-selective imaging
@@ -865,12 +985,38 @@ and introduce off-resonance artifacts. With large shifts, this can lead
 to a failure to excite the metabolites of interests. With smaller
 frequency shifts, the lower flip angle will lead to overall reduced SNR
 and can potentially bias quantification if left unaccounted.</p>
+</section>
+<section id="pulse-sequence-summary">
+<h2>Pulse Sequence Summary<a class="headerlink" href="#pulse-sequence-summary" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Acquisition Strategy</p></th>
+<th class="head"><p>Pros</p></th>
+<th class="head"><p>Cons</p></th>
+<th class="head"><p>Ideal Application</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Phase-encoded CSI</p></td>
+<td><p>Provides a full spectrum; large spectral BW; high spectral resolution; robust to ΔB~0~</p></td>
+<td><p>Slow; k-space filtering from long acquisition times; limited volumetric coverage; sensitive to motion</p></td>
+<td><p>Compounds with complicated spectra and/or large chemical shift dispersion; studies with small FOVs or coarse spatial resolution</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fast spectroscopic imaging</p></td>
+<td><p>Faster than phase-encoded CSI; provides a full spectrum; robust to ΔB~0~</p></td>
+<td><p>Limited spectral BW; tradeoff with spectral BW, spatial resolution, and SNR efficiency; sensitive to motion</p></td>
+<td><p>Compounds with limited chemical shift dispersion; studies with small FOVs or coarse spatial resolution</p></td>
+</tr>
+<tr class="row-even"><td><p>Metabolite-selective imaging</p></td>
+<td><p>Fastest strategy for imaging a single metabolite; robust to motion</p></td>
+<td><p>Sensitive to ΔB~0~; requires spectral separation of metabolites</p></td>
+<td><p>Compounds with a sparse spectrum and isolated resonances; clinical studies that need volumetric coverage and high temporal resolution</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="id3">
-<h2><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="pulse-sequence-summary">
-<h2>Pulse Sequence Summary<a class="headerlink" href="#pulse-sequence-summary" title="Permalink to this headline">¶</a></h2>
+<p><strong>Table 1</strong>. Comparison and summary of hyperpolarized pulse sequences
+discussed in this chapter.</p>
 <p>In summary, the choice of acquisition strategy depends highly on the
 application, as prior work has shown them to have similar SNR
 performance (60). MRSI methods provide excellent spectral coverage and
@@ -885,18 +1031,18 @@ pulse sequence strategies for HP MRI that are outside the scope of this
 chapter. For an in-depth review of other imaging sequences and
 acceleration strategies for hyperpolarized studies, please see the
 recent review article by Gordon et al (61).</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="rf-coils">
-<h1>RF Coils<a class="headerlink" href="#rf-coils" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="rf-coils">
+<h1>RF Coils<a class="headerlink" href="#rf-coils" title="Link to this heading">#</a></h1>
 <p>RF coils are an oft-overlooked aspect of an MRI experiment, but the
 choice of RF coil will directly impact the spatial resolution,
 sensitivity, volumetric coverage and overall SNR in a hyperpolarized
 study. This section is intended to introduce the reader to the basic
 concepts and tradeoffs between surface coils, volume coils, and
 multichannel arrays. See Refs. (62,63) for further reading on MRI coils.</p>
-<div class="section" id="surface-volume-coils">
-<h2>Surface &amp; Volume Coils<a class="headerlink" href="#surface-volume-coils" title="Permalink to this headline">¶</a></h2>
+<section id="surface-volume-coils">
+<h2>Surface &amp; Volume Coils<a class="headerlink" href="#surface-volume-coils" title="Link to this heading">#</a></h2>
 <p>The two main types of coils for an MR experiment are surface and volume
 coils. Surface coils are so-called because they provide high sensitivity
 close to the surface of the coil. They provide high SNR but have
@@ -933,9 +1079,9 @@ volume coil with the high sensitivity of the surface coil. To overcome
 the limited coverage of a single surface coil, multiple surface coils
 can be combined into a larger multichannel receive array, which will be
 discussed in the following section.</p>
-</div>
-<div class="section" id="multichannel-arrays-coil-combination">
-<h2>Multichannel Arrays &amp; Coil Combination<a class="headerlink" href="#multichannel-arrays-coil-combination" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="multichannel-arrays-coil-combination">
+<h2>Multichannel Arrays &amp; Coil Combination<a class="headerlink" href="#multichannel-arrays-coil-combination" title="Link to this heading">#</a></h2>
 <p>Multichannel arrays offer improved sensitivity over a volume coil,
 provide greater volumetric coverage than a single surface coil, and can
 be used with parallel imaging techniques (66,67) to further increase
@@ -952,6 +1098,15 @@ transmit and multichannel receive coils can inductively couple,
 resulting in significantly degraded performance. This combination
 requires additional circuitry and logic to turn on and off, or detune,
 the coils when not in use.</p>
+<p><img alt="Phantom SNR images and line profiles" src="../_images/fig-5.png" /></p>
+<p><strong>Figure 7</strong>. SNR images and line profiles obtained from a phantom
+containing natural abundance ^13^C ethylene glycol using a birdcage
+(volume) transceiver, 8-channel paddle array, and 32-channel array at 3
+T. Data from the 8-channel paddle array were acquired at two distances
+to either match the 32-channel housing (19 cm separation) or to conform
+to the phantom and maximize SNR (16.3 cm separation). Note the &gt;2-fold
+improvement at the periphery with similar SNR performance (0.91 – 0.97)
+at the head center. Figure adapted from Ref. (45).</p>
 <p>Key to this sensitivity improvement is how the multichannel data are
 combined. Optimally combining the multichannel data is crucial to
 maximizing SNR but most coil combination methods cannot be directly
@@ -984,6 +1139,15 @@ reconstruction has an outsized impact on the noisiest images, such as
 bicarbonate and late-phase pyruvate dynamics, significantly improving
 image quality and contrast compared to a sum of squares approach and
 will enable robust quantification of HP ^13^C metabolism.</p>
+<p><img alt="Coil combination methods for hyperpolarized data" src="../_images/fig-6.png" /></p>
+<p><strong>Figure 8</strong>. Images of hyperpolarized [1-^13^C]pyruvate,
+[1-^13^C]lactate, and ^13^C-bicarboate human brain data acquired with
+a 32-channel coil and reconstructed with a sum-of-squares or data-driven
+(Refpeak) approach. While image quality is sufficient for the high-SNR
+pyruvate images using a simple sum-of-squares coil combination, image
+quality and SNR is degraded for lactate and especially bicarbonate when
+the coil weights are not known, limiting the achievable spatial
+resolution.</p>
 <p>Finally, multichannel data are ‘pre-whitened’ before coil combination,
 removing the noise correlations between channels and scaling the noise
 to identical amplitudes. A noise-only dataset is needed to pre-whiten
@@ -993,10 +1157,10 @@ selecting a timepoint and slice free of signal. Pre-whitening has been
 shown to provide significant benefits in terms of precision and SNR
 (72), and should be considered as a routine pre-processing step for
 multi-channel HP ^13^C data reconstruction.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="summary">
-<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h1>
 <p>HP ^13^C MRI provides novel metabolic information in a rapid,
 non-invasive manner. However, the transient nature of the HP
 magnetization and the need for both spectral encoding and temporal
@@ -1004,7 +1168,7 @@ resolution places unique demands on RF and acquisition strategies.
 MATLAB code for many of the topics discussed in this chapter
 (pre-whitening, coil combination, and RF pulse design) can be found on
 the Hyperpolarized MRI Toolbox:
-<a class="reference external" href="https://github.com/LarsonLab/hyperpolarized-mri-toolbox">https://github.com/LarsonLab/hyperpolarized-mri-toolbox</a>
+<a class="github reference external" href="https://github.com/LarsonLab/hyperpolarized-mri-toolbox">LarsonLab/hyperpolarized-mri-toolbox</a>
 (DOI:10.5281/zenodo.1198915).</p>
 <p>The goal of this chapter was to provide the reader with a conceptual
 understanding of the challenges associated with metabolic imaging of
@@ -1014,366 +1178,84 @@ varieties of RF coils. This fundamental understanding will serve as the
 basis for subsequent chapters that discuss experimental methods and the
 integration of HP imaging into cancer, cardiac, liver, and neurological
 studies.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="tables">
-<h1>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<p>Acquisition Strategy   Pros            Cons              Ideal Application</p>
-<hr class="docutils" />
-<p>Phase-encoded CSI      Provides a full Slow; k-space     Compounds with
-spectrum; large filtering from    complicated spectra
-spectral BW;    long acquisition  and/or large
-high spectral   times; limited    chemical shift
-resolution;     volumetric        dispersion; studies
-robust to ΔB~0~ coverage;         with small FOVs or
-sensitive to      coarse spatial
-motion            resolution</p>
-<p>Fast spectroscopic     Faster than     Limited spectral  Compounds with
-imaging                phase-encoded   BW; tradeoff with limited chemical
-CSI; provides a spectral BW,      shift dispersion;
-full spectrum;  spatial           studies with small
-robust to ΔB~0~ resolution, and   FOVs or coarse
-SNR efficiency;   spatial resolution
-sensitive to<br />
-motion</p>
-<div class="section" id="metabolite-selective-fastest-sensitive-to-compounds-with-a-imaging-strategy-for-b-0-requires-sparse-spectrum-and-imaging-a-spectral-isolated-single-separation-of-resonances-metabolite-metabolites-clinical-studies-robust-to-that-need-motion-volumetric-coverage-and-high-temporal-resolution">
-<h2>Metabolite-selective   Fastest         Sensitive to      Compounds with a
-imaging                strategy for    ΔB~0~; requires   sparse spectrum and
-imaging a       spectral          isolated
-single          separation of     resonances;
-metabolite;     metabolites       clinical studies
-robust to                         that need
-motion                            volumetric coverage
-and high temporal
-resolution<a class="headerlink" href="#metabolite-selective-fastest-sensitive-to-compounds-with-a-imaging-strategy-for-b-0-requires-sparse-spectrum-and-imaging-a-spectral-isolated-single-separation-of-resonances-metabolite-metabolites-clinical-studies-robust-to-that-need-motion-volumetric-coverage-and-high-temporal-resolution" title="Permalink to this headline">¶</a></h2>
-<p><strong>Table 1</strong>. Comparison and summary of hyperpolarized pulse sequences
-discussed in this chapter.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="figure-captions">
-<h1>Figure Captions<a class="headerlink" href="#figure-captions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Figure 1.</strong> The effect of flip-angle (θ) on the longitudinal (M~z~)
-and transverse (M~xy~) magnetization. A large flip-angle rapidly
-consumes the polarization but provides the highest initial signal. A low
-flip-angle preserves the polarization and provides a smaller (but more
-consistent) signal throughout the acquisition. Data were simulated with
-a 3 s TR and a T~1~ of 30 s.</p>
-<p><strong>Figure 2.</strong> Constant vs multiband metabolite-specific flip angle
-strategies with a metabolically active substrate**.** Utilizing the same
-flip angle for both substrate and product results in excess substrate
-SNR and an overall reduction in product SNR because of the rapid drop in
-substrate M~z~. Using a multiband flip angle scheme – lower excitation
-for substrate and higher for the metabolic product – results in reduced
-usage of the substrate hyperpolarization, providing 1.8-fold more
-magnetization for the product in this example while still providing
-sufficient substrate SNR throughout the acquisition. Data were simulated
-with a 3 s TR, a T~1~ of 30 s for both substrate and product, and a
-metabolic conversion rate constant of 0.02 s^-1^.</p>
-<p><strong>Figure 3</strong>. Example of chemical shift slice displacement. The large
-frequency difference between [2-^13^C]pyruvate and [2-^13^C]lactate
-(~4500 Hz at 3 T) results in substantial slice displacement in this
-study of the rat brain using a conventional 2.3kHz slice-selective
-excitation, leading to errors in quantification. Figure adapted from
-Ref. (19).</p>
-<p><strong>Figure 4.</strong> Illustration and comparison of several rapid MRSI methods
-employing multi-echo readout gradients. Left two columns: image k-space
-trajectories for EPSI (symmetric and flyback), spiral and concentric
-rings spectroscopic imaging. Right two columns: Design tradeoffs between
-spatial resolution, spectral bandwidth, acquisition time, and SNR
-efficiency, assuming typical clinical MRI system gradients with a
-maximum amplitude of 40 mT/m and maximum slew rate of 150 mT/m/ms. EPSI
-is the slowest but most robust. The concentric rings method requires
-half of the total acquisition time compared with the EPSI trajectories,
-offers about 87% SNR efficiency, and provides much wider spectral BW
-than flyback EPSI and symmetric EPSI. Although spirals are nominally the
-most efficient trajectories (offering the best acquisition time and
-spectral BW benefit while sacrificing the least SNR), they are limited
-by their susceptibility to gradient errors. Figure adapted from Ref.
-(29).</p>
-<p><strong>Figure 5.</strong> Example of a spectral-spatial RF pulse designed for
-studies of HP [1-^13^C]pyruvate and [1-^13^C]lactate. The RF
-envelope and oscillating gradient provide the spectral and spatial
-selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
-at isocenter (C) and across the entire slice (D) shows the narrow
-passband frequency response needed for metabolite-selective imaging.</p>
-<p><strong>Figure 6</strong>. Overview of a metabolite-selective imaging sequence. The
-singleband spectral-spatial RF pulse performs the spectral encoding,
-exciting a single metabolite within a slice (or slab). A rapid imaging
-readout trajectory is then used to spatially encode the magnetization as
-a 2D multi-slice or 3D slab encoded dataset. The acquisition then shifts
-the center frequency and cycles through the resonances of interest
-(pyruvate, lactate, and bicarbonate in this example) over time to
-acquire a volumetric dynamic dataset for each metabolite. Figure adapted
-from Ref. (48).</p>
-<p><strong>Figure 7</strong>. SNR images and line profiles obtained from a phantom
-containing natural abundance ^13^C ethylene glycol using a birdcage
-(volume) transceiver, 8-channel paddle array, and 32-channel array at 3
-T. Data from the 8-channel paddle array were acquired at two distances
-to either match the 32-channel housing (19 cm separation) or to conform
-to the phantom and maximize SNR (16.3 cm separation). Note the &gt;2-fold
-improvement at the periphery with similar SNR performance (0.91 – 0.97)
-at the head center. Figure adapted from Ref. (45).</p>
-<p><strong>Figure 8</strong>. Images of hyperpolarized [1-^13^C]pyruvate,
-[1-^13^C]lactate, and ^13^C-bicarboate human brain data acquired with
-a 32-channel coil and reconstructed with a sum-of-squares or data-driven
-(Refpeak) approach. While image quality is sufficient for the high-SNR
-pyruvate images using a simple sum-of-squares coil combination, image
-quality and SNR is degraded for lactate and especially bicarbonate when
-the coil weights are not known, limiting the achievable spatial
-resolution.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://doi.org/10.1038/s41391-019-0180-z">https://doi.org/10.1038/s41391-019-0180-z</a></p>
-<p>1. Ardenkjær-Larsen JH, Fridlund B, Gram A, Hansson G, Hansson L,
-Lerche MH, Servin R, Thaning M, Golman K. Increase in signal-to-noise
-ratio of &gt; 10,000 times in liquid-state NMR. Proc Natl Acad Sci USA
-2003;100(18):10158-10163.2. Golman K, in ‘t Zandt R, Thaning M.
-Real-time metabolic imaging. Proceedings of the National Academy of
-Sciences 2006;103(30):11270.3. Kovtunov KV, Pokochueva EV, Salnikov OG,
-Cousin SF, Kurzbach D, Vuichoud B, Jannin S, Chekmenev EY, Goodson BM,
-Barskiy DA, Koptyug IV. Hyperpolarized NMR Spectroscopy: d-DNP, PHIP,
-and SABRE Techniques. Chemistry – An Asian Journal
-2018;13(15):1857-1871.4. Adams RW, Aguilar JA, Atkinson KD, Cowley MJ,
-Elliott PIP, Duckett SB, Green GGR, Khazal IG, López-Serrano J,
-Williamson DC. Reversible Interactions with para-Hydrogen Enhance NMR
-Sensitivity by Polarization Transfer. Science 2009;323(5922):1708.5.
-Maidens J, Arcak M. Semidefinite relaxations in optimal experiment
-design with application to substrate injection for hyperpolarized MRI.
-2016 American Control Conference (ACC). p 2023-2028.6. Zhao L, Mulkern
-R, Tseng C-H, Williamson D, Patz S, Kraft R, Walsworth RL, Jolesz FA,
-Albert MS. Gradient-Echo Imaging Considerations for Hyperpolarized129Xe
-MR. Journal of Magnetic Resonance, Series B 1996;113(2):179-183.7.
-Maidens J, Gordon JW, Arcak M, Larson PEZ. Optimizing flip angles for
-metabolic rate estimation in hyperpolarized carbon-13 MRI. IEEE
-Transactions on Medical Imaging 2016;PP(99):1-1.8. Nagashima K. Optimum
-pulse flip angles for multi-scan acquisition of hyperpolarized NMR and
-MRI. Journal of Magnetic Resonance 2008;190(2):183-188.9. Deng H, Zhong
-J, Ruan W, Chen X, Sun X, Ye C, Liu M, Zhou X. Constant-variable flip
-angles for hyperpolarized media MRI. Journal of Magnetic Resonance
-2016;263:92-100.10. Xing Y, Reed GD, Pauly JM, Kerr AB, Larson PEZ.
-Optimal variable flip angle schemes for dynamic acquisition of
-exchanging hyperpolarized substrates. Journal of Magnetic Resonance
-2013;234(0):75-81.11. Walker CM, Fuentes D, Larson PEZ, Kundra V,
-Vigneron DB, Bankson JA. Effects of excitation angle strategy on
-quantitative analysis of hyperpolarized pyruvate. Magnetic Resonance in
-Medicine 2019;81(6):3754-3762.12. Larson PEZ, Chen H-Y, Gordon JW, Korn
-N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok
-R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron
-DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate
-metabolic MRI in prostate cancer patients. NMR in Biomedicine
-2018;0(0):e3997.13. Larson PEZ, Kerr AB, Chen AP, Lustig MS, Zierhut ML,
-Hu S, Cunningham CH, Pauly JM, Kurhanewicz J, Vigneron DB. Multiband
-excitation pulses for hyperpolarized 13C dynamic chemical-shift imaging.
-Journal of Magnetic Resonance 2008;194(1):121-127.14. Cunningham CH,
-Chen AP, Lustig M, Hargreaves BA, Lupo J, Xu D, Kurhanewicz J, Hurd RE,
-Pauly JM, Nelson SJ, Vigneron DB. Pulse sequence for dynamic volumetric
-imaging of hyperpolarized metabolic products. Journal of Magnetic
-Resonance 2008;193(1):139-146.15. Le Roux P. Simplified model and
-stabilization of SSFP sequences. Journal of Magnetic Resonance
-2003;163(1):23-37.16. Shang H, Sukumar S, Morze C, Bok RA, Marco-Rius I,
-Kerr A, Reed GD, Milshteyn E, Ohliger MA, Kurhanewicz J, Larson PEZ,
-Pauly JM, Vigneron DB. Spectrally selective three-dimensional dynamic
-balanced steady-state free precession for hyperpolarized C-13 metabolic
-imaging with spectrally selective radiofrequency pulses. Magnetic
-Resonance in Medicine 2016;78(3):963-975.17. Svensson J, Månsson S,
-Johansson E, Petersson JS, Olsson LE. Hyperpolarized 13C MR angiography
-using trueFISP. Magnetic Resonance in Medicine 2003;50(2):256-262.18.
-Cunningham CH, Chen AP, Albers MJ, Kurhanewicz J, Hurd RE, Yen Y-F,
-Pauly JM, Nelson SJ, Vigneron DB. Double spin-echo sequence for rapid
-spectroscopic imaging of hyperpolarized 13C. Journal of Magnetic
-Resonance 2007;187(2):357-362.19. Park JM, Josan S, Jang T, Merchant M,
-Watkins R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral
-chemical shift imaging of hyperpolarized [2-13c]pyruvate in a rat c6
-glioma model. Magnetic Resonance in Medicine 2015;75(3):973-984.20. von
-Morze C, Larson PEZ, Hu S, Keshari K, Wilson DM, Ardenkjaer-Larsen JH,
-Goga A, Bok R, Kurhanewicz J, Vigneron DB. Imaging of blood flow using
-hyperpolarized [13C]Urea in preclinical cancer models. Journal of
-Magnetic Resonance Imaging 2011;33(3):692-697.21. von Morze C, Bok RA,
-Reed GD, Ardenkjaer-Larsen JH, Kurhanewicz J, Vigneron DB. Simultaneous
-multiagent hyperpolarized 13C perfusion imaging. Magnetic Resonance in
-Medicine 2014;72(6):1599-1609.22. Schroeder MA, Lau AZ, Chen AP, Gu Y,
-Nagendran J, Barry J, Hu X, Dyck JRB, Tyler DJ, Clarke K, Connelly KA,
-Wright GA, Cunningham CH. Hyperpolarized 13C magnetic resonance reveals
-early- and late-onset changes to in vivo pyruvate metabolism in the
-failing heart. European Journal of Heart Failure 2013;15(2):130-140.23.
-Chung BT, Chen H-Y, Gordon J, Mammoli D, Sriram R, Autry AW, Le Page LM,
-Chaumeil M, Shin P, Slater J, Tan CT, Suszczynski C, Chang S, Li Y, Bok
-RA, Ronen SM, Larson PEZ, Kurhanewicz J, Vigneron DB. First
-hyperpolarized [2-13C]pyruvate MR studies of human brain metabolism.
-Journal of Magnetic Resonance 2019;309:106617.24. Rodrigues TB, Serrao
-EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle KM. Magnetic resonance
-imaging of tumor glycolysis using hyperpolarized 13C-labeled glucose.
-Nature Medicine 2014;20(1):93-97.25. Kohler SJ, Yen Y, Wolber J, Chen
-AP, Albers MJ, Bok R, Zhang V, Tropp J, Nelson S, Vigneron DB,
-Kurhanewicz J, Hurd RE. In vivo 13carbon metabolic imaging at 3T with
-hyperpolarized 13C-1-pyruvate. Magnetic Resonance in Medicine
-2007;58(1):65-69.26. Yen Y-F, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber
-J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ,
-Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations
-for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate.
-Magn Reson Med 2009;62(1):1-10.27. Mayer D, Levin YS, Hurd RE, Glover
-GH, Spielman DM. Fast metabolic imaging of systems with sparse spectra:
-application for hyperpolarized 13C imaging. Magn Reson Med
-2006;56(4):932–937.28. Ramirez MS, Lee J, Walker CM, Sandulache VC,
-Hennel F, Lai SY, Bankson JA. Radial spectroscopic MRI of hyperpolarized
-[1-(13) C] pyruvate at 7 tesla. Magn Reson Med 2013.29. Jiang W,
-Lustig M, Larson PEZ. Concentric rings K-space trajectory for
-hyperpolarized 13C MR spectroscopic imaging. Magnetic Resonance in
-Medicine 2016;75(1):19-31.30. Jackson JI, Meyer CH, Nishimura DG,
-Macovski A. Selection of a Convolution Function for Fourier Inversion
-Using Gridding. IEEE Trans Med Imaging 1991;10(3):473–478.31. Fessler
-JA, Sutton BP. Nonuniform fast Fourier transforms using min-max
-interpolation. IEEE Trans Signal Proc 2003;51(2):560-574.32. Park I,
-Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M,
-Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson
-SJ. Development of methods and feasibility of using hyperpolarized
-carbon‐13 imaging data for evaluating brain metabolism in patient
-studies. Magnetic Resonance in Medicine 2018;80(3):864-873.33. Miloushev
-VZ, Granlund KL, Boltyanskiy R, Lyashchenko SK, DeAngelis LM,
-Mellinghoff IK, Brennan CW, Tabar V, Yang TJ, Holodny AI, Sosa RE, Guo
-YW, Chen AP, Tropp J, Robb F, Keshari KR. Metabolic Imaging of the Human
-Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C Lactate
-Production in Brain Tumor Patients. Cancer Research 2018;78(14):3755.34.
-Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PEZ, Harzstark AL, Ferrone
-M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small
-EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE,
-Odegardstuen L-I, Robb FJ, Tropp J, Murray JA. Metabolic Imaging of
-Patients with Prostate Cancer Using Hyperpolarized [1-13C]Pyruvate.
-Science Translational Medicine 2013;5(198):198ra108.35. Granlund KL, Tee
-S-S, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA,
-Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP,
-Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human
-Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by
-Monocarboxylate Transporter 1. Cell Metabolism
-2019;31(1):105-114.e103.36. Chen H-Y, Larson PEZ, Gordon JW, Bok RA,
-Ferrone M, Criekinge M, Carvajal L, Cao P, Pauly JM, Kerr AB, Park I,
-Slater JB, Nelson SJ, Munster PN, Aggarwal R, Kurhanewicz J, Vigneron
-DB. Technique development of 3D dynamic CS-EPSI for hyperpolarized 13C
-pyruvate MR molecular imaging of human prostate cancer. Magnetic
-Resonance in Medicine 2018;80(5):2062-2072.37. Chen H, Aggarwal R, Bok
-R, Ohliger M, Zhu Z, Lee P, Gordon Jeremy W, Criekinge MV, Carvajal L,
-Slater James B, Larson Peder EZ, Small EJ, Kurhanewicz J, Vignaud A.
-Hyperpolarized 13C-Pyruvate MRI Detects Real-Time Metabolic Flux in
-Prostate Cancer Metastases to Bone and Liver: A Clinical Feasibility
-Study. Prostate Cancer and Prostatic Diseases 2019 (In Press). .38. Tran
-M, Latifoltojar A, Neves JB, Papoutsaki M-V, Gong F, Comment A, Costa
-ASH, Glaser M, Tran-Dang M-A, El Sheikh S, Piga W, Bainbridge A, Barnes
-A, Young T, Jeraj H, Awais R, Adeleke S, Holt C, O’Callaghan J, Twyman
-F, Atkinson D, Frezza C, Årstad E, Gadian D, Emberton M, Punwani S.
-First-in-human in vivo non-invasive assessment of intra-tumoral
-metabolic heterogeneity in renal cell carcinoma. BJR|case reports
-2019;5(3):20190003.39. Stødkilde-Jørgensen H, Laustsen C, Hansen ESS,
-Schulte R, Ardenkjaer-Larsen JH, Comment A, Frøkiær J, Ringgaard S,
-Bertelsen LB, Ladekarl M, Weber B. Pilot Study Experiences With
-Hyperpolarized [1-13C]pyruvate MRI in Pancreatic Cancer Patients.
-Journal of Magnetic Resonance Imaging 2019;0(0).40. Yen YF, Kohler SJ,
-Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park
-I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM,
-Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using
-hyperpolarized 13C-pyruvate. Magnetic Resonance in Medicine
-2009;62(1):1-10.41. Reeder SB, Brittain JH, Grist TM, Yen Y-F.
-Least-squares chemical shift separation for 13C metabolic imaging.
-Journal of Magnetic Resonance Imaging 2007;26(4):1145-1152.42. Wiesinger
-F, Weidl E, Menzel MI, Janich MA, Khegai O, Glaser SJ, Haase A,
-Schwaiger M, Schulte RF. IDEAL spiral CSI for dynamic metabolic MR
-imaging of hyperpolarized [1-13C]pyruvate. Magnetic Resonance in
-Medicine 2012;68(1):8-16.43. Gordon JW, Niles DJ, Fain SB, Johnson KM.
-Joint spatial-spectral reconstruction and k-t spirals for accelerated 2D
-spatial/1D spectral imaging of 13C dynamics. Magnetic Resonance in
-Medicine 2014;71(4):1435-1445.44. Khegai O, Schulte RF, Janich MA,
-Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A,
-Schwaiger M, Wiesinger F. Apparent rate constant mapping using
-hyperpolarized [1–13C]pyruvate. NMR in Biomedicine
-2014;27(10):1256-1265.45. Macdonald EB, Barton GP, Cox BL, Johnson KM,
-Strigel RM, Fain SB. Improved reconstruction stability for chemical
-shift encoded hyperpolarized 13C magnetic resonance spectroscopic
-imaging using k-t spiral acquisitions. Magnetic Resonance in Medicine
-2020;84(1):25-38.46. Meyer CH, Pauly JM, Macovskiand A, Nishimura DG.
-Simultaneous spatial and spectral selective excitation. Magnetic
-Resonance in Medicine 1990;15(2):287-304.47. Schulte RF, Wiesinger F.
-Direct design of 2D RF pulses using matrix inversion. Journal of
-Magnetic Resonance 2013;235(0):115-120.48. Lau AZ, Chen AP, Hurd RE,
-Cunningham CH. Spectral–spatial excitation for rapid imaging of DNP
-compounds. NMR in Biomedicine 2011;24(8):988-996.49. Miller JJ. Dynamic
-nuclear polarisation as a probe of metabolism in pathophysiology.
-2015.50. Gordon JW, Vigneron DB, Larson PEZ. Development of a symmetric
-echo planar imaging framework for clinical translation of rapid dynamic
-hyperpolarized 13C imaging. Magnetic Resonance in Medicine
-2017;77(2):826-832.51. Cunningham CH, Lau JY, Chen AP, Geraghty BJ,
-Perks WJ, Roifman I, Wright GA, Connelly KA. Hyperpolarized 13C
-Metabolic MRI of the Human Heart: Initial Experience. Circulation
-Research 2016;119:1177–1182.52. Sigfridsson A, Weiss K, Wissmann L,
-Busch J, Krajewski M, Batel M, Batsios G, Ernst M, Kozerke S. Hybrid
-multiband excitation multiecho acquisition for hyperpolarized 13C
-spectroscopic imaging. Magnetic Resonance in Medicine
-2015;73(5):1713-1717.53. Gordon JW, Chen H-Y, Autry A, Park I, Van
-Criekinge M, Mammoli D, Milshteyn E, Bok R, Xu D, Li Y, Aggarwal R,
-Chang S, Slater JB, Ferrone M, Nelson S, Kurhanewicz J, Larson PEZ,
-Vigneron DB. Translation of Carbon-13 EPI for hyperpolarized MR
-molecular imaging of prostate and brain cancer patients. Magnetic
-Resonance in Medicine 2019;81:2702– 2709.54. Gallagher FA, Kettunen MI,
-Day SE, Hu DE, Ardenkjaer-Larsen JH, Zandt R, Jensen PR, Karlsson M,
-Golman K, Lerche MH, Brindle KM. Magnetic resonance imaging of pH in
-vivo using hyperpolarized 13C-labelled bicarbonate. Nature
-2008;453(7197):940-943.55. Gallagher FA, Kettunen MI, Hu D-E, Jensen PR,
-Zandt Rit, Karlsson M, Gisselsson A, Nelson SK, Witney TH, Bohndiek SE,
-Hansson G, Peitersen T, Lerche MH, Brindle KM. Production of
-hyperpolarized [1,4-13C2]malate from [1,4-13C2]fumarate is a marker
-of cell necrosis and treatment response in tumors. Proceedings of the
-National Academy of Sciences 2009;106(47):19801-19806.56. Lau AZ, Chen
-AP, Ghugre NR, Ramanan V, Lam WW, Connelly KA, Wright GA, Cunningham CH.
-Rapid multislice imaging of hyperpolarized 13C pyruvate and bicarbonate
-in the heart. Magnetic Resonance in Medicine 2010;64(5):1323-1331.57.
-Miller JJ, Lau AZ, Tyler DJ. Susceptibility-induced distortion
-correction in hyperpolarized echo planar imaging. Magnetic Resonance in
-Medicine 2018;79(4):2135-2141.58. Geraghty BJ, Lau JYC, Chen AP,
-Cunningham CH. Dual-Echo EPI sequence for integrated distortion
-correction in 3D time-resolved hyperpolarized 13C MRI. Magnetic
-Resonance in Medicine 2018;79(2):643-653.59. Wang J, Wright AJ, Hesketh
-RL, Hu D-e, Brindle KM. A referenceless Nyquist ghost correction
-workflow for echo planar imaging of hyperpolarized [1-13C]pyruvate and
-[1-13C]lactate. NMR in Biomedicine 2018;31(2):e3866.60. Durst M,
-Koellisch U, Frank A, Rancan G, Gringeri CV, Karas V, Wiesinger F,
-Menzel MI, Schwaiger M, Haase A, Schulte RF. Comparison of acquisition
-schemes for hyperpolarised 13C imaging. NMR in Biomedicine 2015;28:715–
-725.61. Gordon JW, Chen H-Y, Dwork N, Tang S, Larson PEZ. Fast Imaging
-for Hyperpolarized MR Metabolic Imaging. Journal of Magnetic Resonance
-Imaging 2020;DOI: 10.1002/jmri.27070.62. Gruber B, Froeling M, Leiner T,
-Klomp Dennis WJ. RF coils: A practical guide for nonphysicists. Journal
-of Magnetic Resonance Imaging 2018;0(0).63. Doty FD, Entzminger G,
-Kulkarni J, Pamarthy K, Staab JP. Radio frequency coil technology for
-small-animal MRI. NMR in Biomedicine 2007;20(3):304-325.64. Sun C-y,
-Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of
-parameter accuracy on pharmacokinetic analysis of hyperpolarized
-pyruvate. Magnetic Resonance in Medicine 2018;79:3239-3248.65. Haase A,
-Odoj F, Von Kienlin M, Warnking J, Fidler F, Weisser A, Nittka M, Rommel
-E, Lanz T, Kalusche B, Griswold M. NMR probeheads for in vivo
-applications. Concepts in Magnetic Resonance 2000;12(6):361-388.66.
-Gordon JW, Hansen RB, Shin PJ, Feng Y, Vigneron DB, Larson PEZ. 3D
-hyperpolarized C-13 EPI with calibrationless parallel imaging. Journal
-of Magnetic Resonance 2018;289:92-99.67. Hansen RB, Sánchez-Heredia JD,
-Bøgh N, Hansen ESS, Laustsen C, Hanson LG, Ardenkjær-Larsen JH. Coil
-profile estimation strategies for parallel imaging with hyperpolarized
-13C MRI. Magnetic Resonance in Medicine 2019;82(6):2104-2117.68. Autry
-AW, Gordon JW, Carvajal L, Mareyam A, Chen H-Y, Park I, Mammoli D,
-Vareth M, Chang SM, Wald LL, Xu D, Vigneron DB, Nelson SJ, Li Y.
-Comparison between 8- and 32-channel phased-array receive coils for in
-vivo hyperpolarized 13C imaging of the human brain. Magnetic Resonance
-in Medicine 2019;82:833– 841.69. Dominguez-Viqueira W, Geraghty BJ, Lau
-JYC, Robb FJ, Chen AP, Cunningham CH. Intensity correction for
-multichannel hyperpolarized 13C imaging of the heart. Magnetic Resonance
-in Medicine 2016;75(2):859-865.70. Zhu Z, Zhu X, Ohliger MA, Tang S, Cao
-P, Carvajal L, Autry AW, Li Y, Kurhanewicz J, Chang S, Aggarwal R,
-Munster P, Xu D, Larson PEZ, Vigneron DB, Gordon JW. Coil combination
-methods for multi-channel hyperpolarized 13C imaging data from human
-studies. Journal of Magnetic Resonance 2019;301:73-79.71. Roemer PB,
-Edelstein WA, Hayes CE, Souza SP, Mueller OM. The NMR phased array.
-Magnetic Resonance in Medicine 1990;16(2):192-225.72. Rodgers CT, Robson
-MD. Receive array magnetic resonance spectroscopy: Whitened singular
-value decomposition (WSVD) gives optimal Bayesian solution. Magnetic
-Resonance in Medicine 2010;63(4):881-891.</p>
-</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Ardenkjær-Larsen JH, Fridlund B, Gram A, Hansson G, Hansson L, Lerche MH, Servin R, Thaning M, Golman K. Increase in signal-to-noise ratio of &gt; 10,000 times in liquid-state NMR. Proc Natl Acad Sci USA 2003;100(18):10158-10163.</p></li>
+<li><p>Golman K, in ‘t Zandt R, Thaning M. Real-time metabolic imaging. Proceedings of the National Academy of Sciences 2006;103(30):11270.</p></li>
+<li><p>Kovtunov KV, Pokochueva EV, Salnikov OG, Cousin SF, Kurzbach D, Vuichoud B, Jannin S, Chekmenev EY, Goodson BM, Barskiy DA, Koptyug IV. Hyperpolarized NMR Spectroscopy: d-DNP, PHIP, and SABRE Techniques. Chemistry – An Asian Journal 2018;13(15):1857-1871.</p></li>
+<li><p>Adams RW, Aguilar JA, Atkinson KD, Cowley MJ, Elliott PIP, Duckett SB, Green GGR, Khazal IG, López-Serrano J, Williamson DC. Reversible Interactions with para-Hydrogen Enhance NMR Sensitivity by Polarization Transfer. Science 2009; 323(5922):1708.</p></li>
+<li><p>Maidens J, Arcak M. Semidefinite relaxations in optimal experiment design with application to substrate injection for hyperpolarized MRI. 2016 American Control Conference (ACC). p 2023-2028.</p></li>
+<li><p>Zhao L, Mulkern R, Tseng C-H, Williamson D, Patz S, Kraft R, Walsworth RL, Jolesz FA, Albert MS. Gradient-Echo Imaging Considerations for Hyperpolarized129Xe MR. Journal of Magnetic Resonance, Series B 1996;113(2):179-183.</p></li>
+<li><p>Maidens J, Gordon JW, Arcak M, Larson PEZ. Optimizing flip angles for metabolic rate estimation in hyperpolarized carbon-13 MRI. IEEE Transactions on Medical Imaging 2016;PP(99):1-1.</p></li>
+<li><p>Nagashima K. Optimum pulse flip angles for multi-scan acquisition of hyperpolarized NMR and MRI. Journal of Magnetic Resonance 2008;190(2):183-188.</p></li>
+<li><p>Deng H, Zhong J, Ruan W, Chen X, Sun X, Ye C, Liu M, Zhou X. Constant-variable flip angles for hyperpolarized media MRI. Journal of Magnetic Resonance 2016;263:92-100.</p></li>
+<li><p>Xing Y, Reed GD, Pauly JM, Kerr AB, Larson PEZ. Optimal variable flip angle schemes for dynamic acquisition of exchanging hyperpolarized substrates. Journal of Magnetic Resonance 2013;234(0):75-81.</p></li>
+<li><p>Walker CM, Fuentes D, Larson PEZ, Kundra V, Vigneron DB, Bankson JA. Effects of excitation angle strategy on quantitative analysis of hyperpolarized pyruvate. Magnetic Resonance in Medicine 2019;81(6):3754-3762.</p></li>
+<li><p>Larson PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate metabolic MRI in prostate cancer patients. NMR in Biomedicine 2018;0(0):e3997.</p></li>
+<li><p>Larson PEZ, Kerr AB, Chen AP, Lustig MS, Zierhut ML, Hu S, Cunningham CH, Pauly JM, Kurhanewicz J, Vigneron DB. Multiband excitation pulses for hyperpolarized 13C dynamic chemical-shift imaging. Journal of Magnetic Resonance 2008;194(1):121-127.</p></li>
+<li><p>Cunningham CH, Chen AP, Lustig M, Hargreaves BA, Lupo J, Xu D, Kurhanewicz J, Hurd RE, Pauly JM, Nelson SJ, Vigneron DB. Pulse sequence for dynamic volumetric imaging of hyperpolarized metabolic products. Journal of Magnetic Resonance 2008;193(1):139-146.</p></li>
+<li><p>Le Roux P. Simplified model and stabilization of SSFP sequences. Journal of Magnetic Resonance 2003;163(1):23-37.</p></li>
+<li><p>Shang H, Sukumar S, Morze C, Bok RA, Marco-Rius I, Kerr A, Reed GD, Milshteyn E, Ohliger MA, Kurhanewicz J, Larson PEZ, Pauly JM, Vigneron DB. Spectrally selective three-dimensional dynamic balanced steady-state free precession for hyperpolarized C-13 metabolic imaging with spectrally selective radiofrequency pulses. Magnetic Resonance in Medicine 2016;78(3):963-975.</p></li>
+<li><p>Svensson J, Månsson S, Johansson E, Petersson JS, Olsson LE. Hyperpolarized 13C MR angiography using trueFISP. Magnetic Resonance in Medicine 2003;50(2):256-262.</p></li>
+<li><p>Cunningham CH, Chen AP, Albers MJ, Kurhanewicz J, Hurd RE, Yen Y-F, Pauly JM, Nelson SJ, Vigneron DB. Double spin-echo sequence for rapid spectroscopic imaging of hyperpolarized 13C. Journal of Magnetic Resonance 2007;187(2):357-362.</p></li>
+<li><p>Park JM, Josan S, Jang T, Merchant M, Watkins R, Hurd RE, Recht LD, Mayer D, Spielman DM. Volumetric spiral chemical shift imaging of hyperpolarized [2-13c]pyruvate in a rat c6 glioma model. Magnetic Resonance in Medicine 2015;75(3):973-984.</p></li>
+<li><p>von Morze C, Larson PEZ, Hu S, Keshari K, Wilson DM, Ardenkjaer-Larsen JH, Goga A, Bok R, Kurhanewicz J, Vigneron DB. Imaging of blood flow using hyperpolarized [13C]Urea in preclinical cancer models. Journal of Magnetic Resonance Imaging 2011;33(3):692-697.</p></li>
+<li><p>von Morze C, Bok RA, Reed GD, Ardenkjaer-Larsen JH, Kurhanewicz J, Vigneron DB. Simultaneous multiagent hyperpolarized 13C perfusion imaging. Magnetic Resonance in Medicine 2014;72(6):1599-1609.</p></li>
+<li><p>Schroeder MA, Lau AZ, Chen AP, Gu Y, Nagendran J, Barry J, Hu X, Dyck JRB, Tyler DJ, Clarke K, Connelly KA, Wright GA, Cunningham CH. Hyperpolarized 13C magnetic resonance reveals early- and late-onset changes to in vivo pyruvate metabolism in the failing heart. European Journal of Heart Failure 2013;15(2):130-140.</p></li>
+<li><p>Chung BT, Chen H-Y, Gordon J, Mammoli D, Sriram R, Autry AW, Le Page LM, Chaumeil M, Shin P, Slater J, Tan CT, Suszczynski C, Chang S, Li Y, Bok RA, Ronen SM, Larson PEZ, Kurhanewicz J, Vigneron DB. First hyperpolarized [2-13C]pyruvate MR studies of human brain metabolism. Journal of Magnetic Resonance 2019;309:106617.</p></li>
+<li><p>Rodrigues TB, Serrao EM, Kennedy BWC, Hu D-E, Kettunen MI, Brindle KM. Magnetic resonance imaging of tumor glycolysis using hyperpolarized 13C-labeled glucose. Nature Medicine 2014;20(1):93-97.</p></li>
+<li><p>Kohler SJ, Yen Y, Wolber J, Chen AP, Albers MJ, Bok R, Zhang V, Tropp J, Nelson S, Vigneron DB, Kurhanewicz J, Hurd RE. In vivo 13carbon metabolic imaging at 3T with hyperpolarized 13C-1-pyruvate. Magnetic Resonance in Medicine 2007;58(1):65-69.</p></li>
+<li><p>Yen Y-F, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate. Magn Reson Med 2009;62(1):1-10.</p></li>
+<li><p>Mayer D, Levin YS, Hurd RE, Glover GH, Spielman DM. Fast metabolic imaging of systems with sparse spectra: application for hyperpolarized 13C imaging. Magn Reson Med 2006;56(4):932–937.</p></li>
+<li><p>Ramirez MS, Lee J, Walker CM, Sandulache VC, Hennel F, Lai SY, Bankson JA. Radial spectroscopic MRI of hyperpolarized [1-(13) C] pyruvate at 7 tesla. Magn Reson Med 2013.</p></li>
+<li><p>Jiang W, Lustig M, Larson PEZ. Concentric rings K-space trajectory for hyperpolarized 13C MR spectroscopic imaging. Magnetic Resonance in Medicine 2016;75(1):19-31.</p></li>
+<li><p>Jackson JI, Meyer CH, Nishimura DG, Macovski A. Selection of a Convolution Function for Fourier Inversion Using Gridding. IEEE Trans Med Imaging 1991;10(3):473–478.</p></li>
+<li><p>Fessler JA, Sutton BP. Nonuniform fast Fourier transforms using min-max interpolation. IEEE Trans Signal Proc 2003;51(2):560-574.</p></li>
+<li><p>Park I, Larson PEZ, Gordon JW, Carvajal L, Chen HY, Bok R, Van Criekinge M, Ferrone M, Slater JB, Xu D, Kurhanewicz J, Vigneron DB, Chang S, Nelson SJ. Development of methods and feasibility of using hyperpolarized carbon‐13 imaging data for evaluating brain metabolism in patient studies. Magnetic Resonance in Medicine 2018;80(3):864-873.</p></li>
+<li><p>Miloushev VZ, Granlund KL, Boltyanskiy R, Lyashchenko SK, DeAngelis LM, Mellinghoff IK, Brennan CW, Tabar V, Yang TJ, Holodny AI, Sosa RE, Guo YW, Chen AP, Tropp J, Robb F, Keshari KR. Metabolic Imaging of the Human Brain with Hyperpolarized 13C Pyruvate Demonstrates 13C Lactate Production in Brain Tumor Patients. Cancer Research 2018;78(14):3755.</p></li>
+<li><p>Nelson SJ, Kurhanewicz J, Vigneron DB, Larson PEZ, Harzstark AL, Ferrone M, van Criekinge M, Chang JW, Bok R, Park I, Reed G, Carvajal L, Small EJ, Munster P, Weinberg VK, Ardenkjaer-Larsen JH, Chen AP, Hurd RE, Odegardstuen L-I, Robb FJ, Tropp J, Murray JA. Metabolic Imaging of Patients with Prostate Cancer Using Hyperpolarized [1-13C]Pyruvate. Science Translational Medicine 2013;5(198):198ra108.</p></li>
+<li><p>Granlund KL, Tee S-S, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate Transporter 1. Cell Metabolism 2019;31(1):105-114.e103.</p></li>
+<li><p>Chen H-Y, Larson PEZ, Gordon JW, Bok RA, Ferrone M, Criekinge M, Carvajal L, Cao P, Pauly JM, Kerr AB, Park I, Slater JB, Nelson SJ, Munster PN, Aggarwal R, Kurhanewicz J, Vigneron DB. Technique development of 3D dynamic CS-EPSI for hyperpolarized 13C pyruvate MR molecular imaging of human prostate cancer. Magnetic Resonance in Medicine 2018;80(5):2062-2072.</p></li>
+<li><p>Chen H, Aggarwal R, Bok R, Ohliger M, Zhu Z, Lee P, Gordon Jeremy W, Criekinge MV, Carvajal L, Slater James B, Larson Peder EZ, Small EJ, Kurhanewicz J, Vignaud A. Hyperpolarized 13C-Pyruvate MRI Detects Real-Time Metabolic Flux in Prostate Cancer Metastases to Bone and Liver: A Clinical Feasibility Study. Prostate Cancer and Prostatic Diseases 2019 (In Press).  <a class="reference external" href="https://doi.org/10.1038/s41391-019-0180-z">https://doi.org/10.1038/s41391-019-0180-z</a>.</p></li>
+<li><p>Tran M, Latifoltojar A, Neves JB, Papoutsaki M-V, Gong F, Comment A, Costa ASH, Glaser M, Tran-Dang M-A, El Sheikh S, Piga W, Bainbridge A, Barnes A, Young T, Jeraj H, Awais R, Adeleke S, Holt C, O’Callaghan J, Twyman F, Atkinson D, Frezza C, Årstad E, Gadian D, Emberton M, Punwani S. First-in-human in vivo non-invasive assessment of intra-tumoral metabolic heterogeneity in renal cell carcinoma. BJR|case reports 2019;5(3):20190003.</p></li>
+<li><p>Stødkilde-Jørgensen H, Laustsen C, Hansen ESS, Schulte R, Ardenkjaer-Larsen JH, Comment A, Frøkiær J, Ringgaard S, Bertelsen LB, Ladekarl M, Weber B. Pilot Study Experiences With Hyperpolarized [1-13C]pyruvate MRI in Pancreatic Cancer Patients. Journal of Magnetic Resonance Imaging 2019;0(0).</p></li>
+<li><p>Yen YF, Kohler SJ, Chen AP, Tropp J, Bok R, Wolber J, Albers MJ, Gram KA, Zierhut ML, Park I, Zhang V, Hu S, Nelson SJ, Vigneron DB, Kurhanewicz J, Dirven HAAM, Hurd RE. Imaging considerations for in vivo 13C metabolic mapping using hyperpolarized 13C-pyruvate. Magnetic Resonance in Medicine 2009;62(1):1-10.</p></li>
+<li><p>Reeder SB, Brittain JH, Grist TM, Yen Y-F. Least-squares chemical shift separation for 13C metabolic imaging. Journal of Magnetic Resonance Imaging 2007;26(4):1145-1152.</p></li>
+<li><p>Wiesinger F, Weidl E, Menzel MI, Janich MA, Khegai O, Glaser SJ, Haase A, Schwaiger M, Schulte RF. IDEAL spiral CSI for dynamic metabolic MR imaging of hyperpolarized [1-13C]pyruvate. Magnetic Resonance in Medicine 2012;68(1):8-16.</p></li>
+<li><p>Gordon JW, Niles DJ, Fain SB, Johnson KM. Joint spatial-spectral reconstruction and k-t spirals for accelerated 2D spatial/1D spectral imaging of 13C dynamics. Magnetic Resonance in Medicine 2014;71(4):1435-1445.</p></li>
+<li><p>Khegai O, Schulte RF, Janich MA, Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A, Schwaiger M, Wiesinger F. Apparent rate constant mapping using hyperpolarized [1–13C]pyruvate. NMR in Biomedicine 2014;27(10):1256-1265.</p></li>
+<li><p>Macdonald EB, Barton GP, Cox BL, Johnson KM, Strigel RM, Fain SB. Improved reconstruction stability for chemical shift encoded hyperpolarized 13C magnetic resonance spectroscopic imaging using k-t spiral acquisitions. Magnetic Resonance in Medicine 2020;84(1):25-38.</p></li>
+<li><p>Meyer CH, Pauly JM, Macovskiand A, Nishimura DG. Simultaneous spatial and spectral selective excitation. Magnetic Resonance in Medicine 1990;15(2):287-304.</p></li>
+<li><p>Schulte RF, Wiesinger F. Direct design of 2D RF pulses using matrix inversion. Journal of Magnetic Resonance 2013;235(0):115-120.</p></li>
+<li><p>Lau AZ, Chen AP, Hurd RE, Cunningham CH. Spectral–spatial excitation for rapid imaging of DNP compounds. NMR in Biomedicine 2011;24(8):988-996.</p></li>
+<li><p>Miller JJ. Dynamic nuclear polarisation as a probe of metabolism in pathophysiology. 2015.</p></li>
+<li><p>Gordon JW, Vigneron DB, Larson PEZ. Development of a symmetric echo planar imaging framework for clinical translation of rapid dynamic hyperpolarized 13C imaging. Magnetic Resonance in Medicine 2017;77(2):826-832.</p></li>
+<li><p>Cunningham CH, Lau JY, Chen AP, Geraghty BJ, Perks WJ, Roifman I, Wright GA, Connelly KA. Hyperpolarized 13C Metabolic MRI of the Human Heart: Initial Experience. Circulation Research 2016;119:1177–1182.</p></li>
+<li><p>Sigfridsson A, Weiss K, Wissmann L, Busch J, Krajewski M, Batel M, Batsios G, Ernst M, Kozerke S. Hybrid multiband excitation multiecho acquisition for hyperpolarized 13C spectroscopic imaging. Magnetic Resonance in Medicine 2015;73(5):1713-1717.</p></li>
+<li><p>Gordon JW, Chen H-Y, Autry A, Park I, Van Criekinge M, Mammoli D, Milshteyn E, Bok R, Xu D, Li Y, Aggarwal R, Chang S, Slater JB, Ferrone M, Nelson S, Kurhanewicz J, Larson PEZ, Vigneron DB. Translation of Carbon-13 EPI for hyperpolarized MR molecular imaging of prostate and brain cancer patients. Magnetic Resonance in Medicine 2019;81:2702– 2709.</p></li>
+<li><p>Gallagher FA, Kettunen MI, Day SE, Hu DE, Ardenkjaer-Larsen JH, Zandt R, Jensen PR, Karlsson M, Golman K, Lerche MH, Brindle KM. Magnetic resonance imaging of pH in vivo using hyperpolarized 13C-labelled bicarbonate. Nature 2008;453(7197):940-943.</p></li>
+<li><p>Gallagher FA, Kettunen MI, Hu D-E, Jensen PR, Zandt Rit, Karlsson M, Gisselsson A, Nelson SK, Witney TH, Bohndiek SE, Hansson G, Peitersen T, Lerche MH, Brindle KM. Production of hyperpolarized [1,4-13C2]malate from [1,4-13C2]fumarate is a marker of cell necrosis and treatment response in tumors. Proceedings of the National Academy of Sciences 2009;106(47):19801-19806.</p></li>
+<li><p>Lau AZ, Chen AP, Ghugre NR, Ramanan V, Lam WW, Connelly KA, Wright GA, Cunningham CH. Rapid multislice imaging of hyperpolarized 13C pyruvate and bicarbonate in the heart. Magnetic Resonance in Medicine 2010;64(5):1323-1331.</p></li>
+<li><p>Miller JJ, Lau AZ, Tyler DJ. Susceptibility-induced distortion correction in hyperpolarized echo planar imaging. Magnetic Resonance in Medicine 2018;79(4):2135-2141.</p></li>
+<li><p>Geraghty BJ, Lau JYC, Chen AP, Cunningham CH. Dual-Echo EPI sequence for integrated distortion correction in 3D time-resolved hyperpolarized 13C MRI. Magnetic Resonance in Medicine 2018;79(2):643-653.</p></li>
+<li><p>Wang J, Wright AJ, Hesketh RL, Hu D-e, Brindle KM. A referenceless Nyquist ghost correction workflow for echo planar imaging of hyperpolarized [1-13C]pyruvate and [1-13C]lactate. NMR in Biomedicine 2018;31(2):e3866.</p></li>
+<li><p>Durst M, Koellisch U, Frank A, Rancan G, Gringeri CV, Karas V, Wiesinger F, Menzel MI, Schwaiger M, Haase A, Schulte RF. Comparison of acquisition schemes for hyperpolarised 13C imaging. NMR in Biomedicine 2015;28:715– 725.</p></li>
+<li><p>Gordon JW, Chen H-Y, Dwork N, Tang S, Larson PEZ. Fast Imaging for Hyperpolarized MR Metabolic Imaging. Journal of Magnetic Resonance Imaging 2020;DOI: 10.1002/jmri.27070.</p></li>
+<li><p>Gruber B, Froeling M, Leiner T, Klomp Dennis WJ. RF coils: A practical guide for nonphysicists. Journal of Magnetic Resonance Imaging 2018;0(0).</p></li>
+<li><p>Doty FD, Entzminger G, Kulkarni J, Pamarthy K, Staab JP. Radio frequency coil technology for small-animal MRI. NMR in Biomedicine 2007;20(3):304-325.</p></li>
+<li><p>Sun C-y, Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of parameter accuracy on pharmacokinetic analysis of hyperpolarized pyruvate. Magnetic Resonance in Medicine 2018;79:3239-3248.</p></li>
+<li><p>Haase A, Odoj F, Von Kienlin M, Warnking J, Fidler F, Weisser A, Nittka M, Rommel E, Lanz T, Kalusche B, Griswold M. NMR probeheads for in vivo applications. Concepts in Magnetic Resonance 2000;12(6):361-388.</p></li>
+<li><p>Gordon JW, Hansen RB, Shin PJ, Feng Y, Vigneron DB, Larson PEZ. 3D hyperpolarized C-13 EPI with calibrationless parallel imaging. Journal of Magnetic Resonance 2018;289:92-99.</p></li>
+<li><p>Hansen RB, Sánchez-Heredia JD, Bøgh N, Hansen ESS, Laustsen C, Hanson LG, Ardenkjær-Larsen JH. Coil profile estimation strategies for parallel imaging with hyperpolarized 13C MRI. Magnetic Resonance in Medicine 2019;82(6):2104-2117.</p></li>
+<li><p>Autry AW, Gordon JW, Carvajal L, Mareyam A, Chen H-Y, Park I, Mammoli D, Vareth M, Chang SM, Wald LL, Xu D, Vigneron DB, Nelson SJ, Li Y. Comparison between 8- and 32-channel phased-array receive coils for in vivo hyperpolarized 13C imaging of the human brain. Magnetic Resonance in Medicine 2019;82:833– 841.</p></li>
+<li><p>Dominguez-Viqueira W, Geraghty BJ, Lau JYC, Robb FJ, Chen AP, Cunningham CH. Intensity correction for multichannel hyperpolarized 13C imaging of the heart. Magnetic Resonance in Medicine 2016;75(2):859-865.</p></li>
+<li><p>Zhu Z, Zhu X, Ohliger MA, Tang S, Cao P, Carvajal L, Autry AW, Li Y, Kurhanewicz J, Chang S, Aggarwal R, Munster P, Xu D, Larson PEZ, Vigneron DB, Gordon JW. Coil combination methods for multi-channel hyperpolarized 13C imaging data from human studies. Journal of Magnetic Resonance 2019;301:73-79.</p></li>
+<li><p>Roemer PB, Edelstein WA, Hayes CE, Souza SP, Mueller OM. The NMR phased array. Magnetic Resonance in Medicine 1990;16(2):192-225.</p></li>
+<li><p>Rodgers CT, Robson MD. Receive array magnetic resonance spectroscopy: Whitened singular value decomposition (WSVD) gives optimal Bayesian solution. Magnetic Resonance in Medicine 2010;63(4):881-891.</p></li>
+</ol>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1387,7 +1269,7 @@ Resonance in Medicine 2010;63(4):881-891.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./acquisition_methods"
         },
         predefinedOutput: true
@@ -1395,56 +1277,126 @@ Resonance in Medicine 2010;63(4):881-891.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-        
-            
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../dDNP_hardware/dDNP_hardware.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../experiments_preclinical/experiments_preclinical.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">HP Experimental Methods: Cells and Animals</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
-        
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Book Editor Peder Larson<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
-</main>
-
-
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../dDNP_hardware/dDNP_hardware.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient</p>
       </div>
-    </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+    </a>
+    <a class="right-next"
+       href="../experiments_preclinical/experiments_preclinical.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">HP Experimental Methods: Cells and Animals</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperpolarized-imaging-considerations">Hyperpolarized Imaging Considerations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-1-decay-non-recoverable-magnetization">T~1~ Decay &amp; Non-Recoverable Magnetization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-decay-metabolism">RF Decay &amp; Metabolism</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-shift-displacement">Chemical Shift Displacement</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-sequences-reconstruction">Pulse Sequences &amp; Reconstruction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-selective-spectroscopy-csi">Non-Selective Spectroscopy &amp; CSI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-spectroscopic-imaging">Fast Spectroscopic Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-csi">IDEAL CSI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-selective-imaging">Metabolite-Selective Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pulse-sequence-summary">Pulse Sequence Summary</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-coils">RF Coils</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-volume-coils">Surface &amp; Volume Coils</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multichannel-arrays-coil-combination">Multichannel Arrays &amp; Coil Combination</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
+  <div class="footer-item">
+    
+<p class="component-author">
+By Book Editor Peder Larson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2021.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
