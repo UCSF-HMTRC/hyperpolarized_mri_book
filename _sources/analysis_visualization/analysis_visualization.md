@@ -102,7 +102,7 @@ Horos (10). There are also several other popular packages for ^1^H MRSI
 that can be applied to HP ^13^C and includes jMRUI (11) and TARQUIN (12,
 13).
 
-![HP 13C Visualization modes](./data%20visualization%20example.png)
+![HP 13C Visualization modes](./data-visualization-example.png)
 
 **Figure 1: HP ^13^C** **Visualization
 modes**. In this example, dynamic HP ^13^C MRSI data acquired covering
@@ -256,8 +256,7 @@ the cross-sectional area between the two volume compartments, *A*, and
 the change in concentration is found by dividing by the total volume of
 that compartment, *V­~ic~*:
 
-> $\frac{\partial\text{Pyr}_{\text{ic}}(t)}{\partial t} = j\frac{A}{V_{\text{ic}}} = \frac{\text{PA}}{V_{\text{ic}}}\left( \text{Pyr}_{\text{ee}}(t) - \text{Pyr}_{\text{ic}}(t) \right)$
-> (8)
+ $\frac{\partial\text{Pyr}_{\text{ic}}(t)}{\partial t} = j\frac{A}{V_{\text{ic}}} = \frac{\text{PA}}{V_{\text{ic}}}\left( \text{Pyr}_{\text{ee}}(t) - \text{Pyr}_{\text{ic}}(t) \right)$ (8)
 
 We can simplify this expression by recognizing that the total
 intracellular volume can be written as a product of the total volume,
@@ -564,8 +563,8 @@ $\text{Pyr}(t) = k_{\text{ve}}\int_{t_{0}}^{t}{e^{\mathbf{-}\alpha_{P,e}(t - \ta
 
 $\text{Lac}(t) = k_{\text{PL}}^{'}\int_{t_{0}}^{t}{e^{\mathbf{-}\alpha_{L,e}(t - \tau)}\text{Pyr}_{\text{ev}}(\tau)\text{dτ}}$
 
-> $= \frac{k_{\text{ve}}k_{\text{PL}}^{'}}{\alpha_{P,e}\mathbf{-}\alpha_{L,e}}\int_{t_{0}}^{t}{\left( e^{\mathbf{-}\alpha_{L,e}(t - \tau)} - e^{\mathbf{-}\alpha_{P,e}(t - \tau)} \right)\text{Pyr}_{\text{iv}}(\tau)\text{dτ}}$
-> (23)
+ $= \frac{k_{\text{ve}}k_{\text{PL}}^{'}}{\alpha_{P,e}\mathbf{-}\alpha_{L,e}}\int_{t_{0}}^{t}{\left( e^{\mathbf{-}\alpha_{L,e}(t - \tau)} - e^{\mathbf{-}\alpha_{P,e}(t - \tau)} \right)\text{Pyr}_{\text{iv}}(\tau)\text{dτ}}$
+ (23)
 
 Equation 22 closely resembles the well-known extended Tofts model for
 extravasation of Gd-based contrast agents during a dynamic,
@@ -750,7 +749,7 @@ For these reasons, model-free metrics of metabolic conversion, several
 of which are illustrated in Fig. 7, have been developed and are a
 popular alternative to kinetic models.
 
-![Model-free metrics](modelfree%20metric%20illustration.png)
+![Model-free metrics](modelfree-metric-illustration.png)
 
 **Figure 7:** Illustration of several model-free metrics that can be
 used for HP data. These include the lactate-to-pyruvate ratio at a
@@ -789,8 +788,8 @@ acquisition covers the entire dynamic acquisition, including the bolus
 delivery, and an underlying precursor-product kinetic model (Eq. 23,
 Fig. 5), the AUC ratio between lactate and pyruvate is:
 
-> $\text{AU}C_{\text{ratio}} = \frac{\text{AU}C_{\text{Lac}}}{\text{AU}C_{\text{Pyr}}} = \frac{k_{\text{PL}}^{''}}{R_{\text{Lac}} + k_{\text{LP}}^{''}}.$
-> (24)
+ $\text{AU}C_{\text{ratio}} = \frac{\text{AU}C_{\text{Lac}}}{\text{AU}C_{\text{Pyr}}} = \frac{k_{\text{PL}}^{''}}{R_{\text{Lac}} + k_{\text{LP}}^{''}}.$
+ (24)
 
 This relationship trivially extends to other HP agents with
 precursor-product conversion processes, and also is valid when the

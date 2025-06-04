@@ -550,7 +550,7 @@ Bruker, Agilent), and also can be used as a plug-in with OsiriX (9) and
 Horos (10). There are also several other popular packages for ^1^H MRSI
 that can be applied to HP ^13^C and includes jMRUI (11) and TARQUIN (12,
 13).</p>
-<p><img alt="HP 13C Visualization modes" src="analysis_visualization/data%20visualization%20example.png" /></p>
+<p><img alt="HP 13C Visualization modes" src="../_images/data-visualization-example.png" /></p>
 <p><strong>Figure 1: HP ^13^C</strong> <strong>Visualization
 modes</strong>. In this example, dynamic HP ^13^C MRSI data acquired covering
 mouse kidneys following HP [1-^13^C]pyruvate injection is displayed in
@@ -685,10 +685,7 @@ MR measurements.</p>
 the cross-sectional area between the two volume compartments, <em>A</em>, and
 the change in concentration is found by dividing by the total volume of
 that compartment, <em>V­~ic~</em>:</p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(\frac{\partial\text{Pyr}_{\text{ic}}(t)}{\partial t} = j\frac{A}{V_{\text{ic}}} = \frac{\text{PA}}{V_{\text{ic}}}\left( \text{Pyr}_{\text{ee}}(t) - \text{Pyr}_{\text{ic}}(t) \right)\)</span>
-(8)</p>
-</div></blockquote>
+<p><span class="math notranslate nohighlight">\(\frac{\partial\text{Pyr}_{\text{ic}}(t)}{\partial t} = j\frac{A}{V_{\text{ic}}} = \frac{\text{PA}}{V_{\text{ic}}}\left( \text{Pyr}_{\text{ee}}(t) - \text{Pyr}_{\text{ic}}(t) \right)\)</span> (8)</p>
 <p>We can simplify this expression by recognizing that the total
 intracellular volume can be written as a product of the total volume,
 <em>V~T~</em>, which may represent a voxel in an imaging measurement, and an
@@ -960,10 +957,8 @@ then Eq. 21 becomes a much more familiar expression:</p>
 <p><span class="math notranslate nohighlight">\(\text{Pyr}(t) = k_{\text{ve}}\int_{t_{0}}^{t}{e^{\mathbf{-}\alpha_{P,e}(t - \tau)}\text{Pyr}_{\text{iv}}(\tau)\text{dτ}} + v_{b}\text{Pyr}_{\text{iv}}(t)\)</span>
 (22)</p>
 <p><span class="math notranslate nohighlight">\(\text{Lac}(t) = k_{\text{PL}}^{'}\int_{t_{0}}^{t}{e^{\mathbf{-}\alpha_{L,e}(t - \tau)}\text{Pyr}_{\text{ev}}(\tau)\text{dτ}}\)</span></p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(= \frac{k_{\text{ve}}k_{\text{PL}}^{'}}{\alpha_{P,e}\mathbf{-}\alpha_{L,e}}\int_{t_{0}}^{t}{\left( e^{\mathbf{-}\alpha_{L,e}(t - \tau)} - e^{\mathbf{-}\alpha_{P,e}(t - \tau)} \right)\text{Pyr}_{\text{iv}}(\tau)\text{dτ}}\)</span>
+<p><span class="math notranslate nohighlight">\(= \frac{k_{\text{ve}}k_{\text{PL}}^{'}}{\alpha_{P,e}\mathbf{-}\alpha_{L,e}}\int_{t_{0}}^{t}{\left( e^{\mathbf{-}\alpha_{L,e}(t - \tau)} - e^{\mathbf{-}\alpha_{P,e}(t - \tau)} \right)\text{Pyr}_{\text{iv}}(\tau)\text{dτ}}\)</span>
 (23)</p>
-</div></blockquote>
 <p>Equation 22 closely resembles the well-known extended Tofts model for
 extravasation of Gd-based contrast agents during a dynamic,
 contrast-enhanced (DCE-) MRI measurement (20). Pyruvate in the
@@ -1134,7 +1129,7 @@ implementations than many of the model-free alternatives described next.
 For these reasons, model-free metrics of metabolic conversion, several
 of which are illustrated in Fig. 7, have been developed and are a
 popular alternative to kinetic models.</p>
-<p><img alt="Model-free metrics" src="analysis_visualization/modelfree%20metric%20illustration.png" /></p>
+<p><img alt="Model-free metrics" src="../_images/modelfree-metric-illustration.png" /></p>
 <p><strong>Figure 7:</strong> Illustration of several model-free metrics that can be
 used for HP data. These include the lactate-to-pyruvate ratio at a
 single time-point ( <em>Lac</em>(<em>t~meas~</em>)/<em>Pyr</em>(<em>t~meas~</em>) ), the AUC ratio
@@ -1168,10 +1163,8 @@ rate under certain conditions (37). With assumptions that the
 acquisition covers the entire dynamic acquisition, including the bolus
 delivery, and an underlying precursor-product kinetic model (Eq. 23,
 Fig. 5), the AUC ratio between lactate and pyruvate is:</p>
-<blockquote>
-<div><p><span class="math notranslate nohighlight">\(\text{AU}C_{\text{ratio}} = \frac{\text{AU}C_{\text{Lac}}}{\text{AU}C_{\text{Pyr}}} = \frac{k_{\text{PL}}^{''}}{R_{\text{Lac}} + k_{\text{LP}}^{''}}.\)</span>
+<p><span class="math notranslate nohighlight">\(\text{AU}C_{\text{ratio}} = \frac{\text{AU}C_{\text{Lac}}}{\text{AU}C_{\text{Pyr}}} = \frac{k_{\text{PL}}^{''}}{R_{\text{Lac}} + k_{\text{LP}}^{''}}.\)</span>
 (24)</p>
-</div></blockquote>
 <p>This relationship trivially extends to other HP agents with
 precursor-product conversion processes, and also is valid when the
 substrate is converted into multiple products (e.g. [1-^13^C]pyruvate

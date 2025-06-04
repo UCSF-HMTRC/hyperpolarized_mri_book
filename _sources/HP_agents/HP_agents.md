@@ -45,6 +45,17 @@ in several recent review articles (1-5). Readers seeking more detailed
 information are referred to them and the primary references cited
 therein.
 
+![Desiging a 13C probe for hyperpolarization.](C13-probe-design.png)
+
+Diagram from Myriam M. Chaumeil, Chloé Najac, Sabrina M. Ronen,
+Chapter One - Studies of Metabolism Using 13C MRS of Hyperpolarized Probes,
+Editor(s): Christian M. Metallo,
+Methods in Enzymology,
+Academic Press,
+561,
+2015, 1-71,
+https://doi.org/10.1016/bs.mie.2015.04.001.
+
 ## 6.1.1 Main differences between ^1^H MRI and HP ^13^C spectroscopy and imaging
 
 ­Whereas conventional MRI generally detects the highly abundant water
@@ -145,7 +156,7 @@ like the heart and brain. (Figure 6.1). As discussed in below in section
 6.2.4, \[2-^13^C\]pyruvate is also used to label metabolites downstream
 of PDH.
 
-![Figure 6.1: Metabolism of HP 1-13C pyruvate, lactate and alanine.](Figure%206.1.png)
+![Figure 6.1: Metabolism of HP 1-13C pyruvate, lactate and alanine.](Figure6.1.png)
 
 Figure 6.1 Metabolism of HP 1-^13^C pyruvate, lactate and alanine.
 Pyruvate, lactate and alanine are reversibly interconverted in the cell
@@ -168,7 +179,7 @@ and entry into the gluconeogenesis pathway liberates ^13^CO~2~, detected
 as bicarbonate. Pyruvate-to-bicarbonate conversion in gluconeogenic
 tissues results from both pyruvate oxidation and PEP production (8).
 
-![Figure 6.2: Anapleurotic metabolism of 1-13C pyruvate.](Figure%206.2.png)
+![Figure 6.2: Anapleurotic metabolism of 1-13C pyruvate.](Figure6.2.png)
 
 Figure 6.2 Anapleurotic metabolism of 1-^13^C pyruvate. In the
 mitochondrion, pyruvate is converted to the tricarboxylic (TCA) cycle
@@ -192,7 +203,7 @@ resulting in a marked increase in its conversion to
 treated tumors (9-11) as well as in the injured kidney (12,13) and
 myocardium (14).
 
-![Figure 6.3: Detection of necrosis with HP 13C fumarate.](Figure%206.3.png)
+![Figure 6.3: Detection of necrosis with HP 13C fumarate.](Figure6.3.png)
 
 Figure 6.3 Detection of necrosis with HP ^13^C fumarate. Cell membrane
 disruption in necrotic tissue increases the accessibility of HP
@@ -241,7 +252,7 @@ achieve the best sensitivity and resolution. \[1-^13^C\]Glycerate (25)
 may similarly probe these pathways, although the primary metabolites
 reported are lactate, pyruvate and bicarbonate.
 
-![Figure 6.4: HP probes of glucose metabolism.](Figure%206.4.png)
+![Figure 6.4: HP probes of glucose metabolism.](Figure6.4.png)
 
 Figure 6.4 HP probes of glucose metabolism. Composite of HP ^13^C agents
 engaging the glycolysis, gluconeogenesis and pentose phosphate pathways.
@@ -282,7 +293,7 @@ The myocardial metabolism of the 4- and 8-carbon fatty acids
 resonate at a higher chemical shift than acetate, allowing the
 \[5-^13^C\]glutamate signal to be resolved.
 
-![Figure 6.5: Mitochondrial HP probes of fatty-acid, ketone-body, and carbohydrate oxidation.](Figure%206.5.png)
+![Figure 6.5: Mitochondrial HP probes of fatty-acid, ketone-body, and carbohydrate oxidation.](Figure6.5.png)
 
 Figure 6.5 Mitochondrial HP probes of fatty-acid, ketone-body, and
 carbohydrate oxidation. They are metabolized by different routes to the
@@ -343,7 +354,7 @@ dehydrogenase-1. 2-HG production has been measured in animal models with
 tumors bearing this mutation, using HP α-keto\[1-^13^C\]glutarate (54)
 or \[1-^13^C\]glutamine (55) as the precursor. (Figure 6.6)
 
-![Figure 6.6: Metabolism of HP 13C glutamine and α-ketoglutarate.](Figure%206.6.png)
+![Figure 6.6: Metabolism of HP 13C glutamine and α-ketoglutarate.](Figure6.6.png)
 
 Figure 6.6 Metabolism of HP ^13^C glutamine and α-ketoglutarate.
 Elevated glutaminase (GLS) activity in tumors is directly detected with
@@ -514,7 +525,7 @@ mesoporous hybrid silica (95). Quenching of nitroxyl radicals with
 sodium ascorbate has been achieved both during dissolution (96) and
 after transfer (97), resulting in slower relaxation rates.
 
-![Figure 6.7: Persistent radicals commonly used for hyperpolarization.](Figure%206.7.png)
+![Figure 6.7: Persistent radicals commonly used for hyperpolarization.](Figure6.7.png)
 
 Figure 6.7 Persistent radicals commonly used for hyperpolarization. A:
 Chemical structures; dots denote the unpaired radical electrons. Trityls
@@ -938,7 +949,7 @@ particularly applicable for functional imaging of tumors. The ideal
 characteristics for HP ^13^C metabolic probes are summarized in Figure
 6.8.
 
-![Figure 6.8: Characteristics of good HP 13C agents.](Figure%206.8.png)
+![Figure 6.8: Characteristics of good HP 13C agents.](Figure6.8.png)
 
 
 Figure 6.8 Characteristics of good HP ^13^C agents. The ideal agent will

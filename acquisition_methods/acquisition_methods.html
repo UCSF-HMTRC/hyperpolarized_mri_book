@@ -568,8 +568,8 @@ consumes some of the finite, non-recoverable hyperpolarized
 magnetization. In the absence of metabolism, the expression for the
 longitudinal (<em>M~z~</em>) and transverse (<em>M~xy~</em>) magnetization after <em>n</em>
 RF excitations of a constant flip-angle θ is given by (6):</p>
-<p><span class="math notranslate nohighlight">\(M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta\)</span>                                                                                     (2)
-<span class="math notranslate nohighlight">\(M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta\)</span> . (3)</p>
+<p><span class="math notranslate nohighlight">\(M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta\)</span>                                                                                     (2)</p>
+<p><span class="math notranslate nohighlight">\(M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta\)</span> . (3)</p>
 <p><img alt="Effect of flip angle" src="../_images/fig-0.png" /></p>
 <p><strong>Figure 1.</strong> The effect of flip-angle (θ) on the longitudinal (M~z~)
 and transverse (M~xy~) magnetization. A large flip-angle rapidly
@@ -736,6 +736,8 @@ small FOVs (2,25) or for substrates with complicated spectra or large
 chemical shift dispersion where high spectral resolution and a large
 spectral bandwidth are needed, as its poor temporal resolution precludes
 volumetric coverage and can hamper measurements of metabolic conversion.</p>
+<p><img alt="MRSI methods for HP agents" src="../_images/MRSI-examples.png" /></p>
+<p><strong>Figure 4:</strong> Illustration of MRSI methods for HP agents. All methods start with RF excitation and slice selection, appended with a spectroscopic or spectroscopic imaging readout. Free induction decay (FID) MRS provides a spectrum from the excited slice and just requires one TR. Phase encoding (CSI) provides a spectroscopic image, but requires multiple TRs to perform all phase encodings necessary to sample k-space (e.g., Scan time = <span class="math notranslate nohighlight">\(TR \times N_{PE,X} \times N_{PE,Y}\)</span> for the 2D MRSI example shown). Echo-planar spectroscopic imaging (EPSI) also provides a spectroscopic image, but requires relatively fewer TRs to cover k-space (e.g., Scan time =  <span class="math notranslate nohighlight">\(TR \times N_{PE,Y}\)</span> for the 2D MRSI example shown), allowing for rapid imaging of HP agent kinetics.  Figure adapted from Larson PEZ, Gordon JW. Hyperpolarized Metabolic MRI—Acquisition, Reconstruction, and Analysis Methods. <em>Metabolites</em>. 2021; 11(6):386. <a class="reference external" href="https://doi.org/10.3390/metabo11060386">https://doi.org/10.3390/metabo11060386</a></p>
 </section>
 <section id="fast-spectroscopic-imaging">
 <h2>Fast Spectroscopic Imaging<a class="headerlink" href="#fast-spectroscopic-imaging" title="Link to this heading">#</a></h2>
@@ -743,7 +745,7 @@ volumetric coverage and can hamper measurements of metabolic conversion.</p>
 during acquisition can greatly reduce the scan time for HP experiments
 compared to phase-encoded CSI. Joint spatial and spectral encoding is
 accomplished by traversing k-space at multiple TEs, shifted in time by a
-fixed echo-spacing ΔTE (<strong>Fig. 4</strong>). By acquiring the same k-space point
+fixed echo-spacing ΔTE (<strong>Fig. 5</strong>). By acquiring the same k-space point
 (<em>k~x~, k~y~</em>) at multiple echo times (typically 32 – 128 echoes), a
 Fourier transform along the echo dimension produces a spectrum at each
 k-space point, reducing the scan time by the number of acquired points
@@ -771,7 +773,7 @@ investigating new diseases or organs of interest, drug targets and
 metabolic pathway inhibition, or in the setting of HP probe development.</p>
 <p>However, the resulting speed advantage with fast spectroscopic imaging
 results in tradeoffs between spectral bandwidth, spatial resolution, and
-SNR efficiency, which are summarized in <strong>Fig. 4</strong> (29,40). In fast
+SNR efficiency, which are summarized in <strong>Fig. 5</strong> (29,40). In fast
 spectroscopic imaging, the sampling time between echoes (ΔTE) is
 typically on the order of 1 – 2 ms for human imaging systems because of
 the joint spectral and spatial encoding. This results in a narrow
@@ -792,7 +794,7 @@ on pre-clinical systems with high-performance gradients, as they can
 overcome the reduced gyromagnetic ratio to provide larger spectral
 bandwidths without the need for interleaved acquisitions.</p>
 <p><img alt="Rapid MRSI methods employing multi-echo readout gradients" src="../_images/rapidMRSI.png" /></p>
-<p><strong>Figure 4.</strong> Illustration and comparison of several rapid MRSI methods
+<p><strong>Figure 5.</strong> Illustration and comparison of several rapid MRSI methods
 employing multi-echo readout gradients. Left two columns: image k-space
 trajectories for EPSI (symmetric and flyback), spiral and concentric
 rings spectroscopic imaging. Right two columns: Design tradeoffs between
@@ -868,9 +870,9 @@ RF pulse that is both slice- and frequency-selective (46). Unlike a
 typical (i.e. sinc) slice-selective excitation, SPSP RF pulses have a
 narrow frequency response while retaining spatial selectivity. This is
 accomplished by playing a train of subpulses under a broad B1 envelope,
-in conjunction with an oscillating slice-select gradient (<strong>Fig. 5</strong>).</p>
+in conjunction with an oscillating slice-select gradient (<strong>Fig. 6</strong>).</p>
 <p><img alt="Spectral-spatial pulse example" src="../_images/fig-3.png" /></p>
-<p><strong>Figure 5.</strong> Example of a spectral-spatial RF pulse designed for
+<p><strong>Figure 6.</strong> Example of a spectral-spatial RF pulse designed for
 studies of HP [1-^13^C]pyruvate and [1-^13^C]lactate. The RF
 envelope and oscillating gradient provide the spectral and spatial
 selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
@@ -904,7 +906,7 @@ spacing between adjacent subpulses.</p></li>
 the Fourier transform of an individual subpulse.</p></li>
 </ul>
 <p>A schematic of the operation of metabolite-selective imaging can be seen
-in <strong>Fig. 6</strong>. The singleband spectral-spatial RF pulse performs the
+in <strong>Fig. 7</strong>. The singleband spectral-spatial RF pulse performs the
 spectral encoding, exciting a single metabolite within a slice (or slab)
 (46,48). A rapid imaging readout, typically a single-shot echoplanar
 (14,50) or spiral (51) trajectory, is then used to spatially encode the
@@ -916,7 +918,7 @@ separately, multiband flip angle strategies that provide
 metabolite-specific flip angles can be easily integrated, which have
 been shown to increase SNR over a constant flip angle scheme (13,52).</p>
 <p><img alt="Metabolite-selective imaging sequence overview" src="../_images/fig-4.png" /></p>
-<p><strong>Figure 6</strong>. Overview of a metabolite-selective imaging sequence. The
+<p><strong>Figure 7</strong>. Overview of a metabolite-selective imaging sequence. The
 singleband spectral-spatial RF pulse performs the spectral encoding,
 exciting a single metabolite within a slice (or slab). A rapid imaging
 readout trajectory is then used to spatially encode the magnetization as
@@ -930,8 +932,8 @@ imaging (i.e. EPSI) and metabolite-selective imaging (i.e. EPI)
 sequences. The scan time for a single timeframe is determined by the TR,
 number of slices (<em>nSlices</em>), and either number of phase-encodes (<em>nPE</em>)
 or number of metabolites encoded (<em>nMets</em>):</p>
-<p><span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPSI} \right)\text{\ =\ TR} \times \text{nPE} \times \text{n}\text{Slices}\)</span>   (5)
-<span class="math notranslate nohighlight">\(\text{Scan\ Time}\left( \text{EPI} \right)\text{\ =\ TR} \times \text{nMets} \times \text{nSlices}\)</span>         (6)</p>
+<p><span class="math notranslate nohighlight">\(\text{Scan Time}\left( \text{EPSI} \right)\text{ = TR} \times \text{nPE} \times \text{n}\text{Slices}\)</span>   (5)</p>
+<p><span class="math notranslate nohighlight">\(\text{Scan Time}\left( \text{EPI} \right)\text{ = TR} \times \text{nMets} \times \text{nSlices}\)</span>         (6)</p>
 <p>Given that the number of hyperpolarized metabolites is less than the
 number of phase-encodes, and that the TR for metabolite-selective
 imaging is less than the TR for EPSI, metabolite-selective imaging
@@ -1090,8 +1092,7 @@ multichannel array in hyperpolarized studies has been to improve
 sensitivity over a large imaging volume; the total SNR improvement will
 depend on the channel count and geometry of the receive array, but in
 general multichannel arrays offer improved SNR at the periphery while
-approaching the performance of a volume coil at the center (68) (<strong>Fig.
-7</strong>). Due to space constraints these arrays have found most of their use
+approaching the performance of a volume coil at the center (68) (<strong>Fig. 8</strong>). Due to space constraints these arrays have found most of their use
 on clinical systems with large bore sizes, primarily in the study of
 large animal (69) and human applications (51,53). However, the separate
 transmit and multichannel receive coils can inductively couple,
@@ -1099,7 +1100,7 @@ resulting in significantly degraded performance. This combination
 requires additional circuitry and logic to turn on and off, or detune,
 the coils when not in use.</p>
 <p><img alt="Phantom SNR images and line profiles" src="../_images/fig-5.png" /></p>
-<p><strong>Figure 7</strong>. SNR images and line profiles obtained from a phantom
+<p><strong>Figure 8</strong>. SNR images and line profiles obtained from a phantom
 containing natural abundance ^13^C ethylene glycol using a birdcage
 (volume) transceiver, 8-channel paddle array, and 32-channel array at 3
 T. Data from the 8-channel paddle array were acquired at two distances
@@ -1130,7 +1131,7 @@ excellent approximation of the coil sensitivities while maintaining
 valuable phase information in the coil-combined images. A comparison
 between the sum-of-squares and data-driven coil combination methods
 (Refpeak) in a human hyperpolarized brain experiment of
-[1-^13^C]pyruvate can be seen in <strong>Fig. 8</strong>. While image quality is
+[1-^13^C]pyruvate can be seen in <strong>Fig. 9</strong>. While image quality is
 sufficient for the high-SNR pyruvate images using a simple
 sum-of-squares approach, image quality is degraded for lactate and
 especially bicarbonate when the coil weights are not known, reducing SNR
@@ -1140,7 +1141,7 @@ bicarbonate and late-phase pyruvate dynamics, significantly improving
 image quality and contrast compared to a sum of squares approach and
 will enable robust quantification of HP ^13^C metabolism.</p>
 <p><img alt="Coil combination methods for hyperpolarized data" src="../_images/fig-6.png" /></p>
-<p><strong>Figure 8</strong>. Images of hyperpolarized [1-^13^C]pyruvate,
+<p><strong>Figure 9</strong>. Images of hyperpolarized [1-^13^C]pyruvate,
 [1-^13^C]lactate, and ^13^C-bicarboate human brain data acquired with
 a 32-channel coil and reconstructed with a sum-of-squares or data-driven
 (Refpeak) approach. While image quality is sufficient for the high-SNR
