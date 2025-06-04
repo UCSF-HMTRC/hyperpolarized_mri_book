@@ -486,7 +486,7 @@ spin. The electron spin transitions can be induced by spin-phonon
 coupling \[33\]. In addition to the spin-lattice induced transitions,
 there can also be transitions induced by the microwave field. The
 frequency of the microwave field, corresponding to the difference in
-energy between the states, ![](media/image3.wmf), selectively driving
+energy between the states, $\omega_e \pm \omega_n$, selectively driving
 either of the two transitions. We assume that the electron spin
 linewidth, *∆ω~s~*, is much smaller than the nuclear frequency *ω~I~* so
 that when flip-flops occur, flip-flips are impossible because they are
@@ -551,7 +551,7 @@ shows a typical DNP enhancement spectrum for ^1^H (approx. 142 MHz) at
 negative enhancement of the nuclear spin polarization happens and the
 difference and sum frequencies, respectively.
 
-Because of the ![](media/image4.wmf) dependence of the transitions
+Because of the $r^{-6}$ dependence of the transitions
 rates, the dipolar coupling becomes increasingly less efficient at
 longer distances. It would thus seem that only spins in the vicinity of
 the paramagnetic centers would be polarized. However, if spin diffusion
@@ -710,8 +710,7 @@ microwaves off resonance by an amount of the order of the width of the
 EPR, i.e. $\Delta \approx D$, we have the condition
 $\omega_{e}\Delta \gg \Omega^{2}$ and the second term in the numerator
 can be neglected. Close to resonance however the second term should be
-retained. We obtain the limiting cases ![](media/image5.wmf) as
-![](media/image6.wmf), and $\beta_{\text{eq}} = \beta_{L}$ when
+retained. We obtain the limiting cases $\beta_{eq} =0$ as $\Delta \rightarrow \pm \infty$, and $\beta_{\text{eq}} = \beta_{L}$ when
 $\Delta = 0$. The extreme values of Eq. 12 are obtained for
 $\Delta = - \Omega^{2}/2\omega_{e} \pm (\Omega^{4}/4\omega_{e} + \Omega^{2})^{0.5}$.
 In the limit $\Omega \ll \omega_{S}$ (this is always the case at high
@@ -730,7 +729,7 @@ theory, but a specialized solution for the simplified case of
 inhomogeneous broadening of the EPR caused by either a distribution of
 electron spin g-factors, or by hyperfine interactions with neighboring
 nuclei is given in \[33\], the Borghini model. Assuming steady-state
-conditions, one obtains an integral equation for ![](media/image7.wmf)
+conditions, one obtains an integral equation for $\beta$ 
 which must be solved numerically:
 
 $- \Delta_{0}P_{0e} + \frac{N_{n}}{N_{e}}\frac{T_{1e}}{T_{1n}}2I\omega_{n}P_{n} = \int_{- \infty}^{\infty}{\left( \Delta_{0} - \Delta \right)g(\Delta)\tanh\left( \frac{1}{2}\beta\left( \Delta_{0} - \Delta \right) \right)\text{dΔ}}$
@@ -1008,19 +1007,12 @@ signal-to-noise ratio of &gt; 10,000 times in liquid-state NMR., Proc.
 Natl. Acad. Sci. U. S. A. 100 (2003) 10158--63.
 https://doi.org/10.1073/pnas.1733835100.
 
-\[2\] S.J.S.J. Nelson, J.
-Kurhanewicz, D.B.D.B. Vigneron, P.E.Z.P.E.Z. Larson, A.L.A.L. Harzstark,
-M. Ferrone, M. Van Criekinge, J.W.J.W. Chang, R. Bok, I. Park, G. Reed,
-L. Carvajal, E.J. Small, P. Munster, V.K. Weinberg, J.H.J.H.J.H.
-Ardenkjaer-Larsen, A.P. Chen, R.E. Hurd, L.-I.L.-I. Odegardstuen, F.J.
-Robb, J. Tropp, J.A.J.A. Murray, M. van Criekinge, J.W.J.W. Chang, R.
-Bok, I. Park, G. Reed, L. Carvajal, E.J. Small, P. Munster, V.K.
-Weinberg, J.H.J.H.J.H. Ardenkjaer-Larsen, A.P. Chen, R.E. Hurd,
-L.-I.L.-I. Odegardstuen, F.J. Robb, J. Tropp, J.A.J.A. Murray, M. Van
-Criekinge, J.W.J.W. Chang, R. Bok, I. Park, G. Reed, L. Carvajal, E.J.
-Small, P. Munster, V.K. Weinberg, J.H.J.H.J.H. Ardenkjaer-Larsen, A.P.
-Chen, R.E. Hurd, L.-I.L.-I. Odegardstuen, F.J. Robb, J. Tropp, J.A.J.A.
-Murray, Metabolic imaging of patients with prostate cancer using
+\[2\]  S.J. Nelson, J.
+Kurhanewicz, D.B. Vigneron, P.E.Z. Larson, A.L. Harzstark,
+M. Ferrone, M. Van Criekinge, J.W. Chang, R. Bok, I. Park, G. Reed,
+L. Carvajal, E.J. Small, P. Munster, V.K. Weinberg, J.H.
+Ardenkjaer-Larsen, A.P. Chen, R.E. Hurd, L.-I. Odegardstuen, F.J.
+Robb, J. Tropp, J.A. Murray, Metabolic imaging of patients with prostate cancer using
 hyperpolarized \[1-^13^C\]pyruvate., Sci. Transl. Med. 5 (2013)
 198ra108-198ra108. https://doi.org/10.1126/scitranslmed.3006070.
 
@@ -1308,11 +1300,8 @@ C\]pyruvic acid, Phys. Chem. Chem. Phys. 18 (2016) 12409--12413.
 https://doi.org/10.1039/C6CP00589F.
 
 \[47\] J.H. Ardenkjaer-Larsen, S.
-Bowen, J.R.J.R.J.R. Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch,
-N.C.N.C. Nielsen, J.H. Ardenkjær-Larsen, S. Bowen, J.R.J.R.J.R.
-Petersen, O. Rybalko, M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen,
-J.H. Ardenkjaer-Larsen, S. Bowen, J.R.J.R.J.R. Petersen, O. Rybalko,
-M.S.M.S. Vinding, M. Ullisch, N.C.N.C. Nielsen, Cryogen-free dissolution
+Bowen, J.R. Petersen, O. Rybalko, M.S. Vinding, M. Ullisch,
+N.C. Nielsen, Cryogen-free dissolution
 dynamic nuclear polarization polarizer operating at 3.35 T, 6.70 T, and
 10.1 T, Magn. Reson. Med. 81 (2019) 2184--2194.
 https://doi.org/10.1002/mrm.27537.
