@@ -17,4 +17,12 @@ This is not intended to be a review of all the literature (methods/techniques/et
 
 **Prerequisites**: Familiarity with introductory college-level physics, chemistry, and math.
 
+## Citation
+
+```
+Hyperpolarized Carbon-13 MRI. Editor: Peder E. Z. Larson.
+Available online at: https://ucsf-hmtrc.github.io/hyperpolarized_mri_book/
+doi: 10.5281/zenodo.15603048
+```
+
 
