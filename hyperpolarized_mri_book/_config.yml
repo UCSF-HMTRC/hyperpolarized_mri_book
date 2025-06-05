@@ -6,7 +6,7 @@
 #######################################################################################
 # Book settings
 title                       : Hyperpolarized Carbon-13 Magnetic Resonance Imaging  # The title of the book. Will be placed in the left navbar.
-author                      : Book Editor: Peder Larson  # The author of the book
+author                      : "Book Editor: Peder Larson"  # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
 logo                        : HP_MRI_Book_graphic.png  # A path to the book logo
 
