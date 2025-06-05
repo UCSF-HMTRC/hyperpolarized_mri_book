@@ -1,8 +1,15 @@
-# Hyperpolarized Carbon-13 Magnetic Resonance Imaging and Spectroscopy
+# Hyperpolarized Carbon-13 Magnetic Resonance Imaging
 
 This book describes the principles and applications of hyperpolarized carbon-13 magnetic resonance imaging and spectroscopy. The first half of this book focuses on the more fundamental concepts required for a hyperpolarized carbon-13 magnetic resonance experiment, including the physics, hardware, acquisition methods, experimental methods, imaging agents, and analysis.  The final chapters describe how this technology is being used in the settings of cancer, neurology, the heart, and the liver to unveil new understandings and assessments of biology.
 
-**THIS IS A PREPRINT, PROVIDED FOR NON-COMMERCIAL USE ONLY**
+## Citation
+
+```
+Hyperpolarized Carbon-13 MRI. Editor: Peder E. Z. Larson.
+Available online at: https://ucsf-hmtrc.github.io/hyperpolarized_mri_book/
+doi: 10.5281/zenodo.15603048
+```
+
 
 ## Usage
 
