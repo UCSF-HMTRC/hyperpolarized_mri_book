@@ -961,7 +961,7 @@ that $T_1$ is constant and equal to the value measured at the
 spectrometer field throughout the transfer (the relaxation time constant
 may depend on the magnetic field).
 
-# Conclusion
+## Conclusion
 
 The DNP theory has received much attention in recent years with the
 renaissance of the method within NMR and MRI. High field static and
