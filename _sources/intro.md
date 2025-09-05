@@ -1,6 +1,5 @@
 # Welcome to Hyperpolarized Carbon-13 MRI
 
-**PREPRINT FOR EDUCATIONAL USE ONLY**
  
 This is an educational book on hyperpolarized metabolic 13C MRI technology and biomedical applications.
 

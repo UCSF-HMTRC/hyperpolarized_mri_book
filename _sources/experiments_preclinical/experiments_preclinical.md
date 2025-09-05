@@ -11,13 +11,13 @@ Corresponding author: Renuka.Sriram\@ucsf.edu
 **Abstract**
 
 This chapter describes the essential components of pre-clinical testing
-of hyperpolarized ^13^C labeled substrates for the uninitiated. Its
+of hyperpolarized <sup>13</sup>C labeled substrates for the uninitiated. Its
 focus is on the unique aspects of executing a successful hyperpolarized
 study, starting from the dissolution stage to the delivery into the
 biological system. A detailed discussion of the range of model systems
 at various testing phases and its unique advantages and disadvantages
 are presented. After reading this chapter the reader should have a basic
-knowledge of how hyperpolarized ^13^C MRI probes are tested and used to
+knowledge of how hyperpolarized <sup>13</sup>C MRI probes are tested and used to
 investigate biomedical questions.
 
 **Keywords**
@@ -34,7 +34,7 @@ Metabolism, Bioreactor, Enzyme, model systems
 
 4.  Delivery -- How much and how to?
 
-5.  Preclinical model systems for testing of hyperpolarized ^13^C probes
+5.  Preclinical model systems for testing of hyperpolarized <sup>13</sup>C probes
 
 6.  Understanding and interpreting the hyperpolarized signals to shed light on the underlying biochemistry of the pathology.
 
@@ -45,19 +45,19 @@ Metabolism, Bioreactor, Enzyme, model systems
 9.  Figure Captions
 
 
-**4.1 Introduction**
+## Introduction
 
 The development of dissolution dynamic nuclear polarization (DNP) using
-^13^C labeled organic substrates provides significant new insights into
+<sup>13</sup>C labeled organic substrates provides significant new insights into
 previously inaccessible aspects of biochemical reactions. This technique
-of hyperpolarized (HP) ^13^C magnetic resonance (MR) heralds the era of
+of hyperpolarized (HP) <sup>13</sup>C magnetic resonance (MR) heralds the era of
 metabolic imaging using MR with the added advantage of preserving the
-biochemical information. Over 100 ^13^C labeled biomolecules have been
+biochemical information. Over 100 <sup>13</sup>C labeled biomolecules have been
 hyperpolarized and tested in pre-clinical studies. These HP probes can
 be used to study basic biochemical reactions mediated by dehydrogenases,
 transaminases, decarboxylases, peptidases, acetyltransferases, acylases,
 kinases and hydratases, to name a few. Due both to its excellent HP MR
-properties and being at metabolic cross-roads, HP \[1-^13^C\]pyruvate
+properties and being at metabolic cross-roads, HP \[1-<sup>13</sup>C\]pyruvate
 has been extensively studied pre-clinically, across numerous pathologies
 and is the first HP probe used in patients (1).
 
@@ -66,14 +66,14 @@ components, pre-requisites and limitations, starting from the time the
 fluid comes out of the polarizer till it is injected and measured for a
 biomedical application. This is broken down into three steps:
 dissolution, transfer process to the magnet and delivery into the
-biological model system (Figure 4.1). These three steps are optimized
+biological model system (Figure 1). These three steps are optimized
 with a keen focus on preserving the polarization. The second part of the
 chapter gives detailed descriptions of the variety of preclinical model
 systems used in the testing of HP agents.
 
 ![Preserving polarization from dissolution to delivery into biological system](CH0004_OCFigure+4.1_Sriram_v1_Orig.jpg)
 
-**FIGURE 4.1 Key elements for preserving polarization from dissolution
+**Figure 1 Key elements for preserving polarization from dissolution
 to delivery into biological system.** This illustration shows the three
 major steps and the factors that determine the robustness of the HP
 signal. At the first stage of dissolution, its composition such as
@@ -84,7 +84,7 @@ polarized agent to the "measurement" magnet, a handheld electromagnet
 signal lifetime. And finally, the manner of delivery and choice of model
 systems is crucial for successful measurement of HP agent metabolism.
 
-**4.2 Dissolution -- What's in it?**
+## Dissolution -- What's in it?
 
 In dDNP, the hyperpolarized substrate in the solid state is rapidly
 dissolved by a super-heated solution in order to create a liquid agent
@@ -94,7 +94,7 @@ buffer that has ethylenedinitrotetraacetic acid (EDTA) and a
 neutralizing agent. EDTA is essential to chelate paramagnetic species
 which would otherwise cause a loss in polarization. A neutralization
 agent is necessary depending on how the HP agent is prepared. For
-example, the workhorse of this field, \[1-^13^C\]pyruvate is prepared
+example, the workhorse of this field, \[1-<sup>13</sup>C\]pyruvate is prepared
 for polarization as a neat acid mixed with OX063 radical. Upon
 dissolution this would result in an acidic solution, so, in order to
 neutralize it the dissolution buffer usually contains equivalents of the
@@ -113,19 +113,19 @@ polarizations to study diverse metabolic pathways, optimizations to
 minimize the loss of polarization is centered around the use of
 deuterated solvents (in addition to deuterating the HP agent itself, see
 chapter 6) in the dissolution. Labile protons would then be exchanged
-with the deuterons, resulting in lesser dipolar relaxation of the ^13^C
+with the deuterons, resulting in lesser dipolar relaxation of the <sup>13</sup>C
 nucleus (as much as two bonds away) and thereby extending the lifetime
 of the HP agent. A recent publication by Cho et al (6) has shown an
 increase from 20% for HP glutamine to two fold for HP urea upon the use
 of deuterated solvents during dissolution.
 
-**4.3 Transfer to the magnet -- How fast can you run?**
+## Transfer to the magnet -- How fast can you run?
 
 Once dissolved, the HP agent decays with the spin--lattice relaxation
-time *T*~1~, which is on the order of 10s of seconds. Invariably, the
+time $T_{1}$, which is on the order of 10s of seconds. Invariably, the
 polarized solution needs to be transferred from the polarizer to the
 "measurement" magnet, which could result in dramatic losses of
-polarization since the *T*~1~ is field-dependent. It would be pertinent
+polarization since the $T_{1}$ is field-dependent. It would be pertinent
 to be cognizant of the stray magnetic fields in the vicinity and along
 the pathway of the polarizer and the "measurement" magnet. This can be
 measured using a three axis Hall probe. Most established labs have a
@@ -134,17 +134,17 @@ polarized dissolution solution to the magnet for measurement. Some
 recent developments for this express purpose of facilitated transfer has
 been the use of constant low field via magnetic tunnels (3) or carriers
 (2). Given the exponential nature of the time constant, at 3 times the
-T~1~ only 5% of the signal remains. Hence, to enable rapid transfer of
+$T_{1}$ only 5% of the signal remains. Hence, to enable rapid transfer of
 the polarized solution directly into the animal or scanner, mechanized
 pneumatic systems have also been developed (Fig. 2.1) (7-10). This would
-prove invaluable in cases of HP probes with very short T~1~'s. And the
+prove invaluable in cases of HP probes with very short $T_{1}$'s. And the
 simplest alternative, in most labs, due to lack of magnetic tunnel or
 mechanized direct line infusion pumps, is usually a "runner" who
 efficiently draws up the solution from the polarizer after dissolution,
 after thorough mixing, and hands off to another person standing by the
 sample into which it would be injected.
 
-**4.4 Delivery -- How much and how to?**
+## Delivery -- How much and how to?
 
 The penultimate step before acquisition of signal is delivery of the HP
 agent into the biological system of interest. And the two main aspects
@@ -154,7 +154,7 @@ solutions depending on the biological model system chosen, some of the
 key facets to bear in mind are discussed here with further details
 pertinent to each type of model discussed in the next section.
 
-***4.4.i How much of the hyperpolarized agent is sufficient?***
+### How much of the hyperpolarized agent is sufficient?
 
 While the native concentration of the HP agent is dictated by the
 formulation for polarization, it is further diluted twice. Once upon
@@ -181,7 +181,7 @@ b)  *Consider loss of signal from HP agent due to nonspecific binding to
     signal loss of \~10% of the HP agent. Thus, serum free media is
     usually used for testing HP agents in intact cells.
 
- ***4.4.ii How to deliver the hyperpolarized agent?***
+### How to deliver the hyperpolarized agent?
 
 Upon thorough mixing of the dissolution care must be taken to not have
 any air bubbles while drawing up the solution into a syringe. The
@@ -209,16 +209,15 @@ regards to observation of metabolic products overlapping with
 contaminants or pre-existence of product of interest in the dissolution
 and kinetic modeling (12).
 
-**4.5 Preclinical model systems for testing of hyperpolarized ^13^C
-agents**
+## Preclinical model systems for testing of hyperpolarized <sup>13</sup>C agents
 
 In developing and optimizing a HP agent, the general approach consists
 of the following steps (described in detail in Chapter 8). Initial *in
 vitro* chemistry studies are performed in order to maximize HP probe
-concentration, polarization, and T~1~ relaxation, while minimizing
+concentration, polarization, and $T_{1}$ relaxation, while minimizing
 contaminants. Usually as part of these chemistry studies both the probe
 polarization and dissolution processes are optimized, and the magnetic
-field dependence of the T~1~ relaxation of the HP probe and low field
+field dependence of the $T_{1}$ relaxation of the HP probe and low field
 probe transfer effects (quadrupolar and paramagnetic relaxation effects)
 are determined. The probe is then tested in enzyme systems to assess the
 detection and rate of metabolic byproducts formation, to demonstrate
@@ -232,7 +231,7 @@ used in the FDA IND application for its eventual use in patients.
 
 A template of preclinical model systems used for systematic testing,
 development and validating a HP agent for successful clinical
-translation is shown in **Table 4.1**. While there's an assortment of
+translation is shown in **Table 1**. While there's an assortment of
 preclinical models that one could use for the testing of HP agent, the
 choice is heavily dependent on the question one is trying to address. In
 a simplistic view, this is presented here as three phases -- namely
@@ -247,7 +246,7 @@ namely feasibility and development are applicable to only biochemically
 active HP agents such as pyruvate or bicarbonate and not perfusion
 agents such as urea.
 
-**Table 4.1** Preclinical model systems for testing HP agents
+**Table 1** Preclinical model systems for testing HP agents
 
 | Stage      | Model/System                | Salient Features                                                                                  |
 |------------|----------------------------|---------------------------------------------------------------------------------------------------|
@@ -259,7 +258,7 @@ agents such as urea.
 |            | Bioreactor<br>Organ        | - Comprehensive analysis of single organ metabolism without confounding recirculation issues<br>- Metabolic state of the organ could be influenced by choice of perfusate composition<br>- Highly specialized skill set required for cannulation of organs |
 | Validation | *In vivo* animal models    | - Necessary step for clinical translation<br>- Provides whole organism impact of circulation, delivery and biodistribution<br>- Requires specialized imaging sequences with spatial localization<br>- Modeling HP signals from *in vivo* models is complicated |
 
-***4.5.i Models used for feasibility testing***
+### Models used for feasibility testing
 
 Once a successful HP agent has been successfully formulated and its
 polarization has been optimized, the two simplistic models used to
@@ -296,8 +295,7 @@ obfuscates any transport concerns. That being said, this model system
 has proven to be invaluable to decipher that the basis of HP signal is
 mainly exchange driven and not net production.
 
-***4.5.ii Models used for HP agent development for a predetermined
-biomedical application***
+### Models used for HP agent development for a predetermined biomedical application
 
 Upon confirmation of measurable enzymatic activity of the HP agent, the
 next logical step would be its testing in an intact biological system.
@@ -342,7 +340,7 @@ sterilization of the bioreactor parts in contact with cells for
 prolonged experiments and ensuring bubble free environment in the RF
 coil sensitive region for good shim homogeneity. This powerful platform
 has several unique advantages: 1) simultaneous multinuclear detection
-such as ^31^P for bioenergetics monitoring, ^13^C for combined
+such as <sup>31</sup>P for bioenergetics monitoring, <sup>13</sup>C for combined
 hyperpolarized and thermal isotopic flux monitoring; 2) ability to
 carefully control multiple physiologic parameters such as pH, perfusion,
 oxygen and temperature and observe its consequence on cellular
@@ -394,7 +392,7 @@ pathways.
 ![Components of bioreactor system to study metabolism of cells, tissues and organs](CH0004_OCFigure+4.2_Sriram_v1_Orig.jpg)
 
 
-**FIGURE 4.2: Components of bioreactor system to study metabolism of
+**Figure 2: Components of bioreactor system to study metabolism of
 cells, tissues and organs.** A)Adapted from Harris et al (25), this
 figure shows the schematic of the bioreactor. It comprises of a fluid
 path containing the circulating media (via a peristaltic pump). The
@@ -409,7 +407,7 @@ from surgical resection, followed by slicing into 300-350 micron thick
 slices using a Krumdieck slicer. C)This image shows the components of a
 Langendorff perfused heart, adapted from (26)
 
-***4.5.c Pre-clinical animal models used in hyperpolarized NMR***
+### Pre-clinical animal models used in hyperpolarized NMR
 
 Animal models represent the penultimate step before clinical translation
 of any new diagnostic or therapeutic technology. While the use of large
@@ -421,9 +419,8 @@ model transcends all applications, we highlight some of the
 considerations that are specific to its use for hyperpolarized MR
 studies to study biochemical processes.
 
-4.5.c.i Animal preparation for MR imaging - Planning of hyperpolarized
-experiments on animals require some specific physiological and technical
-considerations.
+#### Animal preparation for MR imaging
+Planning of hyperpolarized experiments on animals require some specific physiological and technical considerations.
 
 **Vascular access** - Tail vein is by far the most often used
 route as it provides for easy repetitive cannulation in mice and rats,
@@ -478,17 +475,18 @@ II. Nutritional state -- Hyperpolarized signals are acutely sensitive to
 
 ![Effects of Anesthetic agents on rodent brain metabolism of HP [1-13C]pyruvate](CH0004_OCFigure+4.3_Sriram_v1_Orig.jpg)
 
-**FIGURE 4.3: Effect of different anesthetic agents on rodent brain
-metabolism of HP \[1-^13^C\]pyruvate.** Reproduced with permission from
-Marjańska et al (28), this figure shows the A) ^13^C spectra acquired 15
-s after injection of HP \[1-^13^C\]pyruvate solution in two
+**Figure 3: Effect of different anesthetic agents on rodent brain
+metabolism of HP \[1-<sup>13</sup>C\]pyruvate.** Reproduced with permission from
+Marjańska et al (28), this figure shows the A) <sup>13</sup>C spectra acquired 15
+s after injection of HP \[1-<sup>13</sup>C\]pyruvate solution in two
 representative rats under isoflurane and morphine. B) Representative *in
 vivo* time courses of HP bicarbonate signal as a function of the
 anesthetic agent is shown. Maximal bicarbonate signal is observed under
 morphine and pentobarbital resulted in diminished bicarbonate signal
-from HP \[1-^13^C\] pyruvate.
+from HP \[1-<sup>13</sup>C\] pyruvate.
 
-4.5.c.ii. Hyperpolarized substrate dosing considerations - Unlike PET
+#### Hyperpolarized substrate dosing considerations 
+Unlike PET
 tracers, the injected doses of hyperpolarized substrates are often much
 higher than the equilibrium concentrations found at normal physiology.
 While it has been shown that the lactate and alanine signal is not
@@ -504,8 +502,8 @@ Additionally, physical impediments of certain organs like the blood
 brain barrier highly influences the dose of HP agent used which is a
 function of its permeability.
 
-**4.6 Understanding and interpreting the hyperpolarized signals to shed
-light on the underlying biochemistry of the pathology.**
+## Understanding and interpreting the hyperpolarized signals to shed
+light on the underlying biochemistry of the pathology.
 
 Several pre-clinical works have shown that in the classical example of
 hyperpolarized pyruvate conversion to lactate, the signal is a function
@@ -539,7 +537,7 @@ Resource Center and the Pre-Clinical MR Imaging and Spectroscopy Core.
 Bottomley, P. A., & Griffiths, J. R. (2016). Handbook of magnetic
 resonance spectroscopy in vivo: MRS theory, practice and applications.
 
-*References:*
+## References:
 
 1\. Nelson SJ, Kurhanewicz J, Vigneron DB, et al. Metabolic Imaging of
 Patients with Prostate Cancer Using Hyperpolarized \[1-13C\]Pyruvate.

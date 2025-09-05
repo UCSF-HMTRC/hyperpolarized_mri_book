@@ -24,7 +24,7 @@ solutions of hyperpolarized metabolic contrast agents.
 nuclear polarization, electron paramagnetic agents, electron spin
 resonance, nuclear magnetic resonance.
 
-# Introduction
+## Introduction
 
 Hyperpolarization can be based on several principles, of which, three
 have successfully been applied to molecules in solution: ParaHydrogen
@@ -56,20 +56,20 @@ electron spin enhances the nuclear spin polarization in the solid state.
 After a certain time, the nuclear spin polarization reaches a
 steady-state, and the sample can be rapidly dissolved to produce a
 liquid solution of hyperpolarized nuclear spins. A strongly enhanced
-nuclear signal can be acquired. The shown ^13^C spectrum \[1\] is from
+nuclear signal can be acquired. The shown $^{13}C$ spectrum \[1\] is from
 hyperpolarized urea with a polarization of 20%, 24,000 times stronger
 than the thermal polarization at 9.4 T and room temperature.
 
-# Polarization, magnetization, sensitivity, and hyperpolarization
+## Polarization, magnetization, sensitivity, and hyperpolarization
 
-The polarization, for a spin *I*=½, is given by the difference in
+The polarization, for a spin $I=½$, is given by the difference in
 populations of the two energy eigenstates
 
 $P = \frac{N^{+} - N^{-}}{N^{+} + N^{-}}$ Eq. 1
 
 where $N^{+}$ and $N^{-}$ denote the number
 of spins parallel (spin up) and anti-parallel (spin down) to the
-external magnetic field, *B~0~*, respectively. As a point of caution, it
+external magnetic field, $B_0$, respectively. As a point of caution, it
 is often stated that spins are either pointing up or down (i.e., they
 are in one of the two eigenstates). However, this is not correct.
 Quoting Slichter \[12\]: "We emphasize that an arbitrary orientation can
@@ -77,7 +77,7 @@ be specified, since sometimes the belief is erroneously held that spins
 may only be found pointing either parallel or antiparallel to the
 quantizing field. One of the beauties of quantum theory is that it
 contains features of both discreteness and continuity. In terms of the
-two quantum states with *m=±½* we can describe an expectation value of
+two quantum states with $m=±½$ we can describe an expectation value of
 the magnetization which goes all the way from parallel to antiparallel,
 including all values in between. ...". The individual spin is therefore
 in a superposition of the two eigenstates and may be pointing in any
@@ -85,47 +85,47 @@ direction. However, the statistical distribution of the ensemble is such
 that a certain polarization exists. However, it is, as said, perfectly
 valid to speak of populations (probabilities) of the eigenstates.
 
-The polarization at thermal equilibrium, *P~0~*, follows Boltzmann
+The polarization at thermal equilibrium, $P_0$, follows Boltzmann
 statistics with the spin temperature equal to the lattice temperature,
-*T~S~=T~L~*,
+$T_S = T_L$,
 
 $\frac{N_{+}}{N_{-}} = e^{- \frac{\hslash\gamma B_{0}}{k_{B}T_{S}}}$ Eq.
 2
 
-$P_{0} = tanh\left( \frac{\hslash\gamma B_{0}}{2k_{B}T_{S}} \right) \cong \frac{\hslash\gamma B_{0}}{2k_{B}T_{S}} = \frac{hf_{0}}{2k_{B}T_{L}}$
+$P_{0} = \tanh\left( \frac{\hslash\gamma B_{0}}{2k_{B}T_{S}} \right) \cong \frac{\hslash\gamma B_{0}}{2k_{B}T_{S}} = \frac{hf_{0}}{2k_{B}T_{L}}$
 Eq. 3
 
-Where $f_{0} = \gamma B_{0}$ is the Larmor frequency and γ is the
-gyromagnetic ratio of the spin *I*, $\hslash$ is Planck's constant and
-*k~B~* is Boltzmann's constant. Eq. 3 is linear for low polarization,
-*P\<0.5*, and the high temperature approximation can be used. This will
+Where $f_{0} = \gamma B_{0}$ is the Larmor frequency and $\gamma$ is the
+gyromagnetic ratio of the spin $I$, $\hslash$ is Planck's constant and
+$k_B$ is Boltzmann's constant. Eq. 3 is linear for low polarization,
+$P<0.5$, and the high temperature approximation can be used. This will
 be valid at thermal equilibrium for any realistic magnetic field and
-temperature condition. According to Eq. 3 a temperature, *T~S~*, can be
-assigned to the spins for any polarization. For example, *P=0*, complete
+temperature condition. According to Eq. 3 a temperature, $T_S$, can be
+assigned to the spins for any polarization. For example, $P=0$, complete
 saturation, corresponds to an infinite spin temperature. Depending on
 the sign of the polarization, the spin temperature can be either
 positive or negative. It will approach zero (cooling) as the
 polarization approaches unity. From Eq. 3 we calculate the proton
-polarization in a 3 T MR scanner to be $10^{- 5}$, while the
-polarization for ^13^C is only $2.6 \bullet 10^{- 6}$, or four times
+polarization in a 3 T MR scanner to be $10^{-5}$, while the
+polarization for $^{13}C$ is only $2.6 \times 10^{-6}$, or four times
 lower, Table 1, Fig. 1. A theoretical enhancement of the nuclear spin
 polarization of 100,000 and 400,000 times, respectively, is therefore
 possible, if almost full polarization could be achieved.
 
-**Table 1**: Thermal polarization for ^13^C at selected magnetic field and
+**Table 1**: Thermal polarization for $^{13}C$ at selected magnetic field and
 temperature conditions.
 
-| Magnetic field (*B~0~* [T]) | Frequency (*f~0~* [Hz]) | Temperature (*T* [K]) | Thermal polarization (*P~0~* [ppm]) |
-|-----------------------------|-------------------------|----------------------|-------------------------------------|
-| 1.0                         | 11.0·10^6^              | 301 (28 °C)          | 0.878                               |
-| 3.0                         | 32·10^6^                | 293 (20 °C)          | 2.62                                |
-| 9.4                         | 100·10^6^               | 298 (25 °C)          | 8.05                                |
-| 6.7                         | 71.8·10^6^              | 1.4                  | 1,230                               |
+| Magnetic field ($B_0$ [T]) | Frequency ($f_0$ [Hz]) | Temperature ($T$ [K]) | Thermal polarization ($P_0$ [ppm]) |
+|----------------------------|------------------------|----------------------|------------------------------------|
+| 1.0                        | $11.0 \times 10^{6}$   | 301 (28 °C)          | 0.878                              |
+| 3.0                        | $32 \times 10^{6}$     | 293 (20 °C)          | 2.62                               |
+| 9.4                        | $100 \times 10^{6}$    | 298 (25 °C)          | 8.05                               |
+| 6.7                        | $71.8 \times 10^{6}$   | 1.4                  | 1,230                              |
 
 *Constants:*
-- *k~B~* = 1.381⋅10^-23^ J/K
-- *h* = $2\pi\hslash$ = 6.626⋅10^-34^ Js
-- γ~13C~ = 2π·10.7084 MHz/T
+- $k_B = 1.381 \times 10^{-23}$ J/K
+- $h = 2\pi\hslash = 6.626 \times 10^{-34}$ Js
+- $\gamma_{13C} = 2\pi \times 10.7084$ MHz/T
 
 The sensitivity of the NMR experiment is determined by several factors.
 D. Hoult (1) gives an excellent treatment of the problem, based on the
@@ -134,17 +134,16 @@ equation' is
 
 $\text{SNR} = \frac{0.707}{\text{NF}}2\pi f_{0}B_{1\text{xy}}M_{0}V_{S}\sqrt{\frac{T_{2}}{4k_{B}\text{TR}}}$
 Eq. 4
-
-where B~1xy~ is the radiofrequency magnetic field created at unit
-current by the coil (perpendicular to *B~0~*), *M~0~* the sample
-magnetization, *V~s~* the sample volume, *T~2~* is the time constant of
-the signal decay, *R* the equivalent noise resistor, and *T* the
-temperature of the noise resistor. A receiver noise factor *NF* is
+where $B_{1\text{xy}}$ is the radiofrequency magnetic field created at unit
+current by the coil (perpendicular to $B_0$), $M_0$ the sample
+magnetization, $V_s$ the sample volume, $T_2$ is the time constant of
+the signal decay, $R$ the equivalent noise resistor, and $T$ the
+temperature of the noise resistor. A receiver noise factor $NF$ is
 included. This equation gives the SNR of an NMR spectrum defined as peak
 height divided by root-mean-square (rms) noise. A single acquisition of
 flip angle 90° is assumed. An optimal (from SNR point of view) weight
-function (exponential with time constant T~2~) is applied. The field at
-unit current, B~1xy~, is averaged (or assumed uniform) across the
+function (exponential with time constant $T_2$) is applied. The field at
+unit current, $B_{1\text{xy}}$, is averaged (or assumed uniform) across the
 sample. The magnetization relates to polarization as
 
 $$M_{0} = N\gamma\hslash\text{IP}$$
@@ -172,7 +171,7 @@ The various parameters of Eq. 3 can now be discussed:
     happens at a lower frequency due to the larger size of the object.
     However, it is always desirable to reduce electronic noise to a
     point where sample noise dominates. In that case, the noise resistor
-    becomes approx. proportional to *f~0~^2^*. This is a regime where
+    becomes approx. proportional to $f_0^2$. This is a regime where
     hyperpolarized sample SNR becomes field independent, since the
     magnetization (polarization) is given. If electronic noise
     dominates, it will be advantageous to go to higher field strength.
@@ -190,28 +189,26 @@ The various parameters of Eq. 3 can now be discussed:
     the solenoid coil (oriented orthogonal to the static magnetic
     field). In MRI circularly polarized geometries are typically used
     such as the birdcage that provide a $\sqrt{2}$ gain in SNR.
-    Otherwise, surface coils can be used for local detector or as
-    elements in phased arrays.
 
--   The sensitivity increases as *γ^11/4^* for spins at thermal
-    equilibrium and as *γ^7/4^* for hyperpolarized spins (same
-    polarization) when electronic noise is dominating. It means that
-    ^1^H is 45 times more sensitive than ^13^C and 540 times more
-    sensitive than ^15^N. Furthermore, the natural abundance of the
-    spins will further reduce the sensitivity of ^13^C and ^15^N by a
+-   The sensitivity increases as $\gamma^{11/4}$ for spins at thermal
+    equilibrium and as $\gamma^{7/4}$ for hyperpolarized spins (same
+    polarization) when electronic noise is dominating. It means that $^1 H$ is 45 times more sensitive than $^{13}C$ and 540 times more
+    sensitive than $^{15}N$. Furthermore, the natural abundance of the
+    spins will further reduce the sensitivity of $^{13}C$ and $^{15}N$ by a
     factor 90 and 270, respectively. When the sample noise is dominating
-    the sensitivity scales as γ^2^ for spins at thermal equilibrium and
-    as γ for hyperpolarized spins. This means that ^1^H is 4 times more
-    sensitive than ^13^C and 10 times more sensitive than ^15^N for the
+    the sensitivity scales as $\gamma^{2}$ for spins at thermal equilibrium and
+    as $\gamma$ for hyperpolarized spins. This means that $^1 H$ is 4 times more
+    sensitive than $^{13}C$ and 10 times more sensitive than $^{15}N$ for the
     same polarization.
 
 -   For mass limit applications the coil should be as small as possible.
-    This has driven the development of microcoils (1-10 uL sample size)
-    and has currently a sensitivity superior to cryoprobes (>60 uL) for
+    This has driven the development of microcoils (1-10 $\mu$L sample size)
+    and has currently a sensitivity superior to cryoprobes (>60 $\mu$L) for
     the same mass of analyte. Microcoils therefore primarily find its
     use in applications where limited sample amounts are available (drug
     metabolism etc.). The highest possible concentration is aimed for.
     In this regime the SNR is inversely proportional to $\sqrt{V_{S}}$.
+
     As it can be seen from Table 1-2 the sensitivity of the micro-coil
     is 60 times better than a 5 mm probe for a fixed number of spins.
     This is due to the reduced volume (200 times) and more optimal coil
@@ -219,24 +216,22 @@ The various parameters of Eq. 3 can now be discussed:
     scaling of the same coil geometry. For concentration limited
     applications, the situation is the opposite. The SNR improves as
     $\sqrt{V_{S}}$. As large a sample as possible should be used since
-    the number of spins (mass) will increase by $V_{S}$. This can also
-    be seen from the Table 1-2 since the concentration detection limit
-    is lowest for the 10 mm probe.
+    the number of spins (mass) will increase by $V_{S}$.
 
--   The transverse relaxation time, *T~2~*, and the homogeneity of the
+-   The transverse relaxation time, $T_2$, and the homogeneity of the
     magnet determine the signal decay. The dephasing due to
     inhomogeneity can be refocused as done by many imaging sequences,
-    but the field dependence of *T~2~* may be a consideration when
+    but the field dependence of $T_2$ may be a consideration when
     deciding for the optimal magnetic field strength. Likewise, this is
-    the case for *T~1~*, and factors affecting *T~1~* are discussed
+    the case for $T_1$, and factors affecting $T_1$ are discussed
     later in the chapter.
 
 -   Spectral dispersion is a further argument for higher magnetic fields
     strength.
 
-# Methods of hyperpolarization
+## Methods of hyperpolarization
 
-Optical pumping of the noble gases ^3^He and ^129^Xe is a technique that
+Optical pumping of the noble gases $^3 He$ and $^{129}Xe$ is a technique that
 was originally developed in atomic physics laboratories \[13\]. Noble
 gases are polarized by the method that won Alfred Kastler the Nobel
 Prize in 1966. The method relies on the transfer of angular momentum
@@ -245,39 +240,39 @@ a first step. Two methods have been developed: the spin exchange method,
 discovered at Princeton in 1960, and meta-stability exchange optical
 pumping. In the spin exchange method, the unpaired spin of the valence
 electron of an alkali atom (e.g. Rb vapor) is polarized via the strong
-resonance line at 795 nm connecting the ^2^S~1/2~ ground state of the
-alkali metal to the ^2^P~1/2~ excited state. The polarized alkali metal
+resonance line at 795 nm connecting the $^2 S_{1/2}$ ground state of the
+alkali metal to the $^2 P_{1/2}$ excited state. The polarized alkali metal
 electron spins then transfer their polarization through magnetic
 hyperfine coupling to the nuclear spins of a noble gas, which is present
 at densities up to several bars. Due to the weakness of hyperfine
 coupling, this kind of spin exchange is a rare process occurring with a
-probability of order 10^-4^ for xenon and 10^-7^ for helium during a gas
+probability of order $10^{-4}$ for xenon and $10^{-7}$ for helium during a gas
 kinetic encounter of the partner atoms. As a result, it takes from
-minutes for ^129^Xe up to several hours for ^3^He to attain steady-state
+minutes for $^{129}Xe$ up to several hours for $^3 He$ to attain steady-state
 nuclear polarization.
 
-The meta-stability spin exchange process applies exclusively to ^3^He.
-Meta-stable ^3^He atoms are produced in the ^3^S~1~ state at a relative
-population of 10^-6^ in a low-pressure plasma of about 1 mbar. The
+The meta-stability spin exchange process applies exclusively to $^3 He$.
+Meta-stable $^3 He$ atoms are produced in the $^3 S_{1}$ state at a relative
+population of $10^{-6}$ in a low-pressure plasma of about 1 mbar. The
 electron spin of these meta-stable atoms is then polarized by circularly
-polarized light at 1083 nm to the ^3^P~0~ state. Exchange between a
+polarized light at 1083 nm to the $^3 P_{0}$ state. Exchange between a
 meta-stable atom and a ground state atom leaves the former in the atomic
 ground state with a polarized nucleus. The next atom is then ready for
 pumping, thus forming a fast, catalytic chain of successive energy
-transfers and pumping action. Within a few seconds the ^3^He plasma
+transfers and pumping action. Within a few seconds the $^3 He$ plasma
 attains a nuclear polarization of more than 50%. Meta-stability
 spin-exchange is much more efficient than alkali metal spin exchange.
 
 Since the mid 1990's, hyperpolarized noble gases have been applied to MR
 imaging of the lungs \[14\], as well as in the dissolved state \[15\].
 The optical pumping method is, however, practically limited to the noble
-gas isotopes bearing a nuclear spin of ½, i.e. ^3^He and ^129^Xe, in
+gas isotopes bearing a nuclear spin of ½, i.e. $^3 He$ and $^{129}Xe$, in
 order to achieve long enough relaxation times. Noble gases with higher
-spin have short *T~1~* due to their quadrupolar moment. Since ^3^He is
+spin have short $T_1$ due to their quadrupolar moment. Since $^3 He$ is
 rare and expensive (produced in radioactive decay of tritium), most
-effort has focused on optimizing polarization and producing ^129^Xe,
+effort has focused on optimizing polarization and producing $^{129}Xe$,
 which is naturally occurring (26%) in the atmosphere. Attempts to
-transfer the ^129^Xe nuclear polarization to other nuclei have been
+transfer the $^{129}Xe$ nuclear polarization to other nuclei have been
 attempted with limited success \[16\].
 
 In the late 1980s Bowers and Weitekamp \[17,18\] discovered, both
@@ -291,7 +286,7 @@ possible spin isomers of dihydrogen, the singlet state of the nuclear
 spins, called parahydrogen, has the lowest energy. At room temperature
 there is an even distribution of the four spin isomers, giving 25% of
 the para form. When the temperature is lowered the fraction of
-parahydrogen increases and approaches unity at \~20 K. If a molecule of
+parahydrogen increases and approaches unity at $\sim$20 K. If a molecule of
 parahydrogen can react with another molecule, it will in some cases
 retain the spin correlation between the two protons. However, the
 symmetry of the hydrogen molecule will be broken due to magnetic
@@ -323,7 +318,7 @@ polarization \[23--25\].
 The fourth hyperpolarization method, dDNP, is based on polarization
 transfer from unpaired electron spins (e.g., an organic free radical)
 that are added to the sample (e.g. a biological molecule enriched in
-^13^C in specific chemical positions). The electron spin has a higher
+$^{13}C$ in specific chemical positions). The electron spin has a higher
 magnetic moment and is fully polarized under less challenging conditions
 such as temperatures close to a Kelvin and magnetic field strengths of
 some Tesla. In the solid state, microwave irradiation close to the
@@ -336,7 +331,7 @@ be described at a high level to allow the reader to understand the
 significance of the properties of the electron paramagnetic agent (EPA)
 and sample formulation for the efficiency of DNP.
 
-# Dynamic Nuclear Polarization 
+## Dynamic Nuclear Polarization 
 
 DNP was first described theoretically by Overhauser in 1953 \[26\] and a
 few months later was demonstrated by Carver and Slichter \[27\] in
@@ -360,8 +355,8 @@ times larger than that of the nuclei, and the same for their spin
 polarizations at high temperatures. At low to moderate magnetic fields,
 dipolar interaction between the electron and nuclear spins lead to
 enhancements of the nuclear polarization up to the ratio of their
-respective gyromagnetic factors γ~e~/γ~n~, which is 658 for ^1^H and
-2,700 for ^13^C. However, the efficiency of the mechanism decreases with
+respective gyromagnetic factors $\gamma_e/\gamma_n$, which is 658 for $^1 H$ and
+2,700 for $^{13}C$. However, the efficiency of the mechanism decreases with
 increasing field strength. At typical NMR field strengths used today
 (>9.4T), Overhauser DNP enhancements are much reduced as is the sample
 size due to the high resonance frequency of the electron spins.
@@ -420,23 +415,23 @@ provide further physical insight into DNP than full quantum mechanical
 treatments. For a recent comprehensive description of DNP based on spin
 temperature concepts see \[39--41\].
 
-## Solid Effect
+### Solid Effect
 
 The solid effect is most easily understood of the three mechanisms
-\[33,39\]. A dilute EPA with spin *S=1/2* and Larmor frequency *ω~e~* in
-a diamagnetic material with nuclear spins *I=1/2* with Larmor frequency
-*ω~n~* are coupled by dipolar interactions. The dipolar interaction
+\[33,39\]. A dilute EPA with spin $S=1/2$ and Larmor frequency $\omega_e$ in
+a diamagnetic material with nuclear spins $I=1/2$ with Larmor frequency
+$\omega_n$ are coupled by dipolar interactions. The dipolar interaction
 permits simultaneous flips of spins *S* and *I* (Fig. 2). In such spin
 reversals the total energy of the spin system changes by an amount
-*ħ(ω~e±~ω~n~)* provided by the microwave field. This interaction is also
+$\hbar(\omega_e \pm \omega_n)$
 a relaxation mechanism with the missing energy provided by the lattice
 in the form of one or several phonons. The rates (transition
 probability) of these processes are typically very small at low
-temperatures (typically 10^-3^ s^-1^ or less) due to the short electron
-spin *T~2e~* and the relatively weak microwave field that can be
+temperatures (typically $10^{-3}\ \text{s}^{-1}$ or less) due to the short electron
+spin $T_{2e}$ and the relatively weak microwave field that can be
 applied. On the other hand, the relaxation (transition probability) of
 the electron spin alone, caused by its coupling to the lattice, occurs
-at a much faster rate, *T~1e~^-1^* (typically 1 s^-1^ to 10^3^ s^-1^).
+at a much faster rate, $T_{1e}^{-1}$ (typically $1\ \text{s}^{-1}$ to $10^{3}\ \text{s}^{-1}$).
 
 ![Solid Effect](solid_effect.png)
 
@@ -450,9 +445,9 @@ probability, benefit from a narrow linewidth electron spin resonance,
 and require a strong microwave field. The mechanism is therefore not
 very efficient in general. The electron spin relaxes efficiently to the
 ground state, whereas the nuclear spins have long relaxation times
-constants and remain in their new state. A ^1^H DNP spectrum is shown
-for bis-1,1-(hydroxymethyl)-\[1-^13^C\]cyclopropane-d~8~ (HP001) with
-trityl radical (OX063) at 3.4 T (142 MHz ^1^H and 94 GHz electron spin
+constants and remain in their new state. A $^{1}H$ DNP spectrum is shown
+for bis-1,1-(hydroxymethyl)-[1-$^{13}C$]cyclopropane-$d_{8}$ (HP001) with
+trityl radical (OX063) at 3.4 T (142 MHz $^{1}H$ and 94 GHz electron spin
 resonance frequencies).
 
 Consider first an isolated electron-nucleus pair, with an electron spin
@@ -466,12 +461,12 @@ $H_{\text{dip}} = \frac{\mu_{0}}{4\pi}\frac{\gamma_{1}\gamma_{2}\hslash^{2}}{r^{
 The dipolar interaction perturbs the pure product states and the
 resulting spin eigenstates will contain an admixture of states. For
 instance, one of the dipolar terms, $S_{z}I_{+}$, mixes into the
-original state $\left| \text{αβ} \right\rangle$ a contribution from the
-state $\left| \text{αα} \right\rangle$. The mixing coefficients *p* and
-*q* in Fig. 2 can be calculated by perturbation theory, and it is found
+original state $|\alpha\beta\rangle$ a contribution from the
+state $|\alpha\alpha\rangle$. The mixing coefficients $p$ and
+$q$ in Fig. 2 can be calculated by perturbation theory, and it is found
 that
-$q = \frac{3}{2}\frac{\mu_{0}}{4\pi}\frac{\gamma_{S}\hslash}{B_{0}r^{3}}\sin\theta\cos\theta\exp\left( \text{iφ} \right)$,
-$|q| < < 1$. Because of the normalization ($|p|^{2} + |q|^{2} = 1$) we
+$q = \frac{3}{2}\frac{\mu_{0}}{4\pi}\frac{\gamma_{S}\hslash}{B_{0}r^{3}}\sin\theta\cos\theta\exp\left( i\phi \right)$,
+$|q| \ll 1$. Because of the normalization ($|p|^{2} + |q|^{2} = 1$) we
 have $p \approx 1$. The transition probabilities between the states
 $\left| 1 \right\rangle \leftrightarrow \left| 4 \right\rangle$
 (flip-flop) and
@@ -480,7 +475,7 @@ $\left| 2 \right\rangle \leftrightarrow \left| 3 \right\rangle$
 probabilities between
 $\left| 1 \right\rangle \leftrightarrow \left| 3 \right\rangle$ and
 $\left| 2 \right\rangle \leftrightarrow \left| 4 \right\rangle$. The
-coefficient *q* is proportional to the inverse distance cubed, the i.e.
+coefficient $q$ is proportional to the inverse distance cubed, i.e.
 it is most effective for nuclei in the near vicinity of the electron
 spin. The electron spin transitions can be induced by spin-phonon
 coupling \[33\]. In addition to the spin-lattice induced transitions,
@@ -488,13 +483,7 @@ there can also be transitions induced by the microwave field. The
 frequency of the microwave field, corresponding to the difference in
 energy between the states, $\omega_e \pm \omega_n$, selectively driving
 either of the two transitions. We assume that the electron spin
-linewidth, *∆ω~s~*, is much smaller than the nuclear frequency *ω~I~* so
-that when flip-flops occur, flip-flips are impossible because they are
-off-resonance with the driving microwave field, and vice versa. For a
-microwave field with amplitude *B~1~* applied at a frequency
-$\omega = \omega_{e} - \Delta$, the transition probabilities, *W^+^* and
-*W^-^*, for the flip-flop and flip-flip processes respectively, are
-given by
+The linewidth, $\Delta\omega_s$, is much smaller than the nuclear frequency $\omega_I$, so that when flip-flop transitions occur, flip-flip transitions are impossible because they are off-resonance with the driving microwave field, and vice versa. For a microwave field with amplitude $B_1$ applied at a frequency $\omega = \omega_e - \Delta$, the transition probabilities, $W^+$ and $W^-$, for the flip-flop and flip-flip processes respectively, are given by:
 
 $W^{\pm} = 2|q|^{2}\pi\gamma_{e}^{2}B_{1}^{2}g\left( \Delta \pm \omega_{n} \right)$
 Eq. 5
@@ -536,17 +525,10 @@ further decreased, constituting a so called 'leakage'. Another cause of
 reduced polarization enhancement occurs when the electron spin
 relaxation rate is no longer fast compared to the cross-relaxation
 terms. This is due to an inefficient coupling to the phonon lattice and
-is usually referred to as a 'phonon bottle-neck'. Each electron spin
-must 'service' a large number, *N~n~/N~e~*, of nuclear spins to be
-effective. The electron spin must return to the ground state before any
-of the *N~n~/N~e~* nuclear spins in its sphere of influence has flipped
-through a nuclear relaxation mechanism. This is true if the nuclear
-relaxation of the spins *I* has no other origin than their couplings
-with the spins *S*. If, however, other nuclear relaxation mechanisms,
-sometimes called leakage relaxation, are present, the condition may be
-violated, and the nuclear polarization would be smaller than *P~e~*.
-This is expressed by the equation *N~n~/N~e~\<\<T~1n~/T~1e~.* Fig. 2
-shows a typical DNP enhancement spectrum for ^1^H (approx. 142 MHz) at
+must "service" a large number, $N_n/N_e$, of nuclear spins to be effective. The electron spin must return to the ground state before any of the $N_n/N_e$ nuclear spins in its sphere of influence has flipped through a nuclear relaxation mechanism. This is true if the nuclear relaxation of the spins $I$ has no other origin than their couplings with the spins $S$. If, however, other nuclear relaxation mechanisms—sometimes called leakage relaxation—are present, the condition may be violated, and the nuclear polarization would be smaller than $P_e$.
+This is expressed by the equation $N_n/N_e \ll T_{1n}/T_{1e}$.
+Fig. 2
+shows a typical DNP enhancement spectrum for $^{1}H$ (approx. 142 MHz) at
 3.4 T (approx. 94 GHz for the microwave irradiation). The positive and
 negative enhancement of the nuclear spin polarization happens and the
 difference and sum frequencies, respectively.
@@ -557,40 +539,30 @@ longer distances. It would thus seem that only spins in the vicinity of
 the paramagnetic centers would be polarized. However, if spin diffusion
 among the nuclear spins is efficient, it will tend to distribute the
 polarization to the bulk. For highly diluted nuclear spins (e.g. natural
-abundance ^13^C), slow spin diffusion could also be a potential
+abundance $^{13}C$), slow spin diffusion could also be a potential
 bottleneck. The nuclear spins in the immediate proximity of the
 paramagnetic centers experience a strong dipolar field, causing their
 Larmor frequencies to be shifted far off-resonance to become
 non-observable. However, this is a small fraction of the nuclear spins.
 
-## Cross Effect and Thermal Mixing
+### Cross Effect and Thermal Mixing
 
 The cross-effect or thermal mixing arises in the situation that the
-electron line width *∆ω~s~* is larger than the nuclear frequency,
-*ω~I~*, and involves two interacting electron spins and a nucleus. This
+electron line width $\Delta\omega_s$ is larger than the nuclear frequency,
+$\omega_I$, and involves two interacting electron spins and a nucleus. This
 situation arises when the electron spin g-tensor anisotropy is
 sufficiently large. The solid effect may still contribute, but it will
 in this case be unresolved and is harder to drive. Thermal mixing is
 historically described using spin temperature formalism. When the EPR
-line is irradiated at a frequency *ω=ω~e~+∆*, *ħω~e~* is absorbed by the
-electron Zeeman reservoir and the remaining *ħ∆* is absorbed or emitted
-by the nuclear Zeeman reservoir. The electron spin-spin dipolar
-reservoir is thereby cooled to a low spin temperature (positive or
-negative depending on microwave frequency). The electron spin-spin
-dipolar reservoir is coupled to the nuclear Zeeman reservoir, and these
-two spin baths should eventually reach a common spin temperature, Fig.
-3. For *∆\<0* the electron spin-spin dipolar reservoir emits energy and
-is cooled by the irradiation of the EPR, and the nuclear spin
-polarization (nuclear Zeeman reservoir) is enhanced by the strong
-coupling to the electron spin-spin bath. For *∆>0* the electron-electron
+line is irradiated at a frequency $\omega = \omega_e + \Delta$, $\hbar\omega_e$ is absorbed by the electron Zeeman reservoir and the remaining $\hbar\Delta$ is absorbed or emitted by the nuclear Zeeman reservoir. The electron spin-spin dipolar reservoir is thereby cooled to a low spin temperature (positive or negative depending on microwave frequency). The electron spin-spin dipolar reservoir is coupled to the nuclear Zeeman reservoir, and these two spin baths should eventually reach a common spin temperature, Fig. 3. For $\Delta < 0$ the electron spin-spin dipolar reservoir emits energy and is cooled by the irradiation of the EPR, and the nuclear spin polarization (nuclear Zeeman reservoir) is enhanced by the strong coupling to the electron spin-spin bath. For $\Delta > 0$ the electron-electron
 dipolar bath absorbs energy and will cool the nuclear Zeeman reservoir
 to a low negative spin temperature. This situation also forms the basis
 of the equal spin temperature theorem; that all nuclear spin systems
-(e.g. ^13^C, ^15^N or ^2^H) eventually reaches the same spin
+(e.g. $^{13}C$, $^{15}N$ or $^2 H$) eventually reaches the same spin
 temperature.
 
 At low temperature (liquid Helium temperatures) the electron spin
-relaxation time, *T~1e~*, becomes very long (1 s^-1^ to 10^3^ s^-1^) and
+relaxation time, $T_{1e}$, becomes very long ($1\ s^{-1}$ to $10^{3}\ s^{-1}$) and
 spectral diffusion within the EPR effectively renders the EPR
 homogeneous. In this case it becomes meaningful to describe the
 spin-spin interaction by a temperature. The early spin temperature model
@@ -599,7 +571,7 @@ thermal mixing, since the assumptions made seem invalid. Recent
 extensions of the theory provide better agreement with experiment and
 predict specific features of DNP.
 
-At higher temperatures, the electron *T~1e~* becomes shorter than the
+At higher temperatures, the electron $T_{1e}$ becomes shorter than the
 electron-electron spectral diffusion and the EPR becomes inhomogeneous.
 The microwave irradiation saturates only a fraction of the EPR, denoted
 as hole-burning. Thermal mixing and cross-effect are distinguished by
@@ -620,14 +592,14 @@ Eq. 8
 
 where it has been assumed that spin diffusion among carbons is fast and
 the electron-electron bath is in fast thermal contact with the nuclear
-Zeeman bath. *b* is the radius of the diffusion barrier, *ω~ν~* is the
-nuclear resonance frequency times 2π, *T~2e~* the electron transverse
-relaxation time, and *P~0e~* the electron thermal equilibrium
+Zeeman bath. *b* is the radius of the diffusion barrier, $\omega_\nu$ is the
+nuclear resonance frequency times 2π, $T_{2e}$ the electron transverse
+relaxation time, and $P_{0e}$ the electron thermal equilibrium
 polarization. Additional relaxation mechanisms not originating from the
 added electron spin will also be present.
 
 The dependence of the polarization on the spin temperature is given by
-Eq. 3, where *T~S~* is the actual spin temperature. We define the
+Eq. 3, where $T_S$ is the actual spin temperature. We define the
 parameter $\beta$ through
 $P = {\tan h}\left( \hslash\omega/2k_{B}T \right) \equiv {\tan h}(\omega\beta/2)$,
 which is often referred to as the 'inverse spin temperature' although it
@@ -681,8 +653,9 @@ Zeeman and the electron non-Zeeman reservoirs are in good contact, i.e.
 always have the same temperature ($\gamma = \beta$) \[10\]:
 
 $\frac{\text{dα}}{\text{dt}} = - W(\alpha - \beta) - \frac{1}{T_{1e}}\left( \alpha - \alpha_{L} \right)$
-Eq. 9$
-\frac{\text{dβ}}{\text{dt}} = W\frac{\Delta^{2}}{D^{'2}}(\alpha - \beta) - \frac{1}{T_{1n}}\left( \beta - \beta_{L} \right)$
+Eq. 9
+
+$\frac{\text{dβ}}{\text{dt}} = W\frac{\Delta^{2}}{D^{'2}}(\alpha - \beta) - \frac{1}{T_{1n}}\left( \beta - \beta_{L} \right)$
 Eq. 10
 
 Where $W = \pi\gamma_{e}^{2}B_{1}^{2}g(\Delta)$,
@@ -714,7 +687,7 @@ retained. We obtain the limiting cases $\beta_{eq} =0$ as $\Delta \rightarrow \p
 $\Delta = 0$. The extreme values of Eq. 12 are obtained for
 $\Delta = - \Omega^{2}/2\omega_{e} \pm (\Omega^{4}/4\omega_{e} + \Omega^{2})^{0.5}$.
 In the limit $\Omega \ll \omega_{S}$ (this is always the case at high
-field) the extreme values are equal to $\pm \frac{\omega_{S}}{2\Omega}$
+field) the extreme values are equal to $\pm \frac{\omega_{S}}{2\Omega}$,
 and are obtained for $\Delta = \pm \Omega$.
 
 Since the frequency dependence of the transition probability *W* is
@@ -751,7 +724,7 @@ electron-electron interaction reservoir. In this situation, which arise
 for EPA that have large g-anisotropy relative to the electron spin-spin
 interaction, more electron spins can be "recruited" for DNP by sweeping
 the microwave frequency across several spin packets. The rate of the
-modulation has to be fast on *T~1e~* time scale and the amplitude of the
+modulation has to be fast on $T_{1e}$ time scale and the amplitude of the
 modulation will depend on the width of the EPR \[42,43\].
 
 It has recently been shown that higher nuclear polarization can be
@@ -759,12 +732,12 @@ obtained for both nitroxides and trityls by increasing the magnetic
 field strength \[44--47\] or lowering the temperature \[48\]. Since DNP
 is typically not able to reach the theoretical limit, this appears
 obvious from the above equations. The Boltzmann polarizations increase
-and make $\left( 1 - P_{0e}^{2} \right)$ smaller, *T~1n~* typically
-increases at higher magnetic field and *T~1e~* typically gets shorter.
-For \[1-^13^C\]pyruvic acid, the ^13^C polarization improved from 27% at
+and make $\left( 1 - P_{0e}^{2} \right)$ smaller, $T_{1n}$ typically
+increases at higher magnetic field and $T_{1e}$ typically gets shorter.
+For \[1-$^{13}C$\]pyruvic acid, the $^{13}C$ polarization improved from 27% at
 3.35 T to 60% at 4.64 T and 70% at 6.7 T, all at 1-1.2 K.
 
-# The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent
+## The DNP sample: Formulation of the imaging agent and the electron paramagnetic agent
 
 DNP requires the presence of unpaired electrons, typically in the form
 of an organic radical, e.g. a nitroxide or trityl, Fig. 4, but a few
@@ -788,20 +761,20 @@ the nucleus of interest, i.e. a width that exceeds the Larmor frequency
 of the nuclear spin of interest. Thirdly, the EPA should have low
 toxicity for any biological studies, and it should be removable from the
 hyperpolarized solution in the case of clinical applications. Finally,
-it should also have minimal effect on nuclear T~1~ in the liquid state,
+it should also have minimal effect on nuclear $T_{1}$ in the liquid state,
 i.e. post dissolution. In practice the above criteria mean that two
 classes of EPA are available, namely nitroxides and trityls \[49,50\].
 The nitroxides belong to a class of molecules that have been studied
 extensively by EPR, and which have been used for DNP for many samples.
 Nitroxides are characterized by having a broad EPR spectrum. The EPR
-line width is 2-4‰ of the EPR frequency, compared to the ^1^H resonance
+line width is 2-4‰ of the EPR frequency, compared to the $^1 H$ resonance
 frequency, which is 1.5‰ (1/658) of the EPR frequency. Some of them have
 reasonable chemical stability and come with different degrees of
 hydrophilicity. The trityl is another class of EPA with superior
-properties for direct polarization of low gamma nuclei such as ^13^C,
-^15^N and ^2^H. These radicals have a line width that is only 0.4-0.8‰
+properties for direct polarization of low gamma nuclei such as $^{13}C$,
+$^{15}N$ and $^{2}$H. These radicals have a line width that is only 0.4-0.8‰
 of the resonance frequency, less than the proton resonance frequency,
-but perfectly matched for ^13^C, which has a resonance frequency, which
+but perfectly matched for $^{13}C$, which has a resonance frequency, which
 is 0.37‰ (1/2,700) of the EPR frequency. Trityls exist with a range of
 hydrophilicities, and they are typically very stable chemically. Fig 4
 shows the structure of the most common trityl for DNP, OX063. It is
@@ -823,34 +796,34 @@ g/mol) and AH111501 (OX063Me) (MW= 1595 g/mol) is shown on the left. The
 optimal microwave frequency for DNP can be determined by stepping the
 microwave frequency through the electron spin resonance and measuring
 the intensity or integral of the NMR signal. The graph in the top right
-shows the DNP spectrum for ^13^C-pyruvic acid with 30 mM AH111501 at 6.7
-T and 1.3 K. The ^13^C NMR signal is measured after two minutes of
+shows the DNP spectrum for $^{13}C$-pyruvic acid with 30 mM AH111501 at 6.7
+T and 1.3 K. The $^{13}C$ NMR signal is measured after two minutes of
 microwave irradiation (the NMR signal is saturated after each
 measurement). The microwave frequency at the positive maximum is
 selected for DNP (187.410 GHz) (microwave power of 20 mW). The bottom
-right shows the the ^13^C polarization build-up determined by a small
-flip angle detection every minute (right graph). The ^13^C polarization
+right shows the the $^{13}C$ polarization build-up determined by a small
+flip angle detection every minute (right graph). The $^{13}C$ polarization
 approaches 69% with a time constant of 20 min.
 
 
 It has been shown that a small amount of gadolinium can positively
 affect the DNP enhancement with trityl in the solid state \[51\]. Other
-paramagnetic ions and molecules (Mn^2+^ and O~2~) will also, in part,
+paramagnetic ions and molecules ($Mn^{2+}$ and $O^{2-}$) will also, in part,
 have the same effect. A shortening of the EPA relaxation times is the
-main explanation for the effect. Addition of 1-2 mmol/L chelated Gd^3+^
+main explanation for the effect. Addition of 1-2 mmol/L chelated Gd$^{3+}$
 leads to a 50-100% improvement of the DNP enhancement factor for pyruvic
 acid. The effect seems to be present for most samples, but each sample
 must be optimized for the concentration of the EPA and Gd chelate. There
-is no direct DNP effect of the Gd^3+^ by itself under the conditions
-typically used (the Gd^3+^ ground state fully populated), as is
-otherwise the case at elevated temperatures \[52\]. Finally, Gd^3+^ may
+is no direct DNP effect of the $Gd^{3+}$ by itself under the conditions
+typically used (the $Gd^{3+}$ ground state fully populated), as is
+otherwise the case at elevated temperatures \[52\]. Finally, $Gd^{3+}$ may
 enhance the solid-state DNP, but care should be taken in avoiding
 accelerated relaxation in the liquid state. Free Gd ions would cause
 detrimental liquid state relaxation and pose an *in vivo* safety risk.
 After dissolution, the low concentration of trityl and chelated Gd will
-have negligible effect on T~1~ in most cases. However, firstly, addition
-of Gd has not been shown to affect nitroxide DNP efficiency positively,
-and secondly, nitroxides do have a significant effect on nuclear T~1~ in
+have negligible effect on $T_{1}$ in most cases. However, firstly, addition
+of $Gd^{3+}$ has not been shown to affect nitroxide DNP efficiency positively,
+and secondly, nitroxides do have a significant effect on nuclear $T_{1}$ in
 liquid state post dissolution that should be considered.
 
 A new class of EPA, with wider prospects, is UV-generated radicals
@@ -872,15 +845,15 @@ medical applications, but could open for wider access to
 hyperpolarization.
 
 A key requirement of hyperpolarization is a long longitudinal relaxation
-time constant, *T~1~*, of tens of seconds to minutes to observe the
+time constant, $T_1$, of tens of seconds to minutes to observe the
 evolution of the spin system over a sufficiently long time that the
-desired information can be extracted. This can be found for ^13^C that
+desired information can be extracted. This can be found for $^{13}C$ that
 have no directly attached protons, such as carboxylic acids or
-carbonyls. An example is pyruvate enriched with ^13^C in either the C-1
-or C-2 positions, both having a *T~1~* of about 60 s. It is also
-possible to obtain sufficiently long *T~1~* by deuteration of directly
-attached protons, as in e.g. \[U-^13^C,U-^2^H\]glucose. For further
-details on interesting imaging agents, see chapter 6.
+carbonyls. An example is pyruvate enriched with $^{13}C$ in either the C-1
+or C-2 positions, both having a $T_1$ of about 60 s. It is also
+possible to obtain sufficiently long $T_1$ by deuteration of directly
+attached protons, as in e.g. [U-$^{13}C$,U-$^{2}$H]glucose. For further
+details on interesting imaging agents, see [HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md).
 
 The first step in hyperpolarizing a new imaging agent by dDNP is to find
 a formulation with high concentration the imaging agent, and good
@@ -891,20 +864,19 @@ will cause the EPA to concentrate in domains and lead to a poor DNP
 effect. To prevent this, the imaging agent will have to be dissolved or
 mixed with a glassing solvent that make the sample amorphous when
 frozen. Three examples of molecules that are liquids at room temperature
-and freeze as a glass are \[1-^13^C\]pyruvic acid (or any other isotopic
-labeling), 2-keto-\[1-^13^C\]isocaproic acid and
-*bis*-1,1-(hydroxymethyl)-\[1-^13^C\]cyclopropane-d~8~ (HP001). All
-three molecules are liquids at room temperature. For other compounds, it
+and freeze as a glass are [1-$^{13}C$]pyruvic acid (or any other isotopic
+labeling), 2-keto-[1-$^{13}C$]isocaproic acid and
+*bis*-1,1-(hydroxymethyl)-[1-$^{13}C$]cyclopropane-d$_8$ (HP001). For other compounds, it
 is necessary to prevent crystallization by mixing or dissolving the
 compound with a suitable solvent such as glycerol or dimethylsulfoxide
 (DMSO).
 
-# Dissolution and relaxation
+## Dissolution and relaxation
 
 For *in vivo* imaging, the sample must be dissolved in a suitable
 buffer. Depending on the properties of the DNP sample, the dissolution
 may involve neutralization of the agent with acid or base, e.g. as in
-the case for ^13^C-pyruvic acid. A significant buffer capacity at
+the case for $^{13}C$-pyruvic acid. A significant buffer capacity at
 physiological pH is required to maintain pH within the physiologic range
 of approx. 6.8 to 8.1. Physiological buffers such as
 tris(hydroxymethyl)aminomethane (TRIS),
@@ -912,7 +884,7 @@ tris(hydroxymethyl)aminomethane (TRIS),
 commonly used. An isotonic formulation is desired. This may mean
 lowering the concentration of the imaging agent, if it is hypertonic, or
 adding sodium chloride if hypotonic. The dissolution must be efficient
-and fast compared to the nuclear T~1~ to preserve the nuclear
+and fast compared to the nuclear $T_{1}$ to preserve the nuclear
 polarization during the phase transition. Formulating the solid sample
 as beads or powder may improve the dissolution in terms of polarization
 loss and recovery of the imaging agent. For optimal performance of more
@@ -920,11 +892,11 @@ difficult agents, the fluid dynamics and the provision of heat is
 essential \[57\]. To minimize relaxation, dissolution is performed
 inside the cryostat in the high field of the polarizer (e.g. \~3 T in
 the case of a 3.35 T polarizer), but above the liquid helium surface. As
-an example, the shortest *T~1~* of the C-1 of neat \[1-^13^C\]pyruvic
+an example, the shortest $T_1$ of the C-1 of neat [1-$^{13}C$]pyruvic
 acid at 9.4 T is approx. 1.6 s at 0 °C (unpublished data), and is
 attributed to dipolar relaxation by the methyl and acid protons.
-According to theory, the minimum T~1~ scales with B~0~, which means that
-a minimum T~1~ of 0.7 s should be expected during the dissolution in the
+According to theory, the minimum $T_1$ scales with $B_0$, which means that
+a minimum $T_1$ of 0.7 s should be expected during the dissolution in the
 3 T polarizer field. Thus, melting and dissolution should be fast on
 this time scale to avoid loss of polarization. The severity of the
 challenge will depend on the nuclear spin and molecular structure. Some
@@ -940,7 +912,7 @@ solvent. This may in part reduce the relation contribution. In most
 cases, the EPA or Gd chelate that is added for the DNP process, do not
 cause significant relaxation after dissolution, and may be safely
 injected into the animal. However, for samples that require high
-concentration of nitroxide as EPA, T~1~ of the nuclear spin may be
+concentration of nitroxide as EPA, $T_{1}$ of the nuclear spin may be
 shortened. In this case, it should be considered that relaxation is
 further accelerated at low magnetic field. For this reason, the
 background magnetic field should be considered from dissolution to
@@ -951,7 +923,7 @@ dissolution process or a subsequent step. In either case, the filtration
 is completed in a matter of a few seconds with insignificant loss of
 polarization or imaging agent concentration. As an example, in the case
 of clinical studies with pyruvate, the solid sample is neat pyruvic acid
-(^13^C-labelled) with 15 mM trityl radical (AH111501). The solid sample
+($^{13}C$-labelled) with 15 mM trityl radical (AH111501). The solid sample
 is dissolved in water-for-injection, which causes the trityl to
 precipitate under the acidic conditions. The solid EPA particles are
 then removed by filtration, and the pyruvic acid is neutralized post
@@ -962,8 +934,8 @@ agent and formulation. Most importantly, chemical shift anisotropy
 relaxation that may contribute significantly for carbonyls and
 carboxylic acids above approx. 7 T. Likewise, scalar relaxation of the
 second kind, i.e. scalar coupling to a fast relaxing nuclear spin, e.g.
-^14^N in urea, will reduce *T~1~* in low (earth) magnetic field (and
-*T~2~* in high magnetic field) \[58\]. For all these relaxation
+$^{14}$N in urea, will reduce $T_1$ in low (earth) magnetic field (and
+$T_2$ in high magnetic field) \[58\]. For all these relaxation
 mechanisms (except spin-rotational relaxation) it will be beneficial to
 keep the sample at a relatively high temperature, considering that
 eventually the temperature must be reduced to 37 °C for biological
@@ -972,11 +944,12 @@ studies.
 The polarization is typically measured by acquiring a series of spectra
 with a low flip angle, e.g. with a flip angle of 1-5° every 1-5 s. The
 signal decay can then be fitted to an exponential decay to determine
-T~1~. If the thermal signal is too low, a larger flip angle can be used,
+$T_{1}$. If the thermal signal is too low, a larger flip angle can be used,
 but the calculation of the polarization must then take the measurement
 into account. Before the thermal signal is measured, the sample can be
-doped with a Gadolinium contrast agent to reduce the T~1~ of the ^13^C
-(e.g. 15 uL in a 5 mm NMR tube to reduce T~1~ to less than a second).
+doped with a Gadolinium contrast agent to reduce the $T_{1}$ of the $^{13}C$
+(e.g. 15 uL in a 5 mm NMR tube to reduce $T_{1}$ to less than a second).
+
 Depending on the sensitivity of the NMR spectrometer or MR scanner, a
 thermal signal with sufficient signal-to-noise ratio may be acquired by
 averaging several FIDs. The polarization is determined by comparing the
@@ -984,7 +957,7 @@ integral of the resonance peak of the first experiment in the series of
 hyperpolarized experiments with the thermal signal. The polarization at
 the time of dissolution can be obtained by extrapolating to time zero if
 the time from dissolution to measurement is known. The assumption is
-that T~1~ is constant and equal to the value measured at the
+that $T_1$ is constant and equal to the value measured at the
 spectrometer field throughout the transfer (the relaxation time constant
 may depend on the magnetic field).
 
@@ -999,7 +972,7 @@ Hyperpolarization is a great example of experiment and theory bringing
 scientists of all disciplines together.
 
 
-# References
+## References
 
 \[1\] J.H. Ardenkjær-Larsen, B. Fridlund, A. Gram, G. Hansson, L.
 Hansson, M.H. Lerche, R. Servin, M. Thaning, K. Golman, Increase in
@@ -1013,7 +986,7 @@ M. Ferrone, M. Van Criekinge, J.W. Chang, R. Bok, I. Park, G. Reed,
 L. Carvajal, E.J. Small, P. Munster, V.K. Weinberg, J.H.
 Ardenkjaer-Larsen, A.P. Chen, R.E. Hurd, L.-I. Odegardstuen, F.J.
 Robb, J. Tropp, J.A. Murray, Metabolic imaging of patients with prostate cancer using
-hyperpolarized \[1-^13^C\]pyruvate., Sci. Transl. Med. 5 (2013)
+hyperpolarized \[1-$^{13}C$\]pyruvate., Sci. Transl. Med. 5 (2013)
 198ra108-198ra108. https://doi.org/10.1126/scitranslmed.3006070.
 
 \[3\]
