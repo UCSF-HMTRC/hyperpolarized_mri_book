@@ -474,8 +474,8 @@ amorphous glass upon rapid cooling. DNP requires a paramagnetic species
 as a source of spin order. This is usually provided by a stable radical
 present at concentrations of 10 -- 60 mM. Diffusion of spin polarization
 between nuclei is promoted by their proximity, and higher concentrations
-of <sup>13</sup>C nuclei facilitate higher rates of polarization. (See Chapter 1
-for additional information.)
+of <sup>13</sup>C nuclei facilitate higher rates of polarization. (See 
+[Physics of dDNP](../dDNP_physics/dDNP_physics.md) for additional information.)
 
 ### Free radicals
 
@@ -491,7 +491,7 @@ are almost completely polarized at the temperatures and magnetic fields
 used for dissolution DNP and resonate at microwave frequency. Electron
 paramagnetic resonance (EPR) spectroscopy, which is analogous to NMR
 spectroscopy, is used to characterize radicals and other paramagnetic
-species, and as described in chapter 1 the mechanisms of DNP depend on
+species, and as described in [Physics of dDNP](../dDNP_physics/dDNP_physics.md) the mechanisms of DNP depend on
 the irradiation of this resonance with microwaves. Substituted
 triphenylmethyl (\"trityl\") radicals are most commonly used, but other
 persistent radicals, including nitroxyl radicals such as TEMPO and BDPA
@@ -685,7 +685,7 @@ likewise determined empirically.
 
 The microwave frequency for maximum enhancement also needs to be
 determined for every formulation by performing a microwave sweep (see
-Chapter 2), and it may vary between preparations, particularly if there
+[Hardware for dDNP](../dDNP_hardware/dDNP_hardware.md)), and it may vary between preparations, particularly if there
 is a difference in the radical concentration or other paramagnetic
 dopant.
 
@@ -821,7 +821,7 @@ absolute quantitation of the metabolic fluxes in pre-clinical and
 clinical settings very challenging. On the other hand, in vitro systems,
 using isolated enzymes, cell suspensions or flow bioreactors in NMR
 spectrometers, are more amenable to quantitative metabolic measurements
-as described in Chapter 7.
+as described in [Analysis and Visualization of HP Data](../analysis_visualization/analysis_visualization.md).
 
 In either case, when a metabolite is produced by a reversible reaction
 or is an intermediate in a pathway, the HP <sup>13</sup>C metabolite signals will
@@ -858,7 +858,7 @@ labeled lactate results in its slower conversion back to pyruvate, at
 least initially. In this way, a large endogenous metabolite pool can act
 as a sink to slow the consumption of the labeled metabolite and increase
 its relative signal. The methods used to extract kinetic parameters from
-HP <sup>13</sup>C data are described in Chapter 7, with the dynamics of the
+HP <sup>13</sup>C data are described in  [Analysis and Visualization of HP Data](../analysis_visualization/analysis_visualization.md), with the dynamics of the
 substrate and metabolite signals used to determine the apparent rates.
 
 ### Metabolite identification and assignment

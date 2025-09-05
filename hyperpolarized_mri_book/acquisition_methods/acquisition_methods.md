@@ -181,7 +181,7 @@ section.
 ![Constant vs multiband flip angle strategies](fig-1.png)
 
 **Figure 2.** Constant vs multiband metabolite-specific flip angle
-strategies with a metabolically active substrate**.** Utilizing the same
+strategies with a metabolically active substrate. Utilizing the same
 flip angle for both substrate and product results in excess substrate
 SNR and an overall reduction in product SNR because of the rapid drop in
 substrate $M_{Z}$. Using a multiband flip angle scheme -- lower excitation
