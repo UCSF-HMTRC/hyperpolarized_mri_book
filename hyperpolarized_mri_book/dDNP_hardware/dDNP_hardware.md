@@ -1,71 +1,71 @@
-# Hardware for preparing HP ^13^C-Molecules: From Polarizer to Patient
+# Hardware for preparing HP <sup>13</sup>C-Molecules: From Polarizer to Patient
 
-Adam P. Gaunt^1^ and Arnaud Comment ^1,2^
+Adam P. Gaunt<sup>1</sup> and Arnaud Comment <sup>1,2</sup>
 
-*^1^Cancer Research UK Cambridge Institute, University of Cambridge,
+*<sup>1</sup>Cancer Research UK Cambridge Institute, University of Cambridge,
 Cambridge, UK*
 
-*^2^General Electric Healthcare, Chalfont St Giles, UK*
+*<sup>2</sup>General Electric Healthcare, Chalfont St Giles, UK*
 
 **Abstract:** This chapter outlines the physical requirements for
-producing biocompatible solutions with highly polarized ^13^C-molecules,
+producing biocompatible solutions with highly polarized <sup>13</sup>C-molecules,
 along with the necessary procedures required to conduct a successful HP
-^13^C MR experiment. A selection of polarizers presented in the
+<sup>13</sup>C MR experiment. A selection of polarizers presented in the
 literature are described and the typical operating conditions they are
 expected to provide, such as base temperature and field strength, are
 outlined and the merits of these systems are discussed. The dissolution
 process, conducted to execute a rapid state change of the sample
-containing the polarized ^13^C-molecules, is explained in detail for
+containing the polarized <sup>13</sup>C-molecules, is explained in detail for
 several notable systems, including polarizers designed for clinical and
 preclinical applications. Clinical experiments require a sterile sample
 to ensure that dissolution dynamic nuclear polarization (DNP) is safe
 for humans and the fluid path assembly used to guarantee the sample is
 uncontaminated is presented, along with an explanation of the checks and
 procedures required post dissolution before injection. The steps
-involved in a HP ^13^C MR experimental strategy are subdivided and
+involved in a HP <sup>13</sup>C MR experimental strategy are subdivided and
 presented as a workflow. The chapter is concluded with a summary of
 potential future developments and the current challenges to be overcome
 regarding DNP hardware. This includes the use of non-persistent
-photo-generated radicals, which may allow ^13^C polarization storage and
+photo-generated radicals, which may allow <sup>13</sup>C polarization storage and
 transport, along with simplification of the quality control associated
 with clinical experiments.
 
 **Key Words:** dynamic nuclear polarization, hyperpolarization,
 hyperpolarizer, cryostat, cryogen-free, dissolution.
 
-**2.1 Requirements for DNP**
+## Requirements for DNP
 
 The aim of dissolution DNP (dDNP) is to supply aqueous solutions
-containing HP ^13^C-molecules that can be utilized in NMR and MRI
+containing HP <sup>13</sup>C-molecules that can be utilized in NMR and MRI
 experiments to probe biological processes that would be otherwise
 undetectable without the vast signal enhancement provided by DNP. As
-shown in Figure 2.1, such HP ^13^C-molecules are prepared *ex situ*
+shown in Figure 1, such HP <sup>13</sup>C-molecules are prepared *ex situ*
 (i.e. outside of the NMR or MRI system) in an apparatus known as a
-"polarizer". A complete HP ^13^C MR experiment involves several key
-steps, namely polarization of selected ^13^C-molecules, dissolution,
-transfer/injection of the dissolved HP ^13^C-molecules, and finally MR
+"polarizer". A complete HP <sup>13</sup>C MR experiment involves several key
+steps, namely polarization of selected <sup>13</sup>C-molecules, dissolution,
+transfer/injection of the dissolved HP <sup>13</sup>C-molecules, and finally MR
 measurements. Initially the focus of this section will be on the
 hardware used to perform DNP as accessing high levels of liquid-state
-(LS) ^13^C polarization requires effective solid-state (SS) DNP. In
+(LS) <sup>13</sup>C polarization requires effective solid-state (SS) DNP. In
 order to achieve efficient polarization through DNP, the polarizer must
 meet three main requirements: (1) The SS sample containing the
-^13^C-molecules must be situated in a high magnetic field, (2) it must
+<sup>13</sup>C-molecules must be situated in a high magnetic field, (2) it must
 be kept at low cryogenic temperature, and (3) there has to be a path by
 which to deliver microwaves to the sample. This is fundamental to DNP
 since increasing the magnetic field and reducing temperature increases
 spin polarization thanks to the Zeeman splitting and the Boltzmann
-distribution. For more information, see Chapter 1.
+distribution. For more information, see [Physics of dDNP](../dDNP_physics/dDNP_physics.md).
 
 ![Figure 1](preclinical_HP13C.png)
 
-**Figure 2.1**: Preclinical setup to perform HP ^13^C MR experiments.
+**Figure 1**: Preclinical setup to perform HP <sup>13</sup>C MR experiments.
 (A, top panel) Once the sample is prepared and inserted into the
 polarizer, it is irradiated with microwaves; (B, bottom panel)
 Dissolution is carried out inside the magnetic field of the polarizer
 and the solution is rapidly transferred to the magnetic field of the
-measurement MR system. The HP ^13^C-molecules are collected in the
+measurement MR system. The HP <sup>13</sup>C-molecules are collected in the
 non-magnetic separator/injection pump from where it is administrated and
-HP ^13^C MR measurements are started.
+HP <sup>13</sup>C MR measurements are started.
 
 Polarizers typically operate in the temperature range of 0.8 to 1.5 K
 with a magnetic field between 3 and 7 T, conditions at which the
@@ -77,10 +77,10 @@ increase in technical complication with diminishing returns as the
 polarization build-up time becomes unworkably longer as the temperature
 is lowered and the field is increased. The stated ranges therefore
 provide an approximately optimal platform to produce polarized
-^13^C-molecules on a practical timescale (typically between 45 and 180
+<sup>13</sup>C-molecules on a practical timescale (typically between 45 and 180
 minutes) for dDNP.
 
-***The Magnet***
+### The Magnet
 
 Thanks to the recent advances in superconducting magnet technology, two
 options are available for reaching the field strengths required for DNP.
@@ -104,7 +104,7 @@ the sample at higher frequency to drive the polarization transfer from
 the electron spins of the free radicals to the nuclear spins. However,
 following the work of Jannin *et al.* (4) and Jóhanneson *et al.* (5),
 it became clear that increasing the field to 4.6 or 5 T yields larger
-^13^C polarization. It has since been shown that even larger
+<sup>13</sup>C polarization. It has since been shown that even larger
 polarization can be obtained at 7 T for a set temperature (3,8). A
 trade-off for higher polarization is that as the magnetic field
 increases, the build-up time is extended because of lengthening
@@ -113,7 +113,7 @@ Therefore, the benefits of increasing the field beyond 7 T is outweighed
 by the negative effect on the length of time required to polarize a
 single sample (1,9).
 
-***Cryogenic Environment***
+### Cryogenic Environment
 
 To maintain a low sample temperature during the DNP process, the sample
 space of the polarizer is filled with liquid helium cooled below the
@@ -124,8 +124,8 @@ polarizer cryostat and the temperature of the sample bath is lowered by
 reducing the vapor pressure above the liquid. All early polarizer
 designs were based on this straightforward technology. An important
 point to keep in mind is that about 40% of the initial amount of liquid
-helium will be lost through the phase transition going from normal ^4^He
-to superfluid ^4^He and that the level of the bath will then slowly
+helium will be lost through the phase transition going from normal <sup>4</sup>He
+to superfluid <sup>4</sup>He and that the level of the bath will then slowly
 decrease unless it is compensated by the continuous feed of an external
 source of liquid helium, typically regulated using a needle valve.
 
@@ -149,24 +149,24 @@ preclinical polarizer, where the sorption pump was replaced by a
 mechanical pump, although this system has a higher base temperature of
 1.3-1.4 K (1,2). The output helium gas of the pump is recondensed and
 then fed into the 1-K pot via a needle valve. More recently, a closed
-loop ^4^He system, including a flow restriction with a fixed impedance
+loop <sup>4</sup>He system, including a flow restriction with a fixed impedance
 feeding the 1-K pot, has been proposed as preclinical polarizer (9).
 This particular system is attractive as it does not require any
 mechanical adjustment such as the rotation of a needle valve and it can
 run for indefinite periods of time at its base temperature. Although it
-could be possible to run such a closed system with ^3^He to further
+could be possible to run such a closed system with <sup>3</sup>He to further
 reduce the temperature, the current price of this rare isotope is too
 exorbitant to even consider this option. The build-up time could also
 become prohibitively long at temperatures below 0.8 K.
 
-***Microwaves***
+### Microwaves
 
 To drive the DNP process, the SS sample needs to be irradiated with
 microwaves at a frequency near to the electron Larmor frequency which
 are delivered to the sample from an external source via a waveguide. It
 is usual to contain the microwaves inside a (non-resonant) cavity at the
 sample space as confining the microwaves in this way increases the power
-density that the sample is subject to. The ^13^C polarization depends,
+density that the sample is subject to. The <sup>13</sup>C polarization depends,
 to some extent, upon the power provided and it will increase with
 increasing power until it reaches a plateau beyond which additional
 power will eventually be detrimental to the polarization because of
@@ -174,67 +174,66 @@ heating effects. In a typical design, a microwave source capable of
 producing 50 mW at the source output is usually sufficient.
 
 The optimum microwave frequency and power is determined by monitoring
-the SS ^13^C NMR signal under DNP conditions. In order to determine the
+the SS <sup>13</sup>C NMR signal under DNP conditions. In order to determine the
 correct polarizing frequency a "microwave frequency sweep" is carried
 out where the sample is irradiated at varying frequencies and the
-magnitude of the SS ^13^C NMR signal is plotted as a function of the
+magnitude of the SS <sup>13</sup>C NMR signal is plotted as a function of the
 microwave frequency. Power is optimized though polarization build-up
 experiments at varying microwave powers. The build-up is monitored by
 applying evenly spaced, small flip-angle radiofrequency (RF) pulses
-while irradiating with microwaves and measuring the increase in SS ^13^C
+while irradiating with microwaves and measuring the increase in SS <sup>13</sup>C
 NMR signal intensity that arises due to the build-up of the
 polarization. By repeating this across a range of microwave frequencies
 the most efficient microwave power is found.
 
-***The Sample***
+### The Sample
 
 Although not strictly hardware, the preparation of the sample has a
 considerable bearing on the quality of the DNP. A typical sample
-consists of a solution containing the ^13^C-molecules of interest, a
+consists of a solution containing the <sup>13</sup>C-molecules of interest, a
 free radical compound, also called "polarizing agent", and potentially a
 glassing agent. The polarizing agent provides a source of electron spins
-that act as the sink of polarization to be transferred to the ^13^C on
-the labelled molecules, as described in Chapter 1. However, if the
+that act as the sink of polarization to be transferred to the <sup>13</sup>C on
+the labelled molecules, as described in [Physics of dDNP](../dDNP_physics/dDNP_physics.md). However, if the
 solution forms a crystalline structure during freezing, the distribution
 of the polarizing agents leads to unfavorable DNP conditions and poor
 signal enhancement. In order to ensure that there is a homogeneous
 distribution of randomly oriented free radical compounds, an amorphous
 solid is desired which is ensured by the addition of a glassing agent
 (such as glycerol or DMSO) and flash freezing in liquid nitrogen. This
-is not required for the most widely used ^13^C-molecule, pyruvic acid,
+is not required for the most widely used <sup>13</sup>C-molecule, pyruvic acid,
 since it is "self-glassing". It may be beneficial to pre-freeze beads of
 the sample in liquid nitrogen before loading so as to ensure that a good
-glass is formed. By freezing droplets of the solution (see Figure 2.1),
+glass is formed. By freezing droplets of the solution (see Figure 1),
 the surface area of the sample exposed to the dissolution solvent is
-increased, making the rapid melting more efficient. For more details see
-Chapter 6.3.
+increased, making the rapid melting more efficient. For more details see [HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md#63-formulation-of-hp-13c-agents-for-dissolution-dnp).
 
-**2.2. Monitoring of solid-state ^13^C polarization**
+## Monitoring of solid-state <sup>13</sup>C polarization
 
-Monitoring the build-up of the SS ^13^C NMR signal is not only important
+Monitoring the build-up of the SS <sup>13</sup>C NMR signal is not only important
 to optimize the frequency and power of the microwave irradiation
 required for DNP, but also to confirm that the sample is of good quality
 (amorphous with an acceptable concentration of free radicals).
-Integrating a SS ^13^C NMR probe within the cryogenic environment of the
+Integrating a SS <sup>13</sup>C NMR probe within the cryogenic environment of the
 polarizer can be challenging because it must be compatible with the
 dissolution setup without being detrimental to the DNP process. If the
-probe is sensitive enough, it can be used to estimate the SS ^13^C
+probe is sensitive enough, it can be used to estimate the SS <sup>13</sup>C
 polarization attained through DNP inside the polarizer by comparing the
-thermal equilibrium ^13^C NMR signal with the ^13^C NMR signal after
+thermal equilibrium <sup>13</sup>C NMR signal with the <sup>13</sup>C NMR signal after
 DNP.
 
-The hardware implemented for monitoring the SS ^13^C polarization varies
+The hardware implemented for monitoring the SS <sup>13</sup>C polarization varies
 between polarizer designs. The probe usually consists of a saddle coil
 placed within the sample space. The geometry of this type of coil
 provides a RF field orthogonal to its cylindrical axis and can therefore
 be aligned with the polarizer axis, allowing samples to be moved in and
-out of the coil. To obtain a resonant circuit at the ^13^C Larmor
+out of the coil. To obtain a resonant circuit at the <sup>13</sup>C Larmor
 frequency, lumped tuning and matching elements are placed in between the
 coil and the NMR spectrometer. These elements are typically placed
 outside of the cryogenic environment of the polarizer so that they can
 be easily adjusted. The length of the coaxial cable connecting the coil
 to the remote tune and match elements has to be an integer number of
-half the ^13^C Larmor frequency. Such simple resonant circuit has an
+half the <sup>13</sup>C Larmor frequency. Such simple resonant circuit has an
 inherent poor sensitivity due to the large losses in the coaxial line
 separating the tune and match elements from the coil. To improve the
 sensitivity of the probe, fixed capacitors can be placed next to the
@@ -246,16 +245,16 @@ resonant circuit can have a very narrow frequency band and the fixed
 capacitors have to be carefully chosen, taking into account that the
 capacitance of these elements changes at low temperatures.
 
-**2.3 Rapid state change**
+## Rapid state change
 
 Although, to be efficient, DNP requires operating at low temperatures,
-for biological applications the ^13^C-molecules must undergo a state
+for biological applications the <sup>13</sup>C-molecules must undergo a state
 change, from SS to LS, involving a rapid temperature increase. The
 requirement for the presence of free radicals in fairly high
 concentration (typically 10-100 mM) in the SS sample means that it
 cannot simply be extracted from the high-field environment of the
 polarizer following DNP as this will cause the enhanced polarization to
-be lost. This is due to the shortened T~1~ of the ^13^C spins at low
+be lost. This is due to the shortened T<sub>1</sub> of the <sup>13</sup>C spins at low
 field, outside of the polarizer environment, caused by the presence of
 the free radicals. This is the reason why Ardenkjær‐Larsen *et al.*
 developed dDNP (12), a method by which the sample is dissolved (and
@@ -271,18 +270,18 @@ on whether the polarizer is operating a pumped helium bath or a
 closed-cycle cryogenic system. The main difficulty in implementing a
 polarizer compatible with dDNP is the vast heat load applied to the
 cryogenic system through the significant volume of superheated solvent
-required to melt and extract the HP ^13^C-molecules. The principle
+required to melt and extract the HP <sup>13</sup>C-molecules. The principle
 components required to carry out a dissolution are a high-pressure
-boiler to allow water to be heated to around 130-150^o^C, a path to
+boiler to allow water to be heated to around 130-150 degrees C, a path to
 allow the water to flow to the sample, and a path to allow the dissolved
-HP ^13^C-molecules to be extracted from the polarizer. The extraction
+HP <sup>13</sup>C-molecules to be extracted from the polarizer. The extraction
 procedure can be driven by high-pressure helium gas to flush the full
 solution out of the system. The paths guiding the liquids may be
 physically fixed to the vial containing the sample throughout the DNP
 process, or they may be introduced momentarily to mate with a sample cup
 just prior to the dissolution.
 
-**2.4 Preclinical dDNP**
+## Preclinical dDNP
 
 The original dDNP system developed in 2003 by Wolber *et al.* operates
 at 3.35 T and includes a variable temperature insert (VTI) drawing
@@ -290,15 +289,15 @@ liquid helium from the magnet vessel into the sample space through a
 needle valve (7). The temperature of the sample space is lowered to
 about 1.2 K by actively pumping on the VTI. A fiberglass tube guides the
 sample into the microwave cavity and also allows a dissolution apparatus
-to access the sample space (see Figure 2.2). A 200 mW, 94 GHz microwave
+to access the sample space (see Figure 2). A 200 mW, 94 GHz microwave
 source is positioned above the polarizer and the microwaves are
 delivered to the non-resonant cavity via a stainless-steel tube. The
-sample containing ^13^C-molecules of interest can be inserted as a
+sample containing <sup>13</sup>C-molecules of interest can be inserted as a
 room-temperature solution or flash-frozen as beads. The sample is placed
 inside a PTFE or PEEK sample cup that is open at one end. To load the
 sample into the polarizer, the pressure inside the VTI is raised with
 hot helium gas to prevent air or moisture from entering. Once the sample
-is in place, the microwaves are switched on and the ^13^C polarization
+is in place, the microwaves are switched on and the <sup>13</sup>C polarization
 build-up is monitored using a remotely tuned saddle coil that is located
 inside the microwave cavity. Dissolution is enacted via a "dissolution
 wand" which mates with the open end of the sample cup to form a leak
@@ -319,7 +318,7 @@ magnet helium vessel.
 ![Figure2](original_dDNP.png)
 
 
-**Figure 2.2**: Schematic diagram of the original dDNP polarizer showing
+**Figure 2**: Schematic diagram of the original dDNP polarizer showing
 the magnet \[1\], vacuum pump \[2\], variable temperature insert (VTI)
 \[3\], microwave source \[4\], VTI pressure sensor \[5\], sample loading
 port \[6\], microwave container \[7\], PTFE tube to position the sample
@@ -330,7 +329,7 @@ A commercially available polarizer produced by Oxford Instruments in
 2006, known as the HyperSense™, is built around the same specifications
 as the original dDNP polarizer with the addition of an increased level
 of automation to improve reproducibility. Although no longer in
-production, it is still a stalwart of HP ^13^C preclinical imaging
+production, it is still a stalwart of HP <sup>13</sup>C preclinical imaging
 experiments. Most biological studies, in particular *in vivo*
 preclinical experiments, have indeed been performed using either, one of
 the original polarizers or the HyperSense™. Since the inception of the
@@ -361,10 +360,10 @@ reducing the heat load to the system. The introduction of the fluid path
 results in a much more stable system in which consecutive dissolutions
 can be performed without the need to refill the sample space with
 helium. The fluid path used for preclinical study is displayed on the
-left side (part A) of Figure 2.3. It consists of a sample vial connected
+left side (part A) of Figure 3. It consists of a sample vial connected
 to a dissolution syringe via two coaxial plastic tubes, the inner one
 directing the flow of solvent from the syringe into the vial. The
-outcoming solution containing the HP ^13^C-molecules flows back to the
+outcoming solution containing the HP <sup>13</sup>C-molecules flows back to the
 syringe valve through the interstitial space between the outer tube and
 the inner tube and it is then redirected to an external receiver through
 a transfer tube. To prevent air from being introduced inside the
@@ -376,7 +375,7 @@ remains leak free.
 
 ![Figure 3](fluid_path.png)
 
-**Figure 2.3**: Commercial fluid path for preclinical and clinical
+**Figure 3**: Commercial fluid path for preclinical and clinical
 applications. Part A: components required to insert the sample inside
 the cryogenic environment of the polarizer and carry out a dissolution;
 this part is employed for both preclinical and clinical experiments.
@@ -385,7 +384,7 @@ pH of the sample to physiological value, perform the quality control
 (QC), and draw the sterile solution into a syringe used for
 administration to humans. This fluid path is referred to as pharmacy kit
 in the context of clinical studies. The method of insertion and final
-sample position is highlighted further in Figure 2.4.
+sample position is highlighted further in Figure 4.
 
 Although the SPINlab™ can be used for preclinical experiments, it has
 been designed for clinical studies (see section 2.6 below for more
@@ -394,7 +393,7 @@ facilities focusing on cell or small animal studies alone. Two systems
 tailored for preclinical applications have been recently proposed: the
 SpinAligner (1), now commercialized by Polarize, a spin-off company from
 the Danish Technical University, and a system based on a modified
-commercial closed-cycle ^3^He/^4^He dilution refrigerator (9). Both
+commercial closed-cycle <sup>3</sup>He/<sup>4</sup>He dilution refrigerator (9). Both
 these systems share some common features: a dry magnet, no liquid
 cryogen required, and the use of fluid paths for sample polarization and
 dissolution.
@@ -404,7 +403,7 @@ multichannel system to be able to polarize more than one sample at a
 time hence allowing rapid consecutive dissolutions. The two main reasons
 for wanting such option are that, first, an experiment might fail due to
 various issues related either to the dDNP process itself, the
-administration of the dose, or the HP ^13^C MR acquisition, and second,
+administration of the dose, or the HP <sup>13</sup>C MR acquisition, and second,
 some biological experiments might require consecutive injections to
 compare results prior and after a physiological change induced by an
 operation or the administration of a treatment. Without a multichannel
@@ -423,11 +422,11 @@ helium gas from an external cylinder, yielding about 85 mL of liquid
 helium. The sample space is also capable of housing up to four different
 samples, which can be simultaneously polarized, allowing consecutive
 dissolutions to be carried out with a delay of 10 min or less between
-them (see Figure 2.4).
+them (see Figure 4).
 
 ![Figure 4](multisample_insert.png)
 
-**Figure 2.4**: DNP insert developed by Cheng *et al.* to allow
+**Figure 4**: DNP insert developed by Cheng *et al.* to allow
 multi-sample DNP in a cryogen-free polarizer. The insert, which fits
 within the bore of the polarizer and has an integrated microwave guide
 and container, provides a guide for the fluid paths. For clarity, the
@@ -438,7 +437,7 @@ is capable of holding up to 4 samples and multiple dissolutions can be
 carried out on a timescale of several minutes. The insert is made up of
 \[1\] an airlock for sample loading, \[2\] sample access tube, \[3\]
 microwave guide, \[4\] internal sample vial guide baffle, \[5\]
-fiberglass tube, \[6\] gate valve, \[7\] RuO~2~ thermometer, \[8\]
+fiberglass tube, \[6\] gate valve, \[7\] RuO<sub>2</sub> thermometer, \[8\]
 microwave container, and \[10\] a RF coil. Reproduced with permission
 from Cheng *et al*. (9).
 
@@ -450,57 +449,57 @@ sample into an open sample cup, the negated need for liquid cryogens
 makes them much more practical than the original pumped helium bath
 cryogenic systems.
 
-**2.5 Post dissolution**
+## Post dissolution
 
-Once the sample has been dissolved and the HP ^13^C-molecules are in
-solution, the ^13^C polarization decays at a rate defined by the LS
-^13^C T~1~ for the specific molecules of interest. It is therefore vital
-that the HP ^13^C-molecules are rapidly transferred into an
-administration syringe and injected. If the HP ^13^C-molecules
+Once the sample has been dissolved and the HP <sup>13</sup>C-molecules are in
+solution, the <sup>13</sup>C polarization decays at a rate defined by the LS
+<sup>13</sup>C T<sub>1</sub> for the specific molecules of interest. It is therefore vital
+that the HP <sup>13</sup>C-molecules are rapidly transferred into an
+administration syringe and injected. If the HP <sup>13</sup>C-molecules
 experience strong magnetic field gradients or areas of zero field this
-can be detrimental to the ^13^C polarization. To combat this
+can be detrimental to the <sup>13</sup>C polarization. To combat this
 depolarizing effect, it is possible to apply an external field during
 transfer from the polarizer to the MR system and a handheld
 electromagnet was developed for this purpose (15). For experiments with
-^13^C-pyruvic acid, this is usually not necessary as its C1 and C2
-carbons still have relatively long T~1~ even at earth magnetic field.
+<sup>13</sup>C-pyruvic acid, this is usually not necessary as its C1 and C2
+carbons still have relatively long T<sub>1</sub> even at earth magnetic field.
 
 For *in vivo* preclinical experiments, an injection pump (seen in Figure
 2.1) has been designed in order to allow for fast, safe and reproducible
-injection of the HP ^13^C-molecules (14). The non-magnetic pump is
+injection of the HP <sup>13</sup>C-molecules (14). The non-magnetic pump is
 placed inside the bore of the MR system and allows minimizing the dead
 volume of the injection line between the administration syringe and the
 venous catheter, which is especially important in preclinical MRI
 systems in which the bore diameter is small and long. The pump also
 allows keeping the delay between dissolution and injection down to 3 s,
 thanks to a hydraulically driven piston that decouples the high-speed
-transfer of the HP ^13^C-molecules into the pump from the
+transfer of the HP <sup>13</sup>C-molecules into the pump from the
 physiologically-adapted injection rate required for animal experiments
-(16). In absence of this, the HP ^13^C-molecules should be rapidly
-transferred and injected manually (Also see Chapter 4).
+(16). In absence of this, the HP <sup>13</sup>C-molecules should be rapidly
+transferred and injected manually (see [HP Experimental Methods: Cells and Animals](../experiments_preclinical/experiments_preclinical.md)).
 
-**2.6 Clinical dDNP**
+## Clinical dDNP
 
-The first in-human HP ^13^C MR experiments were performed in the
+The first in-human HP <sup>13</sup>C MR experiments were performed in the
 Department of Radiology and Biomedical Imaging of the University of
 California San Francisco (UCSF) following the intravenous injection of
-\[1-^13^C\]pyruvate that was hyperpolarized using a proof-of-concept DNP
+\[1-<sup>13</sup>C\]pyruvate that was hyperpolarized using a proof-of-concept DNP
 polarizer (17). This instrument essentially consisted in the original
-polarizer described by Wolber *et al.* (see Figure 2.2) (7), but was
+polarizer described by Wolber *et al.* (see Figure 2) (7), but was
 installed inside a clean room to insure that the solution to be injected
 was sterile. The study confirmed the safety of an injection of a bolus
-of HP \[1-^13^C\]pyruvate at a dose of 0.43 ml/kg, which provides
+of HP \[1-<sup>13</sup>C\]pyruvate at a dose of 0.43 ml/kg, which provides
 sufficient signal for in-human MR metabolic studies.
 
 Although these experiments were successful, the setup was not viable for
 larger scale studies because the approach required a dedicated clean
-room for the polarization of the \[1-^13^C\]pyruvate molecules. A sealed
+room for the polarization of the \[1-<sup>13</sup>C\]pyruvate molecules. A sealed
 fluid path was therefore designed to be able to operate the polarizer in
 an uncontrolled environment while precluding any compound required for
 the formulation from being contaminated during the hyperpolarization
 process in order to obtain sterile, injectable doses of
-\[1-^13^C\]pyruvate (10). This fluid path (or pharmacy kit as it is
-known) is shown in Figure 2.4 and consists of the previously described
+\[1-<sup>13</sup>C\]pyruvate (10). This fluid path (or pharmacy kit as it is
+known) is shown in Figure 4 and consists of the previously described
 part A of the fluid path coupled to a part B, comprising a filter to
 remove the free radicals, a receiving vessel with a quality control
 appendage, and an administration syringe with a sterility assurance
@@ -544,12 +543,12 @@ most time-consuming part of the dissolution procedure. In the original
 quality control (QC) developed for the SPINlab™, the dose is released
 around 30 s after the dissolution has been initiated. In the best-case
 scenario, the dose in injected about 1 min after dissolution, which
-means that about 2/3 of the ^13^C signal is already lost before the
-point of measurement since the ^13^C T~1~ of \[1-^13^C\]pyruvate in a
+means that about 2/3 of the <sup>13</sup>C signal is already lost before the
+point of measurement since the <sup>13</sup>C T<sub>1</sub> of \[1-<sup>13</sup>C\]pyruvate in a
 solution with a physiological pH (6.5-8.5) at low field is about 60 s.
 
 Before dissolution is carried out, the patient is catheterized and
-placed inside the MRI scanner whereupon ^1^H anatomical scans are
+placed inside the MRI scanner whereupon <sup>1</sup>H anatomical scans are
 conducted. Once the sample is polarized, the superheated dissolution
 medium is released from the dissolution syringe of the pharmacy kit and
 directed into the sample vial to dissolve the sample. The resulting
@@ -558,37 +557,37 @@ precipitated polarizing agent prior to being neutralized and buffered to
 physiological pH by mixing with the neutralization medium contained in
 the receiver vessel of the pharmacy kit.
 
-***Quality Control (QC)***
+### Quality Control (QC)
 
 Following dissolution, filtration, and neutralization, several
 parameters are checked prior to injection: temperature, volume, pH,
 pyruvate concentration, residual polarizing agent concentration, and
-optionally ^13^C polarization level. The exact accepted range depends on
+optionally <sup>13</sup>C polarization level. The exact accepted range depends on
 the release criteria of the local regulatory authorities and qualified
 people involved in the procedure. However, there is a general agreement
-on the gross range for hyperpolarized \[1-^13^C\]pyruvate solutions: the
+on the gross range for hyperpolarized \[1-<sup>13</sup>C\]pyruvate solutions: the
 target pyruvate concentration should be 250 ± 30 mM, polarizing agent
 concentration less than 5 µM, and a pH between 6.5 and 8.5. These checks
 are performed on a small aliquot (a few mL) using optical measurements,
 which only take a fraction of a second to provide the results.
 Temperature and minimum volume are dictated by the current
 implementation of the QC hardware, which is set to provide at least 40
-mL of solution at around body temperature (37°C). Finally, the ^13^C
-polarization level can be determined by comparing the LS ^13^C NMR
+mL of solution at around body temperature (37°C). Finally, the <sup>13</sup>C
+polarization level can be determined by comparing the LS <sup>13</sup>C NMR
 measurement of the aliquot with the signal obtained from a standard
 sample and it is expected to be at least 5%. From these QC results, a
 pharmacist or qualified person will reject or release the dose for
-injection into a subject. The complete workflow of a clinical HP ^13^C
+injection into a subject. The complete workflow of a clinical HP <sup>13</sup>C
 MR experiment is summarize in Figure 5.
 
 ![Figure 5](clinical_HP_workflow.png)
 
 
-**Figure 2.5**: Workflow of a clinical HP ^13^C MR experiment detailing
+**Figure 5**: Workflow of a clinical HP <sup>13</sup>C MR experiment detailing
 the steps required to facilitate successful completion of each
 experiment, from polarizer to patient.
 
-**2.7 Future developments**
+## Future developments
 
 As hinted above, the main weakness of dDNP is that the need for
 introducing pressurized hot water in the fluid path is a delicate
@@ -620,45 +619,45 @@ because it will never be in contact with the solution that will be
 administrated to the patient, the QC aliquot can be handle in an
 uncontrolled environment. This QC process can be made in a much more
 versatile fashion, extending it to additional more complex measurements
-required for the extension to other HP ^13^C-molecules.
+required for the extension to other HP <sup>13</sup>C-molecules.
 
-Another development that will improve the quality of the HP ^13^C MR
+Another development that will improve the quality of the HP <sup>13</sup>C MR
 data is the optimization of the fluid transfer into the administration
 syringe. This transfer can be made faster, reducing the losses in
 polarization during the preparation of the dose.
 
 Since in dDNP the SS sample must be rapidly dissolved in hot water
-within the high-field environment of the polarizer, HP ^13^C-molecules
+within the high-field environment of the polarizer, HP <sup>13</sup>C-molecules
 have to be prepared in the close vicinity of the MR scanner within the
 few minutes preceding the injection. This major limitation restricts the
-number and type of HP ^13^C MR scans that can be performed and obstruct
+number and type of HP <sup>13</sup>C MR scans that can be performed and obstruct
 this imaging modality from being common clinical practice. A way to
 circumvent this limitation would be to use non-persistent free radicals
 that are photo-induced inside a frozen sample solution containing
-^13^C-molecules by exposing it to ultraviolet-visible (UV-Vis) light
-(19,20). Once the ^13^C-molecules have been polarized by DNP, these
+<sup>13</sup>C-molecules by exposing it to ultraviolet-visible (UV-Vis) light
+(19,20). Once the <sup>13</sup>C-molecules have been polarized by DNP, these
 photo-induced free radicals can be annihilated by increasing the
 temperature of the SS sample above their recombination temperature
 (typically around 200 K) without melting the frozen sample solution
-(21). It was demonstrated that SS samples containing HP ^13^C-molecules
+(21). It was demonstrated that SS samples containing HP <sup>13</sup>C-molecules
 can then be extracted from the polarizer without losing the enhanced
-^13^C polarization (22). If this technology can be integrated in a
+<sup>13</sup>C polarization (22). If this technology can be integrated in a
 clinical polarizer, it is expected to lead to a paradigm shift for 3
 main reasons: (a) it will eliminate critical failures related to the
 dissolution process currently used to prepare doses of HP
-^13^C-molecules for injection; (b) it will remove the need for
+<sup>13</sup>C-molecules for injection; (b) it will remove the need for
 synchronizing production and injection since doses can be polarized
 ahead of time; (c) it will become possible to place the polarizer in a
 remote location because doses can be stored and transported. It will
 also yield a predetermined and accurate amount of undiluted solution of
-HP ^13^C-molecules, allowing the preparation of an injectable solution
+HP <sup>13</sup>C-molecules, allowing the preparation of an injectable solution
 with exact concentration and pH, hence making the QC process prior to
 injection into humans much easier than in the current systems based on
 the dDNP method, thus removing potential failure points.
 
-**2.8 Conclusions**
+## Conclusions
 
-In less than 20 years, HP ^13^C MR has gone from concept to clinical
+In less than 20 years, HP <sup>13</sup>C MR has gone from concept to clinical
 applications. The community is still growing and the methods and
 hardware have rapidly improved across the years. A commercially
 available solution is today, although not widespread in availability, a
@@ -673,13 +672,13 @@ polarizing agents is lower than that of trityl free radicals. Using
 stronger magnets may compensate for this. In contrast to the discussion
 revolving around the optimal magnetic field, it is clear that the
 optimal temperature for DNP in a polarizer is always the lowest one that
-can be achieved using ^4^He, namely around 1 K.
+can be achieved using <sup>4</sup>He, namely around 1 K.
 
 The complexity of the experiment is still fairly high but new solutions
-to combat this are being developed. The field of HP ^13^C MR is still in
+to combat this are being developed. The field of HP <sup>13</sup>C MR is still in
 its infancy and it is expected that many technical developments are
 still needed to make this technology mainstream. It is very likely that
-the clinical relevance of HP ^13^C MR will drive the demand for better
+the clinical relevance of HP <sup>13</sup>C MR will drive the demand for better
 polarizers and associated methods.
 
 **Acknowledgments**
@@ -688,7 +687,7 @@ This work is part of a project that has received funding from the
 European Union\'s Horizon 2020 European Research Council (ERC
 Consolidator Grant) under grant agreement No 682574 (ASSIMILES).
 
-**References**
+## References
 
 1. Ardenkjaer-Larsen JH, Bowen S, Petersen JR, Rybalko O, Vinding MS,
 Ullisch M, Nielsen NC. Cryogen-free dissolution dynamic nuclear

@@ -1,18 +1,18 @@
 # HP Acquisition Methods: Pulse Sequences, Reconstruction, and RF Coils
 
-Jeremy Gordon, PhD^1^ & Jack J. Miller, DPhil^2^
+Jeremy Gordon, PhD<sup>1</sup> & Jack J. Miller, DPhil<sup>2</sup>
 
-^1^Department of Radiology & Biomedical Imaging, University of
+<sup>1</sup>Department of Radiology & Biomedical Imaging, University of
 California -- San Francisco, San Francisco, CA, USA
 
-^2^Department of Physics, University of Oxford, Oxford, United Kingdom.
+<sup>2</sup>Department of Physics, University of Oxford, Oxford, United Kingdom.
 
 Abstract: In the seventeen years since the introduction of dissolution
 DNP, significant advancements have been made in the development and
 acquisition of hyperpolarized data, with the field moving from
 pre-clinical studies using non-selective spectroscopy to clinical
 studies with whole organ coverage using rapid imaging sequences. The use
-of ^13^C labeled agents, primarily \[1-^13^C\]pyruvate, enables
+of <sup>13</sup>C labeled agents, primarily \[1-<sup>13</sup>C\]pyruvate, enables
 monitoring of key metabolic pathways with the ability to image both
 substrate and products to non-invasively measure real-time metabolism,
 but the non-renewable magnetization requires specialized hardware and
@@ -24,13 +24,13 @@ general tradeoffs between RF coils.
 Key Words: Hyperpolarization, DNP, CSI, EPSI, spectroscopic imaging,
 metabolite-selective imaging, RF coils.
 
-# Introduction
+## Introduction
 
 In the seventeen years since the introduction of dissolution dynamic
 nuclear polarization (DNP) (1), significant advancements have been made
-in the development and acquisition of hyperpolarized ^13^C data. The use
-of metabolically active ^13^C labeled agents, primarily
-\[1-^13^C\]pyruvate, enables non-invasive monitoring of key metabolic
+in the development and acquisition of hyperpolarized <sup>13</sup>C data. The use
+of metabolically active <sup>13</sup>C labeled agents, primarily
+\[1-<sup>13</sup>C\]pyruvate, enables non-invasive monitoring of key metabolic
 pathways, but the non-renewable magnetization requires specialized
 hardware and pulse sequences to efficiently encode this magnetization.
 Since the early work of Golman et al (2), significant advancements have
@@ -45,12 +45,9 @@ primary polarization mechanism for human applications, this chapter is
 equally applicable to substrates polarized via PHIP, SABRE, or other
 processes (3,4).
 
-# Hyperpolarized Imaging Considerations
+## Hyperpolarized Imaging Considerations
 
-The dissolution DNP process, discussed in more detail in Chapters 1 and
-2, provides more than four orders of magnitude increase to nuclear
-polarization. This transient increase overcomes the small thermal
-equilibrium magnetization - on the order of parts-per-million at
+The dissolution DNP process, discussed in more detail in the [Physics of Dissolution DNP](../dDNP_physics/dDNP_physics.md) and [Hardware for Dissolution DNP](../dDNP_hardware/dDNP_hardware.md) chapters, provides more than four orders of magnitude increase to nuclear polarization. This transient increase overcomes the small thermal equilibrium magnetization—on the order of parts-per-million at
 clinical field strengths and physiologic temperature - and enables
 dynamic imaging of hyperpolarized substrates that can be used to rapidly
 and efficiently encode 5D data (3 spatial + 1 spectral + 1 temporal
@@ -59,28 +56,28 @@ of hyperpolarized studies, particularly in regard to the total imaging
 time and choice of flip angles. These details and tradeoffs will be
 discussed in the next few sections.
 
-## T~1~ Decay & Non-Recoverable Magnetization
+### T<sub>1</sub> Decay & Non-Recoverable Magnetization
 
 Unlike conventional MRI, the longitudinal magnetization in a
 hyperpolarized experiment is non-recoverable and inexorably decays back
 to thermal (Boltzmann) equilibrium once the sample is removed from the
-polarizer. The longitudinal magnetization *M~z~(t)* can be written as:
+polarizer. The longitudinal magnetization $M_{Z}(t)$ can be written as:
 
 
 $ M_{Z}(t) = M_{0} + \left( M_{Z,HP} - M_{0} \right)\exp \left( - \frac{t}{T_{1}} \right) \cong \ M_{Z,HP} \exp\left( - \frac{t}{T_{1}} \right) $   \(1\)
 
-Here *M~Z,HP~* is the initial hyperpolarized magnetization, M~0~ is the
-thermal equilibrium magnetization, and T~1~ is the longitudinal
-relaxation time. M~0~ is on the order of parts-per-million at clinical
+Here $M_{Z,HP}$ is the initial hyperpolarized magnetization, M<sub>0</sub> is the
+thermal equilibrium magnetization, and T<sub>1</sub> is the longitudinal
+relaxation time. M<sub>0</sub> is on the order of parts-per-million at clinical
 field strengths and physiologic temperatures and can in general be
-neglected given the much larger *M~Z,HP\ ~*(typically *M~Z,HP~ \>*
-10,000 *x* M~0~)*~.~* T~1~ times are highly dependent on the local
+neglected given the much larger $M_{Z,HP}$ (typically $M_{Z,HP} \gg
+10,000 \times M_{0}$). T<sub>1</sub> times are highly dependent on the local
 chemical environment and can vary from seconds for spins with directly
 attached hydrogen nuclei to 100+ seconds for quaternary carbons that are
 chemically isolated. The primary relaxation pathways are discussed in
-further detail in Chapters 1 and 6, but it is important to note that the
-T~1~ time provides an upper limit for hyperpolarized experiments and
-limits the total imaging time. After three T~1~ times, the longitudinal
+further detail in [Physics of Dissolution DNP](../dDNP_physics/dDNP_physics.md) and [HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md), but it is important to note that the
+T<sub>1</sub> time provides an upper limit for hyperpolarized experiments and
+limits the total imaging time. After three T<sub>1</sub> times, the longitudinal
 magnetization has lost more than 95% of the hyperpolarized magnetization
 and in general is near or below the detectability limit for
 hyperpolarized pulse sequences.
@@ -89,14 +86,14 @@ Sampling of the hyperpolarized magnetization is also affected by the
 injection profile. The \`ideal\' injection profile of the hyperpolarized
 agent, i.e. delivered volume as a function of time, would be that which
 maximizes the total received signal. Owing to the fact that the
-paramagnetic nature of blood serves to reduce the T~1~ of the majority
+paramagnetic nature of blood serves to reduce the T<sub>1</sub> of the majority
 of reported probes *in vivo* compared to in their dissolution medium,
 there is an argument to be made for retaining a \`reservoir\' of
 magnetization outside of the subject, and infusing the agent at a
 controlled rate to obtain kinetic curves that maximally allow for the
 determination of the rate constants of interest with the least noise.
 Maidens and Arcak (5) have considered this problem for the case of
-\[1-^13^C\]pyruvate infusion and shown, with no small degree of
+\[1-<sup>13</sup>C\]pyruvate infusion and shown, with no small degree of
 mathematical rigor, that a unique "ideal" infusion profile can be
 derived given a series of appropriate constraints. Perhaps fortunately,
 the existence of an ideal profile can be used to show that the typical
@@ -106,9 +103,9 @@ obtains at least 98.7% of the global optimum. It is therefore the case
 that the majority of reported studies do not use an injection scheme
 other than that of the boxcar.
 
-## RF Decay & Metabolism
+### RF Decay & Metabolism
 
-In ^1^H MRI, the flip angle is chosen to provide a desired contrast or
+In <sup>1</sup>H MRI, the flip angle is chosen to provide a desired contrast or
 to maximize signal (i.e. Ernst angle for a spoiled gradient echo). In
 hyperpolarized MRI the choice of flip angle has a much greater impact,
 as it determines not only the overall SNR but also the total imaging
@@ -117,37 +114,37 @@ hyperpolarized spins decay to thermal equilibrium once they are removed
 from the polarizer. Implicit within this, however, is that each RF pulse
 consumes some of the finite, non-recoverable hyperpolarized
 magnetization. In the absence of metabolism, the expression for the
-longitudinal (*M~z~*) and transverse (*M~xy~*) magnetization after *n*
+longitudinal ($M_{Z}$) and transverse ($M_{XY}$) magnetization after *n*
 RF excitations of a constant flip-angle θ is given by (6):
 
-  $M_{Z}(t) = M_{Z,\text{HP}}\text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta$                                                                                     \(2\)
+  $M_{Z}(t) = M_{Z,\text{HP}}\ \text{exp}\left( - \frac{t}{T_{1}} \right)\text{cos}^{n}\theta$                                                                                     \(2\)
 
 
-  $M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\text{sin}\theta$ . \(3\)
+  $M_{\text{XY}}(t) = \mathbf{M}_{\mathbf{Z},\mathbf{\text{HP}}}\ \text{exp}\left( - \frac{\mathbf{t}}{\mathbf{T}_{\mathbf{1}}} \right)\text{cos}^{n - 1}\theta\ \text{sin}\theta$ . \(3\)
 
 ![Effect of flip angle](fig-0.png)
 
-**Figure 1.** The effect of flip-angle (θ) on the longitudinal (M~z~)
-and transverse (M~xy~) magnetization. A large flip-angle rapidly
+**Figure 1.** The effect of flip-angle (θ) on the longitudinal ($M_{Z}$)
+and transverse ($M_{XY}$) magnetization. A large flip-angle rapidly
 consumes the polarization but provides the highest initial signal. A low
 flip-angle preserves the polarization and provides a smaller (but more
 consistent) signal throughout the acquisition. Data were simulated with
-a 3 s TR and a T~1~ of 30 s.
+a 3 s TR and a T<sub>1</sub> of 30 s.
 
-A simple example showing the combined effects of T~1~ and repeated RF
-excitation on M~z~ and M~xy~ is illustrated in **Fig.** **1**. In this
+A simple example showing the combined effects of T<sub>1</sub> and repeated RF
+excitation on $M_{Z}$ and $M_{XY}$ is illustrated in **Fig.** **1**. In this
 pedagogical example, a single RF excitation occurs every 3 s on a
-compound with a T~1~ of 30 s. A small flip angle preserves M~z~ and
-provides a small but constant M~xy~ throughout the acquisition. In
-contrast, a larger flip-angle initially leads to a larger M~xy~, but
-because there is no recovery, the rapid consumption of M~z~
-magnetization results in a rapid reduction in M~xy~ throughout the
+compound with a T<sub>1</sub> of 30 s. A small flip angle preserves $M_{Z}$ and
+provides a small but constant $M_{XY}$ throughout the acquisition. In
+contrast, a larger flip-angle initially leads to a larger $M_{XY}$, but
+because there is no recovery, the rapid consumption of $M_{Z}$
+magnetization results in a rapid reduction in $M_{XY}$ throughout the
 acquisition. This signal variation between excitations can act as a
 k-space filter, resulting in a low- or high-pass filter if k-space is
 acquired in a centric or sequential view order, respectively (6).
 
-However, most hyperpolarized ^13^C studies employ a substrate (such as
-\[1-^13^C\]pyruvate) that is metabolically active. Metabolites are
+However, most hyperpolarized <sup>13</sup>C studies employ a substrate (such as
+\[1-<sup>13</sup>C\]pyruvate) that is metabolically active. Metabolites are
 generated through enzymatic conversion or label exchange from the
 hyperpolarized substrate and further spread out the hyperpolarized
 magnetization amongst multiple compounds. Given the presence of
@@ -165,10 +162,10 @@ excited with a constant 30° flip angle or a variable flip angle scheme
 of 7° substrate / 30° product can be seen in **Fig.** **2**. Utilizing
 the same flip angle for both substrate and product results in excess
 substrate SNR and an overall reduction in product SNR because of the
-rapid drop in the substrate *M~z~*. Using a multiband (or
+rapid drop in the substrate $M_{Z}$. Using a multiband (or
 metabolite-specific) flip angle -- lower excitation for substrate and
 higher for metabolite -- results in reduced usage of the substrate
-hyperpolarization *M~z~*, providing more product magnetization while
+hyperpolarization $M_{Z}$, providing more product magnetization while
 still providing sufficient SNR for both throughout the acquisition. The
 flip angle can also be varied through time, with schemes developed to
 either maximize metabolite signal or provide uniform signal throughout
@@ -187,13 +184,13 @@ section.
 strategies with a metabolically active substrate**.** Utilizing the same
 flip angle for both substrate and product results in excess substrate
 SNR and an overall reduction in product SNR because of the rapid drop in
-substrate M~z~. Using a multiband flip angle scheme -- lower excitation
+substrate $M_{Z}$. Using a multiband flip angle scheme -- lower excitation
 for substrate and higher for the metabolic product -- results in reduced
 usage of the substrate hyperpolarization, providing 1.8-fold more
 magnetization for the product in this example while still providing
 sufficient substrate SNR throughout the acquisition. Data were simulated
-with a 3 s TR, a T~1~ of 30 s for both substrate and product, and a
-metabolic conversion rate constant of 0.02 s^-1^.
+with a 3 s TR, a T<sub>1</sub> of 30 s for both substrate and product, and a
+metabolic conversion rate constant of 0.02 $s^{-1}$.
 
 The key takeaway here is that RF pulses and metabolism will further
 utilize the non-recoverable magnetization, and the tradeoffs between SNR
@@ -209,7 +206,7 @@ to hyperpolarized metabolites represent a challenge in the context of
 experiments where an injection necessarily comes from outside the
 sensitive region of the transmit coil used.
 
-## Chemical Shift Displacement
+### Chemical Shift Displacement
 
 Hyperpolarized metabolic imaging provides valuable and unique functional
 information because of the distinct resonance frequencies of the
@@ -225,8 +222,8 @@ frequency differences between compounds. This can occur at high field or
 with studies of compounds that have a large chemical shift difference.
 The magnitude of the spatial slice displacement, *δz*, is determined by
 the spectral separation between compounds, *δf*, along with either the
-slice selection gradient strength, G~z~, or the RF pulse bandwidth,
-BW~RF~, and slice thickness, *Δz*:
+slice selection gradient strength, $G_{Z}$, or the RF pulse bandwidth,
+$BW_{RF}$, and slice thickness, *Δz*:
 
   $\delta z = \frac{\text{δf}}{\frac{\gamma}{2\pi} \times G_{z}} = \frac{\text{δf}}{\text{BW}_{\text{RF}}}\Delta z$   \(4\)
 
@@ -234,7 +231,7 @@ BW~RF~, and slice thickness, *Δz*:
 ![Chemical shift slice displacement](fig-2.png)
 
 **Figure 3**. Example of chemical shift slice displacement. The large
-frequency difference between \[2-^13^C\]pyruvate and \[2-^13^C\]lactate
+frequency difference between \[2-<sup>13</sup>C\]pyruvate and \[2-<sup>13</sup>C\]lactate
 (\~4500 Hz at 3 T) results in substantial slice displacement in this
 study of the rat brain using a conventional 2.3kHz slice-selective
 excitation, leading to errors in quantification. Figure adapted from
@@ -242,9 +239,9 @@ Ref. (19).
 
 
 This is illustrated in **Fig. 3**, showing the slice displacement of
-\[2-^13^C\]pyruvate and metabolites in a rat brain study at 3 T (19).
-Due to the \~4500 Hz frequency difference between \[2-^13^C\]pyruvate
-and \[2-^13^C\]lactate, the lactate spins excited by the RF pulse (2.3
+\[2-<sup>13</sup>C\]pyruvate and metabolites in a rat brain study at 3 T (19).
+Due to the \~4500 Hz frequency difference between \[2-<sup>13</sup>C\]pyruvate
+and \[2-<sup>13</sup>C\]lactate, the lactate spins excited by the RF pulse (2.3
 kHz RF bandwidth) come from a shifted slice completely outside of the
 brain, which will confound any estimate of metabolism. Chemical shift
 displacement can be partially mitigated by using a higher bandwidth RF
@@ -253,41 +250,41 @@ multiband RF pulses (13) or by selectively exciting each metabolite with
 a singleband spectral-spatial RF pulse, as will be further discussed in
 the metabolite-selective imaging section.
 
-# Pulse Sequences & Reconstruction
+## Pulse Sequences & Reconstruction
 
 Data acquisition strategies in HP MRI experiments must account for
 multiple chemical shifts, efficiently utilize the non-renewable HP
 magnetization, and acquire data quickly relative to metabolism and
 relaxation decay processes. Studies of inert HP molecules, such as
-^13^C-urea (17,20) or ^13^C-t-butanol (21), have only a single resonance
+<sup>13</sup>C-urea (17,20) or <sup>13</sup>C-t-butanol (21), have only a single resonance
 and can be imaged with any conventional pulse sequence combined with the
 HP RF pulse strategies described above. Studies of metabolically active
 HP molecules require spectral encoding to separate metabolites,
 requiring pulse sequences to efficiently encode 5D data (3 spatial + 1
 spectral + 1 temporal dimension). This section will describe the major
 varieties of spectroscopic imaging and metabolite-selective imaging
-sequences that have been used for hyperpolarized ^13^C MRI and will
+sequences that have been used for hyperpolarized <sup>13</sup>C MRI and will
 discuss their relative tradeoffs and benefits.
 
 ### Non-Selective Spectroscopy & CSI
 
 Magnetic resonance spectroscopic imaging (MRSI) provides spatial and
-spectral encoding to localize and resolve HP ^13^C-labeled metabolites.
+spectral encoding to localize and resolve HP <sup>13</sup>C-labeled metabolites.
 MRSI techniques have the advantage that they provide a continuous
 spectrum which can be analyzed to extract expected as well as unexpected
 resonances, making this approach very robust and the go-to method for
 exploratory HP studies when the number of resonances and their relative
 chemical shift are unknown.
 
-The most straightforward method for hyperpolarized ^13^C studies is 1D
+The most straightforward method for hyperpolarized <sup>13</sup>C studies is 1D
 spectroscopy, which acquires a non-localized spectrum from a single
 slice or a region limited by the sensitivity of the receive coil. This
 approach provides spectroscopic data with a high spectral bandwidth and
 spectral resolution, with the capability for sub-second temporal
 resolution to capture rapid enzyme kinetics. This approach is
-well-suited for hyperpolarized substrates with short T~1~ times,
+well-suited for hyperpolarized substrates with short T<sub>1</sub> times,
 substrates with a complicated spectrum or broad chemical shift like
-\[2-^13^C\]pyruvate (22,23) or \[U-^2^H, U-^13^C\]glucose (24), or when
+\[2-<sup>13</sup>C\]pyruvate (22,23) or \[U-<sup>2</sup>H, U-<sup>13</sup>C\]glucose (24), or when
 spatial localization is not crucial, such as studies where global
 changes are expected.
 
@@ -295,8 +292,8 @@ An extension of 1D spectroscopy, phase-encoded chemical shift imaging
 (CSI) also provides a large spectral bandwidth and high spectral
 resolution along with spatial encoding. However, the main challenge in
 performing hyperpolarized MRSI is imaging speed, and CSI is quite slow
-because it is a pure phase-encoded sequence. CSI requires N~x~ × N~y~ RF
-excitations for a single slice, where N~x~ and N~y~ are the number of
+because it is a pure phase-encoded sequence. CSI requires $N_{X} \times N_{Y}$ RF
+excitations for a single slice, where $N_{X}$ and $N_{Y}$ are the number of
 voxels in the X- and Y- dimensions of the 2D spatial array. For example,
 even a relatively coarse 8 × 8 matrix requires 64 RF excitations,
 resulting in a long acquisition time (5-15 seconds with typical TRs) for
@@ -311,14 +308,14 @@ volumetric coverage and can hamper measurements of metabolic conversion.
 
 **Figure 4:** Illustration of MRSI methods for HP agents. All methods start with RF excitation and slice selection, appended with a spectroscopic or spectroscopic imaging readout. Free induction decay (FID) MRS provides a spectrum from the excited slice and just requires one TR. Phase encoding (CSI) provides a spectroscopic image, but requires multiple TRs to perform all phase encodings necessary to sample k-space (e.g., Scan time = $TR \times N_{PE,X} \times N_{PE,Y}$ for the 2D MRSI example shown). Echo-planar spectroscopic imaging (EPSI) also provides a spectroscopic image, but requires relatively fewer TRs to cover k-space (e.g., Scan time =  $TR \times N_{PE,Y}$ for the 2D MRSI example shown), allowing for rapid imaging of HP agent kinetics.  Figure adapted from Larson PEZ, Gordon JW. Hyperpolarized Metabolic MRI—Acquisition, Reconstruction, and Analysis Methods. *Metabolites*. 2021; 11(6):386. https://doi.org/10.3390/metabo11060386
 
-## Fast Spectroscopic Imaging
+### Fast Spectroscopic Imaging
 
 Fast spectroscopic imaging techniques employing multi-echo readouts
 during acquisition can greatly reduce the scan time for HP experiments
 compared to phase-encoded CSI. Joint spatial and spectral encoding is
 accomplished by traversing k-space at multiple TEs, shifted in time by a
 fixed echo-spacing ΔTE (**Fig. 5**). By acquiring the same k-space point
-(*k~x~, k~y~*) at multiple echo times (typically 32 -- 128 echoes), a
+($k_{X}$, $k_{Y}$) at multiple echo times (typically 32 -- 128 echoes), a
 Fourier transform along the echo dimension produces a spectrum at each
 k-space point, reducing the scan time by the number of acquired points
 in the frequency encoded dimension. The spectral and spatial encoding
@@ -335,7 +332,7 @@ using algorithms applied to non-Cartesian MRI such as gridding (30) or
 the non-uniform fast Fourier transform (nuFFT (31)).
 
 The fast MRSI approaches form the backbone of several important pilot
-studies of hyperpolarized ^13^C in cancer patients. This includes
+studies of hyperpolarized <sup>13</sup>C in cancer patients. This includes
 malignancies such as brain cancer (32,33), primary (34-36) and
 metastatic (37) prostate cancer, renal cell carcinoma (38) and
 pancreatic adenocarcinoma (39). The ability to cover a continuous
@@ -356,14 +353,14 @@ bandwidth can be increased with an interleaved acquisition, this comes
 at a cost of increased scan time and the spectral bandwidth is still
 much less than can be obtained with CSI, which is only limited by
 hardware sampling rates. The tradeoff between spatial and spectral
-resolution is further compounded by the fact that the ^13^C gyromagnetic
-ratio is roughly 1/4^th^ that of ^1^H, further increasing the demand on
+resolution is further compounded by the fact that the <sup>13</sup>C gyromagnetic
+ratio is roughly 1/4<sup>th</sup> that of <sup>1</sup>H, further increasing the demand on
 gradient strength and slew-rate and requiring the gradients to work four
 times as hard to achieve the same k-space coverage and ΔTE. This is
-particularly problematic at higher B~0~ because the chemical shift
+particularly problematic at higher B<sub>0</sub> because the chemical shift
 frequency between metabolites scales linearly with field strength and on
 clinical scanners that lack high-performance gradients to compensate for
-the reduced ^13^C gyromagnetic ratio. However, this is less of a concern
+the reduced <sup>13</sup>C gyromagnetic ratio. However, this is less of a concern
 on pre-clinical systems with high-performance gradients, as they can
 overcome the reduced gyromagnetic ratio to provide larger spectral
 bandwidths without the need for interleaved acquisitions.
@@ -390,8 +387,8 @@ A potential limitation of fast spectroscopic imaging is they still
 require relatively long scan times owing to the need to explicitly
 encode the spectral dimension. This limitation can be partially offset
 by migrating to an imaging-based acquisition strategy (see the following
-sections) in later phases of a clinical study where the ^13^C substrate
-and products are assigned, and ΔB~0~/susceptibility has been better
+sections) in later phases of a clinical study where the <sup>13</sup>C substrate
+and products are assigned, and ΔB<sub>0</sub>/susceptibility has been better
 characterized for the target of interest. With that said, the fast MRSI
 approaches still retain important application in those scenarios where
 quantitative accuracy and microenvironment characterization have
@@ -400,11 +397,11 @@ metabolites aren't yet known, or for when spatial localization is
 limited by the receive profile of the surface coil.
 
 
-## IDEAL CSI
+### IDEAL CSI
 
 IDEAL CSI is a specialized fast spectroscopic imaging method that uses a
 model-based reconstruction and takes advantage of prior spectral
-knowledge (number of ^13^C resonances and their relative chemical shift)
+knowledge (number of <sup>13</sup>C resonances and their relative chemical shift)
 to further reduce the scan time in a hyperpolarized experiment. For
 IDEAL CSI, a spatially selective excitation with a spectral bandwidth
 sufficient to excite each of the *n* expected metabolites is applied,
@@ -417,8 +414,8 @@ that it only requires approximately accurate information about the
 spectral location of each resonance, and it is fast and readily combined
 with existing readout techniques to produce a high-resolution final
 image (42,43). As a consequence, IDEAL techniques have been applied *in
-vivo* with hyperpolarized \[1-^13^C\]pyruvate, and are able to resolve
-metabolism across multiple slices with a spatial resolution of 2-5 mm^2^
+vivo* with hyperpolarized \[1-<sup>13</sup>C\]pyruvate, and are able to resolve
+metabolism across multiple slices with a spatial resolution of 2-5 mm<sup>2</sup>
 in-plane and a temporal resolution of 4-5 s (44,45). Provided that the
 number of expected resonances is comparatively small, such approaches
 provide an effective way to undersample the spectral domain of the
@@ -435,7 +432,7 @@ Nevertheless, particularly for novel probes with a characterized
 spectrum, they are comparatively easy methods to implement and have
 found widespread application.
 
-## Metabolite-Selective Imaging
+### Metabolite-Selective Imaging
 
 Fast spectroscopic imaging approaches acquire spectral and spatial
 information simultaneously, decoupling multiple metabolite signals with
@@ -453,9 +450,9 @@ in conjunction with an oscillating slice-select gradient (**Fig. 6**).
 ![Spectral-spatial pulse example](fig-3.png)
 
 **Figure 6.** Example of a spectral-spatial RF pulse designed for
-studies of HP \[1-^13^C\]pyruvate and \[1-^13^C\]lactate. The RF
+studies of HP \[1-<sup>13</sup>C\]pyruvate and \[1-<sup>13</sup>C\]lactate. The RF
 envelope and oscillating gradient provide the spectral and spatial
-selectivity of the 2D RF pulse (A-B). Transverse magnetization (M~xy~)
+selectivity of the 2D RF pulse (A-B). Transverse magnetization ($M_{XY}$)
 at isocenter (C) and across the entire slice (D) shows the narrow
 passband frequency response needed for metabolite-selective imaging.
 
@@ -463,7 +460,7 @@ passband frequency response needed for metabolite-selective imaging.
 Because the spectral encoding is performed with the excitation,
 single-shot imaging readouts such as spiral or echoplanar trajectories
 can be employed to rapidly and efficiently encode the magnetization.
-This approach is well-suited for studies with \[1-^13^C\]pyruvate, which
+This approach is well-suited for studies with \[1-<sup>13</sup>C\]pyruvate, which
 has a sparse spectrum with resonances that are known *a priori* and are
 well-separated (> 90 Hz at 3 T). The design of these pulses requires
 numerous tradeoffs between the spatial and spectral response; given the
@@ -551,46 +548,46 @@ chemical shift of metabolites and the operating field strength; as a
 general rule of thumb, most SPSP RF pulses require at least \~90 Hz
 separation between metabolites to have sufficient stopband suppression
 and minimize off-resonance excitation. Hyperpolarized substrates such as
-\[1-^13^C\]pyruvate (2), ^13^C-bicarbonate (54),
-\[1,4-^13^C~2~\]fumarate (55), and many others meet this criteria.
+\[1-<sup>13</sup>C\]pyruvate (2), <sup>13</sup>C-bicarbonate (54),
+\[1,4-<sup>13</sup>C<sub>2</sub>\]fumarate (55), and many others meet this criteria.
 
 The SPSP RF pulses and rapid imaging readouts used in
 metabolite-specific imaging are also more sensitive to center frequency
-errors and B~0~ field inhomogeneity when compared to fast spectroscopic
+errors and B<sub>0</sub> field inhomogeneity when compared to fast spectroscopic
 imaging approaches. For the imaging gradients, this will manifest as
 geometric distortion or blurring in metabolite data acquired with
 echoplanar and spiral readouts, respectively, due to the accumulation of
 phase during the readout. These artifacts can be partially mitigated by
 shortening the readout duration, albeit at the cost of reduced SNR
 efficiency. They can also be reduced through off-resonance and
-distortion correction strategies developed for ^1^H MRI that are also
-compatible with hyperpolarized ^13^C MRI. For spiral, auto-focus
+distortion correction strategies developed for <sup>1</sup>H MRI that are also
+compatible with hyperpolarized <sup>13</sup>C MRI. For spiral, auto-focus
 algorithms (56) have been used to correct for B0-induced blurring. For
 EPI, an alternating blip strategy (57) or integrated dual-echo readout
-(58) can be used to estimate and correct for B~0~ distortion. Symmetric
+(58) can be used to estimate and correct for B<sub>0</sub> distortion. Symmetric
 echoplanar readouts additionally can suffer from Nyquist ghost artifacts
 due to inconsistencies between the phase encodings, which can be
-corrected for by estimating the phase coefficients from a ^1^H reference
-scan using the ^13^C waveform (50) or via an exhaustive search (59).
+corrected for by estimating the phase coefficients from a <sup>1</sup>H reference
+scan using the <sup>13</sup>C waveform (50) or via an exhaustive search (59).
 
 
 Finally, because the RF pulse performs the spectral encoding, proper
-frequency calibration is crucial. B~0~ field inhomogeneity and
+frequency calibration is crucial. B<sub>0</sub> field inhomogeneity and
 miscalibration of the center frequency can reduce the applied flip angle
 due to the narrow passband of the SPSP RF pulse (typically ±2.5ppm
-full-width half-maximum bandwidth for \[1-^13^C\]pyruvate applications)
+full-width half-maximum bandwidth for \[1-<sup>13</sup>C\]pyruvate applications)
 and introduce off-resonance artifacts. With large shifts, this can lead
 to a failure to excite the metabolites of interests. With smaller
 frequency shifts, the lower flip angle will lead to overall reduced SNR
 and can potentially bias quantification if left unaccounted.
 
-## Pulse Sequence Summary
+### Pulse Sequence Summary
 
 | Acquisition Strategy      | Pros                                                    | Cons                                                                 | Ideal Application                                                                                 |
 |--------------------------|---------------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Phase-encoded CSI        | Provides a full spectrum; large spectral BW; high spectral resolution; robust to ΔB~0~ | Slow; k-space filtering from long acquisition times; limited volumetric coverage; sensitive to motion | Compounds with complicated spectra and/or large chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
-| Fast spectroscopic imaging | Faster than phase-encoded CSI; provides a full spectrum; robust to ΔB~0~ | Limited spectral BW; tradeoff with spectral BW, spatial resolution, and SNR efficiency; sensitive to motion | Compounds with limited chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
-| Metabolite-selective imaging | Fastest strategy for imaging a single metabolite; robust to motion | Sensitive to ΔB~0~; requires spectral separation of metabolites | Compounds with a sparse spectrum and isolated resonances; clinical studies that need volumetric coverage and high temporal resolution |
+| Phase-encoded CSI        | Provides a full spectrum; large spectral BW; high spectral resolution; robust to ΔB<sub>0</sub> | Slow; k-space filtering from long acquisition times; limited volumetric coverage; sensitive to motion | Compounds with complicated spectra and/or large chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
+| Fast spectroscopic imaging | Faster than phase-encoded CSI; provides a full spectrum; robust to ΔB<sub>0</sub> | Limited spectral BW; tradeoff with spectral BW, spatial resolution, and SNR efficiency; sensitive to motion | Compounds with limited chemical shift dispersion; studies with small FOVs or coarse spatial resolution |
+| Metabolite-selective imaging | Fastest strategy for imaging a single metabolite; robust to motion | Sensitive to ΔB<sub>0</sub>; requires spectral separation of metabolites | Compounds with a sparse spectrum and isolated resonances; clinical studies that need volumetric coverage and high temporal resolution |
 
 **Table 1**. Comparison and summary of hyperpolarized pulse sequences
 discussed in this chapter.
@@ -613,7 +610,7 @@ recent review article by Gordon et al (61).
 
 
 
-# RF Coils
+## RF Coils
 
 RF coils are an oft-overlooked aspect of an MRI experiment, but the
 choice of RF coil will directly impact the spatial resolution,
@@ -622,7 +619,7 @@ study. This section is intended to introduce the reader to the basic
 concepts and tradeoffs between surface coils, volume coils, and
 multichannel arrays. See Refs. (62,63) for further reading on MRI coils.
 
-## Surface & Volume Coils
+### Surface & Volume Coils
 
 The two main types of coils for an MR experiment are surface and volume
 coils. Surface coils are so-called because they provide high sensitivity
@@ -653,7 +650,7 @@ reduced filling factor. Volume coils are the most common setup in
 hyperpolarized studies because of their ease of use and functionality,
 as only one large volume coil is needed for any pre-clinical imaging
 application. These coils can be combined using a volume coil for RF
-transmit and a surface coil for reception, as is typically done for ^1^H
+transmit and a surface coil for reception, as is typically done for <sup>1</sup>H
 imaging, using rapidly switching PIN diodes to tune or detune each coil
 as required within the pulse sequence. This leverages the relative
 strengths of both coils, combining the uniform excitation from the
@@ -662,7 +659,7 @@ the limited coverage of a single surface coil, multiple surface coils
 can be combined into a larger multichannel receive array, which will be
 discussed in the following section.
 
-## Multichannel Arrays & Coil Combination
+### Multichannel Arrays & Coil Combination
 
 Multichannel arrays offer improved sensitivity over a volume coil,
 provide greater volumetric coverage than a single surface coil, and can
@@ -683,7 +680,7 @@ the coils when not in use.
 ![Phantom SNR images and line profiles](fig-5.png)
 
 **Figure 8**. SNR images and line profiles obtained from a phantom
-containing natural abundance ^13^C ethylene glycol using a birdcage
+containing natural abundance <sup>13</sup>C ethylene glycol using a birdcage
 (volume) transceiver, 8-channel paddle array, and 32-channel array at 3
 T. Data from the 8-channel paddle array were acquired at two distances
 to either match the 32-channel housing (19 cm separation) or to conform
@@ -696,9 +693,9 @@ at the head center. Figure adapted from Ref. (45).
 Key to this sensitivity improvement is how the multichannel data are
 combined. Optimally combining the multichannel data is crucial to
 maximizing SNR but most coil combination methods cannot be directly
-applied to HP ^13^C data because they require *a priori* knowledge of
+applied to HP <sup>13</sup>C data because they require *a priori* knowledge of
 the coil sensitivities. Sensitivity maps are difficult to directly
-acquire in this context, as there is insufficient endogenous ^13^C
+acquire in this context, as there is insufficient endogenous <sup>13</sup>C
 signal in the body for a direct measurement. If this measurement is made
 with the injected hyperpolarized compound, it inherently requires
 sacrificing some of the available magnetization, although this portion
@@ -717,7 +714,7 @@ excellent approximation of the coil sensitivities while maintaining
 valuable phase information in the coil-combined images. A comparison
 between the sum-of-squares and data-driven coil combination methods
 (Refpeak) in a human hyperpolarized brain experiment of
-\[1-^13^C\]pyruvate can be seen in **Fig. 9**. While image quality is
+\[1-<sup>13</sup>C\]pyruvate can be seen in **Fig. 9**. While image quality is
 sufficient for the high-SNR pyruvate images using a simple
 sum-of-squares approach, image quality is degraded for lactate and
 especially bicarbonate when the coil weights are not known, reducing SNR
@@ -725,12 +722,12 @@ and limiting the achievable spatial resolution. The Refpeak
 reconstruction has an outsized impact on the noisiest images, such as
 bicarbonate and late-phase pyruvate dynamics, significantly improving
 image quality and contrast compared to a sum of squares approach and
-will enable robust quantification of HP ^13^C metabolism.
+will enable robust quantification of HP <sup>13</sup>C metabolism.
 
 ![Coil combination methods for hyperpolarized data](fig-6.png) 
 
-**Figure 9**. Images of hyperpolarized \[1-^13^C\]pyruvate,
-\[1-^13^C\]lactate, and ^13^C-bicarboate human brain data acquired with
+**Figure 9**. Images of hyperpolarized \[1-<sup>13</sup>C\]pyruvate,
+\[1-<sup>13</sup>C\]lactate, and <sup>13</sup>C-bicarboate human brain data acquired with
 a 32-channel coil and reconstructed with a sum-of-squares or data-driven
 (Refpeak) approach. While image quality is sufficient for the high-SNR
 pyruvate images using a simple sum-of-squares coil combination, image
@@ -747,11 +744,11 @@ the HP injection or potentially from the dynamic HP experiment itself by
 selecting a timepoint and slice free of signal. Pre-whitening has been
 shown to provide significant benefits in terms of precision and SNR
 (72), and should be considered as a routine pre-processing step for
-multi-channel HP ^13^C data reconstruction.
+multi-channel HP <sup>13</sup>C data reconstruction.
 
-# Summary
+## Summary
 
-HP ^13^C MRI provides novel metabolic information in a rapid,
+HP <sup>13</sup>C MRI provides novel metabolic information in a rapid,
 non-invasive manner. However, the transient nature of the HP
 magnetization and the need for both spectral encoding and temporal
 resolution places unique demands on RF and acquisition strategies.
@@ -763,14 +760,14 @@ the Hyperpolarized MRI Toolbox:
 
 The goal of this chapter was to provide the reader with a conceptual
 understanding of the challenges associated with metabolic imaging of
-hyperpolarized ^13^C substrates, describe pulse sequence strategies that
+hyperpolarized <sup>13</sup>C substrates, describe pulse sequence strategies that
 can encode spectral and spatial information, and introduce the different
 varieties of RF coils. This fundamental understanding will serve as the
 basis for subsequent chapters that discuss experimental methods and the
 integration of HP imaging into cancer, cardiac, liver, and neurological
 studies.
 
-# References
+## References
 1. Ardenkjær-Larsen JH, Fridlund B, Gram A, Hansson G, Hansson L, Lerche MH, Servin R, Thaning M, Golman K. Increase in signal-to-noise ratio of > 10,000 times in liquid-state NMR. Proc Natl Acad Sci USA 2003;100(18):10158-10163.
 2. Golman K, in 't Zandt R, Thaning M. Real-time metabolic imaging. Proceedings of the National Academy of Sciences 2006;103(30):11270.
 3. Kovtunov KV, Pokochueva EV, Salnikov OG, Cousin SF, Kurzbach D, Vuichoud B, Jannin S, Chekmenev EY, Goodson BM, Barskiy DA, Koptyug IV. Hyperpolarized NMR Spectroscopy: d-DNP, PHIP, and SABRE Techniques. Chemistry -- An Asian Journal 2018;13(15):1857-1871.
