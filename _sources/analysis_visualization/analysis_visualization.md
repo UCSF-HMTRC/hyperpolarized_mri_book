@@ -54,7 +54,7 @@ to Lorentzian lineshapes.
 
 Another common task for analysis is to combine voxel data for region of
 interest (ROI) based computations, which requires knowledge of the
-anatomical location (see 7.2 Data Visualization). It is important to
+anatomical location (see [Data Visualization](#data-visualization)). It is important to
 note in the data extraction whether magnitude-only or complex-valued
 data is used, as they have different noise statistics that should be
 considered. Imaging sequences are typically stored as magnitude data,
@@ -70,7 +70,7 @@ as parallel imaging or compressed sensing. However, it is typically
 sufficient to assuming a Gaussian or Rician distribution, as these
 distributions become quite difficult to characterize.
 
-# Data Visualization
+## Data Visualization
 
 Typically the next step following data extraction is data visualization
 for the purposes of anatomical localization, quality control, and/or
@@ -154,13 +154,13 @@ agents and metabolic pathways.
 
 ### Modeling the chemical reaction
 
-Hyperpolarized \[1-13C\]-pyruvate is the most widely used HP imaging
+Hyperpolarized \[1-<sup>13<sup>C\]-pyruvate is the most widely used HP imaging
 agent because it has good polarization characteristics (25-50% using
 current dDNP technology), a relatively long spin-lattice relaxation time
 constant ($T_1$ \~ 60s at 3T), and because pyruvate is rapidly absorbed
 into tissue and incorporated into important metabolic pathways (Also see
-[HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md)). The conversion of HP \[1-13C\]-pyruvate into HP
-\[1-13C\]-lactate is particularly interesting in oncology because many
+[HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md)). The conversion of HP \[1-<sup>13<sup>C\]-pyruvate into HP
+\[1-<sup>13<sup>C\]-lactate is particularly interesting in oncology because many
 cancers are characterized by high levels of aerobic glycolysis, or the
 Warburg Effect, where glucose is metabolized to lactate even under
 normoxic conditions (Also see [Integration into Cancer Studies](../cancer/cancer.md)). Metabolism of HP pyruvate has
@@ -984,37 +984,37 @@ generate the simulation results, are available as part of the
 11. JMRUI. [cited 2018 Aug 29].  <http://www.jmrui.eu/welcome-to-the-new-mrui-website>
 12. TARQUIN. [cited 2018 Aug 29]. <http://tarquin.sourceforge.net>  
 13. Wilson M, Reynolds G, Kauppinen RA, Arvanitis TN, Peet AC. A constrained least-squares approach to the automated quantitation of in vivo (1)H magnetic resonance spectroscopy data. Magn Reson Med 65(1):1-12, 2011.  
-14. Crane JC, Gordon JW, Chen H-Y, Autry AW, Li Y, Olson MP, Kurhanewicz J, Vigneron DB, Larson PEZ, Xu D. Hyperpolarized 13C MRI data acquisition and analysis in prostate and brain at University of California, San Francisco. NMR in Biomedicine n/a(n/a):e4280, 2020. PMCID: PMC7501204.  
-15. Witney TH, Kettunen MI, Brindle KM. Kinetic modeling of hyperpolarized 13C label exchange between pyruvate and lactate in tumor cells. J Biol Chem 286(28):24572-80, 2011. PMCID: PMC3137032.  
+14. Crane JC, Gordon JW, Chen H-Y, Autry AW, Li Y, Olson MP, Kurhanewicz J, Vigneron DB, Larson PEZ, Xu D. Hyperpolarized <sup>13<sup>C MRI data acquisition and analysis in prostate and brain at University of California, San Francisco. NMR in Biomedicine n/a(n/a):e4280, 2020. PMCID: PMC7501204.  
+15. Witney TH, Kettunen MI, Brindle KM. Kinetic modeling of hyperpolarized <sup>13<sup>C label exchange between pyruvate and lactate in tumor cells. J Biol Chem 286(28):24572-80, 2011. PMCID: PMC3137032.  
 16. Walker CM, Lee J, Ramirez MS, Schellingerhout D, Millward S, Bankson JA. A catalyzing phantom for reproducible dynamic conversion of hyperpolarized [1-¹³C]-pyruvate. PLoS One 8(8):e71274, 2013. PMCID: PMC3744565.  
 17. Ahamed F, Van Criekinge M, Wang ZJ, Kurhanewicz J, Larson P, Sriram R. Modeling hyperpolarized lactate signal dynamics in cells, patient-derived tissue slice cultures and murine models. NMR in Biomedicine 34(3):e4467, 2021.  
-18. Bankson JA, Walker CM, Ramirez MS, Stefan W, Fuentes D, Merritt ME, Lee J, Sandulache VC, Chen Y, Phan L, Chou PC, Rao A, Yeung SC, Lee MH, Schellingerhout D, Conrad CA, Malloy C, Sherry AD, Lai SY, Hazle JD. Kinetic modeling and constrained reconstruction of hyperpolarized [1-13C]-pyruvate offers improved metabolic imaging of tumors. Cancer Res 75(22):4708-17, 2015. PMCID: PMC4651725.  
+18. Bankson JA, Walker CM, Ramirez MS, Stefan W, Fuentes D, Merritt ME, Lee J, Sandulache VC, Chen Y, Phan L, Chou PC, Rao A, Yeung SC, Lee MH, Schellingerhout D, Conrad CA, Malloy C, Sherry AD, Lai SY, Hazle JD. Kinetic modeling and constrained reconstruction of hyperpolarized [1-<sup>13<sup>C]-pyruvate offers improved metabolic imaging of tumors. Cancer Res 75(22):4708-17, 2015. PMCID: PMC4651725.  
 19. Fala M, Somai V, Dannhorn A, Hamm G, Gibson K, Couturier DL, Hesketh R, Wright AJ, Takats Z, Bunch J, Barry ST, Goodwin RJA, Brindle KM. Comparison of (13) C MRI of hyperpolarized [1-(13) C]pyruvate and lactate with the corresponding mass spectrometry images in a murine lymphoma model. Magn Reson Med 85(6):3027-35, 2021.  
 20. Tofts PS. Modeling tracer kinetics in dynamic Gd-DTPA MR imaging. J Magn Reson Imaging 7(1):91-101, 1997.  
-21. Keshari KR, Sriram R, Koelsch BL, Van Criekinge M, Wilson DM, Kurhanewicz J, Wang ZJ. Hyperpolarized 13C-pyruvate magnetic resonance reveals rapid lactate export in metastatic renal cell carcinomas. Cancer Res 73(2):529-38, 2013. PMCID: PMC3548990.  
+21. Keshari KR, Sriram R, Koelsch BL, Van Criekinge M, Wilson DM, Kurhanewicz J, Wang ZJ. Hyperpolarized <sup>13<sup>C-pyruvate magnetic resonance reveals rapid lactate export in metastatic renal cell carcinomas. Cancer Res 73(2):529-38, 2013. PMCID: PMC3548990.  
 22. Harrison C, Yang C, Jindal A, DeBerardinis RJ, Hooshyar MA, Merritt M, Dean Sherry A, Malloy CR. Comparison of kinetic models for analysis of pyruvate-to-lactate exchange by hyperpolarized 13 C NMR. NMR Biomed 25(11):1286-94, 2012. PMCID: PMC3469722.  
 23. Sun CY, Walker CM, Michel KA, Venkatesan AM, Lai SY, Bankson JA. Influence of parameter accuracy on pharmacokinetic analysis of hyperpolarized pyruvate. Magn Reson Med 79(6):3239-48, 2018. PMCID: PMC5843516.  
 24. Burnham KP, Anderson DR. Model selection and multimodel inference: a practical information-theoretic approach. 2nd ed. New York, NY: Springer-Verlag New York Inc; 2002.  
 25. Khegai O, Schulte RF, Janich MA, Menzel MI, Farrell E, Otto AM, Ardenkjaer-Larsen JH, Glaser SJ, Haase A, Schwaiger M, Wiesinger F. Apparent rate constant mapping using hyperpolarized [1-(13)C]pyruvate. NMR Biomed 27(10):1256-65, 2014.  
 26. Mariotti E, Veronese M, Dunn JT, Southworth R, Eykyn TR. Kinetic analysis of hyperpolarized data with minimum a priori knowledge: Hybrid maximum entropy and nonlinear least squares method (MEM/NLS). Magn Reson Med 73(6):2332-42, 2015.  
-27. Daniels CJ, McLean MA, Schulte RF, Robb FJ, Gill AB, McGlashan N, Graves MJ, Schwaiger M, Lomas DJ, Brindle KM, Gallagher FA. A comparison of quantitative methods for clinical imaging with hyperpolarized 13C-pyruvate. NMR in Biomedicine 29(4):387-99, 2016. PMCID: PMC4833181.  
+27. Daniels CJ, McLean MA, Schulte RF, Robb FJ, Gill AB, McGlashan N, Graves MJ, Schwaiger M, Lomas DJ, Brindle KM, Gallagher FA. A comparison of quantitative methods for clinical imaging with hyperpolarized <sup>13<sup>C-pyruvate. NMR in Biomedicine 29(4):387-99, 2016. PMCID: PMC4833181.  
 28. Granlund KL, Tee SS, Vargas HA, Lyashchenko SK, Reznik E, Fine S, Laudone V, Eastham JA, Touijer KA, Reuter VE, Gonen M, Sosa RE, Nicholson D, Guo YW, Chen AP, Tropp J, Robb F, Hricak H, Keshari KR. Hyperpolarized MRI of Human Prostate Cancer Reveals Increased Lactate with Tumor Grade Driven by Monocarboxylate Transporter 1. Cell Metab 31(1):105-14 e3, 2020. PMCID: PMC6949382.  
-29. Lee CY, Soliman H, Geraghty BJ, Chen AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH. Lactate topography of the human brain using hyperpolarized 13C-MRI. NeuroImage 204:116202, 2019.  
-30. Larson PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods for hyperpolarized 13C-pyruvate metabolic MRI in prostate cancer patients. NMR in Biomedicine 31(11):e3997, 2018. PMCID: PMC6392436.  
-31. Larson PEZ, Bok R, Kerr AB, Lustig M, Hu S, Chen AP, Nelson SJ, Pauly JM, Kurhanewicz J, Vigneron DB. Investigation of Tumor Hyperpolarized [1-13C]-Pyruvate Dynamics using Time-Resolved Multiband RF Excitation Echo-planar MRSI. Magn Reson Med 63(3):582--91, 2010. PMCID: PMC2844437.  
+29. Lee CY, Soliman H, Geraghty BJ, Chen AP, Connelly KA, Endre R, Perks WJ, Heyn C, Black SE, Cunningham CH. Lactate topography of the human brain using hyperpolarized <sup>13<sup>C-MRI. NeuroImage 204:116202, 2019.  
+30. Larson PEZ, Chen H-Y, Gordon JW, Korn N, Maidens J, Arcak M, Tang S, Criekinge M, Carvajal L, Mammoli D, Bok R, Aggarwal R, Ferrone M, Slater JB, Nelson SJ, Kurhanewicz J, Vigneron DB. Investigation of analysis methods for hyperpolarized <sup>13<sup>C-pyruvate metabolic MRI in prostate cancer patients. NMR in Biomedicine 31(11):e3997, 2018. PMCID: PMC6392436.  
+31. Larson PEZ, Bok R, Kerr AB, Lustig M, Hu S, Chen AP, Nelson SJ, Pauly JM, Kurhanewicz J, Vigneron DB. Investigation of Tumor Hyperpolarized [1-<sup>13<sup>C]-Pyruvate Dynamics using Time-Resolved Multiband RF Excitation Echo-planar MRSI. Magn Reson Med 63(3):582--91, 2010. PMCID: PMC2844437.  
 32. Karlsson M, Jensen PR, Ardenkjær-Larsen JH, Lerche MH. Difference between Extra- and Intracellular T1 Values of Carboxylic Acids Affects the Quantitative Analysis of Cellular Kinetics by Hyperpolarized NMR. Angewandte Chemie International Edition 55(43):13567-70, 2016.  
 33. Walker CM, Gordon JW, Xu Z, Michel KA, Li L, Larson PEZ, Vigneron DB, Bankson JA. Slice profile effects on quantitative analysis of hyperpolarized pyruvate. NMR Biomed 33(10):e4373, 2020. PMCID: PMC7484340.  
-34. Harris, T.; Eliyahu, G.; Frydman, L.; Degani, H. Kinetics of Hyperpolarized 13C1-Pyruvate Transport and Metabolism in Living Human Breast Cancer Cells. Proc Natl Acad Sci U S A 106(43):18131--18136, 2009.  
+34. Harris, T.; Eliyahu, G.; Frydman, L.; Degani, H. Kinetics of Hyperpolarized <sup>13<sup>C1-Pyruvate Transport and Metabolism in Living Human Breast Cancer Cells. Proc Natl Acad Sci U S A 106(43):18131--18136, 2009.  
 
 35. Day, S. E.; Kettunen, M. I.; Gallagher, F. A.; Hu, D.-E.; Lerche,
 M.; Wolber, J.; Golman, K.; Ardenkjaer-Larsen, J. H.; Brindle, K. M.
-Detecting Tumor Response to Treatment Using Hyperpolarized 13C Magnetic
+Detecting Tumor Response to Treatment Using Hyperpolarized <sup>13<sup>C Magnetic
 Resonance Imaging and Spectroscopy. *Nat Med* **2007**, *13* (11),
 1382--1387. https://doi.org/10.1038/nm1650.
 
 36. Zierhut, M. L.; Yen, Y.-F.; Chen, A. P.; Bok, R.; Albers, M. J.;
 Zhang, V.; Tropp, J.; Park, I.; Vigneron, D. B.; Kurhanewicz, J.; Hurd,
-R. E.; Nelson, S. J. Kinetic Modeling of Hyperpolarized 13C1-Pyruvate
+R. E.; Nelson, S. J. Kinetic Modeling of Hyperpolarized <sup>13<sup>C1-Pyruvate
 Metabolism in Normal Rats and TRAMP Mice. *J Magn Reson* **2010**, *202*
 (1), 85--92. https://doi.org/10.1016/j.jmr.2009.10.003.
 
@@ -1022,7 +1022,7 @@ Metabolism in Normal Rats and TRAMP Mice. *J Magn Reson* **2010**, *202*
 R.; Jafar, M.; Parkes, H. G.; Jamin, Y.; Miniotis, M. F.; Al-Saffar, N.
 M. S.; Beloueche-Babari, M.; Robinson, S. P.; Leach, M. O.; Chung,
 Y.-L.; Eykyn, T. R. Model Free Approach to Kinetic Analysis of Real-Time
-Hyperpolarized 13C Magnetic Resonance Spectroscopy Data. *PLoS One*
+Hyperpolarized <sup>13<sup>C Magnetic Resonance Spectroscopy Data. *PLoS One*
 **2013**, *8* (9), e71996. https://doi.org/10.1371/journal.pone.0071996.
 
 38. *Hyperpolarized-MRI-Toolbox*.

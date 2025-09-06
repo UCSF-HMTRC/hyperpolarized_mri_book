@@ -14,7 +14,7 @@ Jack J. Miller<sup>1,2,3,4</sup>, Justin Lau<sup>2,3,5</sup>, Damian Tyler<sup>2
 
 [^3]: Damian.Tyler\@dpag.ox.ac.uk
 
-## Abstract
+**Abstract**
 The heart is a truly remarkable organ. It begins beating from before we are born and
 continues to circulate blood around our bodies for our entire lives. Its demands for
 energy, therefore, are large and highly variable. To meet these variable demands, the
@@ -750,27 +750,27 @@ striking results (c.f. {numref}`fig:Human-Heart-C13`), including in the human i
 myocardium [@Apps2021]. It is this development that we shall now
 subsequently examine in depth.
 
-#### Hyperpolarized \[2-13C\]pyruvate
+#### Hyperpolarized \[2-<sup>13</sup>C\]pyruvate
 
 Additional metabolic insights can be gained by isotopically labelling
 pyruvate at the carbonyl C<sub>2</sub> position, which exhibits a relatively long
 $T_1$ of 47 s in solution at 3 T [@chung2019first]. Prior to entering
-the TCA cycle, \[2-13C\]pyruvate can be converted to \[1-13C\]acetylcarnitine
-and \[2-13C\]lactate. The label of \[2-13C\]pyruvate enters the TCA cycle as
-acetyl-CoA. First demonstrated in the perfused rat heart, \[2-13C\]pyruvate
-conversion to \[1-13C\]citrate and \[5-13C\]glutamate were decreased
+the TCA cycle, \[2-<sup>13</sup>C\]pyruvate can be converted to \[1-<sup>13</sup>C\]acetylcarnitine
+and \[2-<sup>13</sup>C\]lactate. The label of \[2-<sup>13</sup>C\]pyruvate enters the TCA cycle as
+acetyl-CoA. First demonstrated in the perfused rat heart, \[2-<sup>13</sup>C\]pyruvate
+conversion to \[1-<sup>13</sup>C\]citrate and \[5-<sup>13</sup>C\]glutamate were decreased
 post-ischæmia [@Schroeder2009b]
 (c.f. {numref}`fig:CTwoPyruvate`). Glutamate is in rapid exchange with the
 TCA cycle intermediate $\alpha$-ketoglutarate, a key component of the
-malate-aspartate shuttle. Conversion of \[2-13C\]pyruvate to
-\[5-13C\]glutamate may be indicative of the cellular redox response to
+malate-aspartate shuttle. Conversion of \[2-<sup>13</sup>C\]pyruvate to
+\[5-<sup>13</sup>C\]glutamate may be indicative of the cellular redox response to
 disease or physiological demand, for example in a porcine model of
 dobutamine adrenergic activation [@chen2018probing]. Simultaneous
 investigations of PDH flux, TCA cycle activity, and pH can be realised
-with hyperpolarized \[2-13C\]pyruvate in tandem with \[1-13C\]pyruvate
-[@josan2013vivo] or as the dual-labelled \[1,2-13C\]pyruvate form
-[@Chen2012b]. The safety profiles of \[2-13C\]pyruvate and
-\[1,2-13C\]pyruvate are identical to that of \[1-13C\]pyruvate, which has
+with hyperpolarized \[2-<sup>13</sup>C\]pyruvate in tandem with \[1-<sup>13</sup>C\]pyruvate
+[@josan2013vivo] or as the dual-labelled \[1,2-<sup>13</sup>C\]pyruvate form
+[@Chen2012b]. The safety profiles of \[2-<sup>13</sup>C\]pyruvate and
+\[1,2-<sup>13</sup>C\]pyruvate are identical to that of \[1-<sup>13</sup>C\]pyruvate, which has
 already been used in human studies in numerous jurisdictions,
 facilitating rapid adoption toward clinical translation.
 
@@ -778,15 +778,15 @@ facilitating rapid adoption toward clinical translation.
 ---
 name: fig:CTwoPyruvate
 ---
-Time-resolved spectroscopy following the infusion of hyperpolarized [2-13C]pyruvate into the perfused
+Time-resolved spectroscopy following the infusion of hyperpolarized [2-<sup>13</sup>C]pyruvate into the perfused
 heart reveals several downstream metabolic products (left) together with a graphic schematic of their ultimate
 metabolic fate (right). Briefly, these stacked spectra were acquired in the first 60 s following infusion into a
-perfused rat heart. [2-13C]pyruvate itself is observed at 207.8 ppm. Peaks 1, 2, and 3 represent the metabolic
-products [5-13C]glutamate (183.7 ppm), [1-13C]citrate (181.0 ppm), and [1-13C]acetylcarnitine (175.2 ppm), respectively.
-[1-13C]Pyruvate derived from natural abundance 13C can be seen as a quartet at 172.8 ppm (peak 4, left inset).
-[2-13C]Pyruvate hydrate, which is in chemical equilibrium with pyruvate, was detected at 96.5 ppm (peak 5, right
-inset). Impurities in the [2-13C]pyruvic acid preparation were observed at w49 and 89 ppm (peak 6, right inset).
-[2-13C]lactate and [2-13C]alanine were also observed (peaks 7 and 8, respectively). Figure reproduced
+perfused rat heart. [2-<sup>13</sup>C]pyruvate itself is observed at 207.8 ppm. Peaks 1, 2, and 3 represent the metabolic
+products [5-<sup>13</sup>C]glutamate (183.7 ppm), [1-<sup>13</sup>C]citrate (181.0 ppm), and [1-<sup>13</sup>C]acetylcarnitine (175.2 ppm), respectively.
+[1-<sup>13</sup>C]Pyruvate derived from natural abundance <sup>13</sup>C can be seen as a quartet at 172.8 ppm (peak 4, left inset).
+[2-<sup>13</sup>C]Pyruvate hydrate, which is in chemical equilibrium with pyruvate, was detected at 96.5 ppm (peak 5, right
+inset). Impurities in the [2-<sup>13</sup>C]pyruvic acid preparation were observed at w49 and 89 ppm (peak 6, right inset).
+[2-<sup>13</sup>C]lactate and [2-<sup>13</sup>C]alanine were also observed (peaks 7 and 8, respectively). Figure reproduced
 (adapted) with permission from Schroeder et al http://www.fasebj.org/doi/10.1096/fj.09-129171.
 ```
 
@@ -794,14 +794,14 @@ inset). Impurities in the [2-13C]pyruvic acid preparation were observed at w49 a
 
 Fatty acid oxidation has likewise been directly investigated by
 hyperpolarized MR. [@Ball2014] report the production and use of
-hyperpolarized \[1-13C\]butyric acid with approximately 7 % polarisation
+hyperpolarized \[1-<sup>13</sup>C\]butyric acid with approximately 7 % polarisation
 and a $T_1$ of ~20 sec. Following injection into both the
 perfused and *in vivo* rat heart, a large number of TCA cycle
 intermediates (glutamate, citrate and acetylcarnitine) were observed
 along with the ketone bodies acetoacetate and $\beta$-hydroxybutyrate.
 As is often the case for probes hyperpolarized via d-DNP, it is
 additionally possible to hyperpolarize \[1-<sup>13</sup>C\]pyruvate and
-\[1-13C\]butyrate simultaneously and monitor myocardial substrate selection
+\[1-<sup>13</sup>C\]butyrate simultaneously and monitor myocardial substrate selection
 to a much higher degree of chemical selectivity *in vivo*. As noted by
 [@Bastiaansen2015], the co-infusion of hyperpolarized metabolic fuels is
 a one-of-a-kind method for assessing myocardial substrate preference *in
@@ -809,12 +809,12 @@ vivo*. Such metabolic versatility routinely found in the heart is
 consistent with the canonical description of the heart as a \"metabolic
 omnivore\", able to consume a large number of substrates in order to
 maintain its continuous contractual demand for energy.
-[@Bastiaansen2013] have also reported that \[1-13C\]acetate can also be
+[@Bastiaansen2013] have also reported that \[1-<sup>13</sup>C\]acetate can also be
 hyperpolarized ($P\approx 13\%$ and a $T_1$ of
 ~15 sec in blood at 9.4 T) and acts as an effective *in
 vivo* probe of acetyl-CoA synthetase activity as production of
-\[1-13C\]acetylcarnitine can be observed *in vivo* in the rat leg.
-Subsequently, the cardiac metabolism of \[1-13C\]acetate and quantification
+\[1-<sup>13</sup>C\]acetylcarnitine can be observed *in vivo* in the rat leg.
+Subsequently, the cardiac metabolism of \[1-<sup>13</sup>C\]acetate and quantification
 of acetyl-CoA synthetase activity *in vivo* has been demonstrated in the
 healthy pig myocardium [@Flori2015a].
 
@@ -823,7 +823,7 @@ work by [@Yoshihara2015] has revealed that -octanoate, a medium-chain
 fatty acid, can be hyperpolarized via d-DNP (to
 $P\approx 11 \%$ with a $T_1$ of ~30 s)
 and again could be observed undergoing $\beta$-oxidation through to
-\[1-13C\]acetylcarnitine. A related development is the detection of the
+\[1-<sup>13</sup>C\]acetylcarnitine. A related development is the detection of the
 ketone bodies acetoacetate and $\beta$--hydroxybutyrate directly in the
 perfused heart, revealing information both about the basic biochemistry
 of the probes in the fed and fasted states [@Miller2016], but has also
@@ -838,25 +838,25 @@ these fluxes is different between disease states, leading either to an
 improved mechanistic understanding of that disease, and/or its direct
 use as a diagnostic technique. One dramatic example of a large
 difference in apparent rate constants between pathology and physiology
-is the probe \[1,4-13C\]fumarate, which violates the conventional
+is the probe \[1,4-<sup>13</sup>C\]fumarate, which violates the conventional
 assumption that a probe's *in vivo* biochemistry must be sufficiently
 rapid compared to the $T_1$ of the probe. In physiology, the rate of
 uptake of fumarate is sufficiently slow that no -malate signal is
-observed following the injection of hyperpolarized \[1,4-13C\]fumarate.
+observed following the injection of hyperpolarized \[1,4-<sup>13</sup>C\]fumarate.
 Gallagher *et al.* have shown conclusively that the reason for this lack
 of signal is the slow transport across the plasma membrane of
-\[1,4-13C\]fumarate, and not the rate of the fumarase enzyme itself.
-Accordingly, \[1,4-13C\]fumarate forms a highly effective probe of cellular
+\[1,4-<sup>13</sup>C\]fumarate, and not the rate of the fumarase enzyme itself.
+Accordingly, \[1,4-<sup>13</sup>C\]fumarate forms a highly effective probe of cellular
 necrosis, in which the plasma membrane is disrupted and fumarase 'leaks
 out' to produce a detectable malate signal. Hyperpolarized
-\[1,4-13C\]fumarate therefore can act as an effective probe of necrosis in
+\[1,4-<sup>13</sup>C\]fumarate therefore can act as an effective probe of necrosis in
 many diseases, including myocardial infarction [@Miller2017b], cancer
 [@Gallagher2009a] and in acute kidney injury [@Clatworthy2012].
 
 In conclusion, a large number of molecular agents have been
 hyperpolarized and investigated to a greater or lesser degree in
-biological systems. Some of these, notably \[2-13C\]pyruvate,
-\[1-13C\]butyrate, and -acetate, have been shown to act as effective probes
+biological systems. Some of these, notably \[2-<sup>13</sup>C\]pyruvate,
+\[1-<sup>13</sup>C\]butyrate, and -acetate, have been shown to act as effective probes
 of central metabolism in the living heart. It is worth stressing that,
 in comparison to complementary metabolic imaging techniques such as PET,
 hyperpolarized MR provides chemically sensitive information rapidly,
@@ -926,7 +926,7 @@ Initial proof-of-concept studies demonstrating perfusion imaging with
 hyperpolarized compounds were performed using "metabolically inert",
 non-toxic -labelled urea, and subsequently both <sup>13</sup>C-urea and the
 non-endogenous extracellular agent known as either HMCP, HP001, or
-Bis-1,1-(hydroxymethyl)-\[1-13C\]cyclopropane-D<sub>8</sub>, have been used as
+Bis-1,1-(hydroxymethyl)-\[1-<sup>13</sup>C\]cyclopropane-D<sub>8</sub>, have been used as
 probes of perfusion within the kidneys, in models of cancer, and in the
 hearts of large animals
 [@Johansson2004; @Golman2006d; @VonMorze2011; @VonMorze2012]. As shown
