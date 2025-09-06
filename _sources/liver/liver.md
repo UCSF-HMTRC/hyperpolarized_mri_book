@@ -6,30 +6,30 @@ Radiology, Washington University
 Michael A. Ohliger, MD PhD, Associate Professor, Department of Radiology
 and Biomedical Imaging, University of California, San Francisco
 
-# Abstract
+**Abstract**
 
-Hyperpolarized (HP) ^13^C MRI can provide non-invasive metabolic imaging
+Hyperpolarized (HP) <sup>13</sup>C MRI can provide non-invasive metabolic imaging
 readouts along several key hepatic metabolic pathways, including
 pyruvate-lactate exchange, glutaminolysis, gluconeogenesis, and the
 metabolism of ketones and short chain fatty acids. Integration of HP
-^13^C MRI methods into liver imaging studies introduces various
+<sup>13</sup>C MRI methods into liver imaging studies introduces various
 specialized technical challenges, due to its anatomic location within
 the abdomen and associated respiratory motion. These challenges can be
 addressed by rapid imaging strategies such as metabolite-specific
 spectral-spatial (SPSP) radiofrequency excitation with echo planar
-imaging (EPI) readout, which is also well suited for the rapid T~1~
-decay of HP magnetization. Hyperpolarized ^13^C MRI based on
-\[1-^13^C\]pyruvate and a variety of other probes is applicable for the
+imaging (EPI) readout, which is also well suited for the rapid T<sub>1</sub>
+decay of HP magnetization. Hyperpolarized <sup>13</sup>C MRI based on
+\[1-<sup>13</sup>C\]pyruvate and a variety of other probes is applicable for the
 study of pathophysiologic metabolic changes in primary liver cancer,
 mainly hepatocellular carcinoma (HCC), as well as metastatic disease.
 Proof of principle clinical translation has recently been demonstrated
-for imaging metastatic liver lesions using \[1-^13^C\]pyruvate.
-\[1-^13^C\]pyruvate and other probes are also applicable to the study of
+for imaging metastatic liver lesions using \[1-<sup>13</sup>C\]pyruvate.
+\[1-<sup>13</sup>C\]pyruvate and other probes are also applicable to the study of
 diffuse liver disease, especially non-alcoholic steatohepatitis (NASH).
 
 Keywords: Liver, Hyperpolarized, 13C, MRI, HCC, NASH
 
-# Liver imaging: state of the art
+## Liver imaging: state of the art
 
 The primary modalities for medical imaging of the liver are ultrasound
 (US), computed tomography (CT), and magnetic resonance imaging (MRI).
@@ -42,7 +42,7 @@ especially the rich metabolic processes occurring below the surface.
 More recently, sophisticated variations on these modalities have been
 developed to provide added deeper insights into liver disease,
 especially diffuse liver disease. For example, proton density fat
-fraction (MRI-PDFF), a form of localized ^1^H MR spectroscopy, has
+fraction (MRI-PDFF), a form of localized <sup>1</sup>H MR spectroscopy, has
 emerged as the gold standard approach for quantifying hepatic steatosis
 (2). Supplemented by mechanical shear wave excitation, US- and MRI-
 elastography can be used to measure liver stiffness as a marker for
@@ -59,30 +59,30 @@ functions tend to accumulate labels fairly non-specifically, with normal
 liver typically appearing bright with many different small molecule
 tracers.
 
-Hyperpolarized (HP) ^13^C MRI has emerged as a viable, clinically
+Hyperpolarized (HP) <sup>13</sup>C MRI has emerged as a viable, clinically
 translatable, approach for imaging the liver, with the potential to
 probe important hepatic physiologic processes non-invasively including
 perfusion, transport, and especially metabolism, by exploiting the
-unparalleled specificity of ^13^C MR for metabolic pathways of interest.
-In particular, hyperpolarized \[1-^13^C\]pyruvate is rapidly metabolized
-into \[1-^13^C\]lactate and \[1-^13^C\]alanine in liver tissue, via
+unparalleled specificity of <sup>13</sup>C MR for metabolic pathways of interest.
+In particular, hyperpolarized \[1-<sup>13</sup>C\]pyruvate is rapidly metabolized
+into \[1-<sup>13</sup>C\]lactate and \[1-<sup>13</sup>C\]alanine in liver tissue, via
 lactate dehydrogenase (LDH) and alanine transaminase (ALT),
 respectively, providing a new set of potential biomarkers of liver
-disease. As reviewed in detail below, HP \[1-^13^C\]pyruvate and
-numerous other HP ^13^C probes have been applied for studies of liver
+disease. As reviewed in detail below, HP \[1-<sup>13</sup>C\]pyruvate and
+numerous other HP <sup>13</sup>C probes have been applied for studies of liver
 pathophysiology.
 
-Compared to PET imaging, HP ^13^C MRI has several potential advantages
-in liver imaging. In HP ^13^C, several probes can be imaged at once,
+Compared to PET imaging, HP <sup>13</sup>C MRI has several potential advantages
+in liver imaging. In HP <sup>13</sup>C, several probes can be imaged at once,
 offering simultaneous assessment of multiple metabolic pathways. In
 addition, PET relies on the accumulation of a radiotracer at a target
-site. Uptake of ^18^F-fluorodeoxyglucose (FDG) in hepatocellular
+site. Uptake of <sup>18</sup>F-fluorodeoxyglucose (FDG) in hepatocellular
 carcinoma (HCC), for example, is influenced by the expression of
 glucose-6-phosphatase (6), which permits the release of trapped FDG.
-Because HP ^13^C is sensitive to metabolic changes it requires no such
+Because HP <sup>13</sup>C is sensitive to metabolic changes it requires no such
 trapping.
 
-# Technical challenges of liver HP ^13^C MRI
+## Technical challenges of liver HP <sup>13</sup>C MRI
 
 Besides the demanding logistical requirements universally associated
 with the short signal lifetime of HP magnetization, HP liver imaging
@@ -106,19 +106,19 @@ aorta (red), inferior vena cava (blue), portal vein (green), and liver parenchym
 signal measured over time from the vessels shown in (B) demonstrates clear distinct inputs from the arterial and
 portal venous supply
 
-Another challenge in imaging the liver with HP ^13^C is breathing
+Another challenge in imaging the liver with HP <sup>13</sup>C is breathing
 motion. Most dynamic HP acquisitions (40-60 s) are too long for a single
 breath-hold. The large respiratory motion of the liver demands
 especially fast image acquisition, ideally triggered by respiratory
 signals. Echo planar imaging (EPI) with metabolite-specific
 spectral-spatial (SPSP) radiofrequency excitation is an appealing fast
-imaging strategy for HP ^13^C MRI of the liver (8-10), but can be
-vulnerable to B~0~ inhomogeneity (Figure 2), with typical SPSP pass- and
+imaging strategy for HP <sup>13</sup>C MRI of the liver (8-10), but can be
+vulnerable to B<sub>0</sub> inhomogeneity (Figure 2), with typical SPSP pass- and
 stop-band widths as small as +/- 0.5 ppm. Errors in the SPSP pulse
 center frequency can lead to application of incorrect flip angles and/or
 image reconstruction artifacts, potentially confounding data
 interpretation. Some degree of frequency offset is likely inevitable due
-to higher B~0~ inhomogeneity in the abdomen as compared with more
+to higher B<sub>0</sub> inhomogeneity in the abdomen as compared with more
 stationary and uniform tissues like brain.
 
 ![Field map (Hz) in the abdomen acquired using the IDEAL-IQ](CH0010_Fig002_von+Morze_v1_Orig.png)
@@ -131,20 +131,20 @@ techniques. Colorbar represents frequency offset in hertz at 3T.
 Intrinsic tissue properties of the liver may also present challenges.
 The presence of bowel gas within the gastrointestinal tract can create
 large magnetic field variations within the abdomen caused by magnetic
-susceptibility. In addition, ^13^C T~1~ and T~2~ relaxation times may
+susceptibility. In addition, <sup>13</sup>C T<sub>1</sub> and T<sub>2</sub> relaxation times may
 also be shorter in liver than other issues, due to paramagnetic
 relaxation by liver iron and/or other factors (11).
 
 In terms of acquisition hardware phased array reception can provide
 increased SNR (at least peripherally) and the coverage that is needed to
 cover the abdomen (12), with the added potential for parallel imaging
-(13-15). Such approaches have helped revolutionize body ^1^H MRI, but
-new methods are needed for parallel ^13^C reconstructions based on
+(13-15). Such approaches have helped revolutionize body <sup>1</sup>H MRI, but
+new methods are needed for parallel <sup>13</sup>C reconstructions based on
 limited availability of calibration data (16,17). The ideal size and
-number of coils for ^13^C imaging of the abdomen is not yet clear, but
-should be similar to ^1^H imaging at the same Larmor frequency. At the
+number of coils for <sup>13</sup>C imaging of the abdomen is not yet clear, but
+should be similar to <sup>1</sup>H imaging at the same Larmor frequency. At the
 same field strength, therefore, the optimal number of coil elements for
-a ^13^C -sensitive coil array is likely less than that for a proton
+a <sup>13</sup>C -sensitive coil array is likely less than that for a proton
 array.
 
 A large transmitter coil is necessary to provide high transmit RF
@@ -152,70 +152,70 @@ homogeneity over the abdomen, with a clamshell insert transmitter coil
 having been used for initial studies (18). However, such a coil occupies
 a significant fraction of the scanner bore, placing a significant
 constraint on patient size. In this regard, abdominal imaging would
-stand to benefit tremendously from the development of a dual-tuned ^13^C
-/^1^H body coil to handle ^13^C excitation (19). Likewise, a significant
-appeal of ^1^H-based detection of HP ^13^C probes following polarization
+stand to benefit tremendously from the development of a dual-tuned <sup>13</sup>C
+/<sup>1</sup>H body coil to handle <sup>13</sup>C excitation (19). Likewise, a significant
+appeal of <sup>1</sup>H-based detection of HP <sup>13</sup>C probes following polarization
 transfer (20,21) is the potential to liberate space inside the scanner
-bore occupied by ^13^C receiver coils.
+bore occupied by <sup>13</sup>C receiver coils.
 
-# Liver metabolic pathways accessible via HP imaging
+## Liver metabolic pathways accessible via HP imaging
 
 Numerous studies have investigated liver metabolism using HP
-\[1-^13^C\]pyruvate, following initial work showing the potential to
+\[1-<sup>13</sup>C\]pyruvate, following initial work showing the potential to
 probe oxidative and anaplerotic pathways of pyruvate metabolism in
-perfused liver (22), as well as exchange into \[1-^13^C\]lactate and
-\[1-^13^C\]alanine, which constitute the major hepatic signals observed
+perfused liver (22), as well as exchange into \[1-<sup>13</sup>C\]lactate and
+\[1-<sup>13</sup>C\]alanine, which constitute the major hepatic signals observed
 in vivo. Not surprisingly, exchange into these dynamic hepatic
 metabolite pools has been shown to be influenced by nutritional status
 (fasted vs normal fed) (23), as well as by insulin deficiency and
-insulin resistance (24,25). Hepatic HP \[1-^13^C\]lactate metabolite
+insulin resistance (24,25). Hepatic HP \[1-<sup>13</sup>C\]lactate metabolite
 signals are also sensitive to drug treatments such as metformin (26),
 which arrests hepatic mitochondrial metabolism at the level of complex
 I, altering the cytosolic NAD(H) redox state. Alternatively HP
-\[2-^13^C\]pyruvate can be used to probe TCA intermediates, although
+\[2-<sup>13</sup>C\]pyruvate can be used to probe TCA intermediates, although
 normal hepatic flux through pyruvate dehydrogenase (PDH) is low unless
 stimulated acutely such as by dichloroacetate treatment (27).
 
-Several hepatic metabolic pathways accessible via HP ^13^C MRI are
+Several hepatic metabolic pathways accessible via HP <sup>13</sup>C MRI are
 illustrated in Figure 3. Unlike many tumor tissues and brain, which are
-common targets for HP ^13^C imaging and rely largely on glucose to meet
+common targets for HP <sup>13</sup>C imaging and rely largely on glucose to meet
 their energetic demands, normal liver relies predominantly on fatty
 acids for energy to support its myriad biosynthetic functions,
 suggesting that metabolic probes other than pyruvate might be useful. As
 illustrated in Figure 3, other potentially relevant probes of liver
-metabolism include the short acid fatty acid \[1-^13^C\]butyrate (28)
-and ketone body \[1,3-^13^C~2~\]acetoacetate (29), both of which could
+metabolism include the short acid fatty acid \[1-<sup>13</sup>C\]butyrate (28)
+and ketone body \[1,3-<sup>13</sup>C<sub>2</sub>\]acetoacetate (29), both of which could
 be used to assess hepatic mitochondrial metabolism. Fatty acids with
 chain lengths longer than four carbon units generally have insufficient
-T1's and/or cellular uptake for HP ^13^C metabolic imaging studies. HP
-\[2-^13^C\]dihydroxyacetone (30) and \[2-^13^C\]fructose (31) are
+T1's and/or cellular uptake for HP <sup>13</sup>C metabolic imaging studies. HP
+\[2-<sup>13</sup>C\]dihydroxyacetone (30) and \[2-<sup>13</sup>C\]fructose (31) are
 rapidly taken up and phosphorylated by liver, offering potential
 assessment of liver energy charge that can complement the redox-based
 assessment offered by pyruvate. These substrates introduce bidirectional
-^13^C labeling upstream of pyruvate along the pathways of glycolysis /
+<sup>13</sup>C labeling upstream of pyruvate along the pathways of glycolysis /
 gluconeogenesis. Direct detection of glucose production is possible
-using 1H-decoupled HP \[2-^13^C\]dihydroxyacetone (30,32).
+using 1H-decoupled HP \[2-<sup>13</sup>C\]dihydroxyacetone (30,32).
 
-Conversion of \[1-^13^C\]dehydroascorbate to \[1-^13^C\]vitamin C (33)
+Conversion of \[1-<sup>13</sup>C\]dehydroascorbate to \[1-<sup>13</sup>C\]vitamin C (33)
 can be used to directly probe hepatic oxidative stress, providing a
 complementary view of redox as mediated by NADP(H) as compared to
-NAD(H). \[1-^13^C\]alanine has been used to directly probe the hepatic
+NAD(H). \[1-<sup>13</sup>C\]alanine has been used to directly probe the hepatic
 intracellular lactate / pyruvate ratio (34,35), as the alanine rapidly
 exchanges with lactate and pyruvate once it enters the cell, providing a
 means to discriminate intracellular signals from larger extracellular
 signals. The lower cellular permeability of alanine as compared to
 pyruvate has been addressed by use of an ethyl ester (36). Lactate, as
 the dominant circulating substrate as compared to pyruvate, has also
-been used for HP ^13^C studies, but label exchange into pyruvate is much
+been used for HP <sup>13</sup>C studies, but label exchange into pyruvate is much
 lower than when injecting pyruvate, because of the smaller pyruvate pool
 size. Flux through the pentose phosphate pathway (PPP) has been assessed
-in perfused livers using HP $\delta$-\[1-^13^C\]gluconolactone.
-Additionally, HP \[^13^C\]urea and other metabolically inert probes can
+in perfused livers using HP $\delta$-\[1-<sup>13</sup>C\]gluconolactone.
+Additionally, HP \[<sup>13</sup>C\]urea and other metabolically inert probes can
 be used to assess liver perfusion and vascular permeability (37,38).
 
-^15^N probes such as L-\[^15^N\]carnitine can provide longer signal
+<sup>15</sup>N probes such as L-\[<sup>15</sup>N\]carnitine can provide longer signal
 lifetimes for HP liver imaging, which remains feasible for at least
-three minutes after ^15^N injection (39). Finally, the liver-specific
+three minutes after <sup>15</sup>N injection (39). Finally, the liver-specific
 paramagnetic relaxation agent gadoxetate together with hyperpolarization
 offers an avenue toward hepatocyte-specific metabolic measurements, by
 quenching extraneous HP signals including those arising from adjacent
@@ -224,24 +224,24 @@ vasculature or other cell types (40).
 ![Hyperpolarized 13C metabolic pathways in the liver](CH0010_Fig003_von+Morze_v1_Orig.jpg)
 
 Figure 3. Simplified view of hepatic metabolic pathways accessible via
-hyperpolarized ^13^C MRI. Some relevant hyperpolarized ^13^C substrates
+hyperpolarized <sup>13</sup>C MRI. Some relevant hyperpolarized <sup>13</sup>C substrates
 are labeled in red boxes. AcAc= acetoacetate, βOHB= β-hydroxybutyrate,
 LDH= lactate dehydrogenase, BDH= β-hydroxybutyrate dehydrogenase, OAA=
 oxaloacetate, PEP= phosphoenolpyruvate, PPP= pentose phosphate pathway,
 NAD(H)= nicotinamide adenine dinucleotide (hydride), NADP(H)=
 nicotinamide adenine dinucleotide phosphate (hydride)
 
-# Target applications of liver HP ^13^C MRI
+## Target applications of liver HP <sup>13</sup>C MRI
 
 *Liver cancer*
 
 Primary liver cancer, predominantly hepatocellular carcinoma (HCC), is
 the fourth leading cause of cancer death worldwide, accounting for
 780,000 deaths per year (41). Numerous studies have demonstrated that HP
-^13^C MRI can provide diagnostic information in preclinical models of
-liver cancer, based on results with \[1-^13^C\]pyruvate and other ^13^C
+<sup>13</sup>C MRI can provide diagnostic information in preclinical models of
+liver cancer, based on results with \[1-<sup>13</sup>C\]pyruvate and other <sup>13</sup>C
 probes. Similar to other cancers, a highly consistent finding has been
-increased HP ^13^C pyruvate to lactate flux in liver tumors, driven by
+increased HP <sup>13</sup>C pyruvate to lactate flux in liver tumors, driven by
 increased aerobic glycolysis associated with malignant transformation.
 Two early studies clearly demonstrated high HP lactate and alanine
 signals in orthotopic HCC tumors implanted into rats, correlated with
@@ -252,39 +252,39 @@ receded with tumor regression (43). The HP signals again correlated well
 with genetic signatures including the concentration of LDH and ALT as
 measured by ex vivo activity assays. Notably, this study identified
 increased HP alanine production as a very early indicator preceding
-tumorigenesis. Another study compared HP \[1-^13^C\]pyruvate with
+tumorigenesis. Another study compared HP \[1-<sup>13</sup>C\]pyruvate with
 FDG-PET for imaging of HCC in rats (44), finding that either approach
 could visualize the increased glycolytic metabolism in these tumors.
 
 ![Hyperpolarized 13C MRI of a switchable, transgenic mouse model of liver cancer](CH0010_Fig004_von+Morze_v1_Orig.png)
 
-Figure 4. HP \[1-^13^C\]pyruvate MRI of a switchable, transgenic mouse
+Figure 4. HP \[1-<sup>13</sup>C\]pyruvate MRI of a switchable, transgenic mouse
 model of liver cancer. A) Metabolic interconversion of HP
-\[1-^13^C\]pyruvate with \[1-^13^C\]lactate and \[1-^13^C\]alanine. B)
-Axial images of individual HP metabolites of \[1-^13^C\]pyruvate
-overlaid in color on conventional ^1^H images in grayscale, in a mouse
+\[1-<sup>13</sup>C\]pyruvate with \[1-<sup>13</sup>C\]lactate and \[1-<sup>13</sup>C\]alanine. B)
+Axial images of individual HP metabolites of \[1-<sup>13</sup>C\]pyruvate
+overlaid in color on conventional <sup>1</sup>H images in grayscale, in a mouse
 with transgenic liver cancer. C) Evolution of metabolite signals with
 tumor progression, with group summaries shown in D&G. E) Heterogeneity
 of liver signals with progression. F) Change in liver signals with
 disease regression. **Figure reproduced from** **Hu S et al.** **(43)**
 
-HP ^13^C probes other than \[1-^13^C\]pyruvate have also been described
+HP <sup>13</sup>C probes other than \[1-<sup>13</sup>C\]pyruvate have also been described
 in application to imaging of liver tumors. Increased glutamine
 consumption is a well-recognized aberration of tumor metabolism (45),
 potentially providing energy, carbon skeletons, and dampening of
-oxidative stress. Flux of HP \[5-^13^C\]glutamine to
-\[5-^13^C\]glutamate has been used to detect glutaminase activity in
+oxidative stress. Flux of HP \[5-<sup>13</sup>C\]glutamine to
+\[5-<sup>13</sup>C\]glutamate has been used to detect glutaminase activity in
 hepatoma cells (46). These results were carried forward in vivo by
 another group who demonstrated the ability to detect increased
-\[5-^13^C\]glutamate product signal in cancerous as compared with normal
-liver tissue (47). \[1,3-^13^C~2~\]ethyl acetoacetate has been proposed
+\[5-<sup>13</sup>C\]glutamate product signal in cancerous as compared with normal
+liver tissue (47). \[1,3-<sup>13</sup>C<sub>2</sub>\]ethyl acetoacetate has been proposed
 as a marker for liver cancer, based on upregulated uptake and esterase
 activity in liver tumors (48).
 
-Recent preclinical HP ^13^C MRI work on liver cancer has focused on the
+Recent preclinical HP <sup>13</sup>C MRI work on liver cancer has focused on the
 potential to assess treatment response non-invasively. One study
-comprehensively examined the potential of \[1-^13^C\]pyruvate,
-\[^13^C\]urea, and \[1,4-^13^C~2~\]fumarate to detect response of
+comprehensively examined the potential of \[1-<sup>13</sup>C\]pyruvate,
+\[<sup>13</sup>C\]urea, and \[1,4-<sup>13</sup>C<sub>2</sub>\]fumarate to detect response of
 orthotopic rat HCC to transcatheter arterial embolization (TAE),
 demonstrated clear responses to treatment in the HP signals (49). Urea
 and pyruvate signals were both locally decreased in the treated tumor
@@ -292,14 +292,14 @@ region, with an increased apparent rate of lactate production. Fumarate
 to malate conversion correlated with histologically confirmed necrosis,
 based on the low permeability of the dicarboxylate molecule fumarate
 through intact plasma membranes (50). A recent related study showed the
-potential for \[1-^13^C\]pyruvate MRI to detect latent domains of viable
+potential for \[1-<sup>13</sup>C\]pyruvate MRI to detect latent domains of viable
 HCC surviving TAE treatment (51).
 
 In addition to primary tumors, liver is a frequent site of metastases
 for many cancers, such as breast, colorectal and prostate. While little
-preclinical HP ^13^C imaging work has been conducted in the area of
+preclinical HP <sup>13</sup>C imaging work has been conducted in the area of
 liver metastases, a recently published study shows proof of principle
-clinical translation for detecting increased ^13^C lactate production in
+clinical translation for detecting increased <sup>13</sup>C lactate production in
 human liver metastases from prostate cancer, as well as the potential
 for monitoring response to therapy (carboplatin + docetaxel, in this
 case) (52). Some results from this preliminary human translational study
@@ -308,89 +308,89 @@ are shown in Figure 5.
 ![Clinical Translation of HP 13C MRI in a patient with liver metastases from prostate cancer](CH0010_Fig005_von+Morze_v1_Orig.png)
 
 Figure 5. Proof of principle clinical translation of HP
-\[1-^13^C\]pyruvate MRI in a patient with liver metastases from prostate
-cancer. Dynamic tumor-localized HP ^13^C metabolite signal curves are
+\[1-<sup>13</sup>C\]pyruvate MRI in a patient with liver metastases from prostate
+cancer. Dynamic tumor-localized HP <sup>13</sup>C metabolite signal curves are
 shown in (a), before and after chemotherapy (carboplatin + docetaxel).
-The apparent rate of conversion of HP \[1-^13^C\]pyruvate to
-\[1-^13^C\]lactate declined after chemotherapy. The tumor is depicted on
-conventional ^1^H MRI in (b). As shown in (c), prostate specific antigen
+The apparent rate of conversion of HP \[1-<sup>13</sup>C\]pyruvate to
+\[1-<sup>13</sup>C\]lactate declined after chemotherapy. The tumor is depicted on
+conventional <sup>1</sup>H MRI in (b). As shown in (c), prostate specific antigen
 (PSA) levels declined with chemotherapy, also indicating therapeutic
 response. **Figure** **reproduced from Chen HY et al.** **(52)**
 
 *Diffuse liver disease*
 
-HP ^13^C MRI also shows great potential for application to diffuse liver
+HP <sup>13</sup>C MRI also shows great potential for application to diffuse liver
 diseases, especially non-alcoholic steatohepatitis (NASH), a
 metabolically-driven hepatic inflammatory condition. While multi-echo
-^1^H MRI provides superb depiction of liver fat, a clinically important
+<sup>1</sup>H MRI provides superb depiction of liver fat, a clinically important
 but difficult problem is the differentiation of NASH vs uncomplicated
 fatty liver. Two seminal studies showed elevated conversion of
-\[1-^13^C\]pyruvate to both lactate and alanine in association with
+\[1-<sup>13</sup>C\]pyruvate to both lactate and alanine in association with
 acute liver injury triggered by injection of carbon tetrachloride (CCl4)
 and 1,3-dichloro-2-propanol (1,3-DCP) (Figure 6), respectively, in rats
 (53,54). These agents induce liver necrosis and inflammation.
-Furthermore, altered conversions of \[1-^13^C\]pyruvate have been
+Furthermore, altered conversions of \[1-<sup>13</sup>C\]pyruvate have been
 observed in proportion to dose of hepatotoxic agent (55) and duration of
 high fat diet (56) in other related fatty liver models, suggesting the
 possibility to grade disease. Decreased hepatic conversion of
-\[1-^13^C\]dehydroascorbate to \[1-^13^C\]vitamin C was detected after
+\[1-<sup>13</sup>C\]dehydroascorbate to \[1-<sup>13</sup>C\]vitamin C was detected after
 feeding mice a diet deficient in choline and methionine, a common rodent
 model of NASH, as a result of increased oxidative stress (Figure 7)
 (57). Moreover, vitamin C levels normalized after recovery on normal
-diet. Hepatic conversion of \[2-^13^C\]dihydroxyacetone to
-\[2-^13^C\]glycerol-3-phosphate is attenuated by fructose challenge
+diet. Hepatic conversion of \[2-<sup>13</sup>C\]dihydroxyacetone to
+\[2-<sup>13</sup>C\]glycerol-3-phosphate is attenuated by fructose challenge
 (58), suggesting applicability for monitoring hepatic energy charge,
 which may be altered along the progression to NASH. The fructose
-challenge paradigm, such as previously described for hepatic ^31^P MRS
+challenge paradigm, such as previously described for hepatic <sup>31</sup>P MRS
 studies (59), could be relevant for normalization of human liver HP MRI
 studies.
 
 ![Hyperpolarized 13C MRI of liver from a rat treated with hepatotoxic agent 1,3-DCP](CH0010_Fig006_von+Morze_v1_Orig.png)
 
-Figure 6. Example HP \[1-^13^C\]pyruvate spectra from normal rat liver
+Figure 6. Example HP \[1-<sup>13</sup>C\]pyruvate spectra from normal rat liver
 (A) and rat liver from an animal treated with hepatotoxic agent 1,3-DCP
-(B), showing elevated conversion to \[1-^13^C\]lactate and
-\[1-^13^C\]alanine with treatment. Liver signal dynamics from each
+(B), showing elevated conversion to \[1-<sup>13</sup>C\]lactate and
+\[1-<sup>13</sup>C\]alanine with treatment. Liver signal dynamics from each
 metabolite are shown in right column. **Figure reproduced from Kim GW et
 al.** **(54)**
 
 ![Hyperpolarized 13C MRI of liver from a mouse fed methionine and choline deficient diet](CH0010_Fig007_von+Morze_v1_Orig.png)
 
-Figure 7. Example liver-localized \[1-^13^C\]dehydroascorbate spectra
+Figure 7. Example liver-localized \[1-<sup>13</sup>C\]dehydroascorbate spectra
 (a) from a normal mouse (top) and a mouse fed methionine and choline
 deficient diet (MCD) (bottom), a common rodent model of NASH. Summary
-group data are shown in (b). Production of \[1-^13^C\]vitamin C from
-\[1-^13^C\]dehydroascorbate is clearly attenuated in the MCD-fed group
+group data are shown in (b). Production of \[1-<sup>13</sup>C\]vitamin C from
+\[1-<sup>13</sup>C\]dehydroascorbate is clearly attenuated in the MCD-fed group
 as a result of increased oxidative stress. **Figure reproduced from
 Wilson DM et al.** **(57)**
 
-Ethanol has been shown to induce acute changes in HP \[1-^13^C\]pyruvate
+Ethanol has been shown to induce acute changes in HP \[1-<sup>13</sup>C\]pyruvate
 spectra in liver (60), suggesting potential applicability for studies of
 alcoholic fatty liver and/or alcoholic hepatitis. Altered conversions of
-HP \[1-^13^C\]pyruvate to lactate and alanine were also observed after
+HP \[1-<sup>13</sup>C\]pyruvate to lactate and alanine were also observed after
 ischemia-reperfusion injury in rats (61), an important complication of
 liver transplantation. Hepatic metabolic alterations were also detected
-using \[1-^13^C\]pyruvate in a model of brain death in rats (62), which
+using \[1-<sup>13</sup>C\]pyruvate in a model of brain death in rats (62), which
 also has important implications for liver transplantation.
 
-# Discussion
+## Discussion
 
-Because HP ^13^C can target specific metabolic pathways in the liver, it
+Because HP <sup>13</sup>C can target specific metabolic pathways in the liver, it
 offers insights into liver function that are not currently possible
-using other imaging techniques. In pre-clinical animal models, HP ^13^C
+using other imaging techniques. In pre-clinical animal models, HP <sup>13</sup>C
 MRI has demonstrated great value in assessing both liver tumors as well
 as diffuse liver disease such as NASH. Human liver imaging requires
 dealing with important technical challenges, including the dual blood
 flow of the liver, respiratory motion, and decreased relaxation times.
-Imaging with HP \[1-^13^C\]pyruvate is already feasible, and further
+Imaging with HP \[1-<sup>13</sup>C\]pyruvate is already feasible, and further
 technical developments such as improved coil arrays and the development
-of integrated ^13^C body coils are expected to make imaging more robust
+of integrated <sup>13</sup>C body coils are expected to make imaging more robust
 and reliable. Importantly HP technology allows imaging with several
 different targeted probes, potentially at the same time. As this
 exciting technology moves closer to the clinic, it will likely yield new
 insights into liver diseases.
 
-# References
+## References
 
 1. Luersen GF, Bhosale P, Szklaruk J. State-of-the-art cross-sectional liver imaging: beyond lesion detection and characterization. J Hepatocell Carcinoma 2015;2:101-117.
 2. Li Q, Dhyani M, Grajo JR, Sirlin C, Samir AE. Current status of imaging in nonalcoholic fatty liver disease. World J Hepatol 2018;10(8):530-542.

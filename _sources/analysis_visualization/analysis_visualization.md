@@ -1,12 +1,12 @@
-# Analysis and Visualization of Hyperpolarized ^13^C MR Data
+# Analysis and Visualization of Hyperpolarized <sup>13</sup>C MR Data
 
-**James Bankson^1^, Peder Larson^2^**
+**James Bankson<sup>1</sup>, Peder Larson<sup>2</sup>**
 
-**^1^Department of Imaging Physics, The University of Texas MD Anderson
-Cancer Center; ^2^Department of Radiology and Biomedical Imaging,
+**<sup>1</sup>Department of Imaging Physics, The University of Texas MD Anderson
+Cancer Center; <sup>2</sup>Department of Radiology and Biomedical Imaging,
 University of California, San Francisco**
 
-**Abstract:** Hyperpolarized ^13^C MR studies can provide powerful
+**Abstract:** Hyperpolarized <sup>13</sup>C MR studies can provide powerful
 insight into the biochemistry of metabolism *in vivo*. Unlike
 traditional MRI contrast agents, the observable signal from HP agents is
 fleeting; magnetization is established in the polarizer, and once
@@ -20,7 +20,7 @@ seek to distill complex multi-dimensional data into imaging biomarkers
 that reflect the unique information that is revealed by these agents,
 broadly reflecting the rate at which the precursor HP agent is
 metabolized to specific chemical endpoints. Intrinsic registration with
-traditional anatomic and functional ^1^H MRI provides critical context
+traditional anatomic and functional <sup>1</sup>H MRI provides critical context
 for the resulting metabolic imaging biomarkers. This chapter covers
 common approaches for HP data analysis, including common metrics and
 kinetic models, and guidance on how to visualize and navigate through HP
@@ -34,21 +34,21 @@ Ratiometric analysis,
 High-dimensional visualization
 
 
-# 7.1 Data Extraction
+## Data Extraction
 
 The key, and somewhat obvious, first step is to extract relevant data
-for analysis. In the case of HP ^13^C, we want to start our analysis
+for analysis. In the case of HP <sup>13</sup>C, we want to start our analysis
 based on metabolite signal amplitudes, which are often dynamic as well
 as spatially localized. In some cases this is trivial -- when using
 imaging-based acquisition strategies, such as echo-planar or spiral
-imaging (see Chapter 3), this information is provided directly from the
+imaging (see [Hyperpolarized Acquistion Methods](../acquisition_methods/acquisition_methods.md)), this information is provided directly from the
 images themselves. When using spectroscopic-based acquisition
 techniques, such as MRS or MRSI, the metabolite amplitudes must be
 extracted from the spectral dimension. This is a common task in NMR/MR
 spectroscopy, thus it is recommended to use tools from this field. The
 'LCModel' package (1) is an excellent choice, but requires choice of a
 basis set. For sparse spectra found in many HP studies (e.g.
-\[1-^13^C\]pyruvate), metabolite amplitudes can also be simply extracted
+\[1-<sup>13</sup>C\]pyruvate), metabolite amplitudes can also be simply extracted
 integrating the area under the spectral peaks, or by fitting those peaks
 to Lorentzian lineshapes.
 
@@ -70,12 +70,12 @@ as parallel imaging or compressed sensing. However, it is typically
 sufficient to assuming a Gaussian or Rician distribution, as these
 distributions become quite difficult to characterize.
 
-# 7.2 Data Visualization
+# Data Visualization
 
 Typically the next step following data extraction is data visualization
 for the purposes of anatomical localization, quality control, and/or
 qualitative evaluation. Good visualization requires co-registration with
-anatomical reference images from ^1^H MRI and also support for viewing
+anatomical reference images from <sup>1</sup>H MRI and also support for viewing
 additional dimensions including spectral (for spectroscopy-based
 acquisitions), metabolite (for imaging-based acquisitions), and temporal
 (for time-resolved acquisitions) dimensions. This enables matching HP
@@ -92,21 +92,21 @@ studies, especially when acquiring uniquely HP data such as
 time-resolved MRSI. Many investigators develop their own software
 infrastructure for visualization and analysis using their favorite
 scientific computing environment, but several packages are available for
-this purpose. One tool that includes specific features for HP ^13^C data
+this purpose. One tool that includes specific features for HP <sup>13</sup>C data
 is the SIVIC open-source software package (7, 8) (Figure 1). SIVIC reads
 MRI and MRSI DICOM images as well as multiple vendor specific raw data
 formats. The package runs on Windows, Linux and Mac and can be used for
 offline analyses. It can also run on a variety of scanner consoles (GE,
 Bruker, Agilent), and also can be used as a plug-in with OsiriX (9) and
-Horos (10). There are also several other popular packages for ^1^H MRSI
-that can be applied to HP ^13^C and includes jMRUI (11) and TARQUIN (12,
+Horos (10). There are also several other popular packages for <sup>1</sup>H MRSI
+that can be applied to HP <sup>13</sup>C and includes jMRUI (11) and TARQUIN (12,
 13).
 
 ![HP 13C Visualization modes](./data-visualization-example.png)
 
-**Figure 1: HP ^13^C** **Visualization
-modes**. In this example, dynamic HP ^13^C MRSI data acquired covering
-mouse kidneys following HP \[1-^13^C\]pyruvate injection is displayed in
+**Figure 1: HP <sup>13</sup>C** **Visualization
+modes**. In this example, dynamic HP <sup>13</sup>C MRSI data acquired covering
+mouse kidneys following HP \[1-<sup>13</sup>C\]pyruvate injection is displayed in
 three different modes, all of which are useful for visualization. These
 include displaying a time series of spectroscopic images (*top*), time
 series of metabolite maps extracted from the spectra (*middle*, shown as
@@ -121,7 +121,7 @@ PET/CT or multi-parametric MRI data. Some good tools include OsiriX and
 its free, open-source cousin, Horos, and ImageJ originally developed at
 the NIH, just to name a few.
 
-# 7.3 Kinetic Modeling
+## Kinetic Modeling
 
 Signal from HP imaging agents behaves quite differently compared to
 traditional MRI. Magnetization is established in the polarizer at a
@@ -131,7 +131,7 @@ reactants, or injected into a biological system, magnetization evolves
 continuously and dynamically over the visible lifetime of the agent. HP
 magnetization is not renewable in vivo; it is depleted by signal
 excitation pulses that convert stored longitudinal magnetization into
-observable transverse magnetization, and lost via spin-lattice (T~1~)
+observable transverse magnetization, and lost via spin-lattice ($T_1$)
 relaxation that continually acts to reduce magnetization towards thermal
 equilibrium.
 
@@ -152,18 +152,18 @@ administered to human subjects. The process that we outline for
 establishing these PK models can easily be adapted for other HP imaging
 agents and metabolic pathways.
 
-## 7.3.1 Modeling the chemical reaction
+### Modeling the chemical reaction
 
 Hyperpolarized \[1-13C\]-pyruvate is the most widely used HP imaging
 agent because it has good polarization characteristics (25-50% using
 current dDNP technology), a relatively long spin-lattice relaxation time
-constant (T~1~ \~ 60s at 3T), and because pyruvate is rapidly absorbed
+constant ($T_1$ \~ 60s at 3T), and because pyruvate is rapidly absorbed
 into tissue and incorporated into important metabolic pathways (Also see
-Chapter 6). The conversion of HP \[1-13C\]-pyruvate into HP
+[HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md)). The conversion of HP \[1-13C\]-pyruvate into HP
 \[1-13C\]-lactate is particularly interesting in oncology because many
 cancers are characterized by high levels of aerobic glycolysis, or the
 Warburg Effect, where glucose is metabolized to lactate even under
-normoxic conditions (Also see Chapter 8). Metabolism of HP pyruvate has
+normoxic conditions (Also see [Integration into Cancer Studies](../cancer/cancer.md)). Metabolism of HP pyruvate has
 been shown to provide unprecedented insight into the biochemistry of
 tumor metabolism in vivo, informing on tumor stage, aggressiveness, and
 response to therapy in a wide range of preclinical studies as discussed
@@ -177,7 +177,7 @@ that has been well characterized (15). At equilibrium, there is no net
 conversion of pyruvate and lactate, but the two chemical pools are in
 continuous exchange; pyruvate molecules are converted into lactate at
 the same rate that lactate molecules are converted back into pyruvate.
-The equilibrium velocity of this reaction, *V~LDH~* (mol/s), is a
+The equilibrium velocity of this reaction, $V_{\text{LDH}}$ (mol/s), is a
 function of the concentrations of pyruvate, lactate, LDH, and NADH, and
 the kinetics of their interactions. When a pool of pyruvate molecules
 carrying a spin label enters into the system, as may be accomplished by
@@ -224,7 +224,7 @@ $\frac{\partial\text{Pyr}_{\text{ic}}^{*}(t)}{\partial t} = k_{\text{LP}}\text{L
 $\frac{\partial\text{Lac}_{\text{ic}}^{*}(t)}{\partial t} = k_{\text{PL}}\text{Pyr}_{\text{ic}}^{*}(t) - k_{\text{LP}}\text{Lac}_{\text{ic}}^{*}(t)$
 (6)
 
-## 7.3.2 Modeling the biophysical system
+### Modeling the biophysical system
 
 HP imaging agents such as pyruvate are administered into biological
 systems via intravenous injection, and must overcome multiple barriers
@@ -252,20 +252,20 @@ here forward, we recognize that only labeled pyruvate is visible in HP
 MR measurements.
 
 The rate at which pyruvate enters cells is a product of this flux and
-the cross-sectional area between the two volume compartments, *A*, and
+the cross-sectional area between the two volume compartments, $A$, and
 the change in concentration is found by dividing by the total volume of
-that compartment, *V­~ic~*:
+that compartment, $V_{\text{ic}}$:
 
  $\frac{\partial\text{Pyr}_{\text{ic}}(t)}{\partial t} = j\frac{A}{V_{\text{ic}}} = \frac{\text{PA}}{V_{\text{ic}}}\left( \text{Pyr}_{\text{ee}}(t) - \text{Pyr}_{\text{ic}}(t) \right)$ (8)
 
 We can simplify this expression by recognizing that the total
 intracellular volume can be written as a product of the total volume,
-*V~T~*, which may represent a voxel in an imaging measurement, and an
+$V_{T}$, which may represent a voxel in an imaging measurement, and an
 intracellular volume fraction
 $(V_{\text{ic}} = v_{\text{ic}}V_{T};\ V_{\text{ee}} = v_{\text{ee}}V_{T})$
 and defining a transfer rate constant that encapsulates the permeability
 of the boundary to the agent and the cross-sectional area between
-physical compartments, *A~ec~*, per unit volume. Defining an apparent
+physical compartments, $A_{\text{ec}}$, per unit volume. Defining an apparent
 rate constant $k_{\text{ecp}} \equiv \frac{PA_{\text{ec}}}{V_{T}}$, we
 can write the coupled equations that describe the rate of change of HP
 pyruvate in both compartments, as illustrated in Figure 2.
@@ -318,7 +318,7 @@ $\frac{\partial\text{Lac}_{\text{ic}}(t)}{\partial t} = k_{\text{PL}}\text{Pyr}_
 
 These equations include parameters $R_{\text{Pyr}}$ and $R_{\text{Lac}}$
 that account for attenuation of the HP signal pool. They include
-spin-lattice (T~1~) relaxation, but can also include losses due to
+spin-lattice ($T_1$) relaxation, but can also include losses due to
 chemical conversion to endpoints outside of this system, and losses due
 to signal excitation (though a more accurate way to model these losses
 will be introduced in the following text).
@@ -337,7 +337,7 @@ differential equations in Eqs. 11-14. Adapted from Bankson JA, et al.
 Note that all of the transfer and conversion rates in Equations 11-14
 have been written as being constant over time, but this will not
 necessarily reflect the actual enzyme or transport kinetics that may
-have a Michaelis-Menten relationship (See Chapter 6 for more
+have a Michaelis-Menten relationship (See [HP Agents and Biochemical Interactions](../HP_agents/HP_agents.md) for more
 information). $k_{\text{ecp}}$ and $k_{\text{ecl}}$ could certainly be
 written in the form of a Michaelis-Menten relationship to account for
 potential saturation of monocarboxylate transporters that mediate
@@ -412,7 +412,7 @@ intervals defined by signal excitations in an imaging sequence.
 Immediately after signal excitation, for example, the observed
 transverse magnetization will have a $\sin\left( \theta_{i} \right)$
 relationship with the left hand side of Eq 16, given an excitation angle
-of $\theta_{i}$ for the i^th^ observation
+of $\theta_{i}$ for the i<sup>th</sup> observation
 
 $\begin{bmatrix}
 \text{Pyr}_{ee,xy}(t = t_{\text{obs}}) \\
@@ -451,7 +451,7 @@ $\begin{bmatrix}
 
 This approach more accurately reflects excitation losses as periodic
 events, rather than continuous effects that would be modeled as
-distributed over time if included in *R~Pyr\ ~* and *R~Lac~* as
+distributed over time if included in $R_{Pyr}$ and $R_{Lac}$ as
 introduced in Equations 11-14.
 
 The total signal observed will be a combination of the transverse
@@ -664,7 +664,7 @@ that eliminate biological hurdles that act to delay chemical conversion.
 Note that the apparent reaction rate is progressively lower as the model
 simplified: $k_{\text{PL}} > k_{\text{PL}}^{'} > k_{\text{PL}}^{''}$ .
 
-## 7.3.3 Choosing a Model
+### Choosing a Model
 
 Selection of the most appropriate pharmacokinetic model for analysis of
 HP MRI data requires careful consideration of study goals and the
@@ -698,7 +698,7 @@ be more appropriate when working with data that has higher (or lower)
 SNR, better (or worse) spatiotemporal resolution, or acquired from human
 subjects or other disease sites.
 
-## 7.4.4 Fitting Algorithms 
+### Fitting Algorithms 
 
 The final step in implementing a PK model for HP data analysis is to
 choose an appropriate algorithm for data fitting. This is commonly
@@ -728,7 +728,7 @@ model while the substrate data is taken as ground truth and not fit to
 any curve (25, 30). This approach requires no estimate of the vascular
 input function and is thus relatively robust due to its simplicity.
 
-# 7.4 Model-free Metrics
+## Model-free Metrics
 
 Kinetic models are conceptually appealing in that they attempt to
 characterize relationships between biological compartments and
@@ -753,16 +753,14 @@ popular alternative to kinetic models.
 
 **Figure 7:** Illustration of several model-free metrics that can be
 used for HP data. These include the lactate-to-pyruvate ratio at a
-single time-point ( *Lac*(*t~meas~*)/*Pyr*(*t~meas~*) ), the AUC ratio
-(*AUC~ratio~*), lactate time-to-peak (*TTP~Lac~*), and the mean time
-(*µT*) for a metabolite. Inspired by Daniels CJ, et al. *NMR Biomed*
+single time-point ($\mathrm{Lac}(t_\mathrm{meas})/\mathrm{Pyr}(t_\mathrm{meas})$), the area-under-curve (AUC) ratio ($\mathrm{AUC}_\mathrm{ratio}$), lactate time-to-peak ($\mathrm{TTP}_\mathrm{Lac}$), and the mean time ($\mu T$) for a metabolite. Inspired by Daniels CJ, et al. \textit{NMR Biomed}
 2016 (27) .
 
-## 7.4.1 Metabolite Ratios
+### Metabolite Ratios
 
 The most common model-free metrics used in quantification of HP data are
 metabolite ratios in which the denominator is the substrate or total
-^13^C signal. These "Ratiometric" approaches have several advantages:
+<sup>13</sup>C signal. These "Ratiometric" approaches have several advantages:
 first and foremost, they provide a metric reflecting metabolic
 conversion that is straightforward to compute; also, they include
 inherent normalization such that they are largely invariant to the
@@ -771,7 +769,7 @@ delivered.
 
 *Single time-point*: In the simplest form, metabolite ratios can be
 computed from data at a single time-point, as illustrated in Fig. 7 by
-*Lac*(*t~meas~*)/*Pyr*(*t~meas~*) . However, this approach is sensitive
+$\mathrm{Lac}(t_\mathrm{meas})/\mathrm{Pyr}(t_\mathrm{meas})$. However, this approach is sensitive
 to the timing of this single time-point because of the typically rapid
 rates of bolus delivery, metabolic conversion, and signal decay, which
 results in signals and the ratio between them varying continuously
@@ -781,7 +779,7 @@ bolus in a dynamic acquisition (28), if one can be identified.
 
 *Area-under-curve (AUC)*: The more robust approach is to perform a
 dynamic acquisition and compute the area-under-curve (AUC) ratio from
-the metabolite time courses, illustrated in Fig. 7 by *AUC~ratio~*. This
+the metabolite time courses, illustrated in Fig. 7 by $\mathrm{AUC}_{\mathrm{ratio}}$. This
 approach has been shown to be proportional to the metabolic conversion
 rate under certain conditions (37). With assumptions that the
 acquisition covers the entire dynamic acquisition, including the bolus
@@ -793,15 +791,14 @@ Fig. 5), the AUC ratio between lactate and pyruvate is:
 
 This relationship trivially extends to other HP agents with
 precursor-product conversion processes, and also is valid when the
-substrate is converted into multiple products (e.g. \[1-^13^C\]pyruvate
-to \[1-^13^C\]alanine and ^13^C-bicarbonate).
+substrate is converted into multiple products (e.g. \[1-<sup>13</sup>C\]pyruvate
+to \[1-<sup>13</sup>C\]alanine and <sup>13</sup>C-bicarbonate).
 
 This proportionality holds for all flip angle schemes which do not
-change over time, including metabolite-specific flip angles (See Chapter
-3). It does, however, depend on the flip angles used (here, *R~Lac~*
+change over time, including metabolite-specific flip angles (See [Hyperpolarized Acquistion Methods](../acquisition_methods/acquisition_methods.md)). It does, however, depend on the flip angles used (here, $R_{\text{Lac}}$
 includes excitation losses); the AUC ratio cannot be compared across
 studies that use different flip angles without additional corrections.
-The proportionality between the AUC ratio and *k~PL~* breaks down when
+The proportionality between the AUC ratio and $k_{\text{PL}}$ breaks down when
 flip angles vary over time if there are any variations in vasculature or
 bolus characteristics.
 
@@ -811,16 +808,16 @@ product and substrate, e.g. lactate/pyruvate, as described above. In
 some cases, the differential metabolic conversion is informative, for
 example when studying glucose metabolism versus oxidative metabolism.
 For this case, the signal amplitude or AUC ratio between products (eg,
-^13^C-bicarbonate and \[1-^13^C\]lactate, following \[1-^13^C\]pyruvate
+<sup>13</sup>C-bicarbonate and \[1-<sup>13</sup>C\]lactate, following \[1-<sup>13</sup>C\]pyruvate
 injection) will reflect differences in metabolic preference. Because
 both products depend on substrate delivery in the same way, differential
 conversion may be relatively insensitive to vascular or bolus
 characteristics.
 
-## 7.4.2 Normalized metabolic product amplitudes
+### Normalized metabolic product amplitudes
 
-Normalized metabolic product signal amplitudes, e.g. *Lac*(*t~meas~)* or
-*AUC~Lac~*, have also been successfully used as a measure of metabolic
+Normalized metabolic product signal amplitudes, e.g. $\mathrm{Lac}(t_\mathrm{meas})$ or
+$\mathrm{AUC}_{\mathrm{Lac}}$, have also been successfully used as a measure of metabolic
 conversion. Most notably, in the human brain, lactate signal amplitudes
 have been normalized to the mean across all brain regions in a subject
 for 'lactate topography' (29). Most other metrics have some inherent
@@ -831,7 +828,7 @@ metabolic product signals on their own has potential to eliminate some
 partial volume effects, like substrate signals in major vasculature that
 may not be metabolically accessible. Also, in cases where cellular
 transport and/or the enzyme-mediated conversion is saturated (sometimes
-this is done by design, see Chapter 4), variations in substrate dose
+this is done by design, see [HP Experimental Methods: Cells and Animals](../experiments_preclinical/experiments_preclinical.md)), variations in substrate dose
 above a certain level will result in the same product signal, resulting
 in erroneous variations of metrics normalized by the substrate. But
 these potential benefits are speculative, and normalizing to substrate
@@ -839,12 +836,12 @@ amplitudes has many benefits as well. Furthermore, normalizing product
 signal amplitudes must account for non-trivial variations in
 polarization and RF coil sensitivities.
 
-## 7.4.3 Dynamic metrics
+### Dynamic metrics
 
 Since the metabolic conversion is a dynamic process, metrics based on
 the temporal characteristics of the data can also be used. One proposed
-is the lactate time-to-peak (*TTP~Lac~*), which has been shown to be
-inversely proportional to $k_{\text{PL}}^{''}$ However, this metric
+is the lactate time-to-peak ($\mathrm{TTP}_{\mathrm{Lac}}$), which has been shown to be
+inversely proportional to $k_{\text{PL}}^{''}$. However, this metric
 performs poorly with low SNR (Supplemental Data in (30)).
 
 Another proposed dynamic metric is the "Mean Time", calculated as the
@@ -853,19 +850,19 @@ illustrated in Fig. 7 as *µT*, and notably is later in time than the
 peak signal. For the substrate, the mean time can be used as a measure
 of the arrival time. For metabolic products this metric is similar to
 the TTP but slightly more robust to SNR (REF). The metric also reflects
-additional effects such as variations in T~1~ relaxation rates, and flow
+additional effects such as variations in $T_1$ relaxation rates, and flow
 in and out of the tissue.
 
-# 7.5 Evaluation of Metabolism Metrics
+## Evaluation of Metabolism Metrics
 
 It is very challenging to evaluate the accuracy of HP metabolism metrics
 *in vivo* because it is nearly impossible to have a ground truth values
 and the apparent rate constants can be influenced by a combination of
 perfusion/delivery, cellular uptake, pool sizes, intracellular transport
 (e.g. into mitochondria), enzymatic conversion, efflux out of cells, and
-out-flow, and compartmental T~1~ differences (32). Arguably, ground
+out-flow, and compartmental $T_1$ differences (32). Arguably, ground
 truth in HP experiments may only be accessible in highly controlled
-systems (e.g. cell systems, see Chapter 4).
+systems (e.g. cell systems, see [HP Experimental Methods: Cells and Animals](../experiments_preclinical/experiments_preclinical.md)).
 
 Given this limitation, simulations can be used very effectively to
 provide insight into evaluation of HP metabolism metrics. Simulation
@@ -882,11 +879,11 @@ can have significant impact on the outcome of these kinds of analyses,
 and must be considered carefully (33). Figure 8 shows a Monte Carlo
 simulation using a precursor-product kinetic model comparing an
 "inputless" fitting method (30)(Eq. 23) with fixed relaxation rates,
-inputless fitting including *T~1,Lac~* fitting, and lactate to pyruvate
+inputless fitting including $T_{1,\mathrm{Lac}}$ fitting, and lactate to pyruvate
 AUC ratio, all for three different flip angle schemes. From these
 simulations, we can see that the relative accuracy (indicated by error
 bars) is similar between the inputless fitting with fixed rates and the
-AUC ratio, while fitting T~1,Lac~ increases expected error. They show
+AUC ratio, while fitting $T_{1,\mathrm{Lac}}$ increases expected error. They show
 that using metabolite-specific flip angles leads to expected
 improvements in precision over the constant uniform flip angles as well
 as the variable flip angle scheme chosen. Finally, they also show that
@@ -895,18 +892,17 @@ the AUC ratio varies depending on the flip angle strategy.
 ![Simulation comparison of HP metabolism metrics](simulated_metric-ALL.png)
 
 **Figure 8**: Simulation comparison of HP metabolism metrics as function
-of k~PL~ for different flip angle strategies. A Monte Carlo simulation
+of $k_{\text{PL}}$ for different flip angle strategies. A Monte Carlo simulation
 of a precursor-product model (Fig. 5) was used to show their response to
 noisy data, where the solid lines represent the mean of the metric and
 the shaded regions represent the standard deviation of the fitting
 across different noise in the test data. The simulations used nominal
-parameters of T~1,Lac~ = 25 s, T~1,Pyr~ = 30 s, T~arrival~ = 4s, and
-T~bolus~ = 8 s, with experimental parameters of TR = 3 s, over 16 time
+parameters of $T_{1,\mathrm{Lac}} = 25 \, \mathrm{s}$, $T_{1,\mathrm{Pyr}} = 30 \, \mathrm{s}$, $T_{\mathrm{arrival}} = 4 \, \mathrm{s}$, and
+$T_{\mathrm{bolus}} = 8 \, \mathrm{s}$, with experimental parameters of $TR = 3 \, \mathrm{s}$, over 16 time
 points. The "Constant flip angle" was 25-degrees, "Metabolite-specific
 flip angles" were 20-degrees (pyruvate) and 30-degrees (lactate), and
 "Variable flip angles" using a T1-effective scheme for pyruvate with
-T~1effective~ = 20 s and a maximum SNR scheme for lactate with T~1,Lac~
-= 25 s.
+$T_{1,\mathrm{effective}} = 20 \, \mathrm{s}$ and a maximum SNR scheme for lactate with $T_{1,\mathrm{Lac}} = 25 \, \mathrm{s}$.
 
 Figure 9 shows additional Monte Carlo simulation results using the same
 precursor-product kinetic model, but presented in terms of relative
@@ -914,25 +910,25 @@ $k_{\text{PL}}^{''}$ error, and with simulations across a range of
 potential experimental variability. The purpose of this simulation is to
 evaluate the response of a given metric, fitting approach, or flip angle
 scheme in response to variable conditions. The experimental ranges for
-k~PL~, noise standard deviation (σ), bolus characteristics (T~arrival~,
-T~bolus~), relaxation rates, "B~1~ error" (unknown changes in B~1~
-field), and "B1 change" (known changes in B~1~ field) are based on
+$k_{\text{PL}}$, noise standard deviation (σ), bolus characteristics ($T_{\text{arrival}}$,
+$T_{\text{bolus}}$), relaxation rates, "$B_1$ error" (unknown changes in $B_1$
+field), and "$B_1$ change" (known changes in $B_1$ field) are based on
 typical in vivo results (30). These results show that the AUC ratio and
 inputless fitting with fixed relaxation rates perform comparably, except
-when the bolus arrival is not captured (T~arrival~ \> 0), in which case
+when the bolus arrival is not captured ($T_{\text{arrival}} > 0$), in which case
 the AUC ratio deviates from the expected nominal value. Both of these
-methods suffer from bias if T~1,Lac~ is not known or in the presence of
-unknown B~1~ errors. Fitting for T~1,Lac~ leads to worse precision, but
-more accurate response in the presence of unknown T~1,Lac~ and B~1~
+methods suffer from bias if $T_{1,\text{Lac}}$ is not known or in the presence of
+unknown $B_{1}$ errors. Fitting for $T_{1,\text{Lac}}$ leads to worse precision, but
+more accurate response in the presence of unknown $T_{1,\text{Lac}}$ and $B_{1}$
 errors.
 
 ![Simulations of metrics response to experimental variability](simulated_fitting-accuracy-precision.svg)
 
 **Figure 9**: Simulation comparison of HP metabolism relative metric
 accuracy and precision in response to variations in experimental
-parameters of k~PL~, noise level (σ), bolus arrival time (Tarrival),
-bolus duration (Tbolus), metabolite relaxation rates, flip angle errors
-("B~1­~ error"), and flip angle differences ("B~1­~ change" i.e. known
+parameters of $k_{\text{PL}}$, noise level ($\sigma$), bolus arrival time ($T_{\text{arrival}}$),
+bolus duration ($T_{\text{bolus}}$), metabolite relaxation rates, flip angle errors
+("$B_{1}$ error"), and flip angle differences ("$B_{1}$ change" i.e. known
 changes in flip angle). A Monte Carlo simulation of a precursor-product
 model (Fig. 5) was used to show their response to noisy data, where the
 solid lines represent the mean of the metric and the dashed lines
@@ -940,21 +936,21 @@ represent the standard deviation across different noise in the test
 data. The signal and noise is scaled such that the total available
 magnetization provided equals 1. In other words, the maximum signal
 would be 1 if it were all excited with a single 90-degree RF pulse. The
-simulations used nominal parameters of T~1,Lac~ = 25 s, T~1,Pyr~ = 30 s,
-T~arrival~ = 4 s, and T~bolus~ = 8 s, with experimental parameters of TR
-= 3 s, 16 time points, and metabolite-specific flip angles of 20-degrees
+simulations used nominal parameters of $T_{1,\text{Lac}} = 25 \, \mathrm{s}$, $T_{1,\text{Pyr}} = 30 \, \mathrm{s}$,
+$T_{\text{arrival}} = 4 \, \mathrm{s}$, and $T_{\text{bolus}} = 8 \, \mathrm{s}$, with experimental parameters of $TR
+= 3 \, \mathrm{s}$, 16 time points, and metabolite-specific flip angles of 20-degrees
 (pyruvate) and 30-degrees (lactate). This type of simulation allows for
 comparisons of robustness between different HP metrics. (Adapted from
 Larson PEZ, et al. NMR in Biomedicine 2018, (30))
 
-# 7.6 Summary
+## Summary
 
 Specialized data extraction, visualization, and analysis methods are
 required due to the unique characteristics of HP signals, including high
 dimensionality, unrecoverable signal decay, metabolic conversion, and
 bolus and perfusion effects. Data extraction can be performed with
 methods borrowed from conventional MRI and MRS. Data visualization
-requires co-registration with anatomical ^1^H MRI and support for up to
+requires co-registration with anatomical <sup>1</sup>H MRI and support for up to
 5-dimensional (3 spatial, 1 spectral, 1 temporal) data. Analysis to
 extract apparent metabolic rate constants can be performed using
 pharmacokinetic models, which can include effects of metabolic

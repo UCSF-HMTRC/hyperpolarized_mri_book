@@ -659,7 +659,7 @@ pyruvate dehydrogenase complex. Secondary to this, however, several
 molecules have been shown to be of utility in cardiac imaging, for
 example, \[2-<sup>13</sup>\]pyruvate, fumarate, the ketone bodies acetoacetate and
 beta-hydroxybutyrate; and additionally metabolically inert molecules --
-such as urea -- as probes of perfusion. See also Chapter 6 for more
+such as urea -- as probes of perfusion. See also [HP Agents and Biomedical Interactions](../HP_agents/HP_agents.md) for more
 information on hyperpolarized agents.
 
 #### Hyperpolarized \[1-<sup>13</sup>C\]pyruvate
@@ -966,7 +966,7 @@ period of approximately 20 s in the rat [@Ardenkjaer-Larsen2014].
 
 The following section describes imaging considerations and successful
 methods applied for hyperpolarized MR of the heart. Please refer to
-Chapter 3 for a more general discussion of hyperpolarized acquisition
+[HP Acquisition Methods](../acquisition_methods/acquisition_methods.md) for a more general discussion of hyperpolarized acquisition
 methods.
 
 ### Cardiac-specific considerations
@@ -1237,7 +1237,7 @@ research and in clinical practice. Clearly, the future of hyperpolarized
 MR in cardiology is bright!
 
 
-# References
+## References
 
 Desiree Abdurrachim, Chern Chiuh Woo, Xing Qi Teo, Wei Xin Chan, George K. Radda, and Philip Teck Hock Lee. A new hyperpolarized 13 C ketone body probe reveals an increase in acetoacetate utilization in the diabetic rat heart. Sci. Rep., 2019. ISSN 20452322. doi: 10.1038/s41598-019-39378-w.
 
