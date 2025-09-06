@@ -1,27 +1,27 @@
-# Neurological applications of hyperpolarized ^13^C MR
+# Neurological applications of hyperpolarized <sup>13</sup>C MR
 
-By Myriam M. Chaumeil, PhD ^1,2^
+By Myriam M. Chaumeil, PhD <sup>1,2</sup>
 
-^1^Department of Physical Therapy and Rehabilitation Science, University
+<sup>1</sup>Department of Physical Therapy and Rehabilitation Science, University
 of California, San Francisco
 
-^2^Department of Radiology and Biomedical Imaging, University of
+<sup>2</sup>Department of Radiology and Biomedical Imaging, University of
 California, San Francisco
 
 
 **Abstract**
 
-Metabolic imaging based on hyperpolarized ^13^C technology gives
+Metabolic imaging based on hyperpolarized <sup>13</sup>C technology gives
 unprecedented information of previously inaccessible metabolic pathways
 and does so non-invasively and in real time. Applied to the field of
 oncology for more than a decade, this approach has only recently emerged
 as a methodology of high interest to study the brain in health and
-disease. Hyperpolarized ^13^C metabolic imaging can potentially be used
+disease. Hyperpolarized <sup>13</sup>C metabolic imaging can potentially be used
 to not only ameliorate our understanding of brain metabolism and
 associated function, but also to provide new imaging readouts that could
 improve diagnosis, prognosis and longitudinal monitoring of treatment
 response in neurological disorders. In this chapter, we will first
-discuss the use of HP \[1-^13^C\]pyruvate in preclinical models of
+discuss the use of HP \[1-<sup>13</sup>C\]pyruvate in preclinical models of
 health and disease, and the promise of such approaches. We will then
 review which other HP agents could be used in the context of the brain,
 and their respective potential. Finally, we will examine the role of
@@ -34,7 +34,7 @@ Brain, metabolism, hyperpolarized 13C, metabolic imaging, neurological
 disorders.
 
 
-**I. Introduction: an overview of the brain and its metabolism**
+## Introduction: an overview of the brain and its metabolism
 
 The brain is a complex and fascinating structure, made of two main types
 of cells: neurons and glia. Glia are themselves divided in three
@@ -47,7 +47,7 @@ protection for neurons.
 
 The number of neurons is extremely variable between species: the common
 fruit fly has about 100,000 neurons, whereas it is estimated that the
-human brain has about 10^14^ (100 billion) neurons. As for glial cells,
+human brain has about $10^{14}$ (100 billion) neurons. As for glial cells,
 their number has always remained a question. In the human brain, for
 more than a century, they were thought to outnumber neurons by a factor
 of 10:1 to 50:1, but recent studies using isotropic fractionator have
@@ -81,99 +81,99 @@ Peripheral immune cells, such as macrophages and T-cells, can also
 infiltrate the brain parenchyma, and additional cell impairment such as
 astrogliosis, oligodendrogliosis and neuronal death can also occur.
 
-The application of HP ^13^C metabolic imaging to the study of the brain,
+The application of HP <sup>13</sup>C metabolic imaging to the study of the brain,
 in health and disease, has been expanding over the past five years.
 Because the brain is a highly metabolic organ and because metabolic
 impairment plays a central role in most brain diseases, the potential of
-HP ^13^C MRS/I as a valuable imaging method capable of providing an
+HP <sup>13</sup>C MRS/I as a valuable imaging method capable of providing an
 unprecedented picture of brain metabolism is increasingly being
-recognized. HP ^13^C MRS/I can potentially be used to not only improve
+recognized. HP <sup>13</sup>C MRS/I can potentially be used to not only improve
 our understanding of brain metabolism in health and disease, but also to
 provide new imaging readouts that could improve diagnosis, prognosis and
 longitudinal monitoring of treatment response.
 
 In this chapter, we will first describe the neurological applications of
-^13^C MRS/I of HP \[1-^13^C\]pyruvate in preclinical models of health
+<sup>13</sup>C MRS/I of HP \[1-<sup>13</sup>C\]pyruvate in preclinical models of health
 and disease and discuss the potential of such approaches. We will then
 review which additional HP probes have been applied to the study of the
 healthy brain. Finally, we will discuss which correlative studies can be
-performed in complement of HP ^13^C MRS/I, to validate MR results and
+performed in complement of HP <sup>13</sup>C MRS/I, to validate MR results and
 improve our understanding of this metabolic imaging approach.
 
 
-**II. Neurological applications of HP \[1-^13^C\]pyruvate**
+## Neurological applications of HP \[1-<sup>13</sup>C\]pyruvate
 
-To date, few studies have used HP ^13^C MRS/I to assess metabolism *in
+To date, few studies have used HP <sup>13</sup>C MRS/I to assess metabolism *in
 vivo* in preclinical healthy brains and preclinical models of non-cancer
 neurological disorders. The majority of these studies used HP
-\[1-^13^C\]pyruvate, and are summarized in **Table 1** (adapted from
-\[10\]), which describes the HP ^13^C parameters obtained following
-injection of HP \[1-^13^C\]pyruvate, and the associated molecular and
+\[1-<sup>13</sup>C\]pyruvate, and are summarized in **Table 1** (adapted from
+\[10\]), which describes the HP <sup>13</sup>C parameters obtained following
+injection of HP \[1-<sup>13</sup>C\]pyruvate, and the associated molecular and
 histological correlative studies performed.
 
 ![Preclinical studies](brain_study_review.png)
 
 **Table 1**
 Preclinical studies of the brain, in health and disease, using HP
-\[1-^13^C\]pyruvate**. HP ^13^C parameters obtained following injection
-of HP \[1-^13^C\]pyruvate in preclinical studies with associated
+\[1-<sup>13</sup>C\]pyruvate*. HP <sup>13</sup>C parameters obtained following injection
+of HP \[1-<sup>13</sup>C\]pyruvate in preclinical studies with associated
 molecular and histological correlates. Adapted from reference \[10\].
 
-*II.1. Healthy brain*
+### Healthy brain
 
-II.1.1. Adult
+#### Adult
 
-Applications of HP \[1-^13^C\]pyruvate to the studies of the adult
+Applications of HP \[1-<sup>13</sup>C\]pyruvate to the studies of the adult
 healthy brain are of fundamental importance, both in preclinical studies
 and when thinking of clinical translation. Human imaging studies are
 highly feasible, as demonstrated by the multiple clinical oncological
 studies that have been performed to date or are currently underway (see
-Chapter 5). Interestingly, two studies have now applied by^13^C MRS/I of
-HP \[1-^13^C\]pyruvate to the study of healthy volunteers, showing
+[Integration into Cancer Studies](../cancer/cancer.md)). Interestingly, two studies have now applied by<sup>13</sup>C MRS/I of
+HP \[1-<sup>13</sup>C\]pyruvate to the study of healthy volunteers, showing
 initial feasibility and reproducibility of metabolic topography \[11,
 12\]. Such MR datasets can help assess what cerebral metabolism as
-measured by HP ^13^C MRS/I is at "baseline" (i.e. in healthy
+measured by HP <sup>13</sup>C MRS/I is at "baseline" (i.e. in healthy
 conditions), which would subsequently improve our understanding on how
 cerebral metabolism is affected by neurological diseases, therapies,
 maturation/aging processes or peripheral perturbations such as diet. So
-far, HP \[1-^13^C\]pyruvate has only been applied to the study of the
+far, HP \[1-<sup>13</sup>C\]pyruvate has only been applied to the study of the
 healthy brain in a few preclinical studies, and more investigations are
 clearly needed. When injected into adult rodents (mice and rats),
-cerebral conversion of HP \[1-^13^C\]pyruvate to HP \[1-^13^C\]lactate,
-HP \[1-^13^C\]bicarbonate and HP \[1-^13^C\]alanine has been detected in
+cerebral conversion of HP \[1-<sup>13</sup>C\]pyruvate to HP \[1-<sup>13</sup>C\]lactate,
+HP \[1-<sup>13</sup>C\]bicarbonate and HP \[1-<sup>13</sup>C\]alanine has been detected in
 several studies conducted at clinical field strength (1 Tesla or 3
 Tesla) using preclinical polarizers \[13-15\]. One study investigated HP
-\[1-^13^C\]pyruvate metabolism in the non-human primate brain at 3 Tesla
-using the clinical SpinLab polarizer, and found that HP ^13^C
+\[1-<sup>13</sup>C\]pyruvate metabolism in the non-human primate brain at 3 Tesla
+using the clinical SpinLab polarizer, and found that HP <sup>13</sup>C
 lactate-to-pyruvate ratios measured in the primate brain were similar to
 the ones measured in rodent brains \[16\]. This study paved the way for
-the first clinical trial using HP \[1-^13^C\]pyruvate conducted at UCSF.
-It is important to note that, whereas cerebral HP \[1-^13^C\]lactate
+the first clinical trial using HP \[1-<sup>13</sup>C\]pyruvate conducted at UCSF.
+It is important to note that, whereas cerebral HP \[1-<sup>13</sup>C\]lactate
 production is seen in all these studies, detection of HP
-\[1-^13^C\]bicarbonate and HP \[1-^13^C\]alanine is not universally
+\[1-<sup>13</sup>C\]bicarbonate and HP \[1-<sup>13</sup>C\]alanine is not universally
 reported, as it still remains a challenge and requires dedicated
 sequences and/or hardware. Furthermore, it is still unknown if HP
-\[1-^13^C\]alanine is actually produced by transamination of HP
-\[1-^13^C\]pyruvate in cerebral tissue, or if the signal only arises
+\[1-<sup>13</sup>C\]alanine is actually produced by transamination of HP
+\[1-<sup>13</sup>C\]pyruvate in cerebral tissue, or if the signal only arises
 from surrounding muscles. The relative contribution of each cell type to
 the detected HP signal in healthy brain is also still undetermined.
 Finally, an important area of investigation is the question of transport
-of HP \[1-^13^C\]pyruvate across the BBB. A recent study demonstrated
+of HP \[1-<sup>13</sup>C\]pyruvate across the BBB. A recent study demonstrated
 that such transport is rate-limiting in anaesthetized animals, and that
 chemically-driven BBB opening results in a dramatic 90-fold increase in
 pyruvate transport and conversion to lactate in the porcine brain
 \[17\]. As a more clinically translatable alternative to chemical
 opening of the BBB, the same authors also used HP
-ethyl-\[1-^13^C\]pyruvate, a more lipophilic probe able to readily cross
+ethyl-\[1-<sup>13</sup>C\]pyruvate, a more lipophilic probe able to readily cross
 the BBB, which was first used in the rat brain and showed a comparable
-lactate level to that observed following \[1-^13^C\]pyruvate injection
-\[18\]. Post HP ethyl-\[1-^13^C\]pyruvate injection, the signals of HP
-\[1-^13^C\]pyruvate and \[1-^13^C\]lactate were detected in brain using
+lactate level to that observed following \[1-<sup>13</sup>C\]pyruvate injection
+\[18\]. Post HP ethyl-\[1-<sup>13</sup>C\]pyruvate injection, the signals of HP
+\[1-<sup>13</sup>C\]pyruvate and \[1-<sup>13</sup>C\]lactate were detected in brain using
 a dedicated sequence \[17\]. This approach is highly promising, but the
 presence of multiple spectral resonances renders the sequence design
 challenging.
 
-II.1.2. Effects of age and sex
+#### Effects of age and sex
 
 It is well-known that both early maturation and aging processes affect
 brain metabolism, and relative cell populations \[19, 20\]. However,
@@ -181,7 +181,7 @@ very few studies to date have addressed the influence of these
 physiological processes on HP metabolic imaging data. To date, only one
 HP study has investigated the effect of early brain development on
 imaging parameters. In this longitudinal study conducted in mice,
-cerebral conversion of HP \[1-^13^C\]pyruvate to HP \[1-^13^C\]lactate
+cerebral conversion of HP \[1-<sup>13</sup>C\]pyruvate to HP \[1-<sup>13</sup>C\]lactate
 was measured on a 14 Tesla MR system, and shown to decrease with age
 between postnatal days (P) P18 and 60 \[21\]. Total brain volume as
 measured by conventional MRI, however, remained unchanged, demonstrating
@@ -190,17 +190,17 @@ studies). In the healthy aging brain, only one study has been performed
 to date, on 9-month-old mice, which is equivalent to \~45 human years
 \[22\]. This study showed that treatment with dichloroacetate (DCA), a
 pyruvate dehydrogenase kinase (PDK) inhibitor, decreased cerebral HP
-\[1-^13^C\]pyruvate to HP \[1-^13^C\]lactate conversion, and caused an
+\[1-<sup>13</sup>C\]pyruvate to HP \[1-<sup>13</sup>C\]lactate conversion, and caused an
 impairment in spatial learning as measured using a Morris water maze
 \[23\]. More studies are definitely needed in order to better understand
 both healthy aging, as well as aging-related diseases such as
 Alzheimer's disease (AD).
 
 In addition to age, it would be extremely interesting to assess the
-influence of sex on the HP ^13^C data. Only one HP study has addressed
+influence of sex on the HP <sup>13</sup>C data. Only one HP study has addressed
 this to date, in kidneys. In this report, the authors show 56±11% lower
 lactate production per mL/100 mL/min in female rats than in age-matched
-male rat kidneys, as measured by HP ^13^C MR and dynamic contrast
+male rat kidneys, as measured by HP <sup>13</sup>C MR and dynamic contrast
 enhanced (DCE) MRI \[24\]. Importantly, these results were largely
 independent of the pyruvate volume and the difference in body weight. So
 far, no study has investigated such effect in the brain, even though
@@ -225,39 +225,39 @@ sex differences need to be considered when performing preclinical (and
 potentially clinical) HP metabolic imaging of the brain, as well as
 other organs.
 
-II.1.3. Effects of anesthesia
+#### Effects of anesthesia
 
-Almost all preclinical studies using HP ^13^C MR imaging have been
+Almost all preclinical studies using HP <sup>13</sup>C MR imaging have been
 conducted on animals under anesthesia, which is known to alter
 hemodynamics, metabolism and neuroprotection \[28\]. One study
 investigated the effect of different anesthesia regimen on the
-metabolism of HP \[1-^13^C\]pyruvate and \[2-^13^C\]pyruvate in the rat
+metabolism of HP \[1-<sup>13</sup>C\]pyruvate and \[2-<sup>13</sup>C\]pyruvate in the rat
 brain *in vivo*, and found that the apparent metabolic rate from
 pyruvate to lactate modeled was significantly greater for isoflurane
 than for all other anesthetic conditions, whereas the conversion of
 pyruvate to bicarbonate was significantly greater for morphine than for
 all other anesthetic conditions \[29\]. In another study performed in
-the rat brain, the level of HP \[1-^13^C\]pyruvate increased with
+the rat brain, the level of HP \[1-<sup>13</sup>C\]pyruvate increased with
 increased isoflurane levels, likely due to vasodilation, whereas lactate
 and bicarbonate levels were unchanged by depth of anesthesia \[30\].
 When performing any preclinical experiment, one must keep in mind the
 effect of anesthetics and ensure reproducibility in type and depth of
-anesthesia between subjects for proper interpretation of the HP ^13^C
+anesthesia between subjects for proper interpretation of the HP <sup>13</sup>C
 imaging data.
 
 In order to circumvent the effect of anesthesia, one recent study
-investigated the potential of performing HP ^13^C metabolic imaging of
+investigated the potential of performing HP <sup>13</sup>C metabolic imaging of
 the brain in awake animals \[31\]. This study shows that HP
-bicarbonate-to-total ^13^C and HP lactate-to-total ^13^C ratios and
+bicarbonate-to-total <sup>13</sup>C and HP lactate-to-total <sup>13</sup>C ratios and
 corresponding exchange rates decreased from awake animals to urethane to
 isoflurane anesthetized animals. Although this study demonstrates
 feasibility and increases relevance to human studies, imaging awake
 animals require extensive training, and stress might be a confounding
 factor modulating metabolism.
 
-*II.2. Neurological disorders*
+### Neurological disorders
 
-II.2.1. Cell studies of immunometabolism
+#### Cell studies of immunometabolism
 
 Over the past decade, immunometabolism has become one of the most
 exciting areas of translational research \[32\]. By definition,
@@ -272,8 +272,8 @@ undergo metabolic reprogramming. This reprogramming is complex and
 differs between activation subtypes (proinflammatory vs.
 neuroprotective, M1/M2 paradigm) \[33\]. A study conducted on
 classically activated pro-inflammatory macrophages using HP
-\[1-^13^C\]pyruvate at 11.7 Tesla showed that, after M1 activation using
-the toxin lipopolysaccharide (LPS), HP ^13^C lactate/pyruvate ratio was
+\[1-<sup>13</sup>C\]pyruvate at 11.7 Tesla showed that, after M1 activation using
+the toxin lipopolysaccharide (LPS), HP <sup>13</sup>C lactate/pyruvate ratio was
 significantly increased compared to non-activated macrophages \[34\].
 Correlative studies further showed that this increased ratio was linked
 to increased lactate dehydrogenase (LDH) activity and gene expression,
@@ -281,28 +281,28 @@ increased levels of cofactor nicotinamide adenine dinucleotide (NADH),
 and decreased expression of monocarboxylate transporters 1 and 4
 (MCT1/4), resulting in an increased intracellular lactate concentration.
 When macrophages were treated with indomethacin, a non-steroidal
-anti-inflammatory drug, HP ^13^C lactate/pyruvate ratio were decreased,
+anti-inflammatory drug, HP <sup>13</sup>C lactate/pyruvate ratio were decreased,
 demonstrating the potential of metabolic imaging to monitor the response
 to immunomodulatory therapies. In line with these findings, intracranial
-injection of LPS in mice resulted in increased HP ^13^C
+injection of LPS in mice resulted in increased HP <sup>13</sup>C
 lactate-to-pyruvate at the site of injection \[35\], which was
 associated with increased numbers of microglia/macrophages and
 astrocytes. Another recent study conducted at lower field strength (1.47
-Tesla) not only confirmed that HP ^13^C lactate/pyruvate ratio were
+Tesla) not only confirmed that HP <sup>13</sup>C lactate/pyruvate ratio were
 increased in activated M1 macrophages, but furthermore showed that
-conversion of HP \[1-^13^C\]dehydroascorbic acid (DHA) to HP
-\[1-^13^C\]ascorbic acid (AA) was also significantly increased upon M1
+conversion of HP \[1-<sup>13</sup>C\]dehydroascorbic acid (DHA) to HP
+\[1-<sup>13</sup>C\]ascorbic acid (AA) was also significantly increased upon M1
 activation, likely reflecting modulations in reactive oxygen species
 (ROS) production \[36\].
 
 In addition to MPs, cells of the adaptive immune response have also been
-investigated by HP ^13^C MRS. In activated CD4+ T-cells derived from
-human donors, HP ^13^C lactate/pyruvate ratio were increased three-fold
+investigated by HP <sup>13</sup>C MRS. In activated CD4+ T-cells derived from
+human donors, HP <sup>13</sup>C lactate/pyruvate ratio were increased three-fold
 compared to non-activated lymphocytes \[37\].
 
-II.2.2. Primary brain diseases
+### Primary brain diseases
 
-a\. Multiple sclerosis
+#### Multiple sclerosis
 
 Multiple sclerosis (MS) is a multifaceted disease of the central nervous
 system and one of the most common causes of disability in young adults
@@ -316,9 +316,9 @@ and/or cortical lesions remain hard to detect despite the development of
 advanced sequences \[40\]. Given the importance of inflammation in all
 MS lesions, new non-ionizing imaging methods providing insights on
 inflammatory processes would improve patient management and treatment.
-To date, two preclinical studies have applied HP ^13^C MRS/I to the
+To date, two preclinical studies have applied HP <sup>13</sup>C MRS/I to the
 study of MS \[41, 42\]. In the cuprizone-induced MS model, increased HP
-^13^C lactate-to-pyruvate ratios were measured in demyelinated white
+<sup>13</sup>C lactate-to-pyruvate ratios were measured in demyelinated white
 matter lesions, where high levels of macrophages were also detected.
 Correlatives studies demonstrated that these macrophages upregulated
 PDK1, leading to regional inhibition of PDH activity, thus preventing
@@ -329,62 +329,62 @@ was found to upregulate PDK1. An additional correlative study was
 performed in CX3CR1 knock-out (KO) mice, which do not elicit immune
 response following cuprizone administration due to their lack of the
 fractalkine receptor. In these transgenic mice, no increased level of
-macrophages/microglia was detected, and HP ^13^C lactate-to-pyruvate
+macrophages/microglia was detected, and HP <sup>13</sup>C lactate-to-pyruvate
 ratios were not increased. Altogether, these correlative studies argue
 in favor of macrophages/microglia being the main cell type responsible
-for increased HP ^13^C lactate-to-pyruvate ratios. In the second MS
-study, HP ^13^C MRSI of pyruvate and urea was applied to new MS model
+for increased HP <sup>13</sup>C lactate-to-pyruvate ratios. In the second MS
+study, HP <sup>13</sup>C MRSI of pyruvate and urea was applied to new MS model
 that elicits both innate (MPs) and adaptive (T-cells) immune response
-(cuprizone-EAE model). HP ^13^C lactate production was increased in
+(cuprizone-EAE model). HP <sup>13</sup>C lactate production was increased in
 CPZ/EAE mice, in agreement with increased levels of
 microglia/macrophages and T-cells. Correlative studies were also
-conducted using conventional MRI (T~2~-weighted and T~1~-weighted post
+conducted using conventional MRI (T<sub>2</sub>-weighted and T<sub>1</sub>-weighted post
 Gadolinium), clinical evaluation of disease severity, evaluation of
 visual pathway conduction using visual evoked potential (VEP), and
 immunofluorescence (IF) analyses, in order to further understand the
 value of the metabolic imaging data.
 
-b\. Traumatic brain injury
+#### Traumatic brain injury
 
 Complex alterations in brain structural integrity, perfusion and
 metabolism arise after traumatic brain injury (TBI) \[43\]. Imaging
 methods allowing for metabolic evaluation of TBI status and progression
 are lacking, limiting our understanding of TBI pathogenesis \[44\]. To
-date, only two preclinical studies have tested the potential of HP ^13^C
+date, only two preclinical studies have tested the potential of HP <sup>13</sup>C
 MRS/I to improve detection/monitoring of TBI progression. In a rat model
-of controlled cortical impact (CCI) TBI, HP ^13^C lactate-to-pyruvate
+of controlled cortical impact (CCI) TBI, HP <sup>13</sup>C lactate-to-pyruvate
 ratio was increased and bicarbonate-to-lactate ratio was decreased at 4
 hours post injury, revealing significant metabolic impairment following
 TBI, in line with previously reported decrease of PDH activity \[45\].
 In a mouse model of CCI, investigation of further timepoints following
-injury showed HP \[1-^13^C\]lactate-to-pyruvate ratios were also
+injury showed HP \[1-<sup>13</sup>C\]lactate-to-pyruvate ratios were also
 increased at 12 hours, 24 hours, and 7 days post-injury, and remained
 elevated up to 28 days following impact. Correlative studies were
 performed to confirm that these changes were linked to decrease of PDH
 activity with no changes to LDH activity \[46\]. Furthermore, in mice
 which received a diet that specifically depletes the microglial
-population, the HP ^13^C lactate-to-pyruvate ratios was not increased at
+population, the HP <sup>13</sup>C lactate-to-pyruvate ratios was not increased at
 7 days post-injury, suggesting that the major cell type contributing to
-the increased ^13^C lactate-to-pyruvate was microglia. It is of course
+the increased <sup>13</sup>C lactate-to-pyruvate was microglia. It is of course
 very likely that other factors, including neuronal death and BBB
 disruption, contribute to changes in HP substrate delivery and HP
 metabolism.
 
-c\. Stroke and ischemia
+#### Stroke and ischemia
 
 Stroke is the third leading cause of death worldwide and the leading
 cause of disability among adults. In total, 80% of strokes are ischemic,
 when occlusion of a cerebral artery deprives the tissue of metabolic
 substrates and oxygen. Neuroimaging techniques that can rapidly assess
 the penumbra are essential to guide treatment decisions and develop new
-therapies \[47\]. One study to date has applied the HP ^13^C technology
+therapies \[47\]. One study to date has applied the HP <sup>13</sup>C technology
 to stroke. In a model of ischemic stroke induced by intracranial
 injections of the vasoconstrictor endothelin-1, the levels of HP
-\[1-^13^C\]pyruvate and HP \[1-^13^C\]lactate were increased in the
-penumbra compared to the contralateral brain, but the HP ^13^C
+\[1-<sup>13</sup>C\]pyruvate and HP \[1-<sup>13</sup>C\]lactate were increased in the
+penumbra compared to the contralateral brain, but the HP <sup>13</sup>C
 lactate-to-pyruvate ratio was not different between hemispheres \[48\].
 The authors suggest that these findings indicate an increased delivery
-of HP \[1-^13^C\]pyruvate, possibly linked to increased perfusion or
+of HP \[1-<sup>13</sup>C\]pyruvate, possibly linked to increased perfusion or
 uptake across the BBB, as well as an increased conversion into lactate
 suggesting increased LDH enzymatic activity. However, no *ex vivo*
 correlative studies were performed to confirm these hypotheses.
@@ -392,67 +392,67 @@ correlative studies were performed to confirm these hypotheses.
 Hypoxia-ischemia (HI) is an important cause of neonatal mortality and
 morbidity \[49\]. Cerebral metabolic failure has been broadly recognized
 as the one of the main initiating events resulting in cell death and HI
-progression, suggesting a high potential for HP ^13^C MR in the
+progression, suggesting a high potential for HP <sup>13</sup>C MR in the
 longitudinal assessment of HI. In a recent study, mice that underwent
 unilateral hypoxia-ischemia (HI) on P10 were imaged on a 14.1 Tesla
 scanner at days P10 (infant), P17 (early childhood), and P31
-(adolescence) using dynamic HP ^13^C MRSI \[50\]. The authors found a
+(adolescence) using dynamic HP <sup>13</sup>C MRSI \[50\]. The authors found a
 significant reduction in pyruvate delivery (as estimated by area under
-pyruvate curve) and a higher HP ^13^C lactate-to-pyruvate ratio in the
+pyruvate curve) and a higher HP <sup>13</sup>C lactate-to-pyruvate ratio in the
 ipsilateral (HI) hemisphere at P10, and these differences decreased at
 P17 and disappeared at P31, suggesting a role for HP metabolic imaging
 for longitudinal monitoring of HI progression.
 
-II\. 2.3. Peripheral insults affecting brain metabolism
+### Peripheral insults affecting brain metabolism
 
-a\. Acute liver failure
+#### Acute liver failure
 
 Intracranial hypertension linked to cerebral edema is a severe
 complication of acute liver failure (ALF). The pathogenesis of cerebral
 edema in ALF is unclear but thought to be related to brain metabolic
 impairment, especially involving lactate \[51\]. In this context, a
 study investigated the metabolic effect of ALF in the brain of a rat
-model of hepatic artery ligation using ^13^C MRSI of HP
-\[1-^13^C\]pyruvate at 7 Tesla \[52\]. Following ALF, increased brain HP
-^13^C lactate-to-pyruvate and HP ^13^C alanine-to-pyruvate ratios were
+model of hepatic artery ligation using <sup>13</sup>C MRSI of HP
+\[1-<sup>13</sup>C\]pyruvate at 7 Tesla \[52\]. Following ALF, increased brain HP
+<sup>13</sup>C lactate-to-pyruvate and HP <sup>13</sup>C alanine-to-pyruvate ratios were
 detectable at very early stages (6 h post hepatic artery ligation),
 before animals presented any changes in behavior. Although no *ex vivo*
 correlative studies were conducted, the authors concluded that the early
-detection of the *de novo* synthesis of lactate using HP ^13^C MRSI
+detection of the *de novo* synthesis of lactate using HP <sup>13</sup>C MRSI
 suggests an important role for brain lactate in the physiopathology of
 ALF.
 
-b\. Diet and diabetes
+#### Diet and diabetes
 
 High intake of saturated fatty acids through diet has been linked to an
 increase risk of developing AD and dementia \[53\]. The mechanisms
 behind such increased risk are not fully understood, but several studies
 indicate a role for neuroinflammation and metabolic impairment. In this
-context, the potential of HP ^13^C MRSI to monitor cerebral impairment
+context, the potential of HP <sup>13</sup>C MRSI to monitor cerebral impairment
 was tested in a mouse model of high fat diet (HFD) at 9.4 Tesla \[54\].
-In mice fed 60% HFD for 6 months, HP \[1-^13^C\]pyruvate MR spectroscopy
-showed decreased perfusion (as estimated by total ^13^C signal) and
-increased conversion from HP \[1-^13^C\]pyruvate to lactate in the
+In mice fed 60% HFD for 6 months, HP \[1-<sup>13</sup>C\]pyruvate MR spectroscopy
+showed decreased perfusion (as estimated by total <sup>13</sup>C signal) and
+increased conversion from HP \[1-<sup>13</sup>C\]pyruvate to lactate in the
 brain, with highest conversion rates in the hippocampus and striatum.
 Dynamic contrast-enhanced MR imaging showed no differences between
 control and HFD mice, suggesting that the BBB was unaffected by the
 diet. Importantly, several correlative studies were performed and showed
-that the increase in HP ^13^C lactate-to-pyruvate ratio was associated
+that the increase in HP <sup>13</sup>C lactate-to-pyruvate ratio was associated
 with increased lactate levels and decreased PDH activity, whereas LDH
 activity was unchanged. Furthermore, the authors found a significant
-correlation between HP ^13^C lactate-to-pyruvate ratio and cognitive
+correlation between HP <sup>13</sup>C lactate-to-pyruvate ratio and cognitive
 deficits as evaluated by a Morris Water Maze test, at 6 months of HFD.
 Finally, the authors showed that, in mice fed HFD for 3 months, no
-cognitive decline was detected, but HP \[1-^13^C\]pyruvate MRSI showed
+cognitive decline was detected, but HP \[1-<sup>13</sup>C\]pyruvate MRSI showed
 increased lactate conversion and no difference in cerebral perfusion.
-Altogether, this complex study demonstrates a high potential of HP ^13^C
+Altogether, this complex study demonstrates a high potential of HP <sup>13</sup>C
 MRSI to assess longitudinal changes in metabolism linked to diet.
 
 The authors then performed a follow up study examining the metabolic
 effect of HFD in the streptozotocin mouse model of diabetes \[55\].
 After 6 months of HFD, unlike in the previous study, conversion of
 pyruvate to lactate did not differ from control, but the ratio of
-\[1-^13^C\]lactate to total ^13^C showed an almost 1.4-fold increase in
+\[1-<sup>13</sup>C\]lactate to total <sup>13</sup>C showed an almost 1.4-fold increase in
 the hippocampus. In that region, significantly decreased GLUT1 mRNA
 levels and increased lactate were detected, suggesting impairment in
 both glucose and pyruvate metabolism. Furthermore, the active form of
@@ -462,24 +462,24 @@ cortex samples of HFD diabetic mice, highlighting a further metabolic
 adaptation in this model.
 
 
-**III. New HP probes for brain applications**
+## New HP probes for brain applications
 
-HP \[1-^13^C\]pyruvate is by far the most commonly used probe, as
-described in Section I above and in other chapters, mostly due to the
+HP \[1-<sup>13</sup>C\]pyruvate is by far the most commonly used probe, as
+described [above](#neurological-applications-of-hp-1-13cpyruvate) and in other chapters, mostly due to the
 fact that this imaging agent combines both great technical and great
 biological properties. However, one could say that HP
-\[1-^13^C\]pyruvate is for HP ^13^C MRS what ^18^F-fluorodeoxyglucose
+\[1-<sup>13</sup>C\]pyruvate is for HP <sup>13</sup>C MRS what <sup>18</sup>F-fluorodeoxyglucose
 (FDG) is for PET imaging: a very versatile imaging agent, applicable and
 valuable in many organs and diseases, but with limitations in terms of
 specificity. Much like in the PET field where new radiotracers are
-constantly tested, in the field of HP ^13^C MRS, new HP probes are being
-developed and evaluated at a fast pace (see **Chapter 6**). Such probes
+constantly tested, in the field of HP <sup>13</sup>C MRS, new HP probes are being
+developed and evaluated at a fast pace (see [HP Agents Biochemical Interactions](../HP_agents/HP_agents.md)). Such probes
 are designed to enable assessment of new metabolic pathways that are of
 importance in specific pathogenic processes. Because of the central role
 of metabolic impairment in neurological disorders, several new HP probes
 present a high potential. However, to date, such probes have only been
 evaluated in healthy animal brains (**Figure 1**), except HP
-\[1-^13^C\]lactate (cf. paragraph III.3). Future studies are critically
+\[1-<sup>13</sup>C\]lactate (cf. paragraph III.3). Future studies are critically
 needed to establish their values for monitoring and assessing
 therapeutic response in brain diseases.
 
@@ -496,69 +496,69 @@ ranked as long (40--60 s, green), average (20--40 s, orange) and short
 Tesla (extrapolated rom data at other field strengths for glucose,
 glutamate, acetate and ketoisocaproate). Adapted from reference \[10\].
 
-III.1. Energy metabolism
+### Energy metabolism
 
-a- Glycolysis
+#### Glycolysis
 
 The ability to measure the *in vivo* metabolic flux from glucose all the
 way through glycolysis in a reasonable timeframe would be extremely
 valuable in the evaluation and monitoring of many diseases, including
-neurological disorders. Following injection of HP ^13^C-labeled glucose,
+neurological disorders. Following injection of HP <sup>13</sup>C-labeled glucose,
 which had been deuterated to increase its relaxation time T1 (HP
-\[2,3,4,6,6-^2^H~5~, 3,4-^13^C~2~\]glucose), detection of the end
-product of glycolysis HP \[1-^13^C\]lactate has been shown feasible in
+\[2,3,4,6,6-<sup>2</sup>H<sub>5</sub>, 3,4-<sup>13</sup>C<sub>2</sub>\]glucose), detection of the end
+product of glycolysis HP \[1-<sup>13</sup>C\]lactate has been shown feasible in
 the healthy mouse brain at 9.4 Tesla \[56\]*.* Although the T1 of
 deuterated glucose remained short at this field strength (\~12s at 9.4
 Tesla), this approach could potentially complement FDG-PET, informing on
 glucose metabolism rather than uptake.
 
-b- TCA cycle
+#### TCA cycle
 
-Unlike HP \[1-^13^C\]pyruvate, for which the ^13^C label gets into
+Unlike HP \[1-<sup>13</sup>C\]pyruvate, for which the <sup>13</sup>C label gets into
 bicarbonate through decarboxylation by PDH and never enters the TCA
-cycle, HP \[2-^13^C\]pyruvate is an interesting probe that allows
+cycle, HP \[2-<sup>13</sup>C\]pyruvate is an interesting probe that allows
 investigating not only the anaerobic pyruvate to lactate conversion, but
 also provides information on the aerobic metabolism through the TCA
-cycle. In the case of HP \[2-^13^C\]pyruvate, the ^13^C label enters the
+cycle. In the case of HP \[2-<sup>13</sup>C\]pyruvate, the <sup>13</sup>C label enters the
 TCA cycle through acetyl-coA labeling and is retained for many
 subsequent metabolic steps. In a study using a single-time-point
 chemical shift imaging sequence at 3 Tesla, the authors show that, in
-the *in vivo* rat brain, the resonances of HP \[2-^13^C\]lactate, HP
-\[5-^13^C\]glutamate, HP \[1-^13^C\]acetylcarnitine, and HP
-\[1-^13^C\]citrate could be detected post injection of HP
-\[2-^13^C\]pyruvate \[57\]. HP \[5-^13^C\]glutamate, HP
-\[2-^13^C\]lactate and HP \[1-^13^C\]citrate appeared to originate from
-the brain parenchyma, whereas HP \[1-^13^C\]acetylcarnitine was higher
+the *in vivo* rat brain, the resonances of HP \[2-<sup>13</sup>C\]lactate, HP
+\[5-<sup>13</sup>C\]glutamate, HP \[1-<sup>13</sup>C\]acetylcarnitine, and HP
+\[1-<sup>13</sup>C\]citrate could be detected post injection of HP
+\[2-<sup>13</sup>C\]pyruvate \[57\]. HP \[5-<sup>13</sup>C\]glutamate, HP
+\[2-<sup>13</sup>C\]lactate and HP \[1-<sup>13</sup>C\]citrate appeared to originate from
+the brain parenchyma, whereas HP \[1-<sup>13</sup>C\]acetylcarnitine was higher
 in peripheral tissue (e.g. muscles). However, in an another study
-conducted in the rat brain at 9.4 Tesla, only HP \[2-^13^C\]lactate
-could be detected in the brain tissue following HP \[2-^13^C\]pyruvate
+conducted in the rat brain at 9.4 Tesla, only HP \[2-<sup>13</sup>C\]lactate
+could be detected in the brain tissue following HP \[2-<sup>13</sup>C\]pyruvate
 injection \[58\]. Such results suggest that detection of TCA cycle
 intermediates using this method remains technically challenging, likely
 due to low sensitivity especially at high field strength. Interestingly
 however, a recent study successfully demonstrated the feasibility of
-applying HP \[2-^13^C\]pyruvate to the study of the healthy human brain
+applying HP \[2-<sup>13</sup>C\]pyruvate to the study of the healthy human brain
 at 3 Tesla, thus suggesting a high potential for this probe at clinical
 field strength, even with low spatial resolution \[59\].
 
-In addition to HP \[2-^13^C\]pyruvate, HP \[1-^13^C\]acetate has also
+In addition to HP \[2-<sup>13</sup>C\]pyruvate, HP \[1-<sup>13</sup>C\]acetate has also
 been evaluated, as acetate is one of the main fuel source for astrocytes
 and readily crosses the BBB. Following injection of HP
-\[1-^13^C\]acetate *in vivo*, the TCA cycle intermediate HP
-\[1-^13^C\]α-ketoglutarate (also known as 2-oxoglutarate) was observed
+\[1-<sup>13</sup>C\]acetate *in vivo*, the TCA cycle intermediate HP
+\[1-<sup>13</sup>C\]α-ketoglutarate (also known as 2-oxoglutarate) was observed
 in the rat brain at 9.4Tesla \[60\]. Because HP
-\[1-^13^C\]α-ketoglutarate and HP \[1-^13^C\]acetate resonances are only
-\<0.1ppm apart, infusion of \[1,2-^13^C~2~\]acetate and after
+\[1-<sup>13</sup>C\]α-ketoglutarate and HP \[1-<sup>13</sup>C\]acetate resonances are only
+\<0.1ppm apart, infusion of \[1,2-<sup>13</sup>C<sub>2</sub>\]acetate and after
 carbon--carbon polarization transfer experiments were performed to
 confirm assignment of the α-ketoglutarate resonance.
 
 Such metabolic information on TCA cycle metabolites provided by HP
-\[1-^13^C\]acetate or HP \[2-^13^C\]pyruvate is crucial, and would be of
+\[1-<sup>13</sup>C\]acetate or HP \[2-<sup>13</sup>C\]pyruvate is crucial, and would be of
 high importance for monitoring the progression of the large number of
 neurological disorders in which mitochondrial metabolism is affected,
 such as Parkinson's disease, Huntington's disease or Alzheimer's disease
 \[61\].
 
-c- Glutamine/glutamate metabolism and nitrogen homeostasis
+#### Glutamine/glutamate metabolism and nitrogen homeostasis
 
 The branched chain amino acid transaminases (BCAT) play an important
 role in glutamate/glutamine metabolism and nitrogen homeostasis in the
@@ -578,24 +578,24 @@ This nitrogen shuttling linked to the glutamate/glutamine cycle is
 central to the healthy brain, and is often impaired in neurological
 disorders, including in tau-dependent neurodegeneration \[63\].
 
-To date, only two studies have investigated the potential of HP ^13^C
+To date, only two studies have investigated the potential of HP <sup>13</sup>C
 MRS to assess such cycles. In a first study, following intravenous
-injection of HP 2-keto\[1-^13^C\]isocaproate (KIC), HP
-\[1-^13^C\]leucine was detected 20 seconds after end of injection
+injection of HP 2-keto\[1-<sup>13</sup>C\]isocaproate (KIC), HP
+\[1-<sup>13</sup>C\]leucine was detected 20 seconds after end of injection
 throughout the healthy rat brain at 4.7 Tesla \[64\]. Interestingly,
 significantly higher conversion was observed in hippocampal regions
 compared to muscle tissue, suggesting that HP KIC might be a promising
 substrate for evaluation of cerebral BCAT activity in conjunction with
-neurodegenerative diseases. In a second study, HP \[1-^13^C\]glutamate
+neurodegenerative diseases. In a second study, HP \[1-<sup>13</sup>C\]glutamate
 was injected in healthy rats and cerebral conversion of HP
-\[1-^13^C\]glutamate to HP \[1-^13^C\]glutamine was observed at 3 Tesla
+\[1-<sup>13</sup>C\]glutamate to HP \[1-<sup>13</sup>C\]glutamine was observed at 3 Tesla
 \[65\]. However, in that study, a temporary BBB disruption using
-mannitol was performed to allow for HP \[1-^13^C\]glutamate to reach the
+mannitol was performed to allow for HP \[1-<sup>13</sup>C\]glutamate to reach the
 brain. Despite its potential value in studying chronic excitotoxicity,
 such method might lead to unwanted adverse effects, and is thus limited
 for clinical translation.
 
-III.2. Oxidative stress
+### Oxidative stress
 
 Oxidative stress results from an imbalance between free radicals and
 antioxidants, which subsequently leads to cell and tissue damage.
@@ -607,80 +607,79 @@ also in neuropsychiatric disorders, including anxiety disorders and
 depression \[66\]. Non-invasive *in vivo* measurement of oxidative
 stress levels would be incredibly valuable in many pathologies.
 
-HP \[1-^13^C\]dehydroascorbate (DHA) has been shown to enable detection
+HP \[1-<sup>13</sup>C\]dehydroascorbate (DHA) has been shown to enable detection
 of oxidative stress in several preclinical studies \[67, 68\]. In the
 brain, DHA is transported through the BBB via GLUT1 transporters, and
 thus represents a probe of high potential. One study has shown that
-production of HP \[1-^13^C\]vitamin C from HP \[1-^13^C\]DHA could be
+production of HP \[1-<sup>13</sup>C\]vitamin C from HP \[1-<sup>13</sup>C\]DHA could be
 detected in the rat brain at 3 Tesla, and that this conversion was
 significantly reduced when glutathione, the main antioxidant of the
 brain, was depleted by treatment with diethyl malate \[69\].
 Unfortunately, administration of this HP probe causes many adverse
 effects in animal models \[70\], limiting its potential for clinical
-translation. An additional probe, HP γ-glutamyl-\[1-^13^C\]glycine, has
-recently been shown to be metabolized to HP \[1-^13^C\]glycine in the
+translation. An additional probe, HP γ-glutamyl-\[1-<sup>13</sup>C\]glycine, has
+recently been shown to be metabolized to HP \[1-<sup>13</sup>C\]glycine in the
 healthy rat brain at 3Tesla \[71\]. Because this conversion, which is
 catalyzed by γ-glutamyl-transferase, is involved in maintaining cysteine
 levels for glutathione production, this probe could potentially be
 applied to many neurological disorders involving oxidative stress.
-Finally, another HP metabolite, HP \[1-^13^C\]acetoacetate, has also
+Finally, another HP metabolite, HP \[1-<sup>13</sup>C\]acetoacetate, has also
 showed promise in a recent study \[72\]. Conversion of HP
-\[1-^13^C\]acetoacetate to HP \[1-^13^C\]beta-hydroxybutyrate was
+\[1-<sup>13</sup>C\]acetoacetate to HP \[1-<sup>13</sup>C\]beta-hydroxybutyrate was
 detected in the mouse brain at 14.1Tesla, and was shown to be a marker
-for NAD^+^/NADH ratio. Such approach could thus potentially be used to
+for NAD<sup>+</sup>/NADH ratio. Such approach could thus potentially be used to
 non-invasively assess overall redox status in neurological diseases.
 
-III\. 3. The case of HP \[1-^13^C\]lactate: theranostic and BBB
-permeability agent
+### The case of HP \[1-<sup>13</sup>C\]lactate: theranostic and BBB permeability agent
 
-To date, two preclinical studies have used HP \[1-^13^C\]lactate as HP
+To date, two preclinical studies have used HP \[1-<sup>13</sup>C\]lactate as HP
 substrate in the brain: one used this probe to evaluate BBB permeability
 in the healthy mouse brain, and the other used it as a theranostic agent
 in a mouse model of stroke.
 
-In the first study, HP \[1-^13^C\]lactate was used to evaluate the
+In the first study, HP \[1-<sup>13</sup>C\]lactate was used to evaluate the
 rate-limiting role of the BBB on equilibration between plasma and brain
 \[73\]. The authors showed that transport of L-lactate across the BBB
-can be observed post injection of HP \[1-^13^C\]lactate, and is limited
+can be observed post injection of HP \[1-<sup>13</sup>C\]lactate, and is limited
 by the BBB, which can restrict diffusion into the brain by nearly 30% at
 high plasma lactate concentrations. Furthermore, this study showed that
-HP \[1-^13^C\]lactate conversion to HP \[1-^13^C\]pyruvate and HP
-\[^13^C\]bicarbonate can be detected in the healthy mouse brain.
+HP \[1-<sup>13</sup>C\]lactate conversion to HP \[1-<sup>13</sup>C\]pyruvate and HP
+\[<sup>13</sup>C\]bicarbonate can be detected in the healthy mouse brain.
 Interestingly, the HP lactate-to-pyruvate ratio was different between
 mice strains (NMRI and C57BL/6) and was associated with differences in
 expression of LDHA (but not MCTs or LDHB). This study demonstrates the
-dual potential of HP \[1-^13^C\]lactate as a promising molecule to study
+dual potential of HP \[1-<sup>13</sup>C\]lactate as a promising molecule to study
 brain metabolism and to evaluate BBB integrity by MR.
 
 Because administration of L-lactate had shown to decrease lesion size
 and ameliorate neurological outcome in rodent stroke models and in
 clinical pilot studies, one study has evaluated the potential of HP
-\[1-^13^C\]L-lactate as a theranostic imaging substrate of interest for
+\[1-<sup>13</sup>C\]L-lactate as a theranostic imaging substrate of interest for
 the evaluation of stroke. Using a transient middle cerebral artery
 occlusion (MCAO) mouse model, the authors evaluated the feasibility of
-measuring HP \[1-^13^C\]L-lactate metabolism in real-time, when this
+measuring HP \[1-<sup>13</sup>C\]L-lactate metabolism in real-time, when this
 agent was administered after reperfusion at a therapeutic dose \[74\].
-Conversion of HP \[1-^13^C\]L-lactate to HP \[1-^13^C\]pyruvate and HP
-\[^13^C\]bicarbonate was detected in this model at 9.4 Tesla. HP ^13^C
+Conversion of HP \[1-<sup>13</sup>C\]L-lactate to HP \[1-<sup>13</sup>C\]pyruvate and HP
+\[<sup>13</sup>C\]bicarbonate was detected in this model at 9.4 Tesla. HP <sup>13</sup>C
 pyruvate-to-lactate ratio was significantly higher at 1-hour
 post-reperfusion than 2-hours post-reperfusion or in sham. Furthermore,
-steady-state lactate concentration, as measured by ^1^H MRS, reached a
+steady-state lactate concentration, as measured by <sup>1</sup>H MRS, reached a
 maximum value between 1- and 2-hours post-reperfusion and then steadily
 decreased. Interestingly, levels of MCT1, MCT2 and MCT4 expression was
 increased in blood vessels and MCT1 and MCT4 expression was increased in
 living neurons, perhaps enabling more lactate to be delivered to the
-tissue. HP \[1-^13^C\]lactate could thus be potentially used as a
+tissue. HP \[1-<sup>13</sup>C\]lactate could thus be potentially used as a
 theragnostic agent, although its delivery may be BBB limited \[73\].
 
 
-**IV. Correlation studies for HP ^13^C data**
+## Correlation studies for HP <sup>13</sup>C data
 
-Understanding HP ^13^C metabolic imaging data is challenging, as many
+Understanding HP <sup>13</sup>C metabolic imaging data is challenging, as many
 factors jointly influence the HP readouts that are detected, both in
 health and disease. Unlike non-oncological clinical investigations,
 using preclinical models offers the unique possibility to perform
 correlative and validation studies, in order to better assess the
-potential added value of HP ^13^C MR, and dissect the possible
+potential added value of HP <sup>13</sup>C MR, and dissect the possible
 mechanisms driving the measured HP data. One of the main guiding
 principles of preclinical research on animals is the three Rs ethic
 rule, which stands for Replace, Reduce and Refine. Part of this rule is
@@ -691,11 +690,11 @@ to get as much information as possible from any animal that undergoes
 metabolic imaging, using complementary *in vivo* methods and/or using
 the *ex vivo* brain tissue for further analysis. **Figure 2** present a
 summary of correlative and validation studies that can be performed in
-complement to HP ^13^C metabolic imaging of the brain.
+complement to HP <sup>13</sup>C metabolic imaging of the brain.
 
 ![Correlative studies](multimodal_brain_studies.png)
 
-**Figure 2: Correlative studies for HP ^13^C metabolic imaging of the brain.**
+**Figure 2: Correlative studies for HP <sup>13</sup>C metabolic imaging of the brain.**
 Summary of the six main categories of complementary studies that can be
 performed in conjunction with HP 13C metabolic imaging of the brain. The
 three categories that can be conducted *in vivo* are: Imaging, Genetic
@@ -704,23 +703,23 @@ three categories that are performed on *ex vivo* brain samples post
 euthanasia of the animals are: Microscopy, Metabolites analysis and
 Biochemical Studies.
 
-IV.1. *In vivo* methods
+### *In vivo* methods
 
-a- Non-invasive imaging approaches
+#### Non-invasive imaging approaches
 
 Conventional imaging methods that are already used in the clinic can be
-performed not only to localize HP ^13^C MRSI data, but also to provide
+performed not only to localize HP <sup>13</sup>C MRSI data, but also to provide
 complementary knowledge to the metabolic imaging approaches. MRI is by
 far the most convenient imaging strategy, as it uses the same imaging
-system as HP ^13^C. Out of all MRI sequences, conventional T~2~-weighted
+system as HP <sup>13</sup>C. Out of all MRI sequences, conventional T<sub>2</sub>-weighted
 MRI is the most commonly used for brain studies, as it provides the
 greatest contrast between cerebral substructures and grey/white matter
 in the rodent brain. In disease, this sequence can be used to detect
 structural lesions or alterations, such as cavitation in TBI models
-\[46\]. Other methods like T~1~-weighted MR imaging post injection of
+\[46\]. Other methods like T<sub>1</sub>-weighted MR imaging post injection of
 contrast agent (mostly Gadolinium-based) can be used to identify regions
 of BBB leakage (e.g. MS lesions \[75\]), although care should be taken
-to perform this kind of imaging *after* HP ^13^C MRS, to not interfere
+to perform this kind of imaging *after* HP <sup>13</sup>C MRS, to not interfere
 with the relaxation of the HP probe. Such information is of high
 importance when trying to understand HP data, as BBB leakage could lead
 to increase delivery of the HP substrate, which needs to be taken into
@@ -728,8 +727,8 @@ account for data interpretation \[24\]. Finally, more specialized MRI
 methods could be performed, e.g. susceptibility weighted imaging (SWI)
 to detect microbleeds, or diffusion weighted imaging (DWI) to look at
 structural integrity for example. Using the same imaging system, *in
-vivo* ^1^H MRS can also be performed to assess the steady-state levels
-of cerebral metabolites. While comparison between HP ^13^C and ^1^H MRS
+vivo* <sup>1</sup>H MRS can also be performed to assess the steady-state levels
+of cerebral metabolites. While comparison between HP <sup>13</sup>C and <sup>1</sup>H MRS
 data has been performed in the context of cancer \[76\], no
 non-oncological studies of the brain in health or disease has combined
 these two modalities yet.
@@ -737,22 +736,22 @@ these two modalities yet.
 In addition to MRI/MRS, the use of other imaging approaches, such as
 PET, computed tomography (CT), ultrasound (US) or bioluminescence
 imaging (BLI) could also be potentially valuable to complement HP data,
-and most of these approaches have been used in conjunction with HP ^13^C
+and most of these approaches have been used in conjunction with HP <sup>13</sup>C
 MR in oncology studies. When studying the brain, PET approaches are the
 most useful, and could be used to further our understanding of metabolic
-changes linked to pathogenesis. For example, ^18^F-FDG-PET could be used
-as a complement to ^13^C MRSI of HP pyruvate or HP glucose in
+changes linked to pathogenesis. For example, <sup>18</sup>F-FDG-PET could be used
+as a complement to <sup>13</sup>C MRSI of HP pyruvate or HP glucose in
 Alzheimer's disease, where glucose uptake has been shown to decrease
 early \[77\].
 
-b-Genetic studies of animal models
+#### Genetic studies of animal models
 
 Genetically engineered and transgenic animal models of disease are
 extremely useful and widely used in the context of neurological
 disorders \[78\]. Conventional or conditional knockin (KI) or knockout
-(KO) mice can help understand not only the added value of HP ^13^C MRSI,
+(KO) mice can help understand not only the added value of HP <sup>13</sup>C MRSI,
 but also dissect the mechanisms behind the observed modulations of the
-HP ^13^C MR signals. In conventional KI/KO models, one or several genes
+HP <sup>13</sup>C MR signals. In conventional KI/KO models, one or several genes
 are artificially impaired/eliminated (KO) or overexpressed/added (KI) in
 all cells and tissues in the animal body. On the other hand, conditional
 KI/KO models involve gene KI/KO that only target specific cells, tissues
@@ -774,18 +773,18 @@ which CX3CR1 was KO in monocytes and brain microglia was used to avert
 microglial activation \[41\]. CX3CR1 KO prevented the increase in HP
 lactate seen in MS mice, further strengthening the hypothesis that this
 increase was microglia-driven. In the context of the brain, many
-approaches could be tested to improve our interpretation of HP ^13^C
+approaches could be tested to improve our interpretation of HP <sup>13</sup>C
 data, such as using conditional KO of an isoform or LDH or MCT in
 neurons or astrocytes and assessing the effect on the detected HP
 signal. Further studies using such approaches are critically needed and
 would strengthen our understanding of the biological potential of HP
-^13^C metabolic imaging.
+<sup>13</sup>C metabolic imaging.
 
-c- Behavioral studies
+#### Behavioral studies
 
 Behavioral testing has been studied for a long time, as demonstrated for
 example by Ivan Pavlov's early work on conditional reflexes in dogs
-which began at the end of the 19^th^ century \[81\]. Since then,
+which began at the end of the 19<sup>th</sup> century \[81\]. Since then,
 behavioral testing has been extensively used in neurosciences to
 understand the central nervous system both in health and disease. In
 rodent neuroscience research, many different standardized behavior tests
@@ -819,42 +818,42 @@ tests are complex and require high expertise to be performed
 reproducibly \[83\], such brain-specific correlative experiments are
 highly interesting and informative when studying neurological disorders
 progression or response to treatment. To date, only one study has
-combined HP ^13^C MR and behavioral testing, using a Morris water maze
-to evaluate spatial learning in aged mice that also underwent HP ^13^C
+combined HP <sup>13</sup>C MR and behavioral testing, using a Morris water maze
+to evaluate spatial learning in aged mice that also underwent HP <sup>13</sup>C
 metabolic imaging \[23\]. This study shows that DCA treatment reduces
 conversion of HP pyruvate to lactate in the mouse brain and causes
 impairment in spatial learning. While both imaging and behavioral
 parameters are modulated by DCA administration, no causation or
 correlation were established. Future studies examining the possible
 correlations and causation links between behavioral metrics and imaging
-parameters would be of high interest. Could HP ^13^C imaging parameters
+parameters would be of high interest. Could HP <sup>13</sup>C imaging parameters
 be early predictor of cognitive or motor deficits? If the answer is yes,
 it would dramatically strengthen the added value of metabolic imaging
 for the study of neurological disorders.
 
-IV.2. *Ex vivo* methods
+### *Ex vivo* methods
 
 After an *in vivo* metabolic imaging experiment end point, the brain
 tissue can be resected and studied using various approaches, described
 below, to investigate the mechanisms driving the HP data.
 
-a- Biochemical assays
+#### Biochemical assays
 
 While many assays can be performed on brain tissue samples, the three
-most common types found in the HP ^13^C literature are
+most common types found in the HP <sup>13</sup>C literature are
 spectrophotometric assays, western blots and polymerase chain reaction
 (PCR) assays. Spectrophotometric assays can be used to assess enzymatic
 activities (e.g. LDH, PDH), or levels or ratios of other molecules such
-as co-factors or metabolites (e.g. NAD^+^/NADH, NADH, GSH). Western
+as co-factors or metabolites (e.g. NAD<sup>+</sup>/NADH, NADH, GSH). Western
 blots measure protein levels, and can be applied to evaluate the levels
 of enzymes (e.g. LDH, PDH), as well as transporters (e.g. MCT). Finally,
 using PCR, mRNA levels can be evaluated, giving information of the
 expression levels of any molecule of interest. As shown in **Table 1**,
 such correlative studies are highly valuable to decipher the underlying
-modulations in HP ^13^C data seen *in vivo*, and should be performed as
+modulations in HP <sup>13</sup>C data seen *in vivo*, and should be performed as
 systematically as possible in preclinical studies.
 
-b- Metabolomics
+#### Metabolomics
 
 Quantitative methods allowing to assess the steady state levels of
 metabolites in brain tissue are crucial for validation and
@@ -862,7 +861,7 @@ interpretation of *in vivo* HP metabolic imaging results. For example,
 the knowledge of the steady-state levels of the HP metabolic substrate
 and its product(s) is important to understand the imaging data,
 especially in fast equilibrium reactions for which pool sizes have an
-effect on the HP readout (e.g. pyruvate, see Chapter 6 for more
+effect on the HP readout (e.g. pyruvate, see [HP Agents Biochemical Interactions](../HP_agents/HP_agents.md) for more
 details).
 
 In most cases, the cerebral region or subregion of interest is processed
@@ -891,20 +890,20 @@ methods (supervised or unsupervised, e.g. Principal Component Analysis
 interpretation. Such metabolomics approaches are increasingly used to
 probe the status of biological systems in health and disease \[87\].
 However, to date, whereas a few brain cancer studies have combined
-metabolomics approaches and HP ^13^C metabolic imaging \[76\], no
+metabolomics approaches and HP <sup>13</sup>C metabolic imaging \[76\], no
 non-oncological brain study has ever done so, and future studies are
 critically needed.
 
 An additional type of metabolic analysis that can be done is *ex vivo*
-^13^C NMR of the brain that was resected post *in vivo* infusion or
-injection of a ^13^C-labeled probe. When resection is performed in a
-short time frame (a few minutes or less) mimicking the one of a HP ^13^C
+<sup>13</sup>C NMR of the brain that was resected post *in vivo* infusion or
+injection of a <sup>13</sup>C-labeled probe. When resection is performed in a
+short time frame (a few minutes or less) mimicking the one of a HP <sup>13</sup>C
 experiment, such tracing experiment can evaluate the expected fractional
 enrichment of substrate and products in the tissue of interest \[88\],
 and could be of high interest for evaluating the potential of new HP
 probes for brain studies.
 
-c- Immunohistochemistry/Immunofluorescence
+#### Immunohistochemistry/Immunofluorescence
 
 Immunohistochemistry (IHC) is a powerful tool that is widely used in
 neuroscience research, as it allows visualizing a target protein of
@@ -927,28 +926,28 @@ also be used to look at other important proteins, such as myelin (e.g.
 MBP) or transporters (e.g. MCT), specific structures such as tight
 junctions (e.g. ZO-I) or pathological processes such as BBB leakage
 (e.g. Fibrinogen) or microbleeds (e.g. Hemosiderin). When use in
-combination with HP ^13^C MRS/I, IHC/IF is a powerful tool to help
-elucidate the origin of the modulations of the HP ^13^C data, including
+combination with HP <sup>13</sup>C MRS/I, IHC/IF is a powerful tool to help
+elucidate the origin of the modulations of the HP <sup>13</sup>C data, including
 the relative contribution of different cell types and/or the potential
 role of delivery/BBB leakage to the detected signal.
 
-**V. Conclusion**
+## Conclusion
 
-HP ^13^C metabolic imaging has great potential to provide unprecedented
+HP <sup>13</sup>C metabolic imaging has great potential to provide unprecedented
 information on brain metabolism. Given the central role of metabolic
 impairment in neurological disorders, this technology could provide
 tremendous added value in comparison with other clinically available
 imaging technique, and likely improve diagnosis, evaluation of prognosis
-and assessment of therapeutic response non-invasively. While HP ^13^C
+and assessment of therapeutic response non-invasively. While HP <sup>13</sup>C
 metabolic imaging has been extensively evaluated in oncology, its
 application to non-cancer brain diseases is relatively recent, however.
 The literature to date is extremely promising, but further studies are
 critically needed to help understanding the potential and meaning of HP
-^13^C data in brain diseases, in order to facilitate clinical
+<sup>13</sup>C data in brain diseases, in order to facilitate clinical
 translation of this methodology for patients with neurological
 disorders.
 
-**References**
+## References
 
 1. von Bartheld, C.S., J. Bahney, and S. Herculano-Houzel, *The search for true numbers of neurons and glial cells in the human brain: A review of 150 years of cell counting.* J Comp Neurol, 2016. **524**(18): p. 3865-3895.
 2. Herculano-Houzel, S. and R. Lent, *Isotropic fractionator: a simple, rapid method for the quantification of total cell and neuron numbers in the brain.* J Neurosci, 2005. **25**(10): p. 2518-21.
