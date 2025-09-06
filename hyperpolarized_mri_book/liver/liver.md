@@ -99,7 +99,7 @@ superimposed liver diseases such as portal hypertension (7).
 
 ![Liver Kinetics](CH0010_Fig001_von+Morze_v1_Orig.png)
 
-Figure 1: Dual blood supply of the liver visualized using HP 13C MRI. (A) Schematic illustration of the blood
+**Figure 1: Dual blood supply of the liver visualized using HP 13C MRI.** (A) Schematic illustration of the blood
 supply of the liver, showing the portal vein (purple) draining the gastrointestinal tract and the hepatic artery
 (red), with a single output hepatic vein (blue). (B) T1-weighted image of the liver with ROIs drawn around the
 aorta (red), inferior vena cava (blue), portal vein (green), and liver parenchyma (purple). (C) HP [1-13C]pyruvate
@@ -123,7 +123,7 @@ stationary and uniform tissues like brain.
 
 ![Field map (Hz) in the abdomen acquired using the IDEAL-IQ](CH0010_Fig002_von+Morze_v1_Orig.png)
 
-Figure 2 Field map (Hz) in the abdomen acquired using the IDEAL-IQ
+**Figure 2 Field map (Hz) in the abdomen** acquired using the IDEAL-IQ
 multiecho gradient echo method at 3T shows large B0 frequency variation in
 this slice, which can be a challenge for frequency-selective acquisition
 techniques. Colorbar represents frequency offset in hertz at 3T.
@@ -223,8 +223,8 @@ vasculature or other cell types (40).
 
 ![Hyperpolarized 13C metabolic pathways in the liver](CH0010_Fig003_von+Morze_v1_Orig.jpg)
 
-Figure 3. Simplified view of hepatic metabolic pathways accessible via
-hyperpolarized <sup>13</sup>C MRI. Some relevant hyperpolarized <sup>13</sup>C substrates
+**Figure 3. Simplified view of hepatic metabolic pathways accessible via
+hyperpolarized <sup>13</sup>C MRI.** Some relevant hyperpolarized <sup>13</sup>C substrates
 are labeled in red boxes. AcAc= acetoacetate, βOHB= β-hydroxybutyrate,
 LDH= lactate dehydrogenase, BDH= β-hydroxybutyrate dehydrogenase, OAA=
 oxaloacetate, PEP= phosphoenolpyruvate, PPP= pentose phosphate pathway,
@@ -258,8 +258,8 @@ could visualize the increased glycolytic metabolism in these tumors.
 
 ![Hyperpolarized 13C MRI of a switchable, transgenic mouse model of liver cancer](CH0010_Fig004_von+Morze_v1_Orig.png)
 
-Figure 4. HP \[1-<sup>13</sup>C\]pyruvate MRI of a switchable, transgenic mouse
-model of liver cancer. A) Metabolic interconversion of HP
+**Figure 4. HP \[1-<sup>13</sup>C\]pyruvate MRI of a switchable, transgenic mouse
+model of liver cancer.** A) Metabolic interconversion of HP
 \[1-<sup>13</sup>C\]pyruvate with \[1-<sup>13</sup>C\]lactate and \[1-<sup>13</sup>C\]alanine. B)
 Axial images of individual HP metabolites of \[1-<sup>13</sup>C\]pyruvate
 overlaid in color on conventional <sup>1</sup>H images in grayscale, in a mouse
@@ -307,9 +307,9 @@ are shown in Figure 5.
 
 ![Clinical Translation of HP 13C MRI in a patient with liver metastases from prostate cancer](CH0010_Fig005_von+Morze_v1_Orig.png)
 
-Figure 5. Proof of principle clinical translation of HP
+**Figure 5. Proof of principle clinical translation of HP
 \[1-<sup>13</sup>C\]pyruvate MRI in a patient with liver metastases from prostate
-cancer. Dynamic tumor-localized HP <sup>13</sup>C metabolite signal curves are
+cancer.** Dynamic tumor-localized HP <sup>13</sup>C metabolite signal curves are
 shown in (a), before and after chemotherapy (carboplatin + docetaxel).
 The apparent rate of conversion of HP \[1-<sup>13</sup>C\]pyruvate to
 \[1-<sup>13</sup>C\]lactate declined after chemotherapy. The tumor is depicted on
@@ -347,7 +347,7 @@ studies.
 
 ![Hyperpolarized 13C MRI of liver from a rat treated with hepatotoxic agent 1,3-DCP](CH0010_Fig006_von+Morze_v1_Orig.png)
 
-Figure 6. Example HP \[1-<sup>13</sup>C\]pyruvate spectra from normal rat liver
+**Figure 6. Example HP \[1-<sup>13</sup>C\]pyruvate spectra** from normal rat liver
 (A) and rat liver from an animal treated with hepatotoxic agent 1,3-DCP
 (B), showing elevated conversion to \[1-<sup>13</sup>C\]lactate and
 \[1-<sup>13</sup>C\]alanine with treatment. Liver signal dynamics from each
@@ -356,7 +356,7 @@ al.** **(54)**
 
 ![Hyperpolarized 13C MRI of liver from a mouse fed methionine and choline deficient diet](CH0010_Fig007_von+Morze_v1_Orig.png)
 
-Figure 7. Example liver-localized \[1-<sup>13</sup>C\]dehydroascorbate spectra
+**Figure 7. Example liver-localized \[1-<sup>13</sup>C\]dehydroascorbate spectra**
 (a) from a normal mouse (top) and a mouse fed methionine and choline
 deficient diet (MCD) (bottom), a common rodent model of NASH. Summary
 group data are shown in (b). Production of \[1-<sup>13</sup>C\]vitamin C from

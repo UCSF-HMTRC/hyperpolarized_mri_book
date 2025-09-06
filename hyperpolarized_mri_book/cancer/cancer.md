@@ -648,7 +648,7 @@ glutamate cannot be measured. Further studies are needed to determine
 the ability of HP \[1-<sup>13</sup>C\]-glutamine to monitor 2-HG production in
 IDHmut low-grade glioma models.
 
-## Imaging oncogenic reprogramming of metabolism using HP <sup>13</sup>C MRS/I in the** **clinic**
+## Imaging oncogenic reprogramming of metabolism using HP <sup>13</sup>C MRS/I in the clinic
 
 In line with its widespread use in preclinical studies, HP
 \[1-<sup>13</sup>C\]pyruvate was the first HP <sup>13</sup>C agent to transition to the
