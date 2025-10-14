@@ -9,6 +9,51 @@ Hyperpolarized Carbon-13 MRI. Editor: Peder E. Z. Larson.
 Available online at: https://ucsf-hmtrc.github.io/hyperpolarized_mri_book/
 doi: 10.5281/zenodo.15603048
 ```
+## Contributors
+
+Jan Ardenkjaer-Larsen,
+Department of Health Technology, Technical University of Denmark, Denmark
+
+James Bankson, Department of Imaging Physics, The University of Texas MD Anderson Cancer Center
+
+Myriam M. Chaumeil, 
+Department of Physical Therapy and Rehabilitation Science, University of California, San Francisco,
+Department of Radiology and Biomedical Imaging, University of California, San Francisco
+
+Arnaud Comment, Cancer Research UK Cambridge Institute, University of Cambridge, Cambridge, UK, General Electric Healthcare, Chalfont St Giles, UK
+
+Adam P. Gaunt, Cancer Research UK Cambridge Institute, University of Cambridge, Cambridge, UK
+
+Jeremy Gordon, Department of Radiology & Biomedical Imaging, University of California – San Francisco, San Francisco, CA, USA
+
+Peder Larson, Department of Radiology and Biomedical Imaging, University of California, San Francisco
+
+Justin Lau,
+Oxford Centre for Clinical Magnetic Resonance Research (OCMR), Division of Cardiovascular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxfordshire, United Kingdom,
+Department of Physiology, Anatomy and Genetics, University of Oxford, Oxfordshire, United Kingdom,
+Small Animal Imaging Lab Core, H. Lee Moffitt Cancer Center, Tampa, Florida, United States
+
+Jack J. Miller, The MR Research Centre & The PET Research Centre, Department of Clinical Medicine, Aarhus University, Aarhus, Denmark,
+Oxford Centre for Clinical Magnetic Resonance Research (OCMR), Division of Cardiovascular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxfordshire, United Kingdom,
+Department of Physiology, Anatomy and Genetics, University of Oxford, Oxfordshire, United Kingdom,
+Department of Physics, Clarendon Laboratory, University of Oxford, Oxfordshire, United Kingdom
+
+Michael A. Ohliger, Associate Professor, Department of Radiology and Biomedical Imaging, University of California, San Francisco
+
+Renuka Sriram, Department of Radiology & Biomedical Imaging, University of California – San Francisco, San Francisco, CA, USA
+
+Damian Tyler, Oxford Centre for Clinical Magnetic Resonance Research (OCMR), Division of Cardiovascular Medicine, Radcliffe Department of Medicine, University of Oxford, Oxfordshire, United Kingdom,
+Department of Physiology, Anatomy and Genetics, University of Oxford, Oxfordshire, United Kingdom
+
+Cornelius von Morze, Assistant Professor, Mallinckrodt Institute of Radiology, Washington University
+
+Pavithra Viswanath, Department of Radiology & Biomedical Imaging, University of California – San Francisco, San Francisco, CA, USA
+
+Hikari A. I. Yoshihara,
+Laboratory for Functional and Metabolic Imaging, Institute of Physics, École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland
+
+<!--  You can see a list of current contributors in the [contributors tab](https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/graphs/contributors).
+ -->
 
 
 ## Usage
@@ -32,12 +77,6 @@ Please see the [Jupyter Book documentation](https://jupyterbook.org/publish/web.
 For GitHub and GitLab deployment specifically, the [cookiecutter-jupyter-book](https://github.com/executablebooks/cookiecutter-jupyter-book) includes templates for, and information about, optional continuous integration (CI) workflow files to help easily and automatically deploy books online with GitHub or GitLab. For example, if you chose `github` for the `include_ci` cookiecutter option, your book template was created with a GitHub actions workflow file that, once pushed to GitHub, automatically renders and pushes your book to the `gh-pages` branch of your repo and hosts it on GitHub Pages when a push or pull request is made to the main branch.
 
 
-## Contributors
-
-We welcome and recognize all contributions who contributed chapters to this book!
-
-<!--  You can see a list of current contributors in the [contributors tab](https://github.com/UCSF-HMTRC/hyperpolarized_mri_book/graphs/contributors).
- -->
 ## Credits
 
 This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
